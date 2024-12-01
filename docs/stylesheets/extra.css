@@ -1,0 +1,192 @@
+/* Light mode */
+[data-md-color-scheme="default"]{
+    --md-primary-fg-color:  #1f2025;
+    --md-primary-bg-color:  #fff;
+    --md-accent-fg-color:   #178fff;
+    --md-default-bg-color:  #fff;
+    --md-footer-fg-color:   #6c6b85;
+    --md-footer-bg-color:   #f6f6f9;
+    --md-footer-bg-color--dark: #1f2025;
+    --md-typeset-color:     #000;
+    --md-typeset-a-color:   #000;
+    /*--md-code-fg-color:     #fff;*/
+    --md-code-bg-color:     #e3e3e5;
+}
+
+/* Dark mode */
+[data-md-color-scheme="slate"]{
+    --md-primary-fg-color:  #121212;
+    --md-primary-bg-color:  #fff;
+    --md-accent-fg-color:   #3a8def;
+    --md-default-bg-color:  #151515;
+    --md-footer-fg-color:   #fff;
+    --md-footer-bg-color:   #202020;
+    --md-footer-bg-color--dark: #121212;
+    --md-typeset-color:     #fff;
+    --md-typeset-a-color:   #fff;
+    /*--md-code-fg-color:     #fff;*/
+    --md-code-bg-color:     #292929;
+}
+
+/* Hovering Links */
+[data-md-color-scheme="default"] .md-typeset a:hover {
+    color:#000;
+}
+[data-md-color-scheme="slate"] .md-typeset a:hover {
+    color:#fff;
+}
+
+/* Sidebar nav background */
+/*.md-sidebar__inner {
+    
+}*/
+
+/* Nav text color */
+[data-md-color-scheme="default"] .md-nav__link {
+    color:#6c6b85;
+}
+
+[data-md-color-scheme="slate"] .md-nav__link {
+    color: #a4a4a4;
+}
+
+/* Current selected item */
+[data-md-color-scheme="default"] .md-nav__item--active > .md-nav__link--active {
+    background: #f6f6f9;
+    border-radius:4px;
+    font-weight: bold;
+}
+
+[data-md-color-scheme="slate"] .md-nav__item--active >  .md-nav__link--active {
+    background: #202020;
+    color: #fff;
+    border-radius:4px;
+    font-weight: bold;
+}
+
+/* nav list items */
+[dir=ltr] .md-nav--primary .md-nav__list {
+    padding-left:0px;
+}
+.md-nav__list .md-nav__link {
+    padding:4px 8px;
+}
+
+/* nav item titles */
+[data-md-color-scheme="default"] .md-nav__item--section>label>span {
+    color:#2f323a;
+}
+[data-md-color-scheme="slate"] .md-nav__item--section>label>span {
+    color:#fff;
+}
+.md-nav--primary .md-nav__list .md-nav__list {
+    padding-left:12px;
+}
+.md-nav__item {
+    margin:none;
+}
+
+.md-nav__link {
+    padding:10px 0px;
+}
+
+.md-nav--primary .md-nav__title {
+    -webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+    background: none;
+    display:none;
+}
+
+/* -----------------------------------------
+
+    TYPESET STYLING
+
+-------------------------------------------*/
+@import url(//fonts.googleapis.com/css2?family=Montserrat);
+
+html body {
+    -webkit-font-smoothing: auto;
+    -moz-osx-font-smoothing: auto;
+}
+
+.md-content__inner p {
+    font-weight: normal;
+}
+
+.md-content__inner a {
+    border-bottom: 1px solid #178fff;
+}
+
+.md-content__inner a:hover {
+    border-bottom: 2px solid #178fff;
+}
+
+.md-typeset h1, .md-typeset  h2, .md-typeset  h3, .md-typeset  h4, .md-typeset  h5, .md-typeset  h6 {
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.md-typeset h1 {
+    display: block;
+    font-size: 2em;
+    margin:0.32em 0;
+    text-transform: uppercase;
+}
+
+.md-typeset h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+}
+
+.md-typeset h3 {
+   	display: block;
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.md-typeset h4 {
+    display: block;
+    margin-top: 1.33em;
+    margin-bottom: 1.33em;
+}
+
+.md-typeset h5 {
+    display: block;
+    font-size: .83em;
+    margin-top: 1.67em;
+    margin-bottom: 1.67em;
+}
+
+.md-typeset h6 {
+    display: block;
+    font-size: .67em;
+    margin-top: 2.33em;
+    margin-bottom: 2.33em;
+}
+
+.md-typeset hr {
+    display: block;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    unicode-bidi: isolate;
+    overflow: hidden;
+}
+
+.md-typeset code {
+    border-radius: 5px;
+    padding:3px;
+}
+
+.md-typeset pre>code {
+    
+}
+
+

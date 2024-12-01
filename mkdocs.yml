@@ -1,0 +1,127 @@
+# Project information
+site_name: SimpleAF
+site_url: https://pellcorp.github.io/Simple-AF-Wiki/
+site_author: Chris van Liere
+site_description: Documentation
+
+# Repository
+repo_name: GitHub
+repo_url: https://github.com/pellcorp/Simple-AF-Wiki
+
+# Copyright
+copyright: Name Here &copy; All rights reserved
+
+# Configuration
+theme:
+  name: material
+  language: en
+  favicon: assets/images/favicon.png
+  icon:
+    logo: material/alpha-s
+  
+  font:
+    text: Robonto
+    code: Roboto Mono
+
+  palette:
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+
+  features:
+  - content.code.annotate
+  - content.code.copy
+  - content.tabs.link
+  - header.autohide
+  - annaunce.dismiss
+  - navigation.top
+  - navigation.indexes
+  - navigation.sections
+  - navigation.path
+  - navigation.footer
+  - search.highlight
+  - search.share
+  - search.suggest
+
+# Extra styling CSS/Java
+extra_css:
+    - stylesheets/extra.css
+
+# Plugins
+plugins:
+    - search
+
+# Additional Configuration
+extra:
+  generator: false
+  social:
+    - icon: simple/kofi
+      link: https://ko-fi.com/pellcorp49698
+    - icon: material/hand-coin
+      link: https://gofund.me/2033eedb
+    - icon: simple/github
+      link: https://github.com/pellcorp
+    - icon: simple/discord
+      link: https://discord.gg/tGGVn5qjgv
+
+  # Extensions
+  markdown_extensions:
+    - attr_list
+    - md_in_html
+    - meta
+    - tables
+    - def_list
+    - pymdownx.critic
+    - pymdownx.caret
+    - pymdownx.keys
+    - pymdownx.mark
+    - pymdownx.tilde
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - admonition
+    - pymdownx.details
+    - pymdownx.superfences
+    - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+    - toc:
+        title: On this page
+
+# Page tree
+nav:
+  - Intro: index.md
+  - Changelog: changelog.md
+  - Discussions: https://github.com/Guilouz/Creality-K1-Series/discussions
+  - FAQ: FAQ.md
+  - Special Thanks: specialthanks.md
+  - Installation:
+    - Firmware requirements: installation/firmware-requirements.md
+    - Creality printers:
+      - K1-Max: installation/k1-max.md
+      - K1/K1C and K1SE: installation/k1.md
+    - Probes & Mounts:
+      - Cartographer: installation/probes/cartographer.md
+      - Beacon: installation/probes/beacon.md
+      - BTT Eddy: installation/probes/btteddy.md
+      - Microprobe: installation/probes/microprobe.md
+      - BLTouch, CRTouch & 3DTouch: installation/probes/bltouch.md
+    - Configuration / Use: installation/configuse.md
+    - Troubleshooting: installation/troubleshooting.md
+  - Others:
+    - Donations: donations.md
+    - Discord: https://discord.com
