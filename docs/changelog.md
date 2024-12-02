@@ -54,35 +54,35 @@ Text that is not a quote
 
 ## Admonitions
 
-#### Basic
+### Basic
 !!! note
 
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
     nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
     massa, nec semper lorem quam in massa.
 
-#### Changing the title
+### Changing the title
 !!! note "Phasellus posuere in sem ut cursus"
 
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
     nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
     massa, nec semper lorem quam in massa.
 
-#### Removing the title
+### Removing the title
 !!! note ""
 
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
     nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
     massa, nec semper lorem quam in massa.
 
-#### Collapsible blocks
+### Collapsible blocks
 ??? note
 
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
     nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
     massa, nec semper lorem quam in massa.
 
-#### Supported types
+### Supported types
 There are different type and coloured amnonitions, for further documentation visit [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/reference/admonitions/)
 
 !!! question
@@ -112,7 +112,7 @@ There are different type and coloured amnonitions, for further documentation vis
 ## Codeblocks
 
 
-##### Adding annotations
+#### Adding annotations
 ``` yaml
 theme:
   features:
@@ -122,7 +122,7 @@ theme:
 1.  :man_raising_hand: I'm a code annotation! I can contain `code`, __formatted
     text__, images, ... basically anything that can be written in Markdown.
 
-##### Adding a title
+#### Adding a title
 ``` py title="bubble_sort.py"
 def bubble_sort(items):
     for i in range(len(items)):
@@ -131,7 +131,7 @@ def bubble_sort(items):
                 items[j], items[j + 1] = items[j + 1], items[j]
 ```
 
-##### Adding line numbers
+#### Adding line numbers
 ``` py linenums="1"
 def bubble_sort(items):
     for i in range(len(items)):
@@ -140,7 +140,7 @@ def bubble_sort(items):
                 items[j], items[j + 1] = items[j + 1], items[j]
 ```
 
-##### Highlight specefic lines
+#### Highlight specefic lines
 ``` py hl_lines="2 3"
 def bubble_sort(items):
     for i in range(len(items)):
@@ -149,10 +149,10 @@ def bubble_sort(items):
                 items[j], items[j + 1] = items[j + 1], items[j]
 ```
 
-##### Highlighting inline code blocks
+#### Highlighting inline code blocks
 The `#!python range()` function is used to generate a sequence of numbers.
 
-##### Content tabs
+#### Content tabs
 === "C"
 
     ``` c
@@ -177,14 +177,14 @@ The `#!python range()` function is used to generate a sequence of numbers.
 
 ## Data tables
 
-##### Example
+#### Example
 | Method      | Description                          |
 | ----------- | ------------------------------------ |
 | `GET`       | :material-check:     Fetch resource  |
 | `PUT`       | :material-check-all: Update resource |
 | `DELETE`    | :material-close:     Delete resource |
 
-##### Center aligned
+#### Center aligned
 | Method      | Description                          |
 | :---------: | :----------------------------------: |
 | `GET`       | :material-check:     Fetch resource  |
