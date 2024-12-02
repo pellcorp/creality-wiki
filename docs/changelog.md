@@ -1,5 +1,8 @@
 ---
 title: Changlog
+hide:
+  - toc
+  - footer
 ---
 
 # Markdown example file
@@ -82,32 +85,82 @@ Text that is not a quote
     nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
     massa, nec semper lorem quam in massa.
 
-### Supported types
-There are different type and coloured amnonitions, for further documentation visit [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/reference/admonitions/)
+## Supported types
+`note`
+!!! note
 
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+`abstract`
+!!! abstract
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+`info`
+!!! info
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+`tip`
+!!! tip
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+`success`
+!!! success
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+`question`
 !!! question
 
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
     nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
     massa, nec semper lorem quam in massa.
+`warning`
+!!! warning
 
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+`failure`
+!!! failure
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+`danger`
+!!! danger
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
+    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
+    massa, nec semper lorem quam in massa.
+`bug`
 !!! bug
 
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
     nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
     massa, nec semper lorem quam in massa.
-
+`example`
 !!! example
 
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
     nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
     massa, nec semper lorem quam in massa.
-
+`quote`
 !!! quote
 
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
     nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
     massa, nec semper lorem quam in massa.
+
+The above are default admonitions, custom ones can also be made.
+For further documentation visit [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/reference/admonitions/)
 
 ## Codeblocks
 
@@ -191,6 +244,7 @@ The `#!python range()` function is used to generate a sequence of numbers.
 | `PUT`       | :material-check-all: Update resource |
 | `DELETE`    | :material-close:     Delete resource |
 
+
 ## Footnotes
 Footnotes are a great way to add supplemental or additional information to a specific word, phrase or sentence without interrupting the flow of a document. Material for MkDocs provides the ability to define, reference and render footnotes.
 
@@ -236,7 +290,7 @@ Lorem ipsum[^1] dolor sit amet, consectetur adipiscing elit.[^2] (example of the
 
 ## Lists
 
-#### Unordered list
+### Unordered list
 - Nulla et rhoncus turpis. Mauris ultricies elementum leo. Duis efficitur
   accumsan nibh eu mattis. Vivamus tempus velit eros, porttitor placerat nibh
   lacinia sed. Aenean in finibus diam.
@@ -245,7 +299,7 @@ Lorem ipsum[^1] dolor sit amet, consectetur adipiscing elit.[^2] (example of the
     * Nam vulputate tincidunt fringilla.
     * Nullam dignissim ultrices urna non auctor.
 
-#### Ordered list
+### Ordered list
 1.  Vivamus id mi enim. Integer id turpis sapien. Ut condimentum lobortis
     sagittis. Aliquam purus tellus, faucibus eget urna at, iaculis venenatis
     nulla. Vivamus a pharetra leo.
@@ -261,7 +315,7 @@ Lorem ipsum[^1] dolor sit amet, consectetur adipiscing elit.[^2] (example of the
         2.  Ut sit amet placerat ante
         3.  Suspendisse ac eros arcu
 
-##### Defenition lists
+### Defenition lists
 `Lorem ipsum dolor sit amet`
 
 :   Sed sagittis eleifend rutrum. Donec vitae suscipit est. Nullam tempus
@@ -276,7 +330,7 @@ Lorem ipsum[^1] dolor sit amet, consectetur adipiscing elit.[^2] (example of the
     Nam vulputate tincidunt fringilla.
     Nullam dignissim ultrices urna non auctor.
 
-###### Task lists
+### Task lists
 - [x] Lorem ipsum dolor sit amet, consectetur adipiscing elit
 - [ ] Vestibulum convallis sit amet nisi a tincidunt
     * [x] In hac habitasse platea dictumst
@@ -284,7 +338,9 @@ Lorem ipsum[^1] dolor sit amet, consectetur adipiscing elit.[^2] (example of the
     * [ ] Praesent sed risus massa
 - [ ] Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque
 
-##### Grouped list
+### Grouped list
+<div class="grid" markdown>
+
 === "Unordered list"
 
     * Sed sagittis eleifend rutrum
@@ -296,3 +352,19 @@ Lorem ipsum[^1] dolor sit amet, consectetur adipiscing elit.[^2] (example of the
     1. Sed sagittis eleifend rutrum
     2. Donec vitae suscipit est
     3. Nulla tempor lobortis orci
+
+``` title="Content tabs"
+=== "Unordered list"
+
+    * Sed sagittis eleifend rutrum
+    * Donec vitae suscipit est
+    * Nulla tempor lobortis orci
+
+=== "Ordered list"
+
+    1. Sed sagittis eleifend rutrum
+    2. Donec vitae suscipit est
+    3. Nulla tempor lobortis orci
+```
+
+</div>

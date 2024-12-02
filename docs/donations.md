@@ -1,7 +1,8 @@
 ---
 title: Donations
 hide:
-    - footer
+  - toc
+  - footer
 ---
 
 Donations
