@@ -115,23 +115,7 @@ markdown_extensions:
 # Page tree
 nav:
   - Intro: index.md
-  - Changelog: changelog.md
-  - Discussions: https://github.com/Guilouz/Creality-K1-Series/discussions
+  - Markdown: changelog.md
   - FAQ: FAQ.md
-  - Special Thanks: specialthanks.md
   - Installation:
-    - Firmware requirements: installation/firmware-requirements.md
-    - Creality printers:
-      - K1-Max: installation/k1-max.md
-      - K1/K1C and K1SE: installation/k1.md
-    - Probes & Mounts:
-      - Cartographer: installation/probes/cartographer.md
-      - Beacon: installation/probes/beacon.md
-      - BTT Eddy: installation/probes/btteddy.md
-      - Microprobe: installation/probes/microprobe.md
-      - BLTouch, CRTouch & 3DTouch: installation/probes/bltouch.md
-    - Configuration / Use: installation/configuse.md
-    - Troubleshooting: installation/troubleshooting.md
-  - Others:
-    - Donations: donations.md
-    - Discord: https://discord.com
+    - Cartographer: installation/probes/cartographer.md
