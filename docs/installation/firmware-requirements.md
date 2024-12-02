@@ -5,7 +5,9 @@ icon: material/newspaper-variant-outline
 
 # Switching to Beta
 
-# CURRENTLY SWITCHING TO THE BETA CHANNEL MAY CAUSE SOFT BRICK OF YOUR PRINTER REQUIRING AN EMERGENCY FACTORY RESET.
+!!! note
+
+    CURRENTLY SWITCHING TO THE BETA CHANNEL MAY CAUSE SOFT BRICK OF YOUR PRINTER REQUIRING AN EMERGENCY FACTORY RESET.
 
 - Step 1 - change cartographer.conf
 
@@ -27,7 +29,7 @@ cd ~
 
 Now you are on the beta
 
-# Switching to Stable
+## Switching to Stable
 
 - Step 1 - change cartographer.conf
 
