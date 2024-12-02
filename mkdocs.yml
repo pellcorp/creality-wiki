@@ -24,7 +24,6 @@ theme:
     code: Roboto Mono
 
   palette:
-
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -44,18 +43,20 @@ theme:
         name: Switch to light mode
 
   features:
-  - content.code.annotate
-  - content.code.copy
-  - content.tabs.link
-  - header.autohide
-  - navigation.top
-  - navigation.indexes
-  - navigation.sections
-  - navigation.path
-  - navigation.footer
-  - search.highlight
-  - search.share
-  - search.suggest
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+    - header.autohide
+    - navigation.top
+    - navigation.indexes
+    - navigation.sections
+    - navigation.path
+    - navigation.footer
+    - search.highlight
+    - search.share
+    - search.suggest
+    - content.footnote.tooltips
+    - content.tabs.link
 
 # Extra styling CSS/Java
 extra_css:
@@ -63,7 +64,8 @@ extra_css:
 
 # Plugins
 plugins:
-    - search
+    - search:
+        lang: en
 
 # Additional Configuration
 extra:
@@ -78,24 +80,37 @@ extra:
     - icon: simple/discord
       link: https://discord.gg/tGGVn5qjgv
 
-  # Extensions
-  markdown_extensions:
-    - attr_list
-    - md_in_html
-    - tables
-    - admonition
-    - pymdownx.details
-    - pymdownx.superfences
-    - pymdownx.details
-    - pymdownx.highlight:
-        anchor_linenums: true
-        line_spans: __span
-        pygments_lang_class: true
-    - pymdownx.inlinehilite
-    - pymdownx.snippets
-    - pymdownx.superfences
-    - toc:
-        title: On this page
+# Extensions
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - md_in_html
+  - pymdownx.blocks.caption
+  - toc:
+      title: On this page
+        
+  - tables
+  - admonition
+  - footnotes
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
 
 # Page tree
 nav:

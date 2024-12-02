@@ -108,14 +108,6 @@ html {
   height: 100%;
   overflow-x: hidden;
   font-size: 125%;
-
-  @include break-from-device(screen medium) {
-    font-size: 137.5%;
-  }
-
-  @include break-from-device(screen large) {
-    font-size: 150%;
-  }
 }
 
 .md-typeset p {
