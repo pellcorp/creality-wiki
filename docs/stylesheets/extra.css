@@ -2,8 +2,8 @@
 [data-md-color-scheme="default"]{
     --md-primary-fg-color:  #1f2025;
     --md-primary-bg-color:  #fff;
-    --md-accent-fg-color:   #178fff;
-    --md-default-bg-color:  #fff;
+    --md-accent-fg-color:   #2196f3;
+    --md-default-bg-color:  #cccccc;
     --md-footer-fg-color:   #6c6b85;
     --md-footer-bg-color:   #f6f6f9;
     --md-footer-bg-color--dark: #1f2025;
@@ -17,15 +17,15 @@
 [data-md-color-scheme="slate"]{
     --md-primary-fg-color:  #0d0d0d;
     --md-primary-bg-color:  #fff;
-    --md-accent-fg-color:   #3a8def;
-    --md-default-bg-color:  #151515;
+    --md-accent-fg-color:   #2196f3;
+    --md-default-bg-color:  #262629;
     --md-footer-fg-color:   #fff;
-    --md-footer-bg-color:   #202020;
+    --md-footer-bg-color:   #1e1e20;
     --md-footer-bg-color--dark: #0d0d0d;
-    --md-typeset-color:     var(--md-default-fg-color);
+    --md-typeset-color:     #d0d0d1;
     --md-typeset-a-color:   #ffffff;
     /*--md-code-fg-color:     #fff;*/
-    --md-code-bg-color:     #292929;
+    --md-code-bg-color:     #1e1e20;
 }
 
 /* Hovering Links */
@@ -47,7 +47,7 @@
 }
 
 [data-md-color-scheme="slate"] .md-nav__link {
-    color: #a4a4a4;
+    color: #fff;
 }
 
 /* Current selected item */
@@ -58,7 +58,7 @@
 }
 
 [data-md-color-scheme="slate"] .md-nav__item--active >  .md-nav__link--active {
-    background: #202020;
+    background: #3f3f42;
     color: #fff;
     border-radius:4px;
     font-weight: bold;
@@ -124,11 +124,11 @@ html {
 }
 
 .md-content__inner a {
-    border-bottom: 1px solid #178fff;
+    border-bottom: 1px solid #2196f3;
 }
 
 .md-content__inner a:hover {
-    border-bottom: 2px solid #178fff;
+    border-bottom: 2px solid #2196f3;
 }
 
 /* HEADINGS */
