@@ -5,49 +5,61 @@ hide:
 ---
 
 
-# Simple AF: Creality K Series Alternative Firmware Wiki
+# Markdown Example
+Well, ma, we talked about this, **we're not gonna go to the lake**, the car's wrecked. George. George. This is *more serious* than I thought. Apparently your mother is amorously infatuated with you instead of your father. Yeah, who are you? __**Check out that**__ four by four.
 
-Simple test
+## The appropriate question
 
-The Simple AF Firmware is an alternative firmware designed to allow you to control your K-series printer using "Vanilla" Klipper with alternative ABL probes.
-Simple AF replaces the Creality G-Code and interface meaning you can no longer use the Creality Slicer and Creality Cloud natively.
+Hi, Marty. Stop it. Is she pretty? Alright, good-bye Einy. Oh, watch that re-entry, it's a little bumpy. Get your meat hooks off of me.
 
-<b>  WE CAN NOT BE RESPONSIBLE FOR DAMAGE TO YOUR PRINTER - INSTALLING CUSTOM FIRMWARE IS AT YOUR OWN RISK!</b>
+>George, buddy. remember that girl I introduced you to, Lorraine. What are you writing? You have this thing hooked up to the car? I'm sure that in 1985, plutonium is available at every corner drug store, but in 1955, it's a little hard to come by.
 
-## Supported Probes
-The advantage of using firmware like Simple AF is that you have full control over your printer configurations, making it easier to install any of the supported probes listed:
-<uL>
-  <li>Cartographer</li>
-  <li>Beacon (coming soon)</li>
-  <li>BTT Eddy</li>
-  <li>Microprobe</li>
-  <li>CRTouch, BLTouch, 3DTouch</li>
-</uL>
+[https://deloreanipsum.com/](https://deloreanipsum.com/)
 
-## Supported Printers
-Currently, Simple AF only works on the following K-series printers:
-<ul>
-  <li>K1</li>
-  <li>K1 Max</li>
-  <li>K1 C</li>
-  <li>K1 SE (coming soon)</li>
-  <li>K1 Max SE (coming soon)</li>
-</ul>
+___
 
-## Installation Guides 
+## Elements
 
+### Lists
 
+#### Unordered List
 
-## Support the Developers
+- Well, bring her along. This concerns her too.
+- Mom, is that you?
+- Wait a minute, what are you doing, Doc?
+- And he could sleep in my room.
 
-If you are looking for a way to support this project, I have started a fundraiser to purchase a Creality K1 Max 3D printer. The purchase of this and other 3d printers furthers my ability to test and release fixes and features for the K1-series, specifically the K1 and K1 Max.
+#### Ordered List
 
-[Gofunde Me](https://gofund.me/2033eedb)
+1. Well, bring her along. This concerns her too.
+2. Mom, is that you?
+3. Wait a minute, what are you doing, Doc?
+4. And he could sleep in my room.
 
-If you can't donate through GoFundme directly, please consider my kofi account. Thank you!
+#### Todo Lists
 
-[Kofi](https://ko-fi.com/pellcorp49698)
+- [x] Eat
+- [x] Sleep
+- [ ] Work
+- [ ] Repeat
 
+### Tables
 
-<div class="gfm-embed" data-url="https://www.gofundme.com/f/purchase-an-additional-k1-as-a-dedicated-simple-af-printer/widget/large?sharesheet=manage hero&attribution_id=sl:20130688-c9e2-4084-ad45-0811fe23f0bc"></div><script defer src="https://www.gofundme.com/static/js/embed.js"></script>
+| Item  | Amount | Price  |
+| ----- | -----: | -----: |
+| Bread | 1      | 2.00 $ |
+| Milk  | 2      | 3.00 $ |
+| Sugar | 1      | 1.00 $ |
 
+### Code 
+
+```php
+<?php
+
+function http_path()
+{
+    $host = (!empty($_SERVER['HTTPS']) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'];
+    return env('APP_URL', $host);
+}
+
+```

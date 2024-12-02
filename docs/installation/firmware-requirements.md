@@ -3,105 +3,48 @@ title: Built-in blog plugin
 icon: material/newspaper-variant-outline
 ---
 
-This guide explain how to install firmware and enable Root access.
+# Switching to Beta
 
-## Download Links
-<hr>
+# CURRENTLY SWITCHING TO THE BETA CHANNEL MAY CAUSE SOFT BRICK OF YOUR PRINTER REQUIRING AN EMERGENCY FACTORY RESET.
 
-!!! Note
-    Firmwares are official from Creality.<br />You can also install them from OTA or download them from :material-web: [Creality Cloud](https://www.crealitycloud.com/software-firmware/firmware/ender-series).
-    
-- <b><u>Ender-3 V3:</u></b>
+- Step 1 - change cartographer.conf
 
-    &nbsp;&nbsp;&nbsp;&nbsp;:material-google-drive: [1.2.3.10 (Google Drive)](https://drive.google.com/file/d/10C3l2vppEA_tmbGjGqz5hRkYXvc29V0D/view?usp=drive_link) / :material-note-text: [Changelog](https://raw.githubusercontent.com/Guilouz/Creality-Helper-Script-Wiki/main/downloads/Changelogs/Ender-3V3/Changelog_1.2.3.10.txt)
-    
-    &nbsp;&nbsp;&nbsp;&nbsp;:material-google-drive: [1.2.3.21 (Google Drive)](https://drive.google.com/file/d/1M-mxhIKSw2jmhW5YX_K6QvIhRx0EJ6UO/view?usp=drive_link) / :material-note-text: [Changelog](https://raw.githubusercontent.com/Guilouz/Creality-Helper-Script-Wiki/main/downloads/Changelogs/Ender-3V3/Changelog_1.2.3.21.txt)
+Change the channel from `stable` to `dev`
+Add or modify the `primary_branch` attribute and set it to `beta`
 
-- <b><u>Ender-3 V3 Plus:</u></b>
+![image](https://github.com/user-attachments/assets/ecc374f2-5360-424d-a0b0-4221f98f236e)
 
-    &nbsp;&nbsp;&nbsp;&nbsp;:material-google-drive: [1.2.3.8 (Google Drive)](https://drive.google.com/file/d/12tCO7zBVLqz-Wrbc7WgQnIuNbYdtdhdl/view?usp=drive_link) / :material-note-text: [Changelog](https://raw.githubusercontent.com/Guilouz/Creality-Helper-Script-Wiki/main/downloads/Changelogs/Ender-3V3-Plus/Changelog_1.2.3.8.txt)
-    
-    &nbsp;&nbsp;&nbsp;&nbsp;:material-google-drive: [1.2.3.21 (Google Drive)](https://drive.google.com/file/d/10EOuyyhm4bGDt1yL7Vga5ZkZlgIlJsb0/view?usp=drive_link) / :material-note-text: [Changelog](https://raw.githubusercontent.com/Guilouz/Creality-Helper-Script-Wiki/main/downloads/Changelogs/Ender-3V3-Plus/Changelog_1.2.3.21.txt)
+- Step 2 - login to your printer and run these commands:
 
+```
+cd /usr/data/cartographer-klipper
+git fetch
+git switch beta
+cd ~
+/etc/init.d/S56moonraker_service restart
+/etc/init.d/S55klipper_service restart
+```
 
-## Installation & Update
-<hr>
+Now you are on the beta
 
-- Follow this <a href="../reset-factory-settings">Reset Factory Settings</a> section to restore default settings before Install/Update.
+# Switching to Stable
 
-- When it's done, insert USB drive in your computer.
+- Step 1 - change cartographer.conf
 
-- You need to format it in FAT32 with 4096 allocation size (or exFAT on some USB drives).
+Change the channel from `dev` to `stable`
+Add or modify the `primary_branch` attribute and set it to `master`
 
-- Copy `.img` firmware file to the root of your USB drive and remove it from your computer.
+![image](https://github.com/user-attachments/assets/93d83c70-d992-4ef1-bb57-497684cd96db)
 
-- Turn on the printer.
+- Step 2 - login to your printer and run these commands:
 
-- When you are on home screen, plug USB drive on the front of the printer.
+```
+cd /usr/data/cartographer-klipper
+git fetch
+git switch master
+cd ~
+/etc/init.d/S56moonraker_service restart
+/etc/init.d/S55klipper_service restart
+```
 
-- A popup should appear indicating a new available update.
-
-- Press `Upgrade` and wait during the update process.
-
-- When it's done, the printer restarts.
-
-- Once you are on the home screen, you can remove the USB drive.
-
-- Perfom a new Self Check on the new firmware by going to `Settings` → `Self-check`.
-
-    !!! Warning
-        **After a factory reset, all features already been installed with <a href="../../helper-script/helper-script-installation">Creality Helper Script</a>  must be reinstalled.**
-
-
-## Skip the Startup Self-Check
-<hr>
-
-This can be useful if you have made modifications to the printer (BLTouch etc...) and you can no longer perform the Startup Self Check.
-
-- Download and unzip this file: :material-download: [debugmode_JumpSelftest.zip](https://github.com/Guilouz/Creality-Helper-Script-Wiki/raw/main/downloads/Files/debugmode_JumpSelftest.zip)
-
-- Insert USB drive in your computer.
-
-- Copy the `debugmode_JumpSelftest` file to the root of your USB drive and remove it from your computer.
-
-- Plug USB drive on the front of the printer and turn it on.
-
-- At startup, Self-Check will be skipped.
-
-- If you leave the USB drive inserted the Startup Self-Check will still be ignored even after reboot.
-
-- If you no longer want to have the USB drive inserted (until the next factory reset), connect to SSH (Guide is available <a href="../ssh-connection">here</a>) and enter this command:
-
-    ```
-    sed -i 's/"self_test_sw":1/"self_test_sw":0/' /usr/data/creality/userdata/config/system_config.json
-    ```
-
-
-## Enable Root Access
-<hr>
-
-!!! Note
-    **Root access must be re-enabled if you restore the printer to factory settings.**
-
-- On the screen UI, go to `Settings` → `Root account information`:
-
-    <img width="600" src="../../assets/img/Install-Rooted-Firmware/01.png">
-
-- Carefully review the disclaimer, check the agreement box, wait 30 seconds and click on `OK` button:
-
-    <img width="600" src="../../assets/img/Install-Rooted-Firmware/02.png">
-
-- Root access is now enabled, you can click on `OK` button:
-
-    <img width="600" src="../../assets/img/Install-Rooted-Firmware/04.png">
-
-- You can now connect to SSH (Guide is available <a href="../ssh-connection">here</a>) with:
-  
-    * User: `root`
-    * Password: `creality_ender3v3`
-
-<br />
-
-**If you like my work, don't hesitate to support me by paying me a 🍺 or a ☕. Thank you 🙂**
-
-<a href="https://ko-fi.com/guilouz" target="_blank"><img width="350" src="../../assets/img/home/Ko-fi.png"></a>
+Now you are on the stable
