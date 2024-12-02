@@ -7,7 +7,7 @@
     --md-footer-fg-color:   #6c6b85;
     --md-footer-bg-color:   #f6f6f9;
     --md-footer-bg-color--dark: #1f2025;
-    --md-typeset-color:     #000;
+    --md-typeset-color:     var(--md-default-fg-color);
     --md-typeset-a-color:   #000;
     /*--md-code-fg-color:     #fff;*/
     --md-code-bg-color:     #e3e3e5;
@@ -22,7 +22,7 @@
     --md-footer-fg-color:   #fff;
     --md-footer-bg-color:   #202020;
     --md-footer-bg-color--dark: #121212;
-    --md-typeset-color:     #fff;
+    --md-typeset-color:     var(--md-default-fg-color);
     --md-typeset-a-color:   #fff;
     /*--md-code-fg-color:     #fff;*/
     --md-code-bg-color:     #292929;
@@ -103,15 +103,24 @@
     TYPESET STYLING
 
 -------------------------------------------*/
-@import url(//fonts.googleapis.com/css2?family=Montserrat);
 
-html body {
-    -webkit-font-smoothing: auto;
-    -moz-osx-font-smoothing: auto;
+html {
+  height: 100%;
+  overflow-x: hidden;
+  font-size: 125%;
+
+  @include break-from-device(screen medium) {
+    font-size: 137.5%;
+  }
+
+  @include break-from-device(screen large) {
+    font-size: 150%;
+  }
 }
 
-.md-content__inner p {
-    font-weight: normal;
+.md-typeset p {
+    margin-top:0;
+    margin-bottom:16px;
 }
 
 .md-content__inner a {
@@ -122,53 +131,61 @@ html body {
     border-bottom: 2px solid #178fff;
 }
 
-.md-typeset h1, .md-typeset  h2, .md-typeset  h3, .md-typeset  h4, .md-typeset  h5, .md-typeset  h6 {
-    margin-left: 0;
-    margin-right: 0;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
+/* HEADINGS */
+
+[data-md-color-scheme="default"] .md-typeset  h2,
+[data-md-color-scheme="default"] .md-typeset  h3,
+[data-md-color-scheme="default"] .md-typeset  h4,
+[data-md-color-scheme="default"] .md-typeset  h5,
+[data-md-color-scheme="default"] .md-typeset  h6 {
+    margin:24px 0 16px;
+    color: #000;
+}
+
+[data-md-color-scheme="slate"] .md-typeset  h2,
+[data-md-color-scheme="slate"] .md-typeset  h3,
+[data-md-color-scheme="slate"] .md-typeset  h4,
+[data-md-color-scheme="slate"] .md-typeset  h5,
+[data-md-color-scheme="slate"] .md-typeset  h6 {
+    margin:24px 0 16px;
+    color: #fff;
 }
 
 .md-typeset h1 {
-    display: block;
+    border-bottom:var(--md-default-fg-color--lightest) 1px solid;
+    color: var(--md-accent-fg-color);
+    padding-bottom: 10px;
+    margin:0 0 16px;
     font-size: 2em;
-    margin:0.32em 0;
-    text-transform: uppercase;
 }
 
 .md-typeset h2 {
-    display: block;
+    border-bottom:var(--md-default-fg-color--lightest) 1px solid;
+    padding-bottom: 7px;
     font-size: 1.5em;
-    margin-top: 0.83em;
-    margin-bottom: 0.83em;
 }
 
 .md-typeset h3 {
-   	display: block;
-    font-size: 1.17em;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    padding-bottom: 0px;
+    font-size: 1.25em;
 }
 
 .md-typeset h4 {
-    display: block;
-    margin-top: 1.33em;
-    margin-bottom: 1.33em;
+    padding-bottom: 0px;
+    font-size: 1em;
 }
 
 .md-typeset h5 {
-    display: block;
-    font-size: .83em;
-    margin-top: 1.67em;
-    margin-bottom: 1.67em;
+    padding-bottom: 0px;
+    font-size: 0.875;
+    text-transform: lowercase;
 }
 
 .md-typeset h6 {
-    display: block;
-    font-size: .67em;
-    margin-top: 2.33em;
-    margin-bottom: 2.33em;
+    padding-bottom: 0px;
+    font-size: 0.85em;
 }
+
 
 .md-typeset hr {
     display: block;
@@ -178,6 +195,7 @@ html body {
     margin-inline-end: auto;
     unicode-bidi: isolate;
     overflow: hidden;
+    border-bottom:var(--md-default-fg-color--lightest) 1px solid;
 }
 
 .md-typeset code {
@@ -185,8 +203,8 @@ html body {
     padding:3px;
 }
 
-.md-typeset pre>code {
+/*.md-typeset pre>code {
     
-}
+}*/
 
 

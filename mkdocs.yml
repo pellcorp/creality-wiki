@@ -9,7 +9,7 @@ repo_name: GitHub
 repo_url: https://github.com/pellcorp/Simple-AF-Wiki
 
 # Copyright
-copyright: Name Here &copy; All rights reserved
+copyright: SimpleAF &copy; All rights reserved
 
 # Configuration
 theme:
@@ -48,7 +48,6 @@ theme:
   - content.code.copy
   - content.tabs.link
   - header.autohide
-  - annaunce.dismiss
   - navigation.top
   - navigation.indexes
   - navigation.sections
@@ -83,22 +82,18 @@ extra:
   markdown_extensions:
     - attr_list
     - md_in_html
-    - meta
     - tables
-    - def_list
-    - pymdownx.critic
-    - pymdownx.caret
-    - pymdownx.keys
-    - pymdownx.mark
-    - pymdownx.tilde
-    - pymdownx.inlinehilite
-    - pymdownx.snippets
     - admonition
     - pymdownx.details
     - pymdownx.superfences
-    - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+    - pymdownx.details
+    - pymdownx.highlight:
+        anchor_linenums: true
+        line_spans: __span
+        pygments_lang_class: true
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - pymdownx.superfences
     - toc:
         title: On this page
 

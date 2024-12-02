@@ -10,6 +10,14 @@ icon: fontawesome/solid/sliders
 ##### h5 Heading
 ###### h6 Heading
 
+!!! Warning
+    **FOR <u>K1 SERIES</u>: ONLY USE THIS SCRIPT WITH FIRMWARE 1.3.3.5 AND ABOVE!<br />
+    FOR <u>KE SERIES</u>: ONLY USE THIS SCRIPT WITH FIRMWARE 1.1.0.12 AND ABOVE!<br />
+    FOR <u>ENDER-3 V3 SERIES</u>: ONLY USE THIS SCRIPT WITH FIRMWARE 1.2.1.3 AND ABOVE!**
+
+!!! Note
+    **Please restore firmware to factory settings before using script to avoid issue.**<br />
+    See: <a href="../../firmwares/reset-factory-settings">Reset Factory Settings</a> section.
 
 ## Horizontal Rules
 
@@ -31,6 +39,12 @@ test.. test... test..... test?..... test!....
 !!!!!! ???? ,,  -- ---
 
 "Smartypants, double quotes" and 'single quotes'
+
+Lorem ipsum dolor sit amet, (1) consectetur adipiscing elit.
+{ .annotate }
+
+1.  :man_raising_hand: I'm an annotation! I can contain `code`, __formatted
+    text__, images, ... basically anything that can be expressed in Markdown.
 
 
 ## Emphasis
@@ -109,6 +123,34 @@ var foo = function (bar) {
 
 console.log(foo(5));
 ```
+
+``` py title="bubble_sort.py"
+def bubble_sort(items):
+    for i in range(len(items)):
+        for j in range(len(items) - 1 - i):
+            if items[j] > items[j + 1]:
+                items[j], items[j + 1] = items[j + 1], items[j]
+```
+
+
+``` yaml
+theme:
+  features:
+    - content.code.annotate # (1)
+```
+
+1.  :man_raising_hand: I'm a code annotation! I can contain `code`, __formatted
+    text__, images, ... basically anything that can be written in Markdown.
+
+``` py linenums="1"
+def bubble_sort(items):
+    for i in range(len(items)):
+        for j in range(len(items) - 1 - i):
+            if items[j] > items[j + 1]:
+                items[j], items[j + 1] = items[j + 1], items[j]
+```
+
+The `#!python range()` function is used to generate a sequence of numbers.
 
 ## Tables
 
