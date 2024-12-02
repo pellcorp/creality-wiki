@@ -112,7 +112,7 @@ There are different type and coloured amnonitions, for further documentation vis
 ## Codeblocks
 
 
-#### Adding annotations
+### Adding annotations
 ``` yaml
 theme:
   features:
@@ -122,7 +122,7 @@ theme:
 1.  :man_raising_hand: I'm a code annotation! I can contain `code`, __formatted
     text__, images, ... basically anything that can be written in Markdown.
 
-#### Adding a title
+### Adding a title
 ``` py title="bubble_sort.py"
 def bubble_sort(items):
     for i in range(len(items)):
@@ -131,7 +131,7 @@ def bubble_sort(items):
                 items[j], items[j + 1] = items[j + 1], items[j]
 ```
 
-#### Adding line numbers
+### Adding line numbers
 ``` py linenums="1"
 def bubble_sort(items):
     for i in range(len(items)):
@@ -140,7 +140,7 @@ def bubble_sort(items):
                 items[j], items[j + 1] = items[j + 1], items[j]
 ```
 
-#### Highlight specefic lines
+### Highlight specefic lines
 ``` py hl_lines="2 3"
 def bubble_sort(items):
     for i in range(len(items)):
@@ -149,10 +149,10 @@ def bubble_sort(items):
                 items[j], items[j + 1] = items[j + 1], items[j]
 ```
 
-#### Highlighting inline code blocks
+### Highlighting inline code blocks
 The `#!python range()` function is used to generate a sequence of numbers.
 
-#### Content tabs
+### Content tabs
 === "C"
 
     ``` c
@@ -177,14 +177,14 @@ The `#!python range()` function is used to generate a sequence of numbers.
 
 ## Data tables
 
-#### Example
+### Example
 | Method      | Description                          |
 | ----------- | ------------------------------------ |
 | `GET`       | :material-check:     Fetch resource  |
 | `PUT`       | :material-check-all: Update resource |
 | `DELETE`    | :material-close:     Delete resource |
 
-#### Center aligned
+### Center aligned
 | Method      | Description                          |
 | :---------: | :----------------------------------: |
 | `GET`       | :material-check:     Fetch resource  |
@@ -236,7 +236,7 @@ Lorem ipsum[^1] dolor sit amet, consectetur adipiscing elit.[^2] (example of the
 
 ## Lists
 
-##### Unordered list
+#### Unordered list
 - Nulla et rhoncus turpis. Mauris ultricies elementum leo. Duis efficitur
   accumsan nibh eu mattis. Vivamus tempus velit eros, porttitor placerat nibh
   lacinia sed. Aenean in finibus diam.
@@ -245,7 +245,7 @@ Lorem ipsum[^1] dolor sit amet, consectetur adipiscing elit.[^2] (example of the
     * Nam vulputate tincidunt fringilla.
     * Nullam dignissim ultrices urna non auctor.
 
-##### Ordered list
+#### Ordered list
 1.  Vivamus id mi enim. Integer id turpis sapien. Ut condimentum lobortis
     sagittis. Aliquam purus tellus, faucibus eget urna at, iaculis venenatis
     nulla. Vivamus a pharetra leo.
@@ -272,11 +272,11 @@ Lorem ipsum[^1] dolor sit amet, consectetur adipiscing elit.[^2] (example of the
 :   Aliquam metus eros, pretium sed nulla venenatis, faucibus auctor ex. Proin
     ut eros sed sapien ullamcorper consequat. Nunc ligula ante.
 
-    Duis mollis est eget nibh volutpat, fermentum aliquet dui mollis.
+:    Duis mollis est eget nibh volutpat, fermentum aliquet dui mollis.
     Nam vulputate tincidunt fringilla.
     Nullam dignissim ultrices urna non auctor.
 
-##### Task lists
+###### Task lists
 - [x] Lorem ipsum dolor sit amet, consectetur adipiscing elit
 - [ ] Vestibulum convallis sit amet nisi a tincidunt
     * [x] In hac habitasse platea dictumst
