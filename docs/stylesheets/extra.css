@@ -15,13 +15,13 @@
 
 /* Dark mode */
 [data-md-color-scheme="slate"]{
-    --md-primary-fg-color:  #121212;
+    --md-primary-fg-color:  #0d0d0d;
     --md-primary-bg-color:  #fff;
     --md-accent-fg-color:   #3a8def;
     --md-default-bg-color:  #151515;
     --md-footer-fg-color:   #fff;
     --md-footer-bg-color:   #202020;
-    --md-footer-bg-color--dark: #121212;
+    --md-footer-bg-color--dark: #0d0d0d;
     --md-typeset-color:     var(--md-default-fg-color);
     --md-typeset-a-color:   #fff;
     /*--md-code-fg-color:     #fff;*/
