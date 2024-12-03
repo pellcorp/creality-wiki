@@ -16,8 +16,7 @@ theme:
   name: material
   language: en
   favicon: assets/images/favicon.png
-  icon:
-    logo: material/alpha-s
+  logo: assets/logo.png
   
   font:
     text: Robonto

@@ -5,7 +5,7 @@ hide:
 ---
 
 
-# Example of a H1 heading | Making mkdocs tables look like Github markdown tables <small>Small variable</small>
+<h1 id="homepage">The simplest things are often the truest.</h1>
 Well, ma, we talked about this, **we're not gonna go to the lake**, the car's wrecked. George. George. This is *more serious* than I thought. Apparently your mother is amorously infatuated with you instead of your father. Yeah, who are you? __**Check out that**__ four by four.
 
 ## Example of a H2 heading <small>Small variable</small>
