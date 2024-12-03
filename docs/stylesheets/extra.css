@@ -2,7 +2,7 @@
 Google fonts
 --- */
 
-@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Encode+Sans:wght@100..900&display=swap');
 
 :root {
     --md-admonition-note-color:     #448aff;
@@ -174,44 +174,58 @@ html {
     color:white;
 }
 
-
-.md-typeset h1,.md-typeset  h2,.md-typeset  h3,.md-typeset  h4,.md-typeset  h5,.md-typeset  h6 {
+.md-typeset h1, .md-typeset  h2,.md-typeset  h3 {
+    font-family: "Encode Sans", serif;
     overflow-wrap: break-word;
     font-weight: 300;
     letter-spacing: -.01em;
     color: var(--md-typeset-color);
-    font-family: Asap Condensed;
+    text-rendering: optimizeLegibility;
+    & small {
+        font-size:.7em;
+    }
+}
+
+.md-typeset  h4,.md-typeset  h5,.md-typeset  h6 {
+    font-family: "Asap Condensed", sans-serif;
+    overflow-wrap: break-word;
+    letter-spacing: -.01em;
+    color: var(--md-typeset-color);
+    text-rendering: optimizeLegibility;
 }
 
 .md-typeset h1 {
     color:  var(--md-accent-fg-color);
     margin:0 0 2rem;
-    font-size: 2.25rem;
+    font-size: 2.05rem;
     line-height: 1.3;
+    font-weight: 500;
 }
 
 .md-typeset h2 {
-    margin: 2.5rem 0 .64rem;
+    margin: 44px 0 17.6px;
     font-size: 1.5rem;
     line-height: 1.4;
+    font-weight: 500;
 }
 
 .md-typeset h3 {
     font-size: 1.15rem;
     line-height: 1.5;
-    margin: 2rem 0 .8rem;  
+    margin: 17.6px 0 17.6px;
+    font-weight: 300; 
 }
 
 .md-typeset h4 {
     font-size: .95rem;
     margin: 1rem 0;
+    font-weight: 400;
 }
 
 .md-typeset h5 {
     font-size: .8rem;
     text-transform:none;
-    font-weight: 200;
-    text-decoration: underline;
+    font-weight: 400;
 }
 
 
@@ -231,6 +245,38 @@ html {
     padding:3px;
 }
 
+th, td {
+    border: 1px solid var(--md-typeset-table-color);
+    border-spacing: 0;
+    border-bottom: none;
+    border-left: none;
+    border-top: none;
+}
+
+thead tr {
+    background-color: var(--md-typeset-table-color--light);
+}
+
+.md-typeset__table {
+    line-height: 1;
+}
+
+.md-typeset__table table:not([class]) {
+    font-size: .74rem;
+    border-right: none;
+}
+
+.md-typeset__table table:not([class]) td,
+.md-typeset__table table:not([class]) th {
+    padding: .8em;
+}
+
+/* Table */
+.md-typeset table:not([class]) {
+    border-radius: 5px;
+  }
+
+
 /* Middle Collumn Width */
 .md-content {
 
@@ -238,5 +284,5 @@ html {
 
 /* Max grid width */
 .md-grid {
-    max-width:66rem; /* Default 61rem */
+    max-width:61rem; /* Default 61rem */
 }

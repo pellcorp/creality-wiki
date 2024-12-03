@@ -245,6 +245,26 @@ The `#!python range()` function is used to generate a sequence of numbers.
 | `DELETE`    | :material-close:     Delete resource |
 
 
+### More tabs
+|File                   |Section            |Key            |Value                  |
+|-----------------------|-------------------|---------------|-----------------------|
+|`printer.cfg`          |stepper_y          |position_max   |226 (K1) or 306 (K1M)  |
+|`cartotouch.cfg`       |scanner            |x_offset       |-16.0                  |
+|                       |                   |y_offset       |0.0                    |
+|`cartographer-k1.cfg`  |bed_mesh           |mesh_min       |10,10                  |
+|                       |                   |mesh_max       |210,215                |
+|                       |screws_tilt_adjust |screw1         |42,20                  |
+|                       |                   |screw2         |211,20                 |
+|                       |                   |screw3         |211,190                |
+|                       |                   |screw4         |42,190                 |
+|`cartographer-k1m.cfg` |bed_mesh|mesh_min  |10,10          |                       |
+|`cartographer-k1m.cfg` |                   |mesh_max       |290,280                |
+|                       |screws_tilt_adjust |screw1         |35,23                  |
+|                       |                   |screw2         |294,23                 |
+|                       |                   |screw3         |264,272                |
+|                       |                   |screw4         |64,272                 |
+
+
 ## Footnotes
 Footnotes are a great way to add supplemental or additional information to a specific word, phrase or sentence without interrupting the flow of a document. Material for MkDocs provides the ability to define, reference and render footnotes.
 
