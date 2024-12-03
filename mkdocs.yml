@@ -15,7 +15,7 @@ copyright: SimpleAF &copy; All rights reserved
 theme:
   name: material
   language: en
-  favicon: assets/images/favicon.png
+  favicon: assets/logo.svg
   logo: assets/logo.png
   
   font:
