@@ -1,0 +1,2115 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation">
+      
+      
+        <meta name="author" content="Chris van Liere">
+      
+      
+        <link rel="canonical" href="https://pellcorp.github.io/Simple-AF-Wiki/installation/probes/cartographer/">
+      
+      
+        <link rel="prev" href="../../../FAQ/">
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.47">
+    
+    
+      
+        <title>Cartographer Probe - SimpleAF</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Robonto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Robonto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#cartographer" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="SimpleAF" class="md-header__button md-logo" aria-label="SimpleAF" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h2v2H9v2h4a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-2V9h4V7z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SimpleAF
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Cartographer Probe
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/pellcorp/Simple-AF-Wiki" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="SimpleAF" class="md-nav__button md-logo" aria-label="SimpleAF" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h2v2H9v2h4a2 2 0 0 0 2-2v-2a2 2 0 0 0-2-2h-2V9h4V7z"/></svg>
+
+    </a>
+    SimpleAF
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/pellcorp/Simple-AF-Wiki" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../changelog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Markdown
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../FAQ/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Installation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Installation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Cartographer
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Cartographer
+  </span>
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#donations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Donations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-can-i-get-help" class="md-nav__link">
+    <span class="md-ellipsis">
+      Where can I get help?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Where can I get help?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#thanks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Thanks
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#post-installation-changes-for-rear-mounted-cartographer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Post Installation Changes for rear mounted cartographer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#firmware-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Firmware requirements
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#slicer-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Slicer Settings
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Slicer Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#machine-start-g-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Machine start G-code
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#machine-end-g-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Machine end G-code
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cartographer-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cartographer Model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#probe-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Probe Installation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Probe Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#k1m-vs-k1k1ck1se" class="md-nav__link">
+    <span class="md-ellipsis">
+      K1M vs K1/K1C/K1SE
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#default-side-mount" class="md-nav__link">
+    <span class="md-ellipsis">
+      Default Side Mount
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#d3vil-design-mount" class="md-nav__link">
+    <span class="md-ellipsis">
+      D3vil Design Mount
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="D3vil Design Mount">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cable-bracket" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cable Bracket
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#booty-gantry-mount" class="md-nav__link">
+    <span class="md-ellipsis">
+      Booty Gantry Mount
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cartographer-firmware" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cartographer Firmware
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#factory-reset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Factory Reset
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clone-the-repo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clone the Repo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#config-overrides" class="md-nav__link">
+    <span class="md-ellipsis">
+      Config Overrides
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-the-installer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run the installer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#post-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Post Installation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Post Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mcu-firmware-updates-are-pending" class="md-nav__link">
+    <span class="md-ellipsis">
+      MCU Firmware updates are pending
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verify-usb-key" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verify USB Key
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#timer-too-close-and-microsteps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Timer too close and microsteps
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#calibration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Calibration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Calibration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#axis-twist-compensation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Axis Twist Compensation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#first-print" class="md-nav__link">
+    <span class="md-ellipsis">
+      First Print
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tuning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tuning
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tuning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quick-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick Start
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pid-tuning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pid Tuning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#input-shaping" class="md-nav__link">
+    <span class="md-ellipsis">
+      Input Shaping
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-calibrations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Other Calibrations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Other Calibrations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scan-calibration-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scan Calibration Method
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#octoeverywhere-companion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Octoeverywhere Companion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moonraker-timelapse" class="md-nav__link">
+    <span class="md-ellipsis">
+      Moonraker Timelapse
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuring-timezone" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuring Timezone
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#updating" class="md-nav__link">
+    <span class="md-ellipsis">
+      Updating
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reinstalling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reinstalling
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#emergency-factory-reset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Emergency Factory Reset
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#donations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Donations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-can-i-get-help" class="md-nav__link">
+    <span class="md-ellipsis">
+      Where can I get help?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Where can I get help?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#thanks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Thanks
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#post-installation-changes-for-rear-mounted-cartographer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Post Installation Changes for rear mounted cartographer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#firmware-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Firmware requirements
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#slicer-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Slicer Settings
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Slicer Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#machine-start-g-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Machine start G-code
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#machine-end-g-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Machine end G-code
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cartographer-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cartographer Model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#probe-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Probe Installation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Probe Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#k1m-vs-k1k1ck1se" class="md-nav__link">
+    <span class="md-ellipsis">
+      K1M vs K1/K1C/K1SE
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#default-side-mount" class="md-nav__link">
+    <span class="md-ellipsis">
+      Default Side Mount
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#d3vil-design-mount" class="md-nav__link">
+    <span class="md-ellipsis">
+      D3vil Design Mount
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="D3vil Design Mount">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cable-bracket" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cable Bracket
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#booty-gantry-mount" class="md-nav__link">
+    <span class="md-ellipsis">
+      Booty Gantry Mount
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cartographer-firmware" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cartographer Firmware
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#factory-reset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Factory Reset
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clone-the-repo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clone the Repo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#config-overrides" class="md-nav__link">
+    <span class="md-ellipsis">
+      Config Overrides
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-the-installer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run the installer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#post-installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Post Installation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Post Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mcu-firmware-updates-are-pending" class="md-nav__link">
+    <span class="md-ellipsis">
+      MCU Firmware updates are pending
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verify-usb-key" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verify USB Key
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Troubleshooting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#timer-too-close-and-microsteps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Timer too close and microsteps
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#calibration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Calibration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Calibration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#axis-twist-compensation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Axis Twist Compensation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#first-print" class="md-nav__link">
+    <span class="md-ellipsis">
+      First Print
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tuning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tuning
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tuning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quick-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick Start
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pid-tuning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pid Tuning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#input-shaping" class="md-nav__link">
+    <span class="md-ellipsis">
+      Input Shaping
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-calibrations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Other Calibrations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Other Calibrations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#scan-calibration-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scan Calibration Method
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#octoeverywhere-companion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Octoeverywhere Companion
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moonraker-timelapse" class="md-nav__link">
+    <span class="md-ellipsis">
+      Moonraker Timelapse
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuring-timezone" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuring Timezone
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#updating" class="md-nav__link">
+    <span class="md-ellipsis">
+      Updating
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reinstalling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reinstalling
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#emergency-factory-reset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Emergency Factory Reset
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="cartographer">Cartographer</h1>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p><strong>I am not responsible for damage to ytour printer. - Installing custom firmware is a risk!</strong></p>
+</div>
+<h3 id="donations">Donations</h3>
+<p>If you are looking for a way to support the project, and its entirely optional, this is my preferred approach. I am conducting a fundraiser to purchase a K1M printer, just so I can push out fixes and new features a bit faster, but also specifically test the K1M as well as the K1.</p>
+<p>If you can't donate via go fund me directly, I have also added a kofi account.</p>
+<p><a href="https://gofund.me/2033eedb">Go fund</a></p>
+<p><a href="https://ko-fi.com/pellcorp49698">Ko-fi</a></p>
+<h2 id="where-can-i-get-help">Where can I get help?</h2>
+<p>Come on over to the pellcorp discord server, here is the <a href="https://discord.gg/2uGDzyJ3WX">invite</a></p>
+<p>The <code>#simple-af-carto</code> channel has been setup for anyone wanting support for cartographer.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<h3 id="thanks">Thanks</h3>
+<p>Thanks to Richard from https://cartographer3d.com and Zarboz from https://wattskraken.xyz/ for donating Cartographers to the Simple AF project to add support and continue to support the cartographer.</p>
+</div>
+<h2 id="post-installation-changes-for-rear-mounted-cartographer">Post Installation Changes for rear mounted cartographer</h2>
+<p>Please note if you are not using <code>ZeroDotCmd</code> side mount you must make post installation config changes to cartotouch.cfg and cartographer-k1.cfg or cartographer-k1m.cfg before homing your printer or performing a bed mesh!  See <a href="#probe-installation">probe installation</a> for more details.</p>
+<h2 id="firmware-requirements">Firmware requirements</h2>
+<p>This guide assumes you have a K1, K1C or K1 Max and you are running stock creality firmware 1.3.3.5 or higher, or alternately you are using  <a href="https://github.com/pellcorp/creality/wiki/Prerooted-K1-Firmware">my prerooted firmware</a>.   Any other pre-rooted firmware is explicitly not supported and the installer.sh will validate this and refuse to proceed if you try to use it on different firmware.</p>
+<h2 id="slicer-settings">Slicer Settings</h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If you have used a cartographer with k1-klipper, please note that the <code>PRINT_START</code> macro specified in their docs <strong>is not supported</strong> by this project.   You <strong>must</strong> change your Slicer Start Print Machine G-Code (see next)</p>
+</div>
+<p>There is an assumption that you are using a slicer like OrcaSlicer and Machine G-code like:</p>
+<p><img alt="image" src="https://github.com/user-attachments/assets/94a54935-6a30-411c-8b8c-3b54b4e9d3bc" /></p>
+<h4 id="machine-start-g-code">Machine start G-code</h4>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>M104 S0 ; Stops OrcaSlicer from sending temp waits separately
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>M140 S0
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>START_PRINT EXTRUDER_TEMP=[nozzle_temperature_initial_layer] BED_TEMP=[bed_temperature_initial_layer_single]
+</span></code></pre></div>
+<h4 id="machine-end-g-code">Machine end G-code</h4>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>END_PRINT
+</span></code></pre></div>
+<h2 id="cartographer-model">Cartographer Model</h2>
+<p>If you want to select a particular <a href="https://docs.cartographer3d.com/cartographer-probe/fine-tuning/cartographer-models">cartographer model</a> other than the default you can pass in an additional <code>START_PRINT</code> parameter:</p>
+<p><img alt="image" src="https://github.com/user-attachments/assets/7bb0072f-17ef-4ef3-8463-238e7fbdf7d9" /></p>
+<p>You can either hard code it to a particular model, like <code>CARTOGRAPHER_MODEL=mymodel</code> or you can specify a model based on orca slicer variables, such as <code>CARTOGRAPHER_MODEL="[curr_bed_type] - [filament_type]"</code>, but you have to make sure you have all the possible models
+defined for each of the bed type and filament type combinations.</p>
+<h2 id="probe-installation">Probe Installation</h2>
+<h3 id="k1m-vs-k1k1ck1se">K1M vs K1/K1C/K1SE</h3>
+<p>On a K1M you can use the lidar cable either directly by repinning it, or via the pass through lidar port on the toolhead.  However you cannot use the lidar port on the toolhead for K1, K1C or K1SE.   The reason this does not work is because for Lidar on the K1M creality actually routes a completely separate USB cable from the mainboard.</p>
+<p>TODO - provide more details</p>
+<h3 id="default-side-mount">Default Side Mount</h3>
+<p>The configuration assumes you are using this mount from ZeroDotCmd: https://www.printables.com/model/1037606-cartographer-3d-right-angle-k1-series-mount which mounts where the lidar normally goes, and you can skip axis twist calibration as its not required.   <strong>This mount requires the right angle cartographer, not the flat pack!</strong></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Make sure to use a flathead/flush screw heads so they don't protrude towards the bed. It is recommended to snip the soldered pins sticking through the coil plate so they are closer to the coil plate.</p>
+</div>
+<details>
+<summary>Configuration Changes Required</summary>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The following configuration changes are used for this mount, but they are also the defaults so if you have this mount you should not need to change anything.   Please note that I do not have a K1M printer, so especially for screw tilt adjust these are guesses.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Section</th>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>printer.cfg</td>
+<td>stepper_y</td>
+<td>position_max</td>
+<td>226 (K1) or 306 (K1M)</td>
+</tr>
+<tr>
+<td>cartotouch.cfg</td>
+<td>scanner</td>
+<td>x_offset</td>
+<td>-16.0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>y_offset</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td>cartographer-k1.cfg</td>
+<td>bed_mesh</td>
+<td>mesh_min</td>
+<td>10,10</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>mesh_max</td>
+<td>210,215</td>
+</tr>
+<tr>
+<td></td>
+<td>screws_tilt_adjust</td>
+<td>screw1</td>
+<td>42,20</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>screw2</td>
+<td>211,20</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>screw3</td>
+<td>211,190</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>screw4</td>
+<td>42,190</td>
+</tr>
+<tr>
+<td>cartographer-k1m.cfg</td>
+<td>bed_mesh</td>
+<td>mesh_min</td>
+<td>10,10</td>
+</tr>
+<tr>
+<td>cartographer-k1m.cfg</td>
+<td></td>
+<td>mesh_max</td>
+<td>290,280</td>
+</tr>
+<tr>
+<td></td>
+<td>screws_tilt_adjust</td>
+<td>screw1</td>
+<td>35,23</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>screw2</td>
+<td>294,23</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>screw3</td>
+<td>264,272</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>screw4</td>
+<td>64,272</td>
+</tr>
+</tbody>
+</table>
+</details>
+<h2 id="d3vil-design-mount">D3vil Design Mount</h2>
+<p>If you have a flat pack cartographer, then you need to use the D3vil Design:
+https://www.printables.com/model/684338-k1-k1max-eddy-current-mount-cartographer</p>
+<p>For the default mount which uses a flat pack, you will need to follow the <a href="https://docs.google.com/document/d/1iOOGeqHqNmlJenYUOr2cGRdccpGq-NLx-ezH2wCMzag/edit?usp=sharing">Assembly Manual</a>, this is not required for the right angle carto if using the Zero mount (see below)</p>
+<details>
+<summary>Configuration Changes Required</summary>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The following configuration changes are used for this mount.  Please note that I do not have a K1M printer, so especially for screw tilt adjust these are guesses.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Section</th>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>printer.cfg</td>
+<td>stepper_y</td>
+<td>position_max</td>
+<td>210 (K1) or 290 (K1M)</td>
+</tr>
+<tr>
+<td>cartotouch.cfg</td>
+<td>scanner</td>
+<td>x_offset</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>y_offset</td>
+<td>16.86</td>
+</tr>
+<tr>
+<td>cartographer-k1.cfg</td>
+<td>bed_mesh</td>
+<td>mesh_min</td>
+<td>30,25</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>mesh_max</td>
+<td>210,210</td>
+</tr>
+<tr>
+<td></td>
+<td>screws_tilt_adjust</td>
+<td>screw1</td>
+<td>25,3</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>screw2</td>
+<td>195,3</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>screw3</td>
+<td>195,173</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>screw4</td>
+<td>25,173</td>
+</tr>
+<tr>
+<td>cartographer-k1m.cfg</td>
+<td>bed_mesh</td>
+<td>mesh_min</td>
+<td>10,22</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>mesh_max</td>
+<td>290,280</td>
+</tr>
+<tr>
+<td></td>
+<td>screws_tilt_adjust</td>
+<td>screw1</td>
+<td>19,6</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>screw2</td>
+<td>278,6</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>screw3</td>
+<td>248,255</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>screw4</td>
+<td>48,255</td>
+</tr>
+</tbody>
+</table>
+</details>
+<h3 id="cable-bracket">Cable Bracket</h3>
+<p>If you want a cable bracket for stock then grab it from here https://www.printables.com/model/783379-zimz-clippy-cartographer-cable-holder</p>
+<p>Alternatively you could try this: https://www.printables.com/model/893452-cartographer-cable-guide-for-k1k1-max</p>
+<h2 id="booty-gantry-mount">Booty Gantry Mount</h2>
+<p>You can get the booty gantry mount from here:
+https://github.com/tlace17/K1-Linear-Rail-Gantry/tree/main/STLs/Probe%20Mounts</p>
+<p>If you are using the booty gantry mount, please make sure you verify that the nozzle to coil offset is between 2.5mm and 3.0mm, you may need
+to shim it to get it within range!   At least a 0.5mm spacer might be required to move the Carto closer to the bed.</p>
+<p>To verify the nozzle offset of the carto you can use this model recommended by the cartographer team:
+https://www.printables.com/model/1060868-cartographer-probe-nozzle-offset-tool</p>
+<details>
+<summary>Configuration Changes Required</summary>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The following configuration changes are used for this mount.  Please note that I do not have a Booty Gantry or a K1M, so especially for screw tilt adjust these are guesses.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Section</th>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>printer.cfg</td>
+<td>stepper_y</td>
+<td>position_max</td>
+<td>210 (K1) or 290 (K1M)</td>
+</tr>
+<tr>
+<td>cartotouch.cfg</td>
+<td>scanner</td>
+<td>x_offset</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>y_offset</td>
+<td>20.0</td>
+</tr>
+<tr>
+<td>cartographer-k1.cfg</td>
+<td>bed_mesh</td>
+<td>mesh_min</td>
+<td>20,20</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>mesh_max</td>
+<td>200,200</td>
+</tr>
+<tr>
+<td></td>
+<td>screws_tilt_adjust</td>
+<td>screw1</td>
+<td>25,0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>screw2</td>
+<td>195,0</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>screw3</td>
+<td>195,170</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>screw4</td>
+<td>25,170</td>
+</tr>
+<tr>
+<td>cartographer-k1m.cfg</td>
+<td>bed_mesh</td>
+<td>mesh_min</td>
+<td>20,20</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>mesh_max</td>
+<td>280,280</td>
+</tr>
+<tr>
+<td></td>
+<td>screws_tilt_adjust</td>
+<td>screw1</td>
+<td>19,3</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>screw2</td>
+<td>278,3</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>screw3</td>
+<td>248,252</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>screw4</td>
+<td>48,252</td>
+</tr>
+</tbody>
+</table>
+</details>
+<h2 id="cartographer-firmware">Cartographer Firmware</h2>
+<p>You must have flashed your cartographer with <code>5.0.0 K1</code> survey firmware <strong>before</strong> starting the installation:
+<img alt="image" src="https://github.com/user-attachments/assets/0967087c-c874-4e74-94b6-8b8b77dc622c" /></p>
+<p>There is a guide for this <a href="https://github.com/pellcorp/creality/wiki/Flashing-Carto-Firmware-on-Ubuntu">here</a></p>
+<h2 id="installation">Installation</h2>
+<p>The installation can only be performed on a printer which has been rooted and ssh granted</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>You need root access, if you are not already root, then follow this <a href="https://guilouz.github.io/Creality-Helper-Script-Wiki/firmwares/install-and-update-rooted-firmware-k1/#enable-root-access">guide</a></p>
+</div>
+<h3 id="factory-reset">Factory Reset</h3>
+<p>You <strong>must</strong> do a factory reset before running the installer.sh.   Follow these steps to do a factory reset, which retains root access and skips the startup calibration checks:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>wget --no-check-certificate  https://raw.githubusercontent.com/pellcorp/creality/main/k1/services/S58factoryreset
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>chmod +x S58factoryreset
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>./S58factoryreset reset
+</span></code></pre></div>
+<div class="admonition abstract">
+<p class="admonition-title">Abstract</p>
+<p>It is really important you do not close the ssh session until you get the message:
+<code>Info: Factory reset was executed successfully, the printer will restart...</code></p>
+</div>
+<p><img alt="image" src="https://github.com/user-attachments/assets/1f21f1d4-ee5b-4263-a7e5-586a4dc5cf4c" /></p>
+<h3 id="clone-the-repo">Clone the Repo</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>git config --global http.sslVerify false
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>git clone https://github.com/pellcorp/creality.git /usr/data/pellcorp
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>sync
+</span></code></pre></div>
+<details>
+<summary>RPC Timeouts, try SSH Git Clone</summary>
+<p><code>mkdir -p /root/.ssh
+wget --no-check-certificate "https://raw.githubusercontent.com/pellcorp/creality/main/k1/ssh/git-ssh.sh" -O /root/git-ssh.sh
+chmod 777 /root/git-ssh.sh
+wget --no-check-certificate "https://raw.githubusercontent.com/pellcorp/creality/main/k1/ssh/pellcorp-identity" -O /root/.ssh/pellcorp-identity
+export GIT_SSH_IDENTITY=pellcorp
+export GIT_SSH=/root/git-ssh.sh
+git clone git@github.com:pellcorp/creality.git /usr/data/pellcorp
+cd /usr/data/pellcorp &amp;&amp; git remote set-url origin https://github.com/pellcorp/creality.git &amp;&amp; cd</code></p>
+</details>
+<h3 id="config-overrides">Config Overrides</h3>
+<p>If you have pellcorp-overrides in github but not stored locally, You need to recreate the <a href="Configuration-Overrides#create-local-repo">/usr/data/pellcorp-overrides directory</a> before running the installer.sh!</p>
+<h3 id="run-the-installer">Run the installer</h3>
+<p>To run the script, you must use the following command:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>/usr/data/pellcorp/k1/installer.sh --install cartotouch
+</span></code></pre></div>
+<details>
+<summary>RPC failed; curl 18 transfer closed</summary>
+You might get this error:
+
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>error: RPC failed; curl 18 transfer closed with outstanding read data remaining
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>fatal: the remote end hung up unexpectedly
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>fatal: early EOF
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>fatal: index-pack failed
+</span></code></pre></div>
+
+Just rerun the installer.sh script (with the same probe argument), it will start from the stage that failed (most of the time this
+will be the Installing Klipper stage!)
+
+You can also prefix the installer command with `AF_GIT_CLONE=ssh` to force git to clone via ssh, this will take a **lot** longer, but it will never time out, so its good in a pinch if you are getting repeated klipper repo clone failures.
+</details>
+
+<h2 id="post-installation">Post Installation</h2>
+<h3 id="mcu-firmware-updates-are-pending">MCU Firmware updates are pending</h3>
+<p>At the end of the installer process if you get this message:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>WARNING: MCU Firmware updates are pending you need to power cycle your printer!
+</span></code></pre></div>
+<p>It means that new MCU firmware updates need to be applied and this can only be done by power cycling the printer.  After your printer is power cycled you can verify firmware was updated with the <code>CHECK_FIRMWARE</code> macro from Fluidd or Mainsail, if you see this message:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>INFO: Your MCU Firmware is up to date!
+</span></code></pre></div>
+<p>Your printer MCU firmware was updated successfully.   If you still see the <code>MCU Firmware updates are pending you need to power cycle your printer!</code> message after a power cycle, check the <code>/tmp/mcu_update.log</code>, you may be asked to provide this file on Discord if you need additional assistance, sometimes an additional power cycle can solve the problem, there is a very short window of time (15 seconds) in which the MCU firmware can be updated, so  there is a chance it will work after an additional power cycle.</p>
+<h3 id="verify-usb-key">Verify USB Key</h3>
+<p>It is important to make sure you have a way to <a href="#emergency-factory-reset">emergency factory reset</a> the printer, if the worst happens.   There is a macro in Simple AF called <code>CHECK_USB_KEY</code> that will wait for you to plug a USB key in and tell you if it was able to be successfully mounted.   You should verify your USB key often just to make sure you have something if you need to unbrick your printer, simply type <code>CHECK_USB_KEY</code> or hit the button in Fluidd / Mainsail</p>
+<p><img alt="image" src="https://github.com/user-attachments/assets/cdd90e6d-2d61-48fb-8624-818190604ac4" /></p>
+<p>If you get the message: <code>INFO - USB Key was recognised and mounted correctly (/tmp/udisk/sda1)</code>, your USB is perfect to use for a factory reset.   If you get no message at all before the script ends (after 60 seconds), your USB is defective.   You can check the <code>messages</code> file in the logs section of your UI to get more details about why the usb key could not be mounted!</p>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<p>https://docs.cartographer3d.com/cartographer-probe/survey-touch/survey-troubleshooting</p>
+<details>
+<summary>Manual Cartographer Serial Device configuration</summary>
+You may have to update the [scanner] section in the cartotouch.cfg with the correct cartographer serial device address.   If the installer was not able to determine the correct serial device, you will see a warning in the installer in that case: `WARNING: There does not seem to be a cartographer attached - skipping auto configuration`
+
+Open the `cartotouch.cfg` in fluidd or mainsail and edit it there if needed.
+
+Find the serial device for the cartographer, from the command line:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>ls /dev/serial/by-id/usb-Cartographer*
+</span></code></pre></div>
+
+Then replace the `[scanner]` line from `cartotouch.cfg`:
+
+<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>serial:/dev/serial/by-id/XXX   # change this line to have your cartographer id.
+</span></code></pre></div>
+
+So it should then look something like:
+
+<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>serial: /dev/serial/by-id/usb-Cartographer_614e_160020001343303856303820-if00
+</span></code></pre></div>
+
+Restart klipper if you had to change the `serial` entry.
+</details>
+
+<h3 id="timer-too-close-and-microsteps">Timer too close and microsteps</h3>
+<p>For cartographer you cannot use more than <code>microsteps: 32</code>, the MCU cannot handle both more microsteps and cartographer, it puts too much pressure on the system and it will throw timer too close during bed meshes.</p>
+<p>If even after this change, you continue to experience timer too close during normal printing, you can switch to my older klipper repo with the following command:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>/usr/data/pellcorp/k1/installer.sh --update-repo
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>/usr/data/pellcorp/k1/installer.sh --klipper-repo k1-carto-klipper
+</span></code></pre></div>
+<p>This change will persist for updates, but not for a reinstall</p>
+<h2 id="calibration">Calibration</h2>
+<p>It is a good idea to heat the nozzle to 150c for this step first!</p>
+<ol>
+<li>Home X Y (G28 X Y)</li>
+<li>Heat Nozzle to 150c (<code>M109 S150</code>) so that any filament can be removed from nozzle</li>
+<li>Make sure nozzle is centred on bed</li>
+<li>Enable Force Move (via the button in the UI) and move your bed plate 2-3 mm away from the nozzle </li>
+<li>Run <code>CARTOGRAPHER_TOUCH METHOD=manual</code>
+Follow the <a href="https://www.klipper3d.org/Bed_Level.html#the-paper-test">Paper Test Method</a>
+Upon completion <em><code>SAVE_CONFIG</code></em></li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Do not use a metal feeler gauge for this step, it could interfere with calibration!!!</p>
+</div>
+<p>After the save config you have to do the cartographer threshold scan (see next)</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>For this next step, it is really important to be near your printer for this step, because if there
+is any issue with the printer configuration or your carto probe, its possible the nozzle will dig itself into the bed, so be hovering over that e-stop button!</p>
+</div>
+<ol>
+<li>Home All (<code>G28</code>)</li>
+<li>Make sure nozzle is centred on bed</li>
+<li>Heat Nozzle to 150c (<code>M109 S150</code>) so that any filament can be removed from nozzle</li>
+<li>Execute <code>CARTOGRAPHER_THRESHOLD_SCAN MIN=1500 MAX=5000 STEP=100 VERIFY_SAMPLES=50 TARGET=0.08</code>
+Upon completion <em><code>SAVE_CONFIG</code></em></li>
+</ol>
+<p>After the save config you have to do the touch calibration.   </p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>For this next step, it is really important to be near your printer for this step, because if there
+is any issue with the printer configuration or your carto probe, its possible the nozzle will dig itself into the bed, so be hovering over that e-stop button!</p>
+</div>
+<ol>
+<li>Home All (<code>G28</code>)</li>
+<li>Heat Nozzle to 150c (<code>M109 S150</code>) so that any filament can be removed from nozzle</li>
+<li>Execute <code>CARTOGRAPHER_TOUCH CALIBRATE=1</code>
+Upon completion <em><code>SAVE_CONFIG</code></em></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If this fails after 3 tries, you should check to make sure there is not filament stuck to the bottom of your nozzle!</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For the other calibrations, you were prompted to SAVE_CONFIG, for this particular calibration for whatever reason (maybe an oversight), the SAVE_CONFIG text is not output in the console after running the step, however the Save Config and Restart button at the top of Fluidd or the equivalent in Mainsail should have become active even so.</p>
+</div>
+<p><strong>Source:</strong> https://docs.cartographer3d.com/cartographer-probe/survey-touch</p>
+<h3 id="axis-twist-compensation">Axis Twist Compensation</h3>
+<p>Next it is highly recommended to perform axis twist compensation calibration <strong>if you are using a rear mount</strong> before doing anything else, this will affect the quality of
+your bed mesh, so best to do it before.</p>
+<ol>
+<li>Home All (<code>G28</code>)</li>
+<li>Run <code>AXIS_TWIST_COMPENSATION_CALIBRATE</code>
+The calibration wizard will prompt you to measure the probe Z offset at a few points along the bed
+Upon completion <em><code>SAVE_CONFIG</code></em></li>
+</ol>
+<p><strong>WARNING:</strong> Do not use a metal feeler gauge for this step, it could interfere with calibration!!!</p>
+<p><strong>Source:</strong> https://www.klipper3d.org/Axis_Twist_Compensation.html</p>
+<h3 id="first-print">First Print</h3>
+<p>For this first print you can go and do the tuning first (PID Tuning, etc) or you can go ahead and optimise your scanner_touch_z_offset using baby stepping, as documented <a href="https://docs.cartographer3d.com/cartographer-probe/survey-touch#first-print">here</a>:</p>
+<p>In fluidd the save button after you finish or cancel your print can be a bit hard to find, look for</p>
+<p><img alt="image" src="https://github.com/user-attachments/assets/2af8d5cb-091e-40df-a38c-25d43b2e6647" /></p>
+<h2 id="tuning">Tuning</h2>
+<p>At least PID tuning (bed and extruder) and input shaping is required for acceptable printing.  If you try and print after running the installer.sh and a power cycle but before any calibration you will most likely have horrendous quality, the worst you have ever seen on the k1.   After PID tuning and input shaping you should see the same kind of quality as you get with stock k1 + input shaper fix.</p>
+<h3 id="quick-start">Quick Start</h3>
+<p>You can use the <code>QUICK_START</code> Macro to automatically complete Bed and Nozzle PID Tuning and Input Shaping Automatically.</p>
+<h3 id="pid-tuning">Pid Tuning</h3>
+<p>https://www.klipper3d.org/Config_checks.html?h=pid#calibrate-pid-settings</p>
+<p>For example you might run these:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>PID_CALIBRATE_BED BED_TEMP=65
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>PID_CALIBRATE_HOTEND HOTEND_TEMP=230
+</span></code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code>PID_CALIBRATE_BED</code> and <code>PID_CALIBRATE_HOTEND</code> macros are located in the <code>useful_macros.cfg</code> file and they have defaults
+values for BED_TEMP and HOTEND_TEMP so you can just run them by clicking on them if you want that same temperature.</p>
+</div>
+<h3 id="input-shaping">Input Shaping</h3>
+<p>There is no default configuration for input shaping so it is essentially disabled out of the box.</p>
+<p>You can use the <code>INPUT_SHAPER</code> button run input shaping, just be sure to <code>SAVE CONFIG</code> at the end, to choose the automatically selected shaper config, be aware though that the shaper chosen might be sub-optimal due to a slight difference in vibrations between two options.  So you should probably review the output and potentially choose an alternative if it gives you higher recommended max acceleration for minimal increase in vibration.</p>
+<p>https://www.klipper3d.org/Measuring_Resonances.html#input-shaper-auto-calibration</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You should adjust your acceleration in your printer.cfg down to that recommended by the input shaper results. I normally reduce <code>max_accel</code> to the highest of the two axis (usually this will be y), and then more finely adjust the max acceleration per axis in my slicer profile.</p>
+</div>
+<h2 id="other-calibrations">Other Calibrations</h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The default value for pressure advance is set to: <code>0.04</code></p>
+</div>
+<p>Refer to https://github.com/SoftFever/OrcaSlicer/wiki/Calibration for more calibrations</p>
+<p>This is an excellent resource for all things 3d print tuning:
+https://ellis3dp.com/Print-Tuning-Guide/</p>
+<h3 id="scan-calibration-method">Scan Calibration Method</h3>
+<p>Some cartographer users choose to use scan only instead of touch and that is easy enough to do once you have finished setting it up, just change the cartotouch.cfg <code>calibration_method</code> to be <code>scan</code>.   You can then use the CARTOGRAPHER_MODEL parameter to start print from your slicer to select different filament profiles, this is required if you print with different filaments and/or use different bed aurfaces.</p>
+<h2 id="octoeverywhere-companion">Octoeverywhere Companion</h2>
+<p>Octoeverywhere cannot be installed onto the K1 when running the Cartographer, the stress placed on the system by running octoeverywhere is too great, however the octoeverywhere companion running on another device on the same WIFI network as the K1 works great.</p>
+<p>https://blog.octoeverywhere.com/octoeverywhere-companion-remote-access-for-any-klipper-printer/</p>
+<h2 id="moonraker-timelapse">Moonraker Timelapse</h2>
+<p>Moonraker timelapse is installed but not enabled by default.  To enable it there are a few steps, you need to add the following include to printer.cfg:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>[include timelapse.cfg]
+</span></code></pre></div>
+<p>And uncomment the <code>[include timelapse.conf]</code> in moonraker.conf, you will need to restart moonraker <strong>and</strong> klipper after this, you can that via the fluidd or mainsail services section.</p>
+<p>If you see these messages:</p>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a> 15:14:24  // Unknown command:&quot;_SET_TIMELAPSE_SETUP&quot;
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>15:14:24  // Unknown command:&quot;HYPERLAPSE&quot;
+</span></code></pre></div>
+It means you have not as yet properly restarted moonraker and/or klipper.    If in doubt just power cycle your machine.</p>
+<h2 id="configuring-timezone">Configuring Timezone</h2>
+<p>The /etc/init.d/S58factoryreset has recently been updated not to delete the /etc/localtime, so you can configure it once and it should survive any number of factory resets, following the excellent guide here:
+https://guilouz.github.io/Creality-Helper-Script-Wiki/firmwares/change-date-and-time/</p>
+<h2 id="updating">Updating</h2>
+<p>To update your installation with the latest fixes you should run:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>/usr/data/pellcorp/k1/installer.sh --update-repo
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>/usr/data/pellcorp/k1/installer.sh --update
+</span></code></pre></div>
+<p>This backs up your customisations, updates the creality repo, applies all changes to your <code>/usr/data/printer_data/config</code> directory and then reapplies your customisations over the top.</p>
+<p>Refer to <a href="Simple-AF-Update-or-Reinstall">Update or Reinstall - What gets overriden</a></p>
+<h2 id="reinstalling">Reinstalling</h2>
+<p>A reinstall is only needed if you are switching probes or one or more github repos have got into an inconsistent state, so you can force a reinstall with the <code>--reinstall</code> argument in place of the <code>--install</code> argument.  The difference to a <code>--install</code>, is a <code>--install</code> will only finish up a partial install that failed due to a network failure or the like.</p>
+<p>Refer to <a href="Simple-AF-Update-or-Reinstall">Update or Reinstall - What gets overriden</a></p>
+<h2 id="emergency-factory-reset">Emergency Factory Reset</h2>
+<p>If the worst happens and you somehow get locked out (for instance for whatever reason the dropbear ssh session does not start or wifi config gets all screwy, it is possible to trigger a emergency factory reset.</p>
+<p>It is very easy, you just need to create a empty file called <code>emergency_factory_reset</code> on a USB key and make sure the USB key is plugged in, then power cycle the printer, this will initiate a factory reset.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This factory reset method will rename the <code>emergency_factory_reset</code> to <code>emergency_factory_reset.old</code> to avoid a boot loop, so if you need to use this method again you will need to rename the file.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This factory reset method will <strong>not</strong> remove the special service file <code>/etc/init.d/S58factoryreset</code> from the k1, so if you need it you can redo a factory reset even before reinstalling.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This method does not reset wifi or root access</p>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Success</p>
+<p>Happy printing!</p>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../../FAQ/" class="md-footer__link md-footer__link--prev" aria-label="Previous: FAQ">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                FAQ
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      SimpleAF &copy; All rights reserved
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://ko-fi.com/pellcorp49698" target="_blank" rel="noopener" title="ko-fi.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.881 8.948c-.773-4.085-4.859-4.593-4.859-4.593H.723c-.604 0-.679.798-.679.798s-.082 7.324-.022 11.822c.164 2.424 2.586 2.672 2.586 2.672s8.267-.023 11.966-.049c2.438-.426 2.683-2.566 2.658-3.734 4.352.24 7.422-2.831 6.649-6.916m-11.062 3.511c-1.246 1.453-4.011 3.976-4.011 3.976s-.121.119-.31.023c-.076-.057-.108-.09-.108-.09-.443-.441-3.368-3.049-4.034-3.954-.709-.965-1.041-2.7-.091-3.71.951-1.01 3.005-1.086 4.363.407 0 0 1.565-1.782 3.468-.963s1.832 3.011.723 4.311m6.173.478c-.928.116-1.682.028-1.682.028V7.284h1.77s1.971.551 1.971 2.638c0 1.913-.985 2.667-2.059 3.015"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://gofund.me/2033eedb" target="_blank" rel="noopener" title="gofund.me" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 12c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5m5.45 5.6c-.39-.4-.88-.6-1.45-.6h-7l-2.08-.73.33-.94L13 16h2.8c.35 0 .63-.14.86-.37s.34-.51.34-.82c0-.54-.26-.91-.78-1.12L8.95 11H7v9l7 2 8.03-3c.01-.53-.19-1-.58-1.4M5 11H.984v11H5z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/pellcorp" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://discord.gg/tGGVn5qjgv" target="_blank" rel="noopener" title="discord.gg" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.317 4.37a19.8 19.8 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.3 18.3 0 0 0-5.487 0 13 13 0 0 0-.617-1.25.08.08 0 0 0-.079-.037A19.7 19.7 0 0 0 3.677 4.37a.1.1 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.08.08 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.08.08 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13 13 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10 10 0 0 0 .372-.292.07.07 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.07.07 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.3 12.3 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.08.08 0 0 0 .084.028 19.8 19.8 0 0 0 6.002-3.03.08.08 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.06.06 0 0 0-.031-.03M8.02 15.33c-1.182 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418m7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.annotate", "content.code.copy", "content.tabs.link", "header.autohide", "navigation.top", "navigation.indexes", "navigation.sections", "navigation.path", "navigation.footer", "search.highlight", "search.share", "search.suggest", "content.footnote.tooltips", "content.tabs.link"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>
