@@ -45,10 +45,11 @@ theme:
     - content.code.annotate
     - content.code.copy
     - content.tabs.link
-    - header.autohide
     - navigation.top
+    - navigation.tabs
     - navigation.indexes
     - navigation.sections
+    - navigation.expand
     - navigation.path
     - navigation.footer
     - search.highlight
@@ -56,6 +57,7 @@ theme:
     - search.suggest
     - content.footnote.tooltips
     - content.tabs.link
+    - navigation.instant
 
 # Extra styling CSS/Java
 extra_css:
@@ -113,8 +115,13 @@ markdown_extensions:
 
 # Page tree
 nav:
-  - Intro: index.md
-  - Markdown: changelog.md
-  - FAQ: FAQ.md
-  - Installation:
-    - Cartographer: installation/probes/cartographer.md
+  - Home:
+    - Intro: index.md
+  - Getting started:
+    - Markdown: changelog.md
+  - nav:
+    - FAQ: FAQ.md
+    - Uses: donations.md
+    - Special Thanks: specialthanks.md
+    - Installation:
+      - Cartographer: installation/probes/cartographer.md
