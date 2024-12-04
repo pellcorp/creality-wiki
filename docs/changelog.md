@@ -41,8 +41,22 @@ This is an <ins>underlined</ins> text
 - [x] No installation needed in [GitHub Actions] (Ubuntu)
 - [ ] Example of an unchecked box
 
+### Highlighted text
+Text can be {--deleted--} and replacement text {++added++}. This can also be
+combined into {~~one~>a single~~} operation. {==Highlighting==} is also
+possible {>>and comments can be added inline<<}.
+
+{==
+
+Formatting can also be applied to blocks by putting the opening and closing
+tags on separate lines and adding new lines between the tags and the content.
+
+==}
+
 <!-- Example of a comment -->
 
+
+#### Ignore formatting
 Ignore markdown formatting:
 Let's rename \*our-new-project\* to \*our-old-project\*.
 
@@ -386,5 +400,7 @@ Lorem ipsum[^1] dolor sit amet, consectetur adipiscing elit.[^2] (example of the
     2. Donec vitae suscipit est
     3. Nulla tempor lobortis orci
 ```
-
 </div>
+
+[^1]: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+[^2]: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
