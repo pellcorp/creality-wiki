@@ -4,7 +4,7 @@ title: Cartographer Probe
 
 # Cartographer
 
-!!! danger
+??? danger
 
     **I am not responsible for damage to ytour printer. - Installing custom firmware is a risk!**
 
@@ -35,6 +35,7 @@ This guide assumes you have a K1, K1C or K1 Max and you are running stock creali
 
 ## Slicer Settings
 !!! warning
+
      If you have used a cartographer with k1-klipper, please note that the `PRINT_START` macro specified in their docs **is not supported** by this project.   You **must** change your Slicer Start Print Machine G-Code (see next)
 
 There is an assumption that you are using a slicer like OrcaSlicer and Machine G-code like:
@@ -190,7 +191,7 @@ The installation can only be performed on a printer which has been rooted and ss
 
 You **must** do a factory reset before running the installer.sh.   Follow these steps to do a factory reset, which retains root access and skips the startup calibration checks:
 
-```
+``` { .yaml py title="namefile.py" hl_lines="1-2"}
 wget --no-check-certificate  https://raw.githubusercontent.com/pellcorp/creality/main/k1/services/S58factoryreset
 chmod +x S58factoryreset
 ./S58factoryreset reset

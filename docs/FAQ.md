@@ -1,12 +1,28 @@
 ---
 hide:
   - footer
+icon: material/help
 ---
 
 ## What is Bed Warp Stabilization and why is it good?
 Bed Warp Stabilisation  Macro (bed heat soaking) is performed before every print by default with the initial installation of the Simple AF firmware. The macro will wait 8 seconds for every degree of target bed temp. 
 This process allows the heated bed to settle into its final state of expansion before performing the bed mesh. At the end of a print, the  bed will remain heated until the printer times out in an hour.  
 See: Start_End.cfg for additional parameters
+
+### What happens when we put a h3 in?
+This process allows the heated bed to settle into its final state of expansion before performing the bed mesh. At the end of a print, the  bed will remain heated until the printer times out in an hour.
+
+### And what about another?
+There isn't a feature to support using bed warp stabilization but turning it off in Klipper. You can work around this limitation by adding the g-code `TURN_OFF_HEATERS` after `END_PRINT` in your slicer's machine end print g-code section.
+
+#### H4 maybe?
+initial installation of the Simple AF firmware. The macro will wait 8 seconds for every degree of target bed temp.
+
+##### What about h5?
+initial installation of the Simple AF firmware. The macro will wait 8 seconds for every degree of target bed temp.
+
+###### Does h6 ever get used??
+initial installation of the Simple AF firmware. The macro will wait 8 seconds for every degree of target bed temp.
 
 ## Can Bed Warp Stabilisation be disabled?
 Yes. A toggle switch is located in the Fans and Outputs section of your Fluidd UI. Triggering this toggle temporarily disables the macro. 
