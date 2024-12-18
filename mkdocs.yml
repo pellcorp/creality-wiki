@@ -2,7 +2,8 @@
 site_name: SimpleAF
 site_url: https://pellcorp.github.io/Simple-AF-Wiki/
 site_author: Chris van Liere
-site_description: Documentation
+site_description: >-
+  Unlock the best of your printer with back-to-basic firmware, customizable for all creality printers. Achieve more results with less creality.
 
 # Repository
 repo_name: GitHub
@@ -14,16 +15,14 @@ copyright: SimpleAF &copy; All rights reserved
 # Configuration
 theme:
   name: material
+  custom_dir: material/overrides
   language: en
-  favicon: assets/logo.svg
-  logo: assets/logo.png
-  
-  font:
-    text: Robonto
-    code: Roboto Mono
 
   palette:
-    # Palette toggle for light mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: custom
@@ -31,19 +30,24 @@ theme:
       toggle:
         icon: material/toggle-switch
         name: Switch to dark mode
-
-    # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: custom
       accent: custom
       toggle:
         icon: material/toggle-switch-off-outline
-        name: Switch to light mode
+        name: Switch to system preference
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/favicon.png
+  logo: assets/logo.png
 
   features:
+    - announce.dismiss
     - content.code.annotate
     - content.code.copy
+    - content.code.select
     - content.tabs.link
     - navigation.top
     - navigation.tabs
@@ -52,24 +56,45 @@ theme:
     - navigation.expand
     - navigation.path
     - navigation.footer
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
     - search.highlight
     - search.share
     - search.suggest
     - content.footnote.tooltips
     - content.tabs.link
-    - navigation.instant
+    - toc.follow
+
+    - content.action.edit
+    - content.action.view
+    - content.tooltips
 
 # Extra styling CSS/Java
 extra_css:
-    - stylesheets/extra.css
+  - stylesheets/extra.css
 
 # Plugins
 plugins:
-    - search:
-        lang: en
+  - blog
+  - search:
+      lang: en
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - tags
+
+# Hooks
+hooks:
+  - material/overrides/hooks/shortcodes.py
+  - material/overrides/hooks/translations.py
 
 # Additional Configuration
 extra:
+  status:
+    new: Recently added
+    deprecated: Deprecated
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
   generator: false
   social:
     - icon: simple/kofi
@@ -80,17 +105,24 @@ extra:
       link: https://github.com/pellcorp
     - icon: simple/discord
       link: https://discord.gg/tGGVn5qjgv
+  tags:
+
 
 # Extensions
 markdown_extensions:
+  - stepslist
+  - abbr
   - attr_list
   - md_in_html
+  - def_list
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.blocks.caption
   - toc:
       title: On this page
+      permalink: true
+      toc_depth: 3
         
   - tables
   - admonition
@@ -115,13 +147,15 @@ markdown_extensions:
 
 # Page tree
 nav:
-  - Home:
-    - Intro: index.md
+  - Home: index.md
   - Getting started:
-    - Markdown: changelog.md
-  - nav:
+    - Markdown: markdown.md
+    - Setup Example: setup.md
+  - Changelog:
+      - changelog/index.md
+  - Examples:
     - FAQ: FAQ.md
-    - Uses: donations.md
-    - Special Thanks: specialthanks.md
     - Installation:
       - Cartographer: installation/probes/cartographer.md
+  - Blog:
+    - blog/index.md
