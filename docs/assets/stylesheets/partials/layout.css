@@ -179,6 +179,10 @@ li.md-tabs__item {
 [data-md-color-scheme="default"] .md-nav__item--section>label>span { color: var(--md-title-color); font-weight: 500;}
 [data-md-color-scheme="slate"] .md-nav__item--section>label>span { color: var(--md-title-color); font-weight: 500;}
 
+.md-nav__primary {
+    height: fit-content;
+}
+
 .md-nav__link {
     padding:5px 0px;
     margin:2px;

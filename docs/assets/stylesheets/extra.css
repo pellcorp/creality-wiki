@@ -10,6 +10,11 @@ html {
     overflow-x: hidden;
 }
 
+/* status: new different color to make it stand out more */
+.md-status:after {
+    background-color: var(--md-admonition-succes-color);
+}
+
 /* Custom beta jekyll frontmatter variable */
 .md-beta {
     position: absolute;
