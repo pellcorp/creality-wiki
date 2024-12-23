@@ -67,10 +67,6 @@ theme:
     - search.suggest
     - toc.follow
 
-    #Insiders only
-    - navigation.path
-    - navigation.instant.prefetch
-
 #Extra styling CSS/Java
 extra_css:
   - assets/stylesheets/extra.css
@@ -87,20 +83,9 @@ plugins:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - tags
 
-  # INSIDERS=1 mkdocs build
-  - group:
-      enabled: !ENV INSIDERS
-      plugins:
-        - optimize
-        - social
-        - typeset
-
 
 extra:
-  analytics:
-    provider: google
-    property: !ENV GOOGLE_ANALYTICS_KEY
-  #generator: false
+  generator: false
   social:
     - icon: simple/kofi
       link: https://ko-fi.com/pellcorp49698
