@@ -1,0 +1,59 @@
+:root {
+    /* Responsive text */
+
+    --fs-display-l: calc(clamp(2.5rem, 1.5767vw + 2.1305rem, 3.313rem) * 0.8);
+    --fs-display-m: calc(clamp(2.25rem, .4848vw + 2.1364rem, 2.5rem) * 0.8);
+    --fs-headline-xl: calc(clamp(2.25rem, .4848vw + 2.1364rem, 2.5rem) * 0.8);
+    --fs-headline-l: calc(clamp(2rem, .4848vw + 1.8864rem, 2.25rem) * 0.8);
+    --fs-headline-m: calc(clamp(1.75rem, .4848vw + 1.6364rem, 2rem) * 0.8);
+    --fs-headline-s: calc(clamp(1.5rem, .4848vw + 1.3864rem, 1.75rem) * 0.8);
+    --fs-headline-xs: calc(clamp(1.25rem, .2424vw + 1.1932rem, 1.375rem) * 0.8);
+    --fs-headline-xxs: calc(clamp(1.125rem, .2424vw + 1.0682rem, 1.25rem) * 0.8);
+
+
+    /* Body */   
+    --fs-text-xl: calc(1.125rem * 0.8);
+    --fs-text-l: calc(1rem * 0.8);
+    --fs-text-m: calc(0.938rem * 0.8);
+    --fs-text-s: calc(0.875rem * 0.8);
+    --fs-text-xs: calc(0.813rem * 0.8);
+    --fs-text-xxs: calc(0.65rem * 0.8);
+
+
+    /* Font-weights */ 
+    --fw-light: calc(300 * 0.8);
+    --fw-regular: calc(400 * 0.8);
+    --fw-medium: calc(500 * 0.8);
+    --fw-semibold: calc(600 * 0.8);
+    --fw-bold: calc(700 * 0.8);
+
+    /* Padding | Gap | Margin */
+    --size-08: calc(0.5rem * 0.8); /* 8px */
+    --size-12: calc(0.75rem * 0.8); /* 12px */
+    --size-16: calc(1rem * 0.8); /* 16px */
+    --size-20: calc(1.25rem * 0.8); /* 20px */
+    --size-24: calc(1.5rem * 0.8); /* 24px */
+    --size-32: calc(2rem * 0.8); /* 32px */
+    --size-40: calc(2.5rem * 0.8); /* 40px */
+    --size-48: calc(3rem * 0.8); /* 48px */
+    --size-64: calc(4rem * 0.8); /* 64px */
+    --size-112: calc(7rem * 0.8); /* 112px */
+
+    /* Grid gutter Mobile 12 */
+    --gutter: var(--size-12);
+    /* Grid gutter Tablet 24 */
+    /* Grid gutter Desktop 32 */
+        
+    /* Border radius */
+    --br-04: 4px;
+    --br-06: 6px;
+    --br-08: 8px;
+    --br-12: 12px;
+    --br-16: 16px;
+    --br-20: 20px;
+    --br-24: 24px;
+
+    --md-transition-duration: 0.2s;
+
+    --md-border-radius: 5px;
+}

@@ -1,0 +1,157 @@
+# Project information
+site_name: SimpleAF Docs
+site_url: https://pellcorp.github.io/creality-wiki
+site_author: Pellcorp
+site_description: >-
+  Unlock the best of your printer with back-to-basic firmware, customizable for all creality printers. Achieve more results with less creality.
+
+#Repository
+repo_name: pellcorp/creality-wiki
+repo_url: https://github.com/pellcorp/creality-wiki
+edit_uri: edit/main/docs/
+
+copyright: Copyright &copy; 2024 - All rights reserved
+
+theme:
+  name: material
+  custom_dir: custom/overrides
+  language: en
+
+  font:
+    text: Inter
+    code: Roboto Mono
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+  icon:
+    repo: fontawesome/brands/github
+    logo: fontawesome/solid/w
+    annotation: material/plus-circle
+
+  palette: 
+    # Light mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: default
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    # Dark mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+
+  features:
+    - announce.dismiss
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    - content.tabs.link
+    - content.footnote.tooltips
+    - content.action.edit
+    #- content.action.view
+    - content.tooltips
+    - navigation.top
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+    - navigation.sections
+    - navigation.expand
+    - navigation.prune
+    - navigation.footer
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+
+    #Insiders only
+    - navigation.path
+    - navigation.instant.prefetch
+
+#Extra styling CSS/Java
+extra_css:
+  - assets/stylesheets/extra.css
+
+# Plugins
+plugins:
+  - blog:
+      archive_date_format: yyyy
+      archive_url_date_format: yyyy
+      draft: true
+      post_url_format: "{slug}"
+  - search:
+      lang: en
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - tags
+
+  # INSIDERS=1 mkdocs build
+  - group:
+      enabled: !ENV INSIDERS
+      plugins:
+        - optimize
+        - social
+        - typeset
+
+
+extra:
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+  #generator: false
+  social:
+    - icon: simple/kofi
+      link: https://ko-fi.com/pellcorp49698
+    - icon: material/hand-coin
+      link: https://gofund.me/2033eedb
+    - icon: simple/github
+      link: https://github.com/pellcorp
+    - icon: simple/discord
+      link: https://discord.gg/tGGVn5qjgv
+
+# Extensions
+markdown_extensions:
+  - stepslist
+  - abbr
+  - attr_list
+  - md_in_html
+  - def_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.blocks.caption
+  - toc:
+      title: On this page
+      permalink: true
+      toc_depth: 3
+        
+  - tables
+  - admonition
+  - footnotes
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+# Page tree
+nav:
+  - Home: index.md
+  - Example:
+    - markdown.md
+  - Blog:
+    - blog/index.md

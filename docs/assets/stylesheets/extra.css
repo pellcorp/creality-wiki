@@ -1,0 +1,116 @@
+/* --- Google fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+
+/* Global Fixes */
+html { 
+    scrollbar-gutter: stable;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* Custom beta jekyll frontmatter variable */
+.md-beta {
+    position: absolute;
+    position-anchor: --betaAnchor;
+    right: anchor(right);
+    top: anchor(top);
+    transform: translateX(3rem) translateY(calc(var(--fs-display-m) * 0.5));
+
+
+    color: rgb(33, 112, 5);
+    background-color: rgb(209, 250, 179);
+    border: 1px solid rgb(168, 241, 112);
+    padding: 2px 6px;
+    border-radius: var(--br-04);
+    font-weight: 600;
+    font-size: 0.7rem;
+    line-height: 16px;
+}
+
+.md-content__inner h1 {
+    anchor-name: --betaAnchor;
+    width: fit-content;
+}
+
+
+/* --------------------
+
+    New Header styling
+
+--------------------- */
+
+.md-header {
+    padding-block: 16px;
+}
+
+.md-header__title {
+    width: fit-content;
+    margin: 0 !important;
+}
+
+.md-tabs {
+    width: fit-content;
+    flex-grow: 1;
+}
+
+.void {
+    flex-grow: 1;
+}
+
+/* New logo */
+.md-header__title {
+    flex: 0 0 7rem;
+}
+/* .mdx-header--logo {
+    justify-self: start;
+} */
+.md-header__topic .mdx-header--logo svg {
+    display: inline-block;
+    height: 20px;
+    transform: translateY(.2rem);
+}
+
+[dir=ltr] .md-header__source {
+    margin-left:0rem
+}
+
+/* move header topic and scale fontsize down */
+[data-md-component="header-topic"].md-header__topic {
+    font-size: .55rem;
+    position: absolute;
+    top: 1rem;
+    left: 1.4rem;
+}
+
+.md-header__title--active .md-header__topic {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+[dir=rtl] .md-header__title--active .md-header__topic {
+    transform: translateX(0)
+}
+
+/* Tabs navigation */
+[dir=ltr] .md-tabs__list {
+    margin-left: 0rem
+}
+
+[dir=rtl] .md-tabs__list {
+    margin-right: 0rem
+}
+
+/* --- Increase content width --- */
+.md-grid--wide {
+    max-width:100%;
+    gap: 10px;
+    padding-inline: 1.1rem;
+}
+
+@media screen and (min-width: 60em) {
+    .md-grid--wide {
+        gap: 30px;
+    }
+}

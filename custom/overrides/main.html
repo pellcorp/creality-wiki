@@ -1,0 +1,22 @@
+{#-
+  This file was automatically generated - do not edit
+-#}
+{% extends "base.html" %}
+{% block styles %}
+  {{ super() }}
+  <link rel="stylesheet" href="{{ 'assets/stylesheets/customs.css' | url }}">
+  <link rel="stylesheet" href="{{ 'assets/stylesheets/partials/colors.css' | url }}">
+  <link rel="stylesheet" href="{{ 'assets/stylesheets/partials/setup.css' | url }}">
+  <link rel="stylesheet" href="{{ 'assets/stylesheets/partials/layout.css' | url }}">
+  <link rel="stylesheet" href="{{ 'assets/stylesheets/partials/reference.css' | url }}">
+  <link rel="stylesheet" href="{{ 'assets/stylesheets/partials/typeset.css' | url }}">
+{% endblock %}
+{% block announce %}
+  <div class="announce_text">
+    Some info and updates here! to change this text edit custom/overrides/main.html
+  </div>
+{% endblock %}
+{% block scripts %}
+  {{ super() }}
+  <!-- <script src="{{ 'assets/javascripts/custom.js' | url }}"></script> -->
+{% endblock %}

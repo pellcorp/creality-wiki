@@ -1,0 +1,94 @@
+<!-- Determine classes -->
+{% set class = "md-header" %}
+{% if "navigation.tabs.sticky" in features %}
+  {% set class = class ~ " md-header--shadow md-header--lifted" %}
+{% elif "navigation.tabs" not in features %}
+  {% set class = class ~ " md-header--shadow" %}
+{% endif %}
+
+<!-- Header -->
+<header class="{{ class }}" data-md-component="header">
+  <nav
+    class="md-header__inner md-grid--wide"
+    aria-label="{{ lang.t('header') }}"
+  >
+
+
+    <!-- Button to open drawer -->
+    <label class="md-header__button md-icon" for="__drawer">
+      {% set icon = config.theme.icon.menu or "material/menu" %}
+      {% include ".icons/" ~ icon ~ ".svg" %}
+    </label>
+
+    <!-- Header title -->
+    <div class="md-header__title" data-md-component="header-title" style="margin-left: .6rem;">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="mdx-header--logo">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.87164855957031 37.858695652173914" fill="none" style="max-height: 500px" width="28.87164855957031" height="37.858695652173914">
+                <path fill="#fff" d="M88.036 14.02c-.132-.255-.443-.382-.933-.382h-.764l-.184.183v21.303l.183.184h.765c.49 0 .8-.128.933-.383s.199-.617.199-1.086v-6.185c.436.282.884.532 1.346.752a6.116 6.116 0 0 0 2.6.566c.877 0 1.754-.27 2.63-.811.877-.551 1.606-1.408 2.187-2.571.582-1.163.872-2.678.872-4.545 0-1.52-.194-2.857-.581-4.01-.387-1.153-.963-2.05-1.728-2.693-.755-.653-1.688-.98-2.799-.98-.928 0-1.769.189-2.523.566a6.592 6.592 0 0 0-2.004 1.542v-.363c0-.48-.066-.842-.199-1.087Zm.199 3.703v7.93c.362.244.755.493 1.178.748.795.47 1.657.704 2.584.704.622 0 1.219-.204 1.79-.612.57-.418 1.035-1.071 1.391-1.96.368-.887.551-2.05.551-3.488 0-1.388-.158-2.505-.474-3.352-.316-.857-.734-1.48-1.254-1.867-.51-.398-1.056-.597-1.637-.597-.632 0-1.274.164-1.927.49a5.743 5.743 0 0 0-1.743 1.393c-.167.193-.32.396-.459.611ZM3.991 1.698C3.991.76 4.747 0 5.68 0h17.622c2.425 0 4.39 1.977 4.39 4.415v27.17c0 2.438-1.965 4.415-4.39 4.415H1.69C.756 36 0 35.24 0 34.302s.756-1.698 1.689-1.698h21.613c.56 0 1.013-.456 1.013-1.02V4.416c0-.563-.453-1.019-1.013-1.019H5.68c-.933 0-1.689-.76-1.689-1.698Z" clip-rule="evenodd" fill-rule="evenodd"/>
+                <path fill="#fff" d="M9.456 9.85c0-.939.756-1.7 1.689-1.7h8.78c.933 0 1.688.761 1.688 1.7 0 .937-.755 1.697-1.688 1.697h-8.78c-.933 0-1.69-.76-1.69-1.698ZM2.026 18c0-.938.756-1.698 1.689-1.698h16.21c.933 0 1.688.76 1.688 1.698s-.755 1.698-1.688 1.698H3.715c-.933 0-1.689-.76-1.689-1.698ZM6.079 26.15c0-.937.756-1.697 1.688-1.697h12.158c.933 0 1.688.76 1.688 1.698s-.755 1.698-1.688 1.698H7.767c-.932 0-1.688-.76-1.688-1.698Z" clip-rule="evenodd" fill-rule="evenodd"/>
+              </svg>SimpleAF Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            {% if page.meta and page.meta.title %}
+              {{ page.meta.title }}
+            {% else %}
+              {{ page.title }}
+            {% endif %}
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation tabs (sticky) -->
+    {% if "navigation.tabs.sticky" in features %}
+        {% if "navigation.tabs" in features %}
+            {% include "partials/tabs.html" %}
+        {% endif %}
+    {% endif %}
+
+    <!-- empty space div -->
+     <div class="void"></div>
+
+    <!-- Color palette toggle -->
+    {% if config.theme.palette %}
+      {% if not config.theme.palette is mapping %}
+        {% include "partials/palette.html" %}
+      {% endif %}
+    {% endif %}
+
+    <!-- User preference: color palette -->
+    {% if not config.theme.palette is mapping %}
+      {% include "partials/javascripts/palette.html" %}
+    {% endif %}
+
+    <!-- Site language selector -->
+    {% if config.extra.alternate %}
+      {% include "partials/alternate.html" %}
+    {% endif %}
+
+    <!-- Button to open search modal -->
+    {% if "material/search" in config.plugins %}
+      <label class="md-header__button md-icon" for="__search">
+        {% set icon = config.theme.icon.search or "material/magnify" %}
+        {% include ".icons/" ~ icon ~ ".svg" %}
+      </label>
+
+      <!-- Search interface -->
+      {% include "partials/search.html" %}
+    {% endif %}
+
+    <!-- Repository information -->
+    {% if config.repo_url %}
+      <div class="md-header__source">
+        {% include "partials/source.html" %}
+      </div>
+    {% endif %}
+  </nav>
+
+</header>
+
+
