@@ -77,7 +77,7 @@ body:
         - Other
 
   - type: dropdown
-    id: browser
+    id: device
     attributes:
       label: Device
       description: >-
