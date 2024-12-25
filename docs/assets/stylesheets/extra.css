@@ -1,8 +1,6 @@
 /* --- Google fonts --- */
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-
-
 /* Global Fixes */
 html { 
     scrollbar-gutter: stable;
@@ -12,7 +10,7 @@ html {
 
 /* status: new different color to make it stand out more */
 .md-status:after {
-    background-color: var(--md-admonition-succes-color);
+    background-color: var(--md-admonition-success-color);
 }
 
 /* Custom beta jekyll frontmatter variable */
@@ -39,7 +37,6 @@ html {
     width: fit-content;
 }
 
-
 /* --------------------
 
     New Header styling
@@ -52,7 +49,8 @@ html {
 
 .md-header__title {
     width: fit-content;
-    margin: 0 !important;
+    margin: 0;
+    flex: 0 0 7rem;
 }
 
 .md-tabs {
@@ -64,13 +62,6 @@ html {
     flex-grow: 1;
 }
 
-/* New logo */
-.md-header__title {
-    flex: 0 0 7rem;
-}
-/* .mdx-header--logo {
-    justify-self: start;
-} */
 .md-header__topic .mdx-header--logo svg {
     display: inline-block;
     height: 20px;
@@ -78,7 +69,7 @@ html {
 }
 
 [dir=ltr] .md-header__source {
-    margin-left:0rem
+    margin-left: 0;
 }
 
 /* move header topic and scale fontsize down */
@@ -94,22 +85,18 @@ html {
     transform: translateX(0);
 }
 
-[dir=rtl] .md-header__title--active .md-header__topic {
-    transform: translateX(0)
-}
-
 /* Tabs navigation */
-[dir=ltr] .md-tabs__list {
-    margin-left: 0rem
+:dir(ltr) .md-tabs__list {
+    margin-left: 0;
 }
 
-[dir=rtl] .md-tabs__list {
-    margin-right: 0rem
+:dir(rtl) .md-tabs__list {
+    margin-right: 0;
 }
 
 /* --- Increase content width --- */
 .md-grid--wide {
-    max-width:100%;
+    max-width: 100%;
     gap: 10px;
     padding-inline: 1.1rem;
 }
@@ -118,4 +105,16 @@ html {
     .md-grid--wide {
         gap: 30px;
     }
+}
+
+/* beating heart */
+.heart img {
+    animation: heartbeat 1s infinite ease;
+}
+
+@keyframes heartbeat {
+    0%, 10% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    60% { transform: scale(1.15); }
+    75% { transform: scale(1.2); }
 }

@@ -21,7 +21,7 @@ theme:
     text: Inter
     code: Roboto Mono
   logo: assets/logo.png
-  favicon: assets/favicon.png
+  favicon: assets/favicon.ico
   icon:
     repo: fontawesome/brands/github
     logo: fontawesome/solid/w
@@ -85,7 +85,6 @@ plugins:
 
 
 extra:
-  generator: false
   social:
     - icon: simple/kofi
       link: https://ko-fi.com/pellcorp49698
