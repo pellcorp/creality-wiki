@@ -66,6 +66,15 @@ html {
         -webkit-mask-image: var(--md-admonition-icon--klipper-error);
         mask-image: var(--md-admonition-icon--klipper-error);
     }
+    
+    /* Lower opacity on light mode */
+    .md-typeset .admonition.klipper-error, .md-typeset .admonition.klipper-shutdown {
+        opacity: .8;
+    }
+}
+
+[data-md-color-scheme="slate"] .md-typeset .admonition.klipper-error, [data-md-color-scheme="slate"] .md-typeset .admonition.klipper-shutdown {
+    opacity: 1;
 }
 
 /* status: new different color to make it stand out more */
