@@ -8,6 +8,66 @@ html {
     overflow-x: hidden;
 }
 
+/* Klipper Error admonition */
+:root {
+
+    --klipper-text-color: #ff5252;
+    --klipper-border-color: #642929;
+    --klipper-bg-color: #2e1a1a;
+
+    --klipper2-text-color: #fb8c00;
+    --klipper2-border-color: #633c0c;
+    --klipper2-bg-color: #2e2010;
+
+    --md-admonition-icon--klipper-error: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-hidden="true" class="v-icon__svg"><path d="M12,2L1,21H23M12,6L19.53,19H4.47M11,10V14H13V10M11,16V18H13V16"></path></svg>');
+
+
+    /* KLIPPER ERROR */
+    .md-typeset .admonition.klipper-error {
+        color: var(--klipper-text-color);
+        background-color: var(--klipper-bg-color);
+        font-size: .8rem;
+    }
+
+    .md-typeset .admonition.klipper-error,
+    .md-typeset details.klipper-error {
+        border-color: var(--klipper-border-color);
+    }
+    .md-typeset .klipper-error > .admonition-title  {
+        font-size: .8rem;
+        background-color: var(--klipper-bg-color) !important;
+    }
+    .md-typeset .klipper-error > .admonition-title::before,
+    .md-typeset .klipper-error > summary::before {
+        background-color: var(--klipper-text-color);
+        -webkit-mask-image: var(--md-admonition-icon--klipper-error);
+        mask-image: var(--md-admonition-icon--klipper-error);
+    }
+
+
+    /* KLIPPER SHUTDOWN */
+    .md-typeset .admonition.klipper-shutdown {
+        color: var(--klipper2-text-color);
+        background-color: var(--klipper2-bg-color);
+        font-size: .8rem;
+    }
+
+    .md-typeset .admonition.klipper-shutdown,
+    .md-typeset details.klipper-shutdown {
+        border-color: var(--klipper2-border-color);
+    }
+    .md-typeset .klipper-shutdown > .admonition-title  {
+        font-size: .8rem;
+        background-color: var(--klipper2-bg-color) !important;
+    }
+    .md-typeset .klipper-shutdown > .admonition-title::before,
+    .md-typeset .klipper-shutdown > summary::before {
+        background-color: var(--klipper2-text-color);
+        -webkit-mask-image: var(--md-admonition-icon--klipper-error);
+        mask-image: var(--md-admonition-icon--klipper-error);
+    }
+}
+
 /* status: new different color to make it stand out more */
 .md-status:after {
     background-color: var(--md-admonition-success-color);
