@@ -213,6 +213,20 @@ Text that is not a quote
 The above are default admonitions, custom ones can also be made.
 For further documentation visit [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/reference/admonitions/)
 
+## Custom admonition
+
+!!! klipper-error "Klipper Error"
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+    euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+    purus auctor massa, nec semper lorem quam in massa.
+
+!!! klipper-shutdown "Klipper reports: SHUTDOWN"
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et
+    euismod nulla. Curabitur feugiat, tortor non consequat finibus, justo
+    purus auctor massa, nec semper lorem quam in massa.
+
 ## Codeblocks
 
 
