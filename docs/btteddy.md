@@ -1,7 +1,3 @@
-**I AM NOT RESPONSIBLE FOR DAMAGE TO YOUR PRINTER - INSTALLING CUSTOM FIRMWARE IS A RISK**
-
-**WARNING: The klipper implementation for the BTT eddy is an abomination, it is very finicky to get setup and requires some patience, a lot of patience :-(** 
-
 # Where can I get help?
 
 Come on over to the pellcorp discord server, here is the invite https://discord.gg/2uGDzyJ3WX
