@@ -133,11 +133,9 @@ markdown_extensions:
 # Page tree
 nav:
   - Home: index.md
-  - Cartographer:
-    - cartographer.md
-  - Beacon:
-    - beacon.md
-  - BlTouch, CrTouch, 3dTouch:
-    - bltouch.md
-  - Microprobe:
-    - microprobe.md
+  - Cartographer: cartographer.md
+  - Beacon: beacon.md
+  - BlTouch: bltouch.md
+  - CrTouch: bltouch.md
+  - 3dTouch: bltouch.md
+  - Microprobe: microprobe.md
