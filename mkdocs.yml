@@ -3,7 +3,7 @@ site_name: SimpleAF Docs
 site_url: https://pellcorp.github.io/creality-wiki
 site_author: Pellcorp
 site_description: >-
-  Unlock the best of your printer with back-to-basic firmware, customizable for all K1 series creality printers. Achieve more results with less creality.
+  It is Simple AF for K1 Series Pritners
 
 #Repository
 repo_name: pellcorp/creality-wiki
@@ -133,7 +133,11 @@ markdown_extensions:
 # Page tree
 nav:
   - Home: index.md
-  - Example:
-    - markdown.md
-  - Blog:
-    - blog/index.md
+  - Cartographer:
+    - cartographer.md
+  - Beacon:
+    - beacon.md
+  - BlTouch, CrTouch, 3dTouch:
+    - bltouch.md
+  - Microprobe:
+    - microprobe.md
