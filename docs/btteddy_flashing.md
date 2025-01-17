@@ -1,7 +1,5 @@
 **THIS IS A RISKY OPERATION YOU COULD EASILY BRICK YOUR BTT EDDY**
 
-It is really important that you update the firmware on your eddy before doing an installation, otherwise the serial config will be wrong.
-
 ## Flashing Btt DUO
 
 Make sure to switch it to USB Mode first of all!!!
