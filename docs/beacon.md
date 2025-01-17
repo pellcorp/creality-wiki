@@ -1,4 +1,4 @@
-# Where can I get help?
+## Where can I get help?
 
 Come on over to the pellcorp discord server, here is the invite https://discord.gg/2uGDzyJ3WX
 
@@ -230,27 +230,3 @@ Refer to https://github.com/SoftFever/OrcaSlicer/wiki/Calibration for more calib
 
 This is an excellent resource for all things 3d print tuning:
 https://ellis3dp.com/Print-Tuning-Guide/
-
-## Octoeverywhere Companion
-
-See [Octoeverywhere Companion](Simple-AF#octoeverywhere-companion)
-
-## Moonraker Timelapse
-
-See [Moonraker Timelapse](Simple-AF#moonraker-timelapse)
-
-## Configuring Timezone
-
-See [Configuring Timezone](Simple-AF#configuring-timezone)
-
-## Updating
-
-See [Updating](Simple-AF#updating)
-
-## Reinstalling
-
-See [Reinstalling](Simple-AF#reinstalling)
-
-## Emergency Factory Reset
-
-See [Emergency Factory Reset](Simple-AF#emergency-factory-reset)

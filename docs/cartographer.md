@@ -1,14 +1,14 @@
-# Where can I get help?
+## Where can I get help?
 
 Come on over to the pellcorp discord server, here is the invite https://discord.gg/2uGDzyJ3WX
 
 The `#simple-af-carto` channel has been setup for anyone wanting support for cartographer.
 
-# Thanks
+## Thanks
 
 Thanks to Richard from https://cartographer3d.com and Zarboz from https://wattskraken.xyz/ for donating Cartographers to the Simple AF project to add support and continue to support the cartographer.
 
-# Post Installation Changes for rear mounted cartographer
+## Post Installation Changes for rear mounted cartographer
 
 **SUPER IMPORTANT SUPER IMPORTANT SUPER IMPORTANT SUPER IMPORTANT SUPER IMPORTANT**
 
@@ -16,11 +16,11 @@ Thanks to Richard from https://cartographer3d.com and Zarboz from https://wattsk
 
 See [probe installation](#probe-installation) for more details.
 
-# Firmware requirements
+## Firmware requirements
 
 This guide assumes you have a K1, K1C or K1 Max and you are running stock creality firmware 1.3.3.5 or higher, or alternately you are using  [my prerooted firmware](https://github.com/pellcorp/creality/wiki/Prerooted-K1-Firmware).   Any other pre-rooted firmware is explicitly not supported and the installer.sh will validate this and refuse to proceed if you try to use it on different firmware.
 
-# Slicer Settings
+## Slicer Settings
 
 **WARNING:** If you have used a cartographer with k1-klipper, please note that the `PRINT_START` macro specified in their docs **is not supported** by this project.   You **must** change your Slicer Start Print Machine G-Code (see next)
 
@@ -40,9 +40,9 @@ START_PRINT EXTRUDER_TEMP=[nozzle_temperature_initial_layer] BED_TEMP=[bed_tempe
 END_PRINT
 ```
 
-# Probe Installation
+## Probe Installation
 
-## Mount Options
+### Mount Options
 
 |Mount      |Carto|URL|Notes|
 |-----------|-----------|------------------------------------------------------------------------------------------------------------------|----------|
@@ -52,7 +52,7 @@ END_PRINT
 |`SkeletorMK7`|Low Profile|https://www.printables.com/model/833769-the-skeletor-collection-a-creality-k1k1-maxk1c-coo|This is only for the low profile cartographer version of the mount!!!|
 |`PurcellV5`  |Right Angle|https://www.printables.com/model/1071493-cartographer-probe-side-mount-options-for-creality||
 
-## Nozzle Offset
+### Nozzle Offset
 
 It is vital that you verify the model to nozzle tip distance is within the valid range of 2.6 to 3mm.  Anything out of this range will cause you problems when it comes time to doing the touch calibration, you can use this tool to verify:
 
@@ -61,18 +61,18 @@ https://www.printables.com/model/1060868-cartographer-probe-nozzle-offset-tool
 Or for side mounted probes you may want to consider this version:
 https://www.printables.com/model/1121309-cartographer-probe-nozzle-offset-tool-x-offset
 
-## K1M vs K1/K1C/K1SE
+### K1M vs K1/K1C/K1SE
 
 On a K1M you can use the lidar cable either directly by repinning it, or via the pass through lidar port on the toolhead.  However you cannot use the lidar port on the toolhead for K1, K1C or K1SE.   The reason this does not work is because for Lidar on the K1M creality actually routes a completely separate USB cable from the mainboard.
 
-# Cartographer Firmware
+## Cartographer Firmware
 
 You must have flashed your cartographer with `CARTOGRAPHER K1 5.1.0` survey firmware **before** starting the installation:
 ![image](https://github.com/user-attachments/assets/c65f8a9a-ac1a-46b0-838f-6e693ed9f661)
 
 There is a guide for this [here](https://github.com/pellcorp/creality/wiki/Flashing-Carto-Firmware-on-Ubuntu)
 
-# Installation
+## Installation
 
 The installation can only be performed on a printer which has been rooted and ssh granted
 
@@ -81,7 +81,7 @@ https://guilouz.github.io/Creality-Helper-Script-Wiki/firmwares/install-and-upda
 
 ZeroDotCmd (aka Zero on discord) has provided an excellent Cartographer installation video, you can find it https://www.youtube.com/watch?v=GuxMITM9o4I
 
-## Factory Reset 
+### Factory Reset 
 
 You **must** do a factory reset before running the installer.sh.   Follow these steps to do a factory reset, which retains root access and skips the startup calibration checks:
 
@@ -95,7 +95,7 @@ chmod +x S58factoryreset
 
 ![image](https://github.com/user-attachments/assets/1f21f1d4-ee5b-4263-a7e5-586a4dc5cf4c)
 
-## Clone the Repo
+### Clone the Repo
 
 ```
 git config --global http.sslVerify false
@@ -117,11 +117,11 @@ cd /usr/data/pellcorp && git remote set-url origin https://github.com/pellcorp/c
 </pre>
 </details>
 
-## Config Overrides
+### Config Overrides
 
 If you have pellcorp-overrides in github but not stored locally, [you need to recreate the /usr/data/pellcorp-overrides directory](Configuration-Overrides#create-local-repo) before running the installer.sh!
 
-## Run the installer
+### Run the installer
 
 To run the script, you must use the following command:
 
@@ -150,9 +150,9 @@ will be the Installing Klipper stage!)
 You can also prefix the installer command with `AF_GIT_CLONE=ssh` to force git to clone via ssh, this will take a **lot** longer, but it will never time out, so its good in a pinch if you are getting repeated klipper repo clone failures.
 </details>
 
-# Post Installation
+## Post Installation
 
-## MCU Firmware updates are pending
+### MCU Firmware updates are pending
 
 At the end of the installer process if you get this message:
 
@@ -168,7 +168,7 @@ INFO: Your MCU Firmware is up to date!
 
 Your printer MCU firmware was updated successfully.   If you still see the `MCU Firmware updates are pending you need to power cycle your printer!` message after a power cycle, check the `/tmp/mcu_update.log`, you may be asked to provide this file on Discord if you need additional assistance, sometimes an additional power cycle can solve the problem, there is a very short window of time (15 seconds) in which the MCU firmware can be updated, so  there is a chance it will work after an additional power cycle.
 
-## Verify USB Key
+### Verify USB Key
 
 It is important to make sure you have a way to [emergency factory reset](#emergency-factory-reset) the printer, if the worst happens.   There is a macro in Simple AF called `CHECK_USB_KEY` that will wait for you to plug a USB key in and tell you if it was able to be successfully mounted.   You should verify your USB key often just to make sure you have something if you need to unbrick your printer, simply type `CHECK_USB_KEY` or hit the button in Fluidd / Mainsail
 
@@ -176,11 +176,11 @@ It is important to make sure you have a way to [emergency factory reset](#emerge
 
 If you get the message: `INFO - USB Key was recognised and mounted correctly (/tmp/udisk/sda1)`, your USB is perfect to use for a factory reset.   If you get no message at all before the script ends (after 60 seconds), your USB is defective.   You can check the `messages` file in the logs section of your UI to get more details about why the usb key could not be mounted!
 
-## Troubleshooting
+### Troubleshooting
 
 https://docs.cartographer3d.com/cartographer-probe/survey-touch/survey-troubleshooting
 
-### Repo has diverged from remote 
+#### Repo has diverged from remote 
 
 ![image](https://github.com/user-attachments/assets/72cf5b71-afab-4ecf-b797-8c6c2faa5fdb)
 
@@ -190,7 +190,7 @@ You need to click RECOVER and then run from ssh:
 /usr/data/cartographer-klipper/install.sh
 ```
 
-### Error during probe mcu identification, check connection
+#### Error during probe mcu identification, check connection
 
 If you get the following error, it means that the cartographer is not connected to the printer.   This is either because its physically not connected, the wiring is wrong, the usb subsystem has disconnected the carto during a restart or the serial id is wrong
 
@@ -210,7 +210,7 @@ Make sure it matches the `serial` in `cartotouch.cfg`:
 
 ![image](https://github.com/user-attachments/assets/e35ee394-5540-4c39-8551-cf3fe4b08f29)
 
-### Manual Cartographer Serial Device configuration
+#### Manual Cartographer Serial Device configuration
 
 You can run the following command to fix your serial if you forgot to plug your cartographer in during the installation or update:
 
@@ -218,13 +218,15 @@ You can run the following command to fix your serial if you forgot to plug your 
 /usr/data/pellcorp/k1/installer.sh --fix-serial
 ```
 
-### Timer too close and microsteps
+#### Timer too close and microsteps
 
 For cartographer you cannot use more than `microsteps: 32`, the MCU cannot handle both more microsteps and cartographer, it puts too much pressure on the system and it cause stuttering during bed meshes.
 
-## Calibration
+### Calibration
 
 Please make sure to remove any scanner related config from the save config section at the bottom of printer.cfg and save and restart before re-calibrating.
+
+#### Recalibrating
 
 If you are recalibrating, the follow SAVE_CONFIG sections should be removed:
 
@@ -232,6 +234,8 @@ If you are recalibrating, the follow SAVE_CONFIG sections should be removed:
 - [scanner]
 
 **Important:** Please do not remove the `[scanner]` section defined at the end of printer.cfg above the save config section.
+
+#### Manual Cartographer Calibrate
 
 It is a good idea to heat the nozzle to 150c for this step first!
 
@@ -246,6 +250,8 @@ Upon completion *`SAVE_CONFIG`*
 
 After the save config you have to do the cartographer threshold scan (see next)
 
+#### Cartographer Threshold Scan
+
 **WARNING:** For this next step, it is really important to be near your printer for this step, because if there
 is any issue with the printer configuration or your carto probe, its possible the nozzle will dig itself into the bed, so be hovering over that e-stop button!
 
@@ -256,6 +262,8 @@ is any issue with the printer configuration or your carto probe, its possible th
 Upon completion *`SAVE_CONFIG`*
 
 After the save config you have to do the touch calibration.   
+
+#### Cartographer Touch Calibration
 
 **WARNING:** For this next step, it is really important to be near your printer for this step, because if there
 is any issue with the printer configuration or your carto probe, its possible the nozzle will dig itself into the bed, so be hovering over that e-stop button!
@@ -269,7 +277,7 @@ Upon completion *`SAVE_CONFIG`*
 
 **Source:** https://docs.cartographer3d.com/cartographer-probe/survey-touch
 
-## Axis Twist Compensation
+### Axis Twist Compensation
 
 Next it is highly recommended to perform axis twist compensation calibration **if you are using a rear mount** before doing anything else, this will affect the quality of
 your bed mesh, so best to do it before.
@@ -283,15 +291,15 @@ Upon completion *`SAVE_CONFIG`*
 
 **Source:** https://www.klipper3d.org/Axis_Twist_Compensation.html
 
-## Tuning
+### Tuning
 
 At least PID tuning (bed and extruder) and input shaping is required for acceptable printing.  If you try and print after running the installer.sh and a power cycle but before any calibration you will most likely have horrendous quality, the worst you have ever seen on the k1.   After PID tuning and input shaping you should see the same kind of quality as you get with stock k1 + input shaper fix.
 
-### Quick Start
+#### Quick Start
 
 You can use the QUICK_START Macro to automatically complete Bed and Nozzle PID Tuning and Input Shaping Automatically.
 
-### Pid Tuning
+#### Pid Tuning
 
 https://www.klipper3d.org/Config_checks.html?h=pid#calibrate-pid-settings
 
@@ -305,7 +313,7 @@ PID_CALIBRATE_HOTEND HOTEND_TEMP=230
 **Note:** The `PID_CALIBRATE_BED` and `PID_CALIBRATE_HOTEND` macros are located in the `useful_macros.cfg` file and they have defaults
 values for BED_TEMP and HOTEND_TEMP so you can just run them by clicking on them if you want that same temperature.
 
-### Input Shaping
+#### Input Shaping
 
 There is no default configuration for input shaping so it is essentially disabled out of the box.
 
@@ -315,7 +323,7 @@ https://www.klipper3d.org/Measuring_Resonances.html#input-shaper-auto-calibratio
 
 **IMPORTANT:** You should adjust your acceleration in your printer.cfg down to that recommended by the input shaper results. I normally reduce `max_accel` to the highest of the two axis (usually this will be y), and then more finely adjust the max acceleration per axis in my slicer profile.
 
-## First Print
+### First Print
 
 For this first print you can go and do the tuning first (PID Tuning, etc) or you can go ahead and optimise your scanner_touch_z_offset using baby stepping, as documented here: https://docs.cartographer3d.com/cartographer-probe/survey-touch#first-print
 
@@ -323,7 +331,7 @@ In fluidd the save button after you finish or cancel your print can be a bit har
 
 ![image](https://github.com/user-attachments/assets/2af8d5cb-091e-40df-a38c-25d43b2e6647)
 
-## Other Calibrations
+### Other Calibrations
 
 **Note:** The default value for pressure advance is set to: `0.04`
 
@@ -332,7 +340,7 @@ Refer to https://github.com/SoftFever/OrcaSlicer/wiki/Calibration for more calib
 This is an excellent resource for all things 3d print tuning:
 https://ellis3dp.com/Print-Tuning-Guide/
 
-## Scan Calibration Method
+### Scan Calibration Method
 
 Some cartographer users choose to use scan only instead of touch and that is easy enough to do once you have finished setting it up.
 
@@ -346,7 +354,7 @@ And then `SAVE_CONFIG`
 
 You can then use the CARTOGRAPHER_MODEL parameter to start print from your slicer to select different filament profiles, this is required if you print with different filaments and/or use different bed aurfaces.
 
-### Cartographer Model
+#### Cartographer Model
 
 If you want to select a particular [cartographer model](https://docs.cartographer3d.com/cartographer-probe/fine-tuning/cartographer-models) other than the default you can pass in an additional `START_PRINT` parameter:
 
@@ -354,28 +362,3 @@ If you want to select a particular [cartographer model](https://docs.cartographe
 
 You can either hard code it to a particular model, like `CARTOGRAPHER_MODEL=mymodel` or you can specify a model based on orca slicer variables, such as `CARTOGRAPHER_MODEL="[curr_bed_type] - [filament_type]"`, but you have to make sure you have all the possible models
 defined for each of the bed type and filament type combinations.
-
-
-# Octoeverywhere Companion
-
-See [Octoeverywhere Companion](Simple-AF#octoeverywhere-companion)
-
-# Moonraker Timelapse
-
-See [Moonraker Timelapse](Simple-AF#moonraker-timelapse)
-
-# Configuring Timezone
-
-See [Configuring Timezone](Simple-AF#configuring-timezone)
-
-# Updating
-
-See [Updating](Simple-AF#updating)
-
-# Reinstalling
-
-See [Reinstalling](Simple-AF#reinstalling)
-
-# Emergency Factory Reset
-
-See [Emergency Factory Reset](Simple-AF#emergency-factory-reset)

@@ -1,18 +1,18 @@
-# Where can I get help?
+## Where can I get help?
 
 Come on over to the pellcorp discord server, here is the invite https://discord.gg/2uGDzyJ3WX
 
 The `#simple-af-bltouch` channel has been setup for anyone wanting support for bltouch, crtouch or 3dtouch.
 
-# What about CrTouch and 3dTouch
+## What about CrTouch and 3dTouch
 
 Yep you can use a CrTouch or 3dTouch as an alternative to a BlTouch, however I have not personally used either of these with a K1 and so I can't currently provide detailed guidance on what config is required.   I also think 3dTouch might require slightly different wiring.
 
-# Firmware requirements
+## Firmware requirements
 
 This guide assumes you have a K1, K1C or K1 Max and you are running stock creality firmware 1.3.3.5 or higher, or alternately you are using  [my prerooted firmware](https://github.com/pellcorp/creality/wiki/Prerooted-K1-Firmware).   Any other pre-rooted firmware is explicitly not supported and the installer.sh will validate this and refuse to proceed if you try to use it on different firmware.
 
-# Slicer Settings
+## Slicer Settings
 
 There is an assumption that you are using a slicer like OrcaSlicer and Machine G-code like:
 
@@ -30,16 +30,16 @@ START_PRINT EXTRUDER_TEMP=[nozzle_temperature_initial_layer] BED_TEMP=[bed_tempe
 END_PRINT
 ```
 
-# Probe Installation
+## Probe Installation
 
-## Mount Options
+### Mount Options
 
 |Mount     |URL|
 |----------|----------------------------------------------------------------------------------|
 |`Default` |https://www.printables.com/model/666186-creality-k1-bltouch-adapter|
 |`CrTouch` |https://www.printables.com/model/1073375-cr-touch-mount-k1-k1maxk1c-zero-y-offset|
 
-## Wiring
+### Wiring
 
 The probe and the TOUCH port on the Nozzle MCU board both mate with a 5-pin Molex Picoblade connector. A 5-pin cable is needed to connect the probe to the TOUCH port.
 
@@ -68,14 +68,14 @@ Connect to TOUCH port on the nozzle MCU. it is accessible from the side left (LI
 
 **Source:** Portions of this section are copied from the K1 Bltouch guide for helper script.
 
-# Installation
+## Installation
 
 The installation can only be performed on a printer which has been rooted and ssh granted
 
 You need root access, if you are not already root, then follow this guide
 https://guilouz.github.io/Creality-Helper-Script-Wiki/firmwares/install-and-update-rooted-firmware-k1/#enable-root-access
 
-## Factory Reset 
+### Factory Reset 
 
 You **must** do a factory reset before running the installer.sh.   Follow these steps to do a factory reset, which retains root access and skips the startup calibration checks:
 
@@ -88,7 +88,7 @@ chmod +x S58factoryreset
 
 ![image](https://github.com/user-attachments/assets/1f21f1d4-ee5b-4263-a7e5-586a4dc5cf4c)
 
-## Clone the Repo
+### Clone the Repo
 
 ```
 git config --global http.sslVerify false
@@ -110,11 +110,11 @@ cd /usr/data/pellcorp && git remote set-url origin https://github.com/pellcorp/c
 </pre>
 </details>
 
-## Config Overrides
+### Config Overrides
 
 If you have pellcorp-overrides in github but not stored locally, [you need to recreate the /usr/data/pellcorp-overrides directory](Configuration-Overrides#create-local-repo) before running the installer.sh!
 
-## Run the installer
+### Run the installer
 
 To run the script, you must specify the probe you want to use.
 
@@ -143,9 +143,9 @@ will be the Installing Klipper stage!)
 You can also prefix the installer command with `AF_GIT_CLONE=ssh` to force git to clone via ssh, this will take a **lot** longer, but it will never time out, so its good in a pinch if you are getting repeated klipper repo clone failures.
 </details>
 
-# Post Installation
+## Post Installation
 
-## MCU Firmware updates are pending
+### MCU Firmware updates are pending
 
 At the end of the installer process if you get this message:
 
@@ -161,7 +161,7 @@ INFO: Your MCU Firmware is up to date!
 
 Your printer MCU firmware was updated successfully.   If you still see the `MCU Firmware updates are pending you need to power cycle your printer!` message after a power cycle, check the `/tmp/mcu_update.log`, you may be asked to provide this file on Discord if you need additional assistance, sometimes an additional power cycle can solve the problem, there is a very short window of time (15 seconds) in which the MCU firmware can be updated, so  there is a chance it will work after an additional power cycle.
 
-## Verify USB Key
+### Verify USB Key
 
 It is important to make sure you have a way to [emergency factory reset](#emergency-factory-reset) the printer, if the worst happens.   There is a macro in Simple AF called `CHECK_USB_KEY` that will wait for you to plug a USB key in and tell you if it was able to be successfully mounted.   You should verify your USB key often just to make sure you have something if you need to unbrick your printer, simply type `CHECK_USB_KEY` or hit the button in Fluidd / Mainsail
 
@@ -169,7 +169,7 @@ It is important to make sure you have a way to [emergency factory reset](#emerge
 
 If you get the message: `INFO - USB Key was recognised and mounted correctly (/tmp/udisk/sda1)`, your USB is perfect to use for a factory reset.   If you get no message at all before the script ends (after 60 seconds), your USB is defective.   You can check the `messages` file in the logs section of your UI to get more details about why the usb key could not be mounted!
 
-## Calibration
+### Calibration
 
 Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
 Upon completion *`SAVE_CONFIG`*
@@ -182,11 +182,11 @@ For the bltouch/3dtouch/crtouch it is **extremely** important to do the PROBE_CA
 
 as in it will try to dig a hole into the bed.
 
-## Timer too close and microsteps
+### Timer too close and microsteps
 
 For bltouch, etc you cannot use more than `microsteps: 64`.
 
-## Axis Twist Compensation
+### Axis Twist Compensation
 
 Next it is highly recommended to perform axis twist compensation calibration before doing anything else, this will affect the quality of
 your bed mesh, so best to do it before.
@@ -198,7 +198,7 @@ Upon completion *`SAVE_CONFIG`*
 
 **Source:** https://www.klipper3d.org/Axis_Twist_Compensation.html
 
-## First Print
+### First Print
 
 For this first print you can go and do the tuning first (PID Tuning, etc) or you can go ahead and optimise your probe z offset using baby stepping.
 
@@ -206,15 +206,15 @@ In fluidd the save button after you finish or cancel your print can be a bit har
 
 ![image](https://github.com/user-attachments/assets/2af8d5cb-091e-40df-a38c-25d43b2e6647)
 
-## Tuning
+### Tuning
 
 At least PID tuning (bed and extruder) and input shaping is required for acceptable printing.  If you try and print after running the installer.sh and a power cycle but before any calibration you will most likely have horrendous quality, the worst you have ever seen on the k1.   After PID tuning and input shaping you should see the same kind of quality as you get with stock k1 + input shaper fix.
 
-### Quick Start
+#### Quick Start
 
 You can use the QUICK_START Macro to automatically complete Bed and Nozzle PID Tuning and Input Shaping Automatically.
 
-### Pid Tuning
+#### Pid Tuning
 
 https://www.klipper3d.org/Config_checks.html?h=pid#calibrate-pid-settings
 
@@ -228,7 +228,7 @@ PID_CALIBRATE_HOTEND HOTEND_TEMP=230
 **Note:** The `PID_CALIBRATE_BED` and `PID_CALIBRATE_HOTEND` macros are located in the `useful_macros.cfg` file and they have defaults
 values for BED_TEMP and HOTEND_TEMP so you can just run them by clicking on them if you want that same temperature.
 
-### Input Shaping
+#### Input Shaping
 
 There is no default configuration for input shaping so it is essentially disabled out of the box.
 
@@ -236,7 +236,7 @@ You can use the `SHAPER_CALIBRATE` macro to run input shaping, just be sure to `
 
 https://www.klipper3d.org/Measuring_Resonances.html#input-shaper-auto-calibration
 
-## Other Calibrations
+#### Other Calibrations
 
 **Note:** The default value for pressure advance is set to: `0.04`
 
@@ -244,27 +244,3 @@ Refer to https://github.com/SoftFever/OrcaSlicer/wiki/Calibration for more calib
 
 This is an excellent resource for all things 3d print tuning:
 https://ellis3dp.com/Print-Tuning-Guide/
-
-# Octoeverywhere Companion
-
-See [Octoeverywhere Companion](Simple-AF#octoeverywhere-companion)
-
-# Moonraker Timelapse
-
-See [Moonraker Timelapse](Simple-AF#moonraker-timelapse)
-
-# Configuring Timezone
-
-See [Configuring Timezone](Simple-AF#configuring-timezone)
-
-# Updating
-
-See [Updating](Simple-AF#updating)
-
-# Reinstalling
-
-See [Reinstalling](Simple-AF#reinstalling)
-
-# Emergency Factory Reset
-
-See [Emergency Factory Reset](Simple-AF#emergency-factory-reset)
