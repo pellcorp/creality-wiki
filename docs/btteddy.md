@@ -178,11 +178,9 @@ You can run the following command to fix your serial if you forgot to plug your 
 #### Drive Current Calibration
 1. Home XY (`G28 X Y`)
 2. Make sure nozzle is centred on bed
-3. Run `SET_KINEMATIC_POSITION Z=200` and then move the nozzle so its 20mm from the bed, please try and be as accurate as possible with this distance, its better to be slightly closer to the bed than further away.
+3. Run `_SET_KIN_MAX_Z` and then move the nozzle so its 20mm from the bed, please try and be as accurate as possible with this distance, its better to be slightly closer to the bed than further away.
 4. Run `BTTEDDY_CALIBRATE_DRIVE_CURRENT`
 5. Run SAVE_CONFIG
-
-**Note:** The `SET_KINEMATIC_POSITION Z=200` command is to get Klipper to believe the toolhead is 200mm above the bed, if your bed is all the way to the bottom, then Z=200 may not be enough, you may need to play around with the Z value to be able to bring the bed back up near the toolhead.
 
 **Source:** https://github.com/bigtreetech/Eddy?tab=readme-ov-file#2-drive-current-calibration
 
@@ -190,7 +188,7 @@ You can run the following command to fix your serial if you forgot to plug your 
 
 6. Home X and Y (`G28 X Y`)
 7. Make sure nozzle is centred on bed
-8. Run `SET_KINEMATIC_POSITION Z=200` and then move the nozzle so its approximately 2mm from the bed
+8. Run `_SET_KIN_MAX_Z` and then move the nozzle so its approximately 2mm from the bed
 9. Run `BTTEDDY_CURRENT_CALIBRATE` (Triggers manual z offset calibration - paper test)
 Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
 Upon completion *`SAVE_CONFIG`*
