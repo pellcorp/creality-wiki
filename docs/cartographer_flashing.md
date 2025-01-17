@@ -22,7 +22,8 @@ You must make sure that the cable you are using is pinned correctly.  For both f
 
     You **must** not use the firmware.cartographer3d.com, it will not flash the proper version of `CARTOGRAPHER K1 5.1.0` firmware for the K1.
 
-    The reason this cannot be done on K1, seems to be some incompatibility with pyserial and MIPS, and issue for this has been opened https://github.com/Arksine/katapult/issues/137 
+    The reason this cannot be done on K1, seems to be some incompatibility with pyserial and MIPS, and issue for this has been opened 
+    <https://github.com/Arksine/katapult/issues/137> 
 
 ## Flashing the Cartographer
 
