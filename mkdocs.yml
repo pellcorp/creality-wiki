@@ -142,4 +142,7 @@ nav:
   - BttEddy:
       - btteddy.md
       - btteddy_flashing.md
-
+  - Extras
+      - misc.md
+      - config-overrides.md
+      - custom_hooks.md

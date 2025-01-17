@@ -40,10 +40,10 @@ END_PRINT
 
 ### Mount Options
 
-|Mount      |URL|
-|-----------|------------------------------------------------------------------------------------------------------------------|
-|`Default`  |https://www.printables.com/model/1012524-btteddy-creality-k1-k1c-k1-max-mount|
-|`Pellcorp` |https://www.printables.com/model/965667-wip-k1-btt-eddy-rear-mount-v4|
+|Mount      | URL                                                                           |
+|-----------|-------------------------------------------------------------------------------|
+|`Default`  | https://www.printables.com/model/1012524-btteddy-creality-k1-k1c-k1-max-mount |
+|`Pellcorp` | https://www.printables.com/model/965667-wip-k1-btt-eddy-rear-mount-v4         |
 
 ### K1M vs K1/K1C/K1SE
 
