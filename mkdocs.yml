@@ -140,9 +140,9 @@ nav:
       - btteddy.md
       - btteddy_flashing.md
       - btteddy_duo_flashing.md
+  - Klicky:
+      - klicky.md
   - Extras:
       - misc.md
       - config_overrides.md
       - custom_hooks.md
-  - Klicky:
-      - klicky.md
