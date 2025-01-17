@@ -135,7 +135,7 @@ When you reconnect your carto to your printer it should show a version `CARTOGRA
 
 ![image](assets/images/cartographer_k1_510.png)
 
-# Flashing K1 Firmware via DFU Mode
+## Flashing K1 Firmware via DFU Mode
 
 You will need to temporarily switch to the beta branch to get the 5.1.0 combined dfu firmware:
 
@@ -165,4 +165,4 @@ sudo dfu-util -R -a 0 -s 0x08000000:leave -D Full_Survey_Cartographer_CrealityK1
 ![image](assets/images/carto_dfu.png)
 
 
-**Source:** https://docs.cartographer3d.com/cartographer-probe/firmware/manual-methods/cartographer-with-input-shaper/update-via-dfu-mode
+**Source:** <https://docs.cartographer3d.com/cartographer-probe/firmware/manual-methods/cartographer-with-input-shaper/update-via-dfu-mode>
