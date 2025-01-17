@@ -184,7 +184,7 @@ This indicates the beacon was disconnected during homing or some other operation
 Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
 Upon completion *`SAVE_CONFIG`*
 
-**Source:** https://docs.beacon3d.com/quickstart/#6-calibrate-beacon
+**Source:** <https://docs.beacon3d.com/quickstart/#6-calibrate-beacon>
 
 ### First Print
 
