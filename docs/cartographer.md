@@ -8,17 +8,6 @@ Come on over to the pellcorp discord server, the `#simple-af-carto` channel has 
 
 Thanks to Richard from https://cartographer3d.com and Zarboz from https://wattskraken.xyz/ for donating Cartographers to the Simple AF project to add support and continue to support the cartographer.
 
-## Post Installation Changes for rear mounted cartographer
-
-!!! danger
-
-    If you are not using a side mount you **must** verify config changes for cartotouch.cfg and cartographer-k1.cfg 
-    or cartographer-k1m.cfg before homing your printer, using **Screws Tilt Calculate** or doing a **bed mesh**!  
-
-    Ignoring these instructions can lead to significant damage to your build plate and/or probe.
-
-See [probe installation](#probe-installation) for more details.
-
 ## Firmware requirements
 
 !!! warning
@@ -50,6 +39,13 @@ END_PRINT
 ```
 
 ## Probe Installation
+
+!!! danger
+
+    If you are not using a side mount you **must** verify config changes for cartotouch.cfg and cartographer-k1.cfg 
+    or cartographer-k1m.cfg before homing your printer, using **Screws Tilt Calculate** or doing a **bed mesh**!  
+
+    Ignoring these instructions can lead to significant damage to your build plate and/or probe.
 
 ### Mount Options
 

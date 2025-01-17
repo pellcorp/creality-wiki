@@ -32,6 +32,13 @@ END_PRINT
 
 ## Probe Installation
 
+!!! danger
+
+    If you are not using a side mount you **must** verify config changes for beacon.cfg and beacon-k1.cfg 
+    or beacon-k1m.cfg before homing your printer, using **Screws Tilt Calculate** or doing a **bed mesh**!  
+
+    Ignoring these instructions can lead to significant damage to your build plate and/or probe.
+
 ### Mount Options
 
 | Mount           | Beacon           | URL                                                                                          |Notes|
