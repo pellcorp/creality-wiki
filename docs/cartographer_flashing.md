@@ -1,18 +1,28 @@
-**THIS IS A RISKY OPERATION YOU COULD EASILY BRICK YOUR CARTO**
+!!! danger
 
-**IMPORTANT:** Do not follow these instructions unless you have a USB V3 Carto!!!!!!
+    THIS IS A RISKY OPERATION YOU COULD EASILY BRICK YOUR CARTO
 
-You might corrupt the katapult boot loader trying to use a Linux VM to flash the carto, I strongly recommend a live USB over a VM.
+    Do not follow these instructions unless you have a USB V3 Carto!!!!!!
+
+!!! warn
+
+    You might corrupt the katapult boot loader trying to use a Linux VM to flash the carto, I strongly recommend a live USB over a VM.
+
+## Verify your Cable
 
 You must make sure that the cable you are using is pinned correctly.  For both flat pack and right angle carto's the default cable that comes with your carto might not be pinned correctly.
 
 ![image](assets/images/carto_connector.png)
 
-**IMPORTANT:** The right angle and flat pack pin out is different to using a low profile carto, so the image above **does not apply** to low profile cartographers!
+!!! warn
+    
+    The right angle and flat pack pin out is different to using a low profile carto, so the image above **does not apply** to low profile cartographers!
 
-**IMPORTANT:** You **cannot** use the firmware.cartographer3d.com, it will not flash the proper version of `CARTOGRAPHER K1 5.1.0` firmware for the K1.
+!!! warn
 
-The reason this cannot be done on K1, seems to be some incompatibility with pyserial and MIPS, and issue for this has been opened https://github.com/Arksine/katapult/issues/137 
+    You **must** not use the firmware.cartographer3d.com, it will not flash the proper version of `CARTOGRAPHER K1 5.1.0` firmware for the K1.
+
+    The reason this cannot be done on K1, seems to be some incompatibility with pyserial and MIPS, and issue for this has been opened https://github.com/Arksine/katapult/issues/137 
 
 ## Flashing the Cartographer
 
@@ -22,7 +32,7 @@ You will need some kind of linux environment, this can be a Raspberry Pi, deskto
 
 You should create a live USB with Ubuntu 24.04 Desktop, make sure the USB is at least 8GB in size!
 
-https://ubuntu.com/tutorials/try-ubuntu-before-you-install#1-getting-started
+<https://ubuntu.com/tutorials/try-ubuntu-before-you-install#1-getting-started>
 
 ## Installation dependencies
 
