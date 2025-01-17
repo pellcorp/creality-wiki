@@ -1,8 +1,8 @@
 ## Where can I get help?
 
-Come on over to the pellcorp discord server, here is the invite https://discord.gg/2uGDzyJ3WX
+Come on over to the pellcorp discord server, the `#simple-af-carto` channel has been setup for anyone wanting support for cartographer.
 
-The `#simple-af-carto` channel has been setup for anyone wanting support for cartographer.
+[![invite](assets/images/invite.png '#simple-af-carto')](https://discord.gg/2uGDzyJ3WX)
 
 ## Thanks
 

@@ -69,11 +69,6 @@ extra_css:
 
 # Plugins
 plugins:
-  - blog:
-      archive_date_format: yyyy
-      archive_url_date_format: yyyy
-      draft: true
-      post_url_format: "{slug}"
   - search:
       lang: en
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'

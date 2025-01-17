@@ -1,8 +1,8 @@
 ## Where can I get help?
 
-Come on over to the pellcorp discord server, here is the invite https://discord.gg/2uGDzyJ3WX
+Come on over to the pellcorp discord server, the `#simple-af-bltouch` channel has been setup for anyone wanting support for bltouch, crtouch or 3dtouch.
 
-The `#simple-af-bltouch` channel has been setup for anyone wanting support for bltouch, crtouch or 3dtouch.
+[![invite](assets/images/invite.png '#simple-af-bltouch')](https://discord.gg/2uGDzyJ3WX)
 
 ## What about CrTouch and 3dTouch
 

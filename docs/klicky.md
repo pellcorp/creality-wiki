@@ -1,8 +1,8 @@
 ## Where can I get help?
 
-Come on over to the pellcorp discord server, here is the invite https://discord.gg/2uGDzyJ3WX
+Come on over to the pellcorp discord server, here is the invite, the `#simple-af-support` channel has been setup for anyone wanting support for klicky.
 
-The `#simple-af-support` channel has been setup for anyone wanting support for klicky.
+[![invite](assets/images/invite.png '#simple-af-microprobe')](https://discord.gg/2uGDzyJ3WX)
 
 ## Firmware requirements
 

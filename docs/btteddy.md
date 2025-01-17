@@ -1,8 +1,8 @@
 ## Where can I get help?
 
-Come on over to the pellcorp discord server, here is the invite https://discord.gg/2uGDzyJ3WX
+Come on over to the pellcorp discord server, the `#simple-af-btteddy` channel has been setup for anyone wanting support for btt eddy.
 
-The `#simple-af-btteddy` channel has been setup for anyone wanting support for btt eddy.
+[![invite](assets/images/invite.png '#simple-af-btteddy')](https://discord.gg/2uGDzyJ3WX)
 
 ## Post Installation Changes for rear mounted btt eddy
 
