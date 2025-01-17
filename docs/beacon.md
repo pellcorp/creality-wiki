@@ -61,6 +61,7 @@ END_PRINT
 ### K1M vs K1/K1C/K1SE
 
 !!! info
+
     On a K1M you can use the lidar cable either directly by repinning it, or via the pass through lidar port on the toolhead.  However you cannot use the lidar port on the toolhead for K1, K1C or K1SE.   The reason this does not work is because for Lidar on the K1M creality actually routes a completely separate USB cable from the mainboard.
 
 ## Beacon Firmware
@@ -124,12 +125,15 @@ To run the script, you must use the following command:
 /usr/data/pellcorp/k1/installer.sh --install beacon --mount Mount
 ```
 
-**Note:** For `Mount` you need to specify the mount option your have used, please refer to [Mount Options](#mount-options).  
+!!! tip
 
-If you are using a non-supported mount you should skip the `--mount` option and adjust your configuration after installation before trying to perform a bed mesh or Screws Tilt Calculate!
+    For `Mount` you need to specify the mount option your have used, please refer to [Mount Options](#mount-options).   
+
+    If you are using a non-supported mount you should skip the `--mount` option and adjust your configuration after installation before trying to perform a bed mesh or Screws Tilt Calculate!
 
 ??? note "RPC failed; curl 18 transfer closed"
-You might get this error:
+
+    You might get this error:
 
     ```
     error: RPC failed; curl 18 transfer closed with outstanding read data remaining
@@ -193,9 +197,8 @@ This indicates the beacon was disconnected during homing or some other operation
 ### Calibration
 
 1. Home X Y (`G28 X Y`
-2. Run `BEACON_CALIBRATE`
-Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
-Upon completion *`SAVE_CONFIG`*
+2. Run `BEACON_CALIBRATE` Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
+<br />Upon completion *`SAVE_CONFIG`*
 
 **Source:** [Calibrate Beacon](https://docs.beacon3d.com/quickstart/#6-calibrate-beacon)
 

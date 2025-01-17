@@ -72,7 +72,7 @@ Connect to TOUCH port on the nozzle MCU. it is accessible from the side left (LI
 
 The installation can only be performed on a printer which has been rooted and ssh granted
 
-You need root access, if you are not already root, then follow [Helper Script Enable Root Access](https://guilouz.github.io/Creality-Helper-Script-Wiki/firmwares/install-and-update-rooted-firmware-k1/#enable-root-access)
+You need root access, if you are not already root, then follow the excellent [Helper Script Enable Root Access](https://guilouz.github.io/Creality-Helper-Script-Wiki/firmwares/install-and-update-rooted-firmware-k1/#enable-root-access) instructions.
 
 ### Factory Reset 
 
@@ -122,12 +122,15 @@ To run the script, you must specify the probe you want to use.
 /usr/data/pellcorp/k1/installer.sh --install bltouch --mount Mount
 ```
 
-**Note:** For `Mount` you need to specify the mount option your have used, please refer to [Mount Options](#mount-options).   
+!!! tip
 
-If you are using a non-supported mount you should skip the `--mount` option and adjust your configuration after installation before trying to perform a bed mesh or Screws Tilt Calculate!
+    For `Mount` you need to specify the mount option your have used, please refer to [Mount Options](#mount-options).   
+
+    If you are using a non-supported mount you should skip the `--mount` option and adjust your configuration after installation before trying to perform a bed mesh or Screws Tilt Calculate!
 
 ??? note "RPC failed; curl 18 transfer closed"
-You might get this error:
+
+    You might get this error:
 
     ```
     error: RPC failed; curl 18 transfer closed with outstanding read data remaining
@@ -169,16 +172,15 @@ If you get the message: `INFO - USB Key was recognised and mounted correctly (/t
 
 ### Calibration
 
-Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
-Upon completion *`SAVE_CONFIG`*
-
 For the bltouch/3dtouch/crtouch it is **extremely** important to do the PROBE_CALIBRATE step to configure your z-offset, regardless of what model you have used to mount the probe!
 
 ![image](assets/images/probe_calibrate.png)
 
-**Note:** The default z-offset for BLTouch, 3dTouch and CrTouch is 0, so your prints won't stick without doing this step.
+You should use the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test) for this z-offset calibration.
 
-as in it will try to dig a hole into the bed.
+!!! note
+
+    The default z-offset for BLTouch, 3dTouch and CrTouch is 0, so your prints won't stick without doing this step.
 
 ### Timer too close and microsteps
 
@@ -190,9 +192,8 @@ Next it is highly recommended to perform axis twist compensation calibration bef
 your bed mesh, so best to do it before.
 
 1. Home All (`G28`)
-2. Run `AXIS_TWIST_COMPENSATION_CALIBRATE`
-The calibration wizard will prompt you to measure the probe Z offset at a few points along the bed
-Upon completion *`SAVE_CONFIG`*
+2. Run `AXIS_TWIST_COMPENSATION_CALIBRATE`  The calibration wizard will prompt you to measure the probe Z offset at a few points along the bed
+<br />Upon completion *`SAVE_CONFIG`*
 
 **Source:** https://www.klipper3d.org/Axis_Twist_Compensation.html
 

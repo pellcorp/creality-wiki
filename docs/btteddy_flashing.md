@@ -1,10 +1,13 @@
-**THIS IS A RISKY OPERATION YOU COULD EASILY BRICK YOUR BTT EDDY**
+!!! danger
 
-## Flashing Btt DUO
+    THIS IS A RISKY OPERATION YOU CAN BRICK YOUR EDDY
 
-Make sure to switch it to USB Mode first of all!!!
+!!! tip "Flashing Btt DUO"
 
-It is possible this method will not work for the BTT Duo, especially if it is currently flashed for Can from the factory, and you may need to resort to the old fashioned approach documented [here](btteddy_duo_flashing.md)
+    Make sure to switch it to USB Mode first of all!!!
+
+    It is possible this method will not work for the BTT Duo, especially if it is currently flashed for Can from the factory, 
+    and you may need to resort to the old fashioned approach documented [here](btteddy_duo_flashing.md)
 
 ## Flashing on Windows or Linux Desktop
 
@@ -64,4 +67,3 @@ Unfortunately I know of no way to test this except by plugging it back into the 
 The K1 mod has an older version of the btteddy firmware, if you still see this in the System tab, then your flashing failed
 
 ![image](assets/images/old_mcu_eddy.png)
-

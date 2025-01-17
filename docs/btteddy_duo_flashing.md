@@ -1,12 +1,12 @@
-**THIS IS A RISKY OPERATION YOU COULD EASILY BRICK YOUR BTT DUO **
+!!! danger
 
-It is really important that you update the firmware on your eddy before doing an installation, otherwise the serial config will be wrong.
+    THIS IS A RISKY OPERATION YOU CAN BRICK YOUR EDDY
 
 ## Creating a Live USB Key
 
 If you do not have a Raspberry PI or an Linux Desktop or Server machine, you can create a live USB and boot into that, the following instructions work fine on a Usb Key, just make sure the USB is at least 8GB in size to allow for installing the packages we need and cloning klipper.
 
-https://ubuntu.com/tutorials/try-ubuntu-before-you-install#1-getting-started
+<https://ubuntu.com/tutorials/try-ubuntu-before-you-install#1-getting-started>
 
 ## Install some deps on Ubuntu 
 
@@ -53,4 +53,6 @@ cd klipper
 sudo python3 ./scripts/flash_usb.py -t rp2040 -d 2e8a:0003 fw/K1/btteddy.uf2
 ```
 
-**Note:** We are not compiling new firmware, just flashing the firmware I have already prepared.
+!!! note
+
+    We are not compiling new firmware, just flashing the firmware I have already prepared.

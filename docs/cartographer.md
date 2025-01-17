@@ -43,7 +43,7 @@ END_PRINT
 !!! danger
 
     If you are not using a side mount you **must** verify config changes for cartotouch.cfg and cartographer-k1.cfg 
-    or cartographer-k1m.cfg before homing your printer, using **Screws Tilt Calculate** or doing a **bed mesh**!  
+    or cartographer-k1m.cfg before **homing your printer**, using **Screws Tilt Calculate** or doing a **bed mesh**!  
 
     Ignoring these instructions can lead to significant damage to your build plate and/or probe.
 
@@ -89,7 +89,7 @@ END_PRINT
 
 The installation can only be performed on a printer which has been rooted and ssh granted
 
-You need root access, if you are not already root, then follow [Helper Script Enable Root Access](https://guilouz.github.io/Creality-Helper-Script-Wiki/firmwares/install-and-update-rooted-firmware-k1/#enable-root-access)
+You need root access, if you are not already root, then follow the excellent [Helper Script Enable Root Access](https://guilouz.github.io/Creality-Helper-Script-Wiki/firmwares/install-and-update-rooted-firmware-k1/#enable-root-access) instructions.
 
 !!! tip
 
@@ -143,11 +143,14 @@ To run the script, you must use the following command:
 /usr/data/pellcorp/k1/installer.sh --install cartotouch --mount Mount
 ```
 
-**Note:** For `Mount` you need to specify the mount option your have used, please refer to [Mount Options](#mount-options).   
+!!! tip
 
-If you are using a non-supported mount you should skip the `--mount` option and adjust your configuration after installation before trying to perform a bed mesh or Screws Tilt Calculate!
+    For `Mount` you need to specify the mount option your have used, please refer to [Mount Options](#mount-options).   
+
+    If you are using a non-supported mount you should skip the `--mount` option and adjust your configuration after installation before trying to perform a bed mesh or Screws Tilt Calculate!
 
 ??? note "RPC failed; curl 18 transfer closed"
+
     You might get this error:
 
     ```
@@ -256,7 +259,7 @@ It is a good idea to heat the nozzle to 150c for this step first!
 3. Make sure nozzle is centred on bed
 4. Run `CARTOGRAPHER_CALIBRATE METHOD=manual`
 Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
-Upon completion *`SAVE_CONFIG`*
+<br />Upon completion *`SAVE_CONFIG`*
 
 **WARNING:** Do not use a metal feeler gauge for this step, it could interfere with calibration!!!
 
@@ -271,7 +274,7 @@ is any issue with the printer configuration or your carto probe, its possible th
 7. Make sure nozzle is centred on bed
 8. Heat Nozzle to 150c (`M109 S150`) so that any filament can be removed from nozzle
 9. Execute `CARTOGRAPHER_THRESHOLD_SCAN SPEED=2 MIN=1500 MAX=5000`
-Upon completion *`SAVE_CONFIG`*
+<br />Upon completion *`SAVE_CONFIG`*
 
 After the save config you have to do the touch calibration.   
 
@@ -283,7 +286,7 @@ is any issue with the printer configuration or your carto probe, its possible th
 10. Home All (`G28`)
 11. Heat Nozzle to 150c (`M109 S150`) so that any filament can be removed from nozzle
 12. Execute `CARTOGRAPHER_CALIBRATE`
-Upon completion *`SAVE_CONFIG`*
+<br />Upon completion *`SAVE_CONFIG`*
 
 **Note:** If this fails after 3 tries, you should check to make sure there is not filament stuck to the bottom of your nozzle!
 
@@ -295,9 +298,8 @@ Next it is highly recommended to perform axis twist compensation calibration **i
 your bed mesh, so best to do it before.
 
 1. Home All (`G28`)
-2. Run `AXIS_TWIST_COMPENSATION_CALIBRATE`
-The calibration wizard will prompt you to measure the probe Z offset at a few points along the bed
-Upon completion *`SAVE_CONFIG`*
+2. Run `AXIS_TWIST_COMPENSATION_CALIBRATE` The calibration wizard will prompt you to measure the probe Z offset at a few points along the bed
+<br />Upon completion *`SAVE_CONFIG`*
 
 **WARNING:** Do not use a metal feeler gauge for this step, it could interfere with calibration!!!
 

@@ -4,14 +4,6 @@ Come on over to the pellcorp discord server, the `#simple-af-btteddy` channel ha
 
 [![invite](assets/images/invite.png '#simple-af-btteddy')](https://discord.gg/2uGDzyJ3WX)
 
-## Post Installation Changes for rear mounted btt eddy
-
-**SUPER IMPORTANT SUPER IMPORTANT SUPER IMPORTANT SUPER IMPORTANT SUPER IMPORTANT**
-
-Please note if you are not using ZeroDotCmd side mount you might have to make post install config changes to btteddy.cfg and btteddy-k1.cfg or btteddy-k1m.cfg before homing your printer, using **screw tilt adjust** or doing a **bed mesh**!    Ignoring these instructions can lead to significant damage to your build plate and/or probe.
-
-See [probe installation](#probe-installation) for more details.
-
 ## Firmware requirements
 
 This guide assumes you have a K1, K1C or K1 Max and you are running stock creality firmware 1.3.3.5 or higher, or alternately you are using  [my prerooted firmware](https://github.com/pellcorp/creality/wiki/Prerooted-K1-Firmware).   Any other pre-rooted firmware is explicitly not supported and the installer.sh will validate this and refuse to proceed if you try to use it on different firmware.
@@ -36,7 +28,11 @@ END_PRINT
 
 ## Probe Installation
 
-**WARNING:** If you use a different probe mount you must make sure the bottom of the btt eddy is between 2.5mm and 3mm from the tip of the nozzle, so if the nozzle is touching the bed (when both are cold), the bottom of the eddy should be at least 2.5mm above the bed and no more than 3mm.
+!!! danger
+
+    Please note if you are not using ZeroDotCmd side mount you might have to make post install config changes to btteddy.cfg and btteddy-k1.cfg or btteddy-k1m.cfg before **homing your printer**, using **screw tilt adjust** or doing a **bed mesh**!    Ignoring these instructions can lead to significant damage to your build plate and/or probe.
+
+    Ignoring these instructions can lead to significant damage to your build plate and/or probe.
 
 ### Mount Options
 
@@ -45,15 +41,23 @@ END_PRINT
 | **Default**  | <https://www.printables.com/model/1012524-btteddy-creality-k1-k1c-k1-max-mount> |
 | **Pellcorp** | <https://www.printables.com/model/965667-wip-k1-btt-eddy-rear-mount-v4>         |
 
+### Nozzle Offset
+
+!!! warn
+
+    If you use a different probe mount you must make sure the bottom of the btt eddy is between 2.5mm and 3mm from the tip of the nozzle, so if the nozzle is touching the bed (when both are cold), the bottom of the eddy should be at least 2.5mm above the bed and no more than 3mm.
+
 ### K1M vs K1/K1C/K1SE
 
-On a K1M you can use the lidar cable either directly by repinning it, or via the pass through lidar port on the toolhead.  However you cannot use the lidar port on the toolhead for K1, K1C or K1SE.   The reason this does not work is because for Lidar on the K1M creality actually routes a completely separate USB cable from the mainboard.
+!!! info
+
+    On a K1M you can use the lidar cable either directly by repinning it, or via the pass through lidar port on the toolhead.  However you cannot use the lidar port on the toolhead for K1, K1C or K1SE.   The reason this does not work is because for Lidar on the K1M creality actually routes a completely separate USB cable from the mainboard.
 
 ## BTT Eddy Firmware
 
 !!! warning
-    It is assumed that you have flashed your eddy with the firmware from <https://github.com/pellcorp/klipper/blob/master/fw/K1/btteddy.uf2>
-    **before** starting the installation!!!
+
+    It is assumed that you have flashed your eddy with the firmware from <https://github.com/pellcorp/klipper/blob/master/fw/K1/btteddy.uf2> **before** starting the installation!!!
     
     I have put together a guide for flashing the btt eddy [here](btteddy_flashing.md)
 
@@ -61,9 +65,10 @@ On a K1M you can use the lidar cable either directly by repinning it, or via the
 
 The installation can only be performed on a printer which has been rooted and ssh granted
 
-You need root access, if you are not already root, then follow [Helper Script Enable Root Access](https://guilouz.github.io/Creality-Helper-Script-Wiki/firmwares/install-and-update-rooted-firmware-k1/#enable-root-access)
+You need root access, if you are not already root, then follow the excellent [Helper Script Enable Root Access](https://guilouz.github.io/Creality-Helper-Script-Wiki/firmwares/install-and-update-rooted-firmware-k1/#enable-root-access) instructions.
 
 !!! tip
+
     ZeroDotCmd (aka Zero on discord) has provided an excellent BTT Eddy installation video, you can find it <https://www.youtube.com/watch?v=B17sS1klRxA>
 
 ### Factory Reset 
@@ -114,12 +119,15 @@ To run the script, you must specify the probe you want to use.
 /usr/data/pellcorp/k1/installer.sh --install btteddy --mount Mount
 ```
 
-**Note:** For `Mount` you need to specify the mount option your have used, please refer to [Mount Options](#mount-options).   
+!!! tip
 
-If you are using a non-supported mount you should skip the `--mount` option and adjust your configuration after installation before trying to perform a bed mesh or Screws Tilt Calculate!
+    For `Mount` you need to specify the mount option your have used, please refer to [Mount Options](#mount-options).   
+
+    If you are using a non-supported mount you should skip the `--mount` option and adjust your configuration after installation before trying to perform a bed mesh or Screws Tilt Calculate!
 
 ??? note "RPC failed; curl 18 transfer closed"
-You might get this error:
+
+    You might get this error:
 
     ```
     error: RPC failed; curl 18 transfer closed with outstanding read data remaining
@@ -189,9 +197,8 @@ You can run the following command to fix your serial if you forgot to plug your 
 6. Home X and Y (`G28 X Y`)
 7. Make sure nozzle is centred on bed
 8. Run `_SET_KIN_MAX_Z` and then move the nozzle so its approximately 2mm from the bed
-9. Run `BTTEDDY_CURRENT_CALIBRATE` (Triggers manual z offset calibration - paper test)
-Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
-Upon completion *`SAVE_CONFIG`*
+9. Run `BTTEDDY_CURRENT_CALIBRATE` Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
+<br />Upon completion *`SAVE_CONFIG`*
 
 **Note:** The reason for the tip of nozzle being about 2mm above the bed is that as part of this calibration we will be temporarily saying that the position the nozzle is at right now is 0Z, so if you try to start your paper test when the nozzle is more than about 2mm above the bed, you might end up triggering a nozzle out of bounds error, if we have to jog the nozzle down more than 5mm for example.
 
@@ -204,7 +211,7 @@ Upon completion *`SAVE_CONFIG`*
 10. Home All (`G28`)
 11. Make sure nozzle is centred on bed
 12. Run `BTTEDDY_TEMPERATURE_PROBE_CALIBRATE`
-Upon completion *`SAVE_CONFIG`*
+<br />Upon completion *`SAVE_CONFIG`*
 
 **WARNING:** Do not use a metal feeler gauge for this step, it could interfere with calibration!!!
 
@@ -217,9 +224,8 @@ Upon completion *`SAVE_CONFIG`*
 Next it is highly recommended to perform axis twist compensation **if you are using a rear mount**  before doing anything else, this will affect the quality of your bed mesh, so best to do it before.
 
 1. Home All (`G28`)
-2. Run `AXIS_TWIST_COMPENSATION_CALIBRATE`
-The calibration wizard will prompt you to measure the probe Z offset at a few points along the bed
-Upon completion *`SAVE_CONFIG`*
+2. Run `AXIS_TWIST_COMPENSATION_CALIBRATE` The calibration wizard will prompt you to measure the probe Z offset at a few points along the bed
+<br />Upon completion *`SAVE_CONFIG`*
 
 **WARNING:** Do not use a metal feeler gauge for this step, it could interfere with calibration!!!
 
@@ -234,13 +240,13 @@ For this first print you can go and do the tuning first (PID Tuning, etc) or you
 Now you can now run your first bed mesh:
 `BED_MESH_CALIBRATE`
 
-**Source:** https://ballaswag.github.io/blog/creality-k1-btt-eddy-guide/
-**Source:** https://github.com/bigtreetech/Eddy
+**Source:** <https://ballaswag.github.io/blog/creality-k1-btt-eddy-guide/>
+**Source:** <https://github.com/bigtreetech/Eddy>
 
 ### Error during homing z: Eddy current sensor error
 
 You might need to adjust your `reg_drive_current`, for more details:
-https://github.com/bigtreetech/Eddy?tab=readme-ov-file#sometimes-i-get-error-during-homing-probe-eddy-current-sensor-error
+<https://github.com/bigtreetech/Eddy?tab=readme-ov-file#sometimes-i-get-error-during-homing-probe-eddy-current-sensor-error>
 
 ### Tuning
 

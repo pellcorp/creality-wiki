@@ -72,7 +72,7 @@ Connect to TOUCH port on the nozzle MCU. it is accessible from the side left (LI
 
 The installation can only be performed on a printer which has been rooted and ssh granted
 
-You need root access, if you are not already root, then follow [Helper Script Enable Root Access](https://guilouz.github.io/Creality-Helper-Script-Wiki/firmwares/install-and-update-rooted-firmware-k1/#enable-root-access)
+You need root access, if you are not already root, then follow the excellent [Helper Script Enable Root Access](https://guilouz.github.io/Creality-Helper-Script-Wiki/firmwares/install-and-update-rooted-firmware-k1/#enable-root-access) instructions.
 
 ### Factory Reset 
 
@@ -122,11 +122,14 @@ To run the script, you must specify the probe you want to use.
 /usr/data/pellcorp/k1/installer.sh --install microprobe --mount Mount
 ```
 
-**Note:** For `Mount` you need to specify the mount option your have used, please refer to [Mount Options](#mount-options).   
+!!! tip
 
-If you are using a non-supported mount you should skip the `--mount` option and adjust your configuration after installation before trying to perform a bed mesh or Screws Tilt Calculate!
+    For `Mount` you need to specify the mount option your have used, please refer to [Mount Options](#mount-options).   
+
+    If you are using a non-supported mount you should skip the `--mount` option and adjust your configuration after installation before trying to perform a bed mesh or Screws Tilt Calculate!
 
 ??? note "RPC failed; curl 18 transfer closed"
+
     You might get this error:
     
     ```
@@ -173,15 +176,15 @@ The default microprobe.cfg assumes a V2 microprobe a post install change to `[pr
 
 ### Calibration
 
-The configuration file assumes a microprobe is mounted on the side of the tool head. You must make additional changes to the microprobe-k1.cfg or microprobe-k1m.cfg files before trying to home your printer.
-
 For the microprobe it is **extremely** important to do the PROBE_CALIBRATE step to configure your z-offset, regardless of what model you have used to mount the probe!
 
 ![image](assets/images/probe_calibrate.png)
 
 You should use the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test) for this z-offset calibration.
 
-**Note:** The default z-offset for Microprobe is 0, so your prints won't stick without doing this step.
+!!! note
+
+    The default z-offset for Microprobe is 0, so your prints won't stick without doing this step.
 
 ### First Print
 
