@@ -34,10 +34,10 @@ END_PRINT
 
 ### Mount Options
 
-|Mount     | URL                                                                                 |
-|----------|-------------------------------------------------------------------------------------|
-|`Default` | <https://www.printables.com/model/666186-creality-k1-bltouch-adapter>               |
-|`CrTouch` | <https://www.printables.com/model/1073375-cr-touch-mount-k1-k1maxk1c-zero-y-offset> |
+| Mount       | URL                                                                                 |
+|-------------|-------------------------------------------------------------------------------------|
+| **Default** | <https://www.printables.com/model/666186-creality-k1-bltouch-adapter>               |
+| **CrTouch** | <https://www.printables.com/model/1073375-cr-touch-mount-k1-k1maxk1c-zero-y-offset> |
 
 ### Wiring
 
@@ -233,7 +233,8 @@ You can use the `SHAPER_CALIBRATE` macro to run input shaping, just be sure to `
 
 ### Other Calibrations
 
-**Note:** The default value for pressure advance is set to: `0.04`
+''' info
+    The default value for pressure advance is set to: `0.04`
 
 Refer to [Orcaslicer Calibration](https://github.com/SoftFever/OrcaSlicer/wiki/Calibration) for more calibrations
 

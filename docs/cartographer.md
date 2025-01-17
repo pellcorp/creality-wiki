@@ -51,13 +51,13 @@ END_PRINT
 
 ### Mount Options
 
-|Mount      |Carto| URL                                                                                                                  |Notes|
-|-----------|-----------|----------------------------------------------------------------------------------------------------------------------|----------|
-|`Default`    |Right Angle| <https://www.printables.com/model/1037606-cartographer-3d-right-angle-k1-series-mount>                               ||
-|`D3vilStock` |Flat Pack  | <https://www.printables.com/model/684338-k1-k1max-eddy-current-mount-cartographer>                                   ||
-|`BootyGantry` |Right Angle| <https://github.com/tlace17/K1-Linear-Rail-Gantry/blob/main/STLs/Probe%20Mounts/Rail%20Carriage%20Carto%20Mount.stl> |May require shimming for correct nozzle offset|
-|`SkeletorMK7`|Low Profile| <https://www.printables.com/model/833769-the-skeletor-collection-a-creality-k1k1-maxk1c-coo>                         |This is only for the low profile cartographer version of the mount!!!|
-|`PurcellV5`  |Right Angle| <https://www.printables.com/model/1071493-cartographer-probe-side-mount-options-for-creality>                        ||
+| Mount           |Carto| URL                                                                                                                  |Notes|
+|-----------------|-----------|----------------------------------------------------------------------------------------------------------------------|----------|
+| **Default**     |Right Angle| <https://www.printables.com/model/1037606-cartographer-3d-right-angle-k1-series-mount>                               ||
+| **D3vilStock**  |Flat Pack  | <https://www.printables.com/model/684338-k1-k1max-eddy-current-mount-cartographer>                                   ||
+| **BootyGantry** |Right Angle| <https://github.com/tlace17/K1-Linear-Rail-Gantry/blob/main/STLs/Probe%20Mounts/Rail%20Carriage%20Carto%20Mount.stl> |May require shimming for correct nozzle offset|
+| **SkeletorMK7** |Low Profile| <https://www.printables.com/model/833769-the-skeletor-collection-a-creality-k1k1-maxk1c-coo>                         |This is only for the low profile cartographer version of the mount!!!|
+| **PurcellV5**   |Right Angle| <https://www.printables.com/model/1071493-cartographer-probe-side-mount-options-for-creality>                        ||
 
 ### Nozzle Offset
 
@@ -326,7 +326,8 @@ You can use the `SHAPER_CALIBRATE` macro to run input shaping, just be sure to `
 
 ### Other Calibrations
 
-**Note:** The default value for pressure advance is set to: `0.04`
+''' info
+    The default value for pressure advance is set to: `0.04`
 
 Refer to [Orcaslicer Calibration](https://github.com/SoftFever/OrcaSlicer/wiki/Calibration) for more calibrations
 

@@ -30,10 +30,10 @@ END_PRINT
 
 ### Mount Options
 
-| Mount         | URL                                                                                                                       |
-|---------------|---------------------------------------------------------------------------------------------------------------------------|
-| `Default`     | <https://www.printables.com/model/867527-k1-biqu-microprobe-mount-remix>                                                  |
-| `BootyGantry` | <https://github.com/tlace17/K1-Linear-Rail-Gantry/blob/main/STLs/Probe%20Mounts/Rail%20Carriage%20Microprobe%20Mount.stl> |
+| Mount           | URL                                                                                                                       |
+|-----------------|---------------------------------------------------------------------------------------------------------------------------|
+| **Default**     | <https://www.printables.com/model/867527-k1-biqu-microprobe-mount-remix>                                                  |
+| **BootyGantry** | <https://github.com/tlace17/K1-Linear-Rail-Gantry/blob/main/STLs/Probe%20Mounts/Rail%20Carriage%20Microprobe%20Mount.stl> |
 
 **Important:** All mount options assume a V2 microprobe is being used, after the installation you may need to modify `microprobe.cfg` to 
 switch the pin config:
@@ -226,7 +226,8 @@ You can use the `SHAPER_CALIBRATE` macro to run input shaping, just be sure to `
 
 ### Other Calibrations
 
-**Note:** The default value for pressure advance is set to: `0.04`
+''' info
+    The default value for pressure advance is set to: `0.04`
 
 Refer to [Orcaslicer Calibration](https://github.com/SoftFever/OrcaSlicer/wiki/Calibration) for more calibrations
 

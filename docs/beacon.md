@@ -34,10 +34,10 @@ END_PRINT
 
 ### Mount Options
 
-| Mount             | Beacon           | URL                                                                                          |Notes|
-|-------------------|------------------|----------------------------------------------------------------------------------------------|----------|
-| `PurcellV4`       | RevH Standard    | <https://www.printables.com/model/1071641-beacon-probe-mounts-for-creality-k1-series>        ||
-| `SkeletorMK7`     | RevH Low Profile | <https://www.printables.com/model/833769-the-skeletor-collection-a-creality-k1k1-maxk1c-coo> |This is only for the low profile cartographer version of the mount!!!|
+| Mount           | Beacon           | URL                                                                                          |Notes|
+|-----------------|------------------|----------------------------------------------------------------------------------------------|----------|
+| **PurcellV4**   | RevH Standard    | <https://www.printables.com/model/1071641-beacon-probe-mounts-for-creality-k1-series>        ||
+| **SkeletorMK7** | RevH Low Profile | <https://www.printables.com/model/833769-the-skeletor-collection-a-creality-k1k1-maxk1c-coo> |This is only for the low profile cartographer version of the mount!!!|
 
 ### Nozzle Offset
 
@@ -225,7 +225,8 @@ You can use the `SHAPER_CALIBRATE` macro to run input shaping, just be sure to `
 
 ### Other Calibrations
 
-**Note:** The default value for pressure advance is set to: `0.04`
+''' info
+    The default value for pressure advance is set to: `0.04`
 
 Refer to [Orcaslicer Calibration](https://github.com/SoftFever/OrcaSlicer/wiki/Calibration) for more calibrations
 

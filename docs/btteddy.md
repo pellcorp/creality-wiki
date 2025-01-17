@@ -40,10 +40,10 @@ END_PRINT
 
 ### Mount Options
 
-|Mount      | URL                                                                             |
-|-----------|---------------------------------------------------------------------------------|
-|`Default`  | <https://www.printables.com/model/1012524-btteddy-creality-k1-k1c-k1-max-mount> |
-|`Pellcorp` | <https://www.printables.com/model/965667-wip-k1-btt-eddy-rear-mount-v4>         |
+| Mount        | URL                                                                             |
+|--------------|---------------------------------------------------------------------------------|
+| **Default**  | <https://www.printables.com/model/1012524-btteddy-creality-k1-k1c-k1-max-mount> |
+| **Pellcorp** | <https://www.printables.com/model/965667-wip-k1-btt-eddy-rear-mount-v4>         |
 
 ### K1M vs K1/K1C/K1SE
 
@@ -271,7 +271,8 @@ You can use the `SHAPER_CALIBRATE` macro to run input shaping, just be sure to `
 
 ### Other Calibrations
 
-**Note:** The default value for pressure advance is set to: `0.04`
+''' info
+    The default value for pressure advance is set to: `0.04`
 
 Refer to [Orcaslicer Calibration](https://github.com/SoftFever/OrcaSlicer/wiki/Calibration) for more calibrations
 
