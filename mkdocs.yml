@@ -137,12 +137,17 @@ nav:
   - Beacon:
       - beacon.md
       - beacon_flashing.md
-  - BlTouch: bltouch.md
-  - Microprobe: microprobe.md
+  - BlTouch:
+      - bltouch.md
+  - Microprobe:
+      - microprobe.md
   - BttEddy:
       - btteddy.md
       - btteddy_flashing.md
-  - Extras
+      - btteddy_duo_flashing.md
+  - Extras:
       - misc.md
-      - config-overrides.md
+      - config_overrides.md
       - custom_hooks.md
+  - Klicky:
+      - klicky.md

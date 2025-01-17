@@ -62,7 +62,7 @@ A reinstall is only needed if one or more github repos have got into an inconsis
 
 ## Git Backups for Configuration Overrides
 
-[Git Backups for Configuration Overrides](config-overrides.md#git-backups-for-configuration-overrides)
+[Git Backups for Configuration Overrides](config_overrides.md#git-backups-for-configuration-overrides)
 
 ## Emergency Factory Reset
 
