@@ -16,7 +16,7 @@ This guide assumes you have a K1, K1C or K1 Max and you are running stock creali
 
 There is an assumption that you are using a slicer like OrcaSlicer and Machine G-code like:
 
-![image](https://github.com/user-attachments/assets/94a54935-6a30-411c-8b8c-3b54b4e9d3bc)
+![image](assets/images/slicer.png)
 
 **Machine start G-code**
 ```
@@ -54,15 +54,15 @@ Alternatively, two pre-crimped cables can be soldered together:
 Or a cable built from pre-crimped wires and connector housings:
 - https://www.amazon.de/dp/B08RMQP6YP
 
-![image-1.png](image/image-1.png)
+![image](assets/images/bltouch_wiring.png)
 
-![image.png](image/image.png)
+![image](assets/images/touch_wiring.jpg)
 
 Connect to TOUCH port on the nozzle MCU. it is accessible from the side left (LIDAR) side of the printhead and only the external cover of the printhead has to be removed.
 
-![image-2.png](image/image-2.png)
+![image](assets/images/nozzle_rear.png)
 
-![350822478-cf895537-a1a1-449b-8456-1730aab4fe25](https://github.com/user-attachments/assets/6d496572-adb7-4362-b465-4d92c5b7d44c)
+![image](assets/images/touch_port.png)
 
 **IMPORTANT:** The configuration file assumes a bltouch is mounted on the back of the tool head.   If you have a Crtouch or are mounting your bltouch or 3dtouch using a different model, you must make additional changes to the bltouch-k1.cfg or bltouch-k1m.cfg files before trying to home your printer.
 
@@ -86,7 +86,7 @@ chmod +x S58factoryreset
 ```
 **IMPORTANT:** It is really important you do not close the ssh session until you get the message `Info: Factory reset was executed successfully, the printer will restart...`:
 
-![image](https://github.com/user-attachments/assets/1f21f1d4-ee5b-4263-a7e5-586a4dc5cf4c)
+![image](assets/images/factory_reset.png)
 
 ### Clone the Repo
 
@@ -165,7 +165,7 @@ Your printer MCU firmware was updated successfully.   If you still see the `MCU 
 
 It is important to make sure you have a way to [emergency factory reset](#emergency-factory-reset) the printer, if the worst happens.   There is a macro in Simple AF called `CHECK_USB_KEY` that will wait for you to plug a USB key in and tell you if it was able to be successfully mounted.   You should verify your USB key often just to make sure you have something if you need to unbrick your printer, simply type `CHECK_USB_KEY` or hit the button in Fluidd / Mainsail
 
-![image](https://github.com/user-attachments/assets/cdd90e6d-2d61-48fb-8624-818190604ac4)
+![image](assets/images/check_usb_key.png)
 
 If you get the message: `INFO - USB Key was recognised and mounted correctly (/tmp/udisk/sda1)`, your USB is perfect to use for a factory reset.   If you get no message at all before the script ends (after 60 seconds), your USB is defective.   You can check the `messages` file in the logs section of your UI to get more details about why the usb key could not be mounted!
 
@@ -176,7 +176,7 @@ Upon completion *`SAVE_CONFIG`*
 
 For the bltouch/3dtouch/crtouch it is **extremely** important to do the PROBE_CALIBRATE step to configure your z-offset, regardless of what model you have used to mount the probe!
 
-![image](https://github.com/user-attachments/assets/47415841-f915-4767-a971-01811164ee79)
+![image](assets/images/probe_calibrate.png)
 
 **Note:** The default z-offset for BLTouch, 3dTouch and CrTouch is 0, so your prints won't stick without doing this step.
 
@@ -204,7 +204,7 @@ For this first print you can go and do the tuning first (PID Tuning, etc) or you
 
 In fluidd the save button after you finish or cancel your print can be a bit hard to find, look for
 
-![image](https://github.com/user-attachments/assets/2af8d5cb-091e-40df-a38c-25d43b2e6647)
+![image](assets/images/fluidd_save_zoffset.png)
 
 ### Tuning
 

@@ -26,7 +26,7 @@ This guide assumes you have a K1, K1C or K1 Max and you are running stock creali
 
 There is an assumption that you are using a slicer like OrcaSlicer and Machine G-code like:
 
-![image](https://github.com/user-attachments/assets/94a54935-6a30-411c-8b8c-3b54b4e9d3bc)
+![image](assets/images/slicer.png)
 
 **Machine start G-code**
 ```
@@ -68,9 +68,9 @@ On a K1M you can use the lidar cable either directly by repinning it, or via the
 ## Cartographer Firmware
 
 You must have flashed your cartographer with `CARTOGRAPHER K1 5.1.0` survey firmware **before** starting the installation:
-![image](https://github.com/user-attachments/assets/c65f8a9a-ac1a-46b0-838f-6e693ed9f661)
+![image](assets/images/cartographer_k1_510.png)
 
-There is a guide for this [here](https://github.com/pellcorp/creality/wiki/Flashing-Carto-Firmware-on-Ubuntu)
+There is a guide for this [here](cartographer_flashing.md)
 
 ## Installation
 
@@ -93,7 +93,7 @@ chmod +x S58factoryreset
 
 **IMPORTANT:** It is really important you do not close the ssh session until you get the message `Info: Factory reset was executed successfully, the printer will restart...`:
 
-![image](https://github.com/user-attachments/assets/1f21f1d4-ee5b-4263-a7e5-586a4dc5cf4c)
+![image](assets/images/factory_reset.png)
 
 ### Clone the Repo
 
@@ -172,7 +172,7 @@ Your printer MCU firmware was updated successfully.   If you still see the `MCU 
 
 It is important to make sure you have a way to [emergency factory reset](#emergency-factory-reset) the printer, if the worst happens.   There is a macro in Simple AF called `CHECK_USB_KEY` that will wait for you to plug a USB key in and tell you if it was able to be successfully mounted.   You should verify your USB key often just to make sure you have something if you need to unbrick your printer, simply type `CHECK_USB_KEY` or hit the button in Fluidd / Mainsail
 
-![image](https://github.com/user-attachments/assets/cdd90e6d-2d61-48fb-8624-818190604ac4)
+![image](assets/images/check_usb_key.png)
 
 If you get the message: `INFO - USB Key was recognised and mounted correctly (/tmp/udisk/sda1)`, your USB is perfect to use for a factory reset.   If you get no message at all before the script ends (after 60 seconds), your USB is defective.   You can check the `messages` file in the logs section of your UI to get more details about why the usb key could not be mounted!
 
@@ -182,7 +182,7 @@ https://docs.cartographer3d.com/cartographer-probe/survey-touch/survey-troublesh
 
 #### Repo has diverged from remote 
 
-![image](https://github.com/user-attachments/assets/72cf5b71-afab-4ecf-b797-8c6c2faa5fdb)
+![image](assets/images/cartographer_repo_diverged.png)
 
 You need to click RECOVER and then run from ssh:
 
@@ -194,21 +194,21 @@ You need to click RECOVER and then run from ssh:
 
 If you get the following error, it means that the cartographer is not connected to the printer.   This is either because its physically not connected, the wiring is wrong, the usb subsystem has disconnected the carto during a restart or the serial id is wrong
 
-![image](https://github.com/user-attachments/assets/fd69c578-636b-4fd2-ab0b-cebd27478e1e)
+![image](assets/images/carto_check_connection.png)
 
 So from ssh run a `lsusb` and make sure you can see:
 
-![image](https://github.com/user-attachments/assets/3dffd671-7cb5-46f7-9156-a54d2d09a8b6)
+![image](assets/images/carto_lsusb.png)
 
 If you cannot see it in `lsusb`, then it very likely means either the carto is wired incorrectly, or if was working, it just means that an attempt to restart the carto failed because the K1 refused to recognise it, there is no recourse except to Reboot the printer via Fluidd / Mainsail in this case.
 
 If you can, then verify that the serial id matches:
 
-![image](https://github.com/user-attachments/assets/29856ac7-7e91-4160-8e6d-cfe0a1badf84)
+![image](assets/images/carto_serial.png)
 
 Make sure it matches the `serial` in `cartotouch.cfg`:
 
-![image](https://github.com/user-attachments/assets/e35ee394-5540-4c39-8551-cf3fe4b08f29)
+![image](assets/images/carto_scanner_serial.png)
 
 #### Manual Cartographer Serial Device configuration
 
@@ -329,7 +329,7 @@ For this first print you can go and do the tuning first (PID Tuning, etc) or you
 
 In fluidd the save button after you finish or cancel your print can be a bit hard to find, look for
 
-![image](https://github.com/user-attachments/assets/2af8d5cb-091e-40df-a38c-25d43b2e6647)
+![image](assets/images/fluidd_save_zoffset.png)
 
 ### Other Calibrations
 
@@ -358,7 +358,7 @@ You can then use the CARTOGRAPHER_MODEL parameter to start print from your slice
 
 If you want to select a particular [cartographer model](https://docs.cartographer3d.com/cartographer-probe/fine-tuning/cartographer-models) other than the default you can pass in an additional `START_PRINT` parameter:
 
-![image](https://github.com/user-attachments/assets/7bb0072f-17ef-4ef3-8463-238e7fbdf7d9)
+![image](assets/images/carto_model_slicer.png)
 
 You can either hard code it to a particular model, like `CARTOGRAPHER_MODEL=mymodel` or you can specify a model based on orca slicer variables, such as `CARTOGRAPHER_MODEL="[curr_bed_type] - [filament_type]"`, but you have to make sure you have all the possible models
 defined for each of the bed type and filament type combinations.
