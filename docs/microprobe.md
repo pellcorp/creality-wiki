@@ -68,8 +68,6 @@ Connect to TOUCH port on the nozzle MCU. it is accessible from the side left (LI
 
 ![image](assets/images/touch_port.png)
 
-**Source:** Portions of this section are copied from the BIQU-MicroProbe-v2 guide for helper script.
-
 ## Installation
 
 The installation can only be performed on a printer which has been rooted and ssh granted
@@ -85,9 +83,12 @@ wget --no-check-certificate  https://raw.githubusercontent.com/pellcorp/creality
 chmod +x S58factoryreset
 ./S58factoryreset reset
 ```
-**IMPORTANT:** It is really important you do not close the ssh session until you get the message `Info: Factory reset was executed successfully, the printer will restart...`:
 
-![image](assets/images/factory_reset.png)
+!!! warn
+
+    It is really important you do not close the ssh session until you get this message:
+
+    ![image](assets/images/factory_reset.png)
 
 ### Clone the Repo
 

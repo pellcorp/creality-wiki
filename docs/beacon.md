@@ -45,17 +45,22 @@ END_PRINT
     It is vital that you verify the model to nozzle tip distance is within the valid range of 2.6 to 3mm.  
     Anything out of this range will cause you problems when it comes time to doing the touch calibration, you can use this tool to verify:
     
-    [cartographer-probe-nozzle-offset-tool](https://www.printables.com/model/1060868-cartographer-probe-nozzle-offset-tool)
+    <https://www.printables.com/model/1060868-cartographer-probe-nozzle-offset-tool>
+
+    Or for side mounted probes you may want to consider this version:
+    <https://www.printables.com/model/1121309-cartographer-probe-nozzle-offset-tool-x-offset>
 
 ### K1M vs K1/K1C/K1SE
 
-On a K1M you can use the lidar cable either directly by repinning it, or via the pass through lidar port on the toolhead.  However you cannot use the lidar port on the toolhead for K1, K1C or K1SE.   The reason this does not work is because for Lidar on the K1M creality actually routes a completely separate USB cable from the mainboard.
+!!! info
+    On a K1M you can use the lidar cable either directly by repinning it, or via the pass through lidar port on the toolhead.  However you cannot use the lidar port on the toolhead for K1, K1C or K1SE.   The reason this does not work is because for Lidar on the K1M creality actually routes a completely separate USB cable from the mainboard.
 
 ## Beacon Firmware
 
-You must have flashed your beacon with the latest beacon firmware (2.1.0 currently) **before** starting the installation
+!!! warning
+    You must have flashed your beacon with the latest beacon firmware (2.1.0 currently) **before** starting the installation
 
-There is a guide for this [here](beacon_flashing.md)
+    There is a guide for this [here](beacon_flashing.md)
 
 ## Installation
 
@@ -72,9 +77,12 @@ wget --no-check-certificate  https://raw.githubusercontent.com/pellcorp/creality
 chmod +x S58factoryreset
 ./S58factoryreset reset
 ```
-**IMPORTANT:** It is really important you do not close the ssh session until you get the message `Info: Factory reset was executed successfully, the printer will restart...`:
 
-![image](assets/images/factory_reset.png)
+!!! warn
+
+    It is really important you do not close the ssh session until you get this message:
+
+    ![image](assets/images/factory_reset.png)
 
 ### Clone the Repo
 

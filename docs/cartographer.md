@@ -11,6 +11,7 @@ Thanks to Richard from https://cartographer3d.com and Zarboz from https://wattsk
 ## Post Installation Changes for rear mounted cartographer
 
 !!! danger
+
     If you are not using a side mount you **must** verify config changes for cartotouch.cfg and cartographer-k1.cfg 
     or cartographer-k1m.cfg before homing your printer, using **Screws Tilt Calculate** or doing a **bed mesh**!  
 
@@ -21,6 +22,7 @@ See [probe installation](#probe-installation) for more details.
 ## Firmware requirements
 
 !!! warning
+
     This guide assumes you have a K1, K1C or K1 Max and you are running stock creality firmware 1.3.3.5 or higher, or alternately you are using  [my prerooted firmware](https://github.com/pellcorp/creality/wiki/Prerooted-K1-Firmware).   Any other pre-rooted firmware is explicitly not supported and the installer.sh will validate this and refuse to proceed if you try to use it on different firmware.
 
 ## Slicer Settings
@@ -61,23 +63,30 @@ END_PRINT
 
 ### Nozzle Offset
 
-It is vital that you verify the model to nozzle tip distance is within the valid range of 2.6 to 3mm.  Anything out of this range will cause you problems when it comes time to doing the touch calibration, you can use this tool to verify:
+!!! warn
 
-https://www.printables.com/model/1060868-cartographer-probe-nozzle-offset-tool
+    It is vital that you verify the model to nozzle tip distance is within the valid range of 2.6 to 3mm.  Anything out of this range will cause you problems when it comes time to doing the touch calibration, you can use this tool to verify:
 
-Or for side mounted probes you may want to consider this version:
-https://www.printables.com/model/1121309-cartographer-probe-nozzle-offset-tool-x-offset
+    https://www.printables.com/model/1060868-cartographer-probe-nozzle-offset-tool
+
+    Or for side mounted probes you may want to consider this version:
+    https://www.printables.com/model/1121309-cartographer-probe-nozzle-offset-tool-x-offset
 
 ### K1M vs K1/K1C/K1SE
 
-On a K1M you can use the lidar cable either directly by repinning it, or via the pass through lidar port on the toolhead.  However you cannot use the lidar port on the toolhead for K1, K1C or K1SE.   The reason this does not work is because for Lidar on the K1M creality actually routes a completely separate USB cable from the mainboard.
+!!! info
+
+    On a K1M you can use the lidar cable either directly by repinning it, or via the pass through lidar port on the toolhead.  However you cannot use the lidar port on the toolhead for K1, K1C or K1SE.   The reason this does not work is because for Lidar on the K1M creality actually routes a completely separate USB cable from the mainboard.
 
 ## Cartographer Firmware
 
-You must have flashed your cartographer with `CARTOGRAPHER K1 5.1.0` survey firmware **before** starting the installation:
-![image](assets/images/cartographer_k1_510.png)
+!!! warning
 
-There is a guide for this [here](cartographer_flashing.md)
+    You must have flashed your cartographer with `CARTOGRAPHER K1 5.1.0` survey firmware **before** starting the installation:
+
+    ![image](assets/images/cartographer_k1_510.png)
+
+    There is a guide for this [here](cartographer_flashing.md)
 
 ## Installation
 
@@ -85,7 +94,8 @@ The installation can only be performed on a printer which has been rooted and ss
 
 You need root access, if you are not already root, then follow [Helper Script Enable Root Access](https://guilouz.github.io/Creality-Helper-Script-Wiki/firmwares/install-and-update-rooted-firmware-k1/#enable-root-access)
 
-''' info
+!!! tip
+
     ZeroDotCmd (aka Zero on discord) has provided an excellent Cartographer installation video, you can find it <https://www.youtube.com/watch?v=GuxMITM9o4I>
 
 ### Factory Reset 
@@ -98,9 +108,11 @@ chmod +x S58factoryreset
 ./S58factoryreset reset
 ```
 
-**IMPORTANT:** It is really important you do not close the ssh session until you get the message `Info: Factory reset was executed successfully, the printer will restart...`:
+!!! warn
 
-![image](assets/images/factory_reset.png)
+    It is really important you do not close the ssh session until you get this message:
+
+    ![image](assets/images/factory_reset.png)
 
 ### Clone the Repo
 

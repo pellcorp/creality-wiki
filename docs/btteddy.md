@@ -51,7 +51,7 @@ On a K1M you can use the lidar cable either directly by repinning it, or via the
 
 ## BTT Eddy Firmware
 
-''' warning
+!!! warning
     It is assumed that you have flashed your eddy with the firmware from <https://github.com/pellcorp/klipper/blob/master/fw/K1/btteddy.uf2>
     **before** starting the installation!!!
     
@@ -63,7 +63,7 @@ The installation can only be performed on a printer which has been rooted and ss
 
 You need root access, if you are not already root, then follow [Helper Script Enable Root Access](https://guilouz.github.io/Creality-Helper-Script-Wiki/firmwares/install-and-update-rooted-firmware-k1/#enable-root-access)
 
-''' info
+!!! tip
     ZeroDotCmd (aka Zero on discord) has provided an excellent BTT Eddy installation video, you can find it <https://www.youtube.com/watch?v=B17sS1klRxA>
 
 ### Factory Reset 
@@ -75,9 +75,12 @@ wget --no-check-certificate  https://raw.githubusercontent.com/pellcorp/creality
 chmod +x S58factoryreset
 ./S58factoryreset reset
 ```
-**IMPORTANT:** It is really important you do not close the ssh session until you get the message `Info: Factory reset was executed successfully, the printer will restart...`:
 
-![image](assets/images/factory_reset.png)
+!!! warn
+
+    It is really important you do not close the ssh session until you get this message:
+
+    ![image](assets/images/factory_reset.png)
 
 ### Clone the Repo
 
