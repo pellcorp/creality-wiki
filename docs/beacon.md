@@ -48,6 +48,7 @@ END_PRINT
     <https://www.printables.com/model/1060868-cartographer-probe-nozzle-offset-tool>
 
     Or for side mounted probes you may want to consider this version:
+
     <https://www.printables.com/model/1121309-cartographer-probe-nozzle-offset-tool-x-offset>
 
 ### K1M vs K1/K1C/K1SE
@@ -120,22 +121,20 @@ To run the script, you must use the following command:
 
 If you are using a non-supported mount you should skip the `--mount` option and adjust your configuration after installation before trying to perform a bed mesh or Screws Tilt Calculate!
 
-<details>
-<summary>RPC failed; curl 18 transfer closed</summary>
+??? note "RPC failed; curl 18 transfer closed"
 You might get this error:
 
-```
-error: RPC failed; curl 18 transfer closed with outstanding read data remaining
-fatal: the remote end hung up unexpectedly
-fatal: early EOF
-fatal: index-pack failed
-```
-
-Just rerun the installer.sh script (with the same probe argument), it will start from the stage that failed (most of the time this
-will be the Installing Klipper stage!)
-
-You can also prefix the installer command with `AF_GIT_CLONE=ssh` to force git to clone via ssh, this will take a **lot** longer, but it will never time out, so its good in a pinch if you are getting repeated klipper repo clone failures.
-</details>
+    ```
+    error: RPC failed; curl 18 transfer closed with outstanding read data remaining
+    fatal: the remote end hung up unexpectedly
+    fatal: early EOF
+    fatal: index-pack failed
+    ```
+    
+    Just rerun the installer.sh script (with the same probe argument), it will start from the stage that failed (most of the time this
+    will be the Installing Klipper stage!)
+    
+    You can also prefix the installer command with `AF_GIT_CLONE=ssh` to force git to clone via ssh, this will take a **lot** longer, but it will never time out, so its good in a pinch if you are getting repeated klipper repo clone failures.
 
 ## Post Installation
 

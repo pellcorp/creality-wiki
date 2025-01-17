@@ -67,10 +67,11 @@ END_PRINT
 
     It is vital that you verify the model to nozzle tip distance is within the valid range of 2.6 to 3mm.  Anything out of this range will cause you problems when it comes time to doing the touch calibration, you can use this tool to verify:
 
-    https://www.printables.com/model/1060868-cartographer-probe-nozzle-offset-tool
+    <https://www.printables.com/model/1060868-cartographer-probe-nozzle-offset-tool>
 
     Or for side mounted probes you may want to consider this version:
-    https://www.printables.com/model/1121309-cartographer-probe-nozzle-offset-tool-x-offset
+
+    <https://www.printables.com/model/1121309-cartographer-probe-nozzle-offset-tool-x-offset>
 
 ### K1M vs K1/K1C/K1SE
 
@@ -151,7 +152,7 @@ To run the script, you must use the following command:
 If you are using a non-supported mount you should skip the `--mount` option and adjust your configuration after installation before trying to perform a bed mesh or Screws Tilt Calculate!
 
 ??? note "RPC failed; curl 18 transfer closed"
-You might get this error:
+    You might get this error:
 
     ```
     error: RPC failed; curl 18 transfer closed with outstanding read data remaining
