@@ -41,9 +41,11 @@ END_PRINT
 
 ### Nozzle Offset
 
-It is vital that you verify the model to nozzle tip distance is within the valid range of 2.6 to 3mm.  Anything out of this range will cause you problems when it comes time to doing the touch calibration, you can use this tool to verify:
-
-https://www.printables.com/model/1060868-cartographer-probe-nozzle-offset-tool
+!!! warning
+    It is vital that you verify the model to nozzle tip distance is within the valid range of 2.6 to 3mm.  
+    Anything out of this range will cause you problems when it comes time to doing the touch calibration, you can use this tool to verify:
+    
+    [cartographer-probe-nozzle-offset-tool](https://www.printables.com/model/1060868-cartographer-probe-nozzle-offset-tool)
 
 ### K1M vs K1/K1C/K1SE
 
@@ -83,19 +85,17 @@ git clone https://github.com/pellcorp/creality.git /usr/data/pellcorp
 sync
 ```
 
-<details>
-<summary>RPC Timeouts, try SSH Git Clone</summary>
-<pre>
-mkdir -p /root/.ssh
-wget --no-check-certificate "https://raw.githubusercontent.com/pellcorp/creality/main/k1/ssh/git-ssh.sh" -O /root/git-ssh.sh
-chmod 777 /root/git-ssh.sh
-wget --no-check-certificate "https://raw.githubusercontent.com/pellcorp/creality/main/k1/ssh/pellcorp-identity" -O /root/.ssh/pellcorp-identity
-export GIT_SSH_IDENTITY=pellcorp
-export GIT_SSH=/root/git-ssh.sh
-git clone git@github.com:pellcorp/creality.git /usr/data/pellcorp
-cd /usr/data/pellcorp && git remote set-url origin https://github.com/pellcorp/creality.git && cd
-</pre>
-</details>
+??? note "RPC Timeouts, try SSH Git Clone"
+    ```
+    mkdir -p /root/.ssh
+    wget --no-check-certificate "https://raw.githubusercontent.com/pellcorp/creality/main/k1/ssh/git-ssh.sh" -O /root/git-ssh.sh
+    chmod 777 /root/git-ssh.sh
+    wget --no-check-certificate "https://raw.githubusercontent.com/pellcorp/creality/main/k1/ssh/pellcorp-identity" -O /root/.ssh/pellcorp-identity
+    export GIT_SSH_IDENTITY=pellcorp
+    export GIT_SSH=/root/git-ssh.sh
+    git clone git@github.com:pellcorp/creality.git /usr/data/pellcorp
+    cd /usr/data/pellcorp && git remote set-url origin https://github.com/pellcorp/creality.git && cd
+    ```
 
 ### Config Overrides
 

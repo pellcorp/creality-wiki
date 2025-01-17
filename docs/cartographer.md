@@ -10,25 +10,31 @@ Thanks to Richard from https://cartographer3d.com and Zarboz from https://wattsk
 
 ## Post Installation Changes for rear mounted cartographer
 
-**SUPER IMPORTANT SUPER IMPORTANT SUPER IMPORTANT SUPER IMPORTANT SUPER IMPORTANT**
+!!! danger
+    If you are not using a side mount you **must** verify config changes for cartotouch.cfg and cartographer-k1.cfg 
+    or cartographer-k1m.cfg before homing your printer, using **Screws Tilt Calculate** or doing a **bed mesh**!  
 
-**WARNING:** If you are not using a side mount you **must** verify config changes for cartotouch.cfg and cartographer-k1.cfg or cartographer-k1m.cfg before homing your printer, using **Screws Tilt Calculate** or doing a **bed mesh**!  Ignoring these instructions can lead to significant damage to your build plate and/or probe.
+    Ignoring these instructions can lead to significant damage to your build plate and/or probe.
 
 See [probe installation](#probe-installation) for more details.
 
 ## Firmware requirements
 
-This guide assumes you have a K1, K1C or K1 Max and you are running stock creality firmware 1.3.3.5 or higher, or alternately you are using  [my prerooted firmware](https://github.com/pellcorp/creality/wiki/Prerooted-K1-Firmware).   Any other pre-rooted firmware is explicitly not supported and the installer.sh will validate this and refuse to proceed if you try to use it on different firmware.
+!!! warning
+    This guide assumes you have a K1, K1C or K1 Max and you are running stock creality firmware 1.3.3.5 or higher, or alternately you are using  [my prerooted firmware](https://github.com/pellcorp/creality/wiki/Prerooted-K1-Firmware).   Any other pre-rooted firmware is explicitly not supported and the installer.sh will validate this and refuse to proceed if you try to use it on different firmware.
 
 ## Slicer Settings
 
-**WARNING:** If you have used a cartographer with k1-klipper, please note that the `PRINT_START` macro specified in their docs **is not supported** by this project.   You **must** change your Slicer Start Print Machine G-Code (see next)
+!!! warning
+
+    If you have used a cartographer with k1-klipper, please note that the `PRINT_START` macro specified in their docs **is not supported** by this project.   You **must** change your Slicer Start Print Machine G-Code (see next)
 
 There is an assumption that you are using a slicer like OrcaSlicer and Machine G-code like:
 
 ![image](assets/images/slicer.png)
 
 **Machine start G-code**
+
 ```
 M104 S0 ; Stops OrcaSlicer from sending temp waits separately
 M140 S0
@@ -36,6 +42,7 @@ START_PRINT EXTRUDER_TEMP=[nozzle_temperature_initial_layer] BED_TEMP=[bed_tempe
 ```
 
 **Machine end G-code**
+
 ```
 END_PRINT
 ```
@@ -103,19 +110,17 @@ git clone https://github.com/pellcorp/creality.git /usr/data/pellcorp
 sync
 ```
 
-<details>
-<summary>RPC Timeouts, try SSH Git Clone</summary>
-<pre>
-mkdir -p /root/.ssh
-wget --no-check-certificate "https://raw.githubusercontent.com/pellcorp/creality/main/k1/ssh/git-ssh.sh" -O /root/git-ssh.sh
-chmod 777 /root/git-ssh.sh
-wget --no-check-certificate "https://raw.githubusercontent.com/pellcorp/creality/main/k1/ssh/pellcorp-identity" -O /root/.ssh/pellcorp-identity
-export GIT_SSH_IDENTITY=pellcorp
-export GIT_SSH=/root/git-ssh.sh
-git clone git@github.com:pellcorp/creality.git /usr/data/pellcorp
-cd /usr/data/pellcorp && git remote set-url origin https://github.com/pellcorp/creality.git && cd
-</pre>
-</details>
+??? note "RPC Timeouts, try SSH Git Clone"
+    ```
+    mkdir -p /root/.ssh
+    wget --no-check-certificate "https://raw.githubusercontent.com/pellcorp/creality/main/k1/ssh/git-ssh.sh" -O /root/git-ssh.sh
+    chmod 777 /root/git-ssh.sh
+    wget --no-check-certificate "https://raw.githubusercontent.com/pellcorp/creality/main/k1/ssh/pellcorp-identity" -O /root/.ssh/pellcorp-identity
+    export GIT_SSH_IDENTITY=pellcorp
+    export GIT_SSH=/root/git-ssh.sh
+    git clone git@github.com:pellcorp/creality.git /usr/data/pellcorp
+    cd /usr/data/pellcorp && git remote set-url origin https://github.com/pellcorp/creality.git && cd
+    ```
 
 ### Config Overrides
 
@@ -133,22 +138,20 @@ To run the script, you must use the following command:
 
 If you are using a non-supported mount you should skip the `--mount` option and adjust your configuration after installation before trying to perform a bed mesh or Screws Tilt Calculate!
 
-<details>
-<summary>RPC failed; curl 18 transfer closed</summary>
+??? note "RPC failed; curl 18 transfer closed"
 You might get this error:
 
-```
-error: RPC failed; curl 18 transfer closed with outstanding read data remaining
-fatal: the remote end hung up unexpectedly
-fatal: early EOF
-fatal: index-pack failed
-```
-
-Just rerun the installer.sh script (with the same probe argument), it will start from the stage that failed (most of the time this
-will be the Installing Klipper stage!)
-
-You can also prefix the installer command with `AF_GIT_CLONE=ssh` to force git to clone via ssh, this will take a **lot** longer, but it will never time out, so its good in a pinch if you are getting repeated klipper repo clone failures.
-</details>
+    ```
+    error: RPC failed; curl 18 transfer closed with outstanding read data remaining
+    fatal: the remote end hung up unexpectedly
+    fatal: early EOF
+    fatal: index-pack failed
+    ```
+    
+    Just rerun the installer.sh script (with the same probe argument), it will start from the stage that failed (most of the time this
+    will be the Installing Klipper stage!)
+    
+    You can also prefix the installer command with `AF_GIT_CLONE=ssh` to force git to clone via ssh, this will take a **lot** longer, but it will never time out, so its good in a pinch if you are getting repeated klipper repo clone failures.
 
 ## Post Installation
 
