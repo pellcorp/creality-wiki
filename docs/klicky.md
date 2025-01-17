@@ -45,9 +45,7 @@ TODO
 
 The installation can only be performed on a printer which has been rooted and ssh granted
 
-You need root access, if you are not already root, then follow this guide
-https://guilouz.github.io/Creality-Helper-Script-Wiki/firmwares/install-and-update-rooted-firmware-k1/#enable-root-access
-
+You need root access, if you are not already root, then follow [Helper Script Enable Root Access](https://guilouz.github.io/Creality-Helper-Script-Wiki/firmwares/install-and-update-rooted-firmware-k1/#enable-root-access)
 ### Factory Reset 
 
 You **must** do a factory reset before running the installer.sh.   Follow these steps to do a factory reset, which retains root access and skips the startup calibration checks:
@@ -161,7 +159,7 @@ You can use the QUICK_START Macro to automatically complete Bed and Nozzle PID T
 
 #### Pid Tuning
 
-https://www.klipper3d.org/Config_checks.html?h=pid#calibrate-pid-settings
+**Source:** [Calibrate Pid Settings](https://www.klipper3d.org/Config_checks.html?h=pid#calibrate-pid-settings)
 
 For example you might run these:
 
@@ -179,13 +177,12 @@ There is no default configuration for input shaping so it is essentially disable
 
 You can use the `SHAPER_CALIBRATE` macro to run input shaping, just be sure to `SAVE CONFIG` at the end, to choose the automatically selected shaper config, be aware though that the shaper chosen might be sub-optimal due to a slight difference in vibrations between two options.  So you should probably review the output and potentially choose an alternative if it gives you higher recommended max acceleration for minimal increase in vibration.
 
-https://www.klipper3d.org/Measuring_Resonances.html#input-shaper-auto-calibration
+[Input Shaper Auto Calibration](https://www.klipper3d.org/Measuring_Resonances.html#input-shaper-auto-calibration)
 
 ### Other Calibrations
 
 **Note:** The default value for pressure advance is set to: `0.04`
 
-Refer to https://github.com/SoftFever/OrcaSlicer/wiki/Calibration for more calibrations
+Refer to [Orcaslicer Calibration](https://github.com/SoftFever/OrcaSlicer/wiki/Calibration) for more calibrations
 
-This is an excellent resource for all things 3d print tuning:
-https://ellis3dp.com/Print-Tuning-Guide/
+Refer to the [Ellis Print Tuning Guide](https://ellis3dp.com/Print-Tuning-Guide/) for more great tuning ideas.

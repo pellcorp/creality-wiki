@@ -51,13 +51,13 @@ END_PRINT
 
 ### Mount Options
 
-|Mount      |Carto|URL|Notes|
-|-----------|-----------|------------------------------------------------------------------------------------------------------------------|----------|
-|`Default`    |Right Angle|https://www.printables.com/model/1037606-cartographer-3d-right-angle-k1-series-mount||
-|`D3vilStock` |Flat Pack  |https://www.printables.com/model/684338-k1-k1max-eddy-current-mount-cartographer||
-|`BootyGantry` |Right Angle|https://github.com/tlace17/K1-Linear-Rail-Gantry/blob/main/STLs/Probe%20Mounts/Rail%20Carriage%20Carto%20Mount.stl|May require shimming for correct nozzle offset|
-|`SkeletorMK7`|Low Profile|https://www.printables.com/model/833769-the-skeletor-collection-a-creality-k1k1-maxk1c-coo|This is only for the low profile cartographer version of the mount!!!|
-|`PurcellV5`  |Right Angle|https://www.printables.com/model/1071493-cartographer-probe-side-mount-options-for-creality||
+|Mount      |Carto| URL                                                                                                                  |Notes|
+|-----------|-----------|----------------------------------------------------------------------------------------------------------------------|----------|
+|`Default`    |Right Angle| <https://www.printables.com/model/1037606-cartographer-3d-right-angle-k1-series-mount>                               ||
+|`D3vilStock` |Flat Pack  | <https://www.printables.com/model/684338-k1-k1max-eddy-current-mount-cartographer>                                   ||
+|`BootyGantry` |Right Angle| <https://github.com/tlace17/K1-Linear-Rail-Gantry/blob/main/STLs/Probe%20Mounts/Rail%20Carriage%20Carto%20Mount.stl> |May require shimming for correct nozzle offset|
+|`SkeletorMK7`|Low Profile| <https://www.printables.com/model/833769-the-skeletor-collection-a-creality-k1k1-maxk1c-coo>                         |This is only for the low profile cartographer version of the mount!!!|
+|`PurcellV5`  |Right Angle| <https://www.printables.com/model/1071493-cartographer-probe-side-mount-options-for-creality>                        ||
 
 ### Nozzle Offset
 
@@ -83,10 +83,10 @@ There is a guide for this [here](cartographer_flashing.md)
 
 The installation can only be performed on a printer which has been rooted and ssh granted
 
-You need root access, if you are not already root, then follow this guide
-https://guilouz.github.io/Creality-Helper-Script-Wiki/firmwares/install-and-update-rooted-firmware-k1/#enable-root-access
+You need root access, if you are not already root, then follow [Helper Script Enable Root Access](https://guilouz.github.io/Creality-Helper-Script-Wiki/firmwares/install-and-update-rooted-firmware-k1/#enable-root-access)
 
-ZeroDotCmd (aka Zero on discord) has provided an excellent Cartographer installation video, you can find it https://www.youtube.com/watch?v=GuxMITM9o4I
+''' info
+    ZeroDotCmd (aka Zero on discord) has provided an excellent Cartographer installation video, you can find it <https://www.youtube.com/watch?v=GuxMITM9o4I>
 
 ### Factory Reset 
 
@@ -304,7 +304,7 @@ You can use the QUICK_START Macro to automatically complete Bed and Nozzle PID T
 
 #### Pid Tuning
 
-https://www.klipper3d.org/Config_checks.html?h=pid#calibrate-pid-settings
+**Source:** [Calibrate Pid Settings](https://www.klipper3d.org/Config_checks.html?h=pid#calibrate-pid-settings)
 
 For example you might run these:
 
@@ -320,48 +320,14 @@ values for BED_TEMP and HOTEND_TEMP so you can just run them by clicking on them
 
 There is no default configuration for input shaping so it is essentially disabled out of the box.
 
-You can use the `INPUT_SHAPER` button run input shaping, just be sure to `SAVE CONFIG` at the end, to choose the automatically selected shaper config, be aware though that the shaper chosen might be sub-optimal due to a slight difference in vibrations between two options.  So you should probably review the output and potentially choose an alternative if it gives you higher recommended max acceleration for minimal increase in vibration.
+You can use the `SHAPER_CALIBRATE` macro to run input shaping, just be sure to `SAVE CONFIG` at the end, to choose the automatically selected shaper config, be aware though that the shaper chosen might be sub-optimal due to a slight difference in vibrations between two options.  So you should probably review the output and potentially choose an alternative if it gives you higher recommended max acceleration for minimal increase in vibration.
 
-https://www.klipper3d.org/Measuring_Resonances.html#input-shaper-auto-calibration
-
-**IMPORTANT:** You should adjust your acceleration in your printer.cfg down to that recommended by the input shaper results. I normally reduce `max_accel` to the highest of the two axis (usually this will be y), and then more finely adjust the max acceleration per axis in my slicer profile.
-
-### First Print
-
-For this first print you can go and do the tuning first (PID Tuning, etc) or you can go ahead and optimise your scanner_touch_z_offset using baby stepping, as documented here: https://docs.cartographer3d.com/cartographer-probe/survey-touch#first-print
-
-In fluidd the save button after you finish or cancel your print can be a bit hard to find, look for
-
-![image](assets/images/fluidd_save_zoffset.png)
+[Input Shaper Auto Calibration](https://www.klipper3d.org/Measuring_Resonances.html#input-shaper-auto-calibration)
 
 ### Other Calibrations
 
 **Note:** The default value for pressure advance is set to: `0.04`
 
-Refer to https://github.com/SoftFever/OrcaSlicer/wiki/Calibration for more calibrations
+Refer to [Orcaslicer Calibration](https://github.com/SoftFever/OrcaSlicer/wiki/Calibration) for more calibrations
 
-This is an excellent resource for all things 3d print tuning:
-https://ellis3dp.com/Print-Tuning-Guide/
-
-### Scan Calibration Method
-
-Some cartographer users choose to use scan only instead of touch and that is easy enough to do once you have finished setting it up.
-
-You can run the following gcode command:
-
-```
- PROBE_SWITCH MODE=scan
-```
-
-And then `SAVE_CONFIG`
-
-You can then use the CARTOGRAPHER_MODEL parameter to start print from your slicer to select different filament profiles, this is required if you print with different filaments and/or use different bed aurfaces.
-
-#### Cartographer Model
-
-If you want to select a particular [cartographer model](https://docs.cartographer3d.com/cartographer-probe/fine-tuning/cartographer-models) other than the default you can pass in an additional `START_PRINT` parameter:
-
-![image](assets/images/carto_model_slicer.png)
-
-You can either hard code it to a particular model, like `CARTOGRAPHER_MODEL=mymodel` or you can specify a model based on orca slicer variables, such as `CARTOGRAPHER_MODEL="[curr_bed_type] - [filament_type]"`, but you have to make sure you have all the possible models
-defined for each of the bed type and filament type combinations.
+Refer to the [Ellis Print Tuning Guide](https://ellis3dp.com/Print-Tuning-Guide/) for more great tuning ideas.

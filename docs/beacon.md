@@ -34,10 +34,10 @@ END_PRINT
 
 ### Mount Options
 
-|Mount      |Beacon| URL                                                                                          |Notes|
-|-----------|-----------|----------------------------------------------------------------------------------------------|----------|
-|`PurcellV4`    |RevH Standard| <https://www.printables.com/model/1071641-beacon-probe-mounts-for-creality-k1-series>        ||
-|`SkeletorMK7`  |RevH Low Profile| <https://www.printables.com/model/833769-the-skeletor-collection-a-creality-k1k1-maxk1c-coo> |This is only for the low profile cartographer version of the mount!!!|
+| Mount         | Beacon           | URL                                                                                          |Notes|
+|---------------|------------------|----------------------------------------------------------------------------------------------|----------|
+| `PurcellV4`   | RevH Standard    | <https://www.printables.com/model/1071641-beacon-probe-mounts-for-creality-k1-series>        ||
+| `SkeletorMK7` | RevH Low Profile | <https://www.printables.com/model/833769-the-skeletor-collection-a-creality-k1k1-maxk1c-coo> |This is only for the low profile cartographer version of the mount!!!|
 
 ### Nozzle Offset
 
@@ -229,4 +229,4 @@ You can use the `SHAPER_CALIBRATE` macro to run input shaping, just be sure to `
 
 Refer to [Orcaslicer Calibration](https://github.com/SoftFever/OrcaSlicer/wiki/Calibration) for more calibrations
 
-Refer to the [Ellis Print Tuning Guide/](https://ellis3dp.com/Print-Tuning-Guide/) for more great tuning ideas.
+Refer to the [Ellis Print Tuning Guide](https://ellis3dp.com/Print-Tuning-Guide/) for more great tuning ideas.

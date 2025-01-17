@@ -34,25 +34,25 @@ END_PRINT
 
 ### Mount Options
 
-|Mount     |URL|
-|----------|----------------------------------------------------------------------------------|
-|`Default` |https://www.printables.com/model/666186-creality-k1-bltouch-adapter|
-|`CrTouch` |https://www.printables.com/model/1073375-cr-touch-mount-k1-k1maxk1c-zero-y-offset|
+|Mount     | URL                                                                                 |
+|----------|-------------------------------------------------------------------------------------|
+|`Default` | <https://www.printables.com/model/666186-creality-k1-bltouch-adapter>               |
+|`CrTouch` | <https://www.printables.com/model/1073375-cr-touch-mount-k1-k1maxk1c-zero-y-offset> |
 
 ### Wiring
 
 The probe and the TOUCH port on the Nozzle MCU board both mate with a 5-pin Molex Picoblade connector. A 5-pin cable is needed to connect the probe to the TOUCH port.
 
 Some sellers may call the connector "Micro JST SH 1.25" but that is [incorrect](https://www.reddit.com/r/AskElectronics/comments/m6mibq/comment/gr6w1m0). Several premade cables are compatible. Most notably the Creality cable for their CR Touch probe:
-- https://www.aliexpress.us/item/1005004960067376.html
-- https://www.amazon.com/dp/B0BKPFY24M/
-- https://www.bastelgarage.ch/0-1m-creality-cr-touch-bl-touch-adapterkabel-sprite-extruder
+- <https://www.aliexpress.us/item/1005004960067376.html>
+- <https://www.amazon.com/dp/B0BKPFY24M/>
+- <https://www.bastelgarage.ch/0-1m-creality-cr-touch-bl-touch-adapterkabel-sprite-extruder>
 
 Alternatively, two pre-crimped cables can be soldered together:
-- https://www.amazon.de/dp/B0BNF6J1RJ
+- <https://www.amazon.de/dp/B0BNF6J1RJ>
 
 Or a cable built from pre-crimped wires and connector housings:
-- https://www.amazon.de/dp/B08RMQP6YP
+- <https://www.amazon.de/dp/B08RMQP6YP>
 
 ![image](assets/images/bltouch_wiring.png)
 
@@ -72,8 +72,7 @@ Connect to TOUCH port on the nozzle MCU. it is accessible from the side left (LI
 
 The installation can only be performed on a printer which has been rooted and ssh granted
 
-You need root access, if you are not already root, then follow this guide
-https://guilouz.github.io/Creality-Helper-Script-Wiki/firmwares/install-and-update-rooted-firmware-k1/#enable-root-access
+You need root access, if you are not already root, then follow [Helper Script Enable Root Access](https://guilouz.github.io/Creality-Helper-Script-Wiki/firmwares/install-and-update-rooted-firmware-k1/#enable-root-access)
 
 ### Factory Reset 
 
@@ -212,7 +211,7 @@ You can use the QUICK_START Macro to automatically complete Bed and Nozzle PID T
 
 #### Pid Tuning
 
-https://www.klipper3d.org/Config_checks.html?h=pid#calibrate-pid-settings
+**Source:** [Calibrate Pid Settings](https://www.klipper3d.org/Config_checks.html?h=pid#calibrate-pid-settings)
 
 For example you might run these:
 
@@ -230,13 +229,13 @@ There is no default configuration for input shaping so it is essentially disable
 
 You can use the `SHAPER_CALIBRATE` macro to run input shaping, just be sure to `SAVE CONFIG` at the end, to choose the automatically selected shaper config, be aware though that the shaper chosen might be sub-optimal due to a slight difference in vibrations between two options.  So you should probably review the output and potentially choose an alternative if it gives you higher recommended max acceleration for minimal increase in vibration.
 
-https://www.klipper3d.org/Measuring_Resonances.html#input-shaper-auto-calibration
+[Input Shaper Auto Calibration](https://www.klipper3d.org/Measuring_Resonances.html#input-shaper-auto-calibration)
 
-#### Other Calibrations
+### Other Calibrations
 
 **Note:** The default value for pressure advance is set to: `0.04`
 
-Refer to https://github.com/SoftFever/OrcaSlicer/wiki/Calibration for more calibrations
+Refer to [Orcaslicer Calibration](https://github.com/SoftFever/OrcaSlicer/wiki/Calibration) for more calibrations
 
-This is an excellent resource for all things 3d print tuning:
-https://ellis3dp.com/Print-Tuning-Guide/
+Refer to the [Ellis Print Tuning Guide](https://ellis3dp.com/Print-Tuning-Guide/) for more great tuning ideas.
+

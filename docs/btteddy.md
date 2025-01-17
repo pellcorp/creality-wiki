@@ -40,10 +40,10 @@ END_PRINT
 
 ### Mount Options
 
-|Mount      | URL                                                                           |
-|-----------|-------------------------------------------------------------------------------|
-|`Default`  | https://www.printables.com/model/1012524-btteddy-creality-k1-k1c-k1-max-mount |
-|`Pellcorp` | https://www.printables.com/model/965667-wip-k1-btt-eddy-rear-mount-v4         |
+|Mount      | URL                                                                             |
+|-----------|---------------------------------------------------------------------------------|
+|`Default`  | <https://www.printables.com/model/1012524-btteddy-creality-k1-k1c-k1-max-mount> |
+|`Pellcorp` | <https://www.printables.com/model/965667-wip-k1-btt-eddy-rear-mount-v4>         |
 
 ### K1M vs K1/K1C/K1SE
 
@@ -51,19 +51,20 @@ On a K1M you can use the lidar cable either directly by repinning it, or via the
 
 ## BTT Eddy Firmware
 
-It is assumed that you have flashed your eddy with the firmware from https://github.com/pellcorp/klipper/blob/master/fw/K1/btteddy.uf2
-**before** starting the installation!!!
-
-I have put together a guide for flashing the btt eddy [here](btteddy_flashing.md)
+''' warning
+    It is assumed that you have flashed your eddy with the firmware from <https://github.com/pellcorp/klipper/blob/master/fw/K1/btteddy.uf2>
+    **before** starting the installation!!!
+    
+    I have put together a guide for flashing the btt eddy [here](btteddy_flashing.md)
 
 ## Installation
 
 The installation can only be performed on a printer which has been rooted and ssh granted
 
-You need root access, if you are not already root, then follow this guide
-https://guilouz.github.io/Creality-Helper-Script-Wiki/firmwares/install-and-update-rooted-firmware-k1/#enable-root-access
+You need root access, if you are not already root, then follow [Helper Script Enable Root Access](https://guilouz.github.io/Creality-Helper-Script-Wiki/firmwares/install-and-update-rooted-firmware-k1/#enable-root-access)
 
-ZeroDotCmd (aka Zero on discord) has provided an excellent BTT Eddy installation video, you can find it https://www.youtube.com/watch?v=B17sS1klRxA
+''' info
+    ZeroDotCmd (aka Zero on discord) has provided an excellent BTT Eddy installation video, you can find it <https://www.youtube.com/watch?v=B17sS1klRxA>
 
 ### Factory Reset 
 
@@ -248,7 +249,7 @@ You can use the QUICK_START Macro to automatically complete Bed and Nozzle PID T
 
 #### Pid Tuning
 
-https://www.klipper3d.org/Config_checks.html?h=pid#calibrate-pid-settings
+**Source:** [Calibrate Pid Settings](https://www.klipper3d.org/Config_checks.html?h=pid#calibrate-pid-settings)
 
 For example you might run these:
 
@@ -266,13 +267,12 @@ There is no default configuration for input shaping so it is essentially disable
 
 You can use the `SHAPER_CALIBRATE` macro to run input shaping, just be sure to `SAVE CONFIG` at the end, to choose the automatically selected shaper config, be aware though that the shaper chosen might be sub-optimal due to a slight difference in vibrations between two options.  So you should probably review the output and potentially choose an alternative if it gives you higher recommended max acceleration for minimal increase in vibration.
 
-https://www.klipper3d.org/Measuring_Resonances.html#input-shaper-auto-calibration
+[Input Shaper Auto Calibration](https://www.klipper3d.org/Measuring_Resonances.html#input-shaper-auto-calibration)
 
 ### Other Calibrations
 
 **Note:** The default value for pressure advance is set to: `0.04`
 
-Refer to https://github.com/SoftFever/OrcaSlicer/wiki/Calibration for more calibrations
+Refer to [Orcaslicer Calibration](https://github.com/SoftFever/OrcaSlicer/wiki/Calibration) for more calibrations
 
-This is an excellent resource for all things 3d print tuning:
-https://ellis3dp.com/Print-Tuning-Guide/
+Refer to the [Ellis Print Tuning Guide](https://ellis3dp.com/Print-Tuning-Guide/) for more great tuning ideas.
