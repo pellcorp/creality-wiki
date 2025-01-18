@@ -83,8 +83,7 @@ It is very easy, you just need to create a empty file called `emergency_factory_
 
 !!! warn
 
-    It is really important you do not close the ssh session until you get back to the stock screen, there may be a 3002 error on the screen,
-    this is completely normal.   If you are planning to install Simple AF you can ignore it, if you are trying to go back to stock, power
-    cycling the printer one more time should clear the error.
+    It can take up to 5 minutes for an emergency factory restart to finish, please do not power cycle your printer before you the stock screen appears, there may be a 3002 error on the screen,
+    this is completely normal.   If you are planning to install Simple AF you can ignore it, if you are trying to go back to stock, power cycle the printer again to clear the error.
 
     ![image](assets/images/error3002.png)
