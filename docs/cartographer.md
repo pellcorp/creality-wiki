@@ -248,7 +248,9 @@ If you are recalibrating, the follow SAVE_CONFIG sections should be removed:
 - [scanner model default]
 - [scanner]
 
-**Important:** Please do not remove the `[scanner]` section defined at the end of printer.cfg above the save config section.
+!!! warn
+
+    Please do not remove the `[scanner]` section defined at the end of printer.cfg above the save config section.
 
 #### Manual Cartographer Calibrate
 
@@ -261,7 +263,9 @@ It is a good idea to heat the nozzle to 150c for this step first!
 Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
 <br />Upon completion *`SAVE_CONFIG`*
 
-**WARNING:** Do not use a metal feeler gauge for this step, it could interfere with calibration!!!
+!!! warn
+
+    Do not use a metal feeler gauge for this step, it could interfere with calibration!!!
 
 After the save config you have to do the cartographer threshold scan (see next)
 
@@ -280,15 +284,18 @@ After the save config you have to do the touch calibration.
 
 #### Cartographer Touch Calibration
 
-**WARNING:** For this next step, it is really important to be near your printer for this step, because if there
-is any issue with the printer configuration or your carto probe, its possible the nozzle will dig itself into the bed, so be hovering over that e-stop button!
+!!! danger
+
+    For this next step, it is really important to be near your printer for this step, because if there is any issue with the printer configuration or your carto probe, its possible the nozzle will dig itself into the bed, so be hovering over that e-stop button!
 
 10. Home All (`G28`)
 11. Heat Nozzle to 150c (`M109 S150`) so that any filament can be removed from nozzle
 12. Execute `CARTOGRAPHER_CALIBRATE`
 <br />Upon completion *`SAVE_CONFIG`*
 
-**Note:** If this fails after 3 tries, you should check to make sure there is not filament stuck to the bottom of your nozzle!
+!!!
+
+    If this fails after 3 tries, you should check to make sure there is not filament stuck to the bottom of your nozzle!
 
 **Source:** https://docs.cartographer3d.com/cartographer-probe/survey-touch
 
@@ -301,7 +308,9 @@ your bed mesh, so best to do it before.
 2. Run `AXIS_TWIST_COMPENSATION_CALIBRATE` The calibration wizard will prompt you to measure the probe Z offset at a few points along the bed
 <br />Upon completion *`SAVE_CONFIG`*
 
-**WARNING:** Do not use a metal feeler gauge for this step, it could interfere with calibration!!!
+!!! warn
+
+    Do not use a metal feeler gauge for this step, it could interfere with calibration!!!
 
 **Source:** https://www.klipper3d.org/Axis_Twist_Compensation.html
 
@@ -324,8 +333,9 @@ PID_CALIBRATE_BED BED_TEMP=65
 PID_CALIBRATE_HOTEND HOTEND_TEMP=230
 ```
 
-**Note:** The `PID_CALIBRATE_BED` and `PID_CALIBRATE_HOTEND` macros are located in the `useful_macros.cfg` file and they have defaults
-values for BED_TEMP and HOTEND_TEMP so you can just run them by clicking on them if you want that same temperature.
+!!! note
+
+    The `PID_CALIBRATE_BED` and `PID_CALIBRATE_HOTEND` macros are located in the `useful_macros.cfg` file and they have defaults values for BED_TEMP and HOTEND_TEMP so you can just run them by clicking on them if you want that same temperature.
 
 #### Input Shaping
 
@@ -337,7 +347,8 @@ You can use the `SHAPER_CALIBRATE` macro to run input shaping, just be sure to `
 
 ### Other Calibrations
 
-''' info
+!!! info
+
     The default value for pressure advance is set to: `0.04`
 
 Refer to [Orcaslicer Calibration](https://github.com/SoftFever/OrcaSlicer/wiki/Calibration) for more calibrations
