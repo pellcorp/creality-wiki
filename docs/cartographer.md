@@ -293,7 +293,7 @@ After the save config you have to do the touch calibration.
 12. Execute `CARTOGRAPHER_CALIBRATE`
 <br />Upon completion *`SAVE_CONFIG`*
 
-!!!
+!!! tip
 
     If this fails after 3 tries, you should check to make sure there is not filament stuck to the bottom of your nozzle!
 
