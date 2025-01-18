@@ -1,14 +1,14 @@
 ## Octoeverywhere Companion
 
-Octoeverywhere cannot be installed onto the K1 when running the Cartographer, the stress placed on the system by running octoeverywhere is too great, however the octoeverywhere companion running on another device on the same WIFI network as the K1 works great.
+Octoeverywhere cannot be installed onto the K1 when running the Cartographer, beacon or btt eddy, the stress placed on the system by running octoeverywhere is too great, however the octoeverywhere companion running on another device on the same WIFI network as the K1 works great.
 
-https://blog.octoeverywhere.com/octoeverywhere-companion-remote-access-for-any-klipper-printer/
+<https://blog.octoeverywhere.com/octoeverywhere-companion-remote-access-for-any-klipper-printer/>
 
 ## Mobileraker companion
 
 It is also possible to install mobileraker companion on a separate device
 
-https://github.com/Clon1998/mobileraker_companion?tab=readme-ov-file#standalone-installation
+<https://github.com/Clon1998/mobileraker_companion?tab=readme-ov-file#standalone-installation>
 
 ## Moonraker Timelapse
 
@@ -40,8 +40,9 @@ https://github.com/mainsail-crew/moonraker-timelapse/blob/main/docs/configuratio
 
 ## Configuring Timezone
 
-The /etc/init.d/S58factoryreset has recently been updated not to delete the /etc/localtime, so you can configure it once and it should survive any number of factory resets, following the excellent guide here:
-https://guilouz.github.io/Creality-Helper-Script-Wiki/firmwares/change-date-and-time/
+The `/etc/init.d/S58factoryreset` has recently been updated not to delete the `/etc/localtime`, so you can configure it once and it should survive any number of factory resets, following the excellent guide here:
+
+<https://guilouz.github.io/Creality-Helper-Script-Wiki/firmwares/change-date-and-time/>
 
 ## Updating
 
@@ -70,8 +71,10 @@ If the worst happens and you somehow get locked out (for instance for whatever r
 
 It is very easy, you just need to create a empty file called `emergency_factory_reset` on a USB key and make sure the USB key is plugged in, then power cycle the printer, this will initiate a factory reset.
 
-**IMPORTANT:** This factory reset method will rename the `emergency_factory_reset` to `emergency_factory_reset.old` to avoid a boot loop, so if you need to use this method again you will need to rename the file.
+!!! info
 
-**IMPORTANT:** This factory reset method will **not** remove the special service file `/etc/init.d/S58factoryreset` from the k1, so if you need it you can redo a factory reset even before reinstalling.
+    This factory reset method will rename the `emergency_factory_reset` to `emergency_factory_reset.old` to avoid a boot loop, so if you need to use this method again you will need to rename the file.
 
-**Note:** This method does not reset wifi or root access
+    This factory reset method will **not** remove the special service file `/etc/init.d/S58factoryreset` from the k1, so if you need it you can redo a factory reset even before reinstalling.
+
+    This method does not reset wifi or root access
