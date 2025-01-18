@@ -80,3 +80,9 @@ It is very easy, you just need to create a empty file called `emergency_factory_
     This factory reset method will **not** remove the special service file `/etc/init.d/S58factoryreset` from the k1, so if you need it you can redo a factory reset even before reinstalling.
 
     This method does not reset wifi or root access
+
+!!! warn
+
+    It is really important you do not close the ssh session until you get this message:
+
+    ![image](assets/images/factory_reset.png)
