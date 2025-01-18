@@ -173,8 +173,9 @@ PID_CALIBRATE_BED BED_TEMP=65
 PID_CALIBRATE_HOTEND HOTEND_TEMP=230
 ```
 
-**Note:** The `PID_CALIBRATE_BED` and `PID_CALIBRATE_HOTEND` macros are located in the `useful_macros.cfg` file and they have defaults
-values for BED_TEMP and HOTEND_TEMP so you can just run them by clicking on them if you want that same temperature.
+!!! note
+
+    The `PID_CALIBRATE_BED` and `PID_CALIBRATE_HOTEND` macros are located in the `useful_macros.cfg` file and they have defaults values for BED_TEMP and HOTEND_TEMP so you can just run them by clicking on them if you want that same temperature.
 
 #### Input Shaping
 
@@ -186,7 +187,8 @@ You can use the `SHAPER_CALIBRATE` macro to run input shaping, just be sure to `
 
 ### Other Calibrations
 
-''' info
+!!! info
+
     The default value for pressure advance is set to: `0.04`
 
 Refer to [Orcaslicer Calibration](https://github.com/SoftFever/OrcaSlicer/wiki/Calibration) for more calibrations

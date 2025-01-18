@@ -297,7 +297,7 @@ After the save config you have to do the touch calibration.
 
     If this fails after 3 tries, you should check to make sure there is not filament stuck to the bottom of your nozzle!
 
-**Source:** https://docs.cartographer3d.com/cartographer-probe/survey-touch
+**Source:** <https://docs.cartographer3d.com/cartographer-probe/survey-touch>
 
 ### Axis Twist Compensation
 
@@ -312,7 +312,7 @@ your bed mesh, so best to do it before.
 
     Do not use a metal feeler gauge for this step, it could interfere with calibration!!!
 
-**Source:** https://www.klipper3d.org/Axis_Twist_Compensation.html
+**Source:** <https://www.klipper3d.org/Axis_Twist_Compensation.html>
 
 ### Tuning
 
