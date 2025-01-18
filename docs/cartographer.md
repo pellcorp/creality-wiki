@@ -196,52 +196,6 @@ It is important to make sure you have a way to [emergency factory reset](misc.md
 - If you get the message: `INFO - USB Key was recognised and mounted correctly (/tmp/udisk/sda1)`, your USB is perfect to use for a factory reset.
 - If you get no message at all before the script ends (after 60 seconds), your USB is defective.   You can check the `messages` file in the logs section of your UI to get more details about why the usb key could not be mounted!
 
-### Troubleshooting
-
-<https://docs.cartographer3d.com/cartographer-probe/survey-touch/survey-troubleshooting>
-
-#### Repo has diverged from remote 
-
-![image](assets/images/cartographer_repo_diverged.png)
-
-You need to click RECOVER and then run from ssh:
-
-```
-/usr/data/cartographer-klipper/install.sh
-```
-
-#### Error during probe mcu identification, check connection
-
-If you get the following error, it means that the cartographer is not connected to the printer.   This is either because its physically not connected, the wiring is wrong, the usb subsystem has disconnected the carto during a restart or the serial id is wrong
-
-![image](assets/images/carto_check_connection.png)
-
-So from ssh run a `lsusb` and make sure you can see:
-
-![image](assets/images/carto_lsusb.png)
-
-If you cannot see it in `lsusb`, then it very likely means either the carto is wired incorrectly, or if was working, it just means that an attempt to restart the carto failed because the K1 refused to recognise it, there is no recourse except to Reboot the printer via Fluidd / Mainsail in this case.
-
-If you can, then verify that the serial id matches:
-
-![image](assets/images/carto_serial.png)
-
-Make sure it matches the `serial` in `cartotouch.cfg`:
-
-![image](assets/images/carto_scanner_serial.png)
-
-#### Manual Cartographer Serial Device configuration
-
-You can run the following command to fix your serial if you forgot to plug your cartographer in during the installation or update:
-
-```
-/usr/data/pellcorp/k1/installer.sh --fix-serial
-```
-
-#### Timer too close and microsteps
-
-For cartographer you cannot use more than `microsteps: 32`, the MCU cannot handle both more microsteps and cartographer, it puts too much pressure on the system and it cause stuttering during bed meshes.
-
 ### Calibration
 
 Please make sure to remove any scanner related config from the save config section at the bottom of printer.cfg and save and restart before re-calibrating.
@@ -359,3 +313,49 @@ You can use the `SHAPER_CALIBRATE` macro to run input shaping, just be sure to `
 Refer to [Orcaslicer Calibration](https://github.com/SoftFever/OrcaSlicer/wiki/Calibration) for more calibrations
 
 Refer to the [Ellis Print Tuning Guide](https://ellis3dp.com/Print-Tuning-Guide/) for more great tuning ideas.
+
+## Troubleshooting
+
+<https://docs.cartographer3d.com/cartographer-probe/survey-touch/survey-troubleshooting>
+
+### Repo has diverged from remote
+
+![image](assets/images/cartographer_repo_diverged.png)
+
+You need to click RECOVER and then run from ssh:
+
+```
+/usr/data/cartographer-klipper/install.sh
+```
+
+### Error during probe mcu identification, check connection
+
+If you get the following error, it means that the cartographer is not connected to the printer.   This is either because its physically not connected, the wiring is wrong, the usb subsystem has disconnected the carto during a restart or the serial id is wrong
+
+![image](assets/images/carto_check_connection.png)
+
+So from ssh run a `lsusb` and make sure you can see:
+
+![image](assets/images/carto_lsusb.png)
+
+If you cannot see it in `lsusb`, then it very likely means either the carto is wired incorrectly, or if was working, it just means that an attempt to restart the carto failed because the K1 refused to recognise it, there is no recourse except to Reboot the printer via Fluidd / Mainsail in this case.
+
+If you can, then verify that the serial id matches:
+
+![image](assets/images/carto_serial.png)
+
+Make sure it matches the `serial` in `cartotouch.cfg`:
+
+![image](assets/images/carto_scanner_serial.png)
+
+### Manual Cartographer Serial Device configuration
+
+You can run the following command to fix your serial if you forgot to plug your cartographer in during the installation or update:
+
+```
+/usr/data/pellcorp/k1/installer.sh --fix-serial
+```
+
+### Timer too close and microsteps
+
+For cartographer you cannot use more than `microsteps: 32`, the MCU cannot handle high microsteps and cartographer, it puts too much pressure on the system and it will cause stuttering during bed meshes.
