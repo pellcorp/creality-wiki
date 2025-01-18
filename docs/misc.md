@@ -36,7 +36,7 @@ Because the single web cam is controlled via moonraker with the webcam.conf file
 
 ### Slicer Changes
 
-https://github.com/mainsail-crew/moonraker-timelapse/blob/main/docs/configuration.md#prusa-slicer--super-slicer
+<https://github.com/mainsail-crew/moonraker-timelapse/blob/main/docs/configuration.md#prusa-slicer--super-slicer>
 
 ## Configuring Timezone
 
@@ -59,7 +59,9 @@ This backs up your customisations, updates the creality repo, applies all change
 
 A reinstall is only needed if one or more github repos have got into an inconsistent state, so you can force a reinstall with the `--reinstall` argument in place of the `--install` argument.  The difference to a `--install`, is a `--install` will only finish up a partial install that failed due to a network failure or the like.
 
-**Note:** If you switch probes using --update you will have to manually clean up any save configuration for that probe before klipper will start.
+!!! info
+
+    If you switch probes using --update you will have to manually clean up any save configuration for that probe before klipper will start.
 
 ## Git Backups for Configuration Overrides
 
