@@ -146,6 +146,10 @@ To run the script, you must specify the probe you want to use.
 
 ## Post Installation
 
+### V1 Probe Changes
+
+The default microprobe.cfg assumes a V2 microprobe a post install change to `[probe]` section of `printer.cfg` will be required for a V1.  Have a look at the printer.cfg after the install has finished and have a look at the commented V1 pin config.
+
 ### MCU Firmware updates are pending
 
 At the end of the installer process if you get this message:
@@ -164,15 +168,16 @@ Your printer MCU firmware was updated successfully.   If you still see the `MCU 
 
 ### Verify USB Key
 
-It is important to make sure you have a way to [emergency factory reset](misc.md#emergency-factory-reset) the printer, if the worst happens.   There is a macro in Simple AF called `CHECK_USB_KEY` that will wait for you to plug a USB key in and tell you if it was able to be successfully mounted.   You should verify your USB key often just to make sure you have something if you need to unbrick your printer, simply type `CHECK_USB_KEY` or hit the button in Fluidd / Mainsail
+!!! tip
+
+    You should verify your USB key often just to make sure you have something if you need to unbrick your printer, simply type `CHECK_USB_KEY` or hit the button in Fluidd / Mainsail
+
+It is important to make sure you have a way to [emergency factory reset](misc.md#emergency-factory-reset) the printer, if the worst happens.   There is a macro in Simple AF called `CHECK_USB_KEY` that will wait for you to plug a USB key in and tell you if it was able to be successfully mounted.
 
 ![image](assets/images/check_usb_key.png)
 
-If you get the message: `INFO - USB Key was recognised and mounted correctly (/tmp/udisk/sda1)`, your USB is perfect to use for a factory reset.   If you get no message at all before the script ends (after 60 seconds), your USB is defective.   You can check the `messages` file in the logs section of your UI to get more details about why the usb key could not be mounted!
-
-### V1 Probe Changes
-
-The default microprobe.cfg assumes a V2 microprobe a post install change to `[probe]` section of `printer.cfg` will be required for a V1.  Have a look at the printer.cfg after the install has finished and have a look at the commented V1 pin config.
+- If you get the message: `INFO - USB Key was recognised and mounted correctly (/tmp/udisk/sda1)`, your USB is perfect to use for a factory reset.
+- If you get no message at all before the script ends (after 60 seconds), your USB is defective.   You can check the `messages` file in the logs section of your UI to get more details about why the usb key could not be mounted!
 
 ### Calibration
 
