@@ -25,9 +25,13 @@ The following core config files can have overrides saved for them, please note t
 - useful_macros.cfg
 - fan_control.cfg
 
-**IMPORTANT:** You should run the CONFIG_OVERRIDES macro every time you make any changes to either your own custom cfg or conf files, or make changes to any core config files.  There is no process monitoring your config directory for changes, this is Simple AF after all, and automatically doing stuff is not simple af!
+!!! tip
 
-**Note:** The first step in both a `/usr/data/pellcorp/k1/installer.sh --update` or `/usr/data/pellcorp/k1/installer.sh  --reinstall` is to backup your config-overrides, so that they can be reapplied, but they will be lost if you do a factory reset.
+    You should run the CONFIG_OVERRIDES macro every time you make any changes to either your own custom cfg or conf files, or make changes to any core config files.  There is no process monitoring your config directory for changes, this is Simple AF after all, and automatically doing stuff is not simple af!
+
+!!! note
+
+    The first step in both a `/usr/data/pellcorp/k1/installer.sh --update` or `/usr/data/pellcorp/k1/installer.sh  --reinstall` is to backup your config-overrides, so that they can be reapplied, but they will be lost if you do a factory reset.
 
 ## Git Backups for Configuration Overrides
 
@@ -39,12 +43,13 @@ Create a new `pellcorp-overrides` repository on your github account:
 
 ![image](assets/images/git_backup_new_repo.png)
 
-**Note:** You don't actually have to call it pellcorp-overrides, you can call it whatever you want, but it should be a 
-repository dedicated to just doing backups for this project.   Currently config-overrides.sh --repo only supports a single
-configuration, hopefully soon I will add the ability to specify a branch so you can store multiple configurations in the same repository.
+!!! info
 
-**Important:** Set your new repository to be private unless you want to share settings with everyone else, or potentially sensitive
-information in the moonraker.conf, notifier.conf, etc.  Be really careful with using github keys in moonraker.conf update manager too, as these will be version controlled.   If possible put all your secrets in moonraker.secrets which is not saved to version control.
+    You don't actually have to call it pellcorp-overrides, you can call it whatever you want, but it should be a repository dedicated to just doing backups for this project.   Currently config-overrides.sh --repo only supports a single configuration, hopefully soon I will add the ability to specify a branch so you can store multiple configurations in the same repository.
+
+!!! warn
+
+    Set your new repository to be private unless you want to share settings with everyone else, or potentially sensitive information in the moonraker.conf, notifier.conf, etc.  Be really careful with using github keys in moonraker.conf update manager too, as these will be version controlled.   If possible put all your secrets in moonraker.secrets which is not saved to version control.
 
 ### Create a personal access token
 
@@ -56,15 +61,15 @@ Make sure you limit it to just the new repository you created:
 
 ![image](assets/images/git_backup_select_repo.png)
 
-**Source:** https://guilouz.github.io/Creality-Helper-Script-Wiki/helper-script/git-backup/
+**Source:** <https://guilouz.github.io/Creality-Helper-Script-Wiki/helper-script/git-backup/>
 
 ### Create Local Repo
 
 You will need 3 pieces of information for this process to succeed:
 
-1) Your github username
-2) Your email address
-3) The github token you just created
+1. Your github username
+2. Your email address
+3. The github token you just created
 
 Ssh into your k1 and run the following:
 
@@ -78,7 +83,9 @@ export GITHUB_REPO=pellcorp-overrides
 
 If you want to setup the repository locally ignoring any local files in /usr/data/pellcorp-overrides, you can use the `--clean-repo` argument, instead of the `--repo` argument, which will rebase the local changes on top of the repo.
 
-**Note:** The `moonraker.secrets` file is not versioned controlled.
+!!! note
+
+    The `moonraker.secrets` file is not versioned controlled.
 
 ### Troubleshooting
 
