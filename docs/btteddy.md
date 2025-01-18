@@ -229,7 +229,7 @@ Next it is highly recommended to perform axis twist compensation **if you are us
 
 **WARNING:** Do not use a metal feeler gauge for this step, it could interfere with calibration!!!
 
-**Source:** https://www.klipper3d.org/Axis_Twist_Compensation.html
+**Source:** <https://www.klipper3d.org/Axis_Twist_Compensation.html>
 
 ### First Print
 
@@ -283,7 +283,7 @@ You can use the `SHAPER_CALIBRATE` macro to run input shaping, just be sure to `
 
 !!! info
 
-    The default value for pressure advance is set to: `0.04`
+    The default value for pressure advance is set to `0.04`
 
 Refer to [Orcaslicer Calibration](https://github.com/SoftFever/OrcaSlicer/wiki/Calibration) for more calibrations
 

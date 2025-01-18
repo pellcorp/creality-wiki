@@ -6,7 +6,7 @@ Come on over to the pellcorp discord server, here is the invite, the `#simple-af
 
 ## Thanks
 
-Thanks to https://raven3dtech.com.au/ and https://beacon3d.com for donating Beacon probes to the Simple AF project to add support and continue to support the Beacon.
+Thanks to <https://raven3dtech.com.au/> and <https://beacon3d.com> for donating Beacon probes to the Simple AF project to add support and continue to support the Beacon.
 
 ## Firmware requirements
 
@@ -245,7 +245,7 @@ You can use the `SHAPER_CALIBRATE` macro to run input shaping, just be sure to `
 
 !!! info
 
-    The default value for pressure advance is set to: `0.04`
+    The default value for pressure advance is set to `0.04`
 
 Refer to [Orcaslicer Calibration](https://github.com/SoftFever/OrcaSlicer/wiki/Calibration) for more calibrations
 

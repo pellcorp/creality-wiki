@@ -189,7 +189,7 @@ You can use the `SHAPER_CALIBRATE` macro to run input shaping, just be sure to `
 
 !!! info
 
-    The default value for pressure advance is set to: `0.04`
+    The default value for pressure advance is set to `0.04`
 
 Refer to [Orcaslicer Calibration](https://github.com/SoftFever/OrcaSlicer/wiki/Calibration) for more calibrations
 

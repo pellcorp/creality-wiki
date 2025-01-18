@@ -6,7 +6,7 @@ Come on over to the pellcorp discord server, the `#simple-af-carto` channel has 
 
 ## Thanks
 
-Thanks to Richard from https://cartographer3d.com and Zarboz from https://wattskraken.xyz/ for donating Cartographers to the Simple AF project to add support and continue to support the cartographer.
+Thanks to Richard from <https://cartographer3d.com> and Zarboz from <https://wattskraken.xyz/> for donating Cartographers to the Simple AF project to add support and continue to support the cartographer.
 
 ## Firmware requirements
 
@@ -193,7 +193,7 @@ If you get the message: `INFO - USB Key was recognised and mounted correctly (/t
 
 ### Troubleshooting
 
-https://docs.cartographer3d.com/cartographer-probe/survey-touch/survey-troubleshooting
+<https://docs.cartographer3d.com/cartographer-probe/survey-touch/survey-troubleshooting>
 
 #### Repo has diverged from remote 
 
@@ -349,7 +349,7 @@ You can use the `SHAPER_CALIBRATE` macro to run input shaping, just be sure to `
 
 !!! info
 
-    The default value for pressure advance is set to: `0.04`
+    The default value for pressure advance is set to `0.04`
 
 Refer to [Orcaslicer Calibration](https://github.com/SoftFever/OrcaSlicer/wiki/Calibration) for more calibrations
 

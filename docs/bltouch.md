@@ -184,7 +184,7 @@ You should use the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#
 
 ### Timer too close and microsteps
 
-For bltouch, etc you cannot use more than `microsteps: 64`.
+For bltouch, etc you cannot use more than `microsteps: 64`
 
 ### Axis Twist Compensation
 
@@ -195,7 +195,7 @@ your bed mesh, so best to do it before.
 2. Run `AXIS_TWIST_COMPENSATION_CALIBRATE`  The calibration wizard will prompt you to measure the probe Z offset at a few points along the bed
 <br />Upon completion *`SAVE_CONFIG`*
 
-**Source:** https://www.klipper3d.org/Axis_Twist_Compensation.html
+**Source:** <https://www.klipper3d.org/Axis_Twist_Compensation.html>
 
 ### First Print
 
@@ -240,7 +240,7 @@ You can use the `SHAPER_CALIBRATE` macro to run input shaping, just be sure to `
 
 !!! info
 
-    The default value for pressure advance is set to: `0.04`
+    The default value for pressure advance is set to `0.04`
 
 Refer to [Orcaslicer Calibration](https://github.com/SoftFever/OrcaSlicer/wiki/Calibration) for more calibrations
 
