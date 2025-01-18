@@ -13,7 +13,9 @@ So the way this works is you define your own custom config file (make sure it ha
 [include MyCustomMacros.cfg]
 ```
 
-**Note:** It does not need to be called `MyCustomMacros.cfg`, you can call it whatever you like, but it must end with `.cfg` and it must be saved directly in the config directory, **not** a sub-directory!
+!!! note
+
+    It does not need to be called `MyCustomMacros.cfg`, you can call it whatever you like, but it must end with `.cfg` and it must be saved directly in the config directory, **not** a sub-directory!
 
 Your config file should implement as many of the above macros as you want to, you do **not** need to implement them all, so for example if you wanted to do something after G28 in START_PRINT, you file might look like:
 
@@ -72,5 +74,3 @@ gcode:
 gcode:
   SET_GCODE_VARIABLE MACRO=_KNOMI_STATUS VARIABLE=homing VALUE=False
 ```
-
-Note we may actually add proper hooks for M109 and M190 in the future to make this a bit easier 
