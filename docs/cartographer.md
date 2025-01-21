@@ -238,11 +238,11 @@ macro to do this.
 **WARNING:** For this next step, it is really important to be near your printer for this step, because if there
 is any issue with the printer configuration or your carto probe, its possible the nozzle will dig itself into the bed, so be hovering over that e-stop button!
 
-6. Run the `STOP_CAMERA` macro to stop the camera
-7. Home All (`G28`)
-8. Make sure nozzle is centred on bed
-9. Heat Nozzle to 150c (`M109 S150`) so that any filament can be removed from nozzle
-10. Execute `CARTOGRAPHER_THRESHOLD_SCAN SPEED=2 MIN=1500 MAX=5000`
+1. Run the `STOP_CAMERA` macro to stop the camera
+2. Home All (`G28`)
+3. Make sure nozzle is centred on bed
+4. Heat Nozzle to 150c (`M109 S150`) so that any filament can be removed from nozzle
+5. Execute `CARTOGRAPHER_THRESHOLD_SCAN SPEED=2 MIN=1500 MAX=5000`
 <br />Upon completion *`SAVE_CONFIG`*
 
 After the save config you have to do the touch calibration.   
@@ -256,10 +256,10 @@ macro to do this.
 
     For this next step, it is really important to be near your printer for this step, because if there is any issue with the printer configuration or your carto probe, its possible the nozzle will dig itself into the bed, so be hovering over that e-stop button!
 
-11. Run the `STOP_CAMERA` macro to stop the camera
-12. Home All (`G28`)
-13. Heat Nozzle to 150c (`M109 S150`) so that any filament can be removed from nozzle
-14. Execute `CARTOGRAPHER_CALIBRATE`
+1. Run the `STOP_CAMERA` macro to stop the camera
+2. Home All (`G28`)
+3. Heat Nozzle to 150c (`M109 S150`) so that any filament can be removed from nozzle
+4. Execute `CARTOGRAPHER_CALIBRATE`
 <br />Upon completion *`SAVE_CONFIG`*
 
 !!! tip
