@@ -216,7 +216,7 @@ At least PID tuning (bed and extruder) and input shaping is required for accepta
 
 #### Quick Start
 
-You can use the QUICK_START Macro to automatically complete Bed and Nozzle PID Tuning and Input Shaping Automatically.
+You can use the QUICK_START Macro to do Bed and Nozzle PID Tuning and Input Shaping.
 
 #### Pid Tuning
 
