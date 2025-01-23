@@ -16,7 +16,11 @@ The following components can be updated via Fluidd / Mainsail Software Updates:
 
 You can update these components via Fluidd or Mainsail, in fluidd make sure you click the CHECK FOR UPDATES button, and in Mainsail click the Refresh button
 
-![image](assets/images/fluidd_software.png)![image](assets/images/mainsail_software.png)
+!!! note
+
+    It is normal for moonraker and klipper to warn about `Unofficial remote url`, this is because Simple AF has forked these repositories.
+
+![image](assets/images/update_software.png)
 
 ### Guppyscreen
 
