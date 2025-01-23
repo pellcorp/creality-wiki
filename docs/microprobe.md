@@ -48,6 +48,7 @@ pin: ^!nozzle_mcu: PA9  # MicroProbe V2 users should use this line to trigger on
 The probe and the TOUCH port on the Nozzle MCU board both mate with a 5-pin Molex Picoblade connector. A 5-pin cable is needed to connect the probe to the TOUCH port.
 
 Some sellers may call the connector "Micro JST SH 1.25" but that is [incorrect](https://www.reddit.com/r/AskElectronics/comments/m6mibq/comment/gr6w1m0). Several premade cables are compatible. Most notably the Creality cable for their CR Touch probe:
+
 - <https://www.aliexpress.us/item/1005004960067376.html>
 - <https://www.amazon.com/dp/B0BKPFY24M/>
 - <https://www.bastelgarage.ch/0-1m-creality-cr-touch-bl-touch-adapterkabel-sprite-extruder>
