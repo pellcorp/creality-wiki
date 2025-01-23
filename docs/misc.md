@@ -46,22 +46,11 @@ The `/etc/init.d/S58factoryreset` has recently been updated not to delete the `/
 
 ## Updating
 
-To update your installation with the latest fixes you should run:
-
-```
-/usr/data/pellcorp/k1/installer.sh --branch main
-/usr/data/pellcorp/k1/installer.sh --update
-```
-
-This backs up your customisations, updates the creality repo, applies all changes to your `/usr/data/printer_data/config` directory and then reapplies your customisations over the top.
+[Updating](updating.md#updating)
 
 ## Reinstalling
 
-A reinstall is only needed if one or more github repos have got into an inconsistent state, so you can force a reinstall with the `--reinstall` argument in place of the `--install` argument.  The difference to a `--install`, is a `--install` will only finish up a partial install that failed due to a network failure or the like.
-
-!!! info
-
-    If you switch probes using --update you will have to manually clean up any save configuration for that probe before klipper will start.
+[Reinstalling](updating.md#reinstalling)
 
 ## Git Backups for Configuration Overrides
 
