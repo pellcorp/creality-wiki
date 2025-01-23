@@ -6,6 +6,10 @@ Within Simple AF if you want to call a custom gcode macro you can with hooks, th
 - **_SAF_BED_MESH_START** - Start of bed mesh calibrate
 - **_SAF_BED_MESH_END** - End of bed mesh calibrate
 - **_SAF_ON_FILAMENT_RUNOUT** - When filament runout is triggered
+- **_SAF_HEATING_NOZZLE_START** - At start of M109 macro
+- **_SAF_HEATING_NOZZLE_END** - At start of M109 macro
+- **_SAF_HEATING_BED_START** - At start of M190 macro
+- **_SAF_HEATING_BED_START** - At end of M190 macro
 
 So the way this works is you define your own custom config file (make sure it has a `.cfg` file extension), and add it to printer.cfg like so:
 
@@ -39,19 +43,23 @@ variable_heating_bed: False
 gcode:
 
 
-[gcode_macro M109]
-rename_existing: M109.1
+[gcode_macro SAF_HEATING_NOZZLE_START]
 gcode:
   SET_GCODE_VARIABLE MACRO=_KNOMI_STATUS VARIABLE=heating_nozzle VALUE=True
-  M109.1 {rawparams}
+
+
+[gcode_macro SAF_HEATING_NOZZLE_END]
+gcode:
   SET_GCODE_VARIABLE MACRO=_KNOMI_STATUS VARIABLE=heating_nozzle VALUE=False
 
 
-[gcode_macro M190]
-rename_existing: M190.1
+[gcode_macro SAF_HEATING_BED_START]
 gcode:
   SET_GCODE_VARIABLE MACRO=_KNOMI_STATUS VARIABLE=heating_bed VALUE=True
-  M190.1 {rawparams}
+
+
+[gcode_macro SAF_HEATING_BED_END]
+gcode:
   SET_GCODE_VARIABLE MACRO=_KNOMI_STATUS VARIABLE=heating_bed VALUE=False
 
 
