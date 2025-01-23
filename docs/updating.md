@@ -9,7 +9,7 @@ The following components can be updated via Fluidd / Mainsail Software Updates:
 - fluidd
 - fluidd-config (aka client-macros)
 - moonraker
-- mlipper
+- klipper
 - mainsail
 - Klipper-Adaptive-Meshing-Purging
 - timelapse (aka Moonraker Timelapse)
