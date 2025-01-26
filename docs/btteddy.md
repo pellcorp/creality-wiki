@@ -184,9 +184,13 @@ You can run the following command to fix your serial if you forgot to plug your 
 
 ### Calibration
 
-**IMPORTANT:** It is extremely important that you perform the following calibrations while the btt eddy is cool, if you calibrate the eddy hot, you will experience `Error during homing z: Eddy current sensor error` errors while homing and performing bed mesh if the btt is significantly cooler than it was while doing initial calibration.   
+!!! danger
+    
+    It is extremely important that you perform the following calibrations while the btt eddy is cool, if you calibrate the eddy hot, you will experience `Error during homing z: Eddy current sensor error` errors while homing and performing bed mesh if the btt is significantly cooler than it was while doing initial calibration.   
 
-**Note:** The `BTTEDDY_CALIBRATE_DRIVE_CURRENT`, `BTTEDDY_CURRENT_CALIBRATE` and `BTTEDDY_TEMPERATURE_PROBE_CALIBRATE` macros will turn on the auxiliary fan until the btt eddy temp is less than 30c before starting the actual calibration.  If you are in a hot climate you may need to adjust the `btteddy_macro.cfg` `variable_calibration_max_temp` value to something higher than 30c if you can't get the btt eddy under 30c with the aux fan easily.
+!!! note
+
+    The `BTTEDDY_CALIBRATE_DRIVE_CURRENT`, `BTTEDDY_CURRENT_CALIBRATE` and `BTTEDDY_TEMPERATURE_PROBE_CALIBRATE` macros will turn on the auxiliary fan until the btt eddy temp is less than 30c before starting the actual calibration.  If you are in a hot climate you may need to adjust the `btteddy_macro.cfg` `variable_calibration_max_temp` value to something higher than 30c if you can't get the btt eddy under 30c with the aux fan easily.
 
 #### Drive Current Calibration
 1. Home XY (`G28 X Y`)
@@ -195,7 +199,7 @@ You can run the following command to fix your serial if you forgot to plug your 
 4. Run `BTTEDDY_CALIBRATE_DRIVE_CURRENT`
 5. Run SAVE_CONFIG
 
-**Source:** https://github.com/bigtreetech/Eddy?tab=readme-ov-file#2-drive-current-calibration
+**Source:** <https://github.com/bigtreetech/Eddy?tab=readme-ov-file#2-drive-current-calibration>
 
 #### Mapping Eddy Readings To Nozzle Heights
 
@@ -205,11 +209,15 @@ You can run the following command to fix your serial if you forgot to plug your 
 9. Run `BTTEDDY_CURRENT_CALIBRATE` Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
 <br />Upon completion *`SAVE_CONFIG`*
 
-**Note:** The reason for the tip of nozzle being about 2mm above the bed is that as part of this calibration we will be temporarily saying that the position the nozzle is at right now is 0Z, so if you try to start your paper test when the nozzle is more than about 2mm above the bed, you might end up triggering a nozzle out of bounds error, if we have to jog the nozzle down more than 5mm for example.
+!!! note
 
-**WARNING:** Do not use a metal feeler gauge for this step, it could interfere with calibration!!!
+    The reason for the tip of nozzle being about 2mm above the bed is that as part of this calibration we will be temporarily saying that the position the nozzle is at right now is 0Z, so if you try to start your paper test when the nozzle is more than about 2mm above the bed, you might end up triggering a nozzle out of bounds error, if we have to jog the nozzle down more than 5mm for example.
 
-**Source:** https://github.com/bigtreetech/Eddy?tab=readme-ov-file#3-mapping-eddy-readings-to-nozzle-heights
+!!! warning
+
+    Do not use a metal feeler gauge for this step, it could interfere with calibration!!!
+
+**Source:** <https://github.com/bigtreetech/Eddy?tab=readme-ov-file#3-mapping-eddy-readings-to-nozzle-heights>
 
 ####  Temperature Compensation Calibration
 
@@ -218,21 +226,31 @@ You can run the following command to fix your serial if you forgot to plug your 
 12. Run `BTTEDDY_TEMPERATURE_PROBE_CALIBRATE`
 <br />Upon completion *`SAVE_CONFIG`*
 
-**WARNING:** Do not use a metal feeler gauge for this step, it could interfere with calibration!!!
+!!! warning
 
-**Note:** If you are struggling to get over about 80c, you can end the calibration early with the `TEMPERATURE_PROBE_COMPLETE` macro, just know that if you end the calibration early and then you try to print really hot and the eddy gets hotted than the hottest temp you calibrated the eddy is going to read the bed wrong and cause issues for homing but especially bed meshes.
+    Do not use a metal feeler gauge for this step, it could interfere with calibration!!!
 
-**Source:** https://github.com/bigtreetech/Eddy?tab=readme-ov-file#5-temperature-compensation-calibration-eddy-usb-only
+!!! tip
+
+    If you are struggling to get over about 80c, you can end the calibration early with the `TEMPERATURE_PROBE_COMPLETE` macro, just know that if you end the calibration early and then you try to print really hot and the eddy gets hotted than the hottest temp you calibrated the eddy is going to read the bed wrong and cause issues for homing but especially bed meshes.
+
+**Source:** <https://github.com/bigtreetech/Eddy?tab=readme-ov-file#5-temperature-compensation-calibration-eddy-usb-only>
 
 ### Axis Twist Compensation
 
-Next it is highly recommended to perform axis twist compensation **if you are using a rear mount**  before doing anything else, this will affect the quality of your bed mesh, so best to do it before.
+If you are using **a rear mount** it is highly recommended to perform axis twist compensation, this will affect the quality of your bed mesh, so best to do it before.
+
+!!! tip
+
+    There is no need to run axis twist compensation if you have mounted the eddy with a side mount that has a 0 y offset!
 
 1. Home All (`G28`)
 2. Run `AXIS_TWIST_COMPENSATION_CALIBRATE` The calibration wizard will prompt you to measure the probe Z offset at a few points along the bed
 <br />Upon completion *`SAVE_CONFIG`*
 
-**WARNING:** Do not use a metal feeler gauge for this step, it could interfere with calibration!!!
+!!! warning
+
+    Do not use a metal feeler gauge for this step, it could interfere with calibration!!!
 
 **Source:** <https://www.klipper3d.org/Axis_Twist_Compensation.html>
 
