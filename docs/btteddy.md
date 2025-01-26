@@ -36,10 +36,11 @@ END_PRINT
 
 ### Mount Options
 
-| Mount        | URL                                                                             |
-|--------------|---------------------------------------------------------------------------------|
-| **Default**  | <https://www.printables.com/model/1012524-btteddy-creality-k1-k1c-k1-max-mount> |
-| **Pellcorp** | <https://www.printables.com/model/965667-wip-k1-btt-eddy-rear-mount-v4>         |
+| Mount         | URL                                                                             | Notes                                                   |
+|---------------|---------------------------------------------------------------------------------|---------------------------------------------------------|
+| **Default**   | <https://www.printables.com/model/1012524-btteddy-creality-k1-k1c-k1-max-mount> |                                                         |
+| **Pellcorp**  | <https://www.printables.com/model/965667-wip-k1-btt-eddy-rear-mount-v4>         |                                                         |
+| **Ballaswag** | <https://makerworld.com/en/models/494931>                                       | Config copied from k1_mod sources, otherwise not tested |
 
 ### Nozzle Offset
 
@@ -264,6 +265,7 @@ Now you can now run your first bed mesh:
 `BED_MESH_CALIBRATE`
 
 **Source:** <https://ballaswag.github.io/blog/creality-k1-btt-eddy-guide/>
+
 **Source:** <https://github.com/bigtreetech/Eddy>
 
 ### Error during homing z: Eddy current sensor error
