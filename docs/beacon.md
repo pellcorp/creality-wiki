@@ -197,9 +197,13 @@ You can run the following command to fix your serial if you forgot to plug your 
 
 #### 'BeaconProbe' object has no attribute '_mcu_freq'
 
-This indicates the beacon was disconnected during homing or some other operation, you need to reboot 
+This **often** indicates the beacon was disconnected during homing or some other operation, you need to reboot 
 
 ![image](assets/images/beacon_mcu_freq.png)
+
+On rare occasions this also occurs when the printer gets overloaded, if the error does not clear after a power cycle,
+try leaving your printer completely powered off for 15 minutes, see if the error clears afterwards.  If the error does not
+clear after doing this, I would be looking for a hardware issue, such as a dodgy cable.
 
 ### Calibration
 
