@@ -206,6 +206,8 @@ If you are recalibrating, the follow SAVE_CONFIG sections should be removed:
 
 - [scanner model default]
 - [scanner]
+- [axis_twist_compensation]
+- [bed_mesh]
 
 !!! warn
 
