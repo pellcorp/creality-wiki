@@ -237,8 +237,9 @@ After the save config you have to do the cartographer threshold scan (see next)
 It is strongly recommended to disable the camera for these calibration steps, just use the `STOP_CAMERA`
 macro to do this.
 
-**WARNING:** For this next step, it is really important to be near your printer for this step, because if there
-is any issue with the printer configuration or your carto probe, its possible the nozzle will dig itself into the bed, so be hovering over that e-stop button!
+!!! danger
+
+    For this next step, it is really important to be near your printer for this step, because if there is any issue with the printer configuration or your carto probe, its possible the nozzle will dig itself into the bed, so be hovering over that e-stop button!
 
 1. Run the `STOP_CAMERA` macro to stop the camera
 2. Home All (`G28`)
