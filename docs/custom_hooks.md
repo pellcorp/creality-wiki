@@ -13,7 +13,7 @@ Within Simple AF if you want to call a custom gcode macro you can with hooks, th
 - **_SAF_HEATING_NOZZLE_START** - At start of M109 macro
 - **_SAF_HEATING_NOZZLE_END** - At start of M109 macro
 - **_SAF_HEATING_BED_START** - At start of M190 macro
-- **_SAF_HEATING_BED_START** - At end of M190 macro
+- **_SAF_HEATING_BED_END** - At end of M190 macro
 
 So the way this works is you define your own custom config file (make sure it has a `.cfg` file extension), and add it to printer.cfg like so:
 
