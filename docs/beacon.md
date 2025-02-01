@@ -175,13 +175,13 @@ Your printer MCU firmware was updated successfully.   If you still see the `MCU 
 
 !!! note
 
-    If you have plugged your beacon into the front usb port, you are going to have to temporarily remove the beacon from the front usb slot and replace it with your USB thumb drive, after you have finished verifying the USB thumb drive can be used in an emergency, you can replace the beacon into the front usb slot and restart klipper or power cycle your printer.
+    If you have plugged your beacon into the front usb port, you are going to have to temporarily remove the beacon from the front usb slot and replace it with your USB thumb drive (aka USB key), after you have finished verifying the USB thumb drive (aka USB key) can be used in an emergency, you can replace the beacon into the front usb slot and restart klipper or power cycle your printer.
 
 It is important to make sure you have a way to [emergency factory reset](misc.md#emergency-factory-reset) the printer, if the worst happens.   There is a macro in Simple AF called `CHECK_USB_KEY` that will wait for you to plug a USB thumb drive (aka USB key) in and tell you if it was able to be successfully mounted.
 
 ![image](assets/images/check_usb_key.png)
 
-- If you get the message: `INFO - USB Key was recognised and mounted correctly (/tmp/udisk/sda1)`, your USB is perfect to use for a factory reset.
+- If you get the message: `INFO - USB Key was recognised and mounted correctly (/tmp/udisk/sda1)`, your USB thumb drive (aka USB key) is perfect to use for a factory reset.
 - If you get no message at all before the script ends (after 60 seconds), your USB thumb drive (aka USB key) is defective.   You can check the `messages` file in the logs section of your UI to get more details about why the usb key could not be mounted!
 
 ### Timer too close and microsteps
