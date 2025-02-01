@@ -186,7 +186,8 @@ It is important to make sure you have a way to [emergency factory reset](misc.md
 
 ### Timer too close and microsteps
 
-For beacon you cannot use more than `microsteps: 32`, the MCU cannot handle both more microsteps and beacon, it puts too much pressure on the system and it will throw timer too close during bed meshes.
+For beacon you cannot use more than `microsteps: 32`, the MCU cannot handle both more microsteps and beacon, it puts too much pressure on the system and it cause stuttering during bed meshes, it is also been known to cause klipper to crash
+during repeated bed meshes.
 
 ### Troubleshooting 
 
