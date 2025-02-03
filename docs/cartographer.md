@@ -331,6 +331,29 @@ Refer to [Orcaslicer Calibration](https://github.com/SoftFever/OrcaSlicer/wiki/C
 
 Refer to the [Ellis Print Tuning Guide](https://ellis3dp.com/Print-Tuning-Guide/) for more great tuning ideas.
 
+## Scan Calibration Method
+
+Some cartographer users choose to use scan only instead of touch and that is easy enough to do once you have finished setting it up.
+
+You can run the following gcode command:
+
+```
+ PROBE_SWITCH MODE=scan
+```
+
+And then `SAVE_CONFIG`
+
+You can then use the CARTOGRAPHER_MODEL parameter to start print from your slicer to select different filament profiles, this is required if you print with different filaments and/or use different bed aurfaces.
+
+### Cartographer Model
+
+If you want to select a particular [cartographer model](https://docs.cartographer3d.com/cartographer-probe/fine-tuning/cartographer-models) other than the default you can pass in an additional `START_PRINT` parameter:
+
+![image](assets/images/carto_model_slicer.png)
+
+You can either hard code it to a particular model, like `CARTOGRAPHER_MODEL=mymodel` or you can specify a model based on orca slicer variables, such as `CARTOGRAPHER_MODEL="[curr_bed_type] - [filament_type]"`, but you have to make sure you have all the possible models
+defined for each of the bed type and filament type combinations.
+
 ## Troubleshooting
 
 <https://docs.cartographer3d.com/cartographer-probe/survey-touch/survey-troubleshooting>
