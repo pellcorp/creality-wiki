@@ -127,9 +127,9 @@ To run the script, you must use the following command:
 /usr/data/pellcorp/k1/installer.sh --install beacon --mount Mount
 ```
 
-!!! tip
+!!! warning
 
-    For `Mount` you need to specify the mount option your have used, please refer to [Mount Options](#mount-options).   
+    For `Mount` you must specify the mount option for the mount you have used, if you do not do this the printer will be incorrectly configured for your mount, and bed meshes, x and y limits and related config will be wrong.   Please refer to [Mount Options](#mount-options) for supported mounts.   
 
     If you are using a non-supported mount you should skip the `--mount` option and adjust your configuration after installation before trying to perform a bed mesh or Screws Tilt Calculate!
 
