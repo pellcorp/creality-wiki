@@ -323,7 +323,7 @@ You can use the `SHAPER_CALIBRATE` macro to run input shaping, just be sure to `
 
 ## First Print
 
-For this first print you can go and do the tuning first (PID Tuning, etc) or you can go ahead and optimise your scanner_touch_z_offset using baby stepping, as documented here: <https://docs.cartographer3d.com/cartographer-probe/survey-touch#first-print>
+For this first print you can go and do the tuning first (PID Tuning, etc) or you can go ahead and optimise your scanner_touch_z_offset using baby stepping, as documented here: <https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/installation/first-print>
 
 In fluidd the save button after you finish or cancel your print can be a bit hard to find, look for
 
