@@ -235,6 +235,24 @@ You can use the `SHAPER_CALIBRATE` macro to run input shaping, just be sure to `
 
 [Input Shaper Auto Calibration](https://www.klipper3d.org/Measuring_Resonances.html#input-shaper-auto-calibration)
 
+### Probing speed
+
+On a K1/Max a faster lift_speed may counter the backlash on the Z-axis belts. Going too fast is likely making the bed bounce back in the opposite direction. Find the best speeds for probing by varying the probe_speed and lift_speed parameters. BIQU Microprobe is an optical probe and as a rule slow probe_speed will give better results. Start with probe_speed=1 and vary the lift_speed values to find the optimal lift_speed first.
+
+```
+PROBE_ACCURACY probe_speed=1 lift_speed=15
+```
+
+In this case, lift_speed of 15mm/s seems optimal.
+
+![image](assets/images/probe_accuracy_15mm.jpg)
+
+After determining the optimal lift_speed, different probe_speed values can be tested until the sweet spot is found. Here 1.0mm/s works most reliably, however, the slow speed will make the meshing process take longer.
+
+![image](assets/images/probe_accuracy_1mm.jpg)
+
+Credit to Ales Omahen (@Havoc on discord) for this section
+
 ### Other Calibrations
 
 !!! info
