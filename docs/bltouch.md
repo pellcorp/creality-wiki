@@ -49,12 +49,6 @@ Some sellers may call the connector "Micro JST SH 1.25" but that is [incorrect](
 - <https://www.amazon.com/dp/B0BKPFY24M/>
 - <https://www.bastelgarage.ch/0-1m-creality-cr-touch-bl-touch-adapterkabel-sprite-extruder>
 
-Alternatively, two pre-crimped cables can be soldered together:
-- <https://www.amazon.de/dp/B0BNF6J1RJ>
-
-Or a cable built from pre-crimped wires and connector housings:
-- <https://www.amazon.de/dp/B08RMQP6YP>
-
 ![image](assets/images/bltouch_wiring.png)
 
 ![image](assets/images/touch_wiring.jpg)
