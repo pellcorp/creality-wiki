@@ -7,6 +7,7 @@ Within Simple AF if you want to call a custom gcode macro you can with hooks, th
 - **_SAF_BED_MESH_START** - Start of bed mesh calibrate
 - **_SAF_BED_MESH_END** - End of bed mesh calibrate
 - **_SAF_ON_FILAMENT_RUNOUT** - When filament runout is triggered
+- **_SAF_ON_CANCEL** - When cancel print is triggered
 - **_SAF_START_PRINT_START** - Very start of START_PRINT
 - **_SAF_START_PRINT_END** - Very end of START_PRINT
 - **_SAF_END_PRINT_START** - Very start of END_PRINT
