@@ -212,8 +212,14 @@ clear after doing this, I would be looking for a hardware issue, such as a dodgy
 
 ### Calibration
 
-1. Home X Y (`G28 X Y`
-2. Run `BEACON_CALIBRATE` Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
+It is strongly recommended to disable the camera for these calibration steps, just use the `STOP_CAMERA`
+macro to do this.
+
+1. Run the `STOP_CAMERA` macro to stop the camera 
+2. Home X Y (`G28 X Y`)
+3. Heat Nozzle to 150c (`M109 S150`) so that any filament can be removed from nozzle
+4. Make sure nozzle is centred on bed 
+5. Run `BEACON_CALIBRATE` Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
 <br />Upon completion *`SAVE_CONFIG`*
 
 **Source:** [Calibrate Beacon](https://docs.beacon3d.com/quickstart/#6-calibrate-beacon)
