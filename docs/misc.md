@@ -56,6 +56,13 @@ The `/etc/init.d/S58factoryreset` has recently been updated not to delete the `/
 
 [Git Backups for Configuration Overrides](config_overrides.md#git-backups-for-configuration-overrides)
 
+## Guppyscreen Factory Reset
+
+It is possible to initiate a factory reset from the settings menu (the cog) of Guppyscreen, its the same as 
+initiating via USB or by directory running the S58factoryreset service.
+
+![image](assets/images/guppyscreen_factory_reset.png)
+
 ## Emergency Factory Reset
 
 If the worst happens and you somehow get locked out (for instance for whatever reason the dropbear ssh session does not start or wifi config gets all screwy, it is possible to trigger a emergency factory reset.
