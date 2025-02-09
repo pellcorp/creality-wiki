@@ -56,13 +56,6 @@ The `/etc/init.d/S58factoryreset` has recently been updated not to delete the `/
 
 [Git Backups for Configuration Overrides](config_overrides.md#git-backups-for-configuration-overrides)
 
-## Guppyscreen Factory Reset
-
-It is possible to initiate a factory reset from the settings menu (the cog) of Guppyscreen, its the same as 
-initiating via USB or by directory running the S58factoryreset service.
-
-![image](assets/images/guppyscreen_factory_reset.png)
-
 ## Emergency Factory Reset
 
 If the worst happens and you somehow get locked out (for instance for whatever reason the dropbear ssh session does not start or wifi config gets all screwy, it is possible to trigger a emergency factory reset.
@@ -79,8 +72,14 @@ It is very easy, you just need to create a empty file called `emergency_factory_
 
 !!! danger
 
-    It can take up to 5 minutes for an emergency factory restart to finish, it is **vital** you do not power cycle your printer before the stock screen appears. There may be a 3002 error on the screen, this is completely normal.   If you are planning to install Simple AF you can ignore it, if you are trying to go back to stock, power cycle the printer again to clear the error.  
+    It can take up to 5 minutes for a factory restart to finish, it is **vital** you do not power cycle your printer before the stock screen appears. There may be a 3002 error on the screen, this is completely normal.   If you are planning to install Simple AF you can ignore it, if you are trying to go back to stock, power cycle the printer again to clear the error.  
 
     Failing to follow this advice can lead to your printer getting bricked and requiring much more involved intervention to recover!
     
     ![image](assets/images/error3002.png)
+
+### Guppyscreen Factory Reset
+
+It is also possible to initiate a factory reset from the settings menu (the cog) of Guppyscreen.
+
+![image](assets/images/guppyscreen_factory_reset.png)
