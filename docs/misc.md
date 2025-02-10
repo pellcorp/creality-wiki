@@ -18,7 +18,7 @@ Moonraker timelapse is installed but not enabled by default.  To enable it there
 [include timelapse.cfg]
 ```
 
-And uncomment the `[include timelapse.conf]` in moonraker.conf, you will need to restart moonraker **and** klipper after this, you can that via the fluidd or mainsail services section.
+And uncomment the `[include timelapse.conf]` in moonraker.conf, you will need to restart moonraker **and** klipper after this, you can do that via the fluidd or mainsail services section.
 
 If you see these messages:
 
@@ -30,7 +30,9 @@ It means you have not as yet properly restarted moonraker and/or klipper.    If 
 
 ### Timelapse Camera config
 
-Because the single web cam is controlled via moonraker with the webcam.conf file, the Timelapse camera dropdown menu won't let you choose a camera, this is expected.
+!!! info
+
+    Because the single webcam is controlled via moonraker with the webcam.conf file, the Timelapse camera dropdown menu won't let you choose a camera, this is expected.
 
 ![image](assets/images/webcam.png)
 
