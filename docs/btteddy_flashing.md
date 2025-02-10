@@ -19,7 +19,7 @@ On windows or a Linux Desktop if you successfully connected the eddy in bootsel 
 
 ### Flashing btteddy.uf2 file
 
-Copy the btteddy.uf2 file across to the btt eddy drive, it should automatically flash the eddy and disconnect for you.
+Copy the [btteddy.uf2](https://raw.githubusercontent.com/pellcorp/klipper/master/fw/K1/btteddy.uf2) file across to the btt eddy drive, it should automatically flash the eddy and disconnect for you.
 
 Once this is done go ahead and reconnect your eddy to your K1.
 
