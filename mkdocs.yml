@@ -138,6 +138,7 @@ nav:
       - microprobe.md
   - BttEddy:
       - btteddy.md
+      - eddy-ng.md
       - btteddy_flashing.md
       - btteddy_duo_flashing.md
   - Klicky:
