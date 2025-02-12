@@ -200,7 +200,7 @@ You can run the following command to fix your serial if you forgot to plug your 
 #### Drive Current Calibration
 1. Home XY (`G28 X Y`)
 2. Make sure nozzle is centred on bed
-3. Run `_SET_KIN_MAX_Z` and then move the nozzle so its 20mm from the bed, please try and be as accurate as possible with this distance, its better to be slightly closer to the bed than further away.
+3. Run `_SET_KIN_MAX_Z` and then move the toolhead so that the bottom of the eddy is 20mm from the bed, please try and be as accurate as possible with this distance, it's better to be slightly closer to the bed than further away.
 4. Run `BTTEDDY_CALIBRATE_DRIVE_CURRENT`
 5. Run SAVE_CONFIG
 
