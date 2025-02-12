@@ -7,7 +7,7 @@
     Make sure to switch it to USB Mode first of all!!!
 
     It is possible this method will not work for the BTT Duo, especially if it is currently flashed for Can from the factory, 
-    and you may need to resort to the old fashioned approach documented [here](btteddy_duo_flashing.md)
+    and you may need to resort to the legacy approach documented [here](legacy_btteddy_flashing.md)
 
 ## Flashing on Windows or Linux Desktop
 
