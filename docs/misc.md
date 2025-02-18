@@ -64,6 +64,11 @@ If the worst happens and you somehow get locked out (for instance for whatever r
 
 It is very easy, you just need to create a empty file called `emergency_factory_reset` on a USB key and make sure the USB key is plugged in, then power cycle the printer, this will initiate a factory reset.
 
+!!! tip
+
+    If you are having trouble creating a file like this in windows, the easiest way is to download the [emergency_factory_reset.zip](assets/other/emergency_factory_reset.zip) and extract it onto your usb thumb drive.
+
+
 !!! info
 
     This factory reset method will rename the `emergency_factory_reset` to `emergency_factory_reset.old` to avoid a boot loop, so if you need to use this method again you will need to rename the file.
