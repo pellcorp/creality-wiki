@@ -40,11 +40,9 @@ END_PRINT
 
 ### Mount Options
 
-| Mount         | URL                                                                             | Notes                                                   |
-|---------------|---------------------------------------------------------------------------------|---------------------------------------------------------|
-| **Default**   | <https://www.printables.com/model/1012524-btteddy-creality-k1-k1c-k1-max-mount> |                                                         |
-| **Pellcorp**  | <https://www.printables.com/model/965667-wip-k1-btt-eddy-rear-mount-v4>         |                                                         |
-| **Ballaswag** | <https://makerworld.com/en/models/494931>                                       | Config copied from k1_mod sources, otherwise not tested |
+TODO - all the existing btt eddy mounts will need to be changed to move the bottom of the coil closer to the bed, whereas before
+the recommendation was for the base to be 2.6 to 3mm from the bed when nozzle is touching the bed, now the recommendation for eddy ng
+is that the coil itself be in that range (and closer to 2.95mm), so these mounts need to move the eddy 1.2mm closer to the bed.
 
 ### Nozzle Offset
 
