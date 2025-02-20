@@ -30,7 +30,7 @@ END_PRINT
 
 !!! danger
 
-    Please note if you are not using ZeroDotCmd side mount you might have to make post install config changes to btteddy.cfg and btteddy-k1.cfg or btteddy-k1m.cfg before **homing your printer**, using **screw tilt adjust** or doing a **bed mesh**!    Ignoring these instructions can lead to significant damage to your build plate and/or probe.
+    Please note if you are not using ZeroDotCmd side mount you might have to make post install config changes to eddyng.cfg and btteddy-k1.cfg or btteddy-k1m.cfg before **homing your printer**, using **screw tilt adjust** or doing a **bed mesh**!    Ignoring these instructions can lead to significant damage to your build plate and/or probe.
 
     Ignoring these instructions can lead to significant damage to your build plate and/or probe.
 
