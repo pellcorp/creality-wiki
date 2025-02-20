@@ -4,6 +4,10 @@ Come on over to the pellcorp discord server, the `#simple-af-btteddy` channel ha
 
 [![invite](assets/images/invite.png '#simple-af-btteddy')](https://discord.gg/2uGDzyJ3WX)
 
+### eddy-ng discord 
+
+You can also get help from the eddy-ng discord channels on the sovol discord, with the <https://discord.gg/djhnkDR2JN> link
+
 ## Firmware requirements
 
 This guide assumes you have a K1, K1C or K1 Max and you are running stock creality firmware 1.3.3.5 or higher, or alternately you are using  [my prerooted firmware](https://github.com/pellcorp/creality/wiki/Prerooted-K1-Firmware).   Any other pre-rooted firmware is explicitly not supported and the installer.sh will validate this and refuse to proceed if you try to use it on different firmware.
