@@ -185,9 +185,9 @@ You can run the following command to fix your serial if you forgot to plug your 
 
 ### Calibration
 
-https://github.com/vvuk/eddy-ng/wiki#calibration-and-homing
+TODO
 
-TODO 
+<https://github.com/vvuk/eddy-ng/wiki#calibration-and-homing>
 
 ### First Print
 
