@@ -205,6 +205,17 @@ Calibrating the eddy should be as easy as running the `PROBE_EDDY_NG_SETUP`, fir
 
 Source: <https://github.com/vvuk/eddy-ng/wiki#calibration>
 
+#### First Tap Check
+
+Its a good idea after you save and restart to verify tap works correctly, you can do this by:
+
+1. Home All (`G28`)
+2. Make sure nozzle is centred on bed
+3. Heat Nozzle to 150c (`M109 S150`) so that any filament can be removed from nozzle
+4. Run `PROBE_EDDY_NG_TAP TARGET_Z=-0.150 THRESHOLD=250 SAMPLES=1`
+
+Source: https://github.com/vvuk/eddy-ng/wiki#first-tap
+
 ### First Print
 
 TODO
