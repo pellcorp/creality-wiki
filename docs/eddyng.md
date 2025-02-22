@@ -217,9 +217,15 @@ Its a good idea after you save and restart to verify tap works correctly, you ca
 
 Source: https://github.com/vvuk/eddy-ng/wiki#first-tap
 
-### First Print
+#### Adjusting Tap Z
 
-TODO
+You can adjust the tap, see details here:
+
+https://github.com/vvuk/eddy-ng/wiki#successful-tap
+
+## First Print
+
+I am unsure if z offset apply functionality is implemented in eddy-ng as yet, need to confirm this.
 
 ### Bed Mesh
 
