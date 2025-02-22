@@ -46,6 +46,7 @@ END_PRINT
 | **Default**   | <https://www.printables.com/model/1012524-btteddy-creality-k1-k1c-k1-max-mount> |                                                         |
 | **Pellcorp**  | <https://www.printables.com/model/965667-wip-k1-btt-eddy-rear-mount-v4>         |                                                         |
 | **Ballaswag** | <https://makerworld.com/en/models/494931>                                       | Config copied from k1_mod sources, otherwise not tested |
+| **Slam**     | <https://www.printables.com/model/1012524-btteddy-creality-k1-k1c-k1-max-mount> |      |
 
 ### Nozzle Offset
 
