@@ -60,7 +60,7 @@ Bus 001 Device 102: ID 1d50:614e OpenMoko, Inc. USB2.0 Hub
 
 Unfortunately I know of no way to test this except by plugging it back into the K1, restarting klipper and verifying the via the System tab, a correctly flashed eddy will have 
 
-![image](assets/images/mcu_eddy.png)
+![image](assets/images/eddy-ng-version.png)
 
 ## Migrating from K1 Mod 
 

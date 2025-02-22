@@ -40,15 +40,18 @@ END_PRINT
 
 ### Mount Options
 
-TODO - all the existing btt eddy mounts will need to be changed to move the bottom of the coil closer to the bed, whereas before
-the recommendation was for the base to be 2.6 to 3mm from the bed when nozzle is touching the bed, now the recommendation for eddy ng
-is that the coil itself be in that range (and closer to 2.95mm), so these mounts need to move the eddy 1.2mm closer to the bed.
+| Mount         | URL                                                                             | Notes                                                   |
+|---------------|---------------------------------------------------------------------------------|---------------------------------------------------------|
+| **Default**   | <https://www.printables.com/model/1012524-btteddy-creality-k1-k1c-k1-max-mount> |                                                         |
+| **Pellcorp**  | <https://www.printables.com/model/965667-wip-k1-btt-eddy-rear-mount-v4>         |                                                         |
 
 ### Nozzle Offset
 
 !!! warn
 
-    If you use a different probe mount you must make sure the bottom of the btt eddy is between 2.5mm and 3mm from the tip of the nozzle, so if the nozzle is touching the bed (when both are cold), the bottom of the eddy should be at least 2.5mm above the bed and no more than 3mm.
+    If you use a different probe mount you must make sure the bottom of the btt eddy **coil** is at least 3mm away from the nozzle tip, its better to be further away than closer.
+    This is not the difference of the bottom of the case to the nozzle, the case is about 1.2mm thick, so this means you want the bottom of the case to be at least 2mm offset, 
+    its probably a good idea to look into mounts which do not use a case or a modified case with no bottom.
 
 ### K1M vs K1/K1C/K1SE
 
@@ -60,7 +63,7 @@ is that the coil itself be in that range (and closer to 2.95mm), so these mounts
 
 !!! warning
 
-    It is assumed that you have flashed your eddy with the firmware from <https://github.com/pellcorp/klipper/blob/jp_eddy_ng/fw/K1/btteddy.uf2> **before** starting the installation!!!
+    It is assumed that you have flashed your eddy with the firmware from <https://github.com/pellcorp/klipper/blob/master/fw/K1/btteddy.uf2> **before** starting the installation!!!
     
     I have put together a guide for flashing the btt eddy [here](btteddy_flashing.md)
 

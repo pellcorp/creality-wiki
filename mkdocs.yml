@@ -139,6 +139,9 @@ nav:
   - BttEddy:
       - btteddy.md
       - btteddy_flashing.md
+  - EddyNG:
+      - eddyng.md
+      - btteddy_flashing.md
   - Extras:
       - misc.md
       - config_overrides.md
