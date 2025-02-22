@@ -190,9 +190,15 @@ You can run the following command to fix your serial if you forgot to plug your 
 
 ### Calibration
 
-TODO
+Calibrating the eddy should be as easy as running the `PROBE_EDDY_NG_SETUP`, first step is to home X and Y:
 
-<https://github.com/vvuk/eddy-ng/wiki#calibration-and-homing>
+1. Home XY (`G28 X Y`)
+2. Make sure nozzle is centred on bed
+3. Heat Nozzle to 150c (`M109 S150`) so that any filament can be removed from nozzle
+4. Run `PROBE_EDDY_NG_SETUP`
+<br />Upon completion *`SAVE_CONFIG`*
+
+Source: <https://github.com/vvuk/eddy-ng/wiki#calibration>
 
 ### First Print
 
