@@ -1,3 +1,8 @@
+## Experimental Status
+
+So this feature has just been released and its under active development from vvuk over at https://github.com/vvuk/eddy-ng/, so there 
+are likely to be gotchas and issues, please bare that in mind.
+
 ## Where can I get help?
 
 Come on over to the pellcorp discord server, the `#simple-af-btteddy` channel has been setup for anyone wanting support for btt eddy.
