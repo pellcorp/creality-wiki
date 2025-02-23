@@ -206,23 +206,6 @@ Calibrating the eddy should be as easy as running the `PROBE_EDDY_NG_SETUP`, fir
 
 Source: <https://github.com/vvuk/eddy-ng/wiki#calibration>
 
-#### First Tap Check
-
-Its a good idea after you save and restart to verify tap works correctly, you can do this by:
-
-1. Home All (`G28`)
-2. Make sure nozzle is centred on bed
-3. Heat Nozzle to 150c (`M109 S150`) so that any filament can be removed from nozzle
-4. Run `PROBE_EDDY_NG_TAP TARGET_Z=-0.150 THRESHOLD=250 SAMPLES=1`
-
-Source: https://github.com/vvuk/eddy-ng/wiki#first-tap
-
-#### Adjusting Tap Z
-
-You can adjust the tap, see details here:
-
-https://github.com/vvuk/eddy-ng/wiki#successful-tap
-
 ## First Print
 
 For this first print you can go and do the tuning first (PID Tuning, etc) or you can go ahead and optimise your tap_adjust_z using baby stepping, as documented here: <https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/installation/first-print>
@@ -230,11 +213,6 @@ For this first print you can go and do the tuning first (PID Tuning, etc) or you
 In fluidd the save button after you finish or cancel your print can be a bit hard to find, look for
 
 ![image](assets/images/fluidd_save_zoffset.png)
-
-### Bed Mesh
-
-Now you can now run your first bed mesh:
-`BED_MESH_CALIBRATE`
 
 ### Tuning
 
