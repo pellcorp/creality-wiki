@@ -40,6 +40,18 @@ It means you have not as yet properly restarted moonraker and/or klipper.    If 
 
 <https://github.com/mainsail-crew/moonraker-timelapse/blob/main/docs/configuration.md#prusa-slicer--super-slicer>
 
+## Spoolman
+
+Spoolman moonraker integration  is not enabled by default.  To enable it there are a few steps, you need to add the following include to printer.cfg:
+
+```
+[include spoolman.cfg]
+```
+
+And uncomment the `[include spoolman.conf]` in moonraker.conf, you will need to change the `server` url to your spoolman server location. 
+
+You will need to restart moonraker **and** klipper after this, you can do that via the fluidd or mainsail services section.
+
 ## Configuring Timezone
 
 The `/etc/init.d/S58factoryreset` has recently been updated not to delete the `/etc/localtime`, so you can configure it once and it should survive any number of factory resets, following the excellent guide here:
