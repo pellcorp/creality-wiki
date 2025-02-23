@@ -206,7 +206,7 @@ Calibrating the eddy should be as easy as running the `PROBE_EDDY_NG_SETUP`, fir
 
 Source: <https://github.com/vvuk/eddy-ng/wiki#calibration>
 
-## First Print
+### First Print
 
 For this first print you can go and do the tuning first (PID Tuning, etc) or you can go ahead and optimise your tap_adjust_z using baby stepping, as documented here: <https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/installation/first-print>
 

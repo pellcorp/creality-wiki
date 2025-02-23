@@ -321,7 +321,7 @@ You can use the `SHAPER_CALIBRATE` macro to run input shaping, just be sure to `
 
 [Input Shaper Auto Calibration](https://www.klipper3d.org/Measuring_Resonances.html#input-shaper-auto-calibration)
 
-## First Print
+### First Print
 
 For this first print you can go and do the tuning first (PID Tuning, etc) or you can go ahead and optimise your scanner_touch_z_offset using baby stepping, as documented here: <https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/installation/first-print>
 
