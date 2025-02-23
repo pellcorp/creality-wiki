@@ -225,7 +225,11 @@ https://github.com/vvuk/eddy-ng/wiki#successful-tap
 
 ## First Print
 
-I am unsure if z offset apply functionality is implemented in eddy-ng as yet, need to confirm this.
+For this first print you can go and do the tuning first (PID Tuning, etc) or you can go ahead and optimise your tap_adjust_z using baby stepping, as documented here: <https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/installation/first-print>
+
+In fluidd the save button after you finish or cancel your print can be a bit hard to find, look for
+
+![image](assets/images/fluidd_save_zoffset.png)
 
 ### Bed Mesh
 
