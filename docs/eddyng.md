@@ -1,7 +1,9 @@
 ## Experimental Status
 
-So this feature has just been released and its under active development from vvuk over at https://github.com/vvuk/eddy-ng/, so there 
-are likely to be gotchas and issues, please bare that in mind.
+!!! warning
+    This feature has just been released and it is under active development from vvuk over at https://github.com/vvuk/eddy-ng/, so there 
+    are likely to be gotchas and issues, please bare that in mind.   Its likely you will be required to reflash your eddy a few times
+    before things settle down to just python klipper updates.
 
 ## Where can I get help?
 
@@ -45,11 +47,11 @@ END_PRINT
 
 ### Mount Options
 
-| Mount        | URL                                                                             | Notes |
-|--------------|---------------------------------------------------------------------------------|------|
-| **Default**  | <https://www.printables.com/model/1012524-btteddy-creality-k1-k1c-k1-max-mount> |      |
-| **Pellcorp** | <https://www.printables.com/model/965667-wip-k1-btt-eddy-rear-mount-v4>         |      |
-| **Slam**     | <https://www.printables.com/model/1195575-btt-eddy-mount-for-k1c> |      |
+| Mount        | URL                                                                             | Notes                                                         |
+|--------------|---------------------------------------------------------------------------------|---------------------------------------------------------------|
+| **Default**  | <https://www.printables.com/model/1012524-btteddy-creality-k1-k1c-k1-max-mount> | This mount might require tweaking so that its 3-3.5mm offset. |
+| **Pellcorp** | <https://www.printables.com/model/965667-wip-k1-btt-eddy-rear-mount-v4>         |                                                               |
+| **Slam**     | <https://www.printables.com/model/1195575-btt-eddy-mount-for-k1c> |                                                               |
 
 ### Nozzle Offset
 
