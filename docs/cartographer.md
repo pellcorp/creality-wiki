@@ -341,7 +341,8 @@ Refer to the [Ellis Print Tuning Guide](https://ellis3dp.com/Print-Tuning-Guide/
 
 ## Scan Calibration Method
 
-Some cartographer users choose to use scan only instead of touch and that is easy enough to do once you have finished setting it up.
+Some cartographer users choose to use scan only instead of touch and that is easy enough to do, you can setup for scan immediately
+after installation, no need to do the 3 step calibration as for touch!
 
 You can run the following gcode command:
 
