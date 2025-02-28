@@ -97,8 +97,9 @@ It is very easy, you just need to create a empty file called `emergency_factory_
     
     ![image](assets/images/error3002.png)
 
-### Guppyscreen Factory Reset
+### Grumpyscreen Factory Reset
 
-It is also possible to initiate a factory reset from the settings menu (the cog) of Guppyscreen.
+It is also possible to initiate a factory reset from the settings menu (the cog) of Grumpyscreen.
 
 ![image](assets/images/guppyscreen_factory_reset.png)
+

@@ -22,12 +22,12 @@ You can update these components via Fluidd or Mainsail, in fluidd make sure you 
 
 ![image](assets/images/update_software.png)
 
-### Guppyscreen
+### Grumpyscreen
 
 ![image](assets/images/guppyscreen_settings.png)
-You can update Guppyscreen from the Settings menu.
+You can update Grumpyscreen from the Settings menu.
 
-Click the Update Guppyscreen icon
+Click the Update Grumpyscreen icon
 
 ![image](assets/images/update_guppyscreen.jpg)
 
