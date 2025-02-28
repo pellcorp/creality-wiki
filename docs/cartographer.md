@@ -351,6 +351,21 @@ You can run the following gcode command:
 
 And then `SAVE_CONFIG`
 
+It is strongly recommended to disable the camera for these calibration steps, just use the `STOP_CAMERA`
+macro to do this.
+
+1. Run the `STOP_CAMERA` macro to stop the camera
+2. Home X Y (`G28 X Y`)
+3. Heat Nozzle to 150c (`M109 S150`) so that any filament can be removed from nozzle
+4. Make sure nozzle is centred on bed
+5. Run `CARTOGRAPHER_CALIBRATE METHOD=manual`
+   Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
+   <br />Upon completion *`SAVE_CONFIG`*
+
+!!! warn
+
+    Do not use a metal feeler gauge for this step, it could interfere with calibration!!!
+
 You can then use the CARTOGRAPHER_MODEL parameter to start print from your slicer to select different filament profiles, this is required if you print with different filaments and/or use different bed aurfaces.
 
 ### Cartographer Model
