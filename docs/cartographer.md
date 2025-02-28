@@ -352,7 +352,7 @@ You can run the following gcode command:
 
 And then `SAVE_CONFIG`
 
-It is strongly recommended to disable the camera for these calibration steps, just use the `STOP_CAMERA`
+It is strongly recommended to disable the camera for this calibration step, just use the `STOP_CAMERA`
 macro to do this.
 
 1. Run the `STOP_CAMERA` macro to stop the camera
