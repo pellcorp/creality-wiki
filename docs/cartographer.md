@@ -380,7 +380,7 @@ defined for each of the bed type and filament type combinations.
 
 ## Troubleshooting
 
-<https://docs.cartographer3d.com/cartographer-probe/survey-touch/survey-troubleshooting>
+<https://docs.cartographer3d.com/cartographer-probe/troubleshooting>
 
 ### Repo has diverged from remote
 
