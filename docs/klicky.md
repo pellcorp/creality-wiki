@@ -67,7 +67,6 @@ The Creality cable for their CR Touch probe is a good option although you will n
 
 - <https://www.aliexpress.us/item/1005004960067376.html>
 - <https://www.amazon.com/dp/B0BKPFY24M/>
-- <https://www.bastelgarage.ch/0-1m-creality-cr-touch-bl-touch-adapterkabel-sprite-extruder>
 
 You want to use the 3 top wires on the nozzle mcu TOUCH port:
 

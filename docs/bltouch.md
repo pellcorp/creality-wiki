@@ -47,7 +47,6 @@ Some sellers may call the connector "Micro JST SH 1.25" but that is [incorrect](
 
 - <https://www.aliexpress.us/item/1005004960067376.html>
 - <https://www.amazon.com/dp/B0BKPFY24M/>
-- <https://www.bastelgarage.ch/0-1m-creality-cr-touch-bl-touch-adapterkabel-sprite-extruder>
 
 ![image](assets/images/bltouch_wiring.png)
 
