@@ -16,7 +16,7 @@ This guide assumes you have a K1, K1C or K1 Max and you are running stock creali
 
 ### Ender 5 Max
 
-You must be using pre-rooted firmware, which is not available from Creality at the moment, you can get it from https://github.com/zevaryx/ender-5-max-firmware
+You must be using pre-rooted firmware, which is not available from Creality at the moment, you can get it from <https://github.com/zevaryx/ender-5-max-firmware>
 
 ## Slicer Settings
 
