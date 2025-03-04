@@ -1,5 +1,10 @@
 ## Where can I get help?
 
+!!! warning
+
+    Getting the klicky setup correctly takes time and patience to ensure you do not damage your printer or the klicky, also when doing operations
+    liking homing and bed meshes and the like you should never leave your printer unattended in case docking or attaching fails for some reason.
+
 Come on over to the pellcorp discord server, here is the invite, the `#simple-af-support` channel has been setup for anyone wanting support for klicky.
 
 [![invite](assets/images/invite.png '#simple-af-support')](https://discord.gg/2uGDzyJ3WX)
@@ -37,9 +42,23 @@ defined for each of the bed type and filament type combinations.
 
 ## Probe Installation
 
+All probe mount options assume you have purchased a PCB Klicky:
+
+- https://www.aliexpress.com/item/1005005023158174.html
+
 ### Mount Options
 
-TODO
+| Mount           | URL                                                                         | Notes              |
+|-----------------|-----------------------------------------------------------------------------|--------------------|
+| **Default**     | <https://www.printables.com/model/1170906-klicky-pcb-probe-for-creality-k1> | Tested on K1 only  |
+| **Bearosaurus** | <TODO>                                                                      | Tested on K1M only |
+
+### Wiring
+
+You will need to make a cable from the nozzle touch port to the 3 pin port on the klicky:
+
+![image](assets/images/klicky_nozzle_mcu.png)
+![image](assets/images/klicky_wiring.png)
 
 ## Installation
 
@@ -92,7 +111,6 @@ If you have pellcorp-overrides in github but not stored locally, [you need to re
 To run the script, you must specify the probe you want to use.
 
 ```
-/usr/data/pellcorp/k1/installer.sh --branch jp_klicky
 /usr/data/pellcorp/k1/installer.sh --install klicky
 ```
 
