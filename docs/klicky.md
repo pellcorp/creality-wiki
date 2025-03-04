@@ -44,7 +44,8 @@ defined for each of the bed type and filament type combinations.
 
 All probe mount options assume you have purchased a PCB Klicky:
 
-- https://www.aliexpress.com/item/1005005023158174.html
+- <https://www.aliexpress.com/item/1005005023158174.html>
+
 
 ### Mount Options
 
@@ -55,7 +56,20 @@ All probe mount options assume you have purchased a PCB Klicky:
 
 ### Wiring
 
-You will need to make a cable from the nozzle touch port to the 3 pin port on the klicky:
+You will need to make a cable from the nozzle touch port to the 3 pin port on the klicky.
+
+The TOUCH port on the Nozzle MCU board mates with a male 5-pin Molex Picoblade connector.
+Some sellers may call the connector "Micro JST SH 1.25" but that is [incorrect](https://www.reddit.com/r/AskElectronics/comments/m6mibq/comment/gr6w1m0). 
+
+You could repin a CR-Touch cable (used for connecting bltouch / microprobe) with the 3 pin connector provided with the PCB Klicky, or make your own cable.
+
+The Creality cable for their CR Touch probe is a good option although you will need to remove 2 of the wires for a neat connection
+
+- <https://www.aliexpress.us/item/1005004960067376.html>
+- <https://www.amazon.com/dp/B0BKPFY24M/>
+- <https://www.bastelgarage.ch/0-1m-creality-cr-touch-bl-touch-adapterkabel-sprite-extruder>
+
+You want to use the 3 top wires on the nozzle mcu TOUCH port:
 
 ![image](assets/images/klicky_nozzle_mcu.png)
 ![image](assets/images/klicky_wiring.png)
