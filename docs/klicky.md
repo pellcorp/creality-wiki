@@ -49,10 +49,10 @@ All probe mount options assume you have purchased a PCB Klicky:
 
 ### Mount Options
 
-| Mount           | URL                                                                         | Notes              |
-|-----------------|-----------------------------------------------------------------------------|--------------------|
-| **Default**     | <https://www.printables.com/model/1170906-klicky-pcb-probe-for-creality-k1> | Tested on K1 only  |
-| **Bearosaurus** | <TODO>                                                                      | Tested on K1M only |
+| Mount           | URL                                                                         | Notes                                                                             |
+|-----------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| **Default**     | <https://www.printables.com/model/1170906-klicky-pcb-probe-for-creality-k1> | Tested on K1 only, the wiring and config should be ignored, print just the models |
+| **Bearosaurus** | <TODO>                                                                      | Tested on K1M only                                                                |
 
 ### Wiring
 
