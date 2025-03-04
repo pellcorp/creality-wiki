@@ -70,7 +70,14 @@ The Creality cable for their CR Touch probe is a good option although you will n
 
 You want to use the 3 top wires on the nozzle mcu TOUCH port:
 
-![image](assets/images/klicky_nozzle_mcu.png)
+Connect to TOUCH port on the nozzle MCU, it is accessible from the side left (LIDAR) side of the printhead and only the external cover of the printhead has to be removed.
+
+![image](assets/images/nozzle_rear.png)
+
+![image](assets/images/touch_port.png)
+
+The wiring looks like this:
+
 ![image](assets/images/klicky_wiring.png)
 
 ## Installation
