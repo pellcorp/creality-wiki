@@ -129,8 +129,14 @@ If you have pellcorp-overrides in github but not stored locally, [you need to re
 To run the script, you must specify the probe you want to use.
 
 ```
-/usr/data/pellcorp/k1/installer.sh --install klicky
+/usr/data/pellcorp/k1/installer.sh --install klicky --mount Mount
 ```
+
+!!! warning
+
+    For `Mount` you must specify the mount option for the mount you have used, if you do not do this the printer will be incorrectly configured for your mount, and bed meshes, x and y limits and related config will be wrong.   Please refer to [Mount Options](#mount-options) for supported mounts.   
+
+    If you are using a non-supported mount you should skip the `--mount` option and adjust your configuration after installation before trying to home Z, do a bed mesh or anything else.
 
 ??? note "RPC failed; curl 18 transfer closed"
 
