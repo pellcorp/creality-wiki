@@ -136,6 +136,8 @@ nav:
       - bltouch.md
   - Microprobe:
       - microprobe.md
+  - Klicky:
+      - klicky.md
   - BttEddy:
       - btteddy.md
       - btteddy_flashing.md

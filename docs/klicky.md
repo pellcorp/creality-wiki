@@ -1,6 +1,6 @@
 ## Where can I get help?
 
-!!! warning
+!!! danger
 
     Getting the klicky setup correctly takes time and patience to ensure you do not damage your printer or the klicky, also when doing operations
     liking homing and bed meshes and the like you should never leave your printer unattended in case docking or attaching fails for some reason.
