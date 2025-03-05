@@ -181,7 +181,12 @@ It is important to make sure you have a way to [emergency factory reset](misc.md
 
 ### Calibration
 
-TODO
+1. Home All (`G28`)
+2. Make sure nozzle is centred on bed
+3. Run `PROBE_CALIBRATE`
+4. Manually remove klicky probe and put it into the dock
+5. Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
+6. <br />Upon completion *`SAVE_CONFIG`*
 
 ### First Print
 
