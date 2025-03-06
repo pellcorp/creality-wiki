@@ -19,10 +19,14 @@ The following core config files can have overrides saved for them, please note t
 - beacon.cfg
 - beacon-k1.cfg
 - beacon-k1m.cfg
+- eddyng.cfg
+- klicky.cfg
+- klicky-k1.cfg
+- klicky-k1m.cfg
+- klicky_macro.cfg
 - KAMP_Settings.cfg
 - moonraker.conf
 - start_end.cfg
-- useful_macros.cfg
 - fan_control.cfg
 
 !!! tip
