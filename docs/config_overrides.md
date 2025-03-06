@@ -78,8 +78,13 @@ export GITHUB_USERNAME=myusername
 export EMAIL_ADDRESS=me@somewhere.com
 export GITHUB_TOKEN="The token I just created"
 export GITHUB_REPO=pellcorp-overrides
+export GITHUB_BRANCH=main
 /usr/data/pellcorp/k1/config-overrides.sh --repo
 ```
+
+!! info
+
+    The `GITHUB_BRANCH` is optional, if its not specified it will use `main` as the branch.
 
 If you want to setup the repository locally ignoring any local files in `/usr/data/pellcorp-overrides`, you can use the `--clean-repo` argument, instead of the `--repo` argument, which will rebase the local changes on top of the repo.
 
