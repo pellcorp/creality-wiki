@@ -3,7 +3,7 @@
 !!! danger
 
     Getting the klicky setup correctly takes time and patience to ensure you do not damage your printer or the klicky, also when doing operations
-    liking homing and bed meshes and the like you should never leave your printer unattended in case docking or attaching fails for some reason.
+    like homing and bed meshes and the like you should never leave your printer unattended in case docking or attaching fails for some reason.
 
 Come on over to the pellcorp discord server, here is the invite, the `#simple-af-klicky` channel has been setup for anyone wanting support for klicky.
 
@@ -46,13 +46,22 @@ All probe mount options assume you have purchased a PCB Klicky:
 
 - <https://www.aliexpress.com/item/1005005023158174.html>
 
-
 ### Mount Options
 
-| Mount           | URL                                                                         | Notes                                                                             |
-|-----------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| **Default**     | <https://www.printables.com/model/1170906-klicky-pcb-probe-for-creality-k1> | Tested on K1 only, the wiring and config should be ignored, print just the models |
-| **Bearosaurus** | <TODO>                                                                      | Tested on K1M only                                                                |
+#### Default
+
+The models can be downloaded from <https://www.printables.com/model/1170906-klicky-pcb-probe-for-creality-k1>, but the instructions for wiring and the macros
+are not relevant and the wiring shown is a bit misleading, so just the models from printables nothing else.   Don't forget the 1mm spacer on the toolhead
+otherwise the klicky does not properly line up when attached.
+
+This mount should work for K1/K1C/K1SE and K1M, but only the K1 has been tested so the coordinates of the dock are unknown for the K1M, once those coordinates
+are confirmed the mount overrides configuration for the Default klicky will be updated in Simple AF.
+
+#### Bearosaurus
+
+The `Bearosaurus` is a different mount option which is mounted on the rear of the printer toolhead and is more suitable for custom toolheads, users are 
+encouraged to use the `Default` option for stock.   It has so far only been tested on a K1M and the models are yet to be available on a public models
+website.   Also the coordinates will differ depending on how you mount it so some testing to find your ideal location will be required
 
 ### Wiring
 
@@ -184,6 +193,16 @@ It is important to make sure you have a way to [emergency factory reset](misc.md
 
 - If you get the message: `INFO - USB Key was recognised and mounted correctly (/tmp/udisk/sda1)`, your USB thumb drive (aka USB key) is perfect to use for a factory reset.
 - If you get no message at all before the script ends (after 60 seconds), your USB thumb drive (aka USB key) is defective.   You can check the `messages` file in the logs section of your UI to get more details about why the usb key could not be mounted!
+
+### Docking
+
+Getting docking working if you are not using the `Default` probe or you have positioned the dock somewhere other than the rear left stepper motor is left as an exercise for
+each user, currently Simple AF does not provide a flag to disable automatic docking (this will be added soon)
+
+### Verifying Probe
+
+It's really important to verify that the klicky actually will work as an endstop for homing, so initiate homing and then use your finger to activate the microswitch
+on the bottom of the klicky and make sure homing stops, if it does not stop you need to immediately use the e-stop button in your UI or Grumpyscreen or hit that power button 
 
 ### Calibration
 
