@@ -54,8 +54,7 @@ The models can be downloaded from <https://www.printables.com/model/1170906-klic
 are not relevant and the wiring shown is a bit misleading, so just the models from printables nothing else.   Don't forget the 1mm spacer on the toolhead
 otherwise the klicky does not properly line up when attached.
 
-This mount should work for K1/K1C/K1SE and K1M, but only the K1 has been tested so the coordinates of the dock are unknown for the K1M, once those coordinates
-are confirmed the mount overrides configuration for the Default klicky will be updated in Simple AF.
+This mount should work for K1/K1C/K1SE and K1M, but only K1 and K1M variants have actually been tested.
 
 #### Bearosaurus
 
