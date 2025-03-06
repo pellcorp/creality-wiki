@@ -45,7 +45,7 @@ Create a new `pellcorp-overrides` repository on your github account:
 
 !!! info
 
-    You don't actually have to call it pellcorp-overrides, you can call it whatever you want, but it should be a repository dedicated to just doing backups for this project.   Currently config-overrides.sh --repo only supports a single configuration, hopefully soon I will add the ability to specify a branch so you can store multiple configurations in the same repository.
+    You don't actually have to call it pellcorp-overrides, you can call it whatever you want, but it should be a repository dedicated to just doing backups for this project.   Currently `config-overrides.sh --repo` only supports a single configuration, hopefully soon I will add the ability to specify a branch so you can store multiple configurations in the same repository.
 
 !!! warn
 
@@ -53,7 +53,7 @@ Create a new `pellcorp-overrides` repository on your github account:
 
 ### Create a personal access token
 
-Click [here](https://github.com/settings/tokens?type=beta) to create a fine grained personal access token.  Create a fine grained token and limit its access to just your pellcorp-overrides repository.   Make sure that Contents read and write access.
+Click [here](https://github.com/settings/tokens?type=beta) to create a fine grained personal access token.  Create a finegrained token and limit its access to just your `pellcorp-overrides` repository.   Make sure that Contents read and write access.
 
 ![image](assets/images/git_backup_contents.png)
 
@@ -81,7 +81,7 @@ export GITHUB_REPO=pellcorp-overrides
 /usr/data/pellcorp/k1/config-overrides.sh --repo
 ```
 
-If you want to setup the repository locally ignoring any local files in /usr/data/pellcorp-overrides, you can use the `--clean-repo` argument, instead of the `--repo` argument, which will rebase the local changes on top of the repo.
+If you want to setup the repository locally ignoring any local files in `/usr/data/pellcorp-overrides`, you can use the `--clean-repo` argument, instead of the `--repo` argument, which will rebase the local changes on top of the repo.
 
 !!! note
 
