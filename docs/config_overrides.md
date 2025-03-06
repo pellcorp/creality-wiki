@@ -82,7 +82,7 @@ export GITHUB_BRANCH=main
 /usr/data/pellcorp/k1/config-overrides.sh --repo
 ```
 
-!! note
+!!! note
 
     The `GITHUB_BRANCH` is optional, if its not specified it will use `main` as the branch.
 
