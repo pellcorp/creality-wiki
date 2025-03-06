@@ -45,7 +45,7 @@ Create a new `pellcorp-overrides` repository on your github account:
 
 !!! info
 
-    You don't actually have to call it pellcorp-overrides, you can call it whatever you want, but it should be a repository dedicated to just doing backups for this project.   Currently `config-overrides.sh --repo` only supports a single configuration, hopefully soon I will add the ability to specify a branch so you can store multiple configurations in the same repository.
+    You don't actually have to call it pellcorp-overrides, you can call it whatever you want, but it should be a repository dedicated to just doing backups for this project.
 
 !!! warn
 
