@@ -211,7 +211,7 @@ on the bottom of the klicky and make sure homing stops, if it does not stop you 
 3. Run `PROBE_CALIBRATE`
 4. **Manually remove klicky probe** and put it into the dock
 5. Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
-6. <br />Upon completion *`SAVE_CONFIG`*
+<br />Upon completion *`SAVE_CONFIG`*
 
 ### First Print
 
