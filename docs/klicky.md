@@ -195,7 +195,7 @@ It is important to make sure you have a way to [emergency factory reset](misc.md
 
 ### Docking
 
-Getting docking working if you are not using the `Default` probe or you have positioned the dock somewhere other than the rear left stepper motor is left as an exercise for
+Getting docking working if you are not using the `Default` mount or you have positioned the dock somewhere other than the rear left stepper motor is left as an exercise for
 each user. Out of the box automatic docking is disabled for a new installation of Simple AF, you should verify the dock coordinates in the `klicky_macro.cfg` are correct, and you can then
 flip the `variable_auto_docking` to `True`, save and restart and klicky will auto attach and dock for homing, bed meshing and start print.
 
