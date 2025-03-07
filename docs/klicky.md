@@ -198,6 +198,9 @@ It is important to make sure you have a way to [emergency factory reset](misc.md
 Getting docking working if you are not using the `Default` probe or you have positioned the dock somewhere other than the rear left stepper motor is left as an exercise for
 each user, currently Simple AF does not provide a flag to disable automatic docking (this will be added soon)
 
+By default automatic docking is disabled for a new installation of Simple AF, you should verify the dock coordinates in the `klicky_macro.cfg` are correct and you can then
+flip the `variable_auto_docking` to `True`, save and restart and klicky with auto attach and dock for homing, bed meshing and start print.
+
 ### Verifying Probe
 
 It's really important to verify that the klicky actually will work as an endstop for homing, so initiate homing and then use your finger to activate the microswitch
@@ -208,7 +211,7 @@ on the bottom of the klicky and make sure homing stops, if it does not stop you 
 1. Home All (`G28`)
 2. Make sure nozzle is centred on bed
 3. Run `PROBE_CALIBRATE`
-4. Manually remove klicky probe and put it into the dock
+4. **Manually remove klicky probe** and put it into the dock
 5. Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
 6. <br />Upon completion *`SAVE_CONFIG`*
 
