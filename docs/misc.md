@@ -58,18 +58,6 @@ The `/etc/init.d/S58factoryreset` has recently been updated not to delete the `/
 
 <https://guilouz.github.io/Creality-Helper-Script-Wiki/firmwares/change-date-and-time/>
 
-## Updating
-
-[Updating](updating.md#updating)
-
-## Reinstalling
-
-[Reinstalling](updating.md#reinstalling)
-
-## Git Backups for Configuration Overrides
-
-[Git Backups for Configuration Overrides](config_overrides.md#git-backups-for-configuration-overrides)
-
 ## Emergency Factory Reset
 
 If the worst happens and you somehow get locked out (for instance for whatever reason the dropbear ssh session does not start or wifi config gets all screwy, it is possible to trigger a emergency factory reset.

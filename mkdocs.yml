@@ -144,8 +144,9 @@ nav:
   - EddyNG:
       - eddyng.md
       - btteddy_flashing.md
+  - Updating:
+      - updating.md
+      - config_overrides.md
   - Extras:
       - misc.md
-      - config_overrides.md
       - custom_hooks.md
-      - updating.md
