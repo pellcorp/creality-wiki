@@ -137,15 +137,6 @@ When you reconnect your carto to your printer it should show a version `CARTOGRA
 
 ## Flashing K1 Firmware via DFU Mode
 
-You will need to temporarily switch to the beta branch to get the 5.1.0 combined dfu firmware:
-
-```
-cd $HOME/cartographer-klipper
-git fetch
-git switch beta
-git reset --hard origin/beta
-```
-
 You need to bridge the boot pins before you plug your carto in via USB to your Linux session, make sure `lsusb` reports it being in DFU mode, it should show
 
 ![image](assets/images/carto_lsusb_dfu.png)
