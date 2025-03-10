@@ -1,6 +1,6 @@
 The `/usr/data/pellcorp-overrides` stores custom cfg and conf files as well as customisations you have made to some of the core config files such as printer.cfg.  
 
-The following core config files can have overrides saved for them, please note that except for printer.cfg, fan_control.cfg and moonraker.conf no config files support adding and deleting sections, no support is provided to edit gcode_macro `gcode` values.   Except for printer.cfg, fan_control.cfg and moonraker.conf you also cannot add or delete values from existing sections, only change existing values.
+The following core config files can have overrides saved for them: 
 
 - printer.cfg
 - sensorless.cfg
@@ -28,6 +28,12 @@ The following core config files can have overrides saved for them, please note t
 - moonraker.conf
 - start_end.cfg
 - fan_control.cfg
+
+## Restrictions
+
+- No support is provided to edit gcode_macro `gcode` values in **any** config files
+- You can **only** add or delete values from **existing** sections in printer.cfg, fan_control.cfg and moonraker.conf, all other files these changes will be ignored.
+- You can **only** add or delete sections in printer.cfg, fan_control.cfg and moonraker.conf, all other files these changes will be ignored.
 
 !!! tip
 
