@@ -154,6 +154,16 @@ To run the script, you must specify the probe you want to use.
 
 ## Post Installation
 
+### EddyNG Develop Branch
+
+Simple AF maintains a branch of our klipper fork with the latest code from eddyng project develop branch, you can easily switch to this branch with this command:
+
+```
+/usr/data/pellcorp/k1/installer.sh --klipper-branch eddy_ng_develop
+```
+
+You must make sure you flash your eddy with the `fw/K1/btteddy.uf2` from this eddy_ng_develop when its updated
+
 ### MCU Firmware updates are pending
 
 At the end of the installer process if you get this message:
