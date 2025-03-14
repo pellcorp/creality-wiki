@@ -215,13 +215,8 @@ You can run the following command to fix your serial if you forgot to plug your 
 
 6. Home X and Y (`G28 X Y`)
 7. Make sure nozzle is centred on bed
-8. Run `_SET_KIN_MAX_Z` and then move the nozzle so its approximately 2mm from the bed
-9. Run `BTTEDDY_CURRENT_CALIBRATE` Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
+8. Run `BTTEDDY_CURRENT_CALIBRATE` Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
 <br />Upon completion *`SAVE_CONFIG`*
-
-!!! note
-
-    The reason for the tip of nozzle being about 2mm above the bed is that as part of this calibration we will be temporarily saying that the position the nozzle is at right now is 0Z, so if you try to start your paper test when the nozzle is more than about 2mm above the bed, you might end up triggering a nozzle out of bounds error, if we have to jog the nozzle down more than 5mm for example.
 
 !!! warning
 
