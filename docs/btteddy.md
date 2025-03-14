@@ -206,7 +206,7 @@ time the workaround is to restart klipper.
 
 !!! note
 
-    The `BTTEDDY_CALIBRATE_DRIVE_CURRENT`, `BTTEDDY_CURRENT_CALIBRATE` and `BTTEDDY_TEMPERATURE_PROBE_CALIBRATE` macros will turn on the auxiliary fan until the btt eddy temp is less than 40c before starting the actual calibration.  If you are in a hot climate you may need to adjust the `btteddy_macro.cfg` `variable_calibration_max_temp` value to something higher than 30c if you can't get the btt eddy under 30c with the aux fan easily.
+    The `BTTEDDY_CALIBRATE_DRIVE_CURRENT`, `BTTEDDY_CURRENT_CALIBRATE` and `BTTEDDY_TEMPERATURE_PROBE_CALIBRATE` macros will turn on the auxiliary fan until the btt eddy temp is less than 40c before starting the actual calibration.  If you are in a hot climate you may need to adjust the `btteddy_macro.cfg` `variable_calibration_max_temp` value to something higher than 40c if you can't get the btt eddy under 40c with the aux fan easily.
 
 #### Drive Current Calibration
 1. Home XY (`G28 X Y`)
