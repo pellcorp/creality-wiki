@@ -192,7 +192,7 @@ You can run the following command to fix your serial if you forgot to plug your 
 /usr/data/pellcorp/k1/installer.sh --fix-serial
 ```
 
-### Homing after out of range error
+#### Homing after out of range error
 
 There is a known issue with Simple AF at least with the eddy if you get an out of range error when trying to print, its possible that
 G28 will no longer work, whereas G28 X Y and then G28 Z will.   This issue is being investigated and will be fixed asap, but for the mean
