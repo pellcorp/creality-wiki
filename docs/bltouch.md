@@ -32,7 +32,7 @@ END_PRINT
 
 ### Custom Bed Mesh Profile
 
-If you want to select a specific predefined bed mesh profile, you can pass in an additional `START_PRINT` parameter:
+If you want to select a specific predefined bed mesh profile (which disables adaptive mesh generation), you can pass in an additional `START_PRINT` parameter:
 
 You can either hard code it to a particular model, like `BED_MESH_PROFILE=myprofile` or you can specify a profile based on orca slicer variables, such as `BED_MESH_PROFILE="[curr_bed_type] - [filament_type]"`, but you have to make sure you have all the possible profiles
 defined for each of the bed type and filament type combinations.
