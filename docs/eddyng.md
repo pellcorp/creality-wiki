@@ -217,6 +217,14 @@ Calibrating the eddy should be as easy as running the `PROBE_EDDY_NG_SETUP`, fir
 4. Run `PROBE_EDDY_NG_SETUP`
 <br />Upon completion *`SAVE_CONFIG`*
 
+!!! note
+
+    Is normal to show the Z position at almost at the max height of the printer even if the nozzle is somewhere in the middle or even close to the bed, this is not a bug, its intentional.   Until
+    this calibration step is completed, the Z axes cannot be homed, so we make the printer pretend the bed is down the bottom of the printer so that you can freely move the bed
+    up to meet the nozzle during the paper test without running into out of range issues.  You however won't be able to move the bed further away from the nozzle more than a few mm.
+    
+    ![image](assets/images/probe_manual.png)
+
 Source: <https://github.com/vvuk/eddy-ng/wiki#calibration>
 
 ### First Print
