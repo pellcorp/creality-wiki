@@ -192,12 +192,6 @@ You can run the following command to fix your serial if you forgot to plug your 
 /usr/data/pellcorp/k1/installer.sh --fix-serial
 ```
 
-#### Homing after out of range error
-
-There is a known issue with Simple AF at least with the eddy if you get an out of range error when trying to print, its possible that
-G28 will no longer work, whereas G28 X Y and then G28 Z will.   This issue is being investigated and will be fixed asap, but for the mean
-time the workaround is to restart klipper.
-
 ### Calibration
 
 !!! danger
@@ -209,6 +203,7 @@ time the workaround is to restart klipper.
     The `BTTEDDY_CALIBRATE_DRIVE_CURRENT`, `BTTEDDY_CURRENT_CALIBRATE` and `BTTEDDY_TEMPERATURE_PROBE_CALIBRATE` macros will turn on the auxiliary fan until the btt eddy temp is less than 40c before starting the actual calibration.  If you are in a hot climate you may need to adjust the `btteddy_macro.cfg` `variable_calibration_max_temp` value to something higher than 40c if you can't get the btt eddy under 40c with the aux fan easily.
 
 #### Drive Current Calibration
+
 1. Home XY (`G28 X Y`)
 2. Make sure nozzle is centred on bed
 3. Run `_SET_KIN_MAX_Z` and then move the toolhead so that the bottom of the eddy is 20mm from the bed, please try and be as accurate as possible with this distance, it's better to be slightly closer to the bed than further away.
