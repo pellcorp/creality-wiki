@@ -51,6 +51,12 @@ defined for each of the bed type and filament type combinations.
 
 ![image](https://github.com/user-attachments/assets/6bc0f01e-6bd4-4e0b-9031-a2b41c1d6a02)
 
+## Wiring
+
+On a K1M you can use the lidar cable either directly by repinning it, or via the pass through lidar port on the toolhead.  However you cannot use the lidar port on the toolhead for K1, K1C or K1SE.   The reason this does not work is because for Lidar on the K1M creality actually routes a completely separate USB cable from the mainboard.
+
+![image](assets/images/nozzle_lidar_usb_port_wiring.png)
+
 ## Probe Installation
 
 !!! danger
@@ -82,12 +88,6 @@ defined for each of the bed type and filament type combinations.
     Or for side mounted probes you may want to consider this version:
 
     <https://www.printables.com/model/1121309-cartographer-probe-nozzle-offset-tool-x-offset>
-
-### K1M vs K1/K1C/K1SE
-
-!!! info
-
-    On a K1M you can use the lidar cable either directly by repinning it, or via the pass through lidar port on the toolhead.  However you cannot use the lidar port on the toolhead for K1, K1C or K1SE.   The reason this does not work is because for Lidar on the K1M creality actually routes a completely separate USB cable from the mainboard.
 
 ## Cartographer Firmware
 

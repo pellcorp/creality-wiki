@@ -47,6 +47,13 @@ defined for each of the bed type and filament type combinations.
 
 ![image](https://github.com/user-attachments/assets/6bc0f01e-6bd4-4e0b-9031-a2b41c1d6a02)
 
+## Wiring
+
+Confirm the USB wiring based on this diagram(s)
+On a K1M you can use the lidar cable either directly by repinning it, or via the pass through lidar port on the toolhead.  However you cannot use the lidar port on the toolhead for K1, K1C or K1SE.   The reason this does not work is because for Lidar on the K1M creality actually routes a completely separate USB cable from the mainboard.
+
+![image](assets/images/eddy_usb_wiring.png) ![image](assets/images/nozzle_lidar_usb_port_wiring.png)
+
 ## Probe Installation
 
 !!! danger
@@ -70,12 +77,6 @@ defined for each of the bed type and filament type combinations.
     If you use a different probe mount you must make sure the bottom of the btt eddy **coil** is at least 3mm away from the nozzle tip, its better to be further away than closer.
     This is not the difference of the bottom of the case to the nozzle, the case is about 1.2mm thick, so this means you want the bottom of the case to be at least 2mm offset, 
     its probably a good idea to look into mounts which do not use a case or a modified case with no bottom.
-
-### K1M vs K1/K1C/K1SE
-
-!!! info
-
-    On a K1M you can use the lidar cable either directly by repinning it, or via the pass through lidar port on the toolhead.  However you cannot use the lidar port on the toolhead for K1, K1C or K1SE.   The reason this does not work is because for Lidar on the K1M creality actually routes a completely separate USB cable from the mainboard.
 
 ## BTT Eddy Firmware
 
