@@ -41,6 +41,11 @@ Simple AF which includes all the cfg and conf files cannot be updated via Fluidd
 /usr/data/pellcorp/k1/installer.sh --update
 ```
 
+!!! note
+
+    If you get a `ERRROR: Mount option must be specified`, you must provide a `--mount TheMount` where `TheMount` is a reference to the mount you are currently
+    using, and that will depend on what probe you are using, you can consult the #mount-options section of your specific probe wiki page.
+
 This backs up your customisations, updates the creality repo, applies all changes to your `/usr/data/printer_data/config` directory and then reapplies your customisations over the top.
 
 ## Reinstalling
