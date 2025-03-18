@@ -28,7 +28,7 @@ You can update these components via Fluidd or Mainsail, in fluidd make sure you 
 
 You can update Grumpyscreen from the Settings menu.
 
-Click the Update Grumpyscreen icon
+Click the Update Grumpy icon
 
 ![image](assets/images/update_guppyscreen.jpg)
 
