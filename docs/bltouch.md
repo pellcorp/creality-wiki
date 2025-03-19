@@ -46,7 +46,7 @@ defined for each of the bed type and filament type combinations.
 | Mount       | URL                                                                                 | Notes           |
 |-------------|-------------------------------------------------------------------------------------|-----------------|
 | **Default** | <https://www.printables.com/model/666186-creality-k1-bltouch-adapter>               |                 |
-| **CrTouch** | <https://www.printables.com/model/1073375-cr-touch-mount-k1-k1maxk1c-zero-y-offset> | Untested ok K1M |
+| **CrTouch** | <https://www.printables.com/model/1073375-cr-touch-mount-k1-k1maxk1c-zero-y-offset> | Untested on K1M |
 
 ### Wiring
 
