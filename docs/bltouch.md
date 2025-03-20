@@ -67,7 +67,7 @@ Connect to TOUCH port on the nozzle MCU. it is accessible from the side left (LI
 
 ![image](assets/images/touch_port.png)
 
-**IMPORTANT:** The configuration file assumes a bltouch is mounted on the back of the tool head.   If you have a Crtouch or are mounting your bltouch or 3dtouch using a different model, you must make additional changes to the bltouch-k1.cfg or bltouch-k1m.cfg files before trying to home your printer.
+**IMPORTANT:** The configuration file assumes a bltouch is mounted on the back of the tool head.   If you have a Crtouch or are mounting your bltouch or 3dtouch using a different model, you must make additional changes to the bltouch.cfg file before trying to home your printer.
 
 **Source:** Portions of this section are copied from the K1 Bltouch guide for helper script.
 

@@ -4,25 +4,15 @@ The following core config files can have overrides saved for them:
 
 - printer.cfg
 - sensorless.cfg
-- bltouch-k1.cfg
-- bltouch-k1m.cfg
-- microprobe-k1.cfg
-- microprobe-k1m.cfg
+- cartotouch.cfg
 - cartographer.cfg
 - cartographer.conf
-- cartographer-k1.cfg
-- cartographer-k1m.cfg
 - btteddy.cfg
-- btteddy-k1.cfg
-- btteddy-k1m.cfg
+- btteddy_macro.cfg
 - beacon.conf
 - beacon.cfg
-- beacon-k1.cfg
-- beacon-k1m.cfg
 - eddyng.cfg
 - klicky.cfg
-- klicky-k1.cfg
-- klicky-k1m.cfg
 - klicky_macro.cfg
 - KAMP_Settings.cfg
 - moonraker.conf
