@@ -176,6 +176,9 @@ If you would like to switch to the development version of EddyNG, Simple AF main
 
     You must make sure you flash your eddy with the `fw/K1/btteddy.uf2` from this `eddy_ng_develop` when its updated!!!
 
+    Please note the version of Eddy MCU should look like this when on develop branch ![image](assets/images/eddy_ng_develop_mcu.png)
+
+
 ### MCU Firmware updates are pending
 
 At the end of the installer process if you get this message:
