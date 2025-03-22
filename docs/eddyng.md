@@ -242,6 +242,20 @@ Calibrating the eddy should be as easy as running the `PROBE_EDDY_NG_SETUP`, fir
 
 Source: <https://github.com/vvuk/eddy-ng/wiki#calibration>
 
+#### Manual Calibration
+
+Sometimes the drive current for homing will work but for tap it breaks, you can calibrate another drive current and manually configure it for tap,
+I recommend incrementing one from homing value, so for instance of tap and homing setup have 16 as drive current, calibrate 17 as well and you can 
+manually modify the configuration afterwards:
+
+```
+PROBE_EDDY_NG_CALIBRATE DRIVE_CURRENT=17
+```
+
+You can then modify the `#*# tap_drive_current = 16` to be `#*# tap_drive_current = 17` and save and restart again
+
+I am hopeful further work on this from the eddyng project might make this manual adjustment unnecessary!
+
 ### First Print
 
 For this first print you can go and do the tuning first (PID Tuning, etc) or you can go ahead and optimise your tap_adjust_z using baby stepping, as documented here: <https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/installation/first-print>
