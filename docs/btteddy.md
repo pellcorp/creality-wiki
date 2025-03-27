@@ -204,9 +204,13 @@ You can run the following command to fix your serial if you forgot to plug your 
     
     It is extremely important that you perform the following calibrations while the btt eddy is cool, if you calibrate the eddy hot, you will experience `Error during homing z: Eddy current sensor error` errors while homing and performing bed mesh if the btt is significantly cooler than it was while doing initial calibration.   
 
-!!! note
+!!! warning
 
-    The `BTTEDDY_CALIBRATE_DRIVE_CURRENT`, `BTTEDDY_CURRENT_CALIBRATE` and `BTTEDDY_TEMPERATURE_PROBE_CALIBRATE` macros will turn on the auxiliary fan until the btt eddy temp is less than 40c before starting the actual calibration.  If you are in a hot climate you may need to adjust the `btteddy_macro.cfg` `variable_calibration_max_temp` value to something higher than 40c if you can't get the btt eddy under 40c with the aux fan easily.
+    There are three different calibration steps required to setup a new printer, you must complete them all:
+
+    - [Drive Current Calibration](#drive-current-calibration)
+    - [Mapping Eddy Readings To Nozzle Heights](#mapping-eddy-readings-to-nozzle-heights)
+    - [Temperature Compensation Calibration](#temperature-compensation-calibration)
 
 #### Drive Current Calibration
 
@@ -216,6 +220,10 @@ You can run the following command to fix your serial if you forgot to plug your 
 4. Run `BTTEDDY_CALIBRATE_DRIVE_CURRENT`
 5. Run SAVE_CONFIG
 
+!!! note
+
+    The auxiliary fan may turn on until the btt eddy temp is less than 40c before starting the actual calibration.  If you are in a hot climate you may need to adjust the `btteddy_macro.cfg` `variable_calibration_max_temp` value to something higher than 40c if you can't get the btt eddy under 40c with the aux fan easily.
+
 **Source:** <https://github.com/bigtreetech/Eddy?tab=readme-ov-file#2-drive-current-calibration>
 
 #### Mapping Eddy Readings To Nozzle Heights
@@ -224,6 +232,10 @@ You can run the following command to fix your serial if you forgot to plug your 
 7. Make sure nozzle is centred on bed
 8. Run `BTTEDDY_CURRENT_CALIBRATE` Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
 <br />Upon completion *`SAVE_CONFIG`*
+
+!!! note
+
+    The auxiliary fan may turn on until the btt eddy temp is less than 40c before starting the actual calibration.  If you are in a hot climate you may need to adjust the `btteddy_macro.cfg` `variable_calibration_max_temp` value to something higher than 40c if you can't get the btt eddy under 40c with the aux fan easily.
 
 !!! note
 
