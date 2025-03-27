@@ -216,20 +216,19 @@ It is important to make sure you have a way to [emergency factory reset](misc.md
 
 ### Calibration
 
-Please make sure to remove any scanner related config from the save config section at the bottom of printer.cfg and save and restart before re-calibrating.
+There are three different calibration steps required to setup a new printer, you must complete them all:
 
-#### Recalibrating
+- [Manual Cartographer Calibrate](#manual-cartographer-calibrate)
+- [Cartographer Threshold Scan](#cartographer-threshold-scan)
+- [Cartographer Touch Calibration](#cartographer-touch-calibration)
 
-!!! note
+If you are running calibration for a printer that has previously been calibrated, the following SAVE_CONFIG sections **must** be removed before
+redoing these calibrations:
 
-    If you are setting up a new printer with Simple AF and you have never calibrated it, you can skip this section
-
-If you are **recalibrating**, the follow SAVE_CONFIG sections should be removed:
-
-- [scanner model default]
-- [scanner]
-- [axis_twist_compensation]
-- [bed_mesh]
+- `[scanner model default]`
+- `[scanner]`
+- `[axis_twist_compensation]`
+- `[bed_mesh]`
 
 !!! warn
 
