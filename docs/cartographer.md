@@ -216,11 +216,13 @@ It is important to make sure you have a way to [emergency factory reset](misc.md
 
 ### Calibration
 
-There are three different calibration steps required to setup a new printer, you must complete them all:
+!!! warning
 
-- [Manual Cartographer Calibrate](#manual-cartographer-calibrate)
-- [Cartographer Threshold Scan](#cartographer-threshold-scan)
-- [Cartographer Touch Calibration](#cartographer-touch-calibration)
+    There are three different calibration steps required to setup a new printer, you must complete them all:
+
+    - [Manual Cartographer Calibrate](#manual-cartographer-calibrate)
+    - [Cartographer Threshold Scan](#cartographer-threshold-scan)
+    - [Cartographer Touch Calibration](#cartographer-touch-calibration)
 
 If you are running calibration for a printer that has previously been calibrated, the following SAVE_CONFIG sections **must** be removed before
 redoing these calibrations:
