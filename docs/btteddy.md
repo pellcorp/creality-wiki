@@ -1,7 +1,3 @@
-## Eddy NG
-
-I strongly recommend you try the Eddy NG instead of this implementation, it has TAP functionality like Cartographer and Beacon.
-
 ## Where can I get help?
 
 Come on over to the pellcorp discord server, the `#simple-af-btteddy` channel has been setup for anyone wanting support for btt eddy.
