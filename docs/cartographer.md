@@ -220,12 +220,14 @@ Please make sure to remove any scanner related config from the save config secti
 
 #### Recalibrating
 
-If you are recalibrating, the follow SAVE_CONFIG sections should be removed:
+If you are **recalibrating**, the follow SAVE_CONFIG sections should be removed:
 
 - [scanner model default]
 - [scanner]
 - [axis_twist_compensation]
 - [bed_mesh]
+
+If you are setting up a new printer with Simple AF and you have never calibrated it, you can skip this section
 
 !!! warn
 
