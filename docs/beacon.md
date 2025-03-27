@@ -236,6 +236,8 @@ macro to do this.
 5. Run `BEACON_CALIBRATE` Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
 <br />Upon completion *`SAVE_CONFIG`*
 
+**Source:** [Calibrate Beacon](https://docs.beacon3d.com/quickstart/#6-calibrate-beacon)
+
 !!! note
 
     Is normal to show the Z position at almost at the max height of the printer even if the nozzle is somewhere in the middle or even close to the bed, this is not a bug, its intentional.   Until
@@ -243,8 +245,6 @@ macro to do this.
     up to meet the nozzle during the paper test without running into out of range issues.  You however won't be able to move the bed further away from the nozzle more than a few mm.
     
     ![image](assets/images/probe_manual.png)
-
-**Source:** [Calibrate Beacon](https://docs.beacon3d.com/quickstart/#6-calibrate-beacon)
 
 ### First Print
 

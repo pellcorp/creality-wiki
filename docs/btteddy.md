@@ -245,7 +245,7 @@ You can run the following command to fix your serial if you forgot to plug your 
     
     ![image](assets/images/probe_manual.png)
 
-!!! warning
+!!! warn
 
     Do not use a metal feeler gauge for this step, it could interfere with calibration!!!
 
@@ -258,7 +258,7 @@ You can run the following command to fix your serial if you forgot to plug your 
 12. Run `BTTEDDY_TEMPERATURE_PROBE_CALIBRATE`
 <br />Upon completion *`SAVE_CONFIG`*
 
-!!! warning
+!!! warn
 
     Do not use a metal feeler gauge for this step, it could interfere with calibration!!!
 
@@ -280,11 +280,11 @@ If you are using **a rear mount** it is highly recommended to perform axis twist
 2. Run `AXIS_TWIST_COMPENSATION_CALIBRATE` The calibration wizard will prompt you to measure the probe Z offset at a few points along the bed
 <br />Upon completion *`SAVE_CONFIG`*
 
-!!! warning
+**Source:** <https://www.klipper3d.org/Axis_Twist_Compensation.html>
+
+!!! warn
 
     Do not use a metal feeler gauge for this step, it could interfere with calibration!!!
-
-**Source:** <https://www.klipper3d.org/Axis_Twist_Compensation.html>
 
 ### First Print
 
