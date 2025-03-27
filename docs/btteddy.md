@@ -216,15 +216,15 @@ You can run the following command to fix your serial if you forgot to plug your 
 
 1. Home XY (`G28 X Y`)
 2. Make sure nozzle is centred on bed
-3. Run `_SET_KIN_MAX_Z` and then move the toolhead so that the bottom of the eddy is 20mm from the bed, please try and be as accurate as possible with this distance, it's better to be slightly closer to the bed than further away.
+3. Run `_SET_KIN_MAX_Z` and then move the toolhead so that the bottom of the eddy is approximately 20mm from the bed, please try and be as accurate as possible with this distance, it's **better to be slightly closer** to the bed than further away.
 4. Run `BTTEDDY_CALIBRATE_DRIVE_CURRENT`
 5. Run SAVE_CONFIG
+
+**Source:** <https://github.com/bigtreetech/Eddy?tab=readme-ov-file#2-drive-current-calibration>
 
 !!! note
 
     The auxiliary fan may turn on until the btt eddy temp is less than 40c before starting the actual calibration.  If you are in a hot climate you may need to adjust the `btteddy_macro.cfg` `variable_calibration_max_temp` value to something higher than 40c if you can't get the btt eddy under 40c with the aux fan easily.
-
-**Source:** <https://github.com/bigtreetech/Eddy?tab=readme-ov-file#2-drive-current-calibration>
 
 #### Mapping Eddy Readings To Nozzle Heights
 
@@ -233,11 +233,15 @@ You can run the following command to fix your serial if you forgot to plug your 
 8. Run `BTTEDDY_CURRENT_CALIBRATE` Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
 <br />Upon completion *`SAVE_CONFIG`*
 
+**Source:** <https://github.com/bigtreetech/Eddy?tab=readme-ov-file#3-mapping-eddy-readings-to-nozzle-heights>
+
+!!! warn
+
+    Do not use a metal feeler gauge for this step, it could interfere with calibration!!!
+
 !!! note
 
     The auxiliary fan may turn on until the btt eddy temp is less than 40c before starting the actual calibration.  If you are in a hot climate you may need to adjust the `btteddy_macro.cfg` `variable_calibration_max_temp` value to something higher than 40c if you can't get the btt eddy under 40c with the aux fan easily.
-
-!!! note
 
     Is normal to show the Z position at almost at the max height of the printer even if the nozzle is somewhere in the middle or even close to the bed, this is not a bug, its intentional.   Until
     this calibration step is completed, the Z axes cannot be homed, so we make the printer pretend the bed is down the bottom of the printer so that you can freely move the bed
@@ -245,18 +249,14 @@ You can run the following command to fix your serial if you forgot to plug your 
     
     ![image](assets/images/probe_manual.png)
 
-!!! warn
-
-    Do not use a metal feeler gauge for this step, it could interfere with calibration!!!
-
-**Source:** <https://github.com/bigtreetech/Eddy?tab=readme-ov-file#3-mapping-eddy-readings-to-nozzle-heights>
-
 ####  Temperature Compensation Calibration
 
 10. Home All (`G28`)
 11. Make sure nozzle is centred on bed
 12. Run `BTTEDDY_TEMPERATURE_PROBE_CALIBRATE`
 <br />Upon completion *`SAVE_CONFIG`*
+
+**Source:** <https://github.com/bigtreetech/Eddy?tab=readme-ov-file#5-temperature-compensation-calibration-eddy-usb-only>
 
 !!! warn
 
@@ -266,7 +266,6 @@ You can run the following command to fix your serial if you forgot to plug your 
 
     If you are struggling to get over about 80c, you can end the calibration early with the `TEMPERATURE_PROBE_COMPLETE` macro, just know that if you end the calibration early and then you try to print really hot and the eddy gets hotted than the hottest temp you calibrated the eddy is going to read the bed wrong and cause issues for homing but especially bed meshes.
 
-**Source:** <https://github.com/bigtreetech/Eddy?tab=readme-ov-file#5-temperature-compensation-calibration-eddy-usb-only>
 
 ### Axis Twist Compensation
 
