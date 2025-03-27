@@ -264,7 +264,7 @@ You can run the following command to fix your serial if you forgot to plug your 
 
 !!! tip
 
-    If you are struggling to get over about 80c, you can end the calibration early with the `TEMPERATURE_PROBE_COMPLETE` macro, just know that if you end the calibration early and then you try to print really hot and the eddy gets hotted than the hottest temp you calibrated the eddy is going to read the bed wrong and cause issues for homing but especially bed meshes.
+    If you are struggling to get over about 80c, you can end the calibration early with the `TEMPERATURE_PROBE_COMPLETE` macro, just know that if you end the calibration early and then you try to print really hot and the eddy gets hotter than the hottest temp you calibrated the eddy is going to read the bed wrong and cause issues for homing but especially bed meshes.
 
 
 ### Axis Twist Compensation
