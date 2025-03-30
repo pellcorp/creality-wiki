@@ -22,16 +22,6 @@ You can update these components via Fluidd or Mainsail, in fluidd make sure you 
 
 ![image](assets/images/update_software.png)
 
-### Grumpyscreen
-
-![image](assets/images/grumpyscreen_settings.png)
-
-You can update Grumpyscreen from the Settings menu.
-
-Click the Update Grumpy icon
-
-![image](assets/images/update_guppyscreen.jpg)
-
 ### Simple AF
 
 Simple AF which includes all the cfg and conf files cannot be updated via Fluidd or Mainsail, it must be updated by using ssh to connect to the printer
