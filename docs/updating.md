@@ -11,7 +11,6 @@ The following components can be updated via Fluidd / Mainsail Software Updates:
 - moonraker
 - klipper
 - mainsail
-- Klipper-Adaptive-Meshing-Purging
 - timelapse (aka Moonraker Timelapse)
 
 You can update these components via Fluidd or Mainsail, in fluidd make sure you click the CHECK FOR UPDATES button, and in Mainsail click the Refresh button
