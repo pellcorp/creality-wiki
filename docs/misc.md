@@ -28,6 +28,20 @@ If you see these messages:
 ```
 It means you have not as yet properly restarted moonraker and/or klipper.    If in doubt just power cycle your machine.
 
+### Custom Parking Position
+
+You might run into issues with the default `back_right` parking position.  A user has reported that the toolhead collides with the rear motor, a 
+remedy for this is to modify the `[timelapse]` section in `timelapse.conf` to enable custom parking and set the X and Y coordinates to match what is in the `start_end.cfg` for 
+`variable_custom_park_x` and `variable_custom_park_y`.
+
+Change the `parkpos: back_right` to be `parkpos: custom`, so the `timelapse.conf` changes might look like: 
+
+```
+parkpos: custom
+park_custom_pos_x: 296
+park_custom_pos_y: 296
+```
+
 ### Timelapse Camera config
 
 !!! info
