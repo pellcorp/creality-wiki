@@ -75,7 +75,7 @@ On a K1M you can use the lidar cable either directly by repinning it, or via the
 | **SkeletorMK7**        |Low Profile| <https://www.printables.com/model/833769-the-skeletor-collection-a-creality-k1k1-maxk1c-coo>                         | This is only for the low profile cartographer version of the mount!!! |
 | **PurcellV5**          |Right Angle| <https://www.printables.com/model/1071493-cartographer-probe-side-mount-options-for-creality>                        | This also works with V3 and V4, probably also V8                      |
 | **SimplyHexed**        |Right Angle| <https://www.printables.com/model/1209230-ender-5-max-simply-hexed>                                                  | Ender 5 Max only!                                                     |                                                     |
-| **SkeletorRightAngle** |Right Angle| <https://www.printables.com/model/1106768-skeletor-right-angle-cartographer-mount-k1-max-onl>                        | K1 Max only!                                                          |                                                     |
+| **SkeletorRightAngle** |Right Angle| <https://www.printables.com/model/1106768-skeletor-right-angle-cartographer-mount-k1-max-onl>                        |                                                         |                                                     |
 
 ### Nozzle Offset
 
