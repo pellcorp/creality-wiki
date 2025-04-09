@@ -6,12 +6,15 @@ Come on over to the pellcorp discord server, the `#simple-af-bltouch` channel ha
 
 ## What about CrTouch
 
-Yep you can use a CrTouch as an alternative to a BlTouch, however I have not personally used either of these with a K1 and so I can't currently provide detailed guidance on what config is required.   I also think 3dTouch might require slightly different wiring.
+Yep you can use a CrTouch as an alternative to a BlTouch, however I have not personally used either of these with a K1 and so I can't currently provide detailed guidance on what config is required.
 
 ## What about 3d Touch
 
-Its possible a 3d touch will work too, but depending on the capabilities of the 3d touch clone, you might need to make some post installation changes, plese refer to
-<https://github.com/Klipper3d/klipper/blob/master/docs/BLTouch.md#bl-touch-clones>
+Its possible a 3d touch will work too, but depending on the capabilities of the 3d touch clone, you might need to make some post installation changes.   I also think 3dTouch might require slightly different wiring.
+
+Please refer to more details, specifically note the fact that the `QUERY_PROBE` may not be supported, and the `probe_with_touch_mode` feature is not supported!
+
+<https://www.klipper3d.org/BLTouch.html#bl-touch-clones>
 
 ## Firmware requirements
 
