@@ -84,7 +84,7 @@ Bus 001 Device 067: ID 1d50:614e OpenMoko, Inc.
 ### Enable Bootloader
 
 ```
-CARTO_DEV=$(ls /dev/serial/by-id/usb-Cartographer*)
+CARTO_DEV=$(ls /dev/serial/by-id/usb-* | grep "IDM\|Cartographer" | head -1)
 cd $HOME/klipper/scripts
 sudo $HOME/klippy-env/bin/python -c "import flash_usb as u; u.enter_bootloader('$CARTO_DEV')"
 ```
