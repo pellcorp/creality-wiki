@@ -84,9 +84,9 @@ You need root access, if you are not already root, then follow the excellent [He
 If you have installed helper script or fluidd or mainsail from Creality, you must do a factory reset before running the installer.sh!
 
 ```
-wget --no-check-certificate  https://raw.githubusercontent.com/pellcorp/creality/main/k1/services/S58factoryreset
-chmod +x S58factoryreset
-./S58factoryreset reset
+wget --no-check-certificate https://raw.githubusercontent.com/pellcorp/creality/main/k1/services/S58factoryreset -O /tmp/S58factoryreset
+chmod +x /tmp/S58factoryreset
+/tmp/S58factoryreset reset
 ```
 
 !!! warn
