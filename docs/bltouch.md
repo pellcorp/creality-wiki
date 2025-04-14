@@ -87,7 +87,7 @@ You need root access, if you are not already root, then follow the excellent [He
 
 ### Factory Reset 
 
-You **must** do a factory reset before running the installer.sh.   Follow these steps to do a factory reset, which retains root access and skips the startup calibration checks:
+If you have installed helper script or fluidd or mainsail from Creality, you must do a factory reset before running the installer.sh!
 
 ```
 wget --no-check-certificate  https://raw.githubusercontent.com/pellcorp/creality/main/k1/services/S58factoryreset
