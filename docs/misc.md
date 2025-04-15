@@ -53,7 +53,7 @@ And power cycling the printer once again
     Switching to stock does **not** allow using the printer with Helper Script, this is an emergency temporary mode!
 
     Switching to stock will leave fluidd / mainsail accessible and the screen will still have Grumpyscreen.  Some features of
-    Grumpyscreen, such as Load and Unload Filament will currently not work in stock mode. 
+    Grumpyscreen such as Belts/Shake won't work in stock mode, but everything else should generally work as before.
 
 ## Moonraker Timelapse
 
