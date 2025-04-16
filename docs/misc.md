@@ -47,13 +47,11 @@ And power cycling the printer once again
 
     Do not leave a probe mounted on the printer when you switch back to stock, this is especially important if you have 
     a rear mounted probe as it is very likely to be damaged when the printer does its nozzle wipe at the back of the printer
-
-!!! note
     
     Switching to stock does **not** allow using the printer with Helper Script, this is an emergency temporary mode!
 
-    Switching to stock will leave fluidd / mainsail accessible and the screen will still have Grumpyscreen.  Some features of
-    Grumpyscreen such as Belts/Shake won't work in stock mode, but everything else should generally work as before.
+    Switching to stock will leave moonraker, fluidd and mainsail accessible.   The stock screen is restored, but you must **not**
+    try to perform a firmware upgrade in stock mode as this will most likely remove SimpleAF!
 
 ## Moonraker Timelapse
 
