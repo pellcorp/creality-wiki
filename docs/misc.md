@@ -23,7 +23,7 @@ you can use the feature.
 
 Its really important before you install Simple AF for the first time that you properly calibrate the printer in stock so that
 switching back allows you to immediately use the printer, the switch to stock process does not restore the printer to a completely
-stock configuration, for instance the stock screen will not be restored!
+stock configuration, as only klipper and the stock display are restored!
 
 Switching to stock is as simple as running from ssh on the printer:
 
