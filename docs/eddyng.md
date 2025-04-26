@@ -64,11 +64,12 @@ On a K1M you can use the lidar cable either directly by repinning it, or via the
 
 ### Mount Options
 
-| Mount        | URL                                                                                                                                               | Notes                                                         |
-|--------------|---------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| **Default**  | <https://www.printables.com/model/1012524-btteddy-creality-k1-k1c-k1-max-mount><br/><https://www.printables.com/model/1212731-btt-eddy_ng-mount-for-creality-k1-series> | |
-| **Pellcorp** | <https://www.printables.com/model/965667-wip-k1-btt-eddy-rear-mount-v4>                                                                           |                                                               |
-| **Slam**     | <https://www.printables.com/model/1195575-btt-eddy-mount-for-k1c>                                                                                 |                                                               |
+| Mount        | Printer            | URL                                                                                                                                                                     | Notes                                                         |
+|--------------|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
+| **Default**  | K1, K1C, K1M, K1SE | <https://www.printables.com/model/1012524-btteddy-creality-k1-k1c-k1-max-mount><br/><https://www.printables.com/model/1212731-btt-eddy_ng-mount-for-creality-k1-series> ||
+| **Pellcorp** | K1, K1C, K1M, K1SE | <https://www.printables.com/model/965667-wip-k1-btt-eddy-rear-mount-v4>                                                                                                 ||
+| **Slam**     | K1, K1C, K1M, K1SE | <https://www.printables.com/model/1195575-btt-eddy-mount-for-k1c>                                                                                                       ||
+| **Default**  | Ender 3 V3 SE      | <https://www.printables.com/model/1202031-ender-3-v3-se-k1-hotend-btt-eddy-mount>                                                                                        ||
 
 ### Nozzle Offset
 

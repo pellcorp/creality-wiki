@@ -51,10 +51,11 @@ defined for each of the bed type and filament type combinations.
 
 ### Mount Options
 
-| Mount       | URL                                                                                 | Notes           |
-|-------------|-------------------------------------------------------------------------------------|-----------------|
-| **Default** | <https://www.printables.com/model/666186-creality-k1-bltouch-adapter>               |                 |
-| **CrTouch** | <https://www.printables.com/model/1073375-cr-touch-mount-k1-k1maxk1c-zero-y-offset> | Untested on K1M |
+| Mount       | Printer            | URL                                                                                 | Notes                  |
+|-------------|--------------------|-------------------------------------------------------------------------------------|------------------------|
+| **Default** | K1, K1C, K1M, K1SE | <https://www.printables.com/model/666186-creality-k1-bltouch-adapter>               |                        |
+| **CrTouch** | K1, K1C, K1M, K1SE | <https://www.printables.com/model/1073375-cr-touch-mount-k1-k1maxk1c-zero-y-offset> | Untested on K1M        |
+| **Default** | Ender 3 V3 SE      | N/A                                                                                 | Default CR Touch Mount |
 
 ### Wiring
 
