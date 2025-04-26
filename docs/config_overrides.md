@@ -35,7 +35,7 @@ The following core config files can have overrides saved for them:
 
 ## Git Backups for Configuration Overrides
 
-If the /usr/data/pellcorp-overrides is a git repo, calling the CONFIG_OVERRIDES or `/usr/data/pellcorp/k1/config-overrides.sh` will generate a new git commit and push it to origin if any files are changed.
+If the /usr/data/pellcorp-overrides is a git repo, calling the CONFIG_OVERRIDES or `/usr/data/pellcorp/tools/config-overrides.sh` will generate a new git commit and push it to origin if any files are changed.
 
 ### Create repository
 
@@ -79,7 +79,7 @@ export EMAIL_ADDRESS=me@somewhere.com
 export GITHUB_TOKEN="The token I just created"
 export GITHUB_REPO=pellcorp-overrides
 export GITHUB_BRANCH=main
-/usr/data/pellcorp/k1/config-overrides.sh --repo
+/usr/data/pellcorp/tools/config-overrides.sh --repo
 ```
 
 !!! note
