@@ -25,6 +25,11 @@ git switch jp_simpleaf_wip
 cd -
 ```
 
+## Rpi Camera
+
+I've not found a way to get the V1 cam working with rasbian 12, only with 11 and enable classic legacy cam support
+and then it just works.
+
 ## Grumpyscreen
 
 ### BTT Screens
