@@ -1,6 +1,10 @@
 # Simple AF for RPi
 
-Work is being done to bring Simple AF to the RPi (and other rpi like printers)
+Work is being done to bring Simple AF to the RPi (and other rpi like sbc)
+
+!!! warning
+
+    The installer assumes rasbian 11 or 12 only
 
 ## Cloning repo
 
@@ -23,12 +27,11 @@ cd -
 
 ## Grumpyscreen
 
-Support for grumpyscreen will be provided for BTT screens but you need to setup the screen to be 
-correctly configured.
+Support for grumpyscreen will be provided for BTT screens but you need to setup the screen to be correctly configured.
 
 <https://github.com/bigtreetech/TFT43-DIP>
 
-Needs this in `/boot/config.txt`
+Needs this in `/boot/firmware/config.txt` (for bookworm) or `/boot/config.txt` (for bulleye)
 
 ```
 [all]
