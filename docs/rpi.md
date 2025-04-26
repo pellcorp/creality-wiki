@@ -4,7 +4,7 @@ Work is being done to bring Simple AF to the RPi (and other rpi like sbc)
 
 !!! warning
 
-    The installer assumes rasbian 11 or 12 only
+    The installer assumes rasbian 11 (bulleye) or 12 (bookworm) only
 
 ## Cloning repo
 
