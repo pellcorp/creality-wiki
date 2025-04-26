@@ -1,0 +1,50 @@
+# Simple AF for RPi
+
+Work is being done to bring Simple AF to the RPi (and other rpi like printers)
+
+## Cloning repo
+
+You will need to install git first:
+
+```
+sudo apt-get update
+sudo apt-get install --yes git
+```
+
+There is an assumption that there is a pi user and the home directory is `/home/pi`, this is most likely something we can adjust
+in the future, but for the initial version you are required to have a pi user and their home directory to be /home/pi
+
+```
+git clone https://github.com/pellcorp/creality.git /home/pi/pellcorp
+cd /home/pi/pellcorp 
+git switch jp_simpleaf_wip
+cd -
+```
+
+## Grumpyscreen
+
+Support for grumpyscreen will be provided for BTT screens but you need to setup the screen to be 
+correctly configured.
+
+<https://github.com/bigtreetech/TFT43-DIP>
+
+Needs this in `/boot/config.txt`
+
+```
+[all]
+gpu_mem=160
+
+dtoverlay=vc4-kms-dpi-generic
+dtparam=rgb666-padhi,clock-frequency=32000000
+dtparam=hactive=800,hfp=16,hsync=1,hbp=46
+dtparam=vactive=480,vfp=7,vsync=3,vbp=23
+dtparam=backlight-gpio=19
+dtparam=rotate=0
+
+dtoverlay=gt911_btt_tft43_dip
+dtparam=rotate_0
+```
+
+!!! note
+    
+    The gpu_mem=160 is really important otherwise Grumpyscreen won't display correctly.
