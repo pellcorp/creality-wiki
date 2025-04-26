@@ -21,7 +21,7 @@ in the future, but for the initial version you are required to have a pi user an
 ```
 git clone https://github.com/pellcorp/creality.git /home/pi/pellcorp
 cd /home/pi/pellcorp 
-git switch jp_simpleaf_wip
+git switch jp_simpleaf_rpi
 cd -
 ```
 
