@@ -27,9 +27,23 @@ cd -
 
 ## Grumpyscreen
 
+### BTT Screens
+
 Support for grumpyscreen will be provided for BTT screens but you need to setup the screen to be correctly configured.
 
 <https://github.com/bigtreetech/TFT43-DIP>
+
+By default when grumpyscreen starts its probably going to look like:
+
+![image](assets/images/grumpyscreen_rpi_error.png)
+
+The following changes are required to fix that:
+
+Need to download the dtbo file:
+
+```
+sudo wget https://raw.githubusercontent.com/bigtreetech/TFT43-DIP/master/gt911_btt_tft43_dip.dtbo -O /boot/overlays/gt911_btt_tft43_dip.dtbo
+```
 
 Needs this in `/boot/firmware/config.txt` (for bookworm) or `/boot/config.txt` (for bulleye)
 
@@ -46,6 +60,12 @@ dtparam=rotate=0
 
 dtoverlay=gt911_btt_tft43_dip
 dtparam=rotate_0
+```
+
+And please make sure you disable this line:
+
+```
+# dtoverlay=vc4-kms-v3d
 ```
 
 !!! note
