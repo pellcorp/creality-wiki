@@ -19,8 +19,8 @@ There is an assumption that there is a pi user and the home directory is `/home/
 in the future, but for the initial version you are required to have a pi user and their home directory to be /home/pi
 
 ```
-git clone https://github.com/pellcorp/creality.git /home/pi/pellcorp
-cd /home/pi/pellcorp 
+git clone https://github.com/pellcorp/creality.git ~/pellcorp
+cd ~/pellcorp 
 git switch jp_simpleaf_rpi
 cd -
 ```
