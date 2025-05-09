@@ -32,7 +32,8 @@ $HOME/klippy-env/bin/pip3 install -r $HOME/klipper/scripts/klippy-requirements.t
 ## Flash Beacon
 
 ```
-sudo $HOME/beacon-klipper/install.sh
+cd $HOME/beacon-klipper
+sudo ./install.sh
 ```
 
 ![image](assets/images/beacon_dfu.png)
