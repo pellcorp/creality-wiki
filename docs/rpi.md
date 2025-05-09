@@ -15,9 +15,6 @@ sudo apt-get update
 sudo apt-get install --yes git
 ```
 
-There is an assumption that there is a pi user and the home directory is `/home/pi`, this is most likely something we can adjust
-in the future, but for the initial version you are required to have a pi user and their home directory to be /home/pi
-
 ```
 git clone https://github.com/pellcorp/creality.git ~/pellcorp
 cd ~/pellcorp 
