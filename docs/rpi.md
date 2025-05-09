@@ -73,3 +73,14 @@ And please make sure you disable this line:
 !!! note
     
     The gpu_mem=160 is really important otherwise Grumpyscreen won't display correctly.
+
+
+## Starting again
+
+If you want to restart from scratch without having to reflash anything for the moment the process is as follows:
+
+```
+rm -rf pellcorp-backups pellcorp-overrides pellcorp.done printer_data/config
+```
+
+The installer will be updated eventually with a mode like this, ive just not got to it yet
