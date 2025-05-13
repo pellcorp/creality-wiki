@@ -1,5 +1,11 @@
 # Simple AF for RPi
 
+!!! warning
+
+    This feature is being actively worked on and has not been officially released so its bound to be broken from time to time as I add
+    required features and sometimes existing stuff breaks, over the next few weeks I hope to polish it sufficiently that it can be 
+    officially released, but we are not there yet.
+
 Work is being done to bring Simple AF to the RPi (and other rpi like sbc)
 
 ## Supported OS
