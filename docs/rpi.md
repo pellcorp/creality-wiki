@@ -4,8 +4,7 @@ Work is being done to bring Simple AF to the RPi (and other rpi like sbc)
 
 ## Supported OS
 
-Simple AF for RPi requires a version of debian 11 or 12 and has only been tested in raspberry pi 3, 4 and 5, it does not matter whether you use 32 or 64 bit OS.  
-It is recommended to use the [Rpi Imager](https://www.raspberrypi.com/software/) and choose `Raspberry PI OS Lite (64-bit)` or `Raspberry PI OS (Legacy, 64 bit) Lite`
+Simple AF for RPi requires a version of debian 11 or 12 and has only been tested in raspberry pi 3, 4 and 5, it does not matter whether you use 32 or 64 bit OS.  It is recommended to use the [Rpi Imager](https://www.raspberrypi.com/software/) and choose `Raspberry PI OS Lite (64-bit)` or `Raspberry PI OS (Legacy, 64 bit) Lite`
 
 Simple AF for RPi will be tested on Orange Pi and other devices in the future, but for now I can only guarantee function on official Rpi devices. 
 
