@@ -12,9 +12,9 @@ Simple AF for RPi will be tested on Orange Pi and other devices in the future, b
 
     Do not try and install Simple AF for RPi on Mainsail OS or onto an existing klipper environment which has been setup using kiuah
 
-# Installation
+## Installation
 
-## Cloning repo
+### Cloning repo
 
 The following commands should be executed to get the repo locally:
 
@@ -25,7 +25,7 @@ git clone https://github.com/pellcorp/creality.git ~/pellcorp
 ~/pellcorp/rpi/installer.sh --branch jp_simpleaf_rpi
 ```
 
-## Installing
+### Installing
 
 The installation command is very similar to K1 series:
 
@@ -36,8 +36,6 @@ The installation command is very similar to K1 series:
 - Where `--printer <ThePrinter>` is a predefined or downloaded printer definition
 - Where `--mount <TheMount>` is only required for some predefined printer definitions
 - Where `<TheProbe>` is one of bltouch, microprobe, cartotouch, beacon, klicky, btteddy or eddyng. 
-
-### Choosing a printer definition
 
 #### Predefined Printer
 
@@ -76,7 +74,7 @@ wget https://raw.githubusercontent.com/pellcorp/klipper-rpi/refs/heads/master/co
 
     For the `--printer` argument specify the path to the file, so `--printer ~/bigtreetech-skr-pico-v1.0.cfg`
 
-### Choose a Probe
+#### Choose a Probe
 
 You need to choose a probe one of:
 
@@ -93,21 +91,21 @@ You need to choose a probe one of:
     Refer to the other guides for probe specific config, but keep in mind that any references to `/usr/data/` in those guides should be replaced
     with your PI users home directory (so /home/pi, home/orangepi, /home/whatever)
 
-### Choose a mount
+#### Choose a mount
 
 If you have chosen a predefined printer its possible it will require you to choose a mount, just like for K1 series, you can run the installer
 with the --mount option without an argument to get a list of possible mounts:
 
 ![image](assets/images/rpi_choose_mount.png)
 
-# Post Installation issues
+## Post Installation issues
 
-## Rpi Camera
+### Rpi Camera
 
 I've not found a way to get the V1 cam working with rasbian 12, only with 11 and enable classic legacy cam support
 and then it just works.
 
-## KlipperScreen
+### KlipperScreen
 
 The installer will automatically install KlipperScreen on Pi4 or above, there are concerns of overloading a pi3
 or less with klipperscreen so the installer will install grumpyscreen for lower specced devices, you can actually
@@ -119,14 +117,14 @@ sudo systemctl disable grumpyscreen
 ~/pellcorp/rpi/install-klipperscreen.sh
 ```
 
-## Grumpyscreen
+### Grumpyscreen
 
-### BTT HDMI Screen
+#### BTT HDMI Screen
 
 For whatever reason Grumpyscreen does not work nicely with a HDMI screen its on my list of TODOs to fix this, if possible
 setup Simple AF on a Pi4 or above to get KlipperScreen.
 
-### BTT DSI Screen
+#### BTT DSI Screen
 
 Support for grumpyscreen will be provided for BTT DSI screens but you need to setup the screen to be correctly configured.
 
