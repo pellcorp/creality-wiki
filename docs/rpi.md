@@ -2,6 +2,17 @@
 
 Work is being done to bring Simple AF to the RPi (and other rpi like sbc)
 
+## Supported OS
+
+Simple AF for RPi requires a version of debian 11 or 12 and has only been tested in raspberry pi 3, 4 and 5, it does not matter whether you use 32 or 64 bit OS.  
+It is recommended to use the [Rpi Imager](https://www.raspberrypi.com/software/) and choose `Raspberry PI OS Lite (64-bit)` or `Raspberry PI OS (Legacy, 64 bit) Lite`
+
+Simple AF for RPi will be tested on Orange Pi and other devices in the future, but for now I can only guarantee function on official Rpi devices. 
+
+!!! danger
+
+    Do not try and install Simple AF for RPi on Mainsail OS or onto an existing klipper environment which has been setup using kiuah
+
 !!! warning
 
     The installer assumes rasbian 11 (bulleye) or 12 (bookworm) only
@@ -28,9 +39,9 @@ The installation command is very similiar to K1 series:
 ~/pellcorp/rpi/installer.sh --install --printer <ThePrinter> <TheProbe> --mount <TheMount>
 ```
 
-Where `--printer <ThePrinter>` is a predefined or downloaded printer definition
-Where `--mount <TheMount>` is only required for some predefined printer definitions
-Where `<TheProbe>` is one of bltouch, microprobe, cartotouch, beacon, klicky, btteddy or eddyng. 
+- Where `--printer <ThePrinter>` is a predefined or downloaded printer definition
+- Where `--mount <TheMount>` is only required for some predefined printer definitions
+- Where `<TheProbe>` is one of bltouch, microprobe, cartotouch, beacon, klicky, btteddy or eddyng. 
 
 ### Choosing a printer definition
 
@@ -61,7 +72,7 @@ configuration, this should just have the basics:
 - fans
 - filament runout
 
-You can download a definition from https://github.com/pellcorp/klipper-rpi/blob/master/config/ with wget, something like:
+You can download a definition from <https://github.com/pellcorp/klipper-rpi/blob/master/config/> with wget, something like:
 
 ```
 wget https://raw.githubusercontent.com/pellcorp/klipper-rpi/refs/heads/master/config/generic-bigtreetech-skr-pico-v1.0.cfg -O ~/bigtreetech-skr-pico-v1.0.cfg
