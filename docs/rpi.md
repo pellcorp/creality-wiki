@@ -12,15 +12,88 @@ You will need to install git first:
 
 ```
 sudo apt-get update
-sudo apt-get install --yes git
+sudo apt-get install --yes git wget
 ```
 
 ```
 git clone https://github.com/pellcorp/creality.git ~/pellcorp
-cd ~/pellcorp 
-git switch jp_simpleaf_rpi
-cd -
+~/pellcorp/rpi/installer.sh --branch jp_simpleaf_rpi
 ```
+
+## Installation
+
+The installation command is very similiar to K1 series:
+
+```
+~/pellcorp/rpi/installer.sh --install --printer <ThePrinter> <TheProbe> --mount <TheMount>
+```
+
+Where `--printer <ThePrinter>` is a predefined or downloaded printer definition
+Where `--mount <TheMount>` is only required for some predefined printer definitions
+Where `<TheProbe>` is one of bltouch, microprobe, cartotouch, beacon, klicky, btteddy or eddyng. 
+
+### Choosing a printer definition
+
+#### Predefined Printer
+
+You need to figure out what kind of mainboard you have because that will dictate whether you can  use a predefined printer cfg file 
+or you need to provide your own.  The easiest way to find out what predefined printers are available is to run the command:
+
+```
+~/pellcorp/rpi/installer.sh --install --printer
+```
+
+![image](assets/images/rpi_install_printers.png)
+
+!!! note
+
+    For the `--printer` argument specify the ID of the printer so for instance `--printer creality-ender3-v3-se`
+
+#### Downloaded Printer Definition
+
+Otherwise you will need to download a basic printer config, this definition should **not** include any kind of probe
+configuration, this should just have the basics:
+
+- extruder
+- heaters
+- steppers
+- the `[printer]` section
+- fans
+- filament runout
+
+You can download a definition from https://github.com/pellcorp/klipper-rpi/blob/master/config/ with wget, something like:
+
+```
+wget https://raw.githubusercontent.com/pellcorp/klipper-rpi/refs/heads/master/config/generic-bigtreetech-skr-pico-v1.0.cfg -O ~/bigtreetech-skr-pico-v1.0.cfg
+```
+
+!!! note
+
+    For the `--printer` argument specify the path to the file, so `--printer ~/bigtreetech-skr-pico-v1.0.cfg`
+
+### Choose a Probe
+
+You need to choose a probe one of:
+
+- Cartotouch
+- Beacon
+- BlTouch
+- Microprobe
+- Klicky
+- BttEddy
+- Eddyng
+
+!!! warning
+
+    Refer to the other guides for probe specific config, but keep in mind that any references to `/usr/data/` in those guides should be replaced
+    with your PI users home directory (so /home/pi, home/orangepi, /home/whatever)
+
+### Choose a mount
+
+If you have chosen a predefined printer its possible it will require you to choose a mount, just like for K1 series, you can run the installer
+with the --mount option without an argument to get a list of possible mounts:
+
+![image](assets/images/rpi_choose_mount.png)
 
 ## Rpi Camera
 
@@ -73,14 +146,3 @@ And please make sure you disable this line:
 !!! note
     
     The gpu_mem=160 is really important otherwise Grumpyscreen won't display correctly.
-
-
-## Starting again
-
-If you want to restart from scratch without having to reflash anything for the moment the process is as follows:
-
-```
-rm -rf pellcorp-backups pellcorp-overrides pellcorp.done printer_data/config
-```
-
-The installer will be updated eventually with a mode like this, ive just not got to it yet
