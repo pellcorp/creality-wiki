@@ -12,6 +12,8 @@ Simple AF for RPi will be tested on Orange Pi and other devices in the future, b
 
     Do not try and install Simple AF for RPi on Mainsail OS or onto an existing klipper environment which has been setup using kiuah
 
+# Installation
+
 ## Cloning repo
 
 The following commands should be executed to get the repo locally:
@@ -23,9 +25,9 @@ git clone https://github.com/pellcorp/creality.git ~/pellcorp
 ~/pellcorp/rpi/installer.sh --branch jp_simpleaf_rpi
 ```
 
-## Installation
+## Installing
 
-The installation command is very similiar to K1 series:
+The installation command is very similar to K1 series:
 
 ```
 ~/pellcorp/rpi/installer.sh --install --printer <ThePrinter> <TheProbe> --mount <TheMount>
@@ -98,16 +100,35 @@ with the --mount option without an argument to get a list of possible mounts:
 
 ![image](assets/images/rpi_choose_mount.png)
 
+# Post Installation issues
+
 ## Rpi Camera
 
 I've not found a way to get the V1 cam working with rasbian 12, only with 11 and enable classic legacy cam support
 and then it just works.
 
+## KlipperScreen
+
+The installer will automatically install KlipperScreen on Pi4 or above, there are concerns of overloading a pi3
+or less with klipperscreen so the installer will install grumpyscreen for lower specced devices, you can actually
+force the installation of KlipperScreen afterwards by running:
+
+```
+sudo systemctl stop grumpyscreen
+sudo systemctl disable grumpyscreen
+~/pellcorp/rpi/install-klipperscreen.sh
+```
+
 ## Grumpyscreen
 
-### BTT Screens
+### BTT HDMI Screen
 
-Support for grumpyscreen will be provided for BTT screens but you need to setup the screen to be correctly configured.
+For whatever reason Grumpyscreen does not work nicely with a HDMI screen its on my list of TODOs to fix this, if possible
+setup Simple AF on a Pi4 or above to get KlipperScreen.
+
+### BTT DSI Screen
+
+Support for grumpyscreen will be provided for BTT DSI screens but you need to setup the screen to be correctly configured.
 
 <https://github.com/bigtreetech/TFT43-DIP>
 
