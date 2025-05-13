@@ -13,10 +13,6 @@ Simple AF for RPi will be tested on Orange Pi and other devices in the future, b
 
     Do not try and install Simple AF for RPi on Mainsail OS or onto an existing klipper environment which has been setup using kiuah
 
-!!! warning
-
-    The installer assumes rasbian 11 (bulleye) or 12 (bookworm) only
-
 ## Cloning repo
 
 You will need to install git first:
