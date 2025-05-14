@@ -238,6 +238,19 @@ redoing these calibrations:
 
     Please do not remove the `[scanner]` section defined at the end of printer.cfg above the save config section.
 
+#### Ensuring Touch Mode is enabled
+
+To be able to setup the printer for cartographer with touch mode for printing you need to make sure the
+mode is set to touch.   It is set to touch out by default, but if you inadvertantly removed the `mode: touch`
+config from the `[scanner]` you might need to reset that, which is easy to do with the following command:
+
+1. Run `PROBE_SWITCH MODE=touch`
+<br />Upon completion *`SAVE_CONFIG`*
+
+And then run `Save and Restart` or `SAVE_CONFIG`
+
+Source: <https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/installation/calibration#initial-calibration>
+
 #### Manual Cartographer Calibrate
 
 It is strongly recommended to disable the camera for these calibration steps, just use the `STOP_CAMERA`
