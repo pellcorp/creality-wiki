@@ -220,8 +220,9 @@ It is important to make sure you have a way to [emergency factory reset](misc.md
 
 !!! warning
 
-    There are three different calibration steps required to setup a new printer, you must complete them all:
+    There are four different calibration steps required to setup a new printer, you must complete them all:
 
+    - [Enable Touch Mode](#enable-touch-mode)
     - [Manual Cartographer Calibrate](#manual-cartographer-calibrate)
     - [Cartographer Threshold Scan](#cartographer-threshold-scan)
     - [Cartographer Touch Calibration](#cartographer-touch-calibration)
@@ -245,8 +246,6 @@ mode is set to touch.
 
 1. Run `PROBE_SWITCH MODE=touch`
 <br />Upon completion *`SAVE_CONFIG`*
-
-And then run `Save and Restart` or `SAVE_CONFIG`
 
 Source: <https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/installation/calibration#initial-calibration>
 
@@ -385,13 +384,10 @@ Refer to the [Ellis Print Tuning Guide](https://ellis3dp.com/Print-Tuning-Guide/
 Some cartographer users choose to use scan only instead of touch and that is easy enough to do, you can setup for scan immediately
 after installation, no need to do the 3 step calibration as for touch!
 
-You can run the following gcode command:
+You can run the following:
 
-```
- PROBE_SWITCH MODE=scan
-```
-
-And then `SAVE_CONFIG`
+1. Run `PROBE_SWITCH MODE=scan`
+   <br />Upon completion *`SAVE_CONFIG`*
 
 It is strongly recommended to disable the camera for this calibration step, just use the `STOP_CAMERA`
 macro to do this.
