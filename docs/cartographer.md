@@ -240,9 +240,8 @@ redoing these calibrations:
 
 #### Enable Touch Mode
 
-To be able to setup the printer for cartographer with touch mode for printing you need to make sure the
-mode is set to touch.   It is set to touch out by default, but if you inadvertantly removed the `mode: touch`
-config from the `[scanner]` you might need to reset that, which is easy to do with the following command:
+To be able to set up the printer for cartographer with touch mode for printing you need to make sure the
+mode is set to touch.
 
 1. Run `PROBE_SWITCH MODE=touch`
 <br />Upon completion *`SAVE_CONFIG`*
