@@ -96,7 +96,7 @@ You need root access, if you are not already root, then follow the excellent [He
 ### Factory Reset 
 
 You must do a factory reset **only** if you have installed Helper Script or Fluidd/Mainsail directly from Creality, otherwise
-you can safely proceed directly to an installation.    If you have setup your printer with stock firmware only it can be quite
+you can safely proceed directly to installation.    If you have setup your printer with stock firmware only it can be quite
 handy to skip a factory reset so that you can use [Switch to Stock](misc.md#switch-to-stock)
 
 ```
