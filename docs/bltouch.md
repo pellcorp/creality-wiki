@@ -2,7 +2,7 @@
 
 Come on over to the pellcorp discord server, the `#simple-af-bltouch` channel has been setup for anyone wanting support for bltouch, crtouch or 3dtouch.
 
-[![invite](assets/images/invite.png '#simple-af-bltouch')](https://discord.gg/2uGDzyJ3WX)
+<https://discord.gg/2uGDzyJ3WX>
 
 ## What about CrTouch
 

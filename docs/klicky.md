@@ -7,7 +7,7 @@
 
 Come on over to the pellcorp discord server, here is the invite, the `#simple-af-klicky` channel has been setup for anyone wanting support for klicky.
 
-[![invite](assets/images/invite.png '#simple-af-klicky')](https://discord.gg/sbptsfuQZT)
+<https://discord.gg/sbptsfuQZT>
 
 ## Firmware requirements
 

@@ -2,7 +2,7 @@
 
 Come on over to the pellcorp discord server, here is the invite, the `#simple-af-beacon` channel has been setup for anyone wanting support for beacon.
 
-[![invite](assets/images/invite.png '#simple-af-beacon')](https://discord.gg/2uGDzyJ3WX)
+<https://discord.gg/2uGDzyJ3WX>
 
 ## Thanks
 

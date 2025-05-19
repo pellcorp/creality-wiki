@@ -2,7 +2,7 @@
 
 Come on over to the pellcorp discord server, the `#simple-af-microprobe` channel has been setup for anyone wanting support for microprobe.
 
-[![invite](assets/images/invite.png '#simple-af-microprobe')](https://discord.gg/2uGDzyJ3WX)
+<https://discord.gg/2uGDzyJ3WX>
 
 ## Firmware requirements
 
