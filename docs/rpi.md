@@ -6,6 +6,9 @@
     required features and sometimes existing stuff breaks, over the next few weeks I hope to polish it sufficiently that it can be 
     officially released, but we are not there yet.
 
+    Outstanding and solved issues for RPi variant here:
+    <https://github.com/pellcorp/creality/issues/702>
+
 Work is being done to bring Simple AF to the RPi (and other rpi like sbc)
 
 ## Supported OS

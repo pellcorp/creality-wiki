@@ -1,6 +1,6 @@
 ## Experimental Status
 
-!!! warning
+!!! danger
 
     This feature has just been released and it is under active development from vvuk over at <https://github.com/vvuk/eddy-ng/>, so there 
     are likely to be gotchas and issues, please bare that in mind.   Its likely you will be required to reflash your eddy a few times
