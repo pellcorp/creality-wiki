@@ -87,7 +87,7 @@ You need root access, if you are not already root, then follow the excellent [He
 
 You must do a factory reset **only** if you have installed Helper Script or Fluidd/Mainsail directly from Creality, otherwise
 you can safely proceed directly to an installation.    If you have setup your printer with stock firmware only it can be quite
-handy to skip a factory reset so that you can use the [Switch to Stock](misc/#switch-to-stock)
+handy to skip a factory reset so that you can use the [Switch to Stock](/misc/#switch-to-stock)
 
 ```
 wget --no-check-certificate https://raw.githubusercontent.com/pellcorp/creality/main/k1/services/S58factoryreset -O /tmp/S58factoryreset
