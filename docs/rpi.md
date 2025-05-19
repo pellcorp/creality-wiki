@@ -1,5 +1,7 @@
 # Simple AF for RPi
 
+Work is being done to bring Simple AF to the RPi (and other rpi like sbc)
+
 !!! warning
 
     This feature is being actively worked on and has not been officially released so its bound to be broken from time to time as I add
@@ -8,8 +10,6 @@
 
     Outstanding and solved issues for RPi variant here:
     <https://github.com/pellcorp/creality/issues/702>
-
-Work is being done to bring Simple AF to the RPi (and other rpi like sbc)
 
 ## Supported OS
 
