@@ -447,15 +447,9 @@ So from ssh run a `lsusb` and make sure you can see:
 
 ![image](assets/images/carto_lsusb.png)
 
-If you cannot see it in `lsusb`, then it very likely means either the carto is wired incorrectly, or if was working, it just means that an attempt to restart the carto failed because the K1 refused to recognise it, there is no recourse except to Reboot the printer via Fluidd / Mainsail in this case.
+If you cannot see it in `lsusb`, then it very likely means either the carto is wired incorrectly, or if was working, it just means that an attempt to restart the carto failed because the K1 refused to recognise it, there is no recourse except to restart the host via Fluidd / Mainsail (or power cycle the printer)
 
-If you can, then verify that the serial id matches:
-
-![image](assets/images/carto_serial.png)
-
-Make sure it matches the `serial` in `cartotouch.cfg`:
-
-![image](assets/images/carto_scanner_serial.png)
+If you can see the carto in lsusb, then you should try to update the serial (see next)
 
 ### Manual Cartographer Serial Device configuration
 

@@ -218,16 +218,6 @@ It is important to make sure you have a way to [emergency factory reset](misc.md
 
     If you have plugged your btt eddy into the front usb port, you are going to have to temporarily remove the btt eddy from the front usb slot and replace it with your USB thumb drive, after you have finished verifying the USB thumb drive can be used in an emergency, you can replace the btt eddy into the front usb slot and restart klipper or power cycle your printer.
 
-### Troubleshooting
-
-#### Manual BTT Eddy Serial Device configuration
-
-You can run the following command to fix your serial if you forgot to plug your btt eddy in during the installation or update:
-
-```
-/usr/data/pellcorp/k1/installer.sh --fix-serial
-```
-
 ### Calibration
 
 Calibrating the eddy should be as easy as running the `PROBE_EDDY_NG_SETUP`, first step is to home X and Y:
@@ -310,3 +300,27 @@ You can use the `SHAPER_CALIBRATE` macro to run input shaping, just be sure to `
 Refer to [Orcaslicer Calibration](https://github.com/SoftFever/OrcaSlicer/wiki/Calibration) for more calibrations
 
 Refer to the [Ellis Print Tuning Guide](https://ellis3dp.com/Print-Tuning-Guide/) for more great tuning ideas.
+
+## Troubleshooting
+
+### MCU Protocol Error - mcu 'eddy' Unknown command: debug_read
+
+If you get the following error, it means that the eddy is not connected to the printer.   This is either because its physically not connected, the wiring is wrong, the usb subsystem has disconnected the eddy during a restart or the serial id is wrong
+
+![image](assets/images/btt_eddy_protocol_error.png)
+
+So from ssh run a `lsusb` and make sure you can see:
+
+![image](assets/images/btt_eddy_lsusb.png)
+
+If you cannot see it in `lsusb`, then it very likely means either the eddy is wired incorrectly, or if was working, it just means that an attempt to restart the eddy failed because the K1 refused to recognise it, there is no recourse except to restart the host via Fluidd / Mainsail (or power cycle the printer)
+
+If you can see the eddy in lsusb, then you should try to update the serial (see next)
+
+### Manual BTT Eddy Serial Device configuration
+
+You can run the following command to fix your serial if you forgot to plug your btt eddy in during the installation or update:
+
+```
+/usr/data/pellcorp/k1/installer.sh --fix-serial
+```
