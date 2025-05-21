@@ -285,7 +285,9 @@ If you are using **a rear mount** it is highly recommended to perform axis twist
 
 ### First Print
 
-For this first print you can go and do the tuning first (PID Tuning, etc) or you can go ahead and optimise your `z_offset`.  Note you would think that the `z_offset` in `[probe_eddy_current btt_eddy]` would allow you to adjust the z offset for a nice first layer, but it seems like the z_offset does not work that way for btt eddy, so we are using the save-zoffset hack originally from Helper Script for btt eddy until such time as the z_offset does actually work correctly.
+For this first print you can go and do the tuning first (PID Tuning, etc) or you can go ahead and optimise your probe z offset using baby stepping.
+
+The save baby stepping button in fluidd / mainsail does nothing for btteddy, the z-offset is automatically saved to the variables.cfg
 
 ### Bed Mesh
 

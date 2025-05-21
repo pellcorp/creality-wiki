@@ -254,7 +254,7 @@ I am hopeful further work on this from the eddyng project might make this manual
 
 ### First Print
 
-For this first print you can go and do the tuning first (PID Tuning, etc) or you can go ahead and optimise your tap_adjust_z using baby stepping, as documented here: <https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/installation/first-print>
+For this first print you can go and do the tuning first (PID Tuning, etc) or you can go ahead and optimise your probe z offset using baby stepping.
 
 In fluidd the save button after you finish or cancel your print can be a bit hard to find, look for
 
