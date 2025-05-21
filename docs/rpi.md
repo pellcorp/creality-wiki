@@ -43,11 +43,12 @@ DNS check configuration to use google as the quad9 DNS was not resolved by clean
 different and the above options might be overkill.
 
 I discovered that there is a few hoops to jump through before getting the OrangePi setup, no idea if this is due to some weird
-combination of settings above, but I discovered you have to physically power off the device after the first reboot during first run
-otherwise ethernet does not come back.
+combination of settings above, but I discovered you have to physically power off the device after the first run finishes and the
+pi hole is supposedly rebooted, otherwise ethernet does not come back.   
 
-So what I did was login as root after powerup and it will tell me that first run setup is going on in a different screen and will
-eventually let me know a restart will be required, I wait until I am kicked from the SSH session and then power cycle the pi.
+What I did was login as root after powering up the device for the first time and it will tell me that first run setup is going on in a 
+different screen and will eventually let me know a restart will be required, I wait until I am kicked from the SSH session and then I give it
+a minute and power cycle the pi.
 
 I then ssh login as **dietpi** user to start the installation, after logging in, you may be told that first run setup is still going,
 give it a few minutes and you should be greeted with a login prompt.
