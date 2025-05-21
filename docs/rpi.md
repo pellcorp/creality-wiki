@@ -20,6 +20,38 @@ But the most rigorous testing has and will continue to be done on official Rpi d
 
 OrangePi OS (based on Arch) **is not supported** and will fail to install because the installer assumes a debian based OS!!!
 
+### DietPi Setup
+
+I had some trouble getting DietPi setup in my home network which uses a PiHole connected to cleanbrowsing.org DNS family filter
+which prevented the default DNS settings from working.
+
+I updated the dietpi.txt as follows:
+
+```
+AUTO_SETUP_AUTOMATED=1
+SURVEY_OPTED_IN=0
+CONFIG_CHECK_CONNECTION_IP=8.8.8.8
+CONFIG_CHECK_CONNECTION_IPV6=2001:4860:4860::8888
+CONFIG_CHECK_DNS_DOMAIN=google.com
+CONFIG_CHECK_DIETPI_UPDATES=0
+CONFIG_CHECK_APT_UPDATES=0
+CONFIG_SERIAL_CONSOLE_ENABLE=0
+```
+
+You do not want the OS doing updates while prints are going so updating should be controlled by Moonraker only.   I reconfigured the
+DNS check configuration to use google as the quad9 DNS was not resolved by cleanbrowsing.org, of course your situation may be completely
+different and the above options might be overkill.
+
+I discovered that there is a few hoops to jump through before getting the OrangePi setup, no idea if this is due to some weird
+combination of settings above, but I discovered you have to physically power off the device after the first reboot during first run
+otherwise ethernet does not come back.
+
+So what I did was login as root after powerup and it will tell me that first run setup is going on in a different screen and will
+eventually let me know a restart will be required, I wait until I am kicked from the SSH session and then power cycle the pi.
+
+I then ssh login as **dietpi** user to start the installation, after logging in, you may be told that first run setup is still going,
+give it a few minutes and you should be greeted with a login prompt.
+
 !!! danger
 
     Do not try and install Simple AF for RPi on Mainsail OS or onto an existing klipper environment which has been setup using kiuah
