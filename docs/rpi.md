@@ -27,6 +27,14 @@ You must login as the **pi** (Default password is `raspberry`) user to perform t
 Basic testing has been done on a Orange Pi Zero 3 W running a server image available from:
 <https://drive.google.com/drive/folders/10zlO-0mMz-fqRQOKAOWX-mQA_UbN_C1n>
 
+!!! note
+
+    When running the `sudo apt-get update` you might get an error complaining about `Err:36 https://repo.huaweicloud.com/docker-ce/linux/debian bullseye/stable arm64 Contents`,
+    this is a long standing bug (from 2023) that was never fixed and the work around is to run:
+    ```
+    sudo rm /etc/apt/sources.list.d/docker.list
+    ```
+
 OrangePi OS (based on Arch) **is not supported** and will fail to install because the installer assumes a debian based OS!!!
 
 You must login as the **orangepi** (Default password is `orangepi`) user to perform the installation, you are not allowed to run the installer as root!
@@ -35,7 +43,6 @@ You must login as the **orangepi** (Default password is `orangepi`) user to perf
 
     By default the `orangepi` user cannot sudo without providing a password, the installer will create a ` /etc/sudoers.d/nopasswd` file
     to enable no password sudo for the orangepi user.
-
 
 ### DietPi OS
 
