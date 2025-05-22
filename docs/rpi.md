@@ -31,6 +31,12 @@ OrangePi OS (based on Arch) **is not supported** and will fail to install becaus
 
 You must login as the **orangepi** (Default password is `orangepi`) user to perform the installation, you are not allowed to run the installer as root!
 
+!!! warning
+
+    By default the `orangepi` user cannot sudo without providing a password, the installer will create a ` /etc/sudoers.d/nopasswd` file
+    to enable no password sudo for the orangepi user.
+
+
 ### DietPi OS
 
 Basic testing has been done with DietPi (Bookworm) running on an Orange Pi 3 Zero W
