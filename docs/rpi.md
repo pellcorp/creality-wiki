@@ -13,14 +13,23 @@ Work is being done to bring Simple AF to the RPi (and other rpi like sbc)
 
 ## Supported OS
 
-Simple AF for RPi requires a version of debian 11 or 12 and has only been tested in raspberry pi 3, 4 and 5, it does not matter whether you use 32 or 64 bit OS.  It is recommended to use the [Rpi Imager](https://www.raspberrypi.com/software/) and choose `Raspberry PI OS Lite (64-bit)` or `Raspberry PI OS (Legacy, 64 bit) Lite`
+Simple AF is best supported by RPi or OrangePi running a version of debian 11 or 12.
 
-Basic testing has been done with DietPi running on an Orange Pi 3 Zero W 
-But the most rigorous testing has and will continue to be done on official Rpi devices and Raspberry Pi OS.
+### Raspberry Pi OS
+
+So far been tested to work on a pi 3, 4 and 5, it does not matter whether you use 32 or 64 bit OS.  
+It is recommended to use the [Rpi Imager](https://www.raspberrypi.com/software/) and choose `Raspberry PI OS Lite (64-bit)` or `Raspberry PI OS (Legacy, 64 bit) Lite`
+
+### Orange Pi OS
+
+Basic testing has been done on a Orange Pi Zero 3 W running a server image available from:
+<https://drive.google.com/drive/folders/10zlO-0mMz-fqRQOKAOWX-mQA_UbN_C1n>
 
 OrangePi OS (based on Arch) **is not supported** and will fail to install because the installer assumes a debian based OS!!!
 
-### DietPi Setup
+### DietPi 
+
+Basic testing has been done with DietPi running on an Orange Pi 3 Zero W
 
 I had some trouble getting DietPi setup in my home network which uses a PiHole connected to cleanbrowsing.org DNS family filter
 which prevented the default DNS settings from working.
