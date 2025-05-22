@@ -31,9 +31,9 @@ OrangePi OS (based on Arch) **is not supported** and will fail to install becaus
 
 You must login as the **orangepi** (Default password is `orangepi`) user to perform the installation, you are not allowed to run the installer as root!
 
-### DietPi 
+### DietPi OS
 
-Basic testing has been done with DietPi running on an Orange Pi 3 Zero W
+Basic testing has been done with DietPi (Bookworm) running on an Orange Pi 3 Zero W
 
 I had some trouble getting DietPi setup in my home network which uses a PiHole connected to cleanbrowsing.org DNS family filter
 which prevented the default DNS settings from working.
