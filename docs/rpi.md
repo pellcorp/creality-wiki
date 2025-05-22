@@ -20,12 +20,16 @@ Simple AF is best supported by RPi or OrangePi running a version of debian 11 or
 So far been tested to work on a pi 3, 4 and 5, it does not matter whether you use 32 or 64 bit OS.  
 It is recommended to use the [Rpi Imager](https://www.raspberrypi.com/software/) and choose `Raspberry PI OS Lite (64-bit)` or `Raspberry PI OS (Legacy, 64 bit) Lite`
 
+You must login as the **pi** user to perform the installation, you are not allowed to run the installer as root!
+
 ### Orange Pi OS
 
 Basic testing has been done on a Orange Pi Zero 3 W running a server image available from:
 <https://drive.google.com/drive/folders/10zlO-0mMz-fqRQOKAOWX-mQA_UbN_C1n>
 
 OrangePi OS (based on Arch) **is not supported** and will fail to install because the installer assumes a debian based OS!!!
+
+You must login as the **dietpi** user to perform the installation, you are not allowed to run the installer as root!
 
 ### DietPi 
 
@@ -59,7 +63,7 @@ What I did was login as root after powering up the device for the first time and
 different screen and will eventually let me know a restart will be required, I wait until I am kicked from the SSH session and then I give it
 a minute and power cycle the pi.
 
-I then ssh login as **dietpi** user to start the installation, after logging in, you may be told that first run setup is still going,
+Then login as the **dietpi** user to start the installation, after logging in, you may be told that first run setup is still going,
 give it a few minutes and you should be greeted with a login prompt.
 
 !!! danger

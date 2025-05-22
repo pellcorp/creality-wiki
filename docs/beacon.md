@@ -55,7 +55,7 @@ On a K1M you can use the lidar cable either directly by repinning it, or via the
 
 !!! danger
 
-    If you are not using a side mount you **must** verify config changes for beacon.cfg efore homing your printer, using **Screws Tilt Calculate** or doing a **bed mesh**!  
+    If you are not using a side mount you **must** verify config changes for beacon.cfg before homing your printer, using **Screws Tilt Calculate** or doing a **bed mesh**!  
 
     Ignoring these instructions can lead to significant damage to your build plate and/or probe.
 
