@@ -95,11 +95,17 @@ chmod +x /tmp/S58factoryreset
 /tmp/S58factoryreset reset
 ```
 
-!!! warn
+!!! danger
 
     It is really important you do not close the ssh session until you get this message:
 
     ![image](assets/images/factory_reset.png)
+
+    It can take up to 5 minutes for a factory restart to finish, it is **vital** you do not power cycle your printer before the stock screen appears. There may be a 3002 error on the screen, this is completely normal.   If you are planning to install Simple AF you can ignore it, if you are trying to go back to stock, power cycle the printer again to clear the error.  
+
+    Failing to follow this advice can lead to your printer getting bricked and requiring much more involved intervention to recover!
+    
+    ![image](assets/images/error3002.png)
 
 ### Clone the Repo
 

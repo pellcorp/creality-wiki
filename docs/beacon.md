@@ -105,11 +105,17 @@ chmod +x /tmp/S58factoryreset
 /tmp/S58factoryreset reset
 ```
 
-!!! warn
+!!! danger
 
     It is really important you do not close the ssh session until you get this message:
 
     ![image](assets/images/factory_reset.png)
+
+    It can take up to 5 minutes for a factory restart to finish, it is **vital** you do not power cycle your printer before the stock screen appears. There may be a 3002 error on the screen, this is completely normal.   If you are planning to install Simple AF you can ignore it, if you are trying to go back to stock, power cycle the printer again to clear the error.  
+
+    Failing to follow this advice can lead to your printer getting bricked and requiring much more involved intervention to recover!
+    
+    ![image](assets/images/error3002.png)
 
 ### Clone the Repo
 
@@ -206,27 +212,6 @@ It is important to make sure you have a way to [emergency factory reset](misc.md
 For beacon you cannot use more than `microsteps: 32`, the MCU cannot handle both more microsteps and beacon, it puts too much pressure on the system and it cause stuttering during bed meshes, it is also been known to cause klipper to crash
 during repeated bed meshes.
 
-### Troubleshooting 
-
-#### Manual Beacon Serial Device configuration
-
-
-You can run the following command to fix your serial if you forgot to plug your beacon in during the installation or update:
-
-```
-/usr/data/pellcorp/k1/installer.sh --fix-serial
-```
-
-#### 'BeaconProbe' object has no attribute '_mcu_freq'
-
-This **often** indicates the beacon was disconnected during homing or some other operation, you need to reboot 
-
-![image](assets/images/beacon_mcu_freq.png)
-
-On rare occasions this also occurs when the printer gets overloaded, if the error does not clear after a power cycle,
-try leaving your printer completely powered off for 15 minutes, see if the error clears afterwards.  If the error does not
-clear after doing this, I would be looking for a hardware issue, such as a dodgy cable.
-
 ### Calibration
 
 It is strongly recommended to disable the camera for these calibration steps, just use the `STOP_CAMERA`
@@ -297,3 +282,24 @@ You can use the `SHAPER_CALIBRATE` macro to run input shaping, just be sure to `
 Refer to [Orcaslicer Calibration](https://github.com/SoftFever/OrcaSlicer/wiki/Calibration) for more calibrations
 
 Refer to the [Ellis Print Tuning Guide](https://ellis3dp.com/Print-Tuning-Guide/) for more great tuning ideas.
+
+### Troubleshooting
+
+#### Manual Beacon Serial Device configuration
+
+
+You can run the following command to fix your serial if you forgot to plug your beacon in during the installation or update:
+
+```
+/usr/data/pellcorp/k1/installer.sh --fix-serial
+```
+
+#### 'BeaconProbe' object has no attribute '_mcu_freq'
+
+This **often** indicates the beacon was disconnected during homing or some other operation, you need to reboot
+
+![image](assets/images/beacon_mcu_freq.png)
+
+On rare occasions this also occurs when the printer gets overloaded, if the error does not clear after a power cycle,
+try leaving your printer completely powered off for 15 minutes, see if the error clears afterwards.  If the error does not
+clear after doing this, I would be looking for a hardware issue, such as a dodgy cable.
