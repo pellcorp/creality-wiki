@@ -24,7 +24,10 @@ You must login as the **pi** (Default password is `raspberry`) user to perform t
 
 ### Orange Pi OS
 
-Basic testing has been done on a Orange Pi Zero 3 W running a server image available from:
+OrangePi OS (based on Arch) **is not supported** and will fail to install because the installer assumes a debian based OS, this is unlikely
+to change anytime soon.
+
+Testing has been done on an Orange Pi Zero 3 W running a server image available from:
 <https://drive.google.com/drive/folders/10zlO-0mMz-fqRQOKAOWX-mQA_UbN_C1n>
 
 !!! note
@@ -34,8 +37,6 @@ Basic testing has been done on a Orange Pi Zero 3 W running a server image avail
     ```
     sudo rm /etc/apt/sources.list.d/docker.list
     ```
-
-OrangePi OS (based on Arch) **is not supported** and will fail to install because the installer assumes a debian based OS!!!
 
 You must login as the **orangepi** (Default password is `orangepi`) user to perform the installation, you are not allowed to run the installer as root!
 
