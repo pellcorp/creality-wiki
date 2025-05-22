@@ -172,11 +172,6 @@ with the --mount option without an argument to get a list of possible mounts:
 
 ## Post Installation issues
 
-### Rpi Camera
-
-I've not found a way to get the V1 cam working with rasbian 12, only with 11 and enable classic legacy cam support
-and then it just works.
-
 ### KlipperScreen
 
 The installer will automatically install KlipperScreen on Pi4 or above, there are concerns of overloading a pi3
@@ -261,4 +256,7 @@ To find out what devices are available you can use the crowsnest tool like so:
     
     Source: <https://crowsnest.mainsail.xyz/configuration/cam-section#device>
 
-Source: <https://crowsnest.mainsail.xyz/configuration/cam-section#resolution>
+#### Rpi Camera
+
+I've not found a way to get the V1 cam working with rasbian 12, only with 11 and enable classic legacy cam support
+and then it just works.
