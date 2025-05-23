@@ -215,6 +215,8 @@ on the bottom of the klicky and make sure homing stops, if it does not stop you 
 
 ### Calibration
 
+![image](assets/images/probe_calibrate.png)
+
 1. Home All (`G28`)
 2. Make sure nozzle is centred on bed
 3. Run `PROBE_CALIBRATE`
