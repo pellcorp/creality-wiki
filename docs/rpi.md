@@ -110,7 +110,7 @@ git clone https://github.com/pellcorp/creality.git ~/pellcorp
 The installation command is very similar to K1 series:
 
 ```
-~/pellcorp/installer.sh --install --printer <ThePrinter> <TheProbe> --mount <TheMount>
+~/pellcorp/installer.sh --install --printer <ThePrinter> <TheProbe> [--mount <TheMount>]
 ```
 
 - Where `--printer <ThePrinter>` is a predefined or downloaded printer definition
