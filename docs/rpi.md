@@ -150,17 +150,17 @@ wget https://raw.githubusercontent.com/pellcorp/klipper-rpi/refs/heads/master/co
 
 You need to choose a probe one of:
 
-- Cartotouch
-- Beacon
-- BlTouch
-- Microprobe
-- Klicky
-- BttEddy
-- Eddyng
+- [Cartotouch](cartographer.md)
+- [Beacon](beacon.md)
+- [BlTouch](bltouch.md)
+- [Microprobe](microprobe.md)
+- [Klicky](klicky.md)
+- [BttEddy](btteddy.md)
+- [Eddyng](eddyng.md)
 
 #### Choose a mount
 
-If you have chosen a predefined printer its possible it will require you to choose a mount, just like for K1 series, you can run the installer
+If you have chosen a predefined printer its possible it will require you to choose a mount, you can run the installer
 with the --mount option without an argument to get a list of possible mounts:
 
 ![image](assets/images/rpi_choose_mount.png)
