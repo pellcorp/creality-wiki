@@ -101,6 +101,10 @@ On a K1M you can use the lidar cable either directly by repinning it, or via the
 
 ## Installation
 
+!!! warn
+
+    This does not apply to Simple AF for RPi, See [Simple AF for RPi](rpi.md)
+
 The installation can only be performed on a printer which has been rooted and ssh granted
 
 You need root access, if you are not already root, then follow the excellent [Helper Script Enable Root Access](https://guilouz.github.io/Creality-Helper-Script-Wiki/firmwares/install-and-update-rooted-firmware-k1/#enable-root-access) instructions.
@@ -137,18 +141,6 @@ git clone https://github.com/pellcorp/creality.git /usr/data/pellcorp
 sync
 ```
 
-??? note "RPC Timeouts, try SSH Git Clone"
-    ```
-    mkdir -p /root/.ssh
-    wget --no-check-certificate "https://raw.githubusercontent.com/pellcorp/creality/main/k1/ssh/git-ssh.sh" -O /root/git-ssh.sh
-    chmod 777 /root/git-ssh.sh
-    wget --no-check-certificate "https://raw.githubusercontent.com/pellcorp/creality/main/k1/ssh/pellcorp-identity" -O /root/.ssh/pellcorp-identity
-    export GIT_SSH_IDENTITY=pellcorp
-    export GIT_SSH=/root/git-ssh.sh
-    git clone git@github.com:pellcorp/creality.git /usr/data/pellcorp
-    cd /usr/data/pellcorp && git remote set-url origin https://github.com/pellcorp/creality.git && cd
-    ```
-
 ### Config Overrides
 
 If you have pellcorp-overrides in github but not stored locally, [you need to recreate the /usr/data/pellcorp-overrides directory](config_overrides.md#create-local-repo) before running the installer.sh!
@@ -166,22 +158,6 @@ To run the script, you must specify the probe you want to use.
     For `Mount` you must specify the mount option for the mount you have used, if you do not do this the printer will be incorrectly configured for your mount, and bed meshes, x and y limits and related config will be wrong.   Please refer to [Mount Options](#mount-options) for supported mounts.   
 
     If you are using a non-supported mount you should specify a mount option as close to your mount as possible and properly adjust your configuration after installation before trying to perform a bed mesh or Screws Tilt Calculate!
-
-??? note "RPC failed; curl 18 transfer closed"
-
-    You might get this error:
-
-    ```
-    error: RPC failed; curl 18 transfer closed with outstanding read data remaining
-    fatal: the remote end hung up unexpectedly
-    fatal: early EOF
-    fatal: index-pack failed
-    ```
-    
-    Just rerun the installer.sh script (with the same probe argument), it will start from the stage that failed (most of the time this
-    will be the Installing Klipper stage!)
-    
-    You can also prefix the installer command with `AF_GIT_CLONE=ssh` to force git to clone via ssh, this will take a **lot** longer, but it will never time out, so its good in a pinch if you are getting repeated klipper repo clone failures.
 
 ## Post Installation
 
