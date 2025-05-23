@@ -202,7 +202,10 @@ For the bltouch/3dtouch/crtouch it is **extremely** important to do the PROBE_CA
 
 ![image](assets/images/probe_calibrate.png)
 
-You should use the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test) for this z-offset calibration.
+1. Home All (`G28`)
+2. Run `PROBE_CALIBRATE`
+3. Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
+   <br />Upon completion *`SAVE_CONFIG`*
 
 !!! note
 
