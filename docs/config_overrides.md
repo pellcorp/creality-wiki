@@ -1,4 +1,4 @@
-The `~/pellcorp-overrides` stores custom cfg and conf files as well as customisations you have made to some of the core config files such as printer.cfg.  
+The `pellcorp-overrides` directory stores custom cfg and conf files as well as customisations you have made to some of the core config files such as printer.cfg.  
 
 The following core config files can have overrides saved for them: 
 
@@ -35,7 +35,7 @@ The following core config files can have overrides saved for them:
 
 ## Git Backups for Configuration Overrides
 
-If the ~/pellcorp-overrides is a git repo, calling the CONFIG_OVERRIDES or `~/pellcorp/tools/config-overrides.sh` will generate a new git commit and push it to origin if any files are changed.
+If the pellcorp-overrides directory is a git repo, calling the CONFIG_OVERRIDES or `~/pellcorp/tools/config-overrides.sh` will generate a new git commit and push it to origin if any files are changed.
 
 ### Create repository
 
@@ -86,9 +86,12 @@ export GITHUB_BRANCH=main
 
     The `GITHUB_BRANCH` is optional, if its not specified it will use `main` as the branch.
 
-If you want to setup the repository locally ignoring any local files in `~/pellcorp-overrides`, you can use the `--clean-repo` argument, instead of the `--repo` argument, which will rebase the local changes on top of the repo.
+If you want to setup the repository locally ignoring any local files in the `pellcorp-overrides` directory, you can use the `--clean-repo` argument, instead of the `--repo` argument, which will rebase the local changes on top of the repo.
 
 !!! note
+    
+    For K1 Series (including Ender 5 Max), the pellcorp-overrides is located at /usr/data/pellcorp-overrides, but there is a soft link
+    created to /root, so you scripts and the wiki will refer to pellcorp-overrides by the shorthand of `~/pellcorp-overrides`
 
     The `moonraker.secrets` file is not versioned controlled.
 

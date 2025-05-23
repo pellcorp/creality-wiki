@@ -30,8 +30,24 @@ Simple AF which includes all the cfg and conf files cannot be updated via Fluidd
 ~/pellcorp/installer.sh --update
 ```
 
-!!! note
+!!! warn
 
+    If you run the above and receive an error like:
+
+        ```
+        root@K1Max-AF34 /root [#] ~/pellcorp/installer.sh --branch main
+        -sh: /root/pellcorp/installer.sh: not found
+        ```
+
+    It means you are on an older version of Simple AF and you should instead use the old style commands:
+
+        ```
+        /usr/data/pellcorp/k1/installer.sh --branch main
+        /usr/data/pellcorp/k1/installer.sh --update
+        ```
+
+!!! note
+    
     If you get a `ERRROR: Mount option must be specified`, you must provide a `--mount TheMount` where `TheMount` is a reference to the mount you are currently
     using, and that will depend on what probe you are using, you can consult the #mount-options section of your specific probe wiki page.
 
