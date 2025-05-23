@@ -97,12 +97,20 @@ git clone https://github.com/pellcorp/creality.git ~/pellcorp
 ~/pellcorp/rpi/installer.sh --branch jp_simpleaf_rpi
 ```
 
+!!! note
+
+    You may notice that to switch branches you need to specify `~/pellcorp/rpi/installer.sh` but then below you only need
+    to specify `~/pellcorp/installer.sh`, this is not a mistake, Simple AF is slowly being modified so that most of the
+    commands in the wiki will not require a k1/ or rpi/ prefix to installer, except for the first time the installer 
+    is executed, this is because we create a soft link of the installer.sh to the rpi/installer.sh for RPi and 
+    installer.sh to k1/installer.sh for K1 Series. 
+
 ### Installing
 
 The installation command is very similar to K1 series:
 
 ```
-~/pellcorp/rpi/installer.sh --install --printer <ThePrinter> <TheProbe> --mount <TheMount>
+~/pellcorp/installer.sh --install --printer <ThePrinter> <TheProbe> --mount <TheMount>
 ```
 
 - Where `--printer <ThePrinter>` is a predefined or downloaded printer definition
@@ -115,7 +123,7 @@ You need to figure out what kind of mainboard you have because that will dictate
 or you need to provide your own.  The easiest way to find out what predefined printers are available is to run the command:
 
 ```
-~/pellcorp/rpi/installer.sh --install --printer
+~/pellcorp/installer.sh --install --printer
 ```
 
 ![image](assets/images/rpi_install_printers.png)
