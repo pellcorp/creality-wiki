@@ -94,7 +94,7 @@ The following commands should be executed to get the repo locally:
 sudo apt-get update
 sudo apt-get install --yes git wget
 git clone https://github.com/pellcorp/creality.git ~/pellcorp
-~/pellcorp/rpi/installer.sh --branch jp_simpleaf_rpi
+~/pellcorp/installer.sh --branch jp_simpleaf_rpi
 ```
 
 ### Installing
