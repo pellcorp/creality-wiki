@@ -235,7 +235,8 @@ It is important to make sure you have a way to [emergency factory reset](misc.md
 6. Home X and Y (`G28 X Y`)
 7. Make sure nozzle is centred on bed
 8. Run `BTTEDDY_CURRENT_CALIBRATE` Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
-<br />Upon completion *`SAVE_CONFIG`*
+9. After clicking **Accept**, the printer is going to move the bed up and down quite a few times as part of the calibration, do **not** interrupt it
+10. Upon completion *`SAVE_CONFIG`*
 
 **Source:** <https://github.com/bigtreetech/Eddy?tab=readme-ov-file#3-mapping-eddy-readings-to-nozzle-heights>
 
