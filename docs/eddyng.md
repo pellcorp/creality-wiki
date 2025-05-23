@@ -16,9 +16,17 @@ Come on over to the pellcorp discord server, the `#simple-af-btteddy` channel ha
 
 You can also get help from the eddy-ng discord channels on the sovol discord, with the <https://discord.gg/djhnkDR2JN> link
 
-## Firmware requirements
+### K1 Series
 
-This guide assumes you have a K1, K1C, K1SE or K1 Max and you are running stock creality firmware 1.3.3.5 or higher, or alternately you are using  [my prerooted firmware](https://github.com/pellcorp/creality/wiki/Prerooted-K1-Firmware).   Any other pre-rooted firmware is explicitly not supported and the installer.sh will validate this and refuse to proceed if you try to use it on different firmware.
+This guide assumes you have a K1, K1C, K1SE or K1 Max and you are running stock creality firmware 1.3.3.5 or higher, or alternately you are using [my prerooted firmware](https://github.com/pellcorp/creality/wiki/Prerooted-K1-Firmware).   Any other pre-rooted firmware is explicitly not supported and the installer.sh will validate this and refuse to proceed if you try to use it on different firmware.
+
+### Ender 5 Max
+
+This probe is currently not supported on Ender 5 Max
+
+### RPi
+
+See [Simple AF for RPi](rpi.md)
 
 ## Slicer Settings
 
@@ -48,6 +56,10 @@ defined for each of the bed type and filament type combinations.
 ![image](https://github.com/user-attachments/assets/6bc0f01e-6bd4-4e0b-9031-a2b41c1d6a02)
 
 ## Wiring
+
+!!! note
+
+    Applies to K1/K1C/K1SE/K1M printers only
 
 Confirm the USB wiring based on this diagram(s)
 On a K1M you can use the lidar cable either directly by repinning it, or via the pass through lidar port on the toolhead.  However you cannot use the lidar port on the toolhead for K1, K1C or K1SE.   The reason this does not work is because for Lidar on the K1M creality actually routes a completely separate USB cable from the mainboard.

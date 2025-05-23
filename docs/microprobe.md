@@ -4,9 +4,17 @@ Come on over to the pellcorp discord server, the `#simple-af-microprobe` channel
 
 <https://discord.gg/2uGDzyJ3WX>
 
-## Firmware requirements
+### K1 Series
 
-This guide assumes you have a K1, K1C, K1SE or K1 Max and you are running stock creality firmware 1.3.3.5 or higher, or alternately you are using  [my prerooted firmware](https://github.com/pellcorp/creality/wiki/Prerooted-K1-Firmware).   Any other pre-rooted firmware is explicitly not supported and the installer.sh will validate this and refuse to proceed if you try to use it on different firmware.
+This guide assumes you have a K1, K1C, K1SE or K1 Max and you are running stock creality firmware 1.3.3.5 or higher, or alternately you are using [my prerooted firmware](https://github.com/pellcorp/creality/wiki/Prerooted-K1-Firmware).   Any other pre-rooted firmware is explicitly not supported and the installer.sh will validate this and refuse to proceed if you try to use it on different firmware.
+
+### Ender 5 Max
+
+This probe is currently not supported on Ender 5 Max
+
+### RPi
+
+See [Simple AF for RPi](rpi.md)
 
 ## Slicer Settings
 
@@ -55,6 +63,10 @@ pin: ^!nozzle_mcu: PA9  # MicroProbe V2 users should use this line to trigger on
 ```
 
 ### Wiring
+
+!!! note
+
+    Applies to K1/K1C/K1SE/K1M printers only
 
 The probe and the TOUCH port on the Nozzle MCU board both mate with a 5-pin Molex Picoblade connector. A 5-pin cable is needed to connect the probe to the TOUCH port.
 

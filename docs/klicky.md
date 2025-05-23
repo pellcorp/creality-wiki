@@ -9,9 +9,17 @@ Come on over to the pellcorp discord server, here is the invite, the `#simple-af
 
 <https://discord.gg/2uGDzyJ3WX>
 
-## Firmware requirements
+### K1 Series
 
-This guide assumes you have a K1, K1C, K1SE or K1 Max and you are running stock creality firmware 1.3.3.5 or higher, or alternately you are using  [my prerooted firmware](https://github.com/pellcorp/creality/wiki/Prerooted-K1-Firmware).   Any other pre-rooted firmware is explicitly not supported and the installer.sh will validate this and refuse to proceed if you try to use it on different firmware.
+This guide assumes you have a K1, K1C, K1SE or K1 Max and you are running stock creality firmware 1.3.3.5 or higher, or alternately you are using [my prerooted firmware](https://github.com/pellcorp/creality/wiki/Prerooted-K1-Firmware).   Any other pre-rooted firmware is explicitly not supported and the installer.sh will validate this and refuse to proceed if you try to use it on different firmware.
+
+### Ender 5 Max
+
+This probe is currently not supported on Ender 5 Max
+
+### RPi
+
+See [Simple AF for RPi](rpi.md)
 
 ## Slicer Settings
 
@@ -63,6 +71,10 @@ encouraged to use the `Default` option for stock.   It has so far only been test
 website.   Also the coordinates will differ depending on how you mount it so some testing to find your ideal location will be required
 
 ### Wiring
+
+!!! note
+
+    Applies to K1/K1C/K1SE/K1M printers only
 
 You will need to make a cable from the nozzle touch port to the 3 pin port on the klicky.
 
