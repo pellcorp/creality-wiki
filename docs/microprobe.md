@@ -89,7 +89,7 @@ Connect to TOUCH port on the nozzle MCU. it is accessible from the side left (LI
 
 !!! warn
 
-    This does not apply to Simple AF for RPi, See [Simple AF for RPi](rpi.md)
+    This does not apply to Simple AF for RPi, See [Simple AF for RPi](rpi.md#installation)
 
 The installation can only be performed on a printer which has been rooted and ssh granted
 
