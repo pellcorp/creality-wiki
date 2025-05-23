@@ -26,7 +26,7 @@ This guide assumes you have a K1, K1C, K1SE or K1 Max and you are running stock 
 
 This probe is currently not supported on Ender 5 Max
 
-### RPi
+### Simple AF for RPi
 
 See [Simple AF for RPi](rpi.md)
 

@@ -18,7 +18,7 @@ This guide assumes you have a K1, K1C, K1SE, K1 Max or Ender 5 Max and you are r
 
 You must be using pre-rooted firmware, which is not available from Creality at the moment, you can get it from <https://github.com/zevaryx/ender-5-max-firmware>
 
-### RPi
+### Simple AF for RPi
 
 See [Simple AF for RPi](rpi.md)
 
