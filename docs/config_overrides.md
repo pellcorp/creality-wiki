@@ -1,4 +1,4 @@
-The `/usr/data/pellcorp-overrides` stores custom cfg and conf files as well as customisations you have made to some of the core config files such as printer.cfg.  
+The `~/pellcorp-overrides` stores custom cfg and conf files as well as customisations you have made to some of the core config files such as printer.cfg.  
 
 The following core config files can have overrides saved for them: 
 
@@ -31,11 +31,11 @@ The following core config files can have overrides saved for them:
 
 !!! note
 
-    The first step in both a `/usr/data/pellcorp/k1/installer.sh --update` or `/usr/data/pellcorp/k1/installer.sh  --reinstall` is to backup your config-overrides, so that they can be reapplied, but they will be lost if you do a factory reset.
+    The first step in both a `~/pellcorp/installer.sh --update` or `~/pellcorp/installer.sh  --reinstall` is to backup your config-overrides, so that they can be reapplied, but they will be lost if you do a factory reset.
 
 ## Git Backups for Configuration Overrides
 
-If the /usr/data/pellcorp-overrides is a git repo, calling the CONFIG_OVERRIDES or `/usr/data/pellcorp/tools/config-overrides.sh` will generate a new git commit and push it to origin if any files are changed.
+If the ~/pellcorp-overrides is a git repo, calling the CONFIG_OVERRIDES or `~/pellcorp/tools/config-overrides.sh` will generate a new git commit and push it to origin if any files are changed.
 
 ### Create repository
 
@@ -79,14 +79,14 @@ export EMAIL_ADDRESS=me@somewhere.com
 export GITHUB_TOKEN="The token I just created"
 export GITHUB_REPO=pellcorp-overrides
 export GITHUB_BRANCH=main
-/usr/data/pellcorp/tools/config-overrides.sh --repo
+~/pellcorp/tools/config-overrides.sh --repo
 ```
 
 !!! note
 
     The `GITHUB_BRANCH` is optional, if its not specified it will use `main` as the branch.
 
-If you want to setup the repository locally ignoring any local files in `/usr/data/pellcorp-overrides`, you can use the `--clean-repo` argument, instead of the `--repo` argument, which will rebase the local changes on top of the repo.
+If you want to setup the repository locally ignoring any local files in `~/pellcorp-overrides`, you can use the `--clean-repo` argument, instead of the `--repo` argument, which will rebase the local changes on top of the repo.
 
 !!! note
 

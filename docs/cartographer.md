@@ -169,7 +169,7 @@ If you have pellcorp-overrides in github but not stored locally, [you need to re
 To run the script, you must use the following command:
 
 ```
-/usr/data/pellcorp/k1/installer.sh --install cartotouch --mount Mount
+/usr/data/pellcorp/installer.sh --install cartotouch --mount Mount
 ```
 
 !!! warning
@@ -440,7 +440,7 @@ defined for each of the bed type and filament type combinations.
 You need to click RECOVER and then run from ssh:
 
 ```
-/usr/data/cartographer-klipper/install.sh
+~/cartographer-klipper/install.sh
 ```
 
 ### Error during probe mcu identification, check connection
@@ -462,7 +462,7 @@ If you can see the carto in lsusb, then you should try to update the serial (see
 You can run the following command to fix your serial if you forgot to plug your cartographer in during the installation or update:
 
 ```
-/usr/data/pellcorp/k1/installer.sh --fix-serial
+~/pellcorp/installer.sh --fix-serial
 ```
 
 ### Timer too close and microsteps

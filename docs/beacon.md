@@ -139,14 +139,14 @@ sync
 
 ### Config Overrides
 
-If you have pellcorp-overrides in github but not stored locally, [you need to recreate the /usr/data/pellcorp-overrides directory](config_overrides.md#create-local-repo) before running the installer.sh!
+If you have pellcorp-overrides in github but not stored locally, [you need to recreate the ~/pellcorp-overrides directory](config_overrides.md#create-local-repo) before running the installer.sh!
 
 ### Run the installer
 
 To run the script, you must use the following command:
 
 ```
-/usr/data/pellcorp/k1/installer.sh --install beacon --mount Mount
+/usr/data/pellcorp/installer.sh --install beacon --mount Mount
 ```
 
 !!! warning
@@ -291,7 +291,7 @@ Refer to the [Ellis Print Tuning Guide](https://ellis3dp.com/Print-Tuning-Guide/
 You can run the following command to fix your serial if you forgot to plug your beacon in during the installation or update:
 
 ```
-/usr/data/pellcorp/k1/installer.sh --fix-serial
+~/pellcorp/k1/installer.sh --fix-serial
 ```
 
 #### 'BeaconProbe' object has no attribute '_mcu_freq'

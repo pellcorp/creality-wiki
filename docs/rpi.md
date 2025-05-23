@@ -166,11 +166,6 @@ You need to choose a probe one of:
 - BttEddy
 - Eddyng
 
-!!! warning
-
-    Refer to the other guides for probe specific config, but keep in mind that any references to `/usr/data/` in those guides should be replaced
-    with your PI users home directory (so /home/pi, home/orangepi, /home/whatever)
-
 #### Choose a mount
 
 If you have chosen a predefined printer its possible it will require you to choose a mount, just like for K1 series, you can run the installer

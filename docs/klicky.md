@@ -145,7 +145,7 @@ If you have pellcorp-overrides in github but not stored locally, [you need to re
 To run the script, you must specify the probe you want to use.
 
 ```
-/usr/data/pellcorp/k1/installer.sh --install klicky --mount Mount
+/usr/data/pellcorp/installer.sh --install klicky --mount Mount
 ```
 
 !!! warning

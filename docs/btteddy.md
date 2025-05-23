@@ -129,14 +129,14 @@ sync
 
 ### Config Overrides
 
-If you have pellcorp-overrides in github but not stored locally, [you need to recreate the /usr/data/pellcorp-overrides directory](config_overrides.md#create-local-repo) before running the installer.sh!
+If you have pellcorp-overrides in github but not stored locally, [you need to recreate the ~/pellcorp-overrides directory](config_overrides.md#create-local-repo) before running the installer.sh!
 
 ### Run the installer
 
 To run the script, you must specify the probe you want to use.
 
 ```
-/usr/data/pellcorp/k1/installer.sh --install btteddy --mount Mount
+/usr/data/pellcorp/installer.sh --install btteddy --mount Mount
 ```
 
 !!! warning
@@ -373,5 +373,5 @@ If you can see the eddy in lsusb, then you should try to update the serial (see 
 You can run the following command to fix your serial if you forgot to plug your btt eddy in during the installation or update:
 
 ```
-/usr/data/pellcorp/k1/installer.sh --fix-serial
+~/pellcorp/k1/installer.sh --fix-serial
 ```

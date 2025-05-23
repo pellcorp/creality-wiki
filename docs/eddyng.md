@@ -146,7 +146,7 @@ If you have pellcorp-overrides in github but not stored locally, [you need to re
 To run the script, you must specify the probe you want to use.
 
 ```
-/usr/data/pellcorp/k1/installer.sh --install eddyng --mount Mount
+/usr/data/pellcorp/installer.sh --install eddyng --mount Mount
 ```
 
 !!! warning
@@ -178,7 +178,7 @@ To run the script, you must specify the probe you want to use.
 If you would like to switch to the development version of EddyNG, Simple AF maintains a branch of our klipper fork with the latest code from eddyng project develop branch, you can easily switch to this branch with this command:
 
 ```
-/usr/data/pellcorp/k1/installer.sh --klipper-branch eddy_ng_develop
+/usr/data/pellcorp/installer.sh --klipper-branch eddy_ng_develop
 ```
 
 !!! danger
@@ -328,5 +328,5 @@ If you can see the eddy in lsusb, then you should try to update the serial (see 
 You can run the following command to fix your serial if you forgot to plug your btt eddy in during the installation or update:
 
 ```
-/usr/data/pellcorp/k1/installer.sh --fix-serial
+/usr/data/pellcorp/installer.sh --fix-serial
 ```

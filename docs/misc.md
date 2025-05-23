@@ -18,7 +18,7 @@ at least once to get the MCUs updated with the correct firmware.   The use case 
 Simple AF users who have a single printer and perhaps they need to switch back to stock to be able to print a mount or something.
 
 Existing users of Simple AF will have to factory reset at least once to get the correct Creality Stock configuration files correctly
-backed up, but for new users the feature will be available straight away.   If you have a `/usr/data/backups/creality-backup.tar.gz` file,
+backed up, but for new users the feature will be available straight away.   If you have a `~/backups/creality-backup.tar.gz` file,
 you can use the feature.
 
 Its really important before you install Simple AF for the first time that you properly calibrate the printer in stock so that
