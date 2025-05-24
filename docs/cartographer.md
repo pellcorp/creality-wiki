@@ -116,6 +116,9 @@ On a K1M you can use the lidar cable either directly by repinning it, or via the
     
     For Simple AF for RPi, you can use the standard cartographer guide <https://docs.cartographer3d.com/cartographer-probe/firmware/firmware-updating/via-katapult/usb-flash#usb-katapult-updating>
 
+    If you are using a low powered device to run klipper, I strongly recommend using the K1 variant of the cartographer firmware, you can do that 
+    in the firmware script by enabling Advanced Mode and Enabling Creality K Series Firmware.
+
 ## Installation
 
 !!! warn
