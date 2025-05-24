@@ -83,7 +83,11 @@ On a K1M you can use the lidar cable either directly by repinning it, or via the
 
     It is assumed that you have flashed your eddy with the firmware from <https://github.com/pellcorp/klipper/blob/master/fw/K1/btteddy.uf2> **before** starting the installation!!!
     
-    I have put together a guide for flashing the btt eddy [here](btteddy_flashing.md)
+    For K1 Series Simple AF there is a guide for this [here](btteddy_flashing.md)
+    
+    For Simple AF for RPi, you can follow this guide <https://github.com/bigtreetech/Eddy?tab=readme-ov-file#compiling-firmware> but make sure you
+    do **not** switch klipper forks from the default of https://github.com/pellcorp/klipper-rpi.   You can also skip this compilation step and
+    just copy the ~/klipper/fw/k1/btteddy.uf2 file to the Eddy after putting it into boot mode.
 
 ## Installation
 

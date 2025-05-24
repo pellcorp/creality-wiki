@@ -108,11 +108,12 @@ On a K1M you can use the lidar cable either directly by repinning it, or via the
 
 !!! warning
 
-    You must have flashed your cartographer with `CARTOGRAPHER K1 5.1.0` survey firmware **before** starting the installation:
+    For K1 Series Simple AF you must flash your cartographer with `CARTOGRAPHER K1 5.1.0` survey firmware **before** starting the installation:
 
     ![image](assets/images/cartographer_k1_510.png)
 
-    There is a guide for this [here](cartographer_flashing.md)
+    For K1 Series Simple AF there is a guide for this [here](cartographer_flashing.md).
+    For Simple AF for RPi, you can use the standard cartographer guide <https://docs.cartographer3d.com/cartographer-probe/firmware/firmware-updating/via-katapult/usb-flash#usb-katapult-updating>
 
 ## Installation
 
