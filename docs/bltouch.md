@@ -59,6 +59,12 @@ defined for each of the bed type and filament type combinations.
 
 ## Probe Installation
 
+!!! danger
+
+    If you are not using a side mount you **must** verify config changes for bltouch.cfg before **homing your printer**, using **Screws Tilt Calculate** or doing a **bed mesh**!  
+
+    Ignoring these instructions can lead to significant damage to your build plate and/or probe.
+
 ### Mount Options
 
 | Mount       | Printer            | URL                                                                                 | Notes                  |

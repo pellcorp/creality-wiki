@@ -70,7 +70,7 @@ On a K1M you can use the lidar cable either directly by repinning it, or via the
 
 !!! danger
 
-    Please note if you are not using ZeroDotCmd side mount you might have to make post install config changes to eddyng.cfg before **homing your printer**, using **screw tilt adjust** or doing a **bed mesh**!    Ignoring these instructions can lead to significant damage to your build plate and/or probe.
+    If you are not using a side mount you **must** verify config changes for eddyng.cfg before **homing your printer**, using **Screws Tilt Calculate** or doing a **bed mesh**!  
 
     Ignoring these instructions can lead to significant damage to your build plate and/or probe.
 
@@ -87,7 +87,7 @@ On a K1M you can use the lidar cable either directly by repinning it, or via the
 
 !!! warn
 
-    If you use a different probe mount you must make sure the bottom of the btt eddy **coil** is at least 3mm away from the nozzle tip, its better to be further away than closer.
+    Regardless of the mount, you should verify the btt eddy **coil** is at least 3mm away from the nozzle tip, its better to be further away than closer.
     This is not the difference of the bottom of the case to the nozzle, the case is about 1.2mm thick, so this means you want the bottom of the case to be at least 2mm offset, 
     its probably a good idea to look into mounts which do not use a case or a modified case with no bottom.
 
@@ -166,7 +166,8 @@ To run the script, you must specify the probe you want to use.
 
 ### EddyNG Develop Branch
 
-If you would like to switch to the development version of EddyNG, Simple AF maintains a branch of our klipper fork with the latest code from eddyng project develop branch, you can easily switch to this branch with this command:
+Currently the version of eddy on the develop branch is actually for a much older version of the code than master, its left here
+for now for existing develop branch users who had more success with the older code, at some point hopefully this branch will be retired.
 
 ```
 /usr/data/pellcorp/installer.sh --klipper-branch eddy_ng_develop

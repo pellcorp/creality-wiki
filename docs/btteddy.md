@@ -58,7 +58,7 @@ On a K1M you can use the lidar cable either directly by repinning it, or via the
 
 !!! danger
 
-    Please note if you are not using ZeroDotCmd side mount you might have to make post install config changes to btteddy.cfg before **homing your printer**, using **screw tilt adjust** or doing a **bed mesh**!    Ignoring these instructions can lead to significant damage to your build plate and/or probe.
+    If you are not using a side mount you **must** verify config changes for btteddy.cfg before **homing your printer**, using **Screws Tilt Calculate** or doing a **bed mesh**!  
 
     Ignoring these instructions can lead to significant damage to your build plate and/or probe.
 
