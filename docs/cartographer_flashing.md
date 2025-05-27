@@ -6,7 +6,7 @@
 
 !!! warn
 
-    You might corrupt the katapult boot loader trying to use a Linux VM to flash the carto, I strongly recommend a live USB over a VM.
+    You might corrupt the katapult boot loader trying to use a Linux VM or WSL to flash the carto, I strongly recommend a live USB over a VM or WSL!
 
 ## Verify your Cable
 
