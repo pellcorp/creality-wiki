@@ -22,6 +22,10 @@ Please refer to more details, specifically note the fact that the `QUERY_PROBE` 
 
 This guide assumes you have a K1, K1C, K1SE or K1 Max and you are running stock creality firmware 1.3.3.5 or higher, or alternately you are using [my prerooted firmware](https://github.com/pellcorp/creality/wiki/Prerooted-K1-Firmware).   Any other pre-rooted firmware is explicitly not supported and the installer.sh will validate this and refuse to proceed if you try to use it on different firmware.
 
+### Ender 3 V3 KE
+
+This guide assumes you have a stock Ender 3 V3 KE with Nebula Pad with Root enabled.
+
 ### Ender 5 Max
 
 This probe is currently not supported on Ender 5 Max
@@ -72,6 +76,7 @@ defined for each of the bed type and filament type combinations.
 | **Default** | K1, K1C, K1M, K1SE | <https://www.printables.com/model/666186-creality-k1-bltouch-adapter>               |                        |
 | **CrTouch** | K1, K1C, K1M, K1SE | <https://www.printables.com/model/1073375-cr-touch-mount-k1-k1maxk1c-zero-y-offset> | Untested on K1M        |
 | **Default** | Ender 3 V3 SE      | N/A                                                                                 | Default CR Touch Mount |
+| **Default** | Ender 3 V3 KE      | N/A                                                                                 | Default CR Touch Mount |
 
 ### Wiring
 
