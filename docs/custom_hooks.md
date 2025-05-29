@@ -50,22 +50,22 @@ variable_heating_bed: False
 gcode:
 
 
-[gcode_macro SAF_HEATING_NOZZLE_START]
+[gcode_macro _SAF_HEATING_NOZZLE_START]
 gcode:
   SET_GCODE_VARIABLE MACRO=_KNOMI_STATUS VARIABLE=heating_nozzle VALUE=True
 
 
-[gcode_macro SAF_HEATING_NOZZLE_END]
+[gcode_macro _SAF_HEATING_NOZZLE_END]
 gcode:
   SET_GCODE_VARIABLE MACRO=_KNOMI_STATUS VARIABLE=heating_nozzle VALUE=False
 
 
-[gcode_macro SAF_HEATING_BED_START]
+[gcode_macro _SAF_HEATING_BED_START]
 gcode:
   SET_GCODE_VARIABLE MACRO=_KNOMI_STATUS VARIABLE=heating_bed VALUE=True
 
 
-[gcode_macro SAF_HEATING_BED_END]
+[gcode_macro _SAF_HEATING_BED_END]
 gcode:
   SET_GCODE_VARIABLE MACRO=_KNOMI_STATUS VARIABLE=heating_bed VALUE=False
 
