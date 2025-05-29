@@ -22,6 +22,7 @@ The following core config files can have overrides saved for them:
 ## Restrictions
 
 - No support is provided to edit `gcode_macro` or `homing_override` section `gcode` values in **any** config files
+- You can modify **existing** values in existing sections
 - You can **only** add or delete values from **existing** sections in printer.cfg, fan_control.cfg and moonraker.conf, all other files these changes will be ignored.
 - You can **only** add or delete sections in printer.cfg, fan_control.cfg and moonraker.conf, all other files these changes will be ignored.
 
