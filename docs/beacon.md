@@ -18,6 +18,10 @@ This guide assumes you have a K1, K1C, K1SE, K1 Max or Ender 5 Max and you are r
 
 You must be using pre-rooted firmware, which is not available from Creality at the moment, you can get it from <https://github.com/zevaryx/ender-5-max-firmware>
 
+### Ender 3 V3 KE
+
+This probe is not **yet** supported, but is planned. 
+
 ### Simple AF for RPi
 
 See [Simple AF for RPi](rpi.md)
@@ -53,7 +57,7 @@ defined for each of the bed type and filament type combinations.
 
 !!! note
 
-    Applies to K1/K1C/K1SE/K1M printers only
+    This wiring section applies to K1/K1C/K1SE/K1M printers only
 
 On a K1M you can use the lidar cable either directly by repinning it, or via the pass through lidar port on the toolhead.  However you cannot use the lidar port on the toolhead for K1, K1C or K1SE.   The reason this does not work is because for Lidar on the K1M creality actually routes a completely separate USB cable from the mainboard.
 

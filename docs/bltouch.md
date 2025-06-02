@@ -82,7 +82,7 @@ defined for each of the bed type and filament type combinations.
 
 !!! note
 
-    Applies to K1/K1C/K1SE/K1M printers only
+    This wiring section applies to K1/K1C/K1SE/K1M printers only
 
 The probe and the TOUCH port on the Nozzle MCU board both mate with a 5-pin Molex Picoblade connector. A 5-pin cable is needed to connect the probe to the TOUCH port.
 
@@ -120,6 +120,9 @@ You need root access, if you are not already root, then follow the excellent [He
 You must do a factory reset **only** if you have installed Helper Script or Fluidd/Mainsail directly from Creality, otherwise
 you can safely proceed directly to an installation.    If you have setup your printer with stock firmware only it can be quite
 handy to skip a factory reset so that you can use [Switch to Stock](misc.md#switch-to-stock)
+
+Please note that because the Ender 5 Max **and** Ender 3 V3 KE both use the same basic software as the K1 series, the following step
+applies to these printers as well.
 
 ```
 wget --no-check-certificate https://raw.githubusercontent.com/pellcorp/creality/main/k1/services/S58factoryreset -O /tmp/S58factoryreset

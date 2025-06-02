@@ -12,6 +12,10 @@ This guide assumes you have a K1, K1C, K1SE or K1 Max and you are running stock 
 
 This probe is currently not supported on Ender 5 Max
 
+### Ender 3 V3 KE
+
+This probe is currently not supported on Ender 3 V3 KE
+
 ### Simple AF for RPi
 
 See [Simple AF for RPi](rpi.md)
@@ -72,7 +76,7 @@ pin: ^!nozzle_mcu: PA9  # MicroProbe V2 users should use this line to trigger on
 
 !!! note
 
-    Applies to K1/K1C/K1SE/K1M printers only
+    This wiring section applies to K1/K1C/K1SE/K1M printers only
 
 The probe and the TOUCH port on the Nozzle MCU board both mate with a 5-pin Molex Picoblade connector. A 5-pin cable is needed to connect the probe to the TOUCH port.
 

@@ -17,6 +17,10 @@ This guide assumes you have a K1, K1C, K1SE or K1 Max and you are running stock 
 
 This probe is currently not supported on Ender 5 Max
 
+### Ender 3 V3 KE
+
+This probe is currently not supported on Ender 3 V3 KE
+
 ### Simple AF for RPi
 
 See [Simple AF for RPi](rpi.md)
@@ -74,7 +78,7 @@ website.   Also the coordinates will differ depending on how you mount it so som
 
 !!! note
 
-    Applies to K1/K1C/K1SE/K1M printers only
+    This wiring section applies to K1/K1C/K1SE/K1M printers only
 
 You will need to make a cable from the nozzle touch port to the 3 pin port on the klicky.
 
