@@ -18,6 +18,8 @@ This guide assumes you have a K1, K1C, K1SE, K1 Max or Ender 5 Max and you are r
 
 You must be using pre-rooted firmware, which is not available from Creality at the moment, you can get it from <https://github.com/zevaryx/ender-5-max-firmware>
 
+Please note that you will need to change the screen orientation to horizontal, here is a model for that <https://www.printables.com/model/1246910-ender-5-max-screen-bracket>
+
 ### Ender 3 V3 KE
 
 This probe is not **yet** supported, but is planned. 

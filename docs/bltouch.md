@@ -27,6 +27,9 @@ This guide assumes you have a K1, K1C, K1SE or K1 Max and you are running stock 
 This guide assumes you have a stock Ender 3 V3 KE with Nebula Pad with Root enabled, when you get to installation below, you should specify the `--mount Default` to install
 Simple AF on the KE for Cr-Touch.
 
+Please note that you will need to change the screen orientation to horizontal, here is a model for that <https://www.printables.com/model/727362-ender-3-v3-ke-screen-holder-landscape-for-guppyscr>,
+but please do **not** follow the installation instructions on that page, just print the model and remount your screen only!
+
 ### Ender 5 Max
 
 This probe is currently not supported on Ender 5 Max
