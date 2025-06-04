@@ -36,6 +36,7 @@ Testing has been done on an Orange Pi Zero 3 W running a server image available 
     this is a long standing bug (from 2023) that was never fixed and the work around is to run:
     ```
     sudo rm /etc/apt/sources.list.d/docker.list
+    sudo apt-get --allow-releaseinfo-change update
     ```
 
 You must login as the **orangepi** (Default password is `orangepi`) user to perform the installation, you are not allowed to run the installer as root!
