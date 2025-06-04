@@ -68,12 +68,6 @@ otherwise the klicky does not properly line up when attached.
 
 This mount should work for K1/K1C/K1SE and K1M, but only K1 and K1M variants have actually been tested.
 
-#### Bearosaurus
-
-The `Bearosaurus` is a different mount option which is mounted on the rear of the printer toolhead and is more suitable for custom toolheads, users are 
-encouraged to use the `Default` option for stock.   It has so far only been tested on a K1M and the models are yet to be available on a public models
-website.   Also the coordinates will differ depending on how you mount it so some testing to find your ideal location will be required
-
 ### Wiring
 
 !!! note
@@ -144,11 +138,11 @@ git clone https://github.com/pellcorp/creality.git /usr/data/pellcorp
 sync
 ```
 
-### Config Overrides
-
-If you have pellcorp-overrides in github but not stored locally, [you need to recreate the /usr/data/pellcorp-overrides directory](config_overrides.md#create-local-repo) before running the installer.sh!
-
 ### Run the installer
+
+!!! note
+
+    If you have pellcorp-overrides in github but not stored locally, [you need to recreate the ~/pellcorp-overrides directory](config_overrides.md#create-local-repo) before running the installer.sh!
 
 To run the script, you must specify the probe you want to use.
 
