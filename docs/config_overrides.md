@@ -26,6 +26,20 @@ The following core config files can have overrides saved for them:
 - You can **only** add or delete values from **existing** sections in printer.cfg, fan_control.cfg and moonraker.conf, all other files these changes will be ignored.
 - You can **only** add or delete sections in printer.cfg, fan_control.cfg and moonraker.conf, all other files these changes will be ignored.
 
+## GrumpyScreen
+
+There is a subset of settings in guppyscreen.json which will be retained and restored by config overrides, these are curently:
+
+- display_rotate
+- display_brightness
+- invert_z_icon
+- display_sleep_sec 
+- theme 
+- touch_calibration_coeff
+
+There is an issue <https://github.com/pellcorp/creality/issues/736> to support retaining sensor config but its outstanding and not currently supported,
+so any other changes will be overridden.
+
 !!! tip
 
     You should run the CONFIG_OVERRIDES macro every time you make any changes to either your own custom cfg or conf files, or make changes to any core config files.
