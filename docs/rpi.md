@@ -32,6 +32,9 @@ Testing has been done on an Orange Pi Zero 3 W running a server image available 
 
 !!! note
 
+    Please make sure to set `bootlogo=true` in the `orangepiEnv.txt` before booting for the first time so that
+    the boot display works correctly.
+
     When running the `sudo apt-get update` you might get an error complaining about `Err:36 https://repo.huaweicloud.com/docker-ce/linux/debian bullseye/stable arm64 Contents`,
     this is a long standing bug (from 2023) that was never fixed and the work around is to run:
     ```
