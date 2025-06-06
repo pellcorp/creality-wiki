@@ -110,8 +110,6 @@ And then enable the splashscreen in raspi-config!
 The following commands should be executed to get the repo locally:
 
 ```
-sudo apt-get update
-sudo apt-get install --yes git wget
 git clone https://github.com/pellcorp/creality.git ~/pellcorp
 ~/pellcorp/installer.sh --branch jp_simpleaf_rpi
 ```
@@ -124,7 +122,7 @@ The installation command is very similar to K1 series:
 ~/pellcorp/installer.sh --install --printer <ThePrinter> <TheProbe> [--mount <TheMount>]
 ```
 
-- Where `--printer <ThePrinter>` is a predefined or downloaded printer definition
+- Where `--printer <ThePrinter>` is a predefined, downloaded or downloadable printer definition
 - Where `--mount <TheMount>` is only required for some predefined printer definitions
 - Where `<TheProbe>` is one of bltouch, microprobe, cartotouch, beacon, klicky, btteddy or eddyng. 
 
@@ -146,24 +144,22 @@ or you need to provide your own.  The easiest way to find out what predefined pr
 #### Downloaded Printer Definition
 
 Otherwise you will need to download a basic printer config, this definition should **not** include any kind of probe
-configuration, this should just have the basics:
+configuration, this should just have the basics (the installer will automatically remove some problematic definitions):
 
 - extruder
 - heaters
 - steppers
 - the `[printer]` section
-- fans
+- fan
+- fan_generic
 - filament runout
 
-You can download a definition from <https://github.com/pellcorp/klipper-rpi/blob/master/config/> with wget, something like:
-
-```
-wget https://raw.githubusercontent.com/pellcorp/klipper-rpi/refs/heads/master/config/generic-bigtreetech-skr-pico-v1.0.cfg -O ~/bigtreetech-skr-pico-v1.0.cfg
-```
+You can specify a http:// or https:// url for the --printer parameter or you can download the file locally yourself!
 
 !!! note
 
-    For the `--printer` argument specify the path to the file, so `--printer ~/bigtreetech-skr-pico-v1.0.cfg`
+    For the `--printer` argument specify the url of the file, so `--printer https://github.com/pellcorp/klipper-rpi/blob/master/config/printer-creality-ender3-s1plus-2022.cfg`
+    or reference a local file if you did download it locally, so `--printer ~/printer-creality-ender3-s1plus-2022.cfg`
 
 #### Choose a Probe
 
