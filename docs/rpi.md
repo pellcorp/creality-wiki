@@ -84,11 +84,26 @@ a minute and power cycle the pi.
 Then login as the **dietpi** (Default password is `dietpi`) user to start the installation, after logging in, you may be told that first run setup is still going,
 give it a few minutes and you should be greeted with a login prompt.
 
+### Raspberry Pi OS
+
+To get the splash screen working you have to jump through a few hoops including installing:
+
+```
+sudo apt-get install -y plymouth rpd-plym-splash plymouth-themes
+```
+
+And then enable the splashscreen in raspi-config!
+
+!!! note
+
+    Installing rpd-plym-splash actually displays the raspberry pi desktop theme so if you enable the splashscreen after running the installer
+    for the boot-display, you will most likely need to rerun `sudo plymouth-set-default-theme -R simpleaf`
+
+## Installation
+
 !!! danger
 
     Do not try and install Simple AF for RPi on Mainsail OS or onto an existing klipper environment which has been setup using kiuah
-
-## Installation
 
 ### Cloning repo
 
