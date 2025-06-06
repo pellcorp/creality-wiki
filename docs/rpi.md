@@ -141,7 +141,7 @@ or you need to provide your own.  The easiest way to find out what predefined pr
 
     For the `--printer` argument specify the ID of the printer so for instance `--printer creality-ender3-v3-se`
 
-#### Downloaded Printer Definition
+#### Downloaded or Downloadable Printer Definition
 
 Otherwise you will need to download a basic printer config, this definition should **not** include any kind of probe
 configuration, this should just have the basics (the installer will automatically remove some problematic definitions):
