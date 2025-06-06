@@ -147,12 +147,15 @@ Otherwise you will need to download a basic printer config, this definition shou
 configuration, this should just have the basics (the installer will automatically remove some problematic definitions):
 
 - extruder
-- heaters
-- steppers
+- heater_bed
+- heater_fan
+- stepper_x
+- stepper_y
+- stepper_z (or multiple stepper_z for multi-z)
 - the `[printer]` section
 - fan
 - fan_generic
-- filament runout
+- filament_switch_sensor
 
 You can specify a http:// or https:// url for the --printer parameter or you can download the file locally yourself!
 
