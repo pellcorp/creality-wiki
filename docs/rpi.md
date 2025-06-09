@@ -111,7 +111,6 @@ The following commands should be executed to get the repo locally:
 
 ```
 git clone https://github.com/pellcorp/creality.git ~/pellcorp
-~/pellcorp/installer.sh --branch jp_simpleaf_rpi
 ```
 
 ### Installing
