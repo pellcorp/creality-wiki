@@ -2,11 +2,15 @@
 
     THIS IS A RISKY OPERATION YOU CAN BRICK YOUR BEACON
 
-## Creating a Live USB Key
+## Flashing the Beacon
 
-If you do not have a Raspberry PI or an Linux Desktop or Server machine, you can create a live USB and boot into that, the following instructions work fine on a Usb Key, just make sure the USB is at least 8GB in size to allow for installing the packages we need and cloning klipper and cartographer-klipper.
+You will need some kind of linux environment, this can be a Raspberry Pi, desktop Linux or even a Linux Server if you can plug something in via USB.   If you do not have anything like that, you will need to create a Live USB key running Ubuntu 24.04 Desktop edition.
 
-https://ubuntu.com/tutorials/try-ubuntu-before-you-install#1-getting-started
+### Creating a Live USB Key
+
+You should create a live USB with Ubuntu 24.04 Desktop, make sure the USB is at least 8GB in size!
+
+<https://ubuntu.com/tutorials/try-ubuntu-before-you-install#1-getting-started>
 
 ## Install some deps on Ubuntu 
 
