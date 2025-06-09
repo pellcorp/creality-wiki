@@ -4,12 +4,8 @@ Work is being done to bring Simple AF to the RPi (and other rpi like sbc)
 
 !!! warning
 
-    This feature is being actively worked on and has not been officially released so its bound to be broken from time to time as I add
-    required features and sometimes existing stuff breaks, over the next few weeks I hope to polish it sufficiently that it can be 
-    officially released, but we are not there yet.
-
-    Outstanding and solved issues for RPi variant here:
-    <https://github.com/pellcorp/creality/issues/702>
+    This feature is classed as **experimental**, every effort will be made to avoid breaking existing installations, but this
+    cannot be guaranteed.
 
 ## Supported OS
 
