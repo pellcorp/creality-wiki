@@ -80,7 +80,7 @@ On a K1M you can use the lidar cable either directly by repinning it, or via the
 | **Default**     | RevH Standard    | <https://www.printables.com/model/1071641-beacon-probe-mounts-for-creality-k1-series>                                |                                                                 |
 | **BootyGantry** | RevH Standard    | <https://github.com/tlace17/K1-Linear-Rail-Gantry/blob/main/STLs/Probe%20Mounts/Rail%20Carriage%20Carto%20Mount.stl> | This is **not** for low profile                                 |
 | **SkeletorMK7** | RevH Low Profile | <https://www.printables.com/model/833769-the-skeletor-collection-a-creality-k1k1-maxk1c-coo>                         | This is only for the low profile beacon version of the mount!!! |
-| **SimplyHexed** | Right Angle      | <https://www.printables.com/model/1209230-ender-5-max-simply-hexed>                                                  | Ender 5 Max only!                                               |
+| **SimplyHexed** | RevH Standard    | <https://www.printables.com/model/1209230-ender-5-max-simply-hexed>                                                  | Ender 5 Max only!                                               |
 
 ### Nozzle Offset
 
