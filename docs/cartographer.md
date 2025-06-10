@@ -22,7 +22,11 @@ Please note that you will need to change the screen orientation to horizontal, h
 
 ### Ender 3 V3 KE
 
-This probe is not **yet** supported, but is planned.
+This guide assumes you have a stock Ender 3 V3 KE with Nebula Pad with Root enabled, when you get to installation below, you should specify the `--mount Default` to install
+Simple AF on the KE for Cartographer.
+
+Please note that you will need to change the screen orientation to horizontal, here is a model for that <https://www.printables.com/model/727362-ender-3-v3-ke-screen-holder-landscape-for-guppyscr>,
+but please do **not** follow the installation instructions on that page, just print the model and remount your screen only!
 
 ### Simple AF for RPi
 
@@ -83,14 +87,15 @@ On a K1M you can use the lidar cable either directly by repinning it, or via the
 
 | Mount                  | Printer            | Carto        | URL                                                                                                                                                                                              | Notes                                                                 |
 |------------------------|--------------------|--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| **Default**            | K1, K1C, K1M, K1SE | Right Angle  | <https://www.printables.com/model/1037606-cartographer-3d-right-angle-k1-series-mount>                                                                                                           ||
-| **D3vilStock**         | K1, K1C, K1M, K1SE | Flat Pack    | <https://www.printables.com/model/684338-k1-k1max-eddy-current-mount-cartographer>                                                                                                               ||
-| **BootyGantry**        | K1, K1C, K1M, K1SE | Right Angle  | <https://github.com/tlace17/K1-Linear-Rail-Gantry/blob/main/STLs/Probe%20Mounts/Rail%20Carriage%20Carto%20Mount.stl>                                                                             |May require shimming for correct nozzle offset                        |
-| **SkeletorMK7**        | K1, K1C, K1M, K1SE | Low Profile  | <https://www.printables.com/model/833769-the-skeletor-collection-a-creality-k1k1-maxk1c-coo>                                                                                                     |This is only for the low profile cartographer version of the mount!!! |
-| **SkeletorRightAngle** | K1, K1C, K1M, K1SE | Right Angle  | <https://www.printables.com/model/1106768-skeletor-right-angle-cartographer-mount-k1-max-onl><br /><https://www.printables.com/model/1163069-k1max-right-angle-and-standard-format-cartographer> ||
-| **PurcellV5**          | K1, K1C, K1M, K1SE | Right Angle  | <https://www.printables.com/model/1071493-cartographer-probe-side-mount-options-for-creality>                                                                                                    |This also works with V3 and V4, probably also V8                      |
-| **SimplyHexed**        | Ender 5 Max        | Right Angle  | <https://www.printables.com/model/1209230-ender-5-max-simply-hexed>                                                                                                                              |Requires custom shroud                                                |
-| **Default**            | Ender 3 V3 SE      | Right Angle  | <https://www.printables.com/model/732262-ender-3-v3-ke-beaconcartographer-mount>                                                                                                                 ||
+| **Default**            | K1, K1C, K1M, K1SE | Right Angle  | <https://www.printables.com/model/1037606-cartographer-3d-right-angle-k1-series-mount>                                                                                                           |                                                                       |
+| **D3vilStock**         | K1, K1C, K1M, K1SE | Flat Pack    | <https://www.printables.com/model/684338-k1-k1max-eddy-current-mount-cartographer>                                                                                                               |                                                                       |
+| **BootyGantry**        | K1, K1C, K1M, K1SE | Right Angle  | <https://github.com/tlace17/K1-Linear-Rail-Gantry/blob/main/STLs/Probe%20Mounts/Rail%20Carriage%20Carto%20Mount.stl>                                                                             | May require shimming for correct nozzle offset                        |
+| **SkeletorMK7**        | K1, K1C, K1M, K1SE | Low Profile  | <https://www.printables.com/model/833769-the-skeletor-collection-a-creality-k1k1-maxk1c-coo>                                                                                                     | This is only for the low profile cartographer version of the mount!!! |
+| **SkeletorRightAngle** | K1, K1C, K1M, K1SE | Right Angle  | <https://www.printables.com/model/1106768-skeletor-right-angle-cartographer-mount-k1-max-onl><br /><https://www.printables.com/model/1163069-k1max-right-angle-and-standard-format-cartographer> |                                                                       |
+| **PurcellV5**          | K1, K1C, K1M, K1SE | Right Angle  | <https://www.printables.com/model/1071493-cartographer-probe-side-mount-options-for-creality>                                                                                                    | This also works with V3 and V4, probably also V8                      |
+| **SimplyHexed**        | Ender 5 Max        | Right Angle  | <https://www.printables.com/model/1209230-ender-5-max-simply-hexed>                                                                                                                              | Requires custom shroud                                                |
+| **Default**            | Ender 3 V3 SE      | Right Angle  | <https://www.printables.com/model/732262-ender-3-v3-ke-beaconcartographer-mount>                                                                                                                 | Will require shimming                                                 |
+| **Default**            | Ender 3 V3 KE      | Right Angle  | <https://www.printables.com/model/732262-ender-3-v3-ke-beaconcartographer-mount>                                                                                                                 | Might require shimming depending on the nozzle you use                |
 
 ### Nozzle Offset
 
