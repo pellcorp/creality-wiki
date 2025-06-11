@@ -86,7 +86,7 @@ Bus 001 Device 067: ID 1d50:614e OpenMoko, Inc.
 ```
 CARTO_DEV=$(ls /dev/serial/by-id/usb-* | grep "IDM\|Cartographer" | head -1)
 cd $HOME/klipper/scripts
-sudo $HOME/klippy-env/bin/python -c "import flash_usb as u; u.enter_bootloader('$CARTO_DEV')"
+sudo -E $HOME/klippy-env/bin/python -c "import flash_usb as u; u.enter_bootloader('$CARTO_DEV')"
 ```
 
 **IMPORTANT:** If you get a message like `ls: cannot access '/dev/serial/by-id/usb-Cartographer': No such file or directory`, it means you forgot the `*` in the command above or else your carto cable is incorrectly pinned
@@ -104,7 +104,7 @@ Entering bootloader on /dev/serial/by-id/usb-Cartographer_614e_16000C000F4330425
 
 ```
 CATAPULT_DEV=$(ls /dev/serial/by-id/usb-katapult*)
-sudo $HOME/klippy-env/bin/python $HOME/klipper/lib/canboot/flash_can.py -f $HOME/cartographer-klipper/firmware/v2-v3/survey/5.1.0/Survey_Cartographer_K1_USB_8kib_offset.bin -d $CATAPULT_DEV
+sudo -E $HOME/klippy-env/bin/python $HOME/klipper/lib/canboot/flash_can.py -f $HOME/cartographer-klipper/firmware/v2-v3/survey/5.1.0/Survey_Cartographer_K1_USB_8kib_offset.bin -d $CATAPULT_DEV
 ```
 
 You should see output this this:
