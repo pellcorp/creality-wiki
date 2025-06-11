@@ -91,7 +91,7 @@ On a K1M you can use the lidar cable either directly by repinning it, or via the
 
 !!! warning
 
-    It is vital that you verify the model to nozzle tip distance is within the valid range of 2.6 to 3mm, you can use this simple tool to verify the range:
+    It is vital that you verify the coil to nozzle tip distance is within the valid range of 2.6 to 3mm, you can use this simple tool to verify the range:
         <https://www.printables.com/model/1325363-cartographer-and-beacon-z-offset-goldilocks-tool>
     
     Just be sure to use digital calipers to verify the print printed with the correct size before relying on it, if you have trouble with 
