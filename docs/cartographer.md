@@ -249,10 +249,6 @@ redoing these calibrations:
 - `[axis_twist_compensation]`
 - `[bed_mesh]`
 
-!!! warn
-
-    Please do not remove the `[scanner]` section defined at the end of printer.cfg above the save config section.
-
 #### Enable Touch Mode
 
 To be able to set up the printer for cartographer with touch mode for printing you need to make sure the
