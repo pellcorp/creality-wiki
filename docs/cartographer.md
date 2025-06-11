@@ -92,7 +92,7 @@ On a K1M you can use the lidar cable either directly by repinning it, or via the
 | **BootyGantry**        | K1, K1C, K1M, K1SE | Right Angle                  | <https://github.com/tlace17/K1-Linear-Rail-Gantry/blob/main/STLs/Probe%20Mounts/Rail%20Carriage%20Carto%20Mount.stl>                                                                             | May require shimming for correct nozzle offset                          |
 | **SkeletorMK7**        | K1, K1C, K1M, K1SE | Low Profile                  | <https://www.printables.com/model/833769-the-skeletor-collection-a-creality-k1k1-maxk1c-coo>                                                                                                     | This is only for the low profile cartographer version of the mount!!!   |
 | **SkeletorRightAngle** | K1, K1C, K1M, K1SE | Right Angle<br />or Standard | <https://www.printables.com/model/1106768-skeletor-right-angle-cartographer-mount-k1-max-onl><br /><https://www.printables.com/model/1163069-k1max-right-angle-and-standard-format-cartographer> | The second mount url specifically mentions Standard Cartographer        |
-| **PurcellV5**          | K1, K1C, K1M, K1SE | Right Angle                  | <https://www.printables.com/model/1071493-cartographer-probe-side-mount-options-for-creality>                                                                                                    | This also works with V3 and V4, probably also V8                        |
+| **PurcellV5**          | K1, K1C, K1M, K1SE | Right Angle                  | <https://www.printables.com/model/1071493-cartographer-probe-side-mount-options-for-creality><br /><https://www.printables.com/model/1239076-creality-k1-cartographer-right-angle-mount>         | This also works with V3 and V4, probably also V8                        |
 | **SimplyHexed**        | Ender 5 Max        | Right Angle                  | <https://www.printables.com/model/1209230-ender-5-max-simply-hexed>                                                                                                                              | Requires custom shroud                                                  |
 | **Default**            | Ender 3 V3 SE      | Right Angle                  | <https://www.printables.com/model/732262-ender-3-v3-ke-beaconcartographer-mount>                                                                                                                 | Will probably require shimming especially if you ugprade to a k1 hotend |
 | **Default**            | Ender 3 V3 KE      | Right Angle                  | <https://www.printables.com/model/732262-ender-3-v3-ke-beaconcartographer-mount>                                                                                                                 | Might require shimming depending on the hotend / nozzle you use         |
@@ -241,7 +241,7 @@ It is important to make sure you have a way to [emergency factory reset](misc.md
     - [Cartographer Threshold Scan](#cartographer-threshold-scan)
     - [Cartographer Touch Calibration](#cartographer-touch-calibration)
 
-If you are running calibration for a printer that has previously been calibrated, the following SAVE_CONFIG sections **must** be removed before
+If you are running calibration for a printer that has previously been calibrated, the following SAVE_CONFIG sections **must** be removed from the bottom of the printer.cfg (if they exist) before
 redoing these calibrations:
 
 - `[scanner model default]`
