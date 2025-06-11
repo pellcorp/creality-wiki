@@ -105,7 +105,7 @@ On a K1M you can use the lidar cable either directly by repinning it, or via the
         <https://www.printables.com/model/1247533-carto-height-gauge>
     
     Just be sure to use digital calipers to verify the print printed with the correct size before relying on it, if you have trouble with 
-    your z not being always entirely accurate consider printing the model on its size.
+    your z not being always entirely accurate consider printing the model on its side.
 
     Alternatively you can try the tool from cartographer3d.com:
         <https://www.printables.com/model/1060868-cartographer-probe-nozzle-offset-tool>
