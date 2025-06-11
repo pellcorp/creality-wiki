@@ -100,6 +100,7 @@ On a K1M you can use the lidar cable either directly by repinning it, or via the
 ## Beacon Firmware
 
 !!! warning
+
     You must have flashed your beacon with the latest beacon firmware (2.1.0 currently) **before** starting the installation
 
     For K1 Series Simple AF [there is a guide](beacon_flashing.md).
