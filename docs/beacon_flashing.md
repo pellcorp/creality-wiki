@@ -37,7 +37,7 @@ $HOME/klippy-env/bin/pip3 install -r $HOME/klipper/scripts/klippy-requirements.t
 
 ```
 cd $HOME/beacon-klipper
-sudo ./install.sh
+sudo -E ./install.sh
 ```
 
 ![image](assets/images/beacon_dfu.png)
