@@ -85,7 +85,7 @@ On a K1M you can use the lidar cable either directly by repinning it, or via the
 | **BootyGantry** | K1, K1C, K1M, K1SE | RevH Standard    | <https://github.com/tlace17/K1-Linear-Rail-Gantry/blob/main/STLs/Probe%20Mounts/Rail%20Carriage%20Carto%20Mount.stl> | This is **not** for low profile                                 |
 | **SkeletorMK7** | K1, K1C, K1M, K1SE | RevH Low Profile | <https://www.printables.com/model/833769-the-skeletor-collection-a-creality-k1k1-maxk1c-coo>                         | This is only for the low profile beacon version of the mount!!! |
 | **SimplyHexed** | Ender 5 Max        | RevH Standard    | <https://www.printables.com/model/1209230-ender-5-max-simply-hexed>                                                  | Ender 5 Max only!                                               |
-| **Default**     | Ender 3 V3 KE      | RevH Standard    | <https://www.printables.com/model/732262-ender-3-v3-ke-beaconcartographer-mount>                                     | Might require shimming depending on the nozzle you use          |
+| **Default**     | Ender 3 V3 KE      | RevH Standard    | <https://www.printables.com/model/732262-ender-3-v3-ke-beaconcartographer-mount>                                     | Might require shimming depending on the hotend / nozzle you use |
 
 ### Nozzle Offset
 
