@@ -12,7 +12,7 @@ It is also possible to install mobileraker companion on a separate device
 
 ## Switch to Stock
 
-A recent feature allows you to quickly switch back to Stock Creality Klipper after installing Simple AF, and being able to
+A recent feature allows you to quickly switch back to Stock Creality Klipper (aka Crapper) after installing Simple AF, and being able to
 quickly restore Simple AF without having to do a factory reset.  All that will be required after each switch is to power cycle
 at least once to get the MCUs updated with the correct firmware.   The use case for this feature is mostly about supporting
 Simple AF users who have a single printer and perhaps they need to switch back to stock to be able to print a mount or something.
