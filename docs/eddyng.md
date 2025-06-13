@@ -168,24 +168,6 @@ To run the script, you must specify the probe you want to use.
 
 ## Post Installation
 
-### EddyNG Develop Branch
-
-Currently the version of eddy on the develop branch is actually for a much older version of the code than master, its left here
-for now for existing develop branch users who had more success with the older code, at some point hopefully this branch will be retired.
-
-```
-/usr/data/pellcorp/installer.sh --klipper-branch eddy_ng_develop
-```
-
-!!! danger
-
-    You must make sure you flash your eddy with the `fw/K1/btteddy.uf2` from this `eddy_ng_develop` when its updated!!!
-
-    Please note the version of Eddy MCU should look like this when on develop branch ![image](assets/images/eddy_ng_develop_mcu.png)
-    
-    You can download the current btteddy.uf2 for the eddy_ng_develop from here:
-    <https://raw.githubusercontent.com/pellcorp/klipper/eddy_ng_develop/fw/K1/btteddy.uf2>
-
 ### MCU Firmware updates are pending
 
 At the end of the installer process if you get this message:
