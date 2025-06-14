@@ -14,7 +14,11 @@ This probe is currently not supported on Ender 5 Max
 
 ### Ender 3 V3 KE
 
-This probe is currently not supported on Ender 3 V3 KE
+This guide assumes you have a stock Ender 3 V3 KE with Nebula Pad with Root enabled, when you get to installation below, you should specify the `--mount Default` to install
+Simple AF on the KE for Cartographer.
+
+Please note that you will need to change the screen orientation to horizontal, here is a model for that <https://www.printables.com/model/727362-ender-3-v3-ke-screen-holder-landscape-for-guppyscr>,
+but please do **not** follow the installation instructions on that page, just print the model and remount your screen only!
 
 ### Simple AF for RPi
 
@@ -59,10 +63,11 @@ defined for each of the bed type and filament type combinations.
 
 ### Mount Options
 
-| Mount           | URL                                                                                                                       |
-|-----------------|---------------------------------------------------------------------------------------------------------------------------|
-| **Default**     | <https://www.printables.com/model/867527-k1-biqu-microprobe-mount-remix>                                                  |
-| **BootyGantry** | <https://github.com/tlace17/K1-Linear-Rail-Gantry/blob/main/STLs/Probe%20Mounts/Rail%20Carriage%20Microprobe%20Mount.stl> |
+| Mount           | Printer            | URL                                                                                                                       | Notes                            |
+|-----------------|--------------------|---------------------------------------------------------------------------------------------------------------------------|----------------------------------|
+| **Default**     | K1, K1C, K1M, K1SE | <https://www.printables.com/model/867527-k1-biqu-microprobe-mount-remix>                                                  |                                  |
+| **BootyGantry** | K1, K1C, K1M, K1SE | <https://github.com/tlace17/K1-Linear-Rail-Gantry/blob/main/STLs/Probe%20Mounts/Rail%20Carriage%20Microprobe%20Mount.stl> |                                  |
+| **Default**     | Ender 3 K3 KE      | <https://www.printables.com/model/1024825-biqu-btt-microprobe-to-crtouch-adapter>                                         | Experimental and untested as yet |
 
 **Important:** All mount options assume a V2 microprobe is being used, after the installation you may need to modify `microprobe.cfg` to 
 switch the pin config:
