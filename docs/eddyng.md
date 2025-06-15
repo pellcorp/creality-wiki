@@ -94,6 +94,8 @@ On a K1M you can use the lidar cable either directly by repinning it, or via the
     Regardless of the mount, you should verify the btt eddy **coil** is at least 3mm away from the nozzle tip, its better to be further away than closer.
     This is not the difference of the bottom of the case to the nozzle, the case is about 1.2mm thick, so this means you want the bottom of the case to be at least 2mm offset, 
     its probably a good idea to look into mounts which do not use a case or a modified case with no bottom.
+    
+    You can try this tool <https://www.printables.com/model/1277844-btt-eddy-and-eddy-ng-setup-helpers>
 
 ## BTT Eddy Firmware
 
