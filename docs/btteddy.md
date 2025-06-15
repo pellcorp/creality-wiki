@@ -79,7 +79,9 @@ On a K1M you can use the lidar cable either directly by repinning it, or via the
 
 !!! warn
 
-    If you use a different probe mount you must make sure the bottom of the btt eddy is between 2.5mm and 3mm from the tip of the nozzle, so if the nozzle is touching the bed (when both are cold), the bottom of the eddy should be at least 2.5mm above the bed and no more than 3mm.
+    If you use a different probe mount you must make sure the bottom of the btt eddy is between 2.6mm and 3mm from the tip of the nozzle, so if the nozzle is touching the bed (when both are cold), the bottom of the eddy should be at least 2.5mm above the bed and no more than 3mm.
+
+    You can try this tool <https://www.printables.com/model/1277844-btt-eddy-and-eddy-ng-setup-helpers>
 
 ## BTT Eddy Firmware
 
