@@ -87,7 +87,8 @@ give it a few minutes and you should be greeted with a login prompt.
 To get the splash screen working you have to jump through a few hoops including installing:
 
 ```
-sudo apt-get install -y plymouth rpd-plym-splash plymouth-themes
+sudo apt-get update
+sudo apt-get install -y git plymouth rpd-plym-splash plymouth-themes
 ```
 
 And then enable the splashscreen in raspi-config!
@@ -108,6 +109,8 @@ And then enable the splashscreen in raspi-config!
 The following commands should be executed to get the repo locally:
 
 ```
+sudo apt-get update
+sudo apt-get install -y git
 git clone https://github.com/pellcorp/creality.git ~/pellcorp
 ```
 
