@@ -22,8 +22,10 @@ You must login as the **pi** (Default password is `raspberry`) user to perform t
 
 ### Orange Pi OS
 
-OrangePi OS (based on Arch) **is not supported** and will fail to install because the installer assumes a debian based OS, this is unlikely
+Please note that OrangePi OS (based on Arch) **is not supported** and will fail to install because the installer assumes a debian based OS, this is unlikely
 to change anytime soon.
+
+### Orange Pi Debian OS
 
 Testing has been done on an Orange Pi Zero 3 W running a server image available from:
 <https://drive.google.com/drive/folders/10zlO-0mMz-fqRQOKAOWX-mQA_UbN_C1n>
@@ -82,6 +84,20 @@ a minute and power cycle the pi.
 Then login as the **dietpi** (Default password is `dietpi`) user to start the installation, after logging in, you may be told that first run setup is still going,
 give it a few minutes and you should be greeted with a login prompt.
 
+### Arbian
+
+TBD
+
+### BTT OS
+
+TBD
+
+## Installation
+
+!!! danger
+
+    Do not try and install Simple AF for RPi on Mainsail OS or onto an existing klipper environment which has been setup using kiuah
+
 ### Raspberry Pi OS
 
 To get the splash screen working you have to jump through a few hoops including installing:
@@ -97,12 +113,6 @@ And then enable the splashscreen in raspi-config!
 
     Installing rpd-plym-splash actually displays the raspberry pi desktop theme so if you enable the splashscreen after running the installer
     for the boot-display, you will most likely need to rerun `sudo plymouth-set-default-theme -R simpleaf`
-
-## Installation
-
-!!! danger
-
-    Do not try and install Simple AF for RPi on Mainsail OS or onto an existing klipper environment which has been setup using kiuah
 
 ### Cloning repo
 
