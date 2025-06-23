@@ -11,7 +11,7 @@ Orange Pis, etc.
 
 ## Supported OS
 
-Simple AF is best supported by RPi or OrangePi running a version of debian 11 or 12.
+Simple AF is best supported by RPi or OrangePi running a version of debian 11 or 12 (which includes Orange Pi Debian, Rasbian, Arbian, whatever BTT is doing, etc).
 
 ### Raspberry Pi OS
 
@@ -88,7 +88,7 @@ To get the splash screen working you have to jump through a few hoops including 
 
 ```
 sudo apt-get update
-sudo apt-get install -y git plymouth rpd-plym-splash plymouth-themes
+sudo apt-get install -y plymouth rpd-plym-splash plymouth-themes
 ```
 
 And then enable the splashscreen in raspi-config!
