@@ -84,13 +84,13 @@ a minute and power cycle the pi.
 Then login as the **dietpi** (Default password is `dietpi`) user to start the installation, after logging in, you may be told that first run setup is still going,
 give it a few minutes and you should be greeted with a login prompt.
 
-### Arbian
+### Armbian
 
-TBD
+Should work fine but no formal testing has been performed as yet!
 
 ### BTT OS
 
-TBD
+Should work fine but no formal testing has been performed as yet!
 
 ## Installation
 
