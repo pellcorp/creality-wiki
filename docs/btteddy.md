@@ -200,6 +200,11 @@ It is important to make sure you have a way to [emergency factory reset](misc.md
 - If you get the message: `INFO - USB Key was recognised and mounted correctly (/tmp/udisk/sda1)`, your USB thumb drive (aka USB key) is perfect to use for a factory reset.
 - If you get no message at all before the script ends (after 60 seconds), your USB thumb drive (aka USB key) is defective.   You can check the `messages` file in the logs section of your UI to get more details about why the usb key could not be mounted!
 
+### Timer too close and microsteps
+
+For btteddy you cannot use more than `microsteps: 32`, the MCU cannot handle both more microsteps and eddy, it puts too much pressure on the system and it cause stuttering during bed meshes, it is also been known to cause klipper to crash
+during repeated bed meshes.
+
 ### Calibration
 
 !!! danger

@@ -222,6 +222,10 @@ It is important to make sure you have a way to [emergency factory reset](misc.md
 
     If you have plugged your cartographer into the front usb port, you are going to have to temporarily remove the cartographer from the front usb slot and replace it with your USB thumb drive (aka USB key), after you have finished verifying the USB thumb drive (aka USB key) can be used in an emergency, you can replace the cartographer into the front usb slot and restart klipper or power cycle your printer.
 
+### Timer too close and microsteps
+
+For cartographer you cannot use more than `microsteps: 32`, the MCU cannot handle high microsteps and cartographer, it puts too much pressure on the system and it will cause stuttering during bed meshes.
+
 ### Calibration
 
 !!! warning
@@ -452,7 +456,3 @@ You can run the following command to fix your serial if you forgot to plug your 
 ```
 ~/pellcorp/installer.sh --fix-serial
 ```
-
-### Timer too close and microsteps
-
-For cartographer you cannot use more than `microsteps: 32`, the MCU cannot handle high microsteps and cartographer, it puts too much pressure on the system and it will cause stuttering during bed meshes.
