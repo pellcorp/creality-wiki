@@ -317,21 +317,6 @@ macro to do this.
 
 **Source:** <https://docs.cartographer3d.com/cartographer-probe/survey-touch>
 
-### Axis Twist Compensation
-
-Next it is highly recommended to perform axis twist compensation calibration **if you are using a rear mount** before doing anything else, this will affect the quality of
-your bed mesh, so best to do it before.
-
-1. Home All (`G28`)
-2. Run `AXIS_TWIST_COMPENSATION_CALIBRATE` The calibration wizard will prompt you to measure the probe Z offset at a few points along the bed
-<br />Upon completion *`SAVE_CONFIG`*
-
-!!! warn
-
-    Do not use a metal feeler gauge for this step, it could interfere with calibration!!!
-
-**Source:** <https://www.klipper3d.org/Axis_Twist_Compensation.html>
-
 #### Pid Tuning and Input Shaping
 
 At least PID tuning (bed and extruder) and input shaping is required for acceptable printing.  If you try and print after running the installer.sh and a power cycle but before any calibration you will most likely have horrendous quality, the worst you have ever seen on the k1.   After PID tuning and input shaping you should see the same kind of quality as you get with stock k1 + input shaper fix.
@@ -362,6 +347,21 @@ There is no default configuration for input shaping so it is essentially disable
 You can use the `SHAPER_CALIBRATE` macro to run input shaping, just be sure to `SAVE CONFIG` at the end, to choose the automatically selected shaper config, be aware though that the shaper chosen might be sub-optimal due to a slight difference in vibrations between two options.  So you should probably review the output and potentially choose an alternative if it gives you higher recommended max acceleration for minimal increase in vibration.
 
 [Input Shaper Auto Calibration](https://www.klipper3d.org/Measuring_Resonances.html#input-shaper-auto-calibration)
+
+### Axis Twist Compensation
+
+Next it is highly recommended to perform axis twist compensation calibration **if you are using a rear mount** before doing anything else, this will affect the quality of
+your bed mesh, so best to do it before.
+
+1. Home All (`G28`)
+2. Run `AXIS_TWIST_COMPENSATION_CALIBRATE` The calibration wizard will prompt you to measure the probe Z offset at a few points along the bed
+   <br />Upon completion *`SAVE_CONFIG`*
+
+!!! warn
+
+    Do not use a metal feeler gauge for this step, it could interfere with calibration!!!
+
+**Source:** <https://www.klipper3d.org/Axis_Twist_Compensation.html>
 
 ### First Print
 

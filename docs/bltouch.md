@@ -204,6 +204,10 @@ It is important to make sure you have a way to [emergency factory reset](misc.md
     You should verify your USB thumb drive (aka USB key) often just to make sure you have something if you need to unbrick your printer, simply type `CHECK_USB_KEY` or hit the button in Fluidd / Mainsail
     The USB key should be FAT32 formatted and be no larger than 32GB!
 
+### Timer too close and microsteps
+
+For bltouch, etc you cannot use more than `microsteps: 64`
+
 ### Calibration
 
 For the bltouch/3dtouch/crtouch it is **extremely** important to do the PROBE_CALIBRATE step to configure your z-offset, regardless of what model you have used to mount the probe!
@@ -218,21 +222,6 @@ For the bltouch/3dtouch/crtouch it is **extremely** important to do the PROBE_CA
 !!! note
 
     The default z-offset for BLTouch, 3dTouch and CrTouch is 0, so your prints won't stick without doing this step.
-
-### Timer too close and microsteps
-
-For bltouch, etc you cannot use more than `microsteps: 64`
-
-### Axis Twist Compensation
-
-Next it is highly recommended to perform axis twist compensation calibration before doing anything else, this will affect the quality of
-your bed mesh, so best to do it before.
-
-1. Home All (`G28`)
-2. Run `AXIS_TWIST_COMPENSATION_CALIBRATE`  The calibration wizard will prompt you to measure the probe Z offset at a few points along the bed
-<br />Upon completion *`SAVE_CONFIG`*
-
-**Source:** <https://www.klipper3d.org/Axis_Twist_Compensation.html>
 
 #### Pid Tuning and Input Shaping
 
@@ -264,6 +253,17 @@ There is no default configuration for input shaping so it is essentially disable
 You can use the `SHAPER_CALIBRATE` macro to run input shaping, just be sure to `SAVE CONFIG` at the end, to choose the automatically selected shaper config, be aware though that the shaper chosen might be sub-optimal due to a slight difference in vibrations between two options.  So you should probably review the output and potentially choose an alternative if it gives you higher recommended max acceleration for minimal increase in vibration.
 
 [Input Shaper Auto Calibration](https://www.klipper3d.org/Measuring_Resonances.html#input-shaper-auto-calibration)
+
+### Axis Twist Compensation
+
+Next it is highly recommended to perform axis twist compensation calibration before doing anything else, this will affect the quality of
+your bed mesh, so best to do it before.
+
+1. Home All (`G28`)
+2. Run `AXIS_TWIST_COMPENSATION_CALIBRATE`  The calibration wizard will prompt you to measure the probe Z offset at a few points along the bed
+   <br />Upon completion *`SAVE_CONFIG`*
+
+**Source:** <https://www.klipper3d.org/Axis_Twist_Compensation.html>
 
 ### First Print
 
