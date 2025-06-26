@@ -205,6 +205,15 @@ For microprobe, etc you cannot use more than `microsteps: 64`.
 
 ### Calibration
 
+!!! warning
+
+    The following calibration steps are required to setup a new printer:
+
+    - [Probe Calibrate](#probe-calibrate)
+    - [PID Tuning and Input Shaping](#pid-tuning-and-input-shaping)
+
+#### Probe Calibrate 
+
 ![image](assets/images/probe_calibrate.png)
 
 1. Home All (`G28`)

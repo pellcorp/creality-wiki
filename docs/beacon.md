@@ -210,6 +210,15 @@ during repeated bed meshes.
 
 ### Calibration
 
+!!! warning
+
+    The following calibration steps are required to setup a new printer:
+
+    - [Beacon Calibrate](#beacon-calibrate)
+    - [PID Tuning and Input Shaping](#pid-tuning-and-input-shaping)
+
+#### Beacon Calibrate
+
 It is strongly recommended to disable the camera for these calibration steps, just use the `STOP_CAMERA` macro to do this.
 
 1. Run the `STOP_CAMERA` macro to stop the camera 

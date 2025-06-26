@@ -230,12 +230,13 @@ For cartographer you cannot use more than `microsteps: 32`, the MCU cannot handl
 
 !!! warning
 
-    There are four different calibration steps required to setup a new printer, you must complete them all:
+    The following calibration steps are required to setup a new printer:
 
     - [Enable Touch Mode](#enable-touch-mode)
     - [Manual Cartographer Calibrate](#manual-cartographer-calibrate)
     - [Cartographer Threshold Scan](#cartographer-threshold-scan)
     - [Cartographer Touch Calibration](#cartographer-touch-calibration)
+    - [PID Tuning and Input Shaping](#pid-tuning-and-input-shaping)
 
 If you are running calibration for a printer that has previously been calibrated, the following SAVE_CONFIG sections **must** be removed from the bottom of the printer.cfg (if they exist) before
 redoing these calibrations:

@@ -212,6 +212,15 @@ during repeated bed meshes.
 
 ### Calibration
 
+!!! warning
+
+    The following calibration steps are required to setup a new printer:
+
+    - [Probe Eddy NG Setup](#probe-eddy-ng-setup)
+    - [PID Tuning and Input Shaping](#pid-tuning-and-input-shaping)
+
+#### Probe Eddy NG Setup
+
 Calibrating the eddy should be as easy as running the `PROBE_EDDY_NG_SETUP`, first step is to home X and Y:
 
 1. Home XY (`G28 X Y`)

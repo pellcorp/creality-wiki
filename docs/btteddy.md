@@ -207,17 +207,18 @@ during repeated bed meshes.
 
 ### Calibration
 
-!!! danger
-    
-    It is extremely important that you perform the following calibrations while the btt eddy is cool, if you calibrate the eddy hot, you will experience `Error during homing z: Eddy current sensor error` errors while homing and performing bed mesh if the btt is significantly cooler than it was while doing initial calibration.   
-
 !!! warning
 
-    There are three different calibration steps required to setup a new printer, you must complete them all:
+    The following calibration steps are required to setup a new printer:
 
     - [Drive Current Calibration](#drive-current-calibration)
     - [Mapping Eddy Readings To Nozzle Heights](#mapping-eddy-readings-to-nozzle-heights)
     - [Temperature Compensation Calibration](#temperature-compensation-calibration)
+    - [PID Tuning and Input Shaping](#pid-tuning-and-input-shaping)
+
+!!! danger
+
+    It is extremely important that you perform the following calibrations while the btt eddy is cool, if you calibrate the eddy hot, you will experience `Error during homing z: Eddy current sensor error` errors while homing and performing bed mesh if the btt is significantly cooler than it was while doing initial calibration.   
 
 #### Drive Current Calibration
 

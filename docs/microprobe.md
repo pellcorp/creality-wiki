@@ -202,6 +202,15 @@ For microprobe you cannot use more than `microsteps: 64`
 
 ### Calibration
 
+!!! warning
+
+    The following calibration steps are required to setup a new printer:
+
+    - [Probe Calibrate](#probe-calibrate)
+    - [PID Tuning and Input Shaping](#pid-tuning-and-input-shaping)
+
+#### Probe Calibrate
+
 For the microprobe it is **extremely** important to do the PROBE_CALIBRATE step to configure your z-offset, regardless of what model you have used to mount the probe!
 
 ![image](assets/images/probe_calibrate.png)
