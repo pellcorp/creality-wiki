@@ -199,6 +199,10 @@ flip the `variable_auto_docking` to `True`, save and restart and klicky will aut
 It's really important to verify that the klicky actually will work as an endstop for homing, so initiate homing and then use your finger to activate the microswitch
 on the bottom of the klicky and make sure homing stops, if it does not stop you need to immediately use the e-stop button in your UI or Grumpyscreen or hit that power button 
 
+### Timer too close and microsteps
+
+For microprobe, etc you cannot use more than `microsteps: 64`.
+
 ### Calibration
 
 ![image](assets/images/probe_calibrate.png)
@@ -210,25 +214,13 @@ on the bottom of the klicky and make sure homing stops, if it does not stop you 
 5. Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
 <br />Upon completion *`SAVE_CONFIG`*
 
-### First Print
-
-For this first print you can go and do the tuning first (PID Tuning, etc) or you can go ahead and optimise your probe z offset using baby stepping.
-
-In fluidd the save button after you finish or cancel your print can be a bit hard to find, look for
-
-![image](https://github.com/user-attachments/assets/2af8d5cb-091e-40df-a38c-25d43b2e6647)
-
-### Timer too close and microsteps
-
-For microprobe, etc you cannot use more than `microsteps: 64`.
-
-### Tuning
+#### Pid Tuning and Input Shaping
 
 At least PID tuning (bed and extruder) and input shaping is required for acceptable printing.  If you try and print after running the installer.sh and a power cycle but before any calibration you will most likely have horrendous quality, the worst you have ever seen on the k1.   After PID tuning and input shaping you should see the same kind of quality as you get with stock k1 + input shaper fix.
 
-#### Quick Start
+!!! note
 
-You can use the QUICK_START Macro to do Bed and Nozzle PID Tuning and Input Shaping.
+    You can use the QUICK_START Macro to automatically complete Bed and Nozzle PID Tuning and Input Shaping Automatically.
 
 #### Pid Tuning
 
@@ -252,6 +244,15 @@ There is no default configuration for input shaping so it is essentially disable
 You can use the `SHAPER_CALIBRATE` macro to run input shaping, just be sure to `SAVE CONFIG` at the end, to choose the automatically selected shaper config, be aware though that the shaper chosen might be sub-optimal due to a slight difference in vibrations between two options.  So you should probably review the output and potentially choose an alternative if it gives you higher recommended max acceleration for minimal increase in vibration.
 
 [Input Shaper Auto Calibration](https://www.klipper3d.org/Measuring_Resonances.html#input-shaper-auto-calibration)
+
+### First Print
+
+You should optimise your probe z offset using baby stepping.
+
+In fluidd the save button after you finish or cancel your print can be a bit hard to find, look for
+
+![image](https://github.com/user-attachments/assets/2af8d5cb-091e-40df-a38c-25d43b2e6647)
+
 
 ### Other Calibrations
 

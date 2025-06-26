@@ -196,6 +196,10 @@ It is important to make sure you have a way to [emergency factory reset](misc.md
     You should verify your USB thumb drive (aka USB key) often just to make sure you have something if you need to unbrick your printer, simply type `CHECK_USB_KEY` or hit the button in Fluidd / Mainsail
     The USB key should be FAT32 formatted and be no larger than 32GB!
 
+### Timer too close and microsteps
+
+For microprobe you cannot use more than `microsteps: 64`
+
 ### Calibration
 
 For the microprobe it is **extremely** important to do the PROBE_CALIBRATE step to configure your z-offset, regardless of what model you have used to mount the probe!
@@ -211,25 +215,13 @@ For the microprobe it is **extremely** important to do the PROBE_CALIBRATE step 
 
     The default z-offset for Microprobe is 0, so your prints won't stick without doing this step.
 
-### First Print
-
-For this first print you can go and do the tuning first (PID Tuning, etc) or you can go ahead and optimise your probe z offset using baby stepping.
-
-In fluidd the save button after you finish or cancel your print can be a bit hard to find, look for
-
-![image](assets/images/fluidd_save_zoffset.png)
-
-### Timer too close and microsteps
-
-For microprobe you cannot use more than `microsteps: 64`
-
-### Tuning
+#### Pid Tuning and Input Shaping
 
 At least PID tuning (bed and extruder) and input shaping is required for acceptable printing.  If you try and print after running the installer.sh and a power cycle but before any calibration you will most likely have horrendous quality, the worst you have ever seen on the k1.   After PID tuning and input shaping you should see the same kind of quality as you get with stock k1 + input shaper fix.
 
-#### Quick Start
+!!! note
 
-You can use the QUICK_START Macro to do Bed and Nozzle PID Tuning and Input Shaping.
+    You can use the QUICK_START Macro to automatically complete Bed and Nozzle PID Tuning and Input Shaping Automatically.
 
 #### Pid Tuning
 
@@ -271,6 +263,14 @@ After determining the optimal lift_speed, different probe_speed values can be te
 ![image](assets/images/probe_accuracy_1mm.jpg)
 
 Credit to Ales Omahen (@Havoc on discord) for this section
+
+### First Print
+
+You should optimise your probe z offset using baby stepping.
+
+In fluidd the save button after you finish or cancel your print can be a bit hard to find, look for
+
+![image](assets/images/fluidd_save_zoffset.png)
 
 ### Other Calibrations
 

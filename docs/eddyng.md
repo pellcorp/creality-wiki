@@ -239,21 +239,13 @@ You can then modify the `#*# tap_drive_current = 16` to be `#*# tap_drive_curren
 
 I am hopeful further work on this from the eddyng project might make this manual adjustment unnecessary!
 
-### First Print
-
-For this first print you can go and do the tuning first (PID Tuning, etc) or you can go ahead and optimise your probe z offset using baby stepping.
-
-In fluidd the save button after you finish or cancel your print can be a bit hard to find, look for
-
-![image](assets/images/fluidd_save_zoffset.png)
-
-### Tuning
+#### Pid Tuning and Input Shaping
 
 At least PID tuning (bed and extruder) and input shaping is required for acceptable printing.  If you try and print after running the installer.sh and a power cycle but before any calibration you will most likely have horrendous quality, the worst you have ever seen on the k1.   After PID tuning and input shaping you should see the same kind of quality as you get with stock k1 + input shaper fix.
 
-#### Quick Start
+!!! note
 
-You can use the QUICK_START Macro to do Bed and Nozzle PID Tuning and Input Shaping.
+    You can use the QUICK_START Macro to automatically complete Bed and Nozzle PID Tuning and Input Shaping Automatically.
 
 #### Pid Tuning
 
@@ -277,6 +269,14 @@ There is no default configuration for input shaping so it is essentially disable
 You can use the `SHAPER_CALIBRATE` macro to run input shaping, just be sure to `SAVE CONFIG` at the end, to choose the automatically selected shaper config, be aware though that the shaper chosen might be sub-optimal due to a slight difference in vibrations between two options.  So you should probably review the output and potentially choose an alternative if it gives you higher recommended max acceleration for minimal increase in vibration.
 
 [Input Shaper Auto Calibration](https://www.klipper3d.org/Measuring_Resonances.html#input-shaper-auto-calibration)
+
+### First Print
+
+You should optimise your probe z offset using baby stepping.
+
+In fluidd the save button after you finish or cancel your print can be a bit hard to find, look for
+
+![image](assets/images/fluidd_save_zoffset.png)
 
 ### Other Calibrations
 

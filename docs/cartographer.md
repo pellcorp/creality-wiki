@@ -91,7 +91,7 @@ On a K1M you can use the lidar cable either directly by repinning it, or via the
 | **D3vilStock**         | K1, K1C, K1M, K1SE | Flat Pack                    | <https://www.printables.com/model/684338-k1-k1max-eddy-current-mount-cartographer>                                                                                                                               |                                                                         |
 | **BootyGantry**        | K1, K1C, K1M, K1SE | Right Angle                  | <https://github.com/tlace17/K1-Linear-Rail-Gantry/blob/main/STLs/Probe%20Mounts/Rail%20Carriage%20Carto%20Mount.stl>                                                                                             | May require shimming for correct nozzle offset                          |
 | **SkeletorMK7**        | K1, K1C, K1M, K1SE | Low Profile                  | <https://www.printables.com/model/833769-the-skeletor-collection-a-creality-k1k1-maxk1c-coo><br /><br /><b>Get it printed:</b> <https://www.etsy.com/listing/1846275555/tbkmakers-skeletor-mk7-creality-k1-tool> | This is only for the low profile cartographer version of the mount!!!   |
-| **SkeletorRightAngle** | K1, K1C, K1M, K1SE | Right Angle<br />or Standard | <https://www.printables.com/model/1106768-skeletor-right-angle-cartographer-mount-k1-max-onl><br /><https://www.printables.com/model/1163069-k1max-right-angle-and-standard-format-cartographer>                 | The second mount url specifically mentions Standard Cartographer        |
+| **SkeletorRightAngle** | K1, K1C, K1M, K1SE | Right Angle<br />or Standard | <https://www.printables.com/model/1163069-k1max-right-angle-and-standard-format-cartographer>                                                                                                                    | This mount can support standard cartographer too                        |
 | **PurcellV5**          | K1, K1C, K1M, K1SE | Right Angle                  | <https://www.printables.com/model/1071493-cartographer-probe-side-mount-options-for-creality><br /><https://www.printables.com/model/1239076-creality-k1-cartographer-right-angle-mount>                         | This also works with V3 and V4, probably also V8                        |
 | **SimplyHexed**        | Ender 5 Max        | Right Angle                  | <https://www.printables.com/model/1209230-ender-5-max-simply-hexed>                                                                                                                                              | Requires custom shroud                                                  |
 | **Default**            | Ender 3 V3 SE      | Right Angle                  | <https://www.printables.com/model/732262-ender-3-v3-ke-beaconcartographer-mount>                                                                                                                                 | Will probably require shimming especially if you ugprade to a k1 hotend |
@@ -332,13 +332,13 @@ your bed mesh, so best to do it before.
 
 **Source:** <https://www.klipper3d.org/Axis_Twist_Compensation.html>
 
-### Tuning
+#### Pid Tuning and Input Shaping
 
 At least PID tuning (bed and extruder) and input shaping is required for acceptable printing.  If you try and print after running the installer.sh and a power cycle but before any calibration you will most likely have horrendous quality, the worst you have ever seen on the k1.   After PID tuning and input shaping you should see the same kind of quality as you get with stock k1 + input shaper fix.
 
-#### Quick Start
+!!! note
 
-You can use the QUICK_START Macro to do Bed and Nozzle PID Tuning and Input Shaping.
+    You can use the QUICK_START Macro to automatically complete Bed and Nozzle PID Tuning and Input Shaping Automatically.
 
 #### Pid Tuning
 
@@ -365,7 +365,7 @@ You can use the `SHAPER_CALIBRATE` macro to run input shaping, just be sure to `
 
 ### First Print
 
-For this first print you can go and do the tuning first (PID Tuning, etc) or you can go ahead and optimise your scanner_touch_z_offset using baby stepping, as documented here: <https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/installation/first-print>
+You should optimise your `scanner_touch_z_offset` using baby stepping, as documented here: <https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/installation/first-print>
 
 In fluidd the save button after you finish or cancel your print can be a bit hard to find, look for
 

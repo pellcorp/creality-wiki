@@ -288,34 +288,13 @@ If you are using **a rear mount** it is highly recommended to perform axis twist
 
     Do not use a metal feeler gauge for this step, it could interfere with calibration!!!
 
-### First Print
-
-For this first print you can go and do the tuning first (PID Tuning, etc) or you can go ahead and optimise your probe z offset using baby stepping.
-
-The save baby stepping button in fluidd / mainsail does nothing for btteddy, the z-offset is automatically saved to the variables.cfg,
-we copied the feature from Helper Script: <https://guilouz.github.io/Creality-Helper-Script-Wiki/helper-script/save-z-offset-macros/>
-
-### Bed Mesh
-
-Now you can now run your first bed mesh:
-`BED_MESH_CALIBRATE`
-
-**Source:** <https://ballaswag.github.io/blog/creality-k1-btt-eddy-guide/>
-
-**Source:** <https://github.com/bigtreetech/Eddy>
-
-### Error during homing z: Eddy current sensor error
-
-You might need to adjust your `reg_drive_current`, for more details:
-<https://github.com/bigtreetech/Eddy?tab=readme-ov-file#sometimes-i-get-error-during-homing-probe-eddy-current-sensor-error>
-
-### Tuning
+#### Pid Tuning and Input Shaping
 
 At least PID tuning (bed and extruder) and input shaping is required for acceptable printing.  If you try and print after running the installer.sh and a power cycle but before any calibration you will most likely have horrendous quality, the worst you have ever seen on the k1.   After PID tuning and input shaping you should see the same kind of quality as you get with stock k1 + input shaper fix.
 
-#### Quick Start
+!!! note
 
-You can use the QUICK_START Macro to do Bed and Nozzle PID Tuning and Input Shaping.
+    You can use the QUICK_START Macro to automatically complete Bed and Nozzle PID Tuning and Input Shaping Automatically.
 
 #### Pid Tuning
 
@@ -339,6 +318,25 @@ There is no default configuration for input shaping so it is essentially disable
 You can use the `SHAPER_CALIBRATE` macro to run input shaping, just be sure to `SAVE CONFIG` at the end, to choose the automatically selected shaper config, be aware though that the shaper chosen might be sub-optimal due to a slight difference in vibrations between two options.  So you should probably review the output and potentially choose an alternative if it gives you higher recommended max acceleration for minimal increase in vibration.
 
 [Input Shaper Auto Calibration](https://www.klipper3d.org/Measuring_Resonances.html#input-shaper-auto-calibration)
+
+### First Print
+
+The save baby stepping button in fluidd / mainsail does nothing for btteddy, the z-offset is automatically saved to the variables.cfg,
+we copied the feature from Helper Script: <https://guilouz.github.io/Creality-Helper-Script-Wiki/helper-script/save-z-offset-macros/>
+
+### Bed Mesh
+
+Now you can now run your first bed mesh:
+`BED_MESH_CALIBRATE`
+
+**Source:** <https://ballaswag.github.io/blog/creality-k1-btt-eddy-guide/>
+
+**Source:** <https://github.com/bigtreetech/Eddy>
+
+### Error during homing z: Eddy current sensor error
+
+You might need to adjust your `reg_drive_current`, for more details:
+<https://github.com/bigtreetech/Eddy?tab=readme-ov-file#sometimes-i-get-error-during-homing-probe-eddy-current-sensor-error>
 
 ### Other Calibrations
 
