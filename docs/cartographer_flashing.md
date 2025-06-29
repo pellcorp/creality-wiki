@@ -31,7 +31,7 @@ You will need some kind of linux environment, this can be a Raspberry Pi, deskto
 
 ### Creating a Live USB Key
 
-You should create a live USB with Ubuntu 24.04 Desktop, make sure the USB is at least 8GB in size!
+You should create a live USB with Ubuntu 24.04 (25.04 also works) Desktop, make sure the USB is at least 8GB in size!
 
 <https://ubuntu.com/tutorials/try-ubuntu-before-you-install#1-getting-started>
 
