@@ -41,7 +41,7 @@ On your raspberry pi, linux desktop, linux server or live Ubuntu USB environment
 
 ```
 sudo apt-get update
-sudo apt-get install virtualenv python3-dev python3-pip libffi-dev build-essential git dfu-util
+sudo apt-get install virtualenv python3-dev python3-pip python3-setuptools libffi-dev build-essential git dfu-util
 ```
 
 ## Clone Klipper and Cartographer-Klipper
