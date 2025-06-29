@@ -89,16 +89,21 @@ cd $HOME/klipper/scripts
 sudo -E $HOME/klippy-env/bin/python -c "import flash_usb as u; u.enter_bootloader('$CARTO_DEV')"
 ```
 
-**IMPORTANT:** If you get a message like `ls: cannot access '/dev/serial/by-id/usb-Cartographer': No such file or directory`, it means you forgot the `*` in the command above or else your carto cable is incorrectly pinned
+!!! warning 
+
+    If you get a message like `ls: cannot access '/dev/serial/by-id/usb-*': No such file or directory`, it means you forgot the `*` in the command above, your carto cable is incorrectly pinned or
+    you are using a VM or WSL (against advice) and have not passed through the Cartographer USB Device!
 
 You should see a message like:
 
 ```
 Entering bootloader on /dev/serial/by-id/usb-Cartographer_614e_16000C000F43304253373820-if00
 ```
-**Note:** If the carto does not enter bootloader mode, it is possible you forgot to use sudo!
 
-**Note:** If your carto does show up in /dev/serial but won't enter bootloader mode, you will need to fix this with [DFU mode](#flashing-k1-firmware-via-dfu-mode)
+!!! note
+
+    If the carto does not enter bootloader mode, it is possible you forgot to use sudo!
+    If your carto does show up in /dev/serial but won't enter bootloader mode, you will need to fix this with [DFU mode](#flashing-k1-firmware-via-dfu-mode)
 
 ### Flashing
 
@@ -129,7 +134,14 @@ Verification Complete: SHA = BB45B9575AC57FFF03CA5FE09186DB479E09BF53
 CAN Flash Success
 ```
 
-**Note:** If the carto does not flash, it is possible you forgot to use sudo!
+!!! note
+
+    If the carto does not flash, it is possible you forgot to use sudo!
+
+!!! warning
+
+    If you get a message like `ls: cannot access '/dev/serial/by-id/usb-katapult*': No such file or directory`, it means you forgot the `*` in the command above, your carto cable is incorrectly pinned or
+    you are using a VM or WSL (against advice) and have not passed through the `katapult stm32f042x6` USB Device!
 
 When you reconnect your carto to your printer it should show a version `CARTOGRAPHER K1 5.1.0`:
 
