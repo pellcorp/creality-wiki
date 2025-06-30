@@ -240,15 +240,15 @@ For cartographer you cannot use more than `microsteps: 32`, the MCU cannot handl
 
 !!! note
 
-   If you are using the `CARTOGRAPHER_CONTROL` guided macro, you should skip straight to Pid Tuning and Input Shaping
+    If you are using the `CARTOGRAPHER_CONTROL` guided macro, you should skip straight to Pid Tuning and Input Shaping
 
-   If you are running calibration for a printer that has previously been calibrated, the following SAVE_CONFIG sections **must** be removed from the bottom of the printer.cfg (if they exist) before
-   redoing these calibrations:
+    If you are running calibration for a printer that has previously been calibrated, the following SAVE_CONFIG sections **must** be removed from the bottom of the printer.cfg (if they exist) before
+    redoing these calibrations:
       
-   - `[scanner model default]`
-   - `[scanner]`
-   - `[axis_twist_compensation]`
-   - `[bed_mesh]`
+    - `[scanner model default]`
+    - `[scanner]`
+    - `[axis_twist_compensation]`
+    - `[bed_mesh]`
 
 
 #### Enable Touch Mode
