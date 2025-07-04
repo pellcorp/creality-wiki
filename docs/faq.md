@@ -219,6 +219,22 @@ To switch back to fluidd:
 
 This change will survive updating Simple AF, but will not be retained for a reinstall or a factory reset. 
 
+!!! note
+
+    If you run the above and receive an error like:
+
+        ```
+        root@K1Max-AF34 /root [#] ~/pellcorp/tools/switch-default-ui.sh mainsail
+        -sh: /root/pellcorp/tools/switch-default-ui.sh: not found
+        ```
+
+    It means you are on an older version of Simple AF and you should instead use the old style commands:
+
+        ```
+        /usr/data/pellcorp/k1/installer.sh --branch main
+        ~/pellcorp/tools/switch-default-ui.sh mainsail
+        ```
+
 
 ## How do I change the hostname?
 
