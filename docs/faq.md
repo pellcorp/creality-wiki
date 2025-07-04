@@ -1,5 +1,12 @@
 # Frequently Asked Questions
 
+## Can I use Simple AF with my default probe / Load Cells?
+
+The short answer to this question is no. But if you would like to know why, continue reading.
+The code required to use the Creality Load Cells for probing is proprietary and has been refused for sharing with the community by Creality. There have been some attempts by the community to get this working, but those attempts aren’t currently complete. Some of these, while 'working,' require further hardware modifications to the Load Cell control board. Modifications that most users wishing to stick with Load Cells would prefer not to make, as these modifications would no longer allow a user to return to stock firmware.
+
+This feature may come eventually, but SimpleAF currently does not support the use of the default load cells.
+If you have successfully incorporated the use of Load Cells into SimpleAF or Klipper and would like to contribute, please let us know.
 
 ## How do I integrate a Nozzle Wipe?
 
@@ -368,7 +375,7 @@ Note this is not about bed mesh, this video is just about getting your bed level
 
 So currently there is no way to pass in a parameter to start print for this, but there is a really easy workaround and you can even set the target per filament.   The target being the temp at which the fan gets activated.
 
-So per filament in Orca Slicer find the Print chamber  temperature and set a value in celcius, but do NOT check the Activate temperature control checkbox.
+So per filament in Orca Slicer find the **Print chamber temperature** and set a value in celcius, but do **NOT** check the **Activate temperature control** checkbox.
 
 Then in your Machine start Gcode above START_PRINT add this line (before the START_PRINT line):
 
@@ -384,7 +391,9 @@ The M141 macro provided by Simple AF (derived from Helper Script) sets the targe
 
 ## How do I cleanup all those backup printer config files?
 
-**This does not apply to Simple AF for RPi**
+!!! note
+
+    This does not apply to Simple AF for RPi
 
 Simple AF runs a cleanup every time the printer starts it does the following:
 
