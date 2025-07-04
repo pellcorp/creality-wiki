@@ -1,9 +1,9 @@
-## Updating
+# Updating
 
 Completely updating Simple AF requires running the installer on the command line and also updating components
 from fluidd or mainsail.
 
-### Simple AF Installer
+## Simple AF Installer
 
 Simple AF cfg and conf files cannot be updated via Fluidd or Mainsail, it must be updated by using ssh to connect to the printer
 
@@ -33,7 +33,7 @@ Simple AF cfg and conf files cannot be updated via Fluidd or Mainsail, it must b
 
 This backs up your customisations, updates the creality repo, applies all changes to your `~/printer_data/config` directory and then reapplies your customisations over the top.
 
-### Fluidd and Mainsail Updates
+## Fluidd and Mainsail Updates
 
 The following components can be updated via Fluidd / Mainsail Software Updates:
 
