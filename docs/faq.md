@@ -375,20 +375,18 @@
 
     This is surprisingly easy it just needs a few changes in printer.cfg
     
-    You need to modify the [adxl345] section as follows:
+    You need to modify the `[adxl345]` section
     
-    Disable the following config:
+    First of all change the `cs_pin` from `nozzle_mcu:PA4` to `scanner:PA3`
     
-    Change the `cs_pin` from `nozzle_mcu:PA4` to `scanner:PA3`
-    
-    Disable the following settings:
+    Then disable the following settings:
     
     - `spi_speed: 5000000`
     - `spi_software_sclk_pin: nozzle_mcu:PA5`
     - `spi_software_mosi_pin: nozzle_mcu:PA7`
     - `spi_software_miso_pin: nozzle_mcu:PA6`
     
-    Add the following settings:
+    And add the following settings:
     
     - `spi_bus: spi1`
     - `axes_map: x, y, z`
