@@ -1,29 +1,11 @@
 ## Updating
 
-### Fluidd and Mainsail Updates
+Completely updating Simple AF requires running the installer on the command line and also updating components
+from fluidd or mainsail.
 
-The following components can be updated via Fluidd / Mainsail Software Updates:
+### Simple AF Installer
 
-- beacon
-- cartographer
-- fluidd
-- fluidd-config (aka client-macros)
-- moonraker
-- klipper
-- mainsail
-- timelapse (aka Moonraker Timelapse)
-
-You can update these components via Fluidd or Mainsail, in fluidd make sure you click the CHECK FOR UPDATES button, and in Mainsail click the Refresh button
-
-!!! note
-
-    It is normal for moonraker and klipper to warn about `Unofficial remote url`, this is because Simple AF has forked these repositories.
-
-![image](assets/images/update_software.png)
-
-### Simple AF
-
-Simple AF which includes all the cfg and conf files cannot be updated via Fluidd or Mainsail, it must be updated by using ssh to connect to the printer
+Simple AF cfg and conf files cannot be updated via Fluidd or Mainsail, it must be updated by using ssh to connect to the printer
 
 ```
 ~/pellcorp/installer.sh --branch main
@@ -50,6 +32,27 @@ Simple AF which includes all the cfg and conf files cannot be updated via Fluidd
     using, and that will depend on what probe you are using, you can consult the #mount-options section of your specific probe wiki page.
 
 This backs up your customisations, updates the creality repo, applies all changes to your `~/printer_data/config` directory and then reapplies your customisations over the top.
+
+### Fluidd and Mainsail Updates
+
+The following components can be updated via Fluidd / Mainsail Software Updates:
+
+- beacon
+- cartographer
+- fluidd
+- fluidd-config (aka client-macros)
+- moonraker
+- klipper
+- mainsail
+- timelapse (aka Moonraker Timelapse)
+
+You can update these components via Fluidd or Mainsail, in fluidd make sure you click the CHECK FOR UPDATES button, and in Mainsail click the Refresh button
+
+!!! note
+
+    It is normal for moonraker and klipper to warn about `Unofficial remote url`, this is because Simple AF has forked these repositories.
+
+![image](assets/images/update_software.png)
 
 ## Reinstalling
 
