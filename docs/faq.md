@@ -370,3 +370,41 @@
     
     If you want to use bed warp stabilisation but not keep the heater on at end, you can change the `start_end.cfg` `_START_END_PARAMS` `variable_end_print_keep_bed_heated` to `False`!
 
+
+??? "How do I use my cartographer for input shaping?"
+
+    This is surprisingly easy it just needs a few changes in printer.cfg
+    
+    You need to modify the [adxl345] section as follows:
+    
+    Disable the following config:
+    
+    Change the `cs_pin` from `nozzle_mcu:PA4` to `scanner:PA3`
+    
+    Disable the following settings:
+    
+    - `spi_speed: 5000000`
+    - `spi_software_sclk_pin: nozzle_mcu:PA5`
+    - `spi_software_mosi_pin: nozzle_mcu:PA7`
+    - `spi_software_miso_pin: nozzle_mcu:PA6`
+    
+    Add the following settings:
+    
+    - `spi_bus: spi1`
+    - `axes_map: x, y, z`
+    
+    So you [adxl345] should look like:
+    
+       ```
+       [adxl345]
+       #cs_pin: nozzle_mcu:PA4
+       cs_pin: scanner:PA3
+       spi_bus: spi1
+       #spi_speed: 5000000
+       axes_map: x, y, z
+       #spi_software_sclk_pin: nozzle_mcu:PA5
+       #spi_software_mosi_pin: nozzle_mcu:PA7
+       #spi_software_miso_pin: nozzle_mcu:PA6
+       ```
+    
+    I do not know if this is a good idea, I just know its possible!
