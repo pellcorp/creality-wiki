@@ -127,6 +127,7 @@ nav:
   - Home: index.md
   - Cartographer:
       - cartographer.md
+      - cartographer_faq.md
       - cartographer_flashing.md
   - Beacon:
       - beacon.md

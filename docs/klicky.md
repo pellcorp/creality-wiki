@@ -100,7 +100,7 @@ The wiring looks like this:
 
 !!! warn
 
-    This does not apply to Simple AF for RPi, See [Simple AF for RPi](rpi.md#installation)
+    The installation section does not apply to Simple AF for RPi, See [Simple AF for RPi](rpi.md#installation)
 
 The installation can only be performed on a printer which has been rooted and ssh granted
 
