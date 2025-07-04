@@ -185,18 +185,22 @@
     This is just a configuration change to the `start_end.cfg` `_CLIENT_VARIABLE` `variable_custom_park_dz` value, you change the value from 25.0 to 50.0 or whatever you want.   If you print a really tall print the bed will be lowered as much room as there is left without exceeding the stepper_z max_position.
 
 ??? "How do I switch default UI from fluidd to mainsail and back?"
+    
+    **This does not currently apply to Simple AF for RPi**
 
     To switch to mainsail:
     
     ```
-    ~/pellcorp/switch-default-ui.sh mainsail
+    /usr/data/pellcorp/k1/switch-default-ui.sh mainsail
     ```
     
     To switch back to fluidd:
-    ```    
-    ~/pellcorp/switch-default-ui.sh fluidd
-    ```
     
+    ```
+    /usr/data/pellcorp/k1/switch-default-ui.sh fluidd
+    ```
+   
+
     This change will survive updating Simple AF, but will not be retained for a reinstall or factory reset. 
 
 ??? "How do I change the hostname?"
