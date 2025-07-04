@@ -3,6 +3,9 @@
 
 ## How do I integrate a Nozzle Wipe?
 
+So Simple AF will likely never integrate nozzle macros directly nto the base product as most mounts and probes have no options for nozzle wipes or they only work with changes to slicer settings and faulty regions in bed meshes which I just don't want to deal with,
+however a couple of community members have contributed solutions you can use.
+
 ### Purcell Nozzle Wipe
 
 You can find the advanced_nozzle_cleaner.cfg file at <https://www.printables.com/model/1023575-advanced-nozzle-wiper-for-creality-k1-series>,
