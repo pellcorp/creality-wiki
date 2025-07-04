@@ -373,7 +373,9 @@
 
 ??? "How do I use my cartographer for input shaping?"
 
-    This is surprisingly easy it just needs a few changes in printer.cfg
+    **This does not apply to Simple AF for RPi**
+
+    This just needs a few changes in `printer.cfg`
     
     You need to modify the `[adxl345]` section
     
