@@ -101,7 +101,6 @@ markdown_extensions:
       title: On this page
       permalink: true
       toc_depth: 3
-        
   - tables
   - admonition
   - footnotes
@@ -150,5 +149,6 @@ nav:
   - Extras:
       - misc.md
       - custom_hooks.md
+      - faq.md
   - Rpi:
       - rpi.md

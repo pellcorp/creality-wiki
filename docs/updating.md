@@ -58,4 +58,3 @@ A reinstall is only needed if one or more github repos have got into an inconsis
 !!! info
 
     If you switch probes using --update you will have to manually clean up any save configuration for that probe before klipper will start.
-
