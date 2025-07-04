@@ -107,7 +107,7 @@ To factory reset a Simple AF installation is very much like how you install Simp
 If you wish to be able to restore you local changes after a factory reset you should make sure you run the config overrides script before performing the factory reset itself, so this is easy to do from ssh with:
 
 ```
-/usr/data/pellcorp/k1/config-overrides.sh
+/usr/data/pellcorp/tools/config-overrides.sh
 ```
 
 Then perform the factory reset:
