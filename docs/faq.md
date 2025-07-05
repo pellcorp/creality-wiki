@@ -458,6 +458,10 @@ Now you can flash new firmware with this script without the version downgrade lo
 /usr/data/local_ota_update.sh /tmp/udisk/sda1/CR4CU220812S11_ota_img_V1.3.3.46.img
 ```
 
+You should wait until you see `ota: stoped success` and then you can logout of your ssh session and power cycle your printer,
+you should make sure you factory reset your printer (using the Simple AF method) before installing just to be sure all
+remnants of the CFS abomination has been excised.
+
 !!! note 
 
     If you get the error `-sh: /usr/data/local_ota_update.sh: Permission denied`, you forgot to do
