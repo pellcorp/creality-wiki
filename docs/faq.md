@@ -437,15 +437,18 @@ If you want to use bed warp stabilisation but not keep the heater on at end, you
 ## How can I downgrade from CFS Firmware?
 
 Creality added logic to prevent downgrading to older version of firmware, but its super easy to work around this, we just need to
-download a older local_ota_update.sh file.
+download an older local_ota_update.sh file, I have saved the 1.3.3.46 version of the script to my downloads repo to make it
+easier to get.
 
-So download the older firmware to a USB key and stick it into the front of your printer
-Login via ssh to your printer
+So first of all go and grab the version of the older K1 firmware you want from <https://www.creality.com/pages/download-k1-flagship>,
+save it to a USB key, and stick it into the front of your printer!
 
-Download the older local_ota_update.sh script:
+Now login via ssh to your printer
+
+From the ssh command line on your printer download the older local_ota_update.sh script like so:
 
 ```
-rm /usr/data/local_ota_update.sh
+rm /usr/data/local_ota_update.sh 2> /dev/null
 wget https://github.com/Guilouz/Creality-K1-Extracted-Firmwares/blob/main/Firmware/etc/ota_bin/local_ota_update.sh -O /usr/data/local_ota_update.sh
 chmod 777 /usr/data/local_ota_update.sh
 ```
