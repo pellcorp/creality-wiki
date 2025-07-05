@@ -507,3 +507,40 @@ Then you can logout of your ssh session and power cycle your printer, you should
     ```
     /usr/data/local_ota_update.sh /tmp/udisk/sda/CR4CU220812S11_ota_img_V1.3.3.46.img
     ```
+
+## How can I prevent a print starting or resuming if there is no filament present?
+
+A new feature has just been merged to Simple AF to support this, but you will need a normal filament sensor switch, update
+to latest Simple AF and enable a setting after installation.
+
+You need to update to latest Simple AF:
+
+```
+~/pellcorp/installer.sh --branch main
+~/pellcorp/installer.sh --update
+```
+
+!!! note
+
+    If you run the above and receive an error like:
+
+        ```
+        root@K1Max-AF34 /root [#] ~/pellcorp/installer.sh --branch main
+        -sh: /root/pellcorp/installer.sh: not found
+        ```
+
+    It means you are on an older version of Simple AF and you should instead use the old style commands:
+
+        ```
+        /usr/data/pellcorp/k1/installer.sh --branch main
+        ~/pellcorp/installer.sh --update
+        ```
+
+Then open the `start_end.cfg`, find the `variable_runout_sensor` in the `_CLIENT_VARIABLE` section and set it to match
+your filament runout sensor, like so:
+
+```
+variable_runout_sensor: "filament_switch_sensor filament_sensor"
+```
+
+Save and Restart
