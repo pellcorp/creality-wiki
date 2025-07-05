@@ -413,9 +413,12 @@ In Simple AF out of the box when you start a print a period of bed warp stabilis
 This is also often referred to as heat soak and it allows the heated bed to settle into its final state before performing the bed mesh.
 
 You can disable it before a print by toggling the bed warp stabilisation toggle, which you can find in the fans and outputs section of your UI.
+
+In Fluidd its here:
 ![image](assets/images/bed_warp_stabilisation_toggle.png)
 
-In Mainsail its available at ![image](assets/images/mainsail_bed_warp_stabilisation_toggle.png)
+In Mainsail its here:
+![image](assets/images/mainsail_bed_warp_stabilisation_toggle.png)
 
 You can disable it permanently by changing the `start_end.cfg` `[output_pin Bed_Warp_Stabilisation]` value to **0**.
 
