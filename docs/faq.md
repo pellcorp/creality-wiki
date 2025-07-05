@@ -415,9 +415,11 @@ This is also often referred to as heat soak and it allows the heated bed to sett
 You can disable it before a print by toggling the bed warp stabilisation toggle, which you can find in the fans and outputs section of your UI.
 
 In Fluidd its here:
+
 ![image](assets/images/bed_warp_stabilisation_toggle.png)
 
-In Mainsail its here:
+In Mainsail its here: 
+
 ![image](assets/images/mainsail_bed_warp_stabilisation_toggle.png)
 
 You can disable it permanently by changing the `start_end.cfg` `[output_pin Bed_Warp_Stabilisation]` value to **0**.
