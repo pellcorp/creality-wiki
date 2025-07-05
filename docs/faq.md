@@ -448,8 +448,7 @@ Now login via ssh to your printer
 From the ssh command line on your printer download the older local_ota_update.sh script like so:
 
 ```
-rm /usr/data/local_ota_update.sh 2> /dev/null
-wget https://github.com/Guilouz/Creality-K1-Extracted-Firmwares/blob/main/Firmware/etc/ota_bin/local_ota_update.sh -O /usr/data/local_ota_update.sh
+wget https://raw.githubusercontent.com/Guilouz/Creality-K1-Extracted-Firmwares/refs/heads/main/Firmware/etc/ota_bin/local_ota_update.sh -O - > /usr/data/local_ota_update.sh
 chmod 777 /usr/data/local_ota_update.sh
 ```
 
