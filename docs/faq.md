@@ -433,3 +433,52 @@ If you want to use bed warp stabilisation but not keep the heater on at end, you
 ## How do I use my cartographer for input shaping?
 
 [Cartographer Input Shaper](cartographer_faq.md#how-do-i-use-my-cartographer-for-input-shaping)
+
+## How can I downgrade from CFS Firmware?
+
+Creality added logic to prevent downgrading to older version of firmware, but its super easy to work around this, we just need to
+download a older local_ota_update.sh file.
+
+So download the older firmware to a USB key and stick it into the front of your printer
+Login via ssh to your printer
+
+Download the older local_ota_update.sh script:
+
+```
+rm /usr/data/local_ota_update.sh
+wget https://github.com/Guilouz/Creality-K1-Extracted-Firmwares/blob/main/Firmware/etc/ota_bin/local_ota_update.sh -O /usr/data/local_ota_update.sh
+chmod 777 /usr/data/local_ota_update.sh
+```
+
+Now you can flash new firmware with this script without the version downgrade logic getting in the way:
+
+```
+
+disk=$(mount | grep sda | awk '{print $3}')
+/usr/data/local_ota_update.sh /tmp/udisk/sda1/CR4CU220812S11_ota_img_V1.3.3.46.img
+```
+
+!!! note 
+
+    If you get the error `-sh: /usr/data/local_ota_update.sh: Permission denied`, you forgot to do
+    `chmod 777 /usr/data/local_ota_update.sh`
+
+    If you get the error `/tmp/udisk/sda1/CR4CU220812S11_ota_img_V1.3.3.46.img Not a file` it means
+    either you did not download the latest img or else for some reason the usb key was mounted to somewhere
+    different than `/tmp/udisk/sda1/`
+
+    You can check which directory the usb was mounted with the following command:
+
+    ```
+    mount | grep 'sda'
+    ```
+
+    For example for my USB key its not mounted to `/tmp/udisk/sda1`, instead its mounted to `/tmp/udisk/sda`:
+
+    ![image](assets/images/mount_usb_grep_sda.png)
+
+    So I would need to specify instead: 
+
+    ```
+    /usr/data/local_ota_update.sh /tmp/udisk/sda/CR4CU220812S11_ota_img_V1.3.3.46.img
+    ```
