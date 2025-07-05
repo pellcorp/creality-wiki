@@ -417,15 +417,17 @@ You can disable it before a print by toggling the bed warp stabilisation toggle,
 
 In Mainsail its available at ![image](assets/images/mainsail_bed_warp_stabilisation_toggle.png)
 
-You can disable it permanently by changing the start_end.cfg [output_pin Bed_Warp_Stabilisation] value to 0.
+You can disable it permanently by changing the `start_end.cfg` `[output_pin Bed_Warp_Stabilisation]` value to **0**.
 
-You can also modify the following configuration in _START_END_PARAMS:
+You can also modify the following configuration in `_START_END_PARAMS`:
 
 - `variable_bed_warp_wait_multiplier`  - So this value is how many seconds per degree of final bed target temp.
 - `variable_bed_warp_fraction_wait` - If the bed temp is at least 75% of target we will do partial heat soak, if it's less than 75% will heat soak then entire target amount.
 - `variable_bed_warp_wait_interval` - This is how long the macro will sleep between notifications
 
-**IMPORTANT:** Please note at the end of a print the heater of the bed will remain heated until the printer times out in a hour.
+!!! note
+
+    Please note at the end of a print the heater of the bed will remain heated until the printer times out in a hour.
 
 If you want to use bed warp stabilisation but not keep the heater on at end, you can change the `start_end.cfg` `_START_END_PARAMS` `variable_end_print_keep_bed_heated` to `False`!
 
