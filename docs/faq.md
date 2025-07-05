@@ -458,9 +458,23 @@ Now you can flash new firmware with this script without the version downgrade lo
 /usr/data/local_ota_update.sh /tmp/udisk/sda1/CR4CU220812S11_ota_img_V1.3.3.46.img
 ```
 
-You should wait until you see `ota: stoped success` and then you can logout of your ssh session and power cycle your printer,
-you should make sure you factory reset your printer (using the Simple AF method) before installing just to be sure all
-remnants of the CFS abomination has been excised.
+You should wait until you see lines like the following especially `ota update ok`:
+
+```
+rootfs.squashfs read ok, now quit
+ota: data processed: 99% 127696896 132233080
+rootfs update done
+start update rtos
+zero.bin read ok, now quit
+ota: data processed: 100% 452408 132233080
+rtos update done
+ota update ok
+256+0 records in
+256+0 records out
+ota: stoped success
+```
+
+Then you can logout of your ssh session and power cycle your printer, you should make sure you factory reset your printer (using the Simple AF method) before installing just to be sure all remnants of the CFS abomination has been excised
 
 !!! note 
 
