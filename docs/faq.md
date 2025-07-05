@@ -453,8 +453,6 @@ chmod 777 /usr/data/local_ota_update.sh
 Now you can flash new firmware with this script without the version downgrade logic getting in the way:
 
 ```
-
-disk=$(mount | grep sda | awk '{print $3}')
 /usr/data/local_ota_update.sh /tmp/udisk/sda1/CR4CU220812S11_ota_img_V1.3.3.46.img
 ```
 
