@@ -13,6 +13,10 @@ If you have successfully incorporated the use of Load Cells into SimpleAF or Kli
 So Simple AF will likely never integrate nozzle macros directly nto the base product as most mounts and probes have no options for nozzle wipes or they only work with changes to slicer settings and faulty regions in bed meshes which I just don't want to deal with,
 however a couple of community members have contributed solutions you can use.
 
+!!! danger
+
+    Do not use a nozzle wiper with a rear mounted probe, there is a strong likelihood of destroying the probe or damaging the printer
+
 ### Purcell Nozzle Wipe
 
 You can find the advanced_nozzle_cleaner.cfg file at <https://www.printables.com/model/1023575-advanced-nozzle-wiper-for-creality-k1-series>,
@@ -436,6 +440,9 @@ You can also modify the following configuration in `_START_END_PARAMS`:
 
 If you want to use bed warp stabilisation but not keep the heater on at end, you can change the `start_end.cfg` `_START_END_PARAMS` `variable_end_print_keep_bed_heated` to `False`!
 
+For some probes like the eddy (so for `btteddy` or `eddyng`) sitting just above the heated bed for an extended period of time can cause it
+to be excessively heated, there is a `start_end.cfg` property `variable_start_print_bed_heating_move_bed_distance` which can be set to something like `100`
+to position the toolhead much further away from the bed while the bed heats, the default value of 20mm might not be sufficient for your use case.
 
 ## How do I use my cartographer for input shaping?
 
@@ -544,3 +551,7 @@ variable_runout_sensor: "filament_switch_sensor filament_sensor"
 ```
 
 Save and Restart
+
+Then when you try to start a print without filament you will get a message like:
+
+![image](assets/images/print_aborted_no_filament.png)
