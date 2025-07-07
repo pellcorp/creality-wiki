@@ -17,10 +17,12 @@ This definition should **not** include any kind of probe configuration **in the 
 - fan_generic
 - filament_switch_sensor
 
-## K1, K1M, Ender 5 Max and Ender 3 V3 KE Definitions
+## Support Probes and Mounts
 
-If you have updating the mainboard in one of these printers and want to be able to play with different mounts, you need to let the installer
-know it's for a specific model of printer with a `# MODEL:` header at the beginning of the file, currently supported models are:
+If you have updating the mainboard in one of the printers that support multiple probes and/or mount and you you should let the installer know what model of printer your config is for. 
+This is done by specifying the model of printer with a `# MODEL:` header at the beginning of the file.
+
+The supported models are:
 
 - `k1` (K1, K1C, K1SE)
 - `k1m` (K1 Max)
