@@ -133,7 +133,15 @@ or you need to provide your own.  The easiest way to find out what predefined pr
 
 ### Downloaded or Downloadable Printer Definition
 
-Refer to [Printer Definitions](rpi_printer_definitions.md)
+Refer to [Printer Definitions](rpi_printer_definitions.md) for how to craft a base printer cfg file, note at the moment the 
+installer does not support a printer cfg broken up into separate files, it should be a **single** .cfg file only.
+
+You can specify a http:// or https:// url for the --printer parameter or you can download the file locally yourself!
+
+!!! note
+
+    For the `--printer` argument specify the url of the file, so for example `--printer https://github.com/pellcorp/klipper-rpi/blob/master/config/printer-creality-ender3-s1plus-2022.cfg`
+    or reference a local file if you did download it locally, so for example `--printer ~/printer-creality-ender3-s1plus-2022.cfg`
 
 !!! note
 

@@ -1,9 +1,10 @@
 # RPI Base Printer Definitions
 
-## Downloaded or Downloadable Printer Definition
+If you are not using a predefined printer definition you will need to craft or download a basic printer config
 
-If you are not using a predefined printer definition you will need to craft or download a basic printer config, this definition should **not** include any kind of probe
-configuration **in the main printer.cfg section**, this should just have the basics (the installer will automatically remove some problematic definitions):
+## What should be in this file?
+
+This definition should **not** include any kind of probe configuration **in the main printer.cfg section**, this should just have the basics (the installer will automatically remove some problematic definitions):
 
 - extruder
 - heater_bed
@@ -15,13 +16,6 @@ configuration **in the main printer.cfg section**, this should just have the bas
 - fan
 - fan_generic
 - filament_switch_sensor
-
-You can specify a http:// or https:// url for the --printer parameter or you can download the file locally yourself!
-
-!!! note
-
-    For the `--printer` argument specify the url of the file, so for example `--printer https://github.com/pellcorp/klipper-rpi/blob/master/config/printer-creality-ender3-s1plus-2022.cfg`
-    or reference a local file if you did download it locally, so for example `--printer ~/printer-creality-ender3-s1plus-2022.cfg`
 
 #### K1, K1M, Ender 5 Max and Ender 3 V3 KE Definitions
 
