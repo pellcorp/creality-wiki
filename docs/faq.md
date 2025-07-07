@@ -38,7 +38,7 @@ Disable this:
 Add this:
 
 ```
-[gcode_macro _SAF_START_PRINT_BEFORE_BED_MESH]
+[gcode_macro _SAF_NOZZLE_WIPE]
 gcode:
 WIPE_NOZZLE
 ```
