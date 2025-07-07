@@ -23,7 +23,7 @@ You must login as the **pi** (Default password is `raspberry`) user to perform t
 !!! warning
 
     There is a bug with RPi Imager where its not correctly enabling Wifi on first boot, workaround is using an older version
-    of Rpi Imager https://github.com/raspberrypi/rpi-imager/issues/1067
+    of Rpi Imager <https://github.com/raspberrypi/rpi-imager/issues/1067>
 
 ### Orange Pi OS
 
