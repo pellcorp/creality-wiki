@@ -172,7 +172,7 @@ with the --mount option without an argument to get a list of possible mounts:
 
 Klippain is only pre-installed on corexy printers
 
-If you do not define `[adxl345]` and `[resonance_tester]` sections in your base printer, the installer will install
+If you do not define `[adxl345]` and `[resonance_tester]` sections in your base printer cfg, the installer will install
 klippain but not add the `[include klippain.cfg]`, so if you setup adxl and resonance tester config after installation
 you should also manually add the `[include klippain.cfg]` to your printer.cfg as well!
 
