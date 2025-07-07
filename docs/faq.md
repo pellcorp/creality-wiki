@@ -555,3 +555,26 @@ Save and Restart
 Then when you try to start a print without filament you will get a message like:
 
 ![image](assets/images/print_aborted_no_filament.png)
+
+## How can I switch to a toolhead filament runout sensor?
+
+So if you are using the DXC extruder, Creality CFS Extruder, or even the Henlor Mod for the stock Extruder, you want to switch
+from using the runout sensor bolted to the printer case and use the extruder runout sensor on the toolhead, its really easy, its
+literally just a single config change in your printer.cfg.
+
+So find the `[filament_switch_sensor filament_sensor]` and change the `switch_pin: !PC15` to `switch_pin: !nozzle_mcu:PA10`, so
+it should look like this:
+
+```
+[filament_switch_sensor filament_sensor]
+pause_on_runout: false
+switch_pin: !nozzle_mcu:PA10
+runout_gcode: _ON_FILAMENT_RUNOUT
+```
+
+Save and Restart and enjoy!
+
+!!! danger
+
+    Do not define two runout sensors that both trigger pause or call _ON_FILAMENT_RUNOUT for `runout_gcode`, the installer will 
+    remove the `[filament_switch_sensor filament_sensor_2]`, do not restore this config!
