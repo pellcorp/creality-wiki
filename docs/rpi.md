@@ -151,6 +151,14 @@ configuration, this should just have the basics (the installer will automaticall
 - fan_generic
 - filament_switch_sensor
 
+!!! note
+
+    Klippain is only pre-installed on corexy printers
+
+    If you do not define `[adxl345]` and `[resonance_tester]` sections in your base printer, the installer will install
+    klippain but not add the `[include klippain.cfg]`, so if you setup adxl and resonance tester config after installation
+    you should also manually add the `[include klippain.cfg]` to your printer.cfg as well!
+
 You can specify a http:// or https:// url for the --printer parameter or you can download the file locally yourself!
 
 !!! note
@@ -178,6 +186,12 @@ with the --mount option without an argument to get a list of possible mounts:
 ![image](assets/images/rpi_choose_mount.png)
 
 ## Post Installation issues
+
+### MCU Firmware
+
+Its easier to install Simple AF and then build the firmware with `make menuconfig` afterwards, just be aware that 
+on first boot its likely your MCU will either not connect or klipper will complain about Protocol version issues,
+this is to be expected.
 
 ### Boot Display
 
