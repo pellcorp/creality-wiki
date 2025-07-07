@@ -131,6 +131,10 @@ or you need to provide your own.  The easiest way to find out what predefined pr
 
 ![image](assets/images/rpi_install_printers.png)
 
+!!! note
+
+    For the `--printer` argument specify the ID of the printer so for instance `--printer creality-ender3-v3-se`
+
 ### Downloaded or Downloadable Printer Definition
 
 Refer to [Printer Definitions](rpi_printer_definitions.md) for how to craft a base printer cfg file, note at the moment the 
@@ -142,10 +146,6 @@ You can specify a http:// or https:// url for the --printer parameter or you can
 
     For the `--printer` argument specify the url of the file, so for example `--printer https://github.com/pellcorp/klipper-rpi/blob/master/config/printer-creality-ender3-s1plus-2022.cfg`
     or reference a local file if you did download it locally, so for example `--printer ~/printer-creality-ender3-s1plus-2022.cfg`
-
-!!! note
-
-    For the `--printer` argument specify the ID of the printer so for instance `--printer creality-ender3-v3-se`
 
 #### Choose a Probe
 
