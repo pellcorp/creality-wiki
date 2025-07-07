@@ -138,9 +138,6 @@ nav:
       - microprobe.md
   - Klicky:
       - klicky.md
-  - BttEddy:
-      - btteddy.md
-      - btteddy_flashing.md
   - EddyNG:
       - eddyng.md
       - btteddy_flashing.md
@@ -153,3 +150,7 @@ nav:
       - faq.md
   - Rpi:
       - rpi.md
+      - rpi_printer_definitions.md
+  - BttEddy:
+      - btteddy.md
+      - btteddy_flashing.md

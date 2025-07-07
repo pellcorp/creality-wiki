@@ -131,33 +131,13 @@ or you need to provide your own.  The easiest way to find out what predefined pr
 
 ![image](assets/images/rpi_install_printers.png)
 
+### Downloaded or Downloadable Printer Definition
+
+Refer to [Printer Definitions](rpi_printer_definitions.md)
+
 !!! note
 
     For the `--printer` argument specify the ID of the printer so for instance `--printer creality-ender3-v3-se`
-
-#### Downloaded or Downloadable Printer Definition
-
-Otherwise you will need to download a basic printer config, this definition should **not** include any kind of probe
-configuration, this should just have the basics (the installer will automatically remove some problematic definitions):
-
-- extruder
-- heater_bed
-- heater_fan
-- stepper_x
-- stepper_y
-- stepper_z (or multiple stepper_z for multi-z)
-- the `[printer]` section
-- fan
-- fan_generic
-- filament_switch_sensor
-
-You can specify a http:// or https:// url for the --printer parameter or you can download the file locally yourself!
-
-!!! note
-
-    For the `--printer` argument specify the url of the file, so for example `--printer https://github.com/pellcorp/klipper-rpi/blob/master/config/printer-creality-ender3-s1plus-2022.cfg`
-    or reference a local file if you did download it locally, so for example `--printer ~/printer-creality-ender3-s1plus-2022.cfg`
-
 
 #### Choose a Probe
 
