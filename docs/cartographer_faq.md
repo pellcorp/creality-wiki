@@ -4,7 +4,8 @@
 
 !!! note
 
-    This does not apply to Simple AF for RPi
+    These instructions do not apply to Simple AF for RPi, although it is certainly possible to use the 
+    Cartographer as ADXL on non creality printers.
 
 This just needs a few changes in `printer.cfg`
 
