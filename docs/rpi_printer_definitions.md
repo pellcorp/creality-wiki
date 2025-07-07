@@ -17,7 +17,7 @@ This definition should **not** include any kind of probe configuration **in the 
 - fan_generic
 - filament_switch_sensor
 
-#### K1, K1M, Ender 5 Max and Ender 3 V3 KE Definitions
+## K1, K1M, Ender 5 Max and Ender 3 V3 KE Definitions
 
 If you have updating the mainboard in one of these printers and want to be able to play with different mounts, you need to let the installer
 know it's for a specific model of printer with a `# MODEL:` header at the beginning of the file, currently supported models are:
@@ -56,4 +56,3 @@ pin: ^!PC14
 ```
 
 Where of course the pins will be relative to the mainboard you are using
-
