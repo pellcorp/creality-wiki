@@ -19,8 +19,7 @@ This definition should **not** include any kind of probe configuration **in the 
 
 ## Support Probes and Mounts
 
-If you have updating the mainboard in one of the printers that support multiple probes and/or mount and you you should let the installer know what model of printer your config is for. 
-This is done by specifying the model of printer with a `# MODEL:` header at the beginning of the file.
+If you are updating the mainboard on one of the printers that supports multiple probes and/or mounts, you should let the installer know what model of printer your config is for, this is done by specifying the model of printer with a `# MODEL:` header at the beginning of the file!
 
 The supported models are:
 
