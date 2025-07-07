@@ -132,25 +132,24 @@ nav:
   - Beacon:
       - beacon.md
       - beacon_flashing.md
-  - BlTouch:
-      - bltouch.md
-  - Microprobe:
-      - microprobe.md
-  - Klicky:
-      - klicky.md
   - EddyNG:
       - eddyng.md
       - btteddy_flashing.md
-  - Updating:
-      - updating.md
-      - config_overrides.md
-  - Extras:
-      - misc.md
-      - custom_hooks.md
-      - faq.md
-  - Rpi:
-      - rpi.md
-      - rpi_printer_definitions.md
   - BttEddy:
       - btteddy.md
       - btteddy_flashing.md
+  - Other Probes:
+      - bltouch.md
+      - microprobe.md
+      - klicky.md
+  - Rpi:
+      - rpi.md
+      - rpi_printer_definitions.md
+  - Updating:
+      - updating.md
+      - config_overrides.md
+  - FAQ:
+      - faq.md
+  - Extras:
+      - misc.md
+      - custom_hooks.md
