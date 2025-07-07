@@ -151,23 +151,13 @@ configuration, this should just have the basics (the installer will automaticall
 - fan_generic
 - filament_switch_sensor
 
-!!! note
-
-    Klippain is only pre-installed on corexy printers
-
-    If you do not define `[adxl345]` and `[resonance_tester]` sections in your base printer, the installer will install
-    klippain but not add the `[include klippain.cfg]`, so if you setup adxl and resonance tester config after installation
-    you should also manually add the `[include klippain.cfg]` to your printer.cfg as well!
-
-    If you do not have a `[resonance_tester]` section, the `TEST_RESONANCES`, `SHAPER_CALIBRATE`, `INPUT_SHAPER` and `INPUT_SHAPER_GRAPHS`
-    macros will not work!
-
 You can specify a http:// or https:// url for the --printer parameter or you can download the file locally yourself!
 
 !!! note
 
     For the `--printer` argument specify the url of the file, so for example `--printer https://github.com/pellcorp/klipper-rpi/blob/master/config/printer-creality-ender3-s1plus-2022.cfg`
     or reference a local file if you did download it locally, so for example `--printer ~/printer-creality-ender3-s1plus-2022.cfg`
+
 
 #### Choose a Probe
 
@@ -189,6 +179,17 @@ with the --mount option without an argument to get a list of possible mounts:
 ![image](assets/images/rpi_choose_mount.png)
 
 ## Post Installation issues
+
+### Input Shaper and Klippain
+
+Klippain is only pre-installed on corexy printers
+
+If you do not define `[adxl345]` and `[resonance_tester]` sections in your base printer, the installer will install
+klippain but not add the `[include klippain.cfg]`, so if you setup adxl and resonance tester config after installation
+you should also manually add the `[include klippain.cfg]` to your printer.cfg as well!
+
+If you do not have a `[resonance_tester]` section, the `TEST_RESONANCES`, `SHAPER_CALIBRATE`, `INPUT_SHAPER` and `INPUT_SHAPER_GRAPHS`
+macros will not work!
 
 ### MCU Firmware
 
