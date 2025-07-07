@@ -32,7 +32,7 @@ The supported models are:
 So just stick it into the beginning of the file like this:
 
 ```
-# MODEL: k1
+# MODEL:k1
 ```
 
 If you want to support Klicky, Microprobe and Bltouch in your base printer.cfg you will need to do a bit more work, specifically
