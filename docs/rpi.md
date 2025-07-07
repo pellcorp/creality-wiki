@@ -159,6 +159,9 @@ configuration, this should just have the basics (the installer will automaticall
     klippain but not add the `[include klippain.cfg]`, so if you setup adxl and resonance tester config after installation
     you should also manually add the `[include klippain.cfg]` to your printer.cfg as well!
 
+    If you do not have a `[resonance_tester]` section, the `TEST_RESONANCES`, `SHAPER_CALIBRATE`, INPUT_SHAPER` and `INPUT_SHAPER_GRAPHS`
+    macros will not work!
+
 You can specify a http:// or https:// url for the --printer parameter or you can download the file locally yourself!
 
 !!! note
