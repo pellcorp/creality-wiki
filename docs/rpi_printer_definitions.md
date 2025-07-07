@@ -30,7 +30,7 @@ The supported models are:
 - `f005` (Ender 3 V3 KE)
 - `ender3v3se` (Ender 3 V3 SE)
 
-So just stick it into the header of the file like this:
+So just stick it into the beginning of the file like this:
 
 ```
 # MODEL: k1
