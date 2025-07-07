@@ -5,6 +5,7 @@ Within Simple AF if you want to call a custom gcode macro you can with hooks, th
 - **_SAF_START_PRINT_AFTER_G28** - After G28 is called in START_PRINT
 - **_SAF_START_PRINT_BEFORE_BED_MESH** - Before bed mesh calibrate is called in START_PRINT
 - **_SAF_START_PRINT_AFTER_BED_MESH** - After bed mesh calibrate is called in START_PRINT
+- **_SAF_NOZZLE_WIPE** - A nozzle wipe macro that can be defined for eddyny, beacon and cartotouch only, will be called before bed mesh for eddny and beacon, and after bed mesh for cartotouch
 - **_SAF_BED_MESH_START** - Start of bed mesh calibrate
 - **_SAF_BED_MESH_END** - End of bed mesh calibrate
 - **_SAF_ON_FILAMENT_RUNOUT** - When filament runout is triggered
