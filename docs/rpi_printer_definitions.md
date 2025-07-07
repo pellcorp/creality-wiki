@@ -57,3 +57,5 @@ pin: ^!PC14
 ```
 
 Where of course the pins will be relative to the mainboard you are using
+
+Check out <https://github.com/pellcorp/creality/blob/main/rpi/printers/creality-ender3-v3-se.cfg> for an example.
