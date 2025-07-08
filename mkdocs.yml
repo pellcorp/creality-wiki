@@ -127,17 +127,21 @@ nav:
   - Home: index.md
   - Cartographer:
       - cartographer.md
+      - cartographer_troubleshooting.md
       - cartographer_faq.md
       - cartographer_flashing.md
   - Beacon:
       - beacon.md
+      - beacon_troubleshooting.md
       - beacon_faq.md
       - beacon_flashing.md
   - EddyNG:
       - eddyng.md
+      - eddyng_troubleshooting.md
       - btteddy_flashing.md
   - BttEddy:
       - btteddy.md
+      - btteddy_troubleshooting.md
       - btteddy_flashing.md
   - Other Probes:
       - bltouch.md
