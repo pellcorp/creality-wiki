@@ -208,7 +208,7 @@ It is important to make sure you have a way to [emergency factory reset](misc.md
 
 For bltouch, etc you cannot use more than `microsteps: 64`
 
-### Calibration
+## Calibration
 
 !!! warning
 
@@ -217,7 +217,7 @@ For bltouch, etc you cannot use more than `microsteps: 64`
     - [Probe Calibrate](#probe-calibrate)
     - [PID Tuning and Input Shaping](#pid-tuning-and-input-shaping)
 
-#### Probe Calibrate
+### Probe Calibrate
 
 For the bltouch/3dtouch/crtouch it is **extremely** important to do the PROBE_CALIBRATE step to configure your z-offset, regardless of what model you have used to mount the probe!
 
@@ -232,7 +232,7 @@ For the bltouch/3dtouch/crtouch it is **extremely** important to do the PROBE_CA
 
     The default z-offset for BLTouch, 3dTouch and CrTouch is 0, so your prints won't stick without doing this step.
 
-#### Pid Tuning and Input Shaping
+### Pid Tuning and Input Shaping
 
 At least PID tuning (bed and extruder) and input shaping is required for acceptable printing.  If you try and print after running the installer.sh and a power cycle but before any calibration you will most likely have horrendous quality, the worst you have ever seen on the k1.   After PID tuning and input shaping you should see the same kind of quality as you get with stock k1 + input shaper fix.
 

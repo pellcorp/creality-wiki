@@ -205,7 +205,7 @@ It is important to make sure you have a way to [emergency factory reset](misc.md
 For btteddy you cannot use more than `microsteps: 32`, the MCU cannot handle both more microsteps and eddy, it puts too much pressure on the system and it cause stuttering during bed meshes, it is also been known to cause klipper to crash
 during repeated bed meshes.
 
-### Calibration
+## Calibration
 
 !!! warning
 
@@ -220,7 +220,7 @@ during repeated bed meshes.
 
     It is extremely important that you perform the following calibrations while the btt eddy is cool, if you calibrate the eddy hot, you will experience `Error during homing z: Eddy current sensor error` errors while homing and performing bed mesh if the btt is significantly cooler than it was while doing initial calibration.   
 
-#### Drive Current Calibration
+### Drive Current Calibration
 
 1. Home XY (`G28 X Y`)
 2. Make sure nozzle is centred on bed
@@ -234,7 +234,7 @@ during repeated bed meshes.
 
     The auxiliary fan may turn on until the btt eddy temp is less than 40c before starting the actual calibration.  If you are in a hot climate you may need to adjust the `btteddy_macro.cfg` `variable_calibration_max_temp` value to something higher than 40c if you can't get the btt eddy under 40c with the aux fan easily.
 
-#### Mapping Eddy Readings To Nozzle Heights
+### Mapping Eddy Readings To Nozzle Heights
 
 6. Home X and Y (`G28 X Y`)
 7. Make sure nozzle is centred on bed
@@ -258,7 +258,7 @@ during repeated bed meshes.
     
     ![image](assets/images/probe_manual.png)
 
-####  Temperature Compensation Calibration
+### Temperature Compensation Calibration
 
 10. Home All (`G28`)
 11. Make sure nozzle is centred on bed
@@ -275,7 +275,7 @@ during repeated bed meshes.
 
     If you are struggling to get over about 80c, you can end the calibration early with the `TEMPERATURE_PROBE_COMPLETE` macro, just know that if you end the calibration early and then you try to print really hot and the eddy gets hotter than the hottest temp you calibrated the eddy is going to read the bed wrong and cause issues for homing but especially bed meshes.
 
-#### Pid Tuning and Input Shaping
+### Pid Tuning and Input Shaping
 
 At least PID tuning (bed and extruder) and input shaping is required for acceptable printing.  If you try and print after running the installer.sh and a power cycle but before any calibration you will most likely have horrendous quality, the worst you have ever seen on the k1.   After PID tuning and input shaping you should see the same kind of quality as you get with stock k1 + input shaper fix.
 
@@ -338,11 +338,6 @@ Now you can now run your first bed mesh:
 
 **Source:** <https://github.com/bigtreetech/Eddy>
 
-### Error during homing z: Eddy current sensor error
-
-You might need to adjust your `reg_drive_current`, for more details:
-<https://github.com/bigtreetech/Eddy?tab=readme-ov-file#sometimes-i-get-error-during-homing-probe-eddy-current-sensor-error>
-
 ### Other Calibrations
 
 !!! info
@@ -354,6 +349,11 @@ Refer to [Orcaslicer Calibration](https://github.com/SoftFever/OrcaSlicer/wiki/C
 Refer to the [Ellis Print Tuning Guide](https://ellis3dp.com/Print-Tuning-Guide/) for more great tuning ideas.
 
 ## Troubleshooting
+
+### Error during homing z: Eddy current sensor error
+
+You might need to adjust your `reg_drive_current`, for more details:
+<https://github.com/bigtreetech/Eddy?tab=readme-ov-file#sometimes-i-get-error-during-homing-probe-eddy-current-sensor-error>
 
 ### MCU Protocol Error - mcu 'eddy' Unknown command: debug_read
 

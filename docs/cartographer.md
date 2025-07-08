@@ -389,7 +389,7 @@ Refer to [Orcaslicer Calibration](https://github.com/SoftFever/OrcaSlicer/wiki/C
 
 Refer to the [Ellis Print Tuning Guide](https://ellis3dp.com/Print-Tuning-Guide/) for more great tuning ideas.
 
-## Scan Calibration Method
+## Scan Only Mode
 
 Some cartographer users choose to use scan only instead of touch and that is easy enough to do, you can setup for scan immediately
 after installation, no need to do the 3 step calibration as for touch!

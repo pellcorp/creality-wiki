@@ -208,7 +208,7 @@ It is important to make sure you have a way to [emergency factory reset](misc.md
 For beacon you cannot use more than `microsteps: 32`, the MCU cannot handle both more microsteps and beacon, it puts too much pressure on the system and it cause stuttering during bed meshes, it is also been known to cause klipper to crash
 during repeated bed meshes.
 
-### Calibration
+## Calibration
 
 !!! warning
 
@@ -217,7 +217,7 @@ during repeated bed meshes.
     - [Beacon Calibrate](#beacon-calibrate)
     - [PID Tuning and Input Shaping](#pid-tuning-and-input-shaping)
 
-#### Beacon Calibrate
+### Beacon Calibrate
 
 It is strongly recommended to disable the camera for these calibration steps, just use the `STOP_CAMERA` macro to do this.
 
@@ -238,7 +238,7 @@ It is strongly recommended to disable the camera for these calibration steps, ju
     
     ![image](assets/images/probe_manual.png)
 
-#### Pid Tuning and Input Shaping
+### Pid Tuning and Input Shaping
 
 At least PID tuning (bed and extruder) and input shaping is required for acceptable printing.  If you try and print after running the installer.sh and a power cycle but before any calibration you will most likely have horrendous quality, the worst you have ever seen on the k1.   After PID tuning and input shaping you should see the same kind of quality as you get with stock k1 + input shaper fix.
 
@@ -301,9 +301,9 @@ Refer to [Orcaslicer Calibration](https://github.com/SoftFever/OrcaSlicer/wiki/C
 
 Refer to the [Ellis Print Tuning Guide](https://ellis3dp.com/Print-Tuning-Guide/) for more great tuning ideas.
 
-### Troubleshooting
+## Troubleshooting
 
-#### Manual Beacon Serial Device configuration
+### Manual Beacon Serial Device configuration
 
 
 You can run the following command to fix your serial if you forgot to plug your beacon in during the installation or update:
@@ -327,7 +327,7 @@ You can run the following command to fix your serial if you forgot to plug your 
         /usr/data/pellcorp/k1/installer.sh --fix-serial
         ```
 
-#### 'BeaconProbe' object has no attribute '_mcu_freq'
+### 'BeaconProbe' object has no attribute '_mcu_freq'
 
 This **often** indicates the beacon was disconnected during homing or some other operation, you need to reboot
 

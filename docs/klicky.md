@@ -203,7 +203,7 @@ on the bottom of the klicky and make sure homing stops, if it does not stop you 
 
 For microprobe, etc you cannot use more than `microsteps: 64`.
 
-### Calibration
+## Calibration
 
 !!! warning
 
@@ -212,7 +212,7 @@ For microprobe, etc you cannot use more than `microsteps: 64`.
     - [Probe Calibrate](#probe-calibrate)
     - [PID Tuning and Input Shaping](#pid-tuning-and-input-shaping)
 
-#### Probe Calibrate 
+### Probe Calibrate 
 
 ![image](assets/images/probe_calibrate.png)
 
@@ -223,7 +223,7 @@ For microprobe, etc you cannot use more than `microsteps: 64`.
 5. Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
 <br />Upon completion *`SAVE_CONFIG`*
 
-#### Pid Tuning and Input Shaping
+### Pid Tuning and Input Shaping
 
 At least PID tuning (bed and extruder) and input shaping is required for acceptable printing.  If you try and print after running the installer.sh and a power cycle but before any calibration you will most likely have horrendous quality, the worst you have ever seen on the k1.   After PID tuning and input shaping you should see the same kind of quality as you get with stock k1 + input shaper fix.
 
@@ -275,7 +275,6 @@ You should optimise your probe z offset using baby stepping.
 In fluidd the save button after you finish or cancel your print can be a bit hard to find, look for
 
 ![image](https://github.com/user-attachments/assets/2af8d5cb-091e-40df-a38c-25d43b2e6647)
-
 
 ### Other Calibrations
 
