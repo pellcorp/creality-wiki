@@ -235,20 +235,6 @@ Calibrating the eddy should be as easy as running the `PROBE_EDDY_NG_SETUP`, fir
 
 Source: <https://github.com/vvuk/eddy-ng/wiki#calibration>
 
-### Manual Drive Current
-
-Sometimes the drive current for homing will work but for tap it breaks, you can calibrate another drive current and manually configure it for tap,
-I recommend incrementing one from homing value, so for instance of tap and homing setup have 16 as drive current, calibrate 17 as well and you can 
-manually modify the configuration afterwards:
-
-```
-PROBE_EDDY_NG_CALIBRATE DRIVE_CURRENT=17
-```
-
-You can then modify the `#*# tap_drive_current = 16` to be `#*# tap_drive_current = 17` and save and restart again
-
-I am hopeful further work on this from the eddyng project might make this manual adjustment unnecessary!
-
 ### Pid Tuning and Input Shaping
 
 At least PID tuning (bed and extruder) and input shaping is required for acceptable printing.  If you try and print after running the installer.sh and a power cycle but before any calibration you will most likely have horrendous quality, the worst you have ever seen on the k1.   After PID tuning and input shaping you should see the same kind of quality as you get with stock k1 + input shaper fix.
