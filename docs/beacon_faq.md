@@ -8,7 +8,7 @@
 
 This just needs a few changes in `printer.cfg`
 
-You need to **remove** the `[adxl345]` section
+You can **remove** the `[adxl345]` section
 
 Change the `[resonance_tester]` `accel_chip` from `adxl345` to `beacon`
 
