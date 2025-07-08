@@ -10,8 +10,6 @@ This just needs a few changes in `printer.cfg`
 
 You need to **remove** the `[adxl345]` section
 
-**Source:** <https://docs.beacon3d.com/config/#resonance_tester>
-
 Change the `[resonance_tester]` `accel_chip` from `adxl345` to `beacon`
 
 So your `[resonance_tester]` should look something like this:
@@ -23,3 +21,5 @@ accel_per_hz: 75
 probe_points:
    110,110,10
 ```
+
+**Source:** <https://docs.beacon3d.com/config/#resonance_tester>

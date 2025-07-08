@@ -40,3 +40,4 @@ So your [adxl345] should look like:
 
 I do not know if this is a good idea, I just know it's possible!
 
+**Source:** <https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/installation/klipper-configuation>
