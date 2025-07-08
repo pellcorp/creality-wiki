@@ -226,7 +226,7 @@ It is important to make sure you have a way to [emergency factory reset](misc.md
 
 For cartographer you cannot use more than `microsteps: 32`, the MCU cannot handle high microsteps and cartographer, it puts too much pressure on the system and it will cause stuttering during bed meshes.
 
-### Calibration
+## Calibration
 
 !!! warning
 
@@ -249,7 +249,7 @@ For cartographer you cannot use more than `microsteps: 32`, the MCU cannot handl
     - `[bed_mesh]`
 
 
-#### Enable Touch Mode
+### Enable Touch Mode
 
 To be able to set up the printer for cartographer with touch mode for printing you need to make sure the
 mode is set to touch.
@@ -259,7 +259,7 @@ mode is set to touch.
 
 Source: <https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/installation/calibration#initial-calibration>
 
-#### Manual Cartographer Calibrate
+### Manual Cartographer Calibrate
 
 It is strongly recommended to disable the camera for these calibration steps, just use the `STOP_CAMERA`
 macro to do this.
@@ -286,7 +286,7 @@ Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-pape
 
 After the save config you have to do the cartographer threshold scan (see next)
 
-#### Cartographer Threshold Scan
+### Cartographer Threshold Scan
 
 It is strongly recommended to disable the camera for these calibration steps, just use the `STOP_CAMERA`
 macro to do this.
@@ -304,7 +304,7 @@ macro to do this.
 
 After the save config you have to do the touch calibration.   
 
-#### Cartographer Touch Calibration
+### Cartographer Touch Calibration
 
 It is strongly recommended to disable the camera for these calibration steps, just use the `STOP_CAMERA`
 macro to do this.
@@ -325,7 +325,7 @@ macro to do this.
 
 **Source:** <https://docs.cartographer3d.com/cartographer-probe/survey-touch>
 
-#### Pid Tuning and Input Shaping
+### Pid Tuning and Input Shaping
 
 At least PID tuning (bed and extruder) and input shaping is required for acceptable printing.  If you try and print after running the installer.sh and a power cycle but before any calibration you will most likely have horrendous quality, the worst you have ever seen on the k1.   After PID tuning and input shaping you should see the same kind of quality as you get with stock k1 + input shaper fix.
 
