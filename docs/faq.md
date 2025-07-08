@@ -586,3 +586,9 @@ Save and Restart and enjoy!
 
     Please also note that on more recent versions of Simple AF the `pause_on_runout` value is set to false, because
     we trigger `PAUSE` from the _ON_FILAMENT_RUNOUT macro now to avoid phantom triggers of pause when changing filament!
+
+## What is Axis Twist?
+
+So ZeroDotCmd has done some great videos on this topic <https://www.youtube.com/watch?v=O_U8t5Ap0Ik> and <https://www.youtube.com/watch?v=1KVTRDim1lk>
+
+More details here: <https://www.klipper3d.org/Axis_Twist_Compensation.html>
