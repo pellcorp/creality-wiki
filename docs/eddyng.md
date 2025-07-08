@@ -235,6 +235,10 @@ Calibrating the eddy should be as easy as running the `PROBE_EDDY_NG_SETUP`, fir
 
 Source: <https://github.com/vvuk/eddy-ng/wiki#calibration>
 
+!!! warn
+
+    If you get errors when it comes to tapping as part of printing you may need to [increase the tap drive current](eddyng_troubleshooting.md#tap-failed-with-z-error-during-homing-probe)
+
 ### Pid Tuning and Input Shaping
 
 At least PID tuning (bed and extruder) and input shaping is required for acceptable printing.  If you try and print after running the installer.sh and a power cycle but before any calibration you will most likely have horrendous quality, the worst you have ever seen on the k1.   After PID tuning and input shaping you should see the same kind of quality as you get with stock k1 + input shaper fix.
