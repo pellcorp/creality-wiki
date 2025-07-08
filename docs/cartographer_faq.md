@@ -25,7 +25,7 @@ And add the following settings:
 - `spi_bus: spi1`
 - `axes_map: x, y, z`
 
-So you [adxl345] should look like:
+So your [adxl345] should look like:
 
  ```
  [adxl345]
@@ -40,3 +40,4 @@ So you [adxl345] should look like:
  ```
 
 I do not know if this is a good idea, I just know it's possible!
+

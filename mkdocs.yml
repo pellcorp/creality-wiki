@@ -131,6 +131,7 @@ nav:
       - cartographer_flashing.md
   - Beacon:
       - beacon.md
+      - beacon_faq.md
       - beacon_flashing.md
   - EddyNG:
       - eddyng.md
