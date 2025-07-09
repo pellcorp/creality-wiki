@@ -102,7 +102,7 @@ So create a new file in the config directory, if you create the file in the conf
 
 So first step is create a new file in the config directory via fluidd or mainsail, I am going to call my file `example.cfg`
 
-Then just add `[include example.cfg]` to printer.cfg, just put it at the end of all the includes in the existing file, save and restart and your macro should appear in the list of macro buttons.
+Then just add `[include example.cfg]` to `printer.cfg`, just put it at the end of all the existing includes, save and restart and your macro should appear in the list of macro buttons.
 
 !!! note
 
@@ -116,7 +116,7 @@ SET_KINEMATIC_POSITION is a much better choice as once you activate this you can
 
 So if you need to move your nozzle up from being on the bed you should run:
 
-```    
+```
 SET_KINEMATIC_POSITION Z=0
 ```
 
@@ -132,7 +132,7 @@ The reason why you cannot choose Z=0 for this scenario is you are telling the pr
 
 If you were to set `SET_KINEMATIC_POSITION Z=100`, but your bed is already at the bottom of the printer there is no way to bring the bed up to meet the nozzle because it will exceed minimum position after moving 105mm.
 
-If you wish to restore access to force move set the variable_disable_force_move: True to False in sensorless.cfg and save and restart.
+If you wish to restore access to force move set the `variable_disable_force_move: True` to False in `sensorless.cfg` and save and restart.
 
 ## How do I replace Simple AF the Kamp Line_Purge with a custom line purge?
 
@@ -140,11 +140,11 @@ So currently there is no official support to do a simple line purge like stock c
 
 First step is to disable `[include Line_Purge.cfg]` in `printer.cfg`
 
-Second step is to create a new macros file, call it something like `CustomMacros.cfg` (it matters not what its called, just as long as its not the name of an existing file), and create your own LINE_PURGE macro.
+Second step is to create a new macros file, call it something like `CustomMacros.cfg` (it matters not what its called, just as long as it is not the name of an existing file), and create your own `LINE_PURGE` macro.
 
-Third step is to add a new include to printer.cfg for your new custom config file, and your LINE_PURGE macro will be called now instead of the KAMP one.
+Third step is to add a new include to `printer.cfg` for your new custom config file, and your `LINE_PURGE` macro will be called now instead of the KAMP one.
 
-The reason this is recommended over just commenting out LINE_PURGE in start_end.cfg and adding your own macro call, is everything I have described above will survive an Update and even a factory reset because config overrides supports removing the Line_Purge.cfg include, adding a new include to printer.cfg and backing up your custom files. 
+The reason this is recommended over just commenting out `LINE_PURGE` in `start_end.cfg` and adding your own macro call, is everything I have described above will survive an Update and even a factory reset because config overrides supports removing the `Line_Purge.cfg` include, adding a new include to `printer.cfg` and backing up your custom files. 
 
 
 ## How do I integrate Knomi?
@@ -459,7 +459,7 @@ save it to a USB key, and stick it into the front of your printer!
 
 Now login via ssh to your printer
 
-From the ssh command line on your printer download the older local_ota_update.sh script like so:
+From the ssh command line on your printer download the older `local_ota_update.sh` script like so:
 
 ```
 wget https://raw.githubusercontent.com/Guilouz/Creality-K1-Extracted-Firmwares/refs/heads/main/Firmware/etc/ota_bin/local_ota_update.sh -O - > /usr/data/local_ota_update.sh
@@ -488,7 +488,7 @@ ota update ok
 ota: stoped success
 ```
 
-Then you can logout of your ssh session and power cycle your printer, you should make sure you factory reset your printer (using the Simple AF method) before installing just to be sure all remnants of the CFS abomination has been excised
+Then you can logout of your ssh session and power cycle your printer.   Its a good idea to factory reset your printer before installing just to be sure all remnants of the CFS abomination has been excised!
 
 !!! note 
 
