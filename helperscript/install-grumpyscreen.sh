@@ -42,8 +42,10 @@ else
     exit 0
 fi
 
-# now lets clean out all the crap from guppyscreen
+# remove the update macro
 rm -rf /usr/data/printer_data/config/GuppyScreen/guppy_update.cfg
+
+# remove the extras which are no longer used
 rm /usr/share/klipper/klippy/extras/guppy_config_helper.py
 rm /usr/share/klipper/klippy/extras/guppy_module_loader.py
 rm /usr/share/klipper/klippy/extras/tmcstatus.py
