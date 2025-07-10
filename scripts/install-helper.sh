@@ -5,6 +5,11 @@ if [ ! -f /usr/data/printer_data/config/printer.cfg ]; then
   exit 1
 fi
 
+if [ -f /usr/data/pellcorp.done ]; then
+  >&2 echo "ERROR: SimpleAF is installed"
+  exit 1
+fi
+
 if [ ! -d /usr/data/helper-script ]; then
     git config --global http.sslVerify false
     git clone https://github.com/Guilouz/Creality-Helper-Script.git /usr/data/helper-script || exit $?
