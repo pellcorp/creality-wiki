@@ -26,7 +26,7 @@ mv /usr/data/guppyscreen.json.$$ /usr/data/guppyscreen/guppyscreen.json
 jq '.guppy_restart_cmd="/etc/init.d/S99guppyscreen restart"' /usr/data/guppyscreen/guppyscreen.json > /usr/data/guppyscreen.json.$$
 mv /usr/data/guppyscreen.json.$$ /usr/data/guppyscreen/guppyscreen.json
 
-jq '.guppy_update_cmd="/usr/data/printer_data/config/GuppyScreen/update-grumpyscreen.sh"' /usr/data/guppyscreen/guppyscreen.json > /usr/data/guppyscreen.json.$$
+jq '.guppy_update_cmd="/usr/data/guppyscreen/update-grumpyscreen.sh"' /usr/data/guppyscreen/guppyscreen.json > /usr/data/guppyscreen.json.$$
 mv /usr/data/guppyscreen.json.$$ /usr/data/guppyscreen/guppyscreen.json
 
 /etc/init.d/S99guppyscreen restart
