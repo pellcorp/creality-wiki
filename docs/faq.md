@@ -451,7 +451,7 @@ to position the toolhead much further away from the bed while the bed heats, the
 ## How can I downgrade from CFS Firmware?
 
 Creality added logic to prevent downgrading to older version of firmware, but its super easy to work around this, we just need to
-download an older local_ota_update.sh file, I have saved the 1.3.3.46 version of the script to my downloads repo to make it
+download an older `local_ota_update.sh file`, I have saved the 1.3.3.46 version of the script to my downloads repo to make it
 easier to get.
 
 So first of all go and grab the version of the older K1 firmware you want from <https://www.creality.com/pages/download-k1-flagship>,
@@ -488,7 +488,7 @@ ota update ok
 ota: stoped success
 ```
 
-Then you can logout of your ssh session and power cycle your printer.   Its a good idea to factory reset your printer before installing just to be sure all remnants of the CFS abomination has been excised!
+Then you can logout of your ssh session and power cycle your printer.   It is a good idea to factory reset your printer just to be sure all remnants of the CFS abomination has been excised!
 
 !!! note 
 
