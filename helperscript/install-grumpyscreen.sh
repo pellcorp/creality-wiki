@@ -29,7 +29,7 @@ echo
 echo "INFO: Installing grumpyscreen ..."
 
 wget https://raw.githubusercontent.com/pellcorp/creality-wiki/refs/heads/main/helperscript/update-grumpyscreen.sh -O - > /usr/data/guppyscreen/update-grumpyscreen.sh
-chmod 777 /usr/data/printer_data/config/GuppyScreen/update-grumpyscreen.sh
+chmod 777 /usr/data/guppyscreen/update-grumpyscreen.sh
 
 # remove the update macro
 rm -rf /usr/data/printer_data/config/GuppyScreen/guppy_update.cfg
@@ -41,4 +41,4 @@ rm /usr/share/klipper/klippy/extras/tmcstatus.py
 
 wget https://raw.githubusercontent.com/pellcorp/creality-wiki/refs/heads/main/helperscript/grumpyscreen.cfg -O - > /usr/data/printer_data/config/GuppyScreen/grumpyscreen.cfg
 
-/usr/data/printer_data/config/GuppyScreen/update-grumpyscreen.sh
+/usr/data/guppyscreen/update-grumpyscreen.sh

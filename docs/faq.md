@@ -609,3 +609,21 @@ has been removed as it breaks grumpyscreen.
 
 If you want to revert to normal guppyscreen just uninstall and reinstall from Helper Script, I do not provide a script to do this automatically
 
+Please note that GrumpyScreen is a vastly simplified version of Guppyscreen:
+
+- No Gcode execution
+- No Belts & Shake
+- No Input Shaper
+- No Bed Mesh
+- No TMC Metrics
+- No Tuning (other than during a print)
+- No Limits
+- No Power Devices (wtf that is)
+
+We focus on polishing a subset of features and we added some additional ones:
+
+- Factory Reset
+- E-Stop on more screens
+- Setting chamber temp targets
+
+The Belt Shaper calibration macros from GuppyScreen remain and can be executed from fluidd or mainsail
