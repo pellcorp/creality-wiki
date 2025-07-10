@@ -1,5 +1,10 @@
 #!/bin/sh
 
+if [ ! -d /usr/data/helper-script/ ]; then
+  echo "ERROR: Missing existing helper-script"
+  exit 1
+fi
+
 # this is for installing over the top of guppyscreen installed onto a helper script printer
 if [ ! -d /usr/data/guppyscreen ] || [ ! -f /etc/init.d/S99guppyscreen ]; then
   echo "ERROR: Missing existing guppyscreen"
@@ -23,7 +28,7 @@ rm -rf /usr/data/guppyscreen/*
 echo
 echo "INFO: Installing grumpyscreen ..."
 
-curl -L "https://github.com/pellcorp/guppyscreen/releases/download/main/guppyscreen.tar.gz" -o /usr/data/guppyscreen.tar.gz
+/usr/data/helper-script/files/fixes/curl -L "https://github.com/pellcorp/guppyscreen/releases/download/main/guppyscreen.tar.gz" -o /usr/data/guppyscreen.tar.gz
 if [ $? -eq 0 ]; then
     tar xf /usr/data/guppyscreen.tar.gz -C /usr/data/ 2> /dev/null
     status=$?
