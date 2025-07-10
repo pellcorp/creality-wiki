@@ -24,9 +24,6 @@ fi
 /etc/init.d/S99guppyscreen stop > /dev/null 2>&1
 killall -q guppyscreen > /dev/null 2>&1
 rm /usr/data/guppyscreen/* 2> /dev/null
-rm -rf /usr/data/guppyscreen/debian/
-rm -rf /usr/data/guppyscreen/scripts/
-rm /usr/data/guppyscreen/k1_mods/*.py
 
 echo
 echo "INFO: Installing grumpyscreen ..."
@@ -46,7 +43,7 @@ else
 fi
 
 # now lets clean out all the crap from guppyscreen
-rm -rf /usr/data/printer_data/config/GuppyScreen/*
+rm -rf /usr/data/printer_data/config/GuppyScreen/guppy_update.cfg
 rm /usr/share/klipper/klippy/extras/guppy_config_helper.py
 rm /usr/share/klipper/klippy/extras/guppy_module_loader.py
 rm /usr/share/klipper/klippy/extras/tmcstatus.py
