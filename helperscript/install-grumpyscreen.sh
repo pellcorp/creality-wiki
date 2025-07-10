@@ -23,7 +23,10 @@ fi
 
 /etc/init.d/S99guppyscreen stop > /dev/null 2>&1
 killall -q guppyscreen > /dev/null 2>&1
-rm -rf /usr/data/guppyscreen/*
+rm /usr/data/guppyscreen/* 2> /dev/null
+rm -rf /usr/data/guppyscreen/debian/
+rm -rf /usr/data/guppyscreen/scripts/
+rm /usr/data/guppyscreen/k1_mods/*.py
 
 echo
 echo "INFO: Installing grumpyscreen ..."
