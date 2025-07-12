@@ -108,15 +108,3 @@ You should optimise your `cartographer touch_model default` `z_offset` using bab
 In fluidd the save button after you finish or cancel your print can be a bit hard to find, look for
 
 ![image](assets/images/fluidd_save_zoffset.png)
-
-### Other Calibrations
-
-!!! info
-
-    The default value for pressure advance is set to `0.04`
-
-Refer to [Orcaslicer Calibration](https://github.com/SoftFever/OrcaSlicer/wiki/Calibration) for more calibrations
-
-Refer to the [Ellis Print Tuning Guide](https://ellis3dp.com/Print-Tuning-Guide/) for more great tuning ideas.
-
-
