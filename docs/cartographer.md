@@ -299,7 +299,7 @@ macro to do this.
 2. Home All (`G28`)
 3. Make sure nozzle is centred on bed
 4. Heat Nozzle to 150c (`M109 S150`) so that any filament can be removed from nozzle
-5. Execute `CARTOGRAPHER_THRESHOLD_SCAN SPEED=2 MIN=1500 MAX=5000`
+5. Execute `CARTOGRAPHER_THRESHOLD_SCAN SPEED=2 MIN=1000 MAX=5000`
 <br />Upon completion *`SAVE_CONFIG`*
 
 After the save config you have to do the touch calibration.   
