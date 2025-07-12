@@ -34,6 +34,9 @@ chmod 777 /usr/data/guppyscreen/update-grumpyscreen.sh
 # remove the update macro
 rm -rf /usr/data/printer_data/config/GuppyScreen/guppy_update.cfg
 
+sed -i 's/\[calibrate_shaper_config\]//g' /usr/data/printer_data/config/GuppyScreen/guppy_cmd.cfg
+sed -i 's/\[guppy_module_loader\]//g' /usr/data/printer_data/config/GuppyScreen/guppy_cmd.cfg
+
 # remove the extras which are no longer used
 rm /usr/share/klipper/klippy/extras/guppy_config_helper.py
 rm /usr/share/klipper/klippy/extras/guppy_module_loader.py
