@@ -95,10 +95,6 @@ your bed mesh, so best to do it before.
 3. Run `CARTOGRAPHER_AXIS_TWIST_COMPENSATION` 
    <br />Upon completion *`SAVE_CONFIG`*
 
-!!! warn
-
-    Do not use a metal feeler gauge for this step, it could interfere with calibration!!!
-
 **Source:** <https://cartographer-3d.gitbook.io/cartographer-beta-software/touch#axis-twist-compensation>
 
 ### First Print
