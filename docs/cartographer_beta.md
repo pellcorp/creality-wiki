@@ -1,5 +1,8 @@
 # Cartographer Beta
 
+The cartographer team is currently beta testing a new version of the klippy extras to
+replace scanner.py, I have setup a branch of Simple AF to make it easy to give it a try.
+
 ## Setup Simple AF
 
 You need to switch branches from ssh on printer with:
