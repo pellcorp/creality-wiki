@@ -8,9 +8,25 @@ replace scanner.py, I have setup a branch of Simple AF to make it easy to give i
 You need to switch branches from ssh on printer with:
 
 ```
-/usr/data/pellcorp/k1/installer.sh --branch jp_carto_plugin_alpha
-/usr/data/pellcorp/k1/installer.sh --update --mount %CURRENT%
+~/pellcorp/k1/installer.sh --branch jp_carto_plugin_alpha
+~/pellcorp/k1/installer.sh --update --mount %CURRENT%
 ```
+
+!!! note
+
+    If you run the above and receive an error like:
+
+        ```
+        root@K1Max-AF34 /root [#] ~/pellcorp/installer.sh --branch jp_carto_plugin_alpha
+        -sh: /root/pellcorp/installer.sh: not found
+        ```
+
+    It means you are on an older version of Simple AF and you should instead use the old style commands:
+
+        ```
+        /usr/data/pellcorp/k1/installer.sh --branch jp_carto_plugin_alpha
+        ~/pellcorp/k1/installer.sh --update --mount %CURRENT%
+        ```
 
 !!! danger
 
