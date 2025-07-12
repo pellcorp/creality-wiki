@@ -1,5 +1,11 @@
 # Cartographer Beta
 
+!!! danger
+
+    This is beta software, there is a very high likelihood of damaging your printer, especially if you
+    do not entirely understand what you are doing, so if you are feeling timid, listen to that and 
+    use the existing cartographer configuration process!
+
 The cartographer team is currently beta testing a new version of the klippy extras to
 replace scanner.py, I have setup a branch of Simple AF to make it easy to give it a try.
 
