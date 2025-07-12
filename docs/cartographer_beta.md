@@ -24,7 +24,6 @@ And remove any bed mesh and axis twist calibration stuff
 
     - [Scan calibration](#scan-calibration)
     - [Touch Calibration](#touch-calibration)
-    - [Cartographer Touch Calibration](#cartographer-touch-calibration)
 
 ### Scan calibration
 
