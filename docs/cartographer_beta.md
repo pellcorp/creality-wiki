@@ -9,8 +9,12 @@ You need to switch branches from ssh on printer with:
 
 ```
 /usr/data/pellcorp/k1/installer.sh --branch jp_carto_plugin_alpha
-/usr/data/pellcorp/k1/installer.sh --update
+/usr/data/pellcorp/k1/installer.sh --update --mount %CURRENT%
 ```
+
+!!! danger
+
+    The **--mount %CURRENT%** is required to ensure the mount offsets are applied correctly.
 
 You will need to remove the existing config from the bottom of your printer.cfg:
 
