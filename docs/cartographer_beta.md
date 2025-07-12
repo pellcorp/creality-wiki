@@ -119,3 +119,10 @@ You should optimise your `cartographer touch_model default` `z_offset` using bab
 In fluidd the save button after you finish or cancel your print can be a bit hard to find, look for
 
 ![image](assets/images/fluidd_save_zoffset.png)
+
+## Troubleshooting
+
+### Unable to find 5 samples within tolerance after 20 touches
+
+If you are getting a failed print, check the nozzle for stubborn filament, but also consider rerunning the `CARTOGRAPHER_TOUCH_CALIBRATE` with a larger START= value, because
+my experience so far is that I had this issue until I changed the threshold and then the issue went away.
