@@ -84,3 +84,39 @@ macro to do this.
     If it never touches the bed, refer to <https://cartographer-3d.gitbook.io/cartographer-beta-software/touch-calibration#nozzle-never-touches-the-bed>
 
 **Source:** <https://cartographer-3d.gitbook.io/cartographer-beta-software/touch-calibration>
+
+### Axis Twist Compensation
+
+Next it is highly recommended to perform axis twist compensation calibration **if you are using a rear mount** before doing anything else, this will affect the quality of
+your bed mesh, so best to do it before.
+
+1. Home All (`G28`)
+2. Heat Nozzle to 150c (`M109 S150`) so that any filament can be removed from nozzle
+3. Run `CARTOGRAPHER_AXIS_TWIST_COMPENSATION` 
+   <br />Upon completion *`SAVE_CONFIG`*
+
+!!! warn
+
+    Do not use a metal feeler gauge for this step, it could interfere with calibration!!!
+
+**Source:** <https://cartographer-3d.gitbook.io/cartographer-beta-software/touch#axis-twist-compensation>
+
+### First Print
+
+You should optimise your `cartographer touch_model default` `z_offset` using baby stepping, as documented here: <https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/installation/first-print>
+
+In fluidd the save button after you finish or cancel your print can be a bit hard to find, look for
+
+![image](assets/images/fluidd_save_zoffset.png)
+
+### Other Calibrations
+
+!!! info
+
+    The default value for pressure advance is set to `0.04`
+
+Refer to [Orcaslicer Calibration](https://github.com/SoftFever/OrcaSlicer/wiki/Calibration) for more calibrations
+
+Refer to the [Ellis Print Tuning Guide](https://ellis3dp.com/Print-Tuning-Guide/) for more great tuning ideas.
+
+
