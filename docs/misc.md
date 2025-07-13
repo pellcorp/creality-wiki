@@ -33,6 +33,13 @@ Switching to stock is as simple as running from ssh on the printer:
 
 And then power cycling the printer after the script finishes execution
 
+### Updating Stock Configuration
+
+So if you installed Simple AF without calibrating your printer, the first time you switch to stock you will need to execute the
+first run calibration, do that and then run `/usr/data/pellcorp/k1/switch-to-stock.sh --update` to update the stock config files backup
+so that calibration can be reused on subsequent switch to stock usages, otherwise if you do not run the --update you will be forced to
+run the first run calibration **every** time you switch to stock!
+
 ### Switching back to Simple AF
 
 You can easily switch back with:
