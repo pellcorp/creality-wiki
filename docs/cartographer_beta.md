@@ -6,8 +6,8 @@
     do not entirely understand what you are doing, so if you are feeling timid, listen to that and 
     use the existing cartographer configuration process!
 
-    I have discovered that if the cartographer disconnects during a print, the beta software will not
-    crash klipper instead you end up digging a hole in your bed because the homing fails miserably.
+    **I have discovered that if the cartographer disconnects during a print, the beta software will not
+    prevent klipper from trying to home z!**
 
 The cartographer team is currently beta testing a new version of the klippy extras to
 replace scanner.py, I have setup a branch of Simple AF to make it easy to give it a try.
