@@ -5,6 +5,10 @@
     Getting the klicky setup correctly takes time and patience to ensure you do not damage your printer or the klicky, also when doing operations
     like homing and bed meshes and the like you should never leave your printer unattended in case docking or attaching fails for some reason.
 
+!!! warning
+
+   The default klicky dock is for the **stock gantry**, its highly unlikely to work with any other gantry, the dock would need to be remixed for that!
+
 Come on over to the pellcorp discord server, here is the invite, the `#simple-af-klicky` channel has been setup for anyone wanting support for klicky.
 
 <https://discord.gg/2uGDzyJ3WX>
