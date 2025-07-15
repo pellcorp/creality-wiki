@@ -7,7 +7,7 @@
 
 !!! warning
 
-   The default klicky dock is for the **stock gantry**, its highly unlikely to work with any other gantry, the dock would need to be remixed for that!
+    The default klicky dock is for the **stock gantry**, its highly unlikely to work with any other gantry, the dock would need to be remixed for that!
 
 Come on over to the pellcorp discord server, here is the invite, the `#simple-af-klicky` channel has been setup for anyone wanting support for klicky.
 
