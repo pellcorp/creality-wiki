@@ -5,10 +5,6 @@
     Getting the klicky setup correctly takes time and patience to ensure you do not damage your printer or the klicky, also when doing operations
     like homing and bed meshes and the like you should never leave your printer unattended in case docking or attaching fails for some reason.
 
-!!! warning
-
-    The default klicky dock is for the **stock gantry**, its highly unlikely to work with any other gantry, the dock would need to be remixed for that!
-
 Come on over to the pellcorp discord server, here is the invite, the `#simple-af-klicky` channel has been setup for anyone wanting support for klicky.
 
 <https://discord.gg/2uGDzyJ3WX>
@@ -65,6 +61,10 @@ All probe mount options assume you have purchased a PCB Klicky:
 ### Mount Options
 
 #### Default
+
+!!! warning
+
+    This klicky dock is for the **stock gantry** only, it is highly unlikely to work with any other gantry, the dock would need to be remixed for that!
 
 The models can be downloaded from <https://www.printables.com/model/1170906-klicky-pcb-probe-for-creality-k1>, but the instructions for wiring and the macros
 are not relevant and the wiring shown is a bit misleading, so just the models from printables nothing else.   Don't forget the 1mm spacer on the toolhead

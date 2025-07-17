@@ -109,6 +109,9 @@ You need root access, if you are not already root, then follow the excellent [He
 
     ZeroDotCmd (aka Zero on discord) has provided an excellent BTT Eddy installation video, you can find it <https://www.youtube.com/watch?v=B17sS1klRxA>
 
+    Please note however that the macros referenced in the video guide have been removed and you should instead follow the Calibration section of this wiki,
+    I do not have the time to maintain the old guided macros, but you can still use the QUICK_START macro to do the pid and input shaper tuning.
+
 ### Factory Reset 
 
 You must do a factory reset **only** if you have installed Helper Script or Fluidd/Mainsail directly from Creality, otherwise
