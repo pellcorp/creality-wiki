@@ -111,7 +111,7 @@ On a K1M you can use the lidar cable either directly by repinning it, or via the
 
 !!! warning
 
-    For K1 Series Simple AF you must flash your cartographer with `CARTOGRAPHER K1 5.1.0` or `CARTOGRAPHER K1 5.0.0` survey firmware **before** starting the installation:
+    For K1 Series Simple AF you **must** flash your cartographer with `CARTOGRAPHER K1 5.1.0` or `CARTOGRAPHER K1 5.0.0` survey firmware **before** trying to use your printer:
 
     ![image](assets/images/cartographer_k1_510.png)
 
