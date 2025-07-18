@@ -14,6 +14,23 @@
 The cartographer team is currently beta testing a new version of the klippy extras to
 replace scanner.py, I have setup a branch of Simple AF to make it easy to give it a try.
 
+## Signup for the Beta
+
+If you are not a member of the Cartographer3d discord you must sign up, the invite is: <https://discord.gg/6DRRr66wYB>
+
+And find the announcement at:
+<https://discord.com/channels/1165274913624572014/1218945290741219410/1395520084964802721>
+
+And then head on over to the Enrol Me link:
+<https://discord.com/channels/1165274913624572014/1387149364388040880>
+
+Then you can setup Simple AF, if you run into any issues with getting Simple AF setup, **do not** ask the
+Cartographer guys, instead come over to the Simple AF discord instead for assistance.
+
+The Simple AF discord channel is: <https://discord.com/channels/999445685298536638/1371707036051701790>
+
+Remember use a bed plate that can be damaged and you won't cry yourself to sleep
+
 ## Setup Simple AF
 
 You need to switch branches from ssh on printer with:
