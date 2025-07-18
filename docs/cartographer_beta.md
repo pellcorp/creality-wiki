@@ -101,7 +101,7 @@ macro to do this.
 2. Home X Y (`G28 X Y`)
 3. Heat Nozzle to 150c (`M109 S150`) so that any filament can be removed from nozzle
 4. Make sure nozzle is centred on bed
-5. Run `CARTOGRAPHER_TOUCH_CALIBRATE START=1500 MAX=5000`
+5. Run `CARTOGRAPHER_TOUCH_CALIBRATE`
    <br />Upon completion *`SAVE_CONFIG`*
 
 !!! warning
