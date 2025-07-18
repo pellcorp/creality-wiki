@@ -34,7 +34,10 @@ See [Simple AF for RPi](rpi.md)
 
 ## Slicer Settings
 
-!!! warning
+!!! danger
+
+    Creality Print won't be able to see your printer after you have installed Simple AF, the only tested slicer we all use is OrcaSlicer, likely if you want to
+    use Creality Print you will need to print via usb.
 
     If you have used a cartographer with k1-klipper, please note that the `PRINT_START` macro specified in their docs **is not supported** by this project.   You **must** change your Slicer Start Print Machine G-Code (see next)
 

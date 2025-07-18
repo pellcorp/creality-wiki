@@ -40,6 +40,11 @@ See [Simple AF for RPi](rpi.md)
 
 ## Slicer Settings
 
+!!! danger
+
+    Creality Print won't be able to see your printer after you have installed Simple AF, the only tested slicer we all use is OrcaSlicer, likely if you want to
+    use Creality Print you will need to print via usb.
+
 There is an assumption that you are using a slicer like OrcaSlicer and Machine G-code like:
 
 ![image](assets/images/slicer.png)
