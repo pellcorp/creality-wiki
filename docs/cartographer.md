@@ -39,6 +39,9 @@ See [Simple AF for RPi](rpi.md)
     Creality Print won't be able to see your printer after you have installed Simple AF, the only tested slicer we all use is OrcaSlicer, likely if you want to
     use Creality Print you will need to print via usb.
 
+    Cura Slicer won't work out of the box for configuring START_PRINT variables as below, you need to change the start print EXTRUDER_TEMP and BED_TEMP to pass
+    in the correct values, but since I don't use Cura Slicer I can't advise on that!
+
     If you have used a cartographer with k1-klipper, please note that the `PRINT_START` macro specified in their docs **is not supported** by this project.   You **must** change your Slicer Start Print Machine G-Code (see next)
 
 There is an assumption that you are using a slicer like OrcaSlicer and Machine G-code like:
