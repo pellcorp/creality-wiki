@@ -257,7 +257,7 @@ during repeated bed meshes.
 
 !!! warn
 
-    Do not use a metal feeler gauge for this step, it could interfere with calibration!!!
+    Do not use a metal feeler gauge for this step, it could damage your eddy!!!
 
 !!! note
 
@@ -280,7 +280,7 @@ during repeated bed meshes.
 
 !!! warn
 
-    Do not use a metal feeler gauge for this step, it could interfere with calibration!!!
+    Do not use a metal feeler gauge for this step, it could damage your eddy!!!
 
 !!! tip
 
@@ -333,7 +333,7 @@ If you are using **a rear mount** it is highly recommended to perform axis twist
 
 !!! warn
 
-    Do not use a metal feeler gauge for this step, it could interfere with calibration!!!
+    Do not use a metal feeler gauge for this step, it could damage your eddy!!!
 
 ### First Print
 

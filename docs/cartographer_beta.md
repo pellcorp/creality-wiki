@@ -101,7 +101,7 @@ macro to do this.
 
 !!! warn
 
-    Do not use a metal feeler gauge for this step, it could interfere with calibration!!!
+    Do not use a metal feeler gauge for this step, it could damage your cartographer!!!
 
 After the save config you have to do the touch calibration.
 

@@ -233,6 +233,10 @@ Calibrating the eddy should be as easy as running the `PROBE_EDDY_NG_SETUP`, fir
 4. Run `PROBE_EDDY_NG_SETUP`, Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
 <br />Upon completion *`SAVE_CONFIG`*
 
+!!! warn
+
+    Do not use a metal feeler gauge for this step, it could damage your eddy!!!
+
 !!! note
 
     Is normal to show the Z position at almost at the max height of the printer even if the nozzle is somewhere in the middle or even close to the bed, this is not a bug, its intentional.   Until

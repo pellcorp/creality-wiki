@@ -236,7 +236,11 @@ It is strongly recommended to disable the camera for these calibration steps, ju
 5. Run `BEACON_CALIBRATE` Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
 <br />Upon completion *`SAVE_CONFIG`*
 
-**Source:** [Calibrate Beacon](https://docs.beacon3d.com/quickstart/#6-calibrate-beacon)
+!!! warn
+
+    Do not use a metal feeler gauge for this step, it could damage your beacon!!!
+
+**Source:** <https://docs.beacon3d.com/quickstart/#6-calibrate-beacon>
 
 !!! note
 

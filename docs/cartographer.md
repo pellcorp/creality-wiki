@@ -291,7 +291,7 @@ Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-pape
 
 !!! warn
 
-    Do not use a metal feeler gauge for this step, it could interfere with calibration!!!
+    Do not use a metal feeler gauge for this step, it could damage your cartographer!!!
 
 After the save config you have to do the cartographer threshold scan (see next)
 
@@ -376,7 +376,7 @@ your bed mesh, so best to do it before.
 
 !!! warn
 
-    Do not use a metal feeler gauge for this step, it could interfere with calibration!!!
+    Do not use a metal feeler gauge for this step, it could damage your cartographer!!!
 
 **Source:** <https://www.klipper3d.org/Axis_Twist_Compensation.html>
 
@@ -421,7 +421,7 @@ macro to do this.
 
 !!! warn
 
-    Do not use a metal feeler gauge for this step, it could interfere with calibration!!!
+    Do not use a metal feeler gauge for this step, it could damage your cartographer!!!
 
 You can then use the CARTOGRAPHER_MODEL parameter to start print from your slicer to select different filament profiles, this is required if you print with different filaments and/or use different bed aurfaces.
 
