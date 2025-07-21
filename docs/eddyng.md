@@ -230,7 +230,7 @@ Calibrating the eddy should be as easy as running the `PROBE_EDDY_NG_SETUP`, fir
 1. Home XY (`G28 X Y`)
 2. Make sure nozzle is centred on bed
 3. Heat Nozzle to 150c (`M109 S150`) so that any filament can be removed from nozzle
-4. Run `PROBE_EDDY_NG_SETUP`
+4. Run `PROBE_EDDY_NG_SETUP`, Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
 <br />Upon completion *`SAVE_CONFIG`*
 
 !!! note
