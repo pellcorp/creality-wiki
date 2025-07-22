@@ -293,6 +293,8 @@ Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-pape
 
     Do not use a metal feeler gauge for this step, it could damage your cartographer!!!
 
+**Source:** <https://docs.cartographer3d.com/cartographer-probe/settings-and-commands#cartographer_calibrate>
+
 After the save config you have to do the cartographer threshold scan (see next)
 
 ### Cartographer Threshold Scan
@@ -312,6 +314,8 @@ macro to do this.
 <br />Upon completion *`SAVE_CONFIG`*
 
 After the save config you have to do the touch calibration.
+
+**Source:** <https://docs.cartographer3d.com/cartographer-probe/settings-and-commands#cartographer_threshold_scan>
 
 ### Cartographer Touch Calibration
 
