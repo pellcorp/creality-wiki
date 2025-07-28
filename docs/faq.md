@@ -627,3 +627,14 @@ We focus on polishing a subset of features and we added some additional ones:
 - Setting chamber temp targets
 
 The Belt Shaper calibration macros from GuppyScreen remain and can be executed from fluidd or mainsail
+
+## How do I get the bed to cooldown after a print finishes?
+
+So by default with Bed Warp stabilisation enabled, the bed will stay warm after a print for up to 1 hour (this can be changed too btw), if you do not want
+the bed to stay warm after a print you can either toggle the [bed warp stabililation](#what-is-bed-warp-stabilisation-and-why-is-it-good) toggle in fluidd or mainsail before END_PRINT runs or you can modify the 
+`start_end.cfg` `variable_end_print_cool_down` and change it to `False`, so it should then look like:
+
+```
+variable_end_print_cool_down: False
+```
+
