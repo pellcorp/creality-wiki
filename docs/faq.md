@@ -206,6 +206,8 @@ max_speed: 0.8
 target_temp: 38
 ```
 
+You may need to add `ADC_TEMPERATURE` to the `[duplicate_pin_override]` section if using this last option.
+
 Note config overrides should retain these config changes as long as you do them in the fan_control.cfg file (special handling for that file allows adding and removing whole sections)
 
 
