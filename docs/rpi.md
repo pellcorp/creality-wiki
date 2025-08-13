@@ -171,6 +171,21 @@ with the --mount option without an argument to get a list of possible mounts:
 
 ![image](assets/images/rpi_choose_mount.png)
 
+## KlipperScreen and GrumpyScreen
+
+Neither of these is installed by default, you will need to manually install one or the other after the main
+installation has finished, its easy enough, so for KlipperScreen:
+
+```
+~/pellcorp/rpi/install-klipperscreen.sh 
+```
+
+For GrumpyScreen:
+
+```
+~/pellcorp/rpi/install-grumpyscreen.sh 
+```
+
 ## Post Installation issues
 
 ### Input Shaper and Klippain
