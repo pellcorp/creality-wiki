@@ -70,7 +70,7 @@ Then to switch to eddyng from eddy while retaining most of your customisations:
 
 !!! warning
 
-    Note you will need to change the `TheMount` to the eddy-ng mount you are using [eddy-ng mount options](eddyng#mount-options)
+    Note you will need to change the `TheMount` to the eddy-ng mount you are using [eddy-ng mount options](eddyng.md#mount-options)
 
     Klipper may fail to start because of the btt eddy configuration at the bottom of the file, you can just manually clean those up, save and restart.
 
@@ -92,7 +92,7 @@ Then to switch to cartotouch from btteddy while retaining most of your customisa
 ```
 
 !!! warning
-    Note you will need to change the `TheMount` to the cartographer mount you are using [cartographer mount options](cartographer#mount-options)
+    Note you will need to change the `TheMount` to the cartographer mount you are using [cartographer mount options](cartographer.md#mount-options)
 
     Klipper may fail to start because of the btt eddy configuration at the bottom of the file, you can just manually clean those up, save and restart.
 
