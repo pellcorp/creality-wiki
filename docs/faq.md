@@ -65,10 +65,12 @@ To make sure Simple AF repo is up to date and on the right branch, run this:
 Then to switch to eddyng from eddy while retaining most of your customisations:
 
 ```
-~/pellcorp/installer.sh --update eddyng
+~/pellcorp/installer.sh --update eddyng --mount TheMount
 ```
 
 !!! warning
+
+    Note you will need to change the `TheMount` to the eddy-ng mount you are using [eddy-ng mount options](eddyng#mount-options)
 
     Klipper may fail to start because of the btt eddy configuration at the bottom of the file, you can just manually clean those up, save and restart.
 
@@ -86,10 +88,11 @@ To make sure Simple AF repo is up to date and on the right branch, run this:
 Then to switch to cartotouch from btteddy while retaining most of your customisations:
 
 ```
-~/pellcorp/installer.sh --update cartotouch
+~/pellcorp/installer.sh --update cartotouch --mount TheMount
 ```
 
 !!! warning
+    Note you will need to change the `TheMount` to the cartographer mount you are using [cartographer mount options](cartographer#mount-options)
 
     Klipper may fail to start because of the btt eddy configuration at the bottom of the file, you can just manually clean those up, save and restart.
 
