@@ -408,6 +408,13 @@ Refer to the [Ellis Print Tuning Guide](https://ellis3dp.com/Print-Tuning-Guide/
 Some cartographer users choose to use scan only instead of touch and that is easy enough to do, you can setup for scan immediately
 after installation, no need to do the 3 step calibration as for touch!
 
+!!! danger
+
+    It is **vital** you are aware of the limitations of scan mode especially on the K1 series where temp calibration is not 
+    an option.    If you print different bed and/or nozzle temp materials you must save a separate model per material and even
+    with a single material the cartographer will return a different z-offset when hot than when cold, I strongly recommend
+    **against** using scan mode on Simple AF, its actually likely to lead to bed damage unless you know exactly what you are doing!
+
 You can run the following:
 
 1. Run `PROBE_SWITCH MODE=scan`
