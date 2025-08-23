@@ -115,7 +115,7 @@ macro to do this.
     For this next step, it is really important to be near your printer for this step, because if there is any issue with the printer configuration or your carto probe, its possible the nozzle will dig itself into the bed, so be hovering over that e-stop button!
 
 1. Run the `STOP_CAMERA` macro to stop the camera
-2. Home X Y (`G28 X Y`)
+2. Home All (`G28`)
 3. Heat Nozzle to 150c (`M109 S150`) so that any filament can be removed from nozzle
 4. Make sure nozzle is centred on bed
 5. Run `CARTOGRAPHER_TOUCH_CALIBRATE SPEED=2`
