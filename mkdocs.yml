@@ -127,26 +127,33 @@ nav:
   - Home: index.md
   - Cartographer:
       - cartographer.md
+      - cartographer_wiring.md
       - cartographer_troubleshooting.md
       - cartographer_faq.md
       - cartographer_flashing.md
   - Beacon:
       - beacon.md
+      - beacon_wiring.md
       - beacon_troubleshooting.md
       - beacon_faq.md
       - beacon_flashing.md
   - EddyNG:
       - eddyng.md
+      - eddyng_wiring.md
       - eddyng_troubleshooting.md
       - btteddy_flashing.md
   - BttEddy:
       - btteddy.md
+      - btteddy_wiring.md
       - btteddy_troubleshooting.md
       - btteddy_flashing.md
   - Other Probes:
       - bltouch.md
+      - bltouch_wiring.md
       - microprobe.md
+      - microprobe_wiring.md
       - klicky.md
+      - klicky_wiring.md
   - Rpi:
       - rpi.md
       - rpi_printer_definitions.md
