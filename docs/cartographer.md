@@ -190,6 +190,10 @@ To run the script, you must use the following command:
 /usr/data/pellcorp/installer.sh --install cartotouch --mount Mount
 ```
 
+!!! info
+
+    The warning `wget: note: TLS certificate validation not implemented` can be safely ignored
+
 !!! warning
 
     For `Mount` you must specify the mount option for the mount you have used, if you do not do this the printer will be incorrectly configured for your mount, and bed meshes, x and y limits and related config will be wrong.   Please refer to [Mount Options](#mount-options) for supported mounts.   
