@@ -1,4 +1,4 @@
-# Wiring
+# Beacon Wiring
 
 !!! note
 

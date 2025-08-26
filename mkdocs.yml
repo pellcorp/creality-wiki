@@ -139,7 +139,7 @@ nav:
       - beacon_flashing.md
   - EddyNG:
       - eddyng.md
-      - eddyng_wiring.md
+      - btteddy_wiring.md
       - eddyng_troubleshooting.md
       - btteddy_flashing.md
   - BttEddy:

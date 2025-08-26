@@ -1,4 +1,4 @@
-# Wiring
+# Microprobe Wiring
 
 !!! note
 

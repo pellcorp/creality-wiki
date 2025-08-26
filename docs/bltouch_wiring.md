@@ -1,4 +1,4 @@
-# Wiring
+# BlTouch Wiring
 
 !!! note
 

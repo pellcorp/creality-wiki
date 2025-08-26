@@ -1,4 +1,4 @@
-# Wiring
+# Cartographer Wiring
 
 !!! note
 

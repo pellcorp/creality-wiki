@@ -1,4 +1,4 @@
-# Wiring
+# Eddy Wiring
 
 !!! note
 

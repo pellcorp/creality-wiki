@@ -1,4 +1,4 @@
-# Wiring
+# Klicky Wiring
 
 !!! note
 
