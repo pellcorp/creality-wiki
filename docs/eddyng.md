@@ -73,12 +73,13 @@ defined for each of the bed type and filament type combinations.
 
 ### Mount Options
 
-| Mount        | Printer            | URL                                                                                                                                                                     | Notes                                                         |
-|--------------|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| **Default**  | K1, K1C, K1M, K1SE | <https://www.printables.com/model/1012524-btteddy-creality-k1-k1c-k1-max-mount><br/><https://www.printables.com/model/1212731-btt-eddy_ng-mount-for-creality-k1-series> ||
-| **Pellcorp** | K1, K1C, K1M, K1SE | <https://www.printables.com/model/965667-wip-k1-btt-eddy-rear-mount-v4>                                                                                                 ||
-| **Slam**     | K1, K1C, K1M, K1SE | <https://www.printables.com/model/1195575-btt-eddy-mount-for-k1c>                                                                                                       ||
-| **Default**  | Ender 3 V3 SE      | <https://www.printables.com/model/1202031-ender-3-v3-se-k1-hotend-btt-eddy-mount>                                                                                        ||
+| Mount        | Printer             | URL                                                                                                                                                                     | Notes                                                         |
+|--------------|---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
+| **Default**  | K1, K1C, K1M, K1SE  | <https://www.printables.com/model/1012524-btteddy-creality-k1-k1c-k1-max-mount><br/><https://www.printables.com/model/1212731-btt-eddy_ng-mount-for-creality-k1-series> ||
+| **Pellcorp** | K1, K1C, K1M, K1SE  | <https://www.printables.com/model/965667-wip-k1-btt-eddy-rear-mount-v4>                                                                                                 ||
+| **Slam**     | K1, K1C, K1M, K1SE  | <https://www.printables.com/model/1195575-btt-eddy-mount-for-k1c>                                                                                                       ||
+| **Default**  | Ender 3 V3 SE       | <https://www.printables.com/model/1202031-ender-3-v3-se-k1-hotend-btt-eddy-mount>                                                                                       ||
+| **Default**   | Ender 3 KE         | <https://www.printables.com/model/1002777-cr-touch-to-btt-eddy-adapter-bracket>                                                                                         |**This probe and mount has not been tested on a KE running Simple AF, experimental**|
 
 ### Nozzle Offset
 
