@@ -184,7 +184,7 @@ Your printer MCU firmware was updated successfully.   If you still see the `MCU 
 
 It is important to make sure you have a way to [emergency factory reset](misc.md#emergency-factory-reset) the printer, if the worst happens.   There is a macro in Simple AF called `CHECK_USB_KEY` that will wait for you to plug a USB thumb drive (aka USB key) in and tell you if it was able to be successfully mounted.
 
-You can find the CHECK_USB_KEY macro in Fluidd or Mainsail, post installation Fluidd and Mainsail are already installed, and can be access Fluidd by opening your browser and connecting
+You can find the CHECK_USB_KEY macro in Fluidd or Mainsail, because Fluidd and Mainsail are already installed, and you can access Fluidd by opening your browser and connecting
 using http://X.X.X.X, where X.X.X.X is your ip address that you used to login via ssh to your printer, you can also access Fluidd via http://X.X.X.X:4408 and Mainsail via http://X.X.X.X:4409!
 
 ![image](assets/images/check_usb_key_macro.png)
