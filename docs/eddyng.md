@@ -184,6 +184,13 @@ Your printer MCU firmware was updated successfully.   If you still see the `MCU 
 
 It is important to make sure you have a way to [emergency factory reset](misc.md#emergency-factory-reset) the printer, if the worst happens.   There is a macro in Simple AF called `CHECK_USB_KEY` that will wait for you to plug a USB thumb drive (aka USB key) in and tell you if it was able to be successfully mounted.
 
+You can find the CHECK_USB_KEY macro in Fluidd or Mainsail, post installation Fluidd is already installed and can be access by opening your browser and connecting
+using http://X.X.X.X, where X.X.X.X is your ip address that you used to login via ssh to your printer.
+
+![image](assets/images/check_usb_key_macro.png)
+
+After running the macro you should see output like the following:
+
 ![image](assets/images/check_usb_key.png)
 
 - If you get the message: `INFO - USB Key was recognised and mounted correctly (/tmp/udisk/sda1)`, your USB thumb drive (aka USB key) is perfect to use for a factory reset.
