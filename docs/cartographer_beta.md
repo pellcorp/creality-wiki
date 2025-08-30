@@ -6,10 +6,7 @@
     do not entirely understand what you are doing, so if you are feeling timid, listen to that and 
     use the existing cartographer configuration process!
 
-    **There might be a lingering bug with cartographer if it disconnects during homing or starting a print, ive
-    tried to reproduce the issue I had earlier and cannot, but I suspect its probably still there just more
-    random, so if you decide to participate in the beta please use a build plate and nozzle you don't mind
-    being damaged, and NEVER LEAVE YOUR PRINTER TO HOME OR START A PRINT WITHOUT YOU while using the beta!!!**
+    **If you decide to participate in the beta please NEVER LEAVE YOUR PRINTER TO HOME OR START A PRINT WITHOUT YOU while using the beta!!!**
 
 The cartographer team is currently beta testing a new version of the klippy extras to
 replace scanner.py, I have setup a branch of Simple AF to make it easy to give it a try.
