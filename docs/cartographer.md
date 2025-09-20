@@ -108,11 +108,11 @@ defined for each of the bed type and filament type combinations.
 
 !!! warning
 
-    For K1 Series (which includes the Ender 3 V3 KE and Ender 5 Max) Simple AF you **must** flash your cartographer with `CARTOGRAPHER K1 5.1.0` or `CARTOGRAPHER K1 5.0.0` survey firmware **before** trying to use your printer:
+    For K1 Series (which includes K1, K1C, K1SE, K1 Max, Ender 3 V3 KE and Ender 5 Max) Simple AF you **must** flash your cartographer with `CARTOGRAPHER K1 5.1.0` or `CARTOGRAPHER K1 5.0.0` survey firmware **before** trying to use your printer:
 
     ![image](assets/images/cartographer_k1_510.png)
 
-    For K1 Series (which includes the Ender 3 V3 KE and Ender 5 Max) Simple AF [there is a guide](cartographer_flashing.md).
+    For K1 Series (which includes K1, K1C, K1SE, K1 Max, Ender 3 V3 KE and Ender 5 Max) Simple AF [there is a guide](cartographer_flashing.md).
     
     For Simple AF for RPi, you can use the standard cartographer guide <https://docs.cartographer3d.com/cartographer-probe/firmware/firmware-updating/via-katapult/usb-flash#usb-katapult-updating>
 
