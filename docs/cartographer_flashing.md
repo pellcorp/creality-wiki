@@ -20,9 +20,9 @@ You must make sure that the cable you are using is pinned correctly.  For both f
 
 !!! warn
 
-    You **must** not use the firmware.cartographer3d.com, it will not flash the proper version of `CARTOGRAPHER K1 5.1.0` firmware for the K1.
+    You **must** not use the firmware.cartographer3d.com, it will not flash the proper version of `CARTOGRAPHER K1 5.1.0` firmware for the K1, K1C, K1SE, K1 Max, Ender 3 V3 KE and Ender 5 Max!
 
-    The reason this cannot be done on K1, seems to be some incompatibility with pyserial and MIPS, and issue for this has been opened 
+    The reason this cannot be done on the printer, seems to be some incompatibility with pyserial and MIPS, and issue for this has been opened 
     <https://github.com/Arksine/katapult/issues/137> 
 
 ## Flashing the Cartographer
@@ -71,7 +71,7 @@ $HOME/klippy-env/bin/pip3 install -r $HOME/klipper/scripts/klippy-requirements.t
 
 ## Flashing K1 Carto Touch Firmware
 
-This firmware is provided by Richard from Cartographer3d.com specifically for the K1, K1C, K1SE, K1 Max and Ender 5 Max.   It is critical that you flash your cartographer with this version of the Survey firmware over the official Survey Firmware on K1, K1M and K1C to avoid stuttering during bed meshes.
+This firmware is provided by Richard from Cartographer3d.com specifically for the K1, K1C, K1SE, K1 Max, Ender 3 V3 KE and Ender 5 Max.   It is critical that you flash your cartographer with this version of the Survey firmware over the official Survey Firmware on K1, K1SE, K1C, K1M, Ender 3 V3 KE and Ender 5 Max to avoid stuttering and instability, especially during bed meshes!
 
 ### Connect Cartographer via USB
 
