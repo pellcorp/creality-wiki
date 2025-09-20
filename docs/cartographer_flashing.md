@@ -152,6 +152,10 @@ When you reconnect your carto to your printer it should show a version `CARTOGRA
 
 ## Flashing K1 Firmware via DFU Mode
 
+!!! note
+
+    This process is applicable for K1, K1C, K1SE, K1 Max, Ender 3 V3 KE and Ender 5 Max!
+
 You need to bridge the boot pins before you plug your carto in via USB to your Linux session, make sure `lsusb` reports it being in DFU mode, it should show
 
 ![image](assets/images/carto_lsusb_dfu.png)
