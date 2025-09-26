@@ -1,8 +1,9 @@
-## Octoeverywhere Companion
+## OctoEverywhere Companion
 
-Octoeverywhere cannot be installed onto the K1 when running the Cartographer, beacon or btt eddy, the stress placed on the system by running octoeverywhere is too great, however the octoeverywhere companion running on another device on the same WIFI network as the K1 works great.
+OctoEverywhere is a 3D printing community project that enables free remote access, AI print failure detection, notifications, and more. OctoEverywhere cannot be installed onto the K1 when running the Cartographer, beacon or btt eddy, the stress placed on the system by running OctoEverywhere is too great, however the OctoEverywhere Companion running on another device on the same WIFI network as the K1 works great.
 
-<https://blog.octoeverywhere.com/octoeverywhere-companion-remote-access-for-any-klipper-printer/>
+Learn More:
+[https://octoeverywhere.com/companion](https://octoeverywhere.com/companion?source=simpleaf_docs)
 
 ## Mobileraker companion
 
