@@ -10,7 +10,7 @@ If you have successfully incorporated the use of Load Cells into SimpleAF or Kli
 
 ## How do I integrate a Nozzle Wipe?
 
-So Simple AF will likely never integrate nozzle macros directly nto the base product as most mounts and probes have no options for nozzle wipes or they only work with changes to slicer settings and faulty regions in bed meshes which I just don't want to deal with,
+So Simple AF will likely never integrate nozzle macros directly into the base product as most mounts and probes have no options for nozzle wipes or they only work with changes to slicer settings and faulty regions in bed meshes which I just don't want to deal with,
 however a couple of community members have contributed solutions you can use.
 
 !!! danger
