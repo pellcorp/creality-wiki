@@ -41,3 +41,11 @@ You can run the following command to fix your serial if you forgot to plug your 
         ```
         /usr/data/pellcorp/k1/installer.sh --fix-serial
         ```
+
+
+## Eddy is not connected, aborting homing Z
+
+If you see this error when trying to home your printer, it is a clear indication that the eddy was disconnected and
+you should look for a `mcu 'eddy' disconnected` error in your klippy.log or gcode console, if the eddy was momentarily
+disconnected (so if you run `lsusb` on the printer the eddy shows up), you can simply restart klipper from the services
+menu in Fluidd or Mainsail, if the eddy completely disappeared you will need to power cycle the printer!

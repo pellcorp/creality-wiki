@@ -48,3 +48,11 @@ You can run the following command to fix your serial if you forgot to plug your 
         ```
         /usr/data/pellcorp/k1/installer.sh --fix-serial
         ```
+
+
+## Cartographer is not connected, aborting homing Z
+
+If you see this error when trying to home your printer, it is a clear indication that the cartographer was disconnected and
+you should look for a `mcu 'scanner' disconnected` error in your klippy.log or gcode console, if the cartographer was momentarily
+disconnected (so if you run `lsusb` on the printer the cartographer shows up), you can simply restart klipper from the services
+menu in Fluidd or Mainsail, if the cartographer completely disappeared you will need to power cycle the printer!

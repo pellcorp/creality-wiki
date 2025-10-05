@@ -78,7 +78,7 @@ plugins:
 extra:
   social:
     - icon: simple/github
-      link: https://github.com/pellcorp
+      link: https://github.com/pellcorp/creality
     - icon: simple/discord
       link: https://discord.gg/tGGVn5qjgv
 

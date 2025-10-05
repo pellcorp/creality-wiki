@@ -10,7 +10,7 @@ If you have successfully incorporated the use of Load Cells into SimpleAF or Kli
 
 ## How do I integrate a Nozzle Wipe?
 
-So Simple AF will likely never integrate nozzle macros directly nto the base product as most mounts and probes have no options for nozzle wipes or they only work with changes to slicer settings and faulty regions in bed meshes which I just don't want to deal with,
+So Simple AF will likely never integrate nozzle macros directly into the base product as most mounts and probes have no options for nozzle wipes or they only work with changes to slicer settings and faulty regions in bed meshes which I just don't want to deal with,
 however a couple of community members have contributed solutions you can use.
 
 !!! danger
@@ -316,12 +316,18 @@ Then you need to run an update:
 
 Pellcorp will tell you the branch name, so replace jp_some_feature, with the branch he gave you!
 
+## How do I setup remote access and AI failure detection?
 
-## How do I control octoeverywhere?
+OctoEverywhere is a 3D printing community project that enables free remote access, AI print failure detection, notifications, live streaming, and more. The OctoEverywhere companion works great with all Klipper based 3D printers, including the Creality 3D printers.
+
+Learn More:
+[https://octoeverywhere.com/companion](https://octoeverywhere.com/companion?source=simpleaf_faq)
+
+## How do I control OctoEverywhere?
     
-[Installing Octoeverywhere Companion](misc.md#octoeverywhere-companion) 
+[Installing OctoEverywhere Companion](misc.md#octoeverywhere-companion) 
 
-Octoeverywhere Companion is controlled by systemd, and each printer is a separate service, so you can see them here:
+OctoEverywhere Companion is controlled by systemd, and each printer is a separate service, so you can see them here:
 
 ```
 $ systemctl list-units octo* --all
