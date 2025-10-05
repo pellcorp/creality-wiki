@@ -113,7 +113,7 @@ If you wish to be able to restore you local changes after a factory reset you sh
 Then perform the factory reset:
 
 ```
-/etc/init.d/S55factoryreset reset
+/etc/init.d/S58factoryreset reset
 ```
 
 Note that the `/usr/data/pellcorp-overrides` directory is not deleted during a factory reset.
