@@ -561,6 +561,12 @@ your filament runout sensor, like so:
 variable_runout_sensor: "filament_switch_sensor filament_sensor"
 ```
 
+!!! tip
+
+    The runout sensor you specify in the `variable_runout_sensor` configuration must match exactly your configuration,
+    so for instance if you switch to a toolhead sensor you might have configured it as `[filament_switch_sensor toolhead_sensor]`
+    in which case you must change the configuration to `variable_runout_sensor: "filament_switch_sensor toolhead_sensor"` 
+
 Save and Restart
 
 Then when you try to start a print without filament you will get a message like:
