@@ -9,23 +9,9 @@
     It is possible this method will not work for the BTT Duo, especially if it is currently flashed for Can from the factory, 
     and you may need to resort to the legacy approach documented [here](legacy_btteddy_flashing.md)
 
-## Flashing on Windows or Linux Desktop
+## On Printer
 
-### Connecting in BOOTSEL mode
-
-You need to connect your btt eddy to your computer in BOOTSEL mode, you do this by disconnecting the eddy usb **or eddy duo**, and then push and hold boot button on Eddy (It's next to where the cable plugs in) and at the same time, plug in the cable to your computer.
-
-On windows or a Linux Desktop if you successfully connected the eddy in bootsel mode, it will be mounted as a new drive on your computer.
-
-### Flashing btteddy.uf2 file
-
-Copy the [btteddy.uf2](https://raw.githubusercontent.com/pellcorp/klipper/master/fw/K1/btteddy.uf2) file across to the btt eddy drive, it should automatically flash the eddy and disconnect for you.
-
-Once this is done go ahead and reconnect your eddy to your K1.
-
-## On K1
-
-You can also flash the eddy on your K1, but you need to be able to disconnect and reconnect it for this to work, there is currently no way to get the eddy into boot mode any other way!
+You can also flash the eddy on your printer (K1, K1C, K1SE, K1M, Ender 3 V3 KE, etc) but you need to be able to disconnect and reconnect it for this to work, there is currently no way to get the eddy into boot mode any other way!
 
 So by default when connecting the btt eddy to the K1, `lsusb` will report:
 
@@ -55,6 +41,20 @@ If you check `lsusb` again, it should have switched back to:
 ```
 Bus 001 Device 102: ID 1d50:614e OpenMoko, Inc. USB2.0 Hub
 ```
+
+## Flashing on Windows or Linux Desktop
+
+### Connecting in BOOTSEL mode
+
+You need to connect your btt eddy to your computer in BOOTSEL mode, you do this by disconnecting the eddy usb **or eddy duo**, and then push and hold boot button on Eddy (It's next to where the cable plugs in) and at the same time, plug in the cable to your computer.
+
+On windows or a Linux Desktop if you successfully connected the eddy in bootsel mode, it will be mounted as a new drive on your computer.
+
+### Flashing btteddy.uf2 file
+
+Copy the [btteddy.uf2](https://raw.githubusercontent.com/pellcorp/klipper/master/fw/K1/btteddy.uf2) file across to the btt eddy drive, it should automatically flash the eddy and disconnect for you.
+
+Once this is done go ahead and reconnect your eddy to your K1.
 
 ## How do I know it flashed correctly?
 
