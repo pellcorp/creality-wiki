@@ -15,8 +15,7 @@ Simple AF is best supported by RPi or OrangePi running a version of debian **11 
 
 !!! danger
 
-    It looks like there might be some issues trying to get Simple AF for RPi setup on Debian 13, some experimental work has been done
-    to fix some issues with getting numpy setup but its untested.
+    Simple AF for RPi is currently not supported on Debian 13, this hopefully will change in the near future
 
 ### Raspberry Pi OS
 
