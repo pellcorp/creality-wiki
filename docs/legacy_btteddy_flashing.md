@@ -11,7 +11,8 @@ If you do not have a Raspberry PI or an Linux Desktop or Server machine, you can
 ## Install some deps on Ubuntu 
 
 ```
-sudo apt-get install build-essential git libusb-1.0.0-dev pkg-config
+sudo apt-get update
+sudo apt-get install -y build-essential git libusb-1.0.0-dev pkg-config
 ```
 
 ## Flashing
@@ -38,13 +39,15 @@ make
 cd -
 ```
 
-**Note:** If make fails you forgot to install `build-essential` package:
+!!! note
 
-```
-sudo apt-get install build-essential
-```
+    If make fails you forgot to install `build-essential` package:
 
-Then try the make again
+    ```
+    sudo apt-get install -y build-essential
+    ```
+
+    Then try the make again
 
 Then we need to do the actual flashing:
 
