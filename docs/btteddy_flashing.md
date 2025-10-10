@@ -59,7 +59,7 @@ Bus 001 Device 102: ID 1d50:614e OpenMoko, Inc. USB2.0 Hub
 
 ## How do I know it flashed correctly?
 
-Unfortunately I know of no way to test this except by plugging it back into the K1, restarting klipper and verifying the via the System tab, a correctly flashed eddy will have 
+Unfortunately I know of no way to test this except by plugging it back into the K1, restarting klipper and verifying via the System tab, a correctly flashed eddy will have 
 
 ![image](assets/images/eddy-ng-version.png)
 
