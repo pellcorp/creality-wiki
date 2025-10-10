@@ -18,7 +18,7 @@ Cartographer guys, instead come over to the Simple AF discord instead for assist
 
 The Simple AF discord channel is: <https://discord.com/channels/999445685298536638/1371707036051701790>
 
-Remember use a bed plate that can be damaged and you won't cry yourself to sleep
+The Beta specific channel is <https://discord.com/channels/999445685298536638/1371707036051701790>
 
 ## Setup Simple AF
 
