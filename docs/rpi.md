@@ -11,7 +11,12 @@ Orange Pis, etc.
 
 ## Supported OS
 
-Simple AF is best supported by RPi or OrangePi running a version of debian 11 or 12 (which includes Orange Pi Debian, Rasbian, Arbian, whatever BTT is doing, etc).
+Simple AF is best supported by RPi or OrangePi running a version of debian **11 or 12** (which includes Orange Pi Debian, Rasbian, Arbian, whatever BTT is doing, etc).
+
+!!! danger
+
+    It looks like there might be some issues trying to get Simple AF for RPi setup on Debian 13, some experimental work has been done
+    to fix some issues with getting numpy setup but its untested.
 
 ### Raspberry Pi OS
 
