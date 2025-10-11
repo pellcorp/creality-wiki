@@ -4,6 +4,10 @@ Come on over to the pellcorp discord server, the `#simple-af-carto` channel has 
 
 <https://discord.gg/2uGDzyJ3WX>
 
+## Looking for the Beta?
+
+See [Cartographer Beta](cartographer_beta.md)
+
 ## Thanks
 
 Thanks to Richard from <https://cartographer3d.com> and Zarboz from <https://wattskraken.xyz/> for donating Cartographers to the Simple AF project to add support and continue to support the cartographer.
