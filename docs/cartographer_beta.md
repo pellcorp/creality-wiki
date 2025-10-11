@@ -26,6 +26,11 @@ You need to switch branches from ssh on printer with:
 
 ```
 ~/pellcorp/k1/installer.sh --branch jp_carto_v2
+```
+
+And then you are going to be switching probes from `cartotouch` to `cartographer`:
+
+```
 ~/pellcorp/k1/installer.sh --update cartographer --mount %CURRENT%
 ```
 
