@@ -3,13 +3,6 @@
 The cartographer team is currently beta testing a new version of the klippy extras to
 replace scanner.py, I have setup a branch of Simple AF to make it easy to give it a try.
 
-!!! danger
-
-    I am currently rewriting the Cartographer Beta support to move it to a new probe, so anyone trying out this
-    beta using the existing `jp_carto_plugin_alpha` will probably need to manually migrate back to the main branch
-    because I am introducing a new probe type of `cartographer` for the new software and the existing `cartotouch`
-    will continue to support the existing currently stable software!!!
-
 ## Signup for the Beta
 
 If you are not a member of the Cartographer3d discord you must sign up, the invite is: <https://discord.gg/6DRRr66wYB>
@@ -32,8 +25,8 @@ The Beta specific channel is <https://discord.com/channels/999445685298536638/13
 You need to switch branches from ssh on printer with:
 
 ```
-~/pellcorp/k1/installer.sh --branch jp_carto_plugin_alpha
-~/pellcorp/k1/installer.sh --update --mount %CURRENT%
+~/pellcorp/k1/installer.sh --branch jp_carto_v2
+~/pellcorp/k1/installer.sh --update cartographer --mount %CURRENT%
 ```
 
 !!! note
@@ -41,15 +34,15 @@ You need to switch branches from ssh on printer with:
     If you run the above and receive an error like:
 
         ```
-        root@K1Max-AF34 /root [#] ~/pellcorp/installer.sh --branch jp_carto_plugin_alpha
+        root@K1Max-AF34 /root [#] ~/pellcorp/installer.sh --branch jp_carto_v2
         -sh: /root/pellcorp/installer.sh: not found
         ```
 
     It means you are on an older version of Simple AF and you should instead use the old style commands:
 
         ```
-        /usr/data/pellcorp/k1/installer.sh --branch jp_carto_plugin_alpha
-        ~/pellcorp/k1/installer.sh --update --mount %CURRENT%
+        /usr/data/pellcorp/k1/installer.sh --branch jp_carto_v2
+        ~/pellcorp/k1/installer.sh --update cartographer --mount %CURRENT%
         ```
 
 !!! danger
