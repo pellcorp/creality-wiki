@@ -3,6 +3,13 @@
 The cartographer team is currently beta testing a new version of the klippy extras to
 replace scanner.py, I have setup a branch of Simple AF to make it easy to give it a try.
 
+!!! danger
+
+   I am currently rewriting the Cartographer Beta support to move it to a new probe, so anyone trying out this
+   beta using the existing jp_carto_plugin_alpha will probably need to manually migrate back to the main branch
+   because I am introducing a new probe type of `cartographer` for the new software and the existing `cartotouch`
+   will continue to support the existing currently stable software!!!
+
 ## Signup for the Beta
 
 If you are not a member of the Cartographer3d discord you must sign up, the invite is: <https://discord.gg/6DRRr66wYB>
