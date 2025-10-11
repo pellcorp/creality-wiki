@@ -122,6 +122,11 @@ macro to do this.
 
 **Source:** <https://cartographer-3d.gitbook.io/cartographer-beta-software/touch-calibration>
 
+### Bed Mesh Boundary
+
+Might be a useful tool to calculate mesh min and max:
+<https://cartographer-3d.gitbook.io/cartographer-beta-software/features/touch#bed-mesh-calibrate>
+
 ### Axis Twist Compensation
 
 !!! note 
