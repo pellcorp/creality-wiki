@@ -22,10 +22,10 @@ The Beta specific channel is <https://discord.com/channels/999445685298536638/13
 
 ## Setup Simple AF
 
-You need to switch branches from ssh on printer with:
+You need to update Simple AF repository to latest
 
 ```
-~/pellcorp/k1/installer.sh --branch jp_carto_v2
+~/pellcorp/k1/installer.sh --branch main
 ```
 
 And then you are going to be switching probes from `cartotouch` to `cartographer`:
@@ -39,14 +39,14 @@ And then you are going to be switching probes from `cartotouch` to `cartographer
     If you run the above and receive an error like:
 
         ```
-        root@K1Max-AF34 /root [#] ~/pellcorp/installer.sh --branch jp_carto_v2
+        root@K1Max-AF34 /root [#] ~/pellcorp/installer.sh --branch main
         -sh: /root/pellcorp/installer.sh: not found
         ```
 
     It means you are on an older version of Simple AF and you should instead use the old style commands:
 
         ```
-        /usr/data/pellcorp/k1/installer.sh --branch jp_carto_v2
+        /usr/data/pellcorp/k1/installer.sh --branch main
         ~/pellcorp/k1/installer.sh --update cartographer --mount %CURRENT%
         ```
 
