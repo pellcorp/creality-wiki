@@ -20,6 +20,6 @@ variable_wait_for_temp: False
 !!! note
 
     Until recently this configuration was in the sensorless.cfg file as `variable_btteddy_wait_for_temp: True`, its been
-    moved where it belongs in btteddy_macro.cfg!
+    moved where it belongs in `btteddy_macro.cfg`!
 
 
