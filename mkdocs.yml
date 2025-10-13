@@ -142,6 +142,7 @@ nav:
       - btteddy.md
       - btteddy_wiring.md
       - btteddy_troubleshooting.md
+      - btteddy_faq.md
       - btteddy_flashing.md
   - Other Probes:
       - bltouch.md
