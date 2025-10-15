@@ -26,7 +26,7 @@ It is recommended to use the [Rpi Imager](https://www.raspberrypi.com/software/)
 
 !!! danger
 
-    As Simple AF for RPi is currently **not supported on Debian 13**, so you would need to choose **`Raspberry PI OS (Legacy, 64 bit) Lite`** for
+    As Simple AF for RPi is currently **not supported on Debian 13**, you must choose **`Raspberry PI OS (Legacy, 64 bit) Lite`**
     when using Rpi Imager!
 
 
