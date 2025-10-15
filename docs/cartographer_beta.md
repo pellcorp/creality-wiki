@@ -1,7 +1,10 @@
 # Cartographer Beta
 
-The cartographer team is currently beta testing a new version of the klippy extras to
-replace scanner.py, I have setup a branch of Simple AF to make it easy to give it a try.
+The cartographer team is currently beta testing a new version of the klippy extra to replace scanner.py, the changes
+required to use this new software have been merged to main branch, it requires you to use a new probe called `cartographer`,
+whereas the existing probe `cartotouch` is for the existing software, at some point during the next few months the
+`cartotouch` support will be deprecated, the process to make this happen won't start until the cartographer3d.com team
+releases the new software, which is supposed to happen in the next couple of weeks (as of oct 15 2025)
 
 ## Signup for the Beta
 
@@ -14,21 +17,19 @@ And then head on over to the Enrol Me link:
 <https://discord.com/channels/1165274913624572014/1387149364388040880>
 
 Then you can setup Simple AF, if you run into any issues with getting Simple AF setup, **do not** ask the
-Cartographer guys, instead come over to the Simple AF discord instead for assistance.
+Cartographer guys, instead come over to the Simple AF discord instead for assistance!
 
 The Simple AF discord channel is: <https://discord.com/channels/999445685298536638/1371707036051701790>
 
-The Beta specific channel is <https://discord.com/channels/999445685298536638/1371707036051701790>
-
 ## Setup Simple AF
 
-You need to update Simple AF repository to latest
+You need to update Simple AF repository to latest:
 
 ```
 ~/pellcorp/k1/installer.sh --branch main
 ```
 
-And then you are going to be switching probes from `cartotouch` to `cartographer`:
+Then you are going to be switching probes from `cartotouch` to `cartographer`:
 
 ```
 ~/pellcorp/k1/installer.sh --update cartographer --mount %CURRENT%
@@ -50,7 +51,7 @@ And then you are going to be switching probes from `cartotouch` to `cartographer
         ~/pellcorp/k1/installer.sh --update cartographer --mount %CURRENT%
         ```
 
-!!! danger
+!!! warn
 
     The **--mount %CURRENT%** is required to ensure the mount offsets are applied correctly.
 
@@ -63,7 +64,7 @@ And remove any bed mesh and axis twist calibration stuff
 
 ## Calibration
 
-!!! warning
+!!! warn
 
     The following calibration steps are required to setup a new printer:
 
@@ -115,7 +116,7 @@ macro to do this.
 5. Run `CARTOGRAPHER_TOUCH_CALIBRATE SPEED=2`
    <br />Upon completion *`SAVE_CONFIG`*
 
-!!! warning
+!!! warn
 
     Observe your nozzle to make sure it touches on the bed.
     If it never touches the bed, refer to <https://cartographer-3d.gitbook.io/cartographer-beta-software/touch-calibration#nozzle-never-touches-the-bed>
