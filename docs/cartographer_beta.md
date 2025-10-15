@@ -129,6 +129,18 @@ macro to do this.
 
 **Source:** <https://cartographer-3d.gitbook.io/cartographer-beta-software/touch-calibration>
 
+### Z backlash estimation
+
+It is strongly recommended to disable the camera for these calibration steps, just use the `STOP_CAMERA`
+macro to do this.
+
+1. Run the `STOP_CAMERA` macro to stop the camera
+2. Home All (`G28`)
+3. Run `CARTOGRAPHER_ESTIMATE_BACKLASH CALIBRATE=1`
+   <br />Upon completion *`SAVE_CONFIG`*
+
+**Source:** <https://cartographer-3d.gitbook.io/cartographer-beta-software/features/z-backlash-estimation>
+
 ### Bed Mesh Boundary
 
 Might be a useful tool to calculate mesh min and max:
