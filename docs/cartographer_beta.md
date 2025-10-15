@@ -4,7 +4,7 @@ The cartographer team is currently beta testing a new version of the klippy extr
 required to use this new software have been merged to main branch.  Setting up the new software requires you to switch 
 to a new probe config called `cartographer`
 
-!!! 
+!!! note
 
     You do not need a new cartographer probe this is just a Simple AF config change!
 
