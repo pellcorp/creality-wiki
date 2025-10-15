@@ -1,10 +1,16 @@
 # Cartographer Beta
 
 The cartographer team is currently beta testing a new version of the klippy extra to replace scanner.py, the changes
-required to use this new software have been merged to main branch, it requires you to use a new probe called `cartographer`,
-whereas the existing probe `cartotouch` is for the existing software, at some point during the next few months the
-`cartotouch` support will be deprecated, the process to make this happen won't start until the cartographer3d.com team
-releases the new software, which is supposed to happen in the next couple of weeks (as of oct 15 2025)
+required to use this new software have been merged to main branch.  Setting up the new software requires you to switch 
+to a new probe config called `cartographer`
+
+!!! 
+
+    You do not need a new cartographer probe this is just a Simple AF config change!
+
+The existing probe `cartotouch` config is for the existing software (the `scanner.py`), and at some point during the next 
+few months the `cartotouch` support will be deprecated in Simple AF.  The process to make this happen won't start until 
+the cartographer3d.com team releases the new software, which is supposed to happen in the next couple of weeks (as of oct 15 2025)
 
 ## Signup for the Beta
 
