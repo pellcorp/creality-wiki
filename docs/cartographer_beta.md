@@ -41,6 +41,11 @@ Then you are going to be switching probes from `cartotouch` to `cartographer`:
 ~/pellcorp/k1/installer.sh --update cartographer --mount %CURRENT%
 ```
 
+!!! info
+
+    If you are wanting to use the cartographer beta from a fresh installation, you can do a `--install cartographer`, rather than
+    a `--update cartographer`, all the other args remain the same!
+
 !!! note
 
     If you run the above and receive an error like:
