@@ -14,7 +14,7 @@ This probe is currently not supported on Ender 5 Max
 
 ### Ender 3 V3 KE
 
-This probe is not **yet** supported, but is planned.
+There is experimental untested support for a Default mount on the Ender 3 V3 KE.
 
 ### Simple AF for RPi
 
