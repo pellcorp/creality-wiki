@@ -174,7 +174,7 @@ You need to choose a probe one of:
 
 #### Choose a mount
 
-If you have chosen a predefined printer its possible it will require you to choose a mount, you can run the installer
+If you have chosen a predefined printer, it **might** require you to choose a mount, you can run the installer
 with the --mount option without an argument to get a list of possible mounts:
 
 ![image](assets/images/rpi_choose_mount.png)
