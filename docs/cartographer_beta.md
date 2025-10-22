@@ -32,7 +32,7 @@ The Simple AF discord channel is: <https://discord.com/channels/9994456852985366
 You need to update Simple AF repository to latest:
 
 ```
-~/pellcorp/k1/installer.sh --branch main
+~/pellcorp/installer.sh --branch main
 ```
 
 Then you are going to be switching probes from `cartotouch` to `cartographer`:
@@ -58,7 +58,7 @@ Then you are going to be switching probes from `cartotouch` to `cartographer`:
     It means you are on an older version of Simple AF and you should instead use the old style commands:
 
         ```
-        /usr/data/pellcorp/installer.sh --branch main
+        /usr/data/pellcorp/k1/installer.sh --branch main
         ~/pellcorp/installer.sh --update cartographer --mount %CURRENT%
         ```
 
