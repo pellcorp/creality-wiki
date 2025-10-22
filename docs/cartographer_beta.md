@@ -43,8 +43,8 @@ Then you are going to be switching probes from `cartotouch` to `cartographer`:
 
 !!! info
 
-    If you are wanting to use the cartographer beta from a fresh installation, you can do a `--install cartographer`, rather than
-    a `--update cartographer`, all the other args remain the same!
+    If you are wanting to use the cartographer beta from a fresh installation, you can do a `--install cartographer --mount TheMount`, rather than
+    a `--update cartographer`, where `TheMount` is a supported cartographer [mount option](cartographer.md#mount-options)
 
 !!! note
 
