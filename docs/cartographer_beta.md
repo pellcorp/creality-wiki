@@ -38,7 +38,7 @@ You need to update Simple AF repository to latest:
 Then you are going to be switching probes from `cartotouch` to `cartographer`:
 
 ```
-~/pellcorp/k1/installer.sh --update cartographer --mount %CURRENT%
+~/pellcorp/installer.sh --update cartographer --mount %CURRENT%
 ```
 
 !!! info
@@ -58,8 +58,8 @@ Then you are going to be switching probes from `cartotouch` to `cartographer`:
     It means you are on an older version of Simple AF and you should instead use the old style commands:
 
         ```
-        /usr/data/pellcorp/k1/installer.sh --branch main
-        ~/pellcorp/k1/installer.sh --update cartographer --mount %CURRENT%
+        /usr/data/pellcorp/installer.sh --branch main
+        ~/pellcorp/installer.sh --update cartographer --mount %CURRENT%
         ```
 
 !!! warn
