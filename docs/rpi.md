@@ -130,7 +130,7 @@ The installation command is very similar to K1 series:
 
 - Where `--printer <ThePrinter>` is a predefined, downloaded or downloadable printer definition
 - Where `--mount <TheMount>` is only required for some predefined printer definitions
-- Where `<TheProbe>` is one of bltouch, microprobe, cartotouch, beacon, klicky, btteddy or eddyng. 
+- Where `<TheProbe>` is one of bltouch, microprobe, cartotouch, cartographer, beacon, klicky, btteddy or eddyng. 
 
 #### Predefined Printer
 
@@ -164,6 +164,7 @@ You can specify a http:// or https:// url for the --printer parameter or you can
 You need to choose a probe one of:
 
 - [Cartotouch](cartographer.md)
+- [Cartographer(cartographer_beta.md)
 - [Beacon](beacon.md)
 - [BlTouch](bltouch.md)
 - [Microprobe](microprobe.md)
