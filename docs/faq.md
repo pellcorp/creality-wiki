@@ -47,8 +47,6 @@ gcode:
 WIPE_NOZZLE
 ```
 
-
-
 **I provide no guarantees this works because I have only tested it allows klipper to start, but this is how you integrate the nozzle cleaner, its up to you to verify your mount does not collide with it.**
 
 
@@ -57,6 +55,9 @@ WIPE_NOZZLE
 For Calin solution its all on the website:
 <https://makerworld.com/en/models/1547901-creality-k1-max-silicone-nozzle-wiper>
 
+!!! danger
+
+The `SET_FAN_SPEED FAN=part SPEED=0` will fail 
 
 ## How do I switch from btteddy to eddyng?
 
