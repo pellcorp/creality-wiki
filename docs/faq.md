@@ -24,9 +24,13 @@ and upload it to your config directory
 
 Make sure its included **after** `[include start_end.cfg]` in `printer.cfg`
     
-Then make these changes to `advanced_nozzle_cleaner.cfg`:
+Then make a few changes to `advanced_nozzle_cleaner.cfg`:
 
-Disable this:
+!!! danger 
+    
+    You must replace any `M106 P0` references with just `M106` as `P0` is not supported to reference the part fan, and worked in the past quite by accident.
+
+You need to disable this:
 
 ```
 #[gcode_macro CX_NOZZLE_CLEAR]
@@ -42,6 +46,8 @@ Add this:
 gcode:
 WIPE_NOZZLE
 ```
+
+
 
 **I provide no guarantees this works because I have only tested it allows klipper to start, but this is how you integrate the nozzle cleaner, its up to you to verify your mount does not collide with it.**
 
