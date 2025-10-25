@@ -112,6 +112,10 @@ CATAPULT_DEV=$(ls /dev/serial/by-id/usb-katapult*)
 sudo -E $HOME/klippy-env/bin/python $HOME/klipper/lib/canboot/flash_can.py -f $HOME/cartographer-klipper/firmware/v2-v3/survey/5.1.0/Survey_Cartographer_K1_USB_8kib_offset.bin -d $CATAPULT_DEV
 ```
 
+!!! note
+
+    If downgrading firmware replace 5.1.0 with 5.0.0
+
 You should see output this this:
 
 ```
