@@ -4,7 +4,7 @@
 
     Do not follow these instructions unless you have a USB V3 Carto!!!!!!
 
-!!! warn
+!!! warning
 
     You might corrupt the katapult boot loader trying to use a Linux VM or WSL to flash the carto, I strongly recommend a live USB over a VM or WSL!
 
@@ -14,11 +14,9 @@ You must make sure that the cable you are using is pinned correctly.  For both f
 
 ![image](assets/images/carto_connector.png)
 
-!!! warn
+!!! warning
     
     The right angle and flat pack pin out is different to using a low profile carto, so the image above **does not apply** to low profile cartographers!
-
-!!! warn
 
     You **must** not use the firmware.cartographer3d.com, it will not flash the proper version of `CARTOGRAPHER K1 5.1.0` firmware for the K1, K1C, K1SE, K1 Max, Ender 3 V3 KE and Ender 5 Max!
 

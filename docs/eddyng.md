@@ -83,7 +83,7 @@ defined for each of the bed type and filament type combinations.
 
 ### Nozzle Offset
 
-!!! warn
+!!! warning
 
     Regardless of the mount, you should verify the btt eddy **coil** is at least 3mm away from the nozzle tip, its better to be further away than closer.
     This is not the difference of the bottom of the case to the nozzle, the case is about 1.2mm thick, so this means you want the bottom of the case to be at least 2mm offset, 
@@ -105,7 +105,7 @@ defined for each of the bed type and filament type combinations.
 
 ## Installation
 
-!!! warn
+!!! warning
 
     The installation section does not apply to Simple AF for RPi, See [Simple AF for RPi](rpi.md#installation)
 
@@ -230,7 +230,7 @@ Calibrating the eddy should be as easy as running the `PROBE_EDDY_NG_SETUP`, fir
 4. Run `PROBE_EDDY_NG_SETUP`, Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
 <br />Upon completion *`SAVE_CONFIG`*
 
-!!! warn
+!!! warning
 
     Do not use a metal feeler gauge for this step, it could damage your eddy!!!
 
@@ -244,7 +244,7 @@ Calibrating the eddy should be as easy as running the `PROBE_EDDY_NG_SETUP`, fir
 
 Source: <https://github.com/vvuk/eddy-ng/wiki#calibration>
 
-!!! warn
+!!! warning
 
     If you get errors when it comes to tapping as part of printing you may need to [increase the tap drive current](eddyng_troubleshooting.md#tap-failed-with-z-error-during-homing-probe)
 

@@ -51,7 +51,7 @@ Then you are going to be switching probes from `cartotouch` to `cartographer`:
         ~/pellcorp/installer.sh --update cartographer --mount %CURRENT%
         ```
 
-!!! warn
+!!! warning
 
     The **--mount %CURRENT%** is required to ensure the mount offsets are applied correctly.
 
@@ -64,7 +64,7 @@ And remove any bed mesh and axis twist calibration stuff
 
 ## Calibration
 
-!!! warn
+!!! warning
 
     The following calibration steps are required to setup a new printer:
 
@@ -94,7 +94,7 @@ macro to do this.
 
 **Source:** <https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/software-configuration/scan-calibration>
 
-!!! warn
+!!! warning
 
     Do not use a metal feeler gauge for this step, it could damage your cartographer!!!
 
@@ -116,7 +116,7 @@ macro to do this.
 5. Run `CARTOGRAPHER_TOUCH_CALIBRATE SPEED=2`
    <br />Upon completion *`SAVE_CONFIG`*
 
-!!! warn
+!!! warning
 
     Observe your nozzle to make sure it touches on the bed.
     If it never touches the bed, refer to <https://cartographer-3d.gitbook.io/cartographer-beta-software/touch-calibration#nozzle-never-touches-the-bed>

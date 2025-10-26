@@ -76,7 +76,7 @@ defined for each of the bed type and filament type combinations.
 
 ### Nozzle Offset
 
-!!! warn
+!!! warning
 
     If you use a different probe mount you must make sure the bottom of the btt eddy is between 2.6mm and 3mm from the tip of the nozzle, so if the nozzle is touching the bed (when both are cold), the bottom of the eddy should be at least 2.5mm above the bed and no more than 3mm.
 
@@ -96,7 +96,7 @@ defined for each of the bed type and filament type combinations.
 
 ## Installation
 
-!!! warn
+!!! warning
 
      The installation section does not apply to Simple AF for RPi, See [Simple AF for RPi](rpi.md#installation)
 
@@ -253,7 +253,7 @@ during repeated bed meshes.
 
 **Source:** <https://github.com/bigtreetech/Eddy?tab=readme-ov-file#3-mapping-eddy-readings-to-nozzle-heights>
 
-!!! warn
+!!! warning
 
     Do not use a metal feeler gauge for this step, it could damage your eddy!!!
 
@@ -276,7 +276,7 @@ during repeated bed meshes.
 
 **Source:** <https://github.com/bigtreetech/Eddy?tab=readme-ov-file#5-temperature-compensation-calibration-eddy-usb-only>
 
-!!! warn
+!!! warning
 
     Do not use a metal feeler gauge for this step, it could damage your eddy!!!
 
@@ -329,7 +329,7 @@ If you are using **a rear mount** it is highly recommended to perform axis twist
 
 **Source:** <https://www.klipper3d.org/Axis_Twist_Compensation.html>
 
-!!! warn
+!!! warning
 
     Do not use a metal feeler gauge for this step, it could damage your eddy!!!
 

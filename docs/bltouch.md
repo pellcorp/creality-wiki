@@ -92,7 +92,7 @@ defined for each of the bed type and filament type combinations.
 
 ## Installation
 
-!!! warn
+!!! warning
 
      The installation section does not apply to Simple AF for RPi, See [Simple AF for RPi](rpi.md#installation)
 

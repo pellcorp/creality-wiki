@@ -109,7 +109,7 @@ defined for each of the bed type and filament type combinations.
 
 ## Installation
 
-!!! warn
+!!! warning
 
      The installation section does not apply to Simple AF for RPi, See [Simple AF for RPi](rpi.md#installation)
 
@@ -235,7 +235,7 @@ It is strongly recommended to disable the camera for these calibration steps, ju
 5. Run `BEACON_CALIBRATE` Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
 <br />Upon completion *`SAVE_CONFIG`*
 
-!!! warn
+!!! warning
 
     Do not use a metal feeler gauge for this step, it could damage your beacon!!!
 

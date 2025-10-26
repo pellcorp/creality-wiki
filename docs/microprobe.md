@@ -87,7 +87,7 @@ pin: ^!nozzle_mcu: PA9  # MicroProbe V2 users should use this line to trigger on
 
 ## Installation
 
-!!! warn
+!!! warning
 
      The installation section does not apply to Simple AF for RPi, See [Simple AF for RPi](rpi.md#installation)
 

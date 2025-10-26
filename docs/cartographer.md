@@ -128,7 +128,7 @@ defined for each of the bed type and filament type combinations.
 
 ## Installation
 
-!!! warn
+!!! warning
 
      The installation section does not apply to Simple AF for RPi, See [Simple AF for RPi](rpi.md#installation)
 
@@ -294,7 +294,7 @@ Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-pape
     
     ![image](assets/images/probe_manual.png)
 
-!!! warn
+!!! warning
 
     Do not use a metal feeler gauge for this step, it could damage your cartographer!!!
 
@@ -383,7 +383,7 @@ your bed mesh, so best to do it before.
 2. Run `AXIS_TWIST_COMPENSATION_CALIBRATE` The calibration wizard will prompt you to measure the probe Z offset at a few points along the bed
    <br />Upon completion *`SAVE_CONFIG`*
 
-!!! warn
+!!! warning
 
     Do not use a metal feeler gauge for this step, it could damage your cartographer!!!
 
@@ -435,7 +435,7 @@ macro to do this.
    Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
    <br />Upon completion *`SAVE_CONFIG`*
 
-!!! warn
+!!! warning
 
     Do not use a metal feeler gauge for this step, it could damage your cartographer!!!
 
