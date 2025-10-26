@@ -1,6 +1,6 @@
 # Cartographer Beta
 
-The cartographer team is has just released a new version of the klippy extra to replace scanner.py.  
+The cartographer team has just released a new version of the klippy extra to replace scanner.py.  
 Setting up the new software requires you to switch to a new probe config called `cartographer`
 
 !!! warn
