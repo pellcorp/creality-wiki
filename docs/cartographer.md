@@ -4,7 +4,10 @@ Come on over to the pellcorp discord server, the `#simple-af-carto` channel has 
 
 <https://discord.gg/2uGDzyJ3WX>
 
-## Looking for the Beta?
+## Looking for the Cartographer?
+
+Even though its technically been released, its considered a beta by the Simple AF project for at least the first few weeks after
+the software is officially released by cartographer3d.com!
 
 See [Cartographer Beta](cartographer_beta.md)
 
@@ -268,7 +271,7 @@ mode is set to touch.
 1. Run `PROBE_SWITCH MODE=touch`
 <br />Upon completion *`SAVE_CONFIG`*
 
-Source: <https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/installation/calibration#initial-calibration>
+Source: <https://docs.cartographer3d.com/original-plugin/installation/calibration#initial-calibration>
 
 ### Manual Cartographer Calibrate
 
@@ -295,7 +298,7 @@ Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-pape
 
     Do not use a metal feeler gauge for this step, it could damage your cartographer!!!
 
-**Source:** <https://docs.cartographer3d.com/cartographer-probe/settings-and-commands#cartographer_calibrate>
+**Source:** <https://docs.cartographer3d.com/original-plugin/settings-and-commands#cartographer_calibrate>
 
 After the save config you have to do the cartographer threshold scan (see next)
 
@@ -317,7 +320,7 @@ macro to do this.
 
 After the save config you have to do the touch calibration.
 
-**Source:** <https://docs.cartographer3d.com/cartographer-probe/settings-and-commands#cartographer_threshold_scan>
+**Source:** <https://docs.cartographer3d.com/original-plugin/settings-and-commands#cartographer_threshold_scan>
 
 ### Cartographer Touch Calibration
 
@@ -338,7 +341,7 @@ macro to do this.
 
     If this fails after 3 tries, you should check to make sure there is not filament stuck to the bottom of your nozzle!
 
-**Source:** <https://docs.cartographer3d.com/cartographer-probe/survey-touch>
+**Source:** <https://docs.cartographer3d.com/original-plugin/installation/calibration#setting-up-touch>
 
 ### Pid Tuning and Input Shaping
 
@@ -388,7 +391,7 @@ your bed mesh, so best to do it before.
 
 ### First Print
 
-You should optimise your `scanner_touch_z_offset` using baby stepping, as documented here: <https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/installation/first-print>
+You should optimise your `scanner_touch_z_offset` using baby stepping, as documented here: <https://docs.cartographer3d.com/original-plugin/installation/first-print>
 
 In fluidd the save button after you finish or cancel your print can be a bit hard to find, look for
 
@@ -440,7 +443,7 @@ You can then use the CARTOGRAPHER_MODEL parameter to start print from your slice
 
 ### Cartographer Model
 
-If you want to select a particular [cartographer model](<https://docs.cartographer3d.com/cartographer-probe/fine-tuning/cartographer-models>) other than the default you can pass in an additional `START_PRINT` parameter:
+If you want to select a particular [cartographer model](<https://docs.cartographer3d.com/original-plugin/fine-tuning/cartographer-models>) other than the default you can pass in an additional `START_PRINT` parameter:
 
 ![image](assets/images/carto_model_slicer.png)
 

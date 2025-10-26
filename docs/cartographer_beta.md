@@ -1,8 +1,12 @@
 # Cartographer Beta
 
-The cartographer team is currently beta testing a new version of the klippy extra to replace scanner.py, the changes
-required to use this new software have been merged to main branch.  Setting up the new software requires you to switch 
-to a new probe config called `cartographer`
+The cartographer team is has just released a new version of the klippy extra to replace scanner.py.  
+Setting up the new software requires you to switch to a new probe config called `cartographer`
+
+!!! warn
+
+    Although cartographer3d.com has just released the software (oct 26 2026), we are not going to make it the 
+    default for cartographer probes for some weeks until initial release teething problems are resolved.
 
 !!! note
 
@@ -11,21 +15,6 @@ to a new probe config called `cartographer`
 The existing probe `cartotouch` config is for the existing software (the `scanner.py`), and at some point during the next 
 few months the `cartotouch` support will be deprecated in Simple AF.  The process to make this happen won't start until 
 the cartographer3d.com team releases the new software, which is supposed to happen in the next couple of weeks (as of oct 15 2025)
-
-## Signup for the Beta
-
-If you are not a member of the Cartographer3d discord you must sign up, the invite is: <https://discord.gg/6DRRr66wYB>
-
-And find the announcement at:
-<https://discord.com/channels/1165274913624572014/1218945290741219410/1395520084964802721>
-
-And then head on over to the Enrol Me link:
-<https://discord.com/channels/1165274913624572014/1387149364388040880>
-
-Then you can setup Simple AF, if you run into any issues with getting Simple AF setup, **do not** ask the
-Cartographer guys, instead come over to the Simple AF discord instead for assistance!
-
-The Simple AF discord channel is: <https://discord.com/channels/999445685298536638/1371707036051701790>
 
 ## Setup Simple AF
 
@@ -43,7 +32,7 @@ Then you are going to be switching probes from `cartotouch` to `cartographer`:
 
 !!! info
 
-    If you are wanting to use the cartographer beta from a fresh installation, you can do a `--install cartographer --mount TheMount`, rather than
+    If you are wanting to use the cartographer from a fresh installation, you can do a `--install cartographer --mount TheMount`, rather than
     a `--update cartographer`, where `TheMount` is a supported cartographer [mount option](cartographer.md#mount-options)
 
 !!! note
@@ -103,7 +92,7 @@ macro to do this.
     
     ![image](assets/images/probe_manual.png)
 
-**Source:** <https://cartographer-3d.gitbook.io/cartographer-beta-software/getting-started/scan-calibration#scan-calibration>
+**Source:** <https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/software-configuration/scan-calibration>
 
 !!! warn
 
@@ -132,7 +121,7 @@ macro to do this.
     Observe your nozzle to make sure it touches on the bed.
     If it never touches the bed, refer to <https://cartographer-3d.gitbook.io/cartographer-beta-software/touch-calibration#nozzle-never-touches-the-bed>
 
-**Source:** <https://cartographer-3d.gitbook.io/cartographer-beta-software/touch-calibration>
+**Source:** <https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/software-configuration/touch-calibration>
 
 ### Bed Mesh Boundary
 
