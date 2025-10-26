@@ -4,7 +4,7 @@ Come on over to the pellcorp discord server, the `#simple-af-carto` channel has 
 
 <https://discord.gg/2uGDzyJ3WX>
 
-## Looking for the Cartographer?
+## Looking for the Beta?
 
 Even though its technically been released, its considered a beta by the Simple AF project for at least the first few weeks after
 the software is officially released by cartographer3d.com!
