@@ -3,12 +3,12 @@
 The cartographer team has just released a new version of the klippy extra to replace scanner.py.  
 Setting up the new software requires you to switch to a new probe config called `cartographer`
 
-!!! warn
+!!! warning
 
     Although cartographer3d.com has just released the software (oct 26 2026), we are not going to make it the 
     default for cartographer probes for some weeks until initial release teething problems are resolved.
 
-!!! note
+!!! info
 
     You do not need a new cartographer probe this is just a Simple AF config change!
 
