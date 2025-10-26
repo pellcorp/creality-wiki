@@ -98,8 +98,7 @@ After the save config you have to do the touch calibration.
 
 ### Touch Calibration
 
-It is strongly recommended to disable the camera for these calibration steps, just use the `STOP_CAMERA`
-macro to do this.
+It is strongly recommended to disable the camera for these calibration steps, just use the `STOP_CAMERA` macro to do this.
 
 !!! danger
 
@@ -115,7 +114,7 @@ macro to do this.
 !!! warning
 
     Observe your nozzle to make sure it touches on the bed.
-    If it never touches the bed, refer to <https://cartographer-3d.gitbook.io/cartographer-beta-software/touch-calibration#nozzle-never-touches-the-bed>
+    If it never touches the bed, refer to <https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/software-configuration/touch-calibration#nozzle-never-touches-the-bed   >
 
 **Source:** <https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/software-configuration/touch-calibration>
 
@@ -138,19 +137,12 @@ your bed mesh, so best to do it before.
 3. Run `CARTOGRAPHER_AXIS_TWIST_COMPENSATION` 
    <br />Upon completion *`SAVE_CONFIG`*
 
-**Source:** <https://cartographer-3d.gitbook.io/cartographer-beta-software/touch#axis-twist-compensation>
+**Source:** <https://docs.cartographer3d.com/cartographer-probe/features/axis-twist-compensation>
 
 ### First Print
 
-You should optimise your `cartographer touch_model default` `z_offset` using baby stepping, as documented here: <https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/installation/first-print>
+You should optimise your `cartographer touch_model default` `z_offset` using baby stepping, as documented here: <https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/software-configuration/z-offset#babystep-adjusting-z-offset>
 
 In fluidd the save button after you finish or cancel your print can be a bit hard to find, look for
 
 ![image](assets/images/fluidd_save_zoffset.png)
-
-## Troubleshooting
-
-### Unable to find 5 samples within tolerance after 20 touches
-
-If you are getting a failed print, check the nozzle for stubborn filament, but also consider rerunning the `CARTOGRAPHER_TOUCH_CALIBRATE` with a larger START= value, because
-my experience so far is that I had this issue until I changed the threshold and then the issue went away.
