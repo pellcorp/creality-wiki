@@ -23,7 +23,7 @@ This guide assumes you have a K1, K1C, K1SE or K1 Max and you are running stock 
 
 #### Ender 5 Max
 
-This guide assumes you are running stock Creality firmware on your Ender 5 Max. Any version should work, but 1.2.0.10 or higher is recommended.
+This guide assumes you are running stock Creality firmware 1.2.0.10 or **higher** on your Ender 5 Max.
 
 The stock firmware comes pre-rooted, with the default root password being `Creality@2024_Wh_464`
 
