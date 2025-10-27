@@ -121,7 +121,7 @@ It is strongly recommended to disable the camera for these calibration steps, ju
 ### Bed Mesh Boundary
 
 Might be a useful tool to calculate mesh min and max:
-<https://cartographer-3d.gitbook.io/cartographer-beta-software/features/touch#bed-mesh-calibrate>
+<https://docs.cartographer3d.com/cartographer-probe/features/touch#bed-mesh-calibrate>
 
 ### Axis Twist Compensation
 
