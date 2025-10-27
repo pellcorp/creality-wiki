@@ -26,9 +26,10 @@ Make sure its included **after** `[include start_end.cfg]` in `printer.cfg`
     
 Then make a few changes to `advanced_nozzle_cleaner.cfg`:
 
-!!! danger 
+!!! warning 
     
-    You must replace any `M106 P0` references with just `M106` as `P0` is not supported to reference the part fan, and worked in the past quite by accident.
+    You must replace any `M106 P0` references with just `M106` as `P0` is not supported to reference the part fan.  In order to mitigate performance issues that were causing klipper
+    to crash with a move queue overflow we had to migrate from `[fan_generic part]` to `[fan]` for the part fan.   M106 P argument still works for chamber and auxiliary like before.
 
 You need to disable this:
 
@@ -55,9 +56,11 @@ WIPE_NOZZLE
 For Calin solution its all on the website:
 <https://makerworld.com/en/models/1547901-creality-k1-max-silicone-nozzle-wiper>
 
-!!! danger
+!!! warning
 
-The `SET_FAN_SPEED FAN=part SPEED=0` will fail 
+    The `SET_FAN_SPEED FAN=part SPEED=0` will fail, you should replace this with `M107`.  In order to mitigate performance issues that were causing klipper
+    to crash with a move queue overflow we had to migrate from `[fan_generic part]` to `[fan]` for the part fan.   SET_FAN_SPEED still works for auxiliary and
+    chamber fans just not for part!
 
 ## How do I switch from btteddy to eddyng?
 
