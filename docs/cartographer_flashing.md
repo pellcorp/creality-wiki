@@ -51,7 +51,7 @@ git clone "https://github.com/Cartographer3D/cartographer-klipper.git" $HOME/car
 
 ### Update Cartographer Klipper repo 
 
-If you already have cartographer-klipper cloned locally, you need to pull down the latest master and switch to it, which you can do like this:
+If you already have cartographer-klipper cloned locally, make sure you are on latest master like so:
 
 ```
 cd $HOME/cartographer-klipper
