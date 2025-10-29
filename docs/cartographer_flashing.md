@@ -150,6 +150,8 @@ CAN Flash Success
 
 When you reconnect your carto to your printer it should show a version `CARTOGRAPHER K1 5.1.0`:
 
+**Source:** <https://docs.cartographer3d.com/cartographer-probe/firmware/manual-methods/cartographer-with-input-shaper/update-via-katapult-recommended#updating-a-usb-probe-via-katapult>
+
 ![image](assets/images/cartographer_k1_510.png)
 
 ## Flashing K1 Firmware via DFU Mode
