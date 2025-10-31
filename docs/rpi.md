@@ -96,9 +96,13 @@ a minute and power cycle the pi.
 Then login as the **dietpi** (Default password is `dietpi`) user to start the installation, after logging in, you may be told that first run setup is still going,
 give it a few minutes and you should be greeted with a login prompt.
 
+### Ubuntu based distributions
+
+Currently the installer prevents installing Simple AF for RPi onto Ubuntu based distributions, this is hopefully just a temporary issue!
+
 ### Armbian
 
-Should work fine but no formal testing has been performed as yet!
+Might work fine but no formal testing has been performed as yet, I am not even sure if Armbian is Debian or Ubuntu based!
 
 ### BTT OS
 
