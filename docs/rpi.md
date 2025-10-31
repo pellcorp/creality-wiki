@@ -102,7 +102,7 @@ Currently the installer prevents installing Simple AF for RPi onto Ubuntu based 
 
 ### Armbian
 
-Might work fine but no formal testing has been performed as yet, I am not even sure if Armbian is Debian or Ubuntu based!
+Make sure to choose a version of armbian **based on debian bookworm**, **not** Ubuntu!
 
 ### BTT OS
 
