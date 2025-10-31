@@ -127,7 +127,7 @@ Might be a useful tool to calculate mesh min and max:
 
 !!! note 
 
-    This is a fancy new feature of the Cartographer Beta firmware it does not require any paper!
+    This is a fancy new feature of the new Cartographer software it does not require any paper!
 
 Next it is highly recommended to perform axis twist compensation calibration **if you are using a rear mount** before doing anything else, this will affect the quality of
 your bed mesh, so best to do it before.
