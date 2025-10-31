@@ -98,15 +98,15 @@ give it a few minutes and you should be greeted with a login prompt.
 
 ### Ubuntu based distributions
 
-Currently the installer prevents installing Simple AF for RPi onto Ubuntu based distributions, this is hopefully just a temporary issue!
+On Ubuntu 22.04 or 24.04 based distributions, it might work but no formal testing has been performed as yet!
 
 ### Armbian
 
-Make sure to choose a version of armbian **based on debian bookworm**, **not** Ubuntu!
+On Debian 11, Debian 12, Ubuntu 22.04 or 24.04 based distributions, might work but no formal testing has been performed as yet!
 
 ### BTT OS
 
-Should work fine but no formal testing has been performed as yet!
+On Debian 11, Debian 12 based, might work but no formal testing has been performed as yet!
 
 ## Installation
 
