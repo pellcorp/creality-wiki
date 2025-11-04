@@ -5,7 +5,7 @@ Setting up the new software requires you to switch to a new probe config called 
 
 !!! warning
 
-    Although cartographer3d.com has just released the software (oct 26 2026), we are not going to make it the 
+    Although cartographer3d.com has just released the software (oct 26 2025), we are not going to make it the 
     default for cartographer probes for some weeks until initial release teething problems are resolved.
 
 !!! info
