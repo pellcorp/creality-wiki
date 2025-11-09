@@ -40,10 +40,13 @@ gcode:
 
 The following are the nozzle wipe macros I am aware of, I provide absolutely no guarantees about them!
 
+Config overrides should save and restore these additional .cfg for you automatically, just make sure its saved directly to the config/ directory
+**and not a sub-directory** and you should be good to go!
+
 ### Purcell Nozzle Wipe
 
 You can find the advanced_nozzle_cleaner.cfg file at <https://www.printables.com/model/1023575-advanced-nozzle-wiper-for-creality-k1-series>,
-and upload it to your config directory
+and upload it to your config directory.
 
 Make sure its included **after** `[include start_end.cfg]` in `printer.cfg`
 
@@ -68,7 +71,7 @@ Add this:
 ```
 [gcode_macro _SAF_NOZZLE_WIPE]
 gcode:
-WIPE_NOZZLE
+    WIPE_NOZZLE
 ```
 
 ### Calin Nozzle Wipe
