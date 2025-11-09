@@ -20,28 +20,15 @@ The following core config files can have overrides saved for them:
 - fan_control.cfg
 - internal_macros.cfg
 - useful_macros.cfg
+- grumpyscreen.cfg
 
 ## Restrictions
 
 - No support is provided to edit `gcode_macro` or `homing_override` section `gcode` values in **any** config files
 - You can modify `variable_` variables in gcode macros, but **not** the gcode macros themselves
 - You can modify **existing** values in existing sections
-- You can **only** add or delete values from **existing** sections in printer.cfg, fan_control.cfg and moonraker.conf, all other files these changes will be ignored.
-- You can **only** add or delete sections in printer.cfg, fan_control.cfg and moonraker.conf, all other files these changes will be ignored.
-
-## GrumpyScreen
-
-There is a subset of settings in guppyscreen.json which will be retained and restored by config overrides, these are curently:
-
-- display_rotate
-- display_brightness
-- invert_z_icon
-- display_sleep_sec 
-- theme 
-- touch_calibration_coeff
-
-There is an issue <https://github.com/pellcorp/creality/issues/736> to support retaining sensor config but its outstanding and not currently supported,
-so any other changes will be overridden.
+- You can **only** add or delete values from **existing** sections in printer.cfg, fan_control.cfg, grumpyscreen.cfg and moonraker.conf, all other files these changes will be ignored.
+- You can **only** add or delete sections in printer.cfg, fan_control.cfg, moonraker.conf and grumpyscreen.cfg, all other files these changes will be ignored.
 
 !!! tip
 

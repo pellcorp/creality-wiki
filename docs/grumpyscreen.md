@@ -1,11 +1,16 @@
 # GrumpyScreen
 
 GrumpyScreen is our fork of the wonderful GuppyScreen from ballaswag that we have continually refined and enhanced
-to be tightly integrated with Simple AF, although its also possible to run this on Helper Script too.
+to be tightly integrated with Simple AF, although it's also possible to run this on Helper Script too.
 
-### Grumpyscreen Factory Reset
+## Configuration
 
-It is also possible to initiate a factory reset from the settings menu (the cog) of Grumpyscreen.
+Recently we migrated to a klipper style config file which you can edit directly from the config directory in fluidd or mainsail, look for the file `grumpyscreen.cfg`,
+now that its a flat file, config overrides will be fully supported for retaining all your customisations including custom fans, leds, monitored sensors etc.
+
+## Grumpyscreen Factory Reset
+
+It is possible to initiate a factory reset from the settings menu (the cog) of Grumpyscreen.
 
 ![image](assets/images/grumpyscreen_factory_reset.png)
 
