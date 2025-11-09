@@ -10,57 +10,7 @@ If you have successfully incorporated the use of Load Cells into SimpleAF or Kli
 
 ## How do I integrate a Nozzle Wipe?
 
-So Simple AF will likely never integrate nozzle macros directly into the base product as most mounts and probes have no options for nozzle wipes or they only work with changes to slicer settings and faulty regions in bed meshes which I just don't want to deal with,
-however a couple of community members have contributed solutions you can use.
-
-!!! danger
-
-    Do not use a nozzle wiper with a rear mounted probe, there is a strong likelihood of destroying the probe or damaging the printer
-
-### Purcell Nozzle Wipe
-
-You can find the advanced_nozzle_cleaner.cfg file at <https://www.printables.com/model/1023575-advanced-nozzle-wiper-for-creality-k1-series>,
-and upload it to your config directory
-
-Make sure its included **after** `[include start_end.cfg]` in `printer.cfg`
-    
-Then make a few changes to `advanced_nozzle_cleaner.cfg`:
-
-!!! warning 
-    
-    You must replace any `M106 P0` references with just `M106` as `P0` is not supported to reference the part fan.  In order to mitigate performance issues that were causing klipper
-    to crash with a move queue overflow we had to migrate from `[fan_generic part]` to `[fan]` for the part fan.   M106 P argument still works for chamber and auxiliary like before.
-
-You need to disable this:
-
-```
-#[gcode_macro CX_NOZZLE_CLEAR]
-#rename_existing: _CX_NOZZLE_CLEAR
-#gcode:
-#  WIPE_NOZZLE
-```
-
-Add this:
-
-```
-[gcode_macro _SAF_NOZZLE_WIPE]
-gcode:
-WIPE_NOZZLE
-```
-
-**I provide no guarantees this works because I have only tested it allows klipper to start, but this is how you integrate the nozzle cleaner, its up to you to verify your mount does not collide with it.**
-
-
-### Calin Nozzle Wipe
-
-For Calin solution its all on the website:
-<https://makerworld.com/en/models/1547901-creality-k1-max-silicone-nozzle-wiper>
-
-!!! warning
-
-    The `SET_FAN_SPEED FAN=part SPEED=0` will fail, you should replace this with `M107`.  In order to mitigate performance issues that were causing klipper
-    to crash with a move queue overflow we had to migrate from `[fan_generic part]` to `[fan]` for the part fan.   SET_FAN_SPEED still works for auxiliary and
-    chamber fans just not for part!
+Information has been moved to [Nozzle Wipe Custom Hook](custom_hooks.md#nozzle-wipe-support)
 
 ## How do I switch from btteddy to eddyng?
 
