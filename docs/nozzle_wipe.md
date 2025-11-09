@@ -3,6 +3,35 @@
 Simple AF does not package any predefined nozzle wipers but we do provide a [_SAF_NOZZLE_WIPE](custom_hooks.md) custom hook for that, and
 the `_SAF_NOZZLE_WIPE` will be passed the `EXTRUDER_TEMP` parameter from START_PRINT to give you a bit more flexibility for implementing your nozzle wiper macros.
 
+So for instance you could use the EXTRUDER_TEMP in the SAF_NOZZLE_WIPE macro like this:
+
+```
+[gcode_macro _SAF_NOZZLE_WIPE]
+gcode:
+    {% set EXTRUDER_TEMP=params.EXTRUDER_TEMP|float %}
+    
+    # lower the temp to something where nozzle does not ooze to do your thing
+    M109 S150
+    
+    # then set the nozzle temp
+    M104 S{EXTRUDER_TEMP}
+```
+
+This might be useful for instance if you need to adjust the nozzle temp as part of your macro but then set it to the target temp, although
+in that case it actually would probably be better to get the existing target temp at the start of your `_SAF_NOZZLE_WIPE` in a different way:
+
+```
+[gcode_macro _SAF_NOZZLE_WIPE]
+gcode:
+    {% set target_nozzle_temp = printer[printer.toolhead.extruder].target %}
+    
+    # lower the temp to something where nozzle does not ooze to do your thing
+    M109 S150
+    
+    # then restore the previous nozzle temp
+    M104 S{target_nozzle_temp}
+```
+
 !!! danger
 
     Do not use a nozzle wiper with a rear mounted probe, there is a strong likelihood of destroying the probe or damaging the printer
