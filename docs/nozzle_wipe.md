@@ -1,9 +1,13 @@
 # Nozzle Wipe Support
 
+!!! danger
+
+    It can be dangerous to use a rear mounted nozzle wiper with a rear mounted probe, there is a strong likelihood of destroying the probe or damaging the printer!
+
 Simple AF does not package any predefined nozzle wipers but we do provide a [_SAF_NOZZLE_WIPE](custom_hooks.md) custom hook for that, and
 the `_SAF_NOZZLE_WIPE` will be passed the `EXTRUDER_TEMP` parameter from START_PRINT to give you a bit more flexibility for implementing your nozzle wiper macros.
 
-So for instance you could use the EXTRUDER_TEMP in the SAF_NOZZLE_WIPE macro like this:
+So for instance you could use the `EXTRUDER_TEMP` in the `_SAF_NOZZLE_WIPE` macro like this:
 
 ```
 [gcode_macro _SAF_NOZZLE_WIPE]
@@ -31,10 +35,6 @@ gcode:
     # then restore the previous nozzle temp
     M104 S{target_nozzle_temp}
 ```
-
-!!! danger
-
-    Do not use a nozzle wiper with a rear mounted probe, there is a strong likelihood of destroying the probe or damaging the printer
 
 ## Nozzle Wipe Options
 
