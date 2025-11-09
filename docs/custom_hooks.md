@@ -49,7 +49,12 @@ implementing your nozzle wiper macros.
 
     Do not use a nozzle wiper with a rear mounted probe, there is a strong likelihood of destroying the probe or damaging the printer
 
-### Purcell Nozzle Wipe
+### Nozzle Wipe Options
+
+The following are the nozzle wipe macros I am aware of, I provide absolutely no guarantees about them and as you will note all of them
+require some tweaking before they will work with Simple AF!
+
+#### Purcell Nozzle Wipe
 
 You can find the advanced_nozzle_cleaner.cfg file at <https://www.printables.com/model/1023575-advanced-nozzle-wiper-for-creality-k1-series>,
 and upload it to your config directory
@@ -80,9 +85,7 @@ gcode:
 WIPE_NOZZLE
 ```
 
-**I provide no guarantees this works because I have only tested it allows klipper to start, but this is how you integrate the nozzle cleaner, its up to you to verify your mount does not collide with it.**
-
-### Calin Nozzle Wipe
+#### Calin Nozzle Wipe
 
 For Calin solution its all on the website:
 <https://makerworld.com/en/models/1547901-creality-k1-max-silicone-nozzle-wiper>
