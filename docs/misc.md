@@ -149,10 +149,3 @@ It is very easy, you just need to create a empty file called `emergency_factory_
     Failing to follow this advice can lead to your printer getting bricked and requiring much more involved intervention to recover!
     
     ![image](assets/images/error3002.png)
-
-### Grumpyscreen Factory Reset
-
-It is also possible to initiate a factory reset from the settings menu (the cog) of Grumpyscreen.
-
-![image](assets/images/grumpyscreen_factory_reset.png)
-

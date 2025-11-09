@@ -620,41 +620,6 @@ So ZeroDotCmd has done some great videos on this topic <https://www.youtube.com/
 
 More details here: <https://www.klipper3d.org/Axis_Twist_Compensation.html>
 
-## Can I get GrumpyScreen on Helper Script?
-
-So I have added experimental support for installing GrumpyScreen (our fork of GuppyScreen) onto Helper Script printers, currently only
-K1, K1C, K1SE and K1M are supported and the support is experimental, I make no guarantees things won't break, so you **must** have already installed GuppyScreen
-via helper script and then you can run the following from your printer ssh console:
-
-```
-wget https://raw.githubusercontent.com/pellcorp/creality-wiki/refs/heads/main/helperscript/install-grumpyscreen.sh -O - > /usr/data/install-grumpyscreen.sh
-sh /usr/data/install-grumpyscreen.sh
-```
-
-It will replace guppyscreen binary and configuration file, you can update GrumpyScreen via the screen only, the Helper Script `GUPPY_UPDATE` macro
-has been removed as it breaks grumpyscreen.
-
-If you want to revert to normal guppyscreen just uninstall and reinstall from Helper Script, I do not provide a script to do this automatically
-
-Please note that GrumpyScreen is a vastly simplified version of Guppyscreen:
-
-- No Gcode execution
-- No Belts & Shake
-- No Input Shaper
-- No Bed Mesh
-- No TMC Metrics
-- No Tuning (other than during a print)
-- No Limits
-- No Power Devices (wtf that is)
-
-We focus on polishing a subset of features and we added some additional ones:
-
-- Factory Reset
-- E-Stop on more screens
-- Setting chamber temp targets
-
-The Belt Shaper calibration macros from GuppyScreen remain and can be executed from fluidd or mainsail
-
 ## How do I get the bed to cooldown after a print finishes?
 
 So by default with Bed Warp stabilisation enabled, the bed will stay warm after a print for up to 1 hour (this can be changed too btw), if you do not want

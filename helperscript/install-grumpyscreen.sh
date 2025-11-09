@@ -42,6 +42,6 @@ rm /usr/share/klipper/klippy/extras/guppy_config_helper.py
 rm /usr/share/klipper/klippy/extras/guppy_module_loader.py
 rm /usr/share/klipper/klippy/extras/tmcstatus.py
 
-wget https://raw.githubusercontent.com/pellcorp/creality-wiki/refs/heads/main/helperscript/grumpyscreen.cfg -O - > /usr/data/printer_data/config/GuppyScreen/grumpyscreen.cfg
+wget https://raw.githubusercontent.com/pellcorp/creality-wiki/refs/heads/main/helperscript/grumpy-macros.cfg -O - > /usr/data/printer_data/config/GuppyScreen/grumpy-macros.cfg
 
 /usr/data/guppyscreen/update-grumpyscreen.sh

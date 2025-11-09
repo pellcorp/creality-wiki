@@ -49,7 +49,6 @@ sed -i 's/local yn/local yn=y/g' -i /usr/data/helper-script/scripts/improved_sha
 sh /usr/data/helper-script/helper.sh install_moonraker_nginx install_menu_ui_k1 || exit $?
 sync
 
-# this is mostly for k1-qemu where moonraker takes a while to start up
 echo "Waiting for moonraker ..."
 while true; do
     KLIPPER_PATH=$(curl localhost:7125/printer/info 2> /dev/null | jq -r .result.klipper_path)
