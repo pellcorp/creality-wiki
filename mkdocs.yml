@@ -162,4 +162,5 @@ nav:
   - Extras:
       - misc.md
       - custom_hooks.md
+      - nozzle_wipe.md
       - grumpyscreen.md

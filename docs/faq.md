@@ -10,7 +10,7 @@ If you have successfully incorporated the use of Load Cells into SimpleAF or Kli
 
 ## How do I integrate a Nozzle Wipe?
 
-Information has been moved to [Nozzle Wipe Custom Hook](custom_hooks.md#nozzle-wipe-support)
+Information has been moved to [Nozzle Wipe Custom Hook](nozzle_wipe.md)
 
 ## How do I switch from btteddy to eddyng?
 
