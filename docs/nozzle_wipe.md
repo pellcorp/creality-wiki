@@ -38,8 +38,7 @@ gcode:
 
 ## Nozzle Wipe Options
 
-The following are the nozzle wipe macros I am aware of, I provide absolutely no guarantees about them and as you will note all of them
-require some tweaking before they will work with Simple AF!
+The following are the nozzle wipe macros I am aware of, I provide absolutely no guarantees about them!
 
 ### Purcell Nozzle Wipe
 
@@ -74,11 +73,7 @@ WIPE_NOZZLE
 
 ### Calin Nozzle Wipe
 
-For Calin solution its all on the website:
+For Calin solution it's all on the website:
 <https://makerworld.com/en/models/1547901-creality-k1-max-silicone-nozzle-wiper>
 
-!!! warning
-
-    The `SET_FAN_SPEED FAN=part SPEED=0` will fail, you should replace this with `M107`.  In order to mitigate performance issues that were causing klipper
-    to crash with a move queue overflow we had to migrate from `[fan_generic part]` to `[fan]` for the part fan.   SET_FAN_SPEED still works for auxiliary and
-    chamber fans just not for part!
+Calin has updated the docs for their macro to correctly use M106 macro so no changes should be required beyond what is documented on that makerworld site.
