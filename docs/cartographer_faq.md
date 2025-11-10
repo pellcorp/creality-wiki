@@ -12,6 +12,11 @@ You need to modify the `[adxl345]` section
 
 First of all change the `cs_pin` from `nozzle_mcu:PA4` to `scanner:PA3`
 
+!!! note
+
+     If you are using the new cartographer beta software on Simple AF, replace `scanner:` with `cartographer:` in the configuration!
+
+
 Then disable the following settings:
 
 - `spi_speed: 5000000`
