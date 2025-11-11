@@ -1,11 +1,11 @@
 # Additional Camera
 
-On K1 Series (which includes K1, K1M, K1SE, K1C, Ender 5 Max and Ender 3 V3 KE) you cannot run more than one camera
-on the printer itself, the web cam service is explicitly setup to support a single camera only because trying to run more than one camera is a really
-bad idea on this hardware.   On Simple AF for RPi we install crowsnest and you can easily setup multiple cameras.as
+For Simple AF for RPi you can setup multiple cameras via crowsnest, K1 Series (which includes K1, K1M, K1SE, K1C, Ender 5 Max and Ender 3 V3 KE) you 
+cannot run more than one camera on the printer itself, the webcam service only supports a single camera because trying to run more than one camera is 
+a really bad idea on this hardware.
 
-The solution for additional cameras is to setup a RPI on the same network as your printer with crowsnest (or some other webcam streaming software) and
-update /usr/data/printer_data/config/webcam.conf with that camera so that fluidd and mainsail will load it, but the printer itself will have nothing
+The solution on K1 Series for additional cameras is to setup a separate RPi or Orange Pi (or the like) on the same network as your printer and install
+crowsnest. and then update /usr/data/printer_data/config/webcam.conf with that camera so that fluidd and mainsail will load it, but the printer itself will have nothing
 to do with this.
 
 Get yourself a raspberry pi or an orange pi zero and get some kind of debian distribution installed, the following instructions will assume debian.
@@ -61,3 +61,27 @@ And additionally its possible you will need to change the device: `/dev/video0` 
 You can find more information at [Simple AF for RPi Camera Support(rpi.md/#crowsnest-camera-support)
 
 After you have changed the no_proxy and potentially the device config you need to restart crowsnest with `sudo systemctl start crowsnest`
+
+## Enable Camera in moonraker
+
+You can just add an additional camera to the `webcam.conf` located in the config directory which you can edit via fluidd or mainsail and then just
+restart moonraker from the services menu, the additional config might look like:
+
+```
+[webcam additional]
+location: rpi
+enabled: True
+service: mjpegstreamer-adaptive
+flip_horizontal: False
+flip_vertical: False
+rotation: 0
+target_fps: 10
+target_fps_idle: 5
+stream_url: /webcam/?action=stream
+snapshot_url: /webcam/?action=snapshot
+stream_url: http://X.X.X.X:8080/?action=stream
+snapshot_url: http://X.X.X.X:8080/?action=snapshot
+```
+
+Where `X.X.X.X` would be replaced with the ip address of your RPi running crowsnest!
+
