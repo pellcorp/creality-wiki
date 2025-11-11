@@ -1,7 +1,7 @@
 # Additional Camera
 
-For Simple AF for RPi you can setup multiple cameras via crowsnest, K1 Series (which includes K1, K1M, K1SE, K1C, Ender 5 Max and Ender 3 V3 KE) you 
-cannot run more than one camera on the printer itself, the webcam service only supports a single camera because trying to run more than one camera is 
+For Simple AF for RPi you can setup multiple cameras via crowsnest.  However for K1 Series (which includes K1, K1M, K1SE, K1C, Ender 5 Max and Ender 3 V3 KE) you 
+**cannot run more than one camera** on the printer itself, the webcam service only supports a single camera because trying to run more than one camera is 
 a really bad idea on this hardware.
 
 The solution on K1 Series for additional cameras is to setup a separate RPi or Orange Pi (or the like) on the same network as your printer and install
