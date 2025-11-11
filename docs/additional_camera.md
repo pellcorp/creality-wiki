@@ -71,7 +71,7 @@ restart moonraker from the services menu, the additional config might look like:
 [webcam additional]
 location: rpi
 enabled: True
-service: mjpegstreamer-adaptive
+service: mjpegstreamer
 flip_horizontal: False
 flip_vertical: False
 rotation: 0
