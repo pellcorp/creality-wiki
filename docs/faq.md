@@ -580,3 +580,9 @@ the bed to stay warm after a print you can either toggle the [bed warp stabilila
 variable_end_print_cool_down: False
 ```
 
+## Can I have more than one camera on Simple AF 
+
+For Simple AF for RPi yes thats fine and you can do that via crowsnest, but for K1 Series (which includes K1, K1M, K1SE, K1C, Ender 5 Max and Ender 3 V3 KE), that
+is not possible, for more information see [Additional Camera](additional_camera.md)
+
+
