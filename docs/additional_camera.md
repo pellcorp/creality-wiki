@@ -85,3 +85,4 @@ snapshot_url: http://X.X.X.X:8080/?action=snapshot
 
 Where `X.X.X.X` would be replaced with the ip address of your RPi running crowsnest!
 
+More information about the format of webcam definitions can be found at <https://moonraker.readthedocs.io/en/latest/configuration/#webcam>
