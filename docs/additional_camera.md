@@ -60,7 +60,7 @@ And additionally its possible you will need to change the device: `/dev/video0` 
 
 You can find more information at [Simple AF for RPi Camera Support(rpi.md/#crowsnest-camera-support)
 
-After you have changed the no_proxy and potentially the device config you need to restart crowsnest with `sudo systemctl start crowsnest`
+After you have changed the no_proxy and potentially the device config you need to restart crowsnest with `sudo systemctl restart crowsnest`
 
 ## Enable Camera in moonraker
 
