@@ -56,9 +56,21 @@ max_fps: 15                             # If hardware supports it, it will be fo
 
 You must change the `no_proxy` from `false` to `true` because otherwise the camera service is not available on the wifi or ethernet interface.
 
-And additionally its possible you will need to change the device: `/dev/video0` to something else than the default and you can find the right device by running `~/crowsnest/tools/dev-helper.sh -c`
+And additionally its possible you will need to change the device: `/dev/video0` to something else than the default and to find out what devices are 
+available you can use a crowsnest tool:
 
-You can find more information at [Simple AF for RPi Camera Support](rpi.md/#crowsnest-camera-support)
+```
+~/crowsnest/tools/dev-helper.sh -c
+```
+
+![image](assets/images/crowsnest_dev_helper.png)
+
+!!! warning
+
+    According to the crowsnest project, its always preferable to use full paths, especially in Mutlicam setups using /dev/video* 
+    will lead to errors or unexpected behaviours.
+    
+    Source: <https://crowsnest.mainsail.xyz/configuration/cam-section#device>
 
 After you have changed the no_proxy and potentially the device config you need to restart crowsnest with `sudo systemctl restart crowsnest`
 
