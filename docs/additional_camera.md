@@ -72,7 +72,9 @@ available you can use a crowsnest tool:
     
     Source: <https://crowsnest.mainsail.xyz/configuration/cam-section#device>
 
-After you have changed the no_proxy and potentially the device config you need to restart crowsnest with `sudo systemctl restart crowsnest`
+!!! note
+
+    After you have changed the `no_proxy` and potentially the `device` you **must** restart crowsnest with `sudo systemctl restart crowsnest`
 
 ## Enable Camera in moonraker
 
