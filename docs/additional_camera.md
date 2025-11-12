@@ -58,7 +58,7 @@ You must change the `no_proxy` from `false` to `true` because otherwise the came
 
 And additionally its possible you will need to change the device: `/dev/video0` to something else than the default and you can find the right device by running `~/crowsnest/tools/dev-helper.sh -c`
 
-You can find more information at [Simple AF for RPi Camera Support(rpi.md/#crowsnest-camera-support)
+You can find more information at [Simple AF for RPi Camera Support](rpi.md/#crowsnest-camera-support)
 
 After you have changed the no_proxy and potentially the device config you need to restart crowsnest with `sudo systemctl restart crowsnest`
 
