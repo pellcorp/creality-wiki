@@ -3,6 +3,8 @@
 GrumpyScreen is our fork of the wonderful GuppyScreen from ballaswag that we have continually refined and enhanced
 to be tightly integrated with Simple AF, although it's also possible to run this on Helper Script too.
 
+The source for GrumyScreen can be found at <https://github.com/pellcorp/grumpyscreen>
+
 ## Configuration
 
 Recently we migrated to a klipper style config file which you can edit directly from the config directory in fluidd or mainsail, look for the file `grumpyscreen.cfg`,
