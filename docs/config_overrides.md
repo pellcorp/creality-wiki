@@ -90,7 +90,8 @@ export GITHUB_BRANCH=main
 !!! note
 
     The `GITHUB_BRANCH` is optional, if its not specified it will use `main` as the branch.
-    On Simple AF for RPI you can use `~pellcorp/tools/config-overrides.sh --repo`
+
+    On Simple AF for RPI you can use `~/pellcorp/tools/config-overrides.sh --repo`
 
 If you want to setup the repository locally ignoring any local files in the `pellcorp-overrides` directory, you can use the `--clean-repo` argument, instead of the `--repo` argument, which will rebase the local changes on top of the repo.
 
