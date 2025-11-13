@@ -84,7 +84,7 @@ export EMAIL_ADDRESS=me@somewhere.com
 export GITHUB_TOKEN="The token I just created"
 export GITHUB_REPO=pellcorp-overrides
 export GITHUB_BRANCH=main
-~/pellcorp/tools/config-overrides.sh --repo
+/usr/data/pellcorp/tools/config-overrides.sh --repo
 ```
 
 !!! note
@@ -96,7 +96,7 @@ If you want to setup the repository locally ignoring any local files in the `pel
 !!! note
     
     For K1 Series (including Ender 5 Max), the pellcorp-overrides is located at /usr/data/pellcorp-overrides, but there is a soft link
-    created to /root, so you scripts and the wiki will refer to pellcorp-overrides by the shorthand of `~/pellcorp-overrides`
+    created to /root, so you scripts and the wiki will often refer to pellcorp-overrides by the shorthand of `~/pellcorp-overrides`
 
     The `moonraker.secrets` file is not versioned controlled.
 
