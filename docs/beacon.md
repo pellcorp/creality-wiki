@@ -298,11 +298,7 @@ If you are using **a rear mount** it is highly recommended to perform axis twist
 
 ### First Print
 
-You should optimise your `cal_nozzle_z` using baby stepping.
-
-In fluidd the save button after you finish or cancel your print can be a bit hard to find, look for
-
-![image](assets/images/fluidd_save_zoffset.png)
+There appears to be an issue with the model offset not being applied correctly when baby stepping, investigations are underway.
 
 ### Other Calibrations
 
