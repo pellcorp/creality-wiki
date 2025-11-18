@@ -228,7 +228,7 @@ during repeated bed meshes.
 
 ### Beacon Calibrate
 
-It is strongly recommended to calibrate the beacon after heating and nozzle **and** the bed, more consistent first layers await if you follow this advice.
+It is strongly recommended to calibrate the beacon after heating the nozzle **and** the bed, more consistent first layers await if you follow this advice.
 
 1. Run the `STOP_CAMERA` macro to stop the camera 
 2. Home X Y (`G28 X Y`)
