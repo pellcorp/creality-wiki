@@ -230,15 +230,15 @@ during repeated bed meshes.
 
 It is strongly recommended to calibrate the beacon after heating the nozzle **and** the bed, more consistent first layers await if you follow this advice.
 
-1. Run the `STOP_CAMERA` macro to stop the camera 
-2. Home X Y (`G28 X Y`)
+1. Home X Y (`G28 X Y`)
+2. Make sure nozzle is centred on bed
 3. Heat Nozzle to 150c and Bed to 60c:
     * `M140 S60`
     * `M104 S150`
     * `M190 S60`
     * `M109 S150`
 4. Wait at least 10 minutes (`G4 P600000`)
-5. Make sure nozzle is centred on bed 
+5. Run the `STOP_CAMERA` macro to stop the camera
 6. Run `BEACON_CALIBRATE` Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
 <br />Upon completion *`SAVE_CONFIG`*
 
