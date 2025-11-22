@@ -232,7 +232,7 @@ during repeated bed meshes.
 
     The beacon team recommends heat soaking the printer a bit before doing calibration
 
-1. Run `_SET_KIN_MAX_Z` and move toolhead so that the nozzle so its only a few mm above the bed surface
+1. Run `_SET_KIN_MAX_Z` and move toolhead so that the nozzle is only a few mm above the bed surface
 2. Run `_CALIBRATE_HEAT_SOAK`, which will heat the bed to 60c, nozzle to 150c and wait 8.5 minutes
 3. Run the `STOP_CAMERA` macro to stop the camera
 4. Run `BEACON_CALIBRATE` Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
