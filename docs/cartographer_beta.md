@@ -258,11 +258,10 @@ And remove any bed mesh and axis twist calibration stuff
 It is strongly recommended to disable the camera for these calibration steps, just use the `STOP_CAMERA`
 macro to do this.
 
-1. Run the `STOP_CAMERA` macro to stop the camera
-2. Home X Y (`G28 X Y`)
-3. Heat Nozzle to 150c (`M109 S150`) so that any filament can be removed from nozzle
-4. Make sure nozzle is centred on bed
-5. Run `CARTOGRAPHER_SCAN_CALIBRATE`
+1. Run `_SET_KIN_MAX_Z` and move toolhead so that the nozzle so its only a few mm above the bed surface
+2. Run `_CALIBRATE_HEAT_SOAK`, which will heat the bed to 60c, nozzle to 150c and wait 8.5 minutes
+3. Run the `STOP_CAMERA` macro to stop the camera
+4. Run `CARTOGRAPHER_SCAN_CALIBRATE`
    Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
    <br />Upon completion *`SAVE_CONFIG`*
 
@@ -290,11 +289,10 @@ It is strongly recommended to disable the camera for these calibration steps, ju
 
     For this next step, it is really important to be near your printer for this step, because if there is any issue with the printer configuration or your carto probe, its possible the nozzle will dig itself into the bed, so be hovering over that e-stop button!
 
-1. Run the `STOP_CAMERA` macro to stop the camera
-2. Home All (`G28`)
-3. Heat Nozzle to 150c (`M109 S150`) so that any filament can be removed from nozzle
-4. Make sure nozzle is centred on bed
-5. Run `CARTOGRAPHER_TOUCH_CALIBRATE SPEED=2`
+1. Home All (`G28`)
+2. Run `_CALIBRATE_HEAT_SOAK`, which will heat the bed to 60c, nozzle to 150c
+3. Run the `STOP_CAMERA` macro to stop the camera
+4. Run `CARTOGRAPHER_TOUCH_CALIBRATE SPEED=2`
    <br />Upon completion *`SAVE_CONFIG`*
 
 !!! warning
