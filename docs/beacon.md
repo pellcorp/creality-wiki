@@ -228,7 +228,9 @@ during repeated bed meshes.
 
 ### Beacon Calibrate
 
-It is strongly recommended to calibrate the beacon after heating the nozzle **and** the bed, more consistent first layers await if you follow this advice.
+!!! note
+
+    The beacon team recommends heat soaking the printer a bit before doing calibration
 
 1. Run `_SET_KIN_MAX_Z` and move toolhead so that the nozzle so its only a few mm above the bed surface
 2. Run `_CALIBRATE_HEAT_SOAK`, which will heat the bed to 60c, nozzle to 150c and wait 8.5 minutes
