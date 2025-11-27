@@ -65,6 +65,10 @@ defined for each of the bed type and filament type combinations.
 
 ## Probe Installation
 
+It is **strongly** recommended to initially connect your probe to the front USB Slot initially and use it for a while that way to make sure its stable, before
+directly wiring it to either the mainboard or making a cable for the lidar port (K1M users only).   If possible avoid destroying the original cable when
+you are making your lidar or direct mainboard connection as you might need it in the future.
+
 !!! danger
 
     If you are not using a side mount you **must** verify config changes for eddyng.cfg before **homing your printer**, using **Screws Tilt Calculate** or doing a **bed mesh**!  
