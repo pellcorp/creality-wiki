@@ -65,9 +65,9 @@ defined for each of the bed type and filament type combinations.
 
 ## Probe Installation
 
-It is **strongly** recommended to initially connect your probe to the front USB Slot initially and use it for a while that way to make sure its stable, before
+It is **strongly** recommended to connect your probe to the front USB port initially and use it for a while that way to make sure its stable, before
 directly wiring it to either the mainboard or making a cable for the lidar port (K1M users only).   If possible avoid destroying the original cable when
-you are making your lidar or direct mainboard connection as you might need it in the future.
+you are making your lidar or direct mainboard connection as you might need it in the future!
 
 !!! danger
 
