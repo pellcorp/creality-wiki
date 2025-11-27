@@ -222,11 +222,13 @@ during repeated bed meshes.
 
 ### Probe Eddy NG Setup
 
-Calibrating the eddy should be as easy as running the `PROBE_EDDY_NG_SETUP`, first step is to home X and Y:
+!!! note
 
-1. Home XY (`G28 X Y`)
-2. Make sure nozzle is centred on bed
-3. Heat Nozzle to 150c (`M109 S150`) so that any filament can be removed from nozzle
+    Heat soaking the printer a bit before doing calibration is recommended
+
+1. Run `_SET_KIN_MAX_Z` and move toolhead so that the nozzle is only a few mm above the bed surface
+2. Run `_CALIBRATE_PRE_HEAT`, which will heat the bed to 60c, nozzle to 150c and **wait 8.5 minutes**!
+3. Run the `STOP_CAMERA` macro to stop the camera
 4. Run `PROBE_EDDY_NG_SETUP`, Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
 <br />Upon completion *`SAVE_CONFIG`*
 
