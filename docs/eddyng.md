@@ -8,9 +8,9 @@ Come on over to the pellcorp discord server, the `#simple-af-btteddy` channel ha
 
 <https://discord.gg/2uGDzyJ3WX>
 
-### eddy-ng discord 
+### eddy-ng project support 
 
-You can also get help from the eddy-ng discord channels on the sovol discord, with the <https://discord.gg/djhnkDR2JN> link
+<https://github.com/vvuk/eddy-ng/wiki#questions-discussion-help>
 
 ### K1 Series
 
