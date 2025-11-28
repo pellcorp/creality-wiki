@@ -4,10 +4,6 @@ Come on over to the pellcorp discord server, the `#simple-af-carto` channel has 
 
 <https://discord.gg/2uGDzyJ3WX>
 
-## Looking for the Legacy Cartotouch?
-
-See [Cartographer](cartographer.md)
-
 ## Thanks
 
 Thanks to Richard from <https://cartographer3d.com> and Zarboz from <https://wattskraken.xyz/> for donating Cartographers to the Simple AF project to add support and continue to support the cartographer.
@@ -86,7 +82,7 @@ you are making your lidar or direct mainboard connection as you might need it in
 
 !!! danger
 
-    If you are not using a side mount you **must** verify config changes for cartographer.cfg before **homing your printer**, using **Screws Tilt Calculate** or doing a **bed mesh**!  
+    If you are not using a side mount you **must** verify config changes for cartotouch.cfg before **homing your printer**, using **Screws Tilt Calculate** or doing a **bed mesh**!  
 
     Ignoring these instructions can lead to significant damage to your build plate and/or probe.
 
@@ -139,10 +135,12 @@ The installation can only be performed on a printer which has been rooted and ss
 
 You need root access, if you are not already root, then follow the excellent [Helper Script Enable Root Access](https://guilouz.github.io/Creality-Helper-Script-Wiki/firmwares/install-and-update-rooted-firmware-k1/#enable-root-access) instructions.
 
-!!! info
+!!! tip
 
-    If you are switching from cartotouch, you can skip straight to [Run the Installer](#run-the-installer) and perform
-    an `~/pellcorp/installer.sh --update cartographer --mount %CURRENT%` instead of a new installation.
+    ZeroDotCmd (aka Zero on discord) has provided an excellent Cartographer installation video, you can find it <https://www.youtube.com/watch?v=GuxMITM9o4I>
+
+    Please note however that the macros referenced in the video guide have been removed and you should instead follow the Calibration section of this wiki,
+    I do not have the time to maintain the old guided macros, but you can still use the QUICK_START macro to do the pid and input shaper tuning.
 
 ### Factory Reset 
 
@@ -185,7 +183,7 @@ sync
 To run the script, you must use the following command:
 
 ```
-/usr/data/pellcorp/installer.sh --install cartographer --mount Mount
+/usr/data/pellcorp/installer.sh --install cartotouch --mount Mount
 ```
 
 !!! warning
@@ -243,32 +241,49 @@ For cartographer you cannot use more than `microsteps: 32`, the MCU cannot handl
 
 ## Calibration
 
-If you are switching from cartotouch you must remove all cartotouch related config from the bottom of your printer.cfg:
-
-- `[scanner]`
-- `[scanner model default]`
-
-And remove any bed mesh and axis twist calibration stuff
-
 !!! warning
 
     The following calibration steps are required to setup a new printer:
 
-    - [Scan calibration](#scan-calibration)
-    - [Touch Calibration](#touch-calibration)
+    - [Enable Touch Mode](#enable-touch-mode)
+    - [Manual Cartographer Calibrate](#manual-cartographer-calibrate)
+    - [Cartographer Threshold Scan](#cartographer-threshold-scan)
+    - [Cartographer Touch Calibration](#cartographer-touch-calibration)
+    - [PID Tuning and Input Shaping](#pid-tuning-and-input-shaping)
 
-### Scan calibration
+!!! note
+
+    If you are running calibration for a printer that has previously been calibrated, the following SAVE_CONFIG sections **must** be removed from the bottom of the printer.cfg (if they exist) before
+    redoing these calibrations:
+      
+    - `[scanner model default]`
+    - `[scanner]`
+    - `[axis_twist_compensation]`
+    - `[bed_mesh]`
+
+
+### Enable Touch Mode
+
+To be able to set up the printer for cartographer with touch mode for printing you need to make sure the
+mode is set to touch.
+
+1. Run `PROBE_SWITCH MODE=touch`
+<br />Upon completion *`SAVE_CONFIG`*
+
+Source: <https://docs.cartographer3d.com/original-plugin/installation/calibration#initial-calibration>
+
+### Manual Cartographer Calibrate
 
 !!! note
 
     Heat soaking the printer a bit before doing calibration is recommended
 
 1. Run `_SET_KIN_MAX_Z` and move toolhead so that the nozzle is only a few mm above the bed surface
-2. Run `_CALIBRATE_HEAT_SOAK`, which will heat the bed to 60c, nozzle to 150c and **wait 8.5 minutes**!
+2. Run `_CALIBRATE_PRE_HEAT`, which will heat the bed to 60c, nozzle to 150c and **wait 8.5 minutes**!
 3. Run the `STOP_CAMERA` macro to stop the camera
-4. Run `CARTOGRAPHER_SCAN_CALIBRATE`
-   Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
-   <br />Upon completion *`SAVE_CONFIG`*
+4. Run `CARTOGRAPHER_CALIBRATE METHOD=manual`
+Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
+<br />Upon completion *`SAVE_CONFIG`*
 
 !!! note
 
@@ -278,15 +293,15 @@ And remove any bed mesh and axis twist calibration stuff
     
     ![image](assets/images/probe_manual.png)
 
-**Source:** <https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/software-configuration/scan-calibration>
-
 !!! warning
 
     Do not use a metal feeler gauge for this step, it could damage your cartographer!!!
 
-After the save config you have to do the touch calibration.
+**Source:** <https://docs.cartographer3d.com/original-plugin/settings-and-commands#cartographer_calibrate>
 
-### Touch Calibration
+After the save config you have to do the cartographer threshold scan (see next)
+
+### Cartographer Threshold Scan
 
 !!! danger
 
@@ -295,15 +310,30 @@ After the save config you have to do the touch calibration.
 1. Home All (`G28`)
 2. Run `__CALIBRATE_PRE_HEAT`, which will heat the bed to 60c, nozzle to 150c
 3. Run the `STOP_CAMERA` macro to stop the camera
-4. Run `CARTOGRAPHER_TOUCH_CALIBRATE SPEED=2`
-   <br />Upon completion *`SAVE_CONFIG`*
+4. Execute `CARTOGRAPHER_THRESHOLD_SCAN SPEED=2 MIN=1000 MAX=5000`
+<br />Upon completion *`SAVE_CONFIG`*
 
-!!! warning
+After the save config you have to do the touch calibration.
 
-    Observe your nozzle to make sure it touches on the bed.
-    If it never touches the bed, refer to <https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/software-configuration/touch-calibration#nozzle-never-touches-the-bed   >
+**Source:** <https://docs.cartographer3d.com/original-plugin/settings-and-commands#cartographer_threshold_scan>
 
-**Source:** <https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/software-configuration/touch-calibration>
+### Cartographer Touch Calibration
+
+!!! danger
+
+    For this next step, it is really important to be near your printer for this step, because if there is any issue with the printer configuration or your carto probe, its possible the nozzle will dig itself into the bed, so be hovering over that e-stop button!
+
+1. Home All (`G28`)
+2. Run `__CALIBRATE_PRE_HEAT`, which will heat the bed to 60c, nozzle to 150c
+3. Run the `STOP_CAMERA` macro to stop the camera
+4. Execute `CARTOGRAPHER_CALIBRATE`
+<br />Upon completion *`SAVE_CONFIG`*
+
+!!! tip
+
+    If this fails after 3 tries, you should check to make sure there is not filament stuck to the bottom of your nozzle!
+
+**Source:** <https://docs.cartographer3d.com/original-plugin/installation/calibration#setting-up-touch>
 
 ### Pid Tuning and Input Shaping
 
@@ -338,23 +368,22 @@ You can use the `SHAPER_CALIBRATE` macro to run input shaping, just be sure to `
 
 ### Axis Twist Compensation
 
-!!! note
-
-    This is a fancy new feature of the new Cartographer software it does not require any paper!
-
 Next it is highly recommended to perform axis twist compensation calibration **if you are using a rear mount** before doing anything else, this will affect the quality of
 your bed mesh, so best to do it before.
 
 1. Home All (`G28`)
-2. Heat Nozzle to 150c (`M109 S150`) so that any filament can be removed from nozzle
-3. Run `CARTOGRAPHER_AXIS_TWIST_COMPENSATION`
+2. Run `AXIS_TWIST_COMPENSATION_CALIBRATE` The calibration wizard will prompt you to measure the probe Z offset at a few points along the bed
    <br />Upon completion *`SAVE_CONFIG`*
 
-**Source:** <https://docs.cartographer3d.com/cartographer-probe/features/axis-twist-compensation>
+!!! warning
+
+    Do not use a metal feeler gauge for this step, it could damage your cartographer!!!
+
+**Source:** <https://www.klipper3d.org/Axis_Twist_Compensation.html>
 
 ### First Print
 
-You should optimise your `cartographer touch_model default` `z_offset` using baby stepping, as documented here: <https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/software-configuration/z-offset#babystep-adjusting-z-offset>
+You should optimise your `scanner_touch_z_offset` using baby stepping, as documented here: <https://docs.cartographer3d.com/original-plugin/installation/first-print>
 
 In fluidd the save button after you finish or cancel your print can be a bit hard to find, look for
 
@@ -369,3 +398,46 @@ In fluidd the save button after you finish or cancel your print can be a bit har
 Refer to [Orcaslicer Calibration](https://github.com/SoftFever/OrcaSlicer/wiki/Calibration) for more calibrations
 
 Refer to the [Ellis Print Tuning Guide](https://ellis3dp.com/Print-Tuning-Guide/) for more great tuning ideas.
+
+## Scan Only Mode
+
+Some cartographer users choose to use scan only instead of touch and that is easy enough to do, you can setup for scan immediately
+after installation, no need to do the 3 step calibration as for touch!
+
+!!! danger
+
+    It is **vital** you are aware of the limitations of scan mode especially on the K1 series where temp calibration is not 
+    an option.    If you print different bed and/or nozzle temp materials you must save a separate model per material and even
+    with a single material the cartographer will return a different z-offset when hot than when cold, I strongly recommend
+    **against** using scan mode on Simple AF, its actually likely to lead to bed damage unless you know exactly what you are doing!
+
+You can run the following:
+
+1. Run `PROBE_SWITCH MODE=scan`
+   <br />Upon completion *`SAVE_CONFIG`*
+
+It is strongly recommended to disable the camera for this calibration step, just use the `STOP_CAMERA`
+macro to do this.
+
+1. Run the `STOP_CAMERA` macro to stop the camera
+2. Home X Y (`G28 X Y`)
+3. Heat Nozzle to 150c (`M109 S150`) so that any filament can be removed from nozzle
+4. Make sure nozzle is centred on bed
+5. Run `CARTOGRAPHER_CALIBRATE METHOD=manual`
+   Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
+   <br />Upon completion *`SAVE_CONFIG`*
+
+!!! warning
+
+    Do not use a metal feeler gauge for this step, it could damage your cartographer!!!
+
+You can then use the CARTOGRAPHER_MODEL parameter to start print from your slicer to select different filament profiles, this is required if you print with different filaments and/or use different bed aurfaces.
+
+### Cartographer Model
+
+If you want to select a particular [cartographer model](<https://docs.cartographer3d.com/original-plugin/fine-tuning/cartographer-models>) other than the default you can pass in an additional `START_PRINT` parameter:
+
+![image](assets/images/carto_model_slicer.png)
+
+You can either hard code it to a particular model, like `CARTOGRAPHER_MODEL=mymodel` or you can specify a model based on orca slicer variables, such as `CARTOGRAPHER_MODEL="[curr_bed_type] - [filament_type]"`, but you have to make sure you have all the possible models
+defined for each of the bed type and filament type combinations.

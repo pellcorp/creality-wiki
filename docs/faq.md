@@ -52,7 +52,7 @@ Then to switch to cartotouch from btteddy while retaining most of your customisa
 ```
 
 !!! warning
-    Note you will need to change the `TheMount` to the cartographer mount you are using [cartographer mount options](cartographer.md#mount-options)
+    Note you will need to change the `TheMount` to the cartographer mount you are using [cartographer mount options](cartographer_legacy.md#mount-options)
 
     Klipper may fail to start because of the btt eddy configuration at the bottom of the file, you can just manually clean those up, save and restart.
 

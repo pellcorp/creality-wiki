@@ -167,8 +167,8 @@ You can specify a http:// or https:// url for the --printer parameter or you can
 
 You need to choose a probe one of:
 
-- [Cartotouch](cartographer.md)
-- [Cartographer](cartographer_beta.md)
+- [Cartotouch](cartographer_legacy.md)
+- [Cartographer](cartographer.md)
 - [Beacon](beacon.md)
 - [BlTouch](bltouch.md)
 - [Microprobe](microprobe.md)
