@@ -243,7 +243,7 @@ For cartographer you cannot use more than `microsteps: 32`, the MCU cannot handl
 
 ## Calibration
 
-You will need to remove any existing cartotouch config from the bottom of your printer.cfg:
+If you are switching from cartotouch you must remove all cartotouch related config from the bottom of your printer.cfg:
 
 - `[scanner]`
 - `[scanner model default]`
