@@ -4,6 +4,12 @@ Come on over to the pellcorp discord server, the `#simple-af-btteddy` channel ha
 
 <https://discord.gg/2uGDzyJ3WX>
 
+## What about CFS support?
+
+The Creality CFS uses proprietary code blobs and likely will **never** be supported by Simple AF, there is a project underway
+to support Eddy with CFS that is **not affiliated** with Simple AF, but does use some stuff from Simple AF and some of our 
+config and docs: <https://github.com/vsevolod-volkov/K1-Klipper-Eddy>
+
 ### K1 Series
 
 This guide assumes you have a K1, K1C, K1SE or K1 Max and you are running stock creality firmware 1.3.3.5 or **higher** (The firmware 1.3.3.5 is much older than 1.3.3.46 for example), **or alternately** you can use [my prerooted firmware](https://github.com/pellcorp/creality/wiki/Prerooted-K1-Firmware).
