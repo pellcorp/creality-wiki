@@ -35,9 +35,9 @@ Then to switch to eddyng from eddy while retaining most of your customisations:
     Klipper may fail to start because of the btt eddy configuration at the bottom of the file, you can just manually clean those up, save and restart.
 
 
-## How do I switch from btteddy to cartotouch?
+## How do I switch from btteddy to cartographer?
 
-If you have calibrated the btt eddy, you can switch to the cartotouch, but you will have to manually remove any btt eddy specific configuration from the SAVE CONFIG section of your printer.cfg file.
+If you have calibrated the btt eddy, you can switch to the cartographer, but you will have to manually remove any btt eddy specific configuration from the SAVE CONFIG section of your printer.cfg file.
 
 To make sure Simple AF repo is up to date and on the right branch, run this:
 
@@ -45,14 +45,14 @@ To make sure Simple AF repo is up to date and on the right branch, run this:
 ~/pellcorp/installer.sh --branch main
 ```
 
-Then to switch to cartotouch from btteddy while retaining most of your customisations:
+Then to switch to cartographer from btteddy while retaining most of your customisations:
 
 ```
-~/pellcorp/installer.sh --update cartotouch --mount TheMount
+~/pellcorp/installer.sh --update cartographer --mount TheMount
 ```
 
 !!! warning
-    Note you will need to change the `TheMount` to the cartographer mount you are using [cartographer mount options](cartographer_legacy.md#mount-options)
+    Note you will need to change the `TheMount` to the cartographer mount you are using [cartographer mount options](cartographer.md#mount-options)
 
     Klipper may fail to start because of the btt eddy configuration at the bottom of the file, you can just manually clean those up, save and restart.
 

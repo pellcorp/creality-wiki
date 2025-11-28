@@ -4,9 +4,9 @@ Come on over to the pellcorp discord server, the `#simple-af-carto` channel has 
 
 <https://discord.gg/2uGDzyJ3WX>
 
-## Looking for the Legacy Cartotouch?
+## Looking for Cartotouch?
 
-See [Cartographer](cartographer_legacy.md)
+See [Cartotouch](cartotouch.md)
 
 ## Upgrading from Cartotouch?
 

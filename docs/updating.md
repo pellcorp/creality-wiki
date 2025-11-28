@@ -73,10 +73,10 @@ If you wish to reinstall Simple AF ignoring your pre-existing config overrides, 
 Then do a clean reinstall:
 
 ```
-~/pellcorp/installer.sh --clean-reinstall cartotouch
+~/pellcorp/installer.sh --clean-reinstall cartographer
 ```
 
-You can of course replace cartotouch with any other applicable probe.
+You can of course replace cartographer with any other applicable probe.
 
 This will ignore your local changes completely, and is almost 100% the same as doing a factory reset.
 
@@ -85,7 +85,7 @@ This will ignore your local changes completely, and is almost 100% the same as d
     If you run the above and receive an error like:
 
         ```
-        root@K1Max-AF34 /root [#] ~/pellcorp/installer.sh --clean-reinstall cartotouch
+        root@K1Max-AF34 /root [#] ~/pellcorp/installer.sh --clean-reinstall cartographer
         -sh: /root/pellcorp/installer.sh: not found
         ```
 
@@ -93,7 +93,7 @@ This will ignore your local changes completely, and is almost 100% the same as d
 
         ```
         /usr/data/pellcorp/k1/installer.sh --branch main
-        ~/pellcorp/installer.sh --clean-reinstall cartotouch
+        ~/pellcorp/installer.sh --clean-reinstall cartographer
         ```
 
 ## Factory Reset
@@ -118,10 +118,10 @@ Then perform the factory reset:
 
 Note that the `/usr/data/pellcorp-overrides` directory is not deleted during a factory reset.
 
-Do a new installation as normal, for example.   If you perform a `/usr/data/pellcorp/k1/installer.sh --install cartotouch` your configuration overrides will be reapplied for you.
+Do a new installation as normal, for example.   If you perform a `/usr/data/pellcorp/k1/installer.sh --install cartographer` your configuration overrides will be reapplied for you.
 
 If you wish to skip applying your config overrides, then you would perform a clean install:
 
 ```
-/usr/data/pellcorp/k1/installer.sh --clean-install cartotouch
+/usr/data/pellcorp/k1/installer.sh --clean-install cartographer
 ```
