@@ -10,11 +10,11 @@ This just needs a few changes in `printer.cfg`
 
 You need to modify the `[adxl345]` section
 
-First of all change the `cs_pin` from `nozzle_mcu:PA4` to `scanner:PA3`
+First of all change the `cs_pin` from `nozzle_mcu:PA4` to `cartographer:PA3`
 
 !!! note
 
-     If you are using the new cartographer beta software on Simple AF, replace `scanner:` with `cartographer:` in the configuration!
+     If you are using the cartotouch on Simple AF, replace `cartographer:` with `scanner:` in the configuration!
 
 
 Then disable the following settings:
@@ -34,7 +34,7 @@ So your [adxl345] should look like:
  ```
  [adxl345]
  #cs_pin: nozzle_mcu:PA4
- cs_pin: scanner:PA3
+ cs_pin: cartographer:PA3
  spi_bus: spi1
  #spi_speed: 5000000
  axes_map: x, y, z
@@ -45,4 +45,4 @@ So your [adxl345] should look like:
 
 I do not know if this is a good idea, I just know it's possible!
 
-**Source:** <https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/installation/klipper-configuation>
+**Source:** <https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/software-configuration/klipper-setup#configure-klipper>
