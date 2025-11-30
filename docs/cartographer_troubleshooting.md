@@ -2,16 +2,6 @@
 
 <https://docs.cartographer3d.com/cartographer-probe/troubleshooting>
 
-## Repo has diverged from remote
-
-![image](assets/images/cartographer_repo_diverged.png)
-
-You need to click RECOVER and then run from ssh:
-
-```
-~/cartographer-klipper/install.sh
-```
-
 ## Error during probe mcu identification, check connection
 
 If you get the following error, it means that the cartographer is not connected to the printer.   This is either because its physically not connected, the wiring is wrong, the usb subsystem has disconnected the carto during a restart or the serial id is wrong
@@ -53,6 +43,6 @@ You can run the following command to fix your serial if you forgot to plug your 
 ## Cartographer is not connected, aborting homing Z
 
 If you see this error when trying to home your printer, it is a clear indication that the cartographer was disconnected and
-you should look for a `mcu 'scanner' disconnected` error in your klippy.log or gcode console, if the cartographer was momentarily
+you should look for a `mcu 'cartographer' disconnected` error in your klippy.log or gcode console, if the cartographer was momentarily
 disconnected (so if you run `lsusb` on the printer the cartographer shows up), you can simply restart klipper from the services
 menu in Fluidd or Mainsail, if the cartographer completely disappeared you will need to power cycle the printer!
