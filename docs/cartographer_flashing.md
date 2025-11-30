@@ -67,7 +67,7 @@ virtualenv --system-site-packages $HOME/klippy-env
 $HOME/klippy-env/bin/pip3 install -r $HOME/klipper/scripts/klippy-requirements.txt
 ```
 
-## Flashing K1 Carto Touch Firmware
+## Flashing K1 Cartographer Firmware
 
 This firmware is provided by Richard from Cartographer3d.com specifically for the K1, K1C, K1SE, K1 Max, Ender 3 V3 KE and Ender 5 Max.   It is critical that you flash your cartographer with this version of the Survey firmware over the official Survey Firmware on K1, K1SE, K1C, K1M, Ender 3 V3 KE and Ender 5 Max to avoid stuttering and instability, especially during bed meshes!
 
