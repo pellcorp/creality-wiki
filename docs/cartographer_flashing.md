@@ -2,7 +2,7 @@
 
     THIS IS A RISKY OPERATION YOU CAN BRICK YOUR CARTO
 
-    Do not follow these instructions unless you have a USB V3 Carto!!!!!!
+    Do not follow these instructions unless you have a **USB V3 Cartographer** !!!!!!
 
 !!! warning
 
