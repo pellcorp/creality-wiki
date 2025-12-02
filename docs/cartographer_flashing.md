@@ -49,16 +49,16 @@ git clone "https://github.com/Klipper3d/klipper" $HOME/klipper
 git clone "https://github.com/Cartographer3D/cartographer_firmware" $HOME/cartographer_firmware
 ```
 
-### Update Cartographer-Firmware repo 
+!!! note 
 
-If you already have `cartographer_firmware` cloned locally, make sure you are on latest `main` like so:
-
-```
-cd $HOME/cartographer_firmware
-git fetch
-git switch main
-git reset --hard origin/main
-```
+    If you already have `cartographer_firmware` cloned locally, make sure you are on latest `main` like so:
+    
+    ```
+    cd $HOME/cartographer_firmware
+    git fetch
+    git switch main
+    git reset --hard origin/main
+    ```
 
 ## Setup Klipper Virtual Env
 
