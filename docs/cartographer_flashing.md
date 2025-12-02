@@ -51,13 +51,13 @@ git clone "https://github.com/Cartographer3D/cartographer_firmware" $HOME/cartog
 
 ### Update Cartographer-Firmware repo 
 
-If you already have `cartographer_firmware` cloned locally, make sure you are on latest master like so:
+If you already have `cartographer_firmware` cloned locally, make sure you are on latest `main` like so:
 
 ```
 cd $HOME/cartographer_firmware
 git fetch
-git switch master
-git reset --hard origin/master
+git switch main
+git reset --hard origin/main
 ```
 
 ## Setup Klipper Virtual Env
