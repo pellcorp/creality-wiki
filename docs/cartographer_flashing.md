@@ -42,16 +42,16 @@ sudo apt-get update
 sudo apt-get install virtualenv python3-dev python3-pip python3-setuptools libffi-dev build-essential git dfu-util
 ```
 
-## Clone Klipper and Cartographer-Klipper
+## Clone Klipper and Cartographer-Firmware
 
 ```
 git clone "https://github.com/Klipper3d/klipper" $HOME/klipper
 git clone "https://github.com/Cartographer3D/cartographer_firmware" $HOME/cartographer_firmware
 ```
 
-### Update Cartographer Klipper repo 
+### Update Cartographer-Firmware repo 
 
-If you already have cartographer_firmware cloned locally, make sure you are on latest master like so:
+If you already have `cartographer_firmware` cloned locally, make sure you are on latest master like so:
 
 ```
 cd $HOME/cartographer_firmware
