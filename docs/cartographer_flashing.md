@@ -46,15 +46,15 @@ sudo apt-get install virtualenv python3-dev python3-pip python3-setuptools libff
 
 ```
 git clone "https://github.com/Klipper3d/klipper" $HOME/klipper
-git clone "https://github.com/Cartographer3D/cartographer-klipper.git" $HOME/cartographer-klipper
+git clone "https://github.com/Cartographer3D/cartographer_firmware" $HOME/cartographer_firmware
 ```
 
 ### Update Cartographer Klipper repo 
 
-If you already have cartographer-klipper cloned locally, make sure you are on latest master like so:
+If you already have cartographer_firmware cloned locally, make sure you are on latest master like so:
 
 ```
-cd $HOME/cartographer-klipper
+cd $HOME/cartographer_firmware
 git fetch
 git switch master
 git reset --hard origin/master
@@ -107,7 +107,7 @@ Entering bootloader on /dev/serial/by-id/usb-Cartographer_614e_16000C000F4330425
 
 ```
 CATAPULT_DEV=$(ls /dev/serial/by-id/usb-katapult*)
-sudo -E $HOME/klippy-env/bin/python $HOME/klipper/lib/canboot/flash_can.py -f $HOME/cartographer-klipper/firmware/v2-v3/survey/5.1.0/Survey_Cartographer_K1_USB_8kib_offset.bin -d $CATAPULT_DEV
+sudo -E $HOME/klippy-env/bin/python $HOME/klipper/lib/canboot/flash_can.py -f $HOME/cartographer_firmware/firmware/v2-v3/survey/5.1.0/Survey_Cartographer_K1_USB_8kib_offset.bin -d $CATAPULT_DEV
 ```
 
 !!! note
@@ -123,7 +123,7 @@ Protocol Version: 1.0.0
 Block Size: 64 bytes
 Application Start: 0x8002000
 MCU type: stm32f042x6
-Flashing '/home/ubuntu/cartographer-klipper/firmware/v2-v3/survey/5.1.0/Survey_Cartographer_K1_USB_8kib_offset.bin'...
+Flashing '/home/ubuntu/cartographer_firmware/firmware/v2-v3/survey/5.1.0/Survey_Cartographer_K1_USB_8kib_offset.bin'...
 
 [##################################################]
 
@@ -167,7 +167,7 @@ You need to bridge the boot pins before you plug your carto in via USB to your L
 Then cd to the combined firmware directory 
 
 ```
-cd $HOME/cartographer-klipper/firmware/v2-v3/combined-firmware/5.1.0
+cd $HOME/cartographer_firmware/firmware/v2-v3/combined-firmware/5.1.0
 ```
 
 And run dfu-util to write the firmware:
