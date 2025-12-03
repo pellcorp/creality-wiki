@@ -29,8 +29,8 @@ sh /usr/data/install-grumpyscreen.sh
 
 !!! note
 
-    The grumpy-macros.cfg has a couple of macros for _GUPPYSCREEN_EXTRUDE and _GUPPYSCREEN_EXTRUDE, that is downloaded and copied into `/usr/data/printer_data/config/GuppyConfig/`,
-    so should have been imported by the existing `[include GuppyScreen/*.cfg]` include added by Helper Script.
+    The grumpy-macros.cfg has a couple of macros for _GUPPYSCREEN_EXTRUDE and _GUPPYSCREEN_EXTRUDE that GrumpyScreen needs.  As part of the installation, this file is downloaded and copied into `/usr/data/printer_data/config/GuppyConfig/`,
+    so the macros should have been imported by the existing `[include GuppyScreen/*.cfg]` include added by Helper Script.
 
 It will replace guppyscreen binary and configuration file, you can update GrumpyScreen via the screen only, the Helper Script `GUPPY_UPDATE` macro
 has been removed as it breaks grumpyscreen.
