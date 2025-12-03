@@ -41,6 +41,8 @@ Then run the helperscript grumpyscreen installer:
 The installer will replace the existing guppyscreen binary and configuration file, you can update GrumpyScreen via the screen only, the Helper Script `GUPPY_UPDATE` 
 macro has been removed as it breaks grumpyscreen.
 
+Like for Simple AF, the installer will copy the `guppyscreen.cfg` to the config directory so you can customise it and restart GrumpyScreen for changes to be applied. 
+
 If you want to revert to normal guppyscreen just uninstall and reinstall from Helper Script, I do not provide a script to do this automatically!
 
 Please note that GrumpyScreen is a vastly simplified version of Guppyscreen:
