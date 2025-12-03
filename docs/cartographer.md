@@ -313,7 +313,8 @@ After the save config you have to do the touch calibration.
 1. Home All (`G28`)
 2. Run `_CALIBRATE_PRE_HEAT`, which will heat the bed to 60c, nozzle to 150c
 3. Run the `STOP_CAMERA` macro to stop the camera
-4. Run `CARTOGRAPHER_TOUCH_CALIBRATE SPEED=2`
+4. Run `SET_VELOCITY_LIMIT ACCEL=100`
+5. Run `CARTOGRAPHER_TOUCH_CALIBRATE SPEED=2`
    <br />Upon completion *`SAVE_CONFIG`*
 
 !!! warning
@@ -365,7 +366,8 @@ your bed mesh, so best to do it before.
 
 1. Home All (`G28`)
 2. Heat Nozzle to 150c (`M109 S150`) so that any filament can be removed from nozzle
-3. Run `CARTOGRAPHER_AXIS_TWIST_COMPENSATION`
+3. Run `SET_VELOCITY_LIMIT ACCEL=100`
+4. Run `CARTOGRAPHER_AXIS_TWIST_COMPENSATION`
    <br />Upon completion *`SAVE_CONFIG`*
 
 **Source:** <https://docs.cartographer3d.com/cartographer-probe/features/axis-twist-compensation>
