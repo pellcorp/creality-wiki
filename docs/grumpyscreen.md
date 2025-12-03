@@ -34,12 +34,12 @@ Then run the helperscript grumpyscreen installer:
 
 !!! note
 
-    The grumpy-macros.cfg has a couple of macros for _GUPPYSCREEN_EXTRUDE and _GUPPYSCREEN_EXTRUDE that GrumpyScreen needs.  As part of the installation, 
-    this file is copied into `/usr/data/printer_data/config/GuppyConfig/`, so the macros should have been imported by the existing `[include GuppyScreen/*.cfg]` 
+    GrumpyScreen requires two macros _GUPPYSCREEN_EXTRUDE and _GUPPYSCREEN_EXTRUDE.  As part of the installation, a `grumpy-macros.cfg` with these macros
+    is copied into `/usr/data/printer_data/config/GuppyConfig/`, so the macros should have been imported by the existing `[include GuppyScreen/*.cfg]` 
     include added by Helper Script.
 
-It will replace guppyscreen binary and configuration file, you can update GrumpyScreen via the screen only, the Helper Script `GUPPY_UPDATE` macro
-has been removed as it breaks grumpyscreen.
+The installer will replace the existing guppyscreen binary and configuration file, you can update GrumpyScreen via the screen only, the Helper Script `GUPPY_UPDATE` 
+macro has been removed as it breaks grumpyscreen.
 
 If you want to revert to normal guppyscreen just uninstall and reinstall from Helper Script, I do not provide a script to do this automatically!
 
