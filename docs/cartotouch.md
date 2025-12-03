@@ -308,7 +308,7 @@ After the save config you have to do the cartographer threshold scan (see next)
     For this next step, it is really important to be near your printer for this step, because if there is any issue with the printer configuration or your carto probe, its possible the nozzle will dig itself into the bed, so be hovering over that e-stop button!
 
 1. Home All (`G28`)
-2. Run `__CALIBRATE_PRE_HEAT`, which will heat the bed to 60c, nozzle to 150c
+2. Run `_CALIBRATE_PRE_HEAT`, which will heat the bed to 60c, nozzle to 150c
 3. Run the `STOP_CAMERA` macro to stop the camera
 4. Execute `CARTOGRAPHER_THRESHOLD_SCAN SPEED=2 MIN=1000 MAX=5000`
 <br />Upon completion *`SAVE_CONFIG`*
@@ -324,7 +324,7 @@ After the save config you have to do the touch calibration.
     For this next step, it is really important to be near your printer for this step, because if there is any issue with the printer configuration or your carto probe, its possible the nozzle will dig itself into the bed, so be hovering over that e-stop button!
 
 1. Home All (`G28`)
-2. Run `__CALIBRATE_PRE_HEAT`, which will heat the bed to 60c, nozzle to 150c
+2. Run `_CALIBRATE_PRE_HEAT`, which will heat the bed to 60c, nozzle to 150c
 3. Run the `STOP_CAMERA` macro to stop the camera
 4. Execute `CARTOGRAPHER_CALIBRATE`
 <br />Upon completion *`SAVE_CONFIG`*
