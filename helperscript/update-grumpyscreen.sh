@@ -19,4 +19,7 @@ sed -i 's/load_filament:.*/load_filament: _GUPPY_LOAD_MATERIAL EXTRUDER_TEMP={}/
 sed -i 's/unload_filament:.*/unload_filament: _GUPPY_QUIT_MATERIAL EXTRUDER_TEMP={}/g' /usr/data/guppyscreen/grumpyscreen.cfg
 sed -i 's/guppy_update_cmd:.*/guppy_update_cmd: /usr/data/guppyscreen/update-grumpyscreen.sh/g' /usr/data/guppyscreen/grumpyscreen.cfg
 
+# we want grumpyscreen.cfg to be editable from fluidd / mainsail we do that with a soft link
+ln -sf /usr/data/printer_data/config/grumpyscreen.cfg /usr/data/guppyscreen/
+
 /etc/init.d/S99guppyscreen restart
