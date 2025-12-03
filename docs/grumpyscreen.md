@@ -16,26 +16,32 @@ It is possible to initiate a factory reset from the settings menu (the cog) of G
 
 ![image](assets/images/grumpyscreen_factory_reset.png)
 
-## Helper Script?
+## GrumpyScreen for Helper Script
 
-So I have added experimental support for installing GrumpyScreen onto Helper Script printers, currently only
-K1, K1C, K1SE and K1M are supported and the support is experimental, I make no guarantees things won't break, so you **must** have already installed GuppyScreen
-via helper script and then you can run the following from your printer ssh console:
+I have added **experimental** support for installing GrumpyScreen onto Helper Script printers, currently only K1, K1C, K1SE and K1M are supported.
+
+First of all clone the Simple AF repo:
 
 ```
-wget https://raw.githubusercontent.com/pellcorp/creality-wiki/refs/heads/main/helperscript/install-grumpyscreen.sh -O - > /usr/data/install-grumpyscreen.sh
-sh /usr/data/install-grumpyscreen.sh
+git clone --depth 1 https://github.com/pellcorp/creality.git /usr/data/pellcorp
+```
+
+Then run the helperscript grumpyscreen installer:
+
+```
+/usr/data/pellcorp/helperscript/install-grumpyscreen.sh
 ```
 
 !!! note
 
-    The grumpy-macros.cfg has a couple of macros for _GUPPYSCREEN_EXTRUDE and _GUPPYSCREEN_EXTRUDE that GrumpyScreen needs.  As part of the installation, this file is downloaded and copied into `/usr/data/printer_data/config/GuppyConfig/`,
+    The grumpy-macros.cfg has a couple of macros for _GUPPYSCREEN_EXTRUDE and _GUPPYSCREEN_EXTRUDE that GrumpyScreen needs.  As part of the installation, 
+    this file is downloaded and copied into `/usr/data/printer_data/config/GuppyConfig/`,
     so the macros should have been imported by the existing `[include GuppyScreen/*.cfg]` include added by Helper Script.
 
 It will replace guppyscreen binary and configuration file, you can update GrumpyScreen via the screen only, the Helper Script `GUPPY_UPDATE` macro
 has been removed as it breaks grumpyscreen.
 
-If you want to revert to normal guppyscreen just uninstall and reinstall from Helper Script, I do not provide a script to do this automatically
+If you want to revert to normal guppyscreen just uninstall and reinstall from Helper Script, I do not provide a script to do this automatically!
 
 Please note that GrumpyScreen is a vastly simplified version of Guppyscreen:
 

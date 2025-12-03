@@ -171,7 +171,6 @@ chmod +x /tmp/S58factoryreset
 ```
 git config --global http.sslVerify false
 git clone https://github.com/pellcorp/creality.git /usr/data/pellcorp
-sync
 ```
 
 ### Run the installer

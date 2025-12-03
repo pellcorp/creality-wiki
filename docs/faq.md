@@ -218,7 +218,6 @@ You can update the /etc/hostname with the new hostname from ssh like this:
 
 ```    
 echo "myhostname" > /etc/hostname
-sync
 ```
 
 Next time you power cycle your printer, the hostname should be updated
