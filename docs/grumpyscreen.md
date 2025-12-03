@@ -3,7 +3,7 @@
 GrumpyScreen is our fork of the wonderful GuppyScreen from ballaswag that we have continually refined and enhanced
 to be tightly integrated with Simple AF, although it's also possible to run this on Helper Script too.
 
-The source for GrumyScreen can be found at <https://github.com/pellcorp/grumpyscreen>
+The source for GrumpyScreen can be found at <https://github.com/pellcorp/grumpyscreen>
 
 ## Configuration
 
