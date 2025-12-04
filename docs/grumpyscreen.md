@@ -12,7 +12,7 @@ now that its a flat file, config overrides will be fully supported for retaining
 
 ## Grumpyscreen Factory Reset
 
-It is possible to initiate a factory reset from the settings menu (the cog) of Grumpyscreen.
+It is possible to initiate a factory reset from the tools menu of Grumpyscreen.
 
 ![image](assets/images/grumpyscreen_factory_reset.png)
 
