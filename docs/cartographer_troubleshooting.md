@@ -2,6 +2,16 @@
 
 <https://docs.cartographer3d.com/cartographer-probe/troubleshooting>
 
+## You must flash the cartographer with K1 specific firmware!
+
+![image](assets/images/cartographer_must_flash_k1_firmware.png)
+
+This means when you received your cartographer you failed to flash it with the K1 specific firmware required for Simple AF and Cartographer to
+function without causing lots of performance and stability issues.   Validations were recently added to various macros in Simple AF for the new
+Cartographer software to abort if the non K1 specific firmware is not flashed.
+
+[cartographer firmware](cartographer.md#cartographer-firmware)
+
 ## Error during probe mcu identification, check connection
 
 If you get the following error, it means that the cartographer is not connected to the printer.   This is either because its physically not connected, the wiring is wrong, the usb subsystem has disconnected the carto during a restart or the serial id is wrong
