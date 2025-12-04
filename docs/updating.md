@@ -102,7 +102,7 @@ This will ignore your local changes completely, and is almost 100% the same as d
 
     This does not apply to Simple AF for RPi
 
-To factory reset a Simple AF installation is very much like how you install Simple AF from helper script
+To factory reset a Simple AF installation is very much like how you might have originally installed Simple AF, if it required a factory reset first.
 
 If you wish to be able to restore you local changes after a factory reset you should make sure you run the config overrides script before performing the factory reset itself, so this is easy to do from ssh with:
 
