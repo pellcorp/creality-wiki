@@ -35,7 +35,7 @@ Then run the helperscript grumpyscreen installer:
 !!! note
 
     GrumpyScreen requires two macros _GUPPYSCREEN_EXTRUDE and _GUPPYSCREEN_EXTRUDE.  As part of the installation, a `grumpy-macros.cfg` with these macros
-    is copied into `/usr/data/printer_data/config/GuppyConfig/`, so the macros should have been imported by the existing `[include GuppyScreen/*.cfg]` 
+    is copied into `/usr/data/printer_data/config/GuppyScreen/`, so the macros should have been imported by the existing `[include GuppyScreen/*.cfg]` 
     include added by Helper Script.
 
 The installer will replace the existing guppyscreen binary and configuration file, you can update GrumpyScreen via the screen only, the Helper Script `GUPPY_UPDATE` 
