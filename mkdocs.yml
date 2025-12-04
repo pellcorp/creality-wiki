@@ -73,7 +73,9 @@ plugins:
       lang: en
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - tags
-
+  - redirects:
+      redirect_maps:
+        'cartographer-firmware.md': 'cartographer.md#cartographer-firmware'
 
 extra:
   social:
