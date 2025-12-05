@@ -135,7 +135,7 @@ nav:
       - beacon_troubleshooting.md
       - beacon_faq.md
       - beacon_flashing.md
-  - EddyNG:
+  - Eddy:
       - eddyng.md
       - btteddy_wiring.md
       - eddyng_troubleshooting.md
@@ -156,12 +156,10 @@ nav:
   - Rpi:
       - rpi.md
       - rpi_printer_definitions.md
-  - Updating:
+  - Extras:
       - updating.md
       - config_overrides.md
-  - FAQ:
       - faq.md
-  - Extras:
       - misc.md
       - custom_hooks.md
       - nozzle_wipe.md
