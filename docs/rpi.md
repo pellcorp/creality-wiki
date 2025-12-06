@@ -245,10 +245,7 @@ sudo plymouth-set-default-theme -R simpleaf
 
 ### KlipperScreen
 
-The installer will automatically install KlipperScreen on Pi4 or above, there are concerns of overloading a pi3
-or less with klipperscreen so the installer will install grumpyscreen for raspberry pi 3 devices only!
-
-You can force the installation of KlipperScreen afterwards by running:
+You can switch to KlipperScreen from GrumpyScreen by running:
 
 ```
 sudo systemctl stop grumpyscreen
