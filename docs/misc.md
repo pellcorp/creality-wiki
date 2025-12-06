@@ -152,7 +152,7 @@ It is very easy, you just need to create a empty file called `emergency_factory_
 
 ### Grumpyscreen Factory Reset
 
-It is also possible to initiate a factory reset from the settings menu (the cog) of Grumpyscreen.
+It is also possible to initiate a factory reset from the tools menu of Grumpyscreen.
 
 ![image](assets/images/grumpyscreen_factory_reset.png)
 
