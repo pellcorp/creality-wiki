@@ -276,8 +276,8 @@ Support for grumpyscreen will be provided for BTT DSI screens but you need to se
 
 !!! warning
 
-    It seems like maybe I have broken the RPI GrumpyScreen build, touch does not seem to be working anymore, I am unsure
-    what I have done to cause this issue, it could also be a problem with my DSI screen too of course.
+    Currently GrumpyScreen hard codes the input device for touch, I am working on making that more flexible, but if
+    /dev/input/event0 is used by something else like a webcam or the like, touch does not work.
 
 <https://github.com/bigtreetech/TFT43-DIP>
 
