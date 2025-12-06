@@ -155,3 +155,48 @@ It is very easy, you just need to create a empty file called `emergency_factory_
 It is also possible to initiate a factory reset from the settings menu (the cog) of Grumpyscreen.
 
 ![image](assets/images/grumpyscreen_factory_reset.png)
+
+## Configure Wifi via USB Stick
+
+A recently added feature allows configuring a new wifi ap via a USB Stick, you copy a `wpa_supplicant.conf` to a FAT32 formatted USB stick and plug it into the
+front of your printer and power cycle the printer.   
+
+!!! warning
+
+     This section is not available for Simple AF for RPi
+
+The format of the file must be precisely what the printer is looking for:
+
+```
+ctrl_interface=/var/run/wpa_supplicant
+update_config=1
+country=GB
+
+network={
+	ssid="THE-WIFI-SSID"
+	psk="TheWifiPassword"
+	priority=1
+}
+```
+
+For example if your wifi ssid is `MyWifiIsCool` and your Wifi AP Password is `Ab1123AX$@&*`, your wpa_supplicant.conf file might looke like:
+
+
+```
+ctrl_interface=/var/run/wpa_supplicant
+update_config=1
+country=GB
+
+network={
+	ssid="MyWifiIsCool"
+	psk="Ab1123AX$@&*"
+	priority=1
+}
+```
+
+!!! note
+
+    Be sure to set your country code appropriately, the default is GB for some reason.
+
+
+
