@@ -6,6 +6,7 @@ If you are not using a predefined printer definition you will need to craft or d
 
 This definition should **not** include any kind of probe configuration **in the main printer.cfg section**, this should just have the basics (the installer will automatically remove some problematic definitions):
 
+- mcu
 - extruder
 - heater_bed
 - heater_fan
