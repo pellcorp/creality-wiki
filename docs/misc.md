@@ -159,11 +159,18 @@ It is also possible to initiate a factory reset from the settings menu (the cog)
 ## Configure Wifi via USB Stick
 
 A recently added feature allows configuring a new wifi ap via a USB Stick, you copy a `wpa_supplicant.conf` to a FAT32 formatted USB stick and plug it into the
-front of your printer and power cycle the printer.   
+front of your printer and power cycle the printer, the printer will notice the file, copy it over to the printer and restart wifi, by the time GrumpyScreen
+appears your wifi ap should have been switched. 
 
-!!! warning
+!!! note
 
      This feature is not available for Simple AF for RPi!
+
+!!! danger
+
+    If you leave the USB Stick in the printer with a `wpa_supplicant.conf` on it, the printer is going to be copying that file across and restarting WIFI
+    every time the printer is power cycled, this is not good for the printer, so delete the wpa_supplicant.conf from the stick after the printer has switched
+    the wifi AP over.
 
 The format of the file must be precisely what the printer is looking for:
 
