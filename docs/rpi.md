@@ -274,6 +274,11 @@ setup Simple AF on a Pi4 or above to get KlipperScreen.
 
 Support for grumpyscreen will be provided for BTT DSI screens but you need to setup the screen to be correctly configured.
 
+!!! warning
+
+    It seems like maybe I have broken the RPI GrumpyScreen build, touch does not seem to be working anymore, I am unsure
+    what I have done to cause this issue, it could also be a problem with my DSI screen too of course.
+
 <https://github.com/bigtreetech/TFT43-DIP>
 
 By default when grumpyscreen starts its probably going to look like:
