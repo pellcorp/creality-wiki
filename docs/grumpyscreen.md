@@ -13,7 +13,7 @@ now that its a flat file, config overrides will be fully supported for retaining
 !!! note
 
     Unfortunately both Fluidd and Mainsail will present the `Save & Restart` button to you when editing grumpyscreen.cfg file, but klicking this button
-    is pointless because it will not restart GrumpyScreen, you need to lick the Save button only and then manually restart GrumpyScreen from the services menu
+    is pointless because it will not restart GrumpyScreen, you need to click the Save button only and then manually restart GrumpyScreen from the services menu
     or Restart Grumpy from the tools menu in GrumpyScreen itself.
 
 ## Grumpyscreen Factory Reset
