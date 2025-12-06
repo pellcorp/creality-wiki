@@ -10,6 +10,12 @@ The source for GrumpyScreen can be found at <https://github.com/pellcorp/grumpys
 Recently we migrated to a klipper style config file which you can edit directly from the config directory in fluidd or mainsail, look for the file `grumpyscreen.cfg`,
 now that its a flat file, config overrides will be fully supported for retaining all your customisations including custom fans, leds, monitored sensors etc.
 
+!!! note
+
+    Unfortunately both Fluidd and Mainsail will present the `Save & Restart` button to you when editing grumpyscreen.cfg file, but klicking this button
+    is pointless because it will not restart GrumpyScreen, you need to lick the Save button only and then manually restart GrumpyScreen from the services menu
+    or Restart Grumpy from the tools menu in GrumpyScreen itself.
+
 ## Grumpyscreen Factory Reset
 
 It is possible to initiate a factory reset from the tools menu of Grumpyscreen.
