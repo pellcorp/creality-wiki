@@ -163,7 +163,7 @@ front of your printer and power cycle the printer.
 
 !!! warning
 
-     This section is not available for Simple AF for RPi
+     This feature is not available for Simple AF for RPi!
 
 The format of the file must be precisely what the printer is looking for:
 
