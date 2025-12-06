@@ -584,4 +584,11 @@ variable_end_print_cool_down: False
 For Simple AF for RPi yes thats fine and you can do that via crowsnest, but for K1 Series (which includes K1, K1M, K1SE, K1C, Ender 5 Max and Ender 3 V3 KE), that
 is not possible, for more information see [Additional Camera](additional_camera.md)
 
+## Get Fluidd to restart Klipper for Save and Restart
+
+Fluidd actually has a feature to switch from asking Klipper to restart itself to getting Moonraker to restart the Klipper service itself, this can
+be a useful change to make because in my experience restarting klipper results in less disconnections of eddy probes like Cartographer, Beacon or Eddy
+and takes about the same amount of time.
+
+![image](assets/images/fluidd-save-restart-service-restart.png)
 
