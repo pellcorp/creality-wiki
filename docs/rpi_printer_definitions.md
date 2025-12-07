@@ -35,7 +35,6 @@ The following can be included:
 - `lis2dw`
 - `resonance_tester`
 - `gcode_arcs`
-- `screws_tilt_adjust`
 
 ### Illegal Sections
 
