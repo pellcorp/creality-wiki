@@ -18,6 +18,22 @@ This definition should **not** include any kind of probe configuration **in the 
 - fan_generic
 - filament_switch_sensor
 
+### Illegal Sections
+
+The installer will exit if it finds any `[include ]` or SAVE_CONFIG sections, otherwise the following sections will automatically be removed:
+
+- bltouch
+- probe
+- safe_z_home
+- homing_override
+- force_move
+- pause_resume
+- bed_mesh
+- idle_timeout
+- display_status
+- virtual_sdcard
+- exclude_object
+
 ## Support Probes and Mounts
 
 If you are updating the mainboard on one of the printers that supports multiple probes and/or mounts, you should let the installer know what model of printer your config is for, this is done by specifying the model of printer with a `# MODEL:` header at the beginning of the file!
