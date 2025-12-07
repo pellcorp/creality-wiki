@@ -30,30 +30,34 @@ This definition should **not** include any kind of probe configuration **in the 
 
 The following can be included:
 
-- input_shaper (predefined / hard coded input shaper values)
-- adxl345
-- lis2dw
-- resonance_tester
-- gcode_arcs
-- screws_tilt_adjust
-- 
+- `input_shaper` (predefined / hard coded input shaper values)
+- `adxl345`
+- `lis2dw`
+- `resonance_tester`
+- `gcode_arcs`
+- `screws_tilt_adjust`
+
 ### Illegal Sections
 
-The installer will exit if it finds any `[include ]` or SAVE_CONFIG sections, otherwise the following sections will automatically be removed:
+The installer will exit if it finds any `[include ]` or SAVE_CONFIG sections.
 
-- bltouch
-- probe
-- safe_z_home
-- homing_override
-- force_move
-- pause_resume
-- bed_mesh
-- idle_timeout
-- display_status
-- virtual_sdcard
-- exclude_object
-- axis_twist_compensation
-- screws_tilt_adjust
+### Not required
+
+The following sections are defined elsewhere in Simple AF and will automatically be removed from the printer definition before its used:
+
+- `bltouch`
+- `probe`
+- `safe_z_home`
+- `homing_override`
+- `force_move`
+- `pause_resume`
+- `bed_mesh`
+- `idle_timeout`
+- `display_status`
+- `virtual_sdcard`
+- `exclude_object`
+- `axis_twist_compensation`
+- `screws_tilt_adjust`
 
 ## Support Probes and Mounts
 
