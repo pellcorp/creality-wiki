@@ -102,7 +102,7 @@ If you wish to restore access to force move set the `variable_disable_force_move
     You can use the hidden `_SET_KIN_MAX_Z` macro to set kinematic distance to allow the full range of z height, this macro is normally used for calibration to allow
     users to move their Cartographer, Beacon or Eddy close to the bed before calibration, but its useful for many situations.
 
-## How do I replace Simple AF the Kamp Line_Purge with a custom line purge?
+## How do I replace Line_Purge with a custom line purge?
 
 So currently there is no official support to do a simple line purge like stock creality, but it is possible with a trick to replace the Simple AF `Line_Purge.cfg` macro with your own.
 
