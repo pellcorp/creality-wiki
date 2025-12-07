@@ -4,20 +4,39 @@ If you are not using a predefined printer definition you will need to craft or d
 
 ## What should be in this file?
 
-This definition should **not** include any kind of probe configuration **in the main printer.cfg section**, this should just have the basics (the installer will automatically remove some problematic definitions):
+This definition should **not** include any kind of probe configuration **in the main printer.cfg section**, this should just have the basics:
 
-- mcu
-- extruder
-- heater_bed
-- heater_fan
-- stepper_x
-- stepper_y
-- stepper_z (or multiple stepper_z for multi-z)
-- the `[printer]` section
-- fan
-- fan_generic
-- filament_switch_sensor
+- `mcu`
+- `extruder`
+- `heater_bed`
+- `heater_fan`
+- `stepper_x`
+- `tmcXXXX stepper_x`
+- `stepper_y`
+- `tmcXXXX stepper_y`
+- `stepper_z`
+- `tmcXXXX stepper_z`
+- `printer`
+- `fan`
+- `fan_generic`
+- `filament_switch_sensor`
+- `temperature_sensor`
+- `duplicate_pin_override`
+- `temperature_fan`
+- `verify_heater`
+- `output_pin`
 
+### Optional
+
+The following can be included:
+
+- input_shaper (predefined / hard coded input shaper values)
+- adxl345
+- lis2dw
+- resonance_tester
+- gcode_arcs
+- screws_tilt_adjust
+- 
 ### Illegal Sections
 
 The installer will exit if it finds any `[include ]` or SAVE_CONFIG sections, otherwise the following sections will automatically be removed:
@@ -33,6 +52,8 @@ The installer will exit if it finds any `[include ]` or SAVE_CONFIG sections, ot
 - display_status
 - virtual_sdcard
 - exclude_object
+- axis_twist_compensation
+- screws_tilt_adjust
 
 ## Support Probes and Mounts
 
