@@ -75,7 +75,8 @@ plugins:
   - tags
   - redirects:
       redirect_maps:
-        'invalid-cartographer-firmware.md': 'cartographer.md#cartographer-firmware'
+        - 'invalid-cartographer-firmware.md': 'cartographer.md#cartographer-firmware'
+        - 'invalid-cartotouch-firmware.md': 'cartotouch.md#cartographer-firmware'
 
 extra:
   social:
