@@ -136,7 +136,7 @@ nav:
       - beacon_troubleshooting.md
       - beacon_faq.md
       - beacon_flashing.md
-  - Eddy:
+  - EddyNG:
       - eddyng.md
       - btteddy_wiring.md
       - eddyng_troubleshooting.md
