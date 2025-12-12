@@ -18,7 +18,7 @@ You must make sure that the cable you are using is pinned correctly.  For both f
     
     The right angle and flat pack pin out is different to using a low profile carto, so the image above **does not apply** to low profile cartographers!
 
-    You **must** not use the firmware.cartographer3d.com, it will not flash the proper version of `CARTOGRAPHER K1 5.1.0` firmware for the K1, K1C, K1SE, K1 Max, Ender 3 V3 KE and Ender 5 Max!
+    You **must** not use the firmware.cartographer3d.com, it will not flash the proper version of `CARTOGRAPHER K1 5.0.0` firmware for the K1, K1C, K1SE, K1 Max, Ender 3 V3 KE and Ender 5 Max!
 
     The reason this cannot be done on the printer, seems to be some incompatibility with pyserial and MIPS, and issue for this has been opened 
     <https://github.com/Arksine/katapult/issues/137> 
@@ -107,14 +107,10 @@ Entering bootloader on /dev/serial/by-id/usb-Cartographer_614e_16000C000F4330425
 
 ```
 CATAPULT_DEV=$(ls /dev/serial/by-id/usb-katapult*)
-sudo -E $HOME/klippy-env/bin/python $HOME/klipper/lib/canboot/flash_can.py -f $HOME/cartographer_firmware/firmware/v2-v3/survey/5.1.0/Survey_Cartographer_K1_USB_8kib_offset.bin -d $CATAPULT_DEV
+sudo -E $HOME/klippy-env/bin/python $HOME/klipper/lib/canboot/flash_can.py -f $HOME/cartographer_firmware/firmware/v2-v3/survey/5.0.0/Survey_Cartographer_K1_USB_8kib_offset.bin -d $CATAPULT_DEV
 ```
 
-!!! note
-
-    If downgrading firmware replace 5.1.0 with 5.0.0
-
-You should see output this this:
+You should see output like this:
 
 ```
 Attempting to connect to bootloader
@@ -123,7 +119,7 @@ Protocol Version: 1.0.0
 Block Size: 64 bytes
 Application Start: 0x8002000
 MCU type: stm32f042x6
-Flashing '/home/ubuntu/cartographer_firmware/firmware/v2-v3/survey/5.1.0/Survey_Cartographer_K1_USB_8kib_offset.bin'...
+Flashing '/home/ubuntu/cartographer_firmware/firmware/v2-v3/survey/5.0.0/Survey_Cartographer_K1_USB_8kib_offset.bin'...
 
 [##################################################]
 
@@ -148,7 +144,7 @@ CAN Flash Success
     If the Cartographer is no longer flashing blue its also possible the katapult bootloader has become corrupted which is actually frighteningly easy to do
     which is why I generally discourage the use of WSL or VMs!
 
-When you reconnect your carto to your printer it should show a version `CARTOGRAPHER K1 5.1.0`:
+When you reconnect your carto to your printer it should show a version `CARTOGRAPHER K1 5.0.0`:
 
 **Source:** <https://docs.cartographer3d.com/cartographer-probe/firmware/manual-methods/cartographer-with-input-shaper/update-via-katapult-recommended#updating-a-usb-probe-via-katapult>
 
@@ -167,16 +163,15 @@ You need to bridge the boot pins before you plug your carto in via USB to your L
 Then cd to the combined firmware directory 
 
 ```
-cd $HOME/cartographer_firmware/firmware/v2-v3/combined-firmware/5.1.0
+cd $HOME/cartographer_firmware/firmware/v2-v3/combined-firmware/5.0.0
 ```
 
 And run dfu-util to write the firmware:
 
 ```
-sudo dfu-util -R -a 0 -s 0x08000000:leave -D Full_Survey_Cartographer_CrealityK1_USB_5_1_0.bin
+sudo dfu-util -R -a 0 -s 0x08000000:leave -D Full_Survey_Cartographer_CrealityK1_USB_5_0_0.bin
 ```
 
 ![image](assets/images/carto_dfu.png)
-
 
 **Source:** <https://docs.cartographer3d.com/cartographer-probe/firmware/manual-methods/cartographer-with-input-shaper/update-via-dfu-mode>
