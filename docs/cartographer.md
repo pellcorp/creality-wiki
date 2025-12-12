@@ -128,9 +128,9 @@ you are making your lidar or direct mainboard connection as you might need it in
 
 !!! warning
 
-    For K1 Series (which includes K1, K1C, K1SE, K1 Max, Ender 3 V3 KE and Ender 5 Max) Simple AF you **must** flash your cartographer with `CARTOGRAPHER K1 5.1.0` or `CARTOGRAPHER K1 5.0.0` survey firmware **before** trying to use your printer:
+    For K1 Series (which includes K1, K1C, K1SE, K1 Max, Ender 3 V3 KE and Ender 5 Max) Simple AF you **must** flash your cartographer with `CARTOGRAPHER K1 5.0.0` survey firmware **before** trying to use your printer:
 
-    ![image](assets/images/cartographer_k1_510.png)
+    ![image](assets/images/cartographer_k1_500.png)
 
     For K1 Series (which includes K1, K1C, K1SE, K1 Max, Ender 3 V3 KE and Ender 5 Max) Simple AF [there is a guide](cartographer_flashing.md).
     
