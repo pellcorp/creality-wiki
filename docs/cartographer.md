@@ -281,7 +281,9 @@ Plus because axis twist and bed mesh were generated with a previous model you **
     Heat soaking the printer a bit before doing calibration is recommended
 
 1. Run the `STOP_CAMERA` macro to stop the camera
-2. Run `CARTOGRAPHER_SCAN_CALIBRATE`
+2. Home X Y (`G28 X Y`)
+3. Heat Nozzle to 150c (`M109 S150`) so that any filament can be removed from nozzle
+4. Run `CARTOGRAPHER_SCAN_CALIBRATE`
    Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
    <br />Upon completion *`SAVE_CONFIG`*
 
@@ -309,7 +311,8 @@ After the save config you have to do the touch calibration.
 
 1. Home All (`G28`)
 2. Run the `STOP_CAMERA` macro to stop the camera
-3. Run `CARTOGRAPHER_TOUCH_CALIBRATE SPEED=2`
+3. Heat Nozzle to 150c (`M109 S150`) so that any filament can be removed from nozzle
+4. Run `CARTOGRAPHER_TOUCH_CALIBRATE SPEED=2`
    <br />Upon completion *`SAVE_CONFIG`*
 
 !!! warning

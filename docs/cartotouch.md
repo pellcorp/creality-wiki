@@ -278,7 +278,9 @@ Source: <https://docs.cartographer3d.com/original-plugin/installation/calibratio
     Heat soaking the printer a bit before doing calibration is recommended
 
 1. Run the `STOP_CAMERA` macro to stop the camera
-2. Run `CARTOGRAPHER_CALIBRATE METHOD=manual`
+2. Home X Y (`G28 X Y`)
+3. Heat Nozzle to 150c (`M109 S150`) so that any filament can be removed from nozzle
+4. Run `CARTOGRAPHER_CALIBRATE METHOD=manual`
 Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
 <br />Upon completion *`SAVE_CONFIG`*
 
@@ -304,9 +306,10 @@ After the save config you have to do the cartographer threshold scan (see next)
 
     For this next step, it is really important to be near your printer for this step, because if there is any issue with the printer configuration or your carto probe, its possible the nozzle will dig itself into the bed, so be hovering over that e-stop button!
 
-1. Home All (`G28`)
-2. Run the `STOP_CAMERA` macro to stop the camera
-3. Run `CARTOGRAPHER_THRESHOLD_SCAN SPEED=2 MIN=1000 MAX=5000`
+1. Run the `STOP_CAMERA` macro to stop the camera
+2. Home All (`G28`)
+3. Heat Nozzle to 150c (`M109 S150`) so that any filament can be removed from nozzle
+4. Run `CARTOGRAPHER_THRESHOLD_SCAN SPEED=2 MIN=1000 MAX=5000`
 <br />Upon completion *`SAVE_CONFIG`*
 
 After the save config you have to do the touch calibration.
@@ -319,9 +322,10 @@ After the save config you have to do the touch calibration.
 
     For this next step, it is really important to be near your printer for this step, because if there is any issue with the printer configuration or your carto probe, its possible the nozzle will dig itself into the bed, so be hovering over that e-stop button!
 
-1. Home All (`G28`)
-2. Run the `STOP_CAMERA` macro to stop the camera
-3. Run `CARTOGRAPHER_CALIBRATE`
+1. Run the `STOP_CAMERA` macro to stop the camera
+2. Home All (`G28`)
+3. Heat Nozzle to 150c (`M109 S150`) so that any filament can be removed from nozzle
+4. Run `CARTOGRAPHER_CALIBRATE`
 <br />Upon completion *`SAVE_CONFIG`*
 
 !!! tip
