@@ -312,7 +312,7 @@ After the save config you have to do the touch calibration.
 1. Home All (`G28`)
 2. Run the `STOP_CAMERA` macro to stop the camera
 3. Heat Nozzle to 150c (`M109 S150`) so that any filament can be removed from nozzle
-4. Run `CARTOGRAPHER_TOUCH_CALIBRATE SPEED=2`
+4. Run `CARTOGRAPHER_TOUCH_CALIBRATE`
    <br />Upon completion *`SAVE_CONFIG`*
 
 !!! warning
