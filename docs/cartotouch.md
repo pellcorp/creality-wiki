@@ -8,6 +8,16 @@ Come on over to the pellcorp discord server, the `#simple-af-carto` channel has 
 
 Thanks to Richard from <https://cartographer3d.com> and Zarboz from <https://wattskraken.xyz/> for donating Cartographers to the Simple AF project to add support and continue to support the cartographer.
 
+## Downgrading from Cartographer?
+
+Its really easy to update, you can simply do a probe switch like this:
+
+```
+~/pellcorp/installer.sh --update cartotouch --mount %CURRENT%
+```
+
+Then do [calibration](#calibration) as normal
+
 ## Firmware requirements
 
 ### K1 Series
