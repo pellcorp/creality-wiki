@@ -20,15 +20,15 @@ The following core config files can have overrides saved for them:
 - fan_control.cfg
 - internal_macros.cfg
 - useful_macros.cfg
-- grumpyscreen.cfg
+- grumpyscreen.ini
 
 ## Restrictions
 
 - No support is provided to edit `gcode_macro` or `homing_override` section `gcode` values in **any** config files
 - You can modify `variable_` variables in gcode macros, but **not** the gcode macros themselves
 - You can modify **existing** values in existing sections
-- You can **only** add or delete values from **existing** sections in printer.cfg, fan_control.cfg, grumpyscreen.cfg and moonraker.conf, all other files these changes will be ignored.
-- You can **only** add or delete sections in printer.cfg, fan_control.cfg, moonraker.conf and grumpyscreen.cfg, all other files these changes will be ignored.
+- You can **only** add or delete values from **existing** sections in printer.cfg, fan_control.cfg, grumpyscreen.ini and moonraker.conf, all other files these changes will be ignored.
+- You can **only** add or delete sections in printer.cfg, fan_control.cfg, moonraker.conf and grumpyscreen.ini, all other files these changes will be ignored.
 
 !!! tip
 
