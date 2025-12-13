@@ -29,7 +29,7 @@ I have added **experimental** support for installing GrumpyScreen onto Helper Sc
 First of all clone the Simple AF repo:
 
 ```
-git clone --depth 1 https://github.com/pellcorp/creality.git /usr/data/pellcorp
+git clone https://github.com/pellcorp/creality.git /usr/data/pellcorp
 ```
 
 Then run the helperscript grumpyscreen installer:
