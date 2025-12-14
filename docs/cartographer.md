@@ -136,7 +136,7 @@ you are making your lidar or direct mainboard connection as you might need it in
    
     ![image](assets/images/cartographer_v4_600.png)
 
-    For K1 Series (which includes K1, K1C, K1SE, K1 Max, Ender 3 V3 KE and Ender 5 Max) Simple AF there is a guide for [V3 Probes](cartographer_v3_flashing.md) and [V4 Probes](cartographer_v4_flashing.md).
+    For K1 Series (which includes K1, K1C, K1SE, K1 Max, Ender 3 V3 KE and Ender 5 Max) Simple AF there is a guide for [V3 Probes](cartographer_V3_flashing.md) and [V4 Probes](cartographer_V4_flashing.md).
     
     For Simple AF for RPi, you can use the standard cartographer guide <https://docs.cartographer3d.com/cartographer-probe/firmware/firmware-updating/via-katapult/usb-flash#usb-katapult-updating>
 
