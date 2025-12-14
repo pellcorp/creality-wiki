@@ -132,7 +132,7 @@ you are making your lidar or direct mainboard connection as you might need it in
 
    ![image](assets/images/cartographer_k1_500.png)
 
-   For a **V4 Probe** `CARTOGRAPHER 6.0.0 Lite`:
+   For a **V4 Probe** `CARTOGRAPHER V4 6.0.0 Lite`:
    
    ![image](assets/images/cartographer_v4_600.png)
 
