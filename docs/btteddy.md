@@ -242,7 +242,7 @@ during repeated bed meshes.
 
 1. Home XY (`G28 X Y`)
 2. Make sure nozzle is centred on bed
-3. Run `_SET_KIN_MAX_Z` and then move the toolhead so that the bottom of the eddy is approximately 20mm from the bed, please try and be as accurate as possible with this distance, it's **better to be slightly closer** to the bed than further away.
+3. Run `_SET_KIN_MAX_Z` and then **use normal controls to move** the toolhead so that the bottom of the eddy is approximately 20mm from the bed, please try and be as accurate as possible with this distance, it's **better to be slightly closer** to the bed than further away.
 4. Run `BTTEDDY_CALIBRATE_DRIVE_CURRENT`
 5. Run SAVE_CONFIG
 

@@ -127,26 +127,26 @@ nav:
   - Cartographer:
       - cartographer.md
       - cartographer_wiring.md
+      - cartographer_flashing.md
       - cartographer_troubleshooting.md
       - cartographer_faq.md
-      - cartographer_flashing.md
   - Beacon:
       - beacon.md
       - beacon_wiring.md
+      - beacon_flashing.md
       - beacon_troubleshooting.md
       - beacon_faq.md
-      - beacon_flashing.md
   - EddyNG:
       - eddyng.md
       - btteddy_wiring.md
-      - eddyng_troubleshooting.md
       - btteddy_flashing.md
+      - eddyng_troubleshooting.md
   - BttEddy:
       - btteddy.md
       - btteddy_wiring.md
+      - btteddy_flashing.md
       - btteddy_troubleshooting.md
       - btteddy_faq.md
-      - btteddy_flashing.md
   - Other Probes:
       - bltouch.md
       - bltouch_wiring.md
