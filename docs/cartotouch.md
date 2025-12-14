@@ -126,11 +126,11 @@ you are making your lidar or direct mainboard connection as you might need it in
 
     For K1 Series (which includes K1, K1C, K1SE, K1 Max, Ender 3 V3 KE and Ender 5 Max) Simple AF you **must** flash your **V3 Probe** with `CARTOGRAPHER K1 5.0.0`:
 
-![image](assets/images/cartographer_k1_500.png)
+    ![image](assets/images/cartographer_k1_500.png)
 
-For a **V4 Probe** `CARTOGRAPHER V4 6.0.0 Lite`:
+    For a **V4 Probe** `CARTOGRAPHER V4 6.0.0 Lite`:
 
-![image](assets/images/cartographer_v4_600.png)
+    ![image](assets/images/cartographer_v4_600.png)
 
     For K1 Series (which includes K1, K1C, K1SE, K1 Max, Ender 3 V3 KE and Ender 5 Max) Simple AF there is a guide for [V3 Probes](cartographer_v3_flashing.md) and [V4 Probes](cartographer_v4_flashing.md).
     
