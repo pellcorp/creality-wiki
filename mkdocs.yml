@@ -127,7 +127,8 @@ nav:
   - Cartographer:
       - cartographer.md
       - cartographer_wiring.md
-      - cartographer_flashing.md
+      - cartographer_v3_flashing.md
+      - cartographer_v4_flashing.md
       - cartographer_troubleshooting.md
       - cartographer_faq.md
   - Beacon:
