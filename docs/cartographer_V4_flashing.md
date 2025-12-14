@@ -18,7 +18,7 @@ You must make sure that the cable you are using is pinned correctly.
 
 !!! warning
     
-    The standard pin out is different to using a low profile carto, verify the pin out before plugging in your probe!
+    The standard pin out maybe different to using a low profile carto, verify the pin out before plugging in your probe!
 
     You **must** not use the firmware.cartographer3d.com, it will not flash the proper version of `CARTOGRAPHER V4 6.0.0 Lite` firmware for the K1, K1C, K1SE, K1 Max, Ender 3 V3 KE and Ender 5 Max!
 
