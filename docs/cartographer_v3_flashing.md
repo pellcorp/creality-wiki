@@ -10,7 +10,7 @@
 
 ## Verify your Cable
 
-You must make sure that the cable you are using is pinned correctly.  For both flat pack and right angle carto's the default cable that comes with your carto might not be pinned correctly.
+You must make sure that the cable you are using is pinned correctly.  For both flat pack and right angle cartographer the default cable that comes with your carto might not be pinned correctly.
 
 ![image](assets/images/carto_connector.png)
 
