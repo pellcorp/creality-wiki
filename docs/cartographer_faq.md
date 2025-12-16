@@ -38,7 +38,7 @@ So your [adxl345] should look like:
  ```
  [adxl345]
  #cs_pin: nozzle_mcu:PA4
- cs_pin: cartographer:PA3
+ cs_pin: cartographer:PA3 or cartographer:PA0
  spi_bus: spi1
  #spi_speed: 5000000
  axes_map: x, y, z
