@@ -409,7 +409,7 @@ You can also modify the following configuration in `_START_END_PARAMS`:
 - `variable_bed_warp_fraction_wait` - If the bed temp is at least 75% of target we will do partial heat soak, if it's less than 75% will heat soak then entire target amount.
 - `variable_bed_warp_wait_interval` - This is how long the macro will sleep between notifications
 
-!!! note
+!!! warning
 
     Please note at the end of a print the heater of the bed will remain heated until the printer times out in a hour.
 
