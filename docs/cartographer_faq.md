@@ -10,7 +10,11 @@ This just needs a few changes in `printer.cfg`
 
 You need to modify the `[adxl345]` section
 
-First of all change the `cs_pin` from `nozzle_mcu:PA4` to `cartographer:PA3`
+Change the `cs_pin` from `nozzle_mcu:PA4` to `cartographer:PA3` (V3 Probe) or `cartographer:PA0` (V4 Probe)
+
+!!! danger
+
+    On V4 Cartographer Probe `cartographer:PA3` is not the right pin, you must use `cartographer:PA0`!  PA3 on V4 is used for something else, and will cause a potential boot loop of the probe. 
 
 !!! note
 
@@ -42,10 +46,6 @@ So your [adxl345] should look like:
  #spi_software_mosi_pin: nozzle_mcu:PA7
  #spi_software_miso_pin: nozzle_mcu:PA6
  ```
-
-!!! danger
-
-    On V4 Cartographer Probe `cartographer:PA3` is not the right pin, you must use `cartographer:PA0`!  PA3 on V4 is used for something else, and will cause a potential boot loop of the probe. 
 
 I do not know if this is a good idea, I just know it's possible!
 
