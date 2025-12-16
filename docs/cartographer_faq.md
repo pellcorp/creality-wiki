@@ -43,6 +43,12 @@ So your [adxl345] should look like:
  #spi_software_miso_pin: nozzle_mcu:PA6
  ```
 
+!!! danger
+
+    On V4 Cartographer Probe `cartographer:PA3` is not the right pin, you must use `cartographer:PA0`!   
+    PA3 on V4 is used for something else, and will cause a potential boot loop of the probe. 
+
 I do not know if this is a good idea, I just know it's possible!
 
 **Source:** <https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/software-configuration/klipper-setup#configure-klipper>
+
