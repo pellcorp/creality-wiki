@@ -13,6 +13,7 @@ See [Cartotouch](cartotouch.md)
 Its really easy to update, you can simply do a probe switch like this:
 
 ```
+~/pellcorp/installer.sh --branch main
 ~/pellcorp/installer.sh --update cartographer --mount %CURRENT%
 ```
 
