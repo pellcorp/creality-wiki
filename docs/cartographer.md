@@ -27,7 +27,7 @@ Thanks to Richard from <https://cartographer3d.com> and Zarboz from <https://wat
 
 ### Limits on X and Y microsteps
 
-You cannot use more than `microsteps: 32` for `[stepper_x]` and `[stepper_y]`, the MCU cannot handle high microsteps, it puts too much pressure on the mainboard and it will cause stuttering and other reliability issues during bed meshes.
+You cannot use more than `microsteps: 32` for `[stepper_x]` and `[stepper_y]`, the MCU cannot handle high microsteps, it puts too much pressure on the mainboard and it will cause stuttering and other reliability issues including random crashes.
 
 !!! note
 
