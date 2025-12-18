@@ -8,9 +8,15 @@ Come on over to the pellcorp discord server, the `#simple-af-btteddy` channel ha
 
 <https://discord.gg/2uGDzyJ3WX>
 
-### eddy-ng project support 
+## eddy-ng project support 
 
 <https://github.com/vvuk/eddy-ng/wiki#questions-discussion-help>
+
+## Firmware requirements
+
+### Limits on X and Y microsteps
+
+You cannot use more than `microsteps: 32` for `[stepper_x]` and `[stepper_y]`, the MCU cannot handle high microsteps and cartographer, it puts too much pressure on the mainboard and it will cause stuttering and other reliability issues during bed meshes.
 
 ### K1 Series
 
@@ -208,11 +214,6 @@ After running the macro you should see output like the following:
 !!! note
 
     If you have plugged your btt eddy into the front usb port, you are going to have to temporarily remove the btt eddy from the front usb slot and replace it with your USB thumb drive, after you have finished verifying the USB thumb drive can be used in an emergency, you can replace the btt eddy into the front usb slot and restart klipper or power cycle your printer.
-
-### Timer too close and microsteps
-
-For eddyng you cannot use more than `microsteps: 32`, the MCU cannot handle both more microsteps and eddy, it puts too much pressure on the system and it cause stuttering during bed meshes, it is also been known to cause klipper to crash
-during repeated bed meshes.
 
 ## Calibration
 

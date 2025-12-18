@@ -4,6 +4,12 @@ Come on over to the pellcorp discord server, the `#simple-af-microprobe` channel
 
 <https://discord.gg/2uGDzyJ3WX>
 
+## Firmware requirements
+
+### Limits on X and Y microsteps
+
+You cannot use more than `microsteps: 64` for `[stepper_x]` and `[stepper_y]`, the MCU cannot handle high microsteps and cartographer, it puts too much pressure on the mainboard and it will cause stuttering and other reliability issues during bed meshes.
+
 ### K1 Series
 
 This guide assumes you have a K1, K1C, K1SE or K1 Max and you are running stock creality firmware 1.3.3.5 or **higher** (The firmware 1.3.3.5 is much older than 1.3.3.46 for example), **or alternately** you can use [my prerooted firmware](https://github.com/pellcorp/creality/wiki/Prerooted-K1-Firmware).
@@ -186,10 +192,6 @@ After running the macro you should see output like the following:
 
     You should verify your USB thumb drive (aka USB key) often just to make sure you have something if you need to unbrick your printer, simply type `CHECK_USB_KEY` or hit the button in Fluidd / Mainsail
     The USB key should be FAT32 formatted and be no larger than 32GB!
-
-### Timer too close and microsteps
-
-For microprobe you cannot use more than `microsteps: 64`
 
 ### Calibration
 

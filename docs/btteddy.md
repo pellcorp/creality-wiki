@@ -10,6 +10,12 @@ The Creality CFS uses proprietary code blobs and likely will **never** be suppor
 to support Eddy with CFS that is **not affiliated** with Simple AF, but does use some stuff from Simple AF and some of our 
 config and docs: <https://github.com/vsevolod-volkov/K1-Klipper-Eddy>
 
+## Firmware requirements
+
+### Limits on X and Y microsteps
+
+You cannot use more than `microsteps: 32` for `[stepper_x]` and `[stepper_y]`, the MCU cannot handle high microsteps and cartographer, it puts too much pressure on the mainboard and it will cause stuttering and other reliability issues during bed meshes.
+
 ### K1 Series
 
 This guide assumes you have a K1, K1C, K1SE or K1 Max and you are running stock creality firmware 1.3.3.5 or **higher** (The firmware 1.3.3.5 is much older than 1.3.3.46 for example), **or alternately** you can use [my prerooted firmware](https://github.com/pellcorp/creality/wiki/Prerooted-K1-Firmware).
@@ -217,11 +223,6 @@ After running the macro you should see output like the following:
 
 - If you get the message: `INFO - USB Key was recognised and mounted correctly (/tmp/udisk/sda1)`, your USB thumb drive (aka USB key) is perfect to use for a factory reset.
 - If you get no message at all before the script ends (after 60 seconds), your USB thumb drive (aka USB key) is defective.   You can check the `messages` file in the logs section of your UI to get more details about why the usb key could not be mounted!
-
-### Timer too close and microsteps
-
-For btteddy you cannot use more than `microsteps: 32`, the MCU cannot handle both more microsteps and eddy, it puts too much pressure on the system and it cause stuttering during bed meshes, it is also been known to cause klipper to crash
-during repeated bed meshes.
 
 ## Calibration
 
