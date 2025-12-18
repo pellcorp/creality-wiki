@@ -8,7 +8,7 @@ Come on over to the pellcorp discord server, the `#simple-af-microprobe` channel
 
 ### Limits on X and Y microsteps
 
-You cannot use more than `microsteps: 64` for `[stepper_x]` and `[stepper_y]`, the MCU cannot handle high microsteps and cartographer, it puts too much pressure on the mainboard and it will cause stuttering and other reliability issues during bed meshes.
+You cannot use more than `microsteps: 64` for `[stepper_x]` and `[stepper_y]`, the MCU cannot handle high microsteps, it puts too much pressure on the mainboard and it will cause stuttering and other reliability issues during bed meshes.
 
 !!! note
 
