@@ -163,7 +163,7 @@ nav:
   - Updating:
       - updating.md
       - config_overrides.md
-  - FAQ:
+  - Other:
       - faq.md
       - misc.md
       - custom_hooks.md
