@@ -54,7 +54,7 @@ theme:
     - navigation.sections
     - navigation.expand
     - navigation.prune
-    - navigation.footer
+#    - navigation.footer
     - navigation.instant
     - navigation.instant.progress
     - navigation.tracking
