@@ -1,5 +1,3 @@
-# Updating
-
 Completely updating Simple AF requires running the installer on the command line and also updating components
 from fluidd or mainsail.
 
