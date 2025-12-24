@@ -24,7 +24,9 @@ markdown~=3.2
 mkdocs~=1.6
 mkdocs-material-extensions~=1.3
 mkdocs-redirects
+mkdocs-material
 pygments~=2.16
+stepslist
 pymdown-extensions~=10.2
 
 # Requirements for plugins
