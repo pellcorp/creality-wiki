@@ -148,19 +148,22 @@ nav:
       - btteddy_flashing.md
       - btteddy_troubleshooting.md
       - btteddy_faq.md
-  - Other Probes:
+  - BlTouch:
       - bltouch.md
       - bltouch_wiring.md
+  - Microprobe:
       - microprobe.md
       - microprobe_wiring.md
+  - Klicky:
       - klicky.md
       - klicky_wiring.md
   - Rpi:
       - rpi.md
       - rpi_printer_definitions.md
-  - Extras:
+  - Updating:
       - updating.md
       - config_overrides.md
+  - FAQ:
       - faq.md
       - misc.md
       - custom_hooks.md
