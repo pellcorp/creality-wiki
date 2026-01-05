@@ -150,7 +150,7 @@ When you reconnect your carto to your printer it should show a version `CARTOGRA
 
 **Source:** <https://docs.cartographer3d.com/cartographer-probe/firmware/manual-methods/cartographer-with-input-shaper/update-via-katapult-recommended#updating-a-usb-probe-via-katapult>
 
-![image](assets/images/cartographer_k1_510.png)
+![image](assets/images/cartographer_k1_500.png)
 
 ## Flashing K1 Firmware via DFU Mode
 
