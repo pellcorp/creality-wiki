@@ -8,7 +8,7 @@ Come on over to the pellcorp discord server, the `#simple-af-btteddy` channel ha
 
 The Creality CFS uses proprietary code blobs and likely will **never** be supported by Simple AF, there is a project underway
 to support Eddy with CFS that is **not affiliated** with Simple AF, but does use some stuff from Simple AF and some of our 
-config and docs: <https://github.com/vsevolod-volkov/K1-Klipper-Eddy>
+config and docs: <https://github.com/mikeinredding/K1Max-Klipper-Eddy>
 
 ## Firmware requirements
 
