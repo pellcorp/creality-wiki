@@ -22,10 +22,10 @@ Simple AF is best supported by RPi or OrangePi running a version of debian **11 
 So far been tested to work on a pi 3, 4 and 5, it does not matter whether you use 32 or 64 bit OS.  
 It is recommended to use the [Rpi Imager](https://www.raspberrypi.com/software/) and choose `Raspberry PI OS Lite (64-bit)` or `Raspberry PI OS (Legacy, 64 bit) Lite`
 
-If for some strange reason your DHCP server provides an invalid DHCP option, you will need to modify the config, for debian 12 onwards
-its likely going to be network manager.
-
 !!! note
+
+    If for some strange reason your DHCP server provides an invalid DHCP option, you will need to modify the config, for debian 12 onwards
+    its likely going to be network manager.
 
     Assuming you are using Ethernet, something like this might work:
 
