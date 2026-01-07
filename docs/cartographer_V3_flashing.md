@@ -162,6 +162,8 @@ You need to bridge the boot pins before you plug your carto in via USB to your L
 
 ![image](assets/images/carto_lsusb_dfu.png)
 
+**Source:** <https://docs.cartographer3d.com/cartographer-probe/firmware/updating-firmware#cartographer-v3-1>
+
 Then cd to the combined firmware directory 
 
 ```
