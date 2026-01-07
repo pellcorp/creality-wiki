@@ -28,10 +28,12 @@ It is recommended to use the [Rpi Imager](https://www.raspberrypi.com/software/)
     its likely going to be network manager.
 
     Assuming you are using Ethernet, something like this might work:
-
+    
+    ```
     sudo nmcli connection modify "Wired connection 1" ipv4.ignore-auto-dns yes ipv4.dns "1.1.1.1 8.8.8.8"
     sudo nmcli connection down "Wired connection 1"
     sudo nmcli connection up "Wired connection 1"
+    ```
 
 !!! danger
 
