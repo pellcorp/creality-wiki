@@ -22,6 +22,17 @@ Simple AF is best supported by RPi or OrangePi running a version of debian **11 
 So far been tested to work on a pi 3, 4 and 5, it does not matter whether you use 32 or 64 bit OS.  
 It is recommended to use the [Rpi Imager](https://www.raspberrypi.com/software/) and choose `Raspberry PI OS Lite (64-bit)` or `Raspberry PI OS (Legacy, 64 bit) Lite`
 
+If for some strange reason your DHCP server provides an invalid DHCP option, you will need to modify the config, for debian 12 onwards
+its likely going to be network manager.
+
+!!! note
+
+    Assuming you are using Ethernet, something like this might work:
+
+    sudo nmcli connection modify "Wired connection 1" ipv4.ignore-auto-dns yes ipv4.dns "1.1.1.1 8.8.8.8"
+    sudo nmcli connection down "Wired connection 1"
+    sudo nmcli connection up "Wired connection 1"
+
 !!! danger
 
     As Simple AF for RPi is currently **not supported on Debian 13**, you must choose **`Raspberry PI OS (Legacy, 64 bit) Lite`**
