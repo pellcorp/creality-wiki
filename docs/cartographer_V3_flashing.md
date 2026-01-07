@@ -174,6 +174,6 @@ And run dfu-util to write the firmware:
 sudo dfu-util -R -a 0 -s 0x08000000:leave -D Full_Survey_Cartographer_CrealityK1_USB_5_0_0.bin
 ```
 
-![image](assets/images/carto_dfu.png)
+![image](assets/images/carto_v3_dfu.png)
 
 **Source:** <https://docs.cartographer3d.com/cartographer-probe/firmware/manual-methods/cartographer-with-input-shaper/update-via-dfu-mode>

@@ -176,4 +176,12 @@ And run dfu-util to write the firmware:
 sudo dfu-util -R -a 0 -s 0x08000000:leave -D Katapult_plus_CartographerV4_6.0.0__USB_lite.bin
 ```
 
+![image](assets/images/carto_v3_dfu.png)
+
 **Source:** <https://docs.cartographer3d.com/cartographer-probe/firmware/manual-methods/cartographer-with-input-shaper/update-via-dfu-mode>
+
+!!! note
+
+    The error `dfu-util: Error during download get_status` can be safely ignored, the message `File downloaded successfully` is what 
+    you are looking for.
+
