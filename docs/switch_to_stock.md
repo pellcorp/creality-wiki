@@ -11,6 +11,14 @@ Its really important before you install Simple AF for the first time that you pr
 switching back allows you to immediately use the printer, the switch to stock process does not restore the printer to a completely
 stock configuration, as only klipper and the stock display are restored!
 
+## Via GrumpyScreen
+
+GrumpyScreen has an option for this from the Tools menu
+
+![image](assets/images/grumpyscreen_switch_to_stock.png)
+
+## Via SSH 
+
 Switching to stock is as simple as running from ssh on the printer:
 
 ```
