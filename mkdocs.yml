@@ -171,5 +171,7 @@ nav:
       - custom_hooks.md
       - nozzle_wipe.md
       - grumpyscreen.md
+      - moonraker_timelapse.md
+      - configure_wifi.md
       - additional_camera.md
       - misc.md
