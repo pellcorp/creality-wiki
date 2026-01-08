@@ -167,6 +167,7 @@ nav:
       - faq.md
       - switch_to_stock.md
       - support.md
+      - emergency_factory_reset.md
       - custom_hooks.md
       - nozzle_wipe.md
       - grumpyscreen.md
