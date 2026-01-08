@@ -17,11 +17,11 @@ stock configuration, as only klipper and the stock display are restored!
 
 Click the `Switch to Stock` button from the Tools menu of GrumpyScreen.
 
+![image](assets/images/grumpyscreen_switch_to_stock.png)
+
 !!! danger
 
     Ensure you wait for the confirmation message in GrumpyScreen before power cycling the printer!
-
-![image](assets/images/grumpyscreen_switch_to_stock.png)
 
 ## Via SSH 
 
