@@ -165,8 +165,10 @@ nav:
       - config_overrides.md
   - Other:
       - faq.md
-      - misc.md
+      - switch_to_stock.md
+      - support.md
       - custom_hooks.md
       - nozzle_wipe.md
       - grumpyscreen.md
       - additional_camera.md
+      - misc.md
