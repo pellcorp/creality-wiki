@@ -1,6 +1,6 @@
 # Support ZIP
 
-You will be asked to provide a `support.zip` file in the SimpleAF discord, there are a few ways to do this:
+If you have been asked to provide a `support.zip` file in the SimpleAF discord, there are a few ways to do this.
 
 ## Via Fluidd or Mainsail
 
