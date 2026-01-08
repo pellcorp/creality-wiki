@@ -1,3 +1,5 @@
+# Switch to Stock
+
 This feature allows you to quickly switch back to Stock Creality Klipper (aka Crapper) after installing Simple AF, and being able to
 quickly restore Simple AF without having to do a factory reset.  All that will be required after each switch is to power cycle
 at least once to get the MCUs updated with the correct firmware.   The use case for this feature is mostly about supporting
