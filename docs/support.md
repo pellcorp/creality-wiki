@@ -10,7 +10,7 @@ Run the `SUPPORT_ZIP` macro from Fluidd or Mailsail
 
 ## Via GrumpyScreen
 
-Run the `Create Support ZIP` button from the Tools menu of GrumpyScreen, be sure to wait for the success message
+Click the `Create Support ZIP` button from the Tools menu of GrumpyScreen, be sure to wait for the success message
 as it can take a while to generate the zip file.
 
 ![image](assets/images/grumpyscreen_support_zip.png)
