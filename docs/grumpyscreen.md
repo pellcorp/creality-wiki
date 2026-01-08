@@ -12,9 +12,7 @@ now that its a flat file, config overrides will be fully supported for retaining
 
 ## Grumpyscreen Factory Reset
 
-It is possible to initiate a factory reset from the tools menu of Grumpyscreen.
-
-![image](assets/images/grumpyscreen_factory_reset.png)
+See [Factory Reset](emergency_factory_reset.md#via-grumpyscreen)
 
 ## GrumpyScreen for Helper Script
 
