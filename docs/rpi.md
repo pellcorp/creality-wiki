@@ -4,8 +4,8 @@ Orange Pis, etc.
 
 !!! warning
 
-    This feature is classed as **experimental**, every effort will be made to avoid breaking existing installations, but this
-    cannot be guaranteed.
+    This feature is not as mature as K1 Series Simple AF, however every effort will be made to avoid breaking existing installations, and fixing
+    bugs as they are found!
 
 ## Supported OS
 
