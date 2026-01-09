@@ -93,33 +93,3 @@ This will ignore your local changes completely, and is almost 100% the same as d
         /usr/data/pellcorp/k1/installer.sh --branch main
         ~/pellcorp/installer.sh --clean-reinstall cartographer
         ```
-
-## Factory Reset
-
-!!! note
-
-    This does not apply to Simple AF for RPi
-
-To factory reset a Simple AF installation is very much like how you might have originally installed Simple AF, if it required a factory reset first.
-
-If you wish to be able to restore you local changes after a factory reset you should make sure you run the config overrides script before performing the factory reset itself, so this is easy to do from ssh with:
-
-```
-/usr/data/pellcorp/tools/config-overrides.sh
-```
-
-Then perform the factory reset:
-
-```
-/etc/init.d/S58factoryreset reset
-```
-
-Note that the `/usr/data/pellcorp-overrides` directory is not deleted during a factory reset.
-
-Do a new installation as normal, for example.   If you perform a `/usr/data/pellcorp/k1/installer.sh --install cartographer` your configuration overrides will be reapplied for you.
-
-If you wish to skip applying your config overrides, then you would perform a clean install:
-
-```
-/usr/data/pellcorp/k1/installer.sh --clean-install cartographer
-```
