@@ -18,6 +18,10 @@ If you get the following error, it means that the cartographer is not connected 
 
 ![image](assets/images/cartographer_protocol_error.png)
 
+!!! danger
+
+     If you are on V4 Cartographer Probe `cartographer:PA3` is not the right pin, you must use `cartographer:PA0`!  PA3 on V4 is used for something else, and will cause a potential boot loop of the probe causing the 'Unknown command: debug_read' error
+
 So from ssh run a `lsusb` and make sure you can see:
 
 ![image](assets/images/carto_lsusb.png)
