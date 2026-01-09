@@ -29,7 +29,7 @@ of all the backups with the command:
 
         ```
         root@K1Max-AF34 /root [#] ~/pellcorp/tools/backups.sh --list
-        -sh: /root/pellcorp/installer.sh: not found
+        -sh: /root/pellcorp/tools/backups.sh: not found
         ```
 
     It means you are on an older version of Simple AF and you should instead use the old style commands:
