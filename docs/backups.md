@@ -1,9 +1,23 @@
 # Backups
 
-Every time the installer.sh is run a new backup of the existing printer_data/config directory is saved, you can get a list
-of all the backups with the command
+Every time the installer.sh is run a new backup of the existing printer_data/config directory is saved, this makes it possible
+to restore an earlier version of the config in case you get yourself into trouble.
+
+!!! danger
+
+    Restoring a backup currently does **not** create a backup of your existing config before doing the restore, so you will lose
+    any of you current changes, you can force a backup of your current config by first running:
+
+    ```
+    ~/pellcorp/tools/backup.sh --create
+    ```
+
+    We might end up making a change to the backup.sh to do this in the near future!
 
 ## Restoring a backup
+
+If you wish to revert to a previous version of your config files, its possible to do this via the backup tool.  You can get a list
+of all the backups with the command:
 
 ```
 ~/pellcorp/tools/backups.sh --list
