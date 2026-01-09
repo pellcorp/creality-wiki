@@ -597,3 +597,8 @@ and takes about the same amount of time.
 
 ![image](assets/images/fluidd-save-restart-service-restart.png)
 
+## How can I configure the timezone
+
+The `/etc/init.d/S58factoryreset` has recently been updated not to delete the `/etc/localtime`, so you can configure it once and it should survive any number of factory resets, following the excellent guide here:
+
+<https://guilouz.github.io/Creality-Helper-Script-Wiki/firmwares/change-date-and-time/>

@@ -1,15 +1,10 @@
 ## OctoEverywhere Companion
 
-OctoEverywhere is a 3D printing community project that enables free remote access, AI print failure detection, notifications, and more. OctoEverywhere cannot be installed onto the K1 when running the Cartographer, beacon or btt eddy, the stress placed on the system by running OctoEverywhere is too great, however the OctoEverywhere Companion running on another device on the same WIFI network as the K1 works great.
-
-Learn More:
-[https://octoeverywhere.com/companion](https://octoeverywhere.com/companion?source=simpleaf_docs)
+See [OctoEverywhere Companion](octoeverywhere_companion.md)
 
 ## Mobileraker companion
 
-It is also possible to install mobileraker companion on a separate device
-
-<https://github.com/Clon1998/mobileraker_companion?tab=readme-ov-file#standalone-installation>
+See [Mobileraker Companion](mobileraker_companion.md)
 
 ## Switch to Stock
 
@@ -22,12 +17,6 @@ See [Moonraker Timelapse](moonraker_timelapse.md)
 ## Spoolman
 
 See [Spoolman](spoolman.md)
-
-## Configuring Timezone
-
-The `/etc/init.d/S58factoryreset` has recently been updated not to delete the `/etc/localtime`, so you can configure it once and it should survive any number of factory resets, following the excellent guide here:
-
-<https://guilouz.github.io/Creality-Helper-Script-Wiki/firmwares/change-date-and-time/>
 
 ## Emergency Factory Reset
 
