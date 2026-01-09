@@ -45,7 +45,7 @@ And you can revert to one of them with:
 ~/pellcorp/tools/backups.sh --restore filename
 ```
 
-Where filename is one of the backups listed, so for instance:
+Where `filename` is one of the backups listed, so for instance:
 
 ```
 root@K1Max-AF34 /root [#] ~/pellcorp/tools/backups.sh --list
@@ -63,4 +63,3 @@ I can restore to:
 ```
 ~/pellcorp/tools/backups.sh --restore backup-2025-08-22_04-51-21.tar.gz
 ```
-
