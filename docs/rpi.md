@@ -287,27 +287,12 @@ By default when grumpyscreen starts its probably going to look like:
 
 The following changes are required to fix that:
 
-Need to download the dtbo file:
-
-```
-sudo wget https://raw.githubusercontent.com/bigtreetech/TFT43-DIP/master/gt911_btt_tft43_dip.dtbo -O /boot/overlays/gt911_btt_tft43_dip.dtbo
-```
-
 Needs this in `/boot/firmware/config.txt` (for bookworm) or `/boot/config.txt` (for bulleye)
 
 ```
 [all]
 gpu_mem=160
 
-dtoverlay=vc4-kms-dpi-generic
-dtparam=rgb666-padhi,clock-frequency=32000000
-dtparam=hactive=800,hfp=16,hsync=1,hbp=46
-dtparam=vactive=480,vfp=7,vsync=3,vbp=23
-dtparam=backlight-gpio=19
-dtparam=rotate=0
-
-dtoverlay=gt911_btt_tft43_dip
-dtparam=rotate_0
 ```
 
 And please make sure you disable this line:
