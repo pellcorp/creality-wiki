@@ -275,11 +275,6 @@ sudo systemctl disable grumpyscreen
 
 ### Grumpyscreen
 
-#### BTT HDMI Screen
-
-For whatever reason Grumpyscreen does not work nicely with a HDMI screen its on my list of TODOs to fix this, if possible
-setup Simple AF on a Pi4 or above to get KlipperScreen.
-
 #### BTT DSI Screen
 
 Support for grumpyscreen will be provided for BTT DSI screens but you need to setup the screen to be correctly configured.
@@ -325,7 +320,7 @@ And please make sure you disable this line:
     
     The gpu_mem=160 is really important otherwise Grumpyscreen won't display correctly.
 
-#### BTT HDMI5 Screen
+#### BTT HDMI 5 Screen
 
 The config required for this screen is a bit different, need to force raspberry pi to 800x480 otherwise it squashes
 the display down to 640x480, so this config:
