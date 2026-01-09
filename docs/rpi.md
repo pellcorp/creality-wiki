@@ -325,7 +325,7 @@ And please make sure you disable this line:
     
     The gpu_mem=160 is really important otherwise Grumpyscreen won't display correctly.
 
-## BTT HDMI5 Screen
+#### BTT HDMI5 Screen
 
 The config required for this screen is a bit different, need to force raspberry pi to 800x480 otherwise it squashes
 the display down to 640x480, so this config:
