@@ -3,7 +3,7 @@
 ## Can I use Simple AF with my default probe / Load Cells?
 
 There are no plans to support load cells in simple af.  The author (garethky) of the load cells code getting merged into Klipper has stated very clearly
-that the hardware on the K1 (specically the bed mcu) is not sufficient to properly support the load cells (Creality cut corners with the load cells chip).  In
+that the hardware on the K1 (specifically the bed mcu) is not sufficient to properly support the load cells (Creality cut corners with the load cells chip).  In
 addition because there is no scipy in the klippy python virtual environment the experience even if we somehow got it working would be suboptimal.   
 
 As a result of this I have abandoned any plans to support load cells as part of Simple AF for K1 series.   There is a fork of Simple AF which supports load 
