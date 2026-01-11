@@ -2,11 +2,13 @@
 
 ## Can I use Simple AF with my default probe / Load Cells?
 
-The short answer to this question is no. But if you would like to know why, continue reading.
-The code required to use the Creality Load Cells for probing is proprietary and has been refused for sharing with the community by Creality. There have been some attempts by the community to get this working, but those attempts aren’t currently complete. Some of these, while 'working,' require further hardware modifications to the Load Cell control board. Modifications that most users wishing to stick with Load Cells would prefer not to make, as these modifications would no longer allow a user to return to stock firmware.
+There are no plans to support load cells in simple af, unfortunately the author of the load cells code getting merged into Klipper has made 
+it clear the hardware on the K1 is not sufficient to properly support load cells and because there is no scipy in the klippy python virtual environment
+the experience even if we somehow got it working would be suboptimal.   As a result of this I have abandoned any plans to support load cells as part
+of Simple AF for K1 series.   There is a fork of Simple AF which supports load cells, but I have absolutely no affiliation with this project and cannot
+offer no support for using it the fork is 800+ commits diverged from this project.
 
-This feature may come eventually, but SimpleAF currently does not support the use of the default load cells.
-If you have successfully incorporated the use of Load Cells into SimpleAF or Klipper and would like to contribute, please let us know.
+If you are interested check out <https://github.com/Sekilsgs2/creality_pellcorp>
 
 ## How do I integrate a Nozzle Wipe?
 
