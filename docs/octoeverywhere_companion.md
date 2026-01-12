@@ -8,7 +8,7 @@ OctoEverywhere is a 3D printing community project that enables free remote acces
     it will overwhelm the processor and cause serious stability issues.  Instead install the OctoEverywhere Companion on another device 
     on the same WIFI network as the printer.
 
-    It's probably fine to setup Octoeverywhere on the same host as Simple AF if using Simple AF for RPi series
+    It's probably fine to setup Octoeverywhere on the same host as Simple AF if using Simple AF for RPi series.
 
 Learn More:
 [https://octoeverywhere.com/companion](https://octoeverywhere.com/companion?source=simpleaf_docs)
