@@ -1,6 +1,6 @@
 # OctoEverywhere Companion
 
-OctoEverywhere is a 3D printing community project that enables free remote access, AI print failure detection, notifications, and more. OctoEverywhere cannot be installed onto the K1 when running the Cartographer, beacon or btt eddy, the stress placed on the system by running OctoEverywhere is too great, however the OctoEverywhere Companion running on another device on the same WIFI network as the K1 works great.
+OctoEverywhere is a 3D printing community project that enables free remote access, AI print failure detection, notifications, and more. 
 
 !!! danger
 
@@ -13,8 +13,6 @@ Learn More:
 [https://octoeverywhere.com/companion](https://octoeverywhere.com/companion?source=simpleaf_docs)
 
 ## How do I control OctoEverywhere?
-
-[Installing OctoEverywhere Companion](misc.md#octoeverywhere-companion)
 
 OctoEverywhere Companion is controlled by systemd, and each printer is a separate service, so you can see them here:
 
