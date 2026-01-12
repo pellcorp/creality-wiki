@@ -12,6 +12,11 @@ and thus more recent features, fixes, etc would not be available.
 
 If you are interested check out <https://github.com/Sekilsgs2/creality_pellcorp>
 
+!!! note
+
+    This does not mean you should remove your load cells, in fact if you get into trouble with Simple AF (for instance a probe mount gets damaged), you might 
+    want to switch to stock and you will need the load cells hardware to do that!
+
 ## How do I integrate a Nozzle Wipe?
 
 Information has been moved to [Nozzle Wipe Custom Hook](nozzle_wipe.md)
