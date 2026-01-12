@@ -273,21 +273,6 @@ So Guilouz who created Helper Script hosts the latest version of the K1 / K1M / 
 
 I am also starting to collect some squashfs (decrypted) for various firmware as well at <https://github.com/pellcorp/downloads/tree/main/creality/firmware>
 
-## How can I test a new Simple AF feature?
-
-So pellcorp or someone else has ask you to test a feature and you forgot how.   So each proposed feature is going to be in its own branch.   To switch branches or to get new updates for that branch:
-
-```    
-~/pellcorp/installer.sh --branch jp_some_feature
-```
-
-Then you need to run an update:
-
-```    
-~/pellcorp/installer.sh --update
-```
-
-Pellcorp will tell you the branch name, so replace jp_some_feature, with the branch he gave you!
 
 ## How do I setup remote access and AI failure detection?
 
