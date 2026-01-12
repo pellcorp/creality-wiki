@@ -5,7 +5,8 @@ OctoEverywhere is a 3D printing community project that enables free remote acces
 !!! danger
 
     You must not setup OctoEverywhere on a K1 series machine (which includes Ender 3 V3 KE, NebulaPad and Ender 5 Max) because
-    it will overwhelm the processor and cause serious stability issues.
+    it will overwhelm the processor and cause serious stability issues.  Instead install the OctoEverywhere Companion on another device 
+    on the same WIFI network as the printer.
 
     It's probably fine to setup Octoeverywhere on the same host as Simple AF if using Simple AF for RPi series
 
