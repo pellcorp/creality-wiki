@@ -291,55 +291,7 @@ Pellcorp will tell you the branch name, so replace jp_some_feature, with the bra
 
 ## How do I setup remote access and AI failure detection?
 
-OctoEverywhere is a 3D printing community project that enables free remote access, AI print failure detection, notifications, live streaming, and more. The OctoEverywhere companion works great with all Klipper based 3D printers, including the Creality 3D printers.
-
-Learn More:
-[https://octoeverywhere.com/companion](https://octoeverywhere.com/companion?source=simpleaf_faq)
-
-## How do I control OctoEverywhere?
-    
-[Installing OctoEverywhere Companion](misc.md#octoeverywhere-companion) 
-
-OctoEverywhere Companion is controlled by systemd, and each printer is a separate service, so you can see them here:
-
-```
-$ systemctl list-units octo* --all
-UNIT                               LOAD   ACTIVE SUB     DESCRIPTION                 
-octoeverywhere-companion-2.service loaded active running OctoEverywhere For Moonraker
-octoeverywhere-companion.service   loaded active running OctoEverywhere For Moonraker
-```
-
-To check status:
-
-```
-systemctl status octoeverywhere-companion.service
-```
-
-To start it:
-
-```    
-sudo systemctl start octoeverywhere-companion.service
-```
-
-To make it start on boot:
-
-```    
-sudo systemctl enable octoeverywhere-companion.service
-```
-
-The configuration for each instance of the service is in a separate directory in your home directory, so in my case I have two of them:
-
-```
-~/.octoeverywhere-companion/
-~/.octoeverywhere-companion-2/
-```
-
-And you can find a octoeverywhere.conf in each directory and you can change the IP address in that config file and restart the service:
-
-```
-sudo systemctl restart octoeverywhere-companion
-```
-
+[Octoeverywhere Companion](octoeverywhere_companion.md)
 
 ## How to read belt shaper graphs?
 
