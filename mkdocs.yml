@@ -159,7 +159,12 @@ nav:
       - klicky_wiring.md
   - Rpi:
       - rpi.md
+      - rpi_supported_os.md
       - rpi_printer_definitions.md
+      - rpi_webcam.md
+      - rpi_grumpyscreen.md
+      - rpi_klipperscreen.md
+      - rpi_boot_display.md
   - Updating:
       - updating.md
       - config_overrides.md
