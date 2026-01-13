@@ -4,6 +4,10 @@ Simple AF is best supported by RPi or OrangePi running a version of debian **11 
 
 !!! danger
 
+    Do not try and install Simple AF for RPi on Mainsail OS or onto an existing klipper environment which has been setup using kiuah
+
+!!! note 
+
     Simple AF for RPi is currently **not supported on Debian 13**, this hopefully will change in the near future.
     Its unfortunate but until a few issues are sorted out with numpy and klippain are resolved Debian 13 is off limits.
     For some more history of this issue see this now closed issue <https://github.com/pellcorp/creality/issues/932>
