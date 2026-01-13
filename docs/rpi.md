@@ -61,14 +61,14 @@ You can specify a http:// or https:// url for the --printer parameter or you can
 
 You need to choose a probe one of:
 
-- [Cartographer](cartographer.md)
-- [Cartotouch (Legacy)](cartotouch.md)
-- [Beacon](beacon.md)
-- [BlTouch](bltouch.md)
-- [Microprobe](microprobe.md)
-- [Klicky](klicky.md)
-- [BttEddy](btteddy.md)
-- [Eddyng](eddyng.md)
+- [cartographer](cartographer.md)
+- [cartotouch](cartotouch.md)
+- [beacon](beacon.md)
+- [bltouch](bltouch.md)
+- [microprobe](microprobe.md)
+- [klicky](klicky.md)
+- [btteddy](btteddy.md)
+- [eddyng](eddyng.md)
 
 #### Choose a mount
 
