@@ -161,6 +161,7 @@ nav:
       - rpi.md
       - rpi_supported_os.md
       - rpi_printer_definitions.md
+      - rpi_klippain.md
       - rpi_webcam.md
       - rpi_grumpyscreen.md
       - rpi_klipperscreen.md
