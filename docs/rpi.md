@@ -1,8 +1,13 @@
 # SimpleAF for RPi
 
-Do you want Simple AF on your non Creality OS printers?   Well Simple AF for RPi is for you, you can install it on pretty much
-any debian based (rasbian, dietpi, opi debian server, etc) Rpi like SBC, which also includes CM like the CM4, CM5 and CB range from BTT as well as your standard Raspberry Pis,
+Simple AF for RPI can be installed on pretty much any **debian based** (rasbian, dietpi, opi debian server, etc) Rpi like SBC, which also includes CM like the CM4, CM5 and CB range from BTT as well as your standard Raspberry Pis,
 Orange Pis, etc.
+
+!!! note
+
+    Simple AF for RPi is currently **not supported on Debian 13**, this hopefully will change in the near future.
+    Its unfortunate but until a few issues are sorted out with numpy and klippain are resolved Debian 13 is off limits.
+    For some more history of this issue see this now closed issue <https://github.com/pellcorp/creality/issues/932>
 
 ## Installation
 
