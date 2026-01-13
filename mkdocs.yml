@@ -160,6 +160,7 @@ nav:
   - Rpi:
       - rpi.md
       - rpi_supported_os.md
+      - rpi_firmware.md
       - rpi_printer_definitions.md
       - rpi_klippain.md
       - rpi_webcam.md
