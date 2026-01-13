@@ -28,16 +28,7 @@ The installation command is very similar to K1 series:
 
 - Where `--printer <ThePrinter>` is a predefined, downloaded or downloadable printer definition
 - Where `--mount <TheMount>` is only required for some predefined printer definitions
-- Where `<TheProbe>` is one of:
-
-    - [cartographer](cartographer.md)
-    - [cartotouch](cartotouch.md)
-    - [beacon](beacon.md)
-    - [bltouch](bltouch.md)
-    - [microprobe](microprobe.md)
-    - [klicky](klicky.md)
-    - [btteddy](btteddy.md)
-    - [eddyng](eddyng.md)
+- Where `<TheProbe>` is one of [cartographer](cartographer.md), [cartotouch](cartotouch.md), [beacon](beacon.md), [bltouch](bltouch.md), [microprobe](microprobe.md), [klicky](klicky.md), [btteddy](btteddy.md), [eddyng](eddyng.md)
 
 #### Predefined Printer
 
