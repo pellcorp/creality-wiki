@@ -1,3 +1,5 @@
+# Custom Hooks
+
 Within Simple AF if you want to call a custom gcode macro you can with hooks, the following custom gcode macro hooks are supported and more can be added as needed:
 
 - **_SAF_HOMING_START** - at start of homing

@@ -1,3 +1,5 @@
+# BTT Eddy
+
 ## Where can I get help?
 
 Come on over to the pellcorp discord server, the `#simple-af-btteddy` channel has been setup for anyone wanting support for btt eddy.

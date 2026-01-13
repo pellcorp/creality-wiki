@@ -1,3 +1,5 @@
+# Beacon
+
 ## Where can I get help?
 
 Come on over to the pellcorp discord server, here is the invite, the `#simple-af-beacon` channel has been setup for anyone wanting support for beacon.

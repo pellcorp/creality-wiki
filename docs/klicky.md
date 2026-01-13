@@ -1,3 +1,5 @@
+# Klicky
+
 ## Where can I get help?
 
 !!! danger

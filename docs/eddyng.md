@@ -1,3 +1,5 @@
+# Eddy NG
+
 !!! warning
 
     This feature is under active development from vvuk over at <https://github.com/vvuk/eddy-ng/>, so there are likely to be gotchas and issues, please bare that in mind.

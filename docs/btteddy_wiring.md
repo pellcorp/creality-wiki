@@ -1,4 +1,4 @@
-# Eddy Wiring
+# BTT Eddy Wiring
 
 !!! note
 

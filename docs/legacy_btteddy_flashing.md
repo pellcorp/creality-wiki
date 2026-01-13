@@ -1,3 +1,5 @@
+# Legacy BTT Eddy Flashing
+
 !!! danger
 
     THIS IS A RISKY OPERATION YOU CAN BRICK YOUR EDDY
