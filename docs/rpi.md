@@ -7,7 +7,7 @@ Orange Pis, etc.
 
     Simple AF for RPi is currently **not supported on Debian 13**, this hopefully will change in the near future.
     Its unfortunate but until a few issues are sorted out with numpy and klippain are resolved Debian 13 is off limits.
-    For some more history of this issue see this now closed issue <https://github.com/pellcorp/creality/issues/932>
+    This limitation is  currently being worked on, hopefully resovled soon <https://github.com/pellcorp/creality/issues/1089>
 
 ## Installation
 
