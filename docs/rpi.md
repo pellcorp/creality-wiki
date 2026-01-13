@@ -4,11 +4,6 @@ Do you want Simple AF on your non Creality OS printers?   Well Simple AF for RPi
 any debian based (rasbian, dietpi, opi debian server, etc) Rpi like SBC, which also includes CM like the CM4, CM5 and CB range from BTT as well as your standard Raspberry Pis,
 Orange Pis, etc.
 
-!!! warning
-
-    This feature is not as mature as K1 Series Simple AF, however every effort will be made to avoid breaking existing installations, and fixing
-    bugs as they are found!
-
 ## Supported OS
 
 Simple AF is best supported by RPi or OrangePi running a version of debian **11 or 12** (which includes Orange Pi Debian, Rasbian, Arbian, whatever BTT is doing, etc).
