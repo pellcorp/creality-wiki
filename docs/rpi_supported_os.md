@@ -8,8 +8,14 @@ Simple AF is best supported by RPi or OrangePi running a version of debian **11 
 
 ## Raspberry Pi OS
 
-So far been tested to work on a pi 3, 4 and 5, it does not matter whether you use 32 or 64 bit OS.  
+So far been tested to work on a pi 3, 4 and 5, it does not matter whether you use 32 or 64 bit OS.
 It is recommended to use the [Rpi Imager](https://www.raspberrypi.com/software/) and choose `Raspberry PI OS Lite (64-bit)` or `Raspberry PI OS (Legacy, 64 bit) Lite`
+
+!!! note
+
+    For SBC with less than 2GB of RAM, its recommended to use `Raspberry PI OS Lite (32-bit)` or `Raspberry PI OS (Legacy, 32 bit) Lite`,
+    a 64-bit OS provides no benefits for these devices and it some testing suggests it might actually be the cause of some stability and
+    disconnects.
 
 !!! danger
 
