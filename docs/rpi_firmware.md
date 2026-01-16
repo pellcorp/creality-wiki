@@ -1,5 +1,16 @@
 # MCU Firmware
 
-Its easier to install Simple AF and then build the firmware with `make menuconfig` afterwards, just be aware that
-on first boot its likely your MCU will either not connect or klipper will complain about Protocol version issues,
-this is to be expected.
+Its likely if you are migrating from Marlin (for instance for a Ender 3 V3 SE), you will need to flash new klipper
+firmware to the mainboard (this is not the same as the RPI), and for the moment at least this guide is lacking
+a lot of details for that.
+
+I think the easiest approach here is to install Simple AF and acccept that the MCU likely won't connect and then
+login to your RPI and use make menuconfig and make to create the firmware so you can get that flashed in whatever
+method is required for your mainboard.
+
+Creality mainboards in general require the use of an SD-Card to get this done, for example for the Ender 3 V3 SE, there
+are a few guides this one looks to be the most detailed:
+
+For building the firmware: <https://athemis.me/projects/klipper_guide/#create-printer-firmware-bin-file>
+For getting it onto your printer: <https://athemis.me/projects/klipper_guide/#flash-3d-printer>
+
