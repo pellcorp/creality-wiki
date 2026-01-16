@@ -6,7 +6,7 @@ other screens might work, but ymmv.
 !!! warning
 
     KlipperScreen might end up disconnecting your network as part of the installation, you might need to power cycle your rpi
-    to retain connectivity.
+    to restore connectivity.
 
 From the printer via ssh, run:
 
