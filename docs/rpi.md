@@ -5,9 +5,8 @@ Orange Pis, etc.
 
 !!! note
 
-    Simple AF for RPi is currently **not supported on Debian 13**, this hopefully will change in the near future.
-    Its unfortunate but until a few issues are sorted out with numpy and klippain are resolved Debian 13 is off limits.
-    This limitation is  currently being worked on, hopefully resovled soon <https://github.com/pellcorp/creality/issues/1089>
+    Simple AF for RPi is now **mostly supported on Debian 13**.
+    Currently Klippain and GrumpyScreen are not supported on Debian 13.
 
 ## Installation
 
