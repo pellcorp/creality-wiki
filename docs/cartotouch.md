@@ -293,10 +293,6 @@ Source: <https://docs.cartographer3d.com/original-plugin/installation/calibratio
 
 ### Manual Cartographer Calibrate
 
-!!! note
-
-    Heat soaking the printer a bit before doing calibration is recommended
-
 1. Run the `STOP_CAMERA` macro to stop the camera
 2. Home X Y (`G28 X Y`)
 3. Heat Nozzle to 150c (`M109 S150`) so that any filament can be removed from nozzle
