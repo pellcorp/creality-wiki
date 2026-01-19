@@ -1,6 +1,6 @@
 # Frequently Asked Questions
 
-Why is the P argument ignored in the M106 command?
+## Why is the P argument ignored in the M106 command?
 
 So Simple AF actually implemented support for the P argument into the python code in our klipper and klipper-rpi fork, we have recently updated
 the installer to ensure the p_selector_map gets added to the fan definition with a default value, which is:
