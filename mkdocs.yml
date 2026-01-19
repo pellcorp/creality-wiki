@@ -167,6 +167,7 @@ nav:
       - rpi_grumpyscreen.md
       - rpi_klipperscreen.md
       - rpi_boot_display.md
+      - rpi_faq.md
   - Updating:
       - updating.md
       - config_overrides.md
