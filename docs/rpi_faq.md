@@ -9,9 +9,7 @@ the installer to ensure the p_selector_map gets added to the fan definition with
 p_selector_map: chamber, auxiliary, chamber
 ```
 
-Which means that `M106 P1 S255` and `M106 P3 S255` both turn the chamber fan on to max
-And `M106 P2 S255` turns on the auxiliary to max, in my experience Orca Slicer uses both P1 and P3 or at least has in the past,
-so that is why there is a mapping for both.
+Which means that `M106 P1 S255` and `M106 P3 S255` both turn the chamber fan on to max and `M106 P2 S255` turns on the auxiliary to max.
 
 !!! warning
 
