@@ -19,3 +19,9 @@ there are a few guides this one looks to be the most detailed:
 For building the firmware: <https://athemis.me/projects/klipper_guide/#create-printer-firmware-bin-file>
 For getting it onto your printer: <https://athemis.me/projects/klipper_guide/#flash-3d-printer>
 
+## SKR Mini E3 V2
+
+Its important to ensure the !PA14 GPIO setting is configured, but even more important for RP3 is to ensure that the config.txt
+setting `dtoverlay=dwc2` is enabled in the `[all]` section, otherwise klipper is going to crash the entire pi every time
+it tries to start up and you will racing to stop it after ssh into the pi to deal with this after the installation.
+
