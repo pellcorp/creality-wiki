@@ -302,11 +302,17 @@ Note this is not about bed mesh, this video is just about getting your bed level
 Orca Slicer has the ability to define a chamber target temp per filament and if you want Simple AF to wait on that chamber temp before actually trying to
 print we can with a bit of work in both Orca Slicer and Simple AF via Custom hooks.
 
-The first step is to define per filament any requirement for a chamber temp, look **Print chamber temperature** for:
+Step 1 - Define per filament any requirement for a chamber temp, look **Print chamber temperature** for:
 
 ![image](assets/images/orca_chamber_temp.png)
 
-Then you need to define a `_SAF_START_PRINT_BEFORE_LINE_PURGE` [custom hook](custom_hooks.md), something like this would work:
+Set a value in celcius, but do **NOT** check the **Activate temperature control** checkbox.
+
+Step 2 - Add `CHAMBER_TEMP={chamber_temperature[0]}` to Machine Gcode Start Print:
+
+![image](assets/images/orca_start_print_chamber_temp.png)
+
+Step 3 - Define a `_SAF_START_PRINT_BEFORE_LINE_PURGE` [custom hook](custom_hooks.md), something like this would work:
 
 ```
 [gcode_macro SAF_START_PRINT_BEFORE_LINE_PURGE]
