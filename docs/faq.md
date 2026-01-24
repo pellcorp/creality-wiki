@@ -296,11 +296,40 @@ Note this is not about bed mesh, this video is just about getting your bed level
 
 [Backup Config Overrides](config_overrides.md#git-backups-for-configuration-overrides)
 
+
+## How can I wait for chamber temp?
+
+Orca Slicer has the ability to define a chamber target temp per filament and if you want Simple AF to wait on that chamber temp before actually trying to
+print we can with a bit of work in both Orca Slicer and Simple AF via Custom hooks.
+
+The first step is to define per filament any requirement for a chamber temp, look **Print chamber temperature** for:
+
+![image](assets/images/orca_chamber_temp.png)
+
+Then you need to define a `_SAF_START_PRINT_BEFORE_LINE_PURGE` [custom hook](custom_hooks.md), something like this would work:
+
+```
+[gcode_macro SAF_START_PRINT_BEFORE_LINE_PURGE]
+gcode:
+    {% set CHAMBER_TEMP=params.CHAMBER_TEMP|default(0)|float %}
+    {% if CHAMBER_TEMP > 0 && 'temperature_sensor chamber_temp' in printer %}
+      {% if printer["gcode_macro _SAF_START_PRINT_BEFORE_CHAMBER_WAIT"] != null %}
+           _SAF_START_PRINT_BEFORE_CHAMBER_WAIT
+       {% endif %}
+    
+    RESPOND TYPE=command MSG="Waiting chamber to reach {CHAMBER_TEMP}c ..."
+    TEMPERATURE_WAIT SENSOR="temperature_sensor chamber_temp" MINIMUM={CHAMBER_TEMP}
+    RESPOND TYPE=command MSG="Chamber target temperature reached: {CHAMBER_TEMP}°C"
+    {% endif %}
+```
+
 ## How can I set a chamber fan target temp from my slicer?
 
-So currently there is no way to pass in a parameter to start print for this, but there is a really easy workaround and you can even set the target per filament.   The target being the temp at which the fan gets activated.
+There is no way to pass in a parameter to start print for this, but there is a really easy workaround and you can even set the target per filament.   The target being the temp at which the fan gets activated.
 
 So per filament in Orca Slicer find the **Print chamber temperature** and set a value in celcius, but do **NOT** check the **Activate temperature control** checkbox.
+
+![image](assets/images/orca_chamber_temp.png)
 
 Then in your Machine start Gcode above START_PRINT add this line (before the START_PRINT line):
 
