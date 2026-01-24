@@ -319,13 +319,9 @@ Step 3 - Define a `_SAF_START_PRINT_BEFORE_LINE_PURGE` [custom hook](custom_hook
 gcode:
     {% set CHAMBER_TEMP=params.CHAMBER_TEMP|default(0)|float %}
     {% if CHAMBER_TEMP > 0 && 'temperature_sensor chamber_temp' in printer %}
-      {% if printer["gcode_macro _SAF_START_PRINT_BEFORE_CHAMBER_WAIT"] != null %}
-           _SAF_START_PRINT_BEFORE_CHAMBER_WAIT
-       {% endif %}
-    
-    RESPOND TYPE=command MSG="Waiting chamber to reach {CHAMBER_TEMP}c ..."
-    TEMPERATURE_WAIT SENSOR="temperature_sensor chamber_temp" MINIMUM={CHAMBER_TEMP}
-    RESPOND TYPE=command MSG="Chamber target temperature reached: {CHAMBER_TEMP}°C"
+        RESPOND TYPE=command MSG="Waiting chamber to reach {CHAMBER_TEMP}c ..."
+        TEMPERATURE_WAIT SENSOR="temperature_sensor chamber_temp" MINIMUM={CHAMBER_TEMP}
+        RESPOND TYPE=command MSG="Chamber target temperature reached: {CHAMBER_TEMP}°C"
     {% endif %}
 ```
 
