@@ -113,13 +113,9 @@ If you wish to restore access to force move set the `variable_disable_force_move
 
 ## How do I replace Line_Purge with a custom line purge?
 
-So currently there is no official support to do a simple line purge like stock creality, but it is possible with a trick to replace the Simple AF `Line_Purge.cfg` macro with your own.
+Create a new macros file, call it something like `CustomMacros.cfg` (it matters not what its called, just as long as it is not the name of an existing file), and create your own `_SAF_LINE_PURGE` macro.
 
-First step is to disable `[include Line_Purge.cfg]` in `printer.cfg`
-
-Second step is to create a new macros file, call it something like `CustomMacros.cfg` (it matters not what its called, just as long as it is not the name of an existing file), and create your own `LINE_PURGE` macro.
-
-Third step is to add a new include to `printer.cfg` for your new custom config file, and your `LINE_PURGE` macro will be called now instead of the KAMP one.
+Third step is to add a new include to `printer.cfg` for your new custom config file, and your `_SAF_LINE_PURGE` macro will be called now instead of the KAMP one.
 
 The reason this is recommended over just commenting out `LINE_PURGE` in `start_end.cfg` and adding your own macro call, is everything I have described above will survive an Update and even a factory reset because config overrides supports removing the `Line_Purge.cfg` include, adding a new include to `printer.cfg` and backing up your custom files. 
 
