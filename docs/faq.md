@@ -119,6 +119,7 @@ Third step is to add a new include to `printer.cfg` for your new custom config f
 
 The reason this is recommended over just commenting out `LINE_PURGE` in `start_end.cfg` and adding your own macro call, is everything I have described above will survive an Update and even a factory reset because config overrides supports removing the `Line_Purge.cfg` include, adding a new include to `printer.cfg` and backing up your custom files. 
 
+For more information [Custom Hooks](custom_hooks.md)
 
 ## How do I integrate Knomi?
 
