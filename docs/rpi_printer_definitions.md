@@ -68,7 +68,7 @@ The supported models are:
 - `k1m` (K1 Max)
 - `f004` (Ender 5 Max)
 - `f005` (Ender 3 V3 KE)
-- `ender3v3se` (Ender 3 V3 SE)
+- `e3v3se` (Ender 3 V3 SE)
 
 So just stick it into the beginning of the file like this:
 
