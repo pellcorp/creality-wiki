@@ -76,6 +76,11 @@ So just stick it into the beginning of the file like this:
 # MODEL:k1
 ```
 
+!!! warning
+
+    The MODEL is case sensitive, so K1 is **not** the same as k1!
+
+
 If you want to support Klicky, Microprobe and Bltouch in your base printer.cfg you will need to do a bit more work, specifically you need to prefix your main printer.cfg definitions with `-- printer.cfg` and then provide additional sections for each of `klicky.cfg`, `microprobe.cfg` and `bltouch.cfg`, like this:
 
 ```
