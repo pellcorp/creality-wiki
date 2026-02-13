@@ -241,7 +241,7 @@ After running the macro you should see output like the following:
 
     The beacon team recommends heat soaking the printer a bit before doing calibration
 
-1. Run `_SET_KIN_MAX_Z` and move toolhead so that the nozzle is only a few mm above the bed surface
+1. Run `_SET_KIN_MAX_Z` and move toolhead so that the **nozzle  of the beacon is only a few mm above the bed surface**
 2. Run `_CALIBRATE_HEAT_SOAK`, which will heat the bed to 60c, nozzle to 150c and **wait 8.5 minutes**!
 3. Run the `STOP_CAMERA` macro to stop the camera
 4. Run the `TURN_OFF_HEATERS` macro to stop heaters before starting calibration
