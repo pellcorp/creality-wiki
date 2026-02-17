@@ -19,6 +19,11 @@ retract_distance: 10.0
 
 Your other option of course is to go back to [Cartotouch](cartotouch.md)
 
+!!! warning
+
+    If you get an error saying that `retract_distance` is not a valid config option, make sure that you have updated the Cartographer
+    plugin to latest via Fluidd or Mainsail software section.
+
 ## You must flash the cartographer with K1 specific firmware!
 
 ![image](assets/images/cartographer_must_flash_k1_firmware.png)
