@@ -5,7 +5,7 @@
 ## Probe triggered prior to movement
 
 This seems to be reasonably common problem for K1 series users, and a few things have been suggested to try and counteract it, first
-is to downgrade the firwmare on the cartographer to `5.0.0 K1`, and if you have payed close attention to the wiki you might notice that is the
+is to downgrade the firmware on the cartographer to `5.0.0 K1`, and if you have payed close attention to the wiki you might notice that is the
 version we recommend for V3 Cartographer users anyway.   Unfortunately for V4 Cartographer users there is no such option, and we are starting
 to see this probe triggered prior to movement issue for them too.
 
