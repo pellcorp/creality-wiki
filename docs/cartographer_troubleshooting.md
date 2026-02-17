@@ -9,7 +9,7 @@ is to downgrade the firmware on the cartographer to `5.0.0 K1`, and you might ha
 V3 Cartographer users now!  Unfortunately for V4 Cartographer users there is no such option, and we are starting to see this probe 
 triggered prior to movement issue for them too.
 
-The other option is to add some additional configuration options to the `cartographer.cfg` file, specifically `retract_distance: 10.0`:
+The other option is to add an additional configuration option to `cartographer.cfg` file, specifically `retract_distance: 10.0`:
 
 ```
 [cartographer touch]
