@@ -70,7 +70,13 @@ Add this:
 ```
 [gcode_macro _SAF_NOZZLE_WIPE]
 gcode:
+    # make the nozzle wipe be a good citizen and restore the target temp afterwards
+    {% set target_nozzle_temp = printer[printer.toolhead.extruder].target %}
+    
     WIPE_NOZZLE
+    
+    # then restore the previous nozzle temp
+    M109 S{target_nozzle_temp}
 ```
 
 ### Calin Nozzle Wipe
