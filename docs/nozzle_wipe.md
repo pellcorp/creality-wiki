@@ -29,11 +29,10 @@ in that case it actually would probably be better to get the existing target tem
 gcode:
     {% set target_nozzle_temp = printer[printer.toolhead.extruder].target %}
     
-    # lower the temp to something where nozzle does not ooze to do your thing
-    M109 S150
+    # Do the nozzle wipe thing here whatever it is
     
     # then restore the previous nozzle temp
-    M104 S{target_nozzle_temp}
+    M109 S{target_nozzle_temp}
 ```
 
 ## Nozzle Wipe Options
