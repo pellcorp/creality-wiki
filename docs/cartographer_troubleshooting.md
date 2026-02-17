@@ -28,9 +28,9 @@ If all else fails, there is always [Cartotouch](cartotouch.md)
 
 ![image](assets/images/cartographer_must_flash_k1_firmware.png)
 
-This means when you received your cartographer you failed to flash it with the K1 specific firmware required for Simple AF and Cartographer to
+This means when you received your cartographer you failed to flash it with the K1 (known as Lite for V4 cartographer) specific firmware required for Simple AF and Cartographer to
 function without causing lots of performance and stability issues.   Validations were recently added to various macros in Simple AF for the new
-Cartographer software to abort if the non K1 specific firmware is not flashed.
+Cartographer software to abort if the non K1 / Lite specific firmware is not flashed.
 
 [cartographer firmware](cartographer.md#cartographer-firmware)
 
