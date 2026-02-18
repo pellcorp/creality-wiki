@@ -31,6 +31,12 @@ Simple AF cfg and conf files cannot be updated via Fluidd or Mainsail, it must b
     If you get a `ERRROR: Mount option must be specified`, you must provide a `--mount TheMount` where `TheMount` is a reference to the mount you are currently
     using, and that will depend on what probe you are using, you can consult the #mount-options section of your specific probe wiki page.
 
+!!! warning
+
+    If you specify a --mount option, even if its for the mount you are already using, its going to apply the mount override configuration on top of
+    any local customisations you have, so **only** provide the --mount argument if you want to change mounts or you want to override your local customisations
+    with those in the mount override config, for example if a fix was pushed for that specific mount override.
+
 This backs up your customisations, updates the creality repo, applies all changes to your `~/printer_data/config` directory and then reapplies your customisations over the top.
 
 ## Fluidd and Mainsail Updates
