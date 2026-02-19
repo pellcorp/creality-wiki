@@ -161,3 +161,19 @@ And here it is after being manually cleaned up:
 ```
 
 Note that there is a single blank line, blank because all its got is `#*#` between each section!
+
+## Cleanup of cartotouch
+
+TODO
+
+## Cleanup of Bltouch
+
+TODO
+
+## Cleanup of Microprobe
+
+TODO
+
+## Cleanup of Beacon
+
+TODO
