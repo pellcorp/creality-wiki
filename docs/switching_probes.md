@@ -49,7 +49,7 @@ The `TheMount` is a specific mount as defined in the specific probe mount-option
 
 !!! note
 
-    For switching from cartotouch to cartographer if you are using the same physical mount and can specify `--mount %CURRENT%`
+    For switching from cartotouch to cartographer if you are using the same physical mount you can specify `--mount %CURRENT%`
 
 ## Cleaning up Save Configuration from previous probe
 
