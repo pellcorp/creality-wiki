@@ -23,65 +23,11 @@ Information has been moved to [Nozzle Wipe Custom Hook](nozzle_wipe.md)
 
 ## How do I switch from btteddy to eddyng?
 
-To make sure Simple AF repo is up to date and on the right branch, run this:
-
-```
-~/pellcorp/installer.sh --branch main
-```
-
-Then to switch to eddyng from eddy while retaining most of your customisations:
-
-```
-~/pellcorp/installer.sh --update eddyng --mount TheMount
-```
-
-!!! note
-
-    You will have to manually remove some btt eddy configuration from the save config section of the printer.cfg after you switch probes, the
-    installer does not do that for you (owing to the fact that section looks like one big comment and my config parser does not deal with it), the
-    sections you will need to remove entirely are the `[probe_eddy_current btt_eddy]` and `[temperature_probe btt_eddy]`, see below a sample of
-    the config, noting that `<snip>` is used in place of all the numbers that usually go there, just remove everything under each heading:
-
-    ```
-    #*# [probe_eddy_current btt_eddy]
-    #*# reg_drive_current = 16
-    #*# calibrate =
-    #*#     <snip>
-    #*#
-    #*# [temperature_probe btt_eddy]
-    #*# calibration_temp = 31.277144
-    #*# drift_calibration =
-    #*#     <snip>
-    #*# drift_calibration_min_temp = 40.45907253515328
-    #*#
-    ```
-
-!!! warning
-
-    Note you will need to change the `TheMount` to the eddy-ng mount you are using [eddy-ng mount options](eddyng.md#mount-options)
-
+[Switching Probes](switching_probes.md)
 
 ## How do I switch from btteddy to cartographer?
 
-If you have calibrated the btt eddy, you can switch to the cartographer, but you will have to manually remove any btt eddy specific configuration from the SAVE CONFIG section of your printer.cfg file.
-
-To make sure Simple AF repo is up to date and on the right branch, run this:
-
-```
-~/pellcorp/installer.sh --branch main
-```
-
-Then to switch to cartographer from btteddy while retaining most of your customisations:
-
-```
-~/pellcorp/installer.sh --update cartographer --mount TheMount
-```
-
-!!! warning
-    Note you will need to change the `TheMount` to the cartographer mount you are using [cartographer mount options](cartographer.md#mount-options)
-
-    Klipper may fail to start because of the btt eddy configuration at the bottom of the file, you can just manually clean those up, save and restart.
-
+[Switching Probes](switching_probes.md)
 
 ## How do I add my own macros to Simple AF?
 
