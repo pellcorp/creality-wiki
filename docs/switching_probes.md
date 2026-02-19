@@ -45,7 +45,7 @@ Where `TheNewProbe` is one of:
 - [btteddy](btteddy.md#mount-options)
 - [eddyng](eddyng.md#mount-options)
 
-The `TheMount` is a specific mount as defined on the specific probes mount options page
+The `TheMount` is a specific mount as defined in the specific probe mount-options section!
 
 !!! note
 
