@@ -57,8 +57,28 @@ Due to limitations in the installer, any calibrations for the old mount are not 
 
 ## Cleanup of btteddy
 
-By way of example, the sections you will need to remove when switching **from** btteddy to any other probe are the `[probe_eddy_current btt_eddy]` and `[temperature_probe btt_eddy]`.
-Below is a sample of a save config section before it's cleaned up:
+The sections you will need to remove when switching **from** btteddy to any other probe are the `[probe_eddy_current btt_eddy]` and `[temperature_probe btt_eddy]`.
+
+## Cleanup of cartotouch
+
+TODO
+
+## Cleanup of Bltouch
+
+TODO
+
+## Cleanup of Microprobe
+
+TODO
+
+## Cleanup of Beacon
+
+TODO
+
+## Modifying Save Config Section
+
+To give you an idea of how you should go about cleaning up the save config section (ignoring the big `DO NOT EDIT THIS BLOCK OR BELOW` warning), below is a sample of a how to cleanup a printer.cfg when
+switching from btteddy, here is the config section before it's cleaned up:
 
 ```
 #*# <---------------------- SAVE_CONFIG ---------------------->
@@ -161,19 +181,3 @@ And here it is after being manually cleaned up:
 ```
 
 Note that there is a single blank line, blank because all its got is `#*#` between each section!
-
-## Cleanup of cartotouch
-
-TODO
-
-## Cleanup of Bltouch
-
-TODO
-
-## Cleanup of Microprobe
-
-TODO
-
-## Cleanup of Beacon
-
-TODO
