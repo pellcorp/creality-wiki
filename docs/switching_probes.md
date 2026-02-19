@@ -4,7 +4,7 @@ Switching a probe is fairly straightforward, although there is likely to be some
 
 ## Update to Latest Repo
 
-Always be to update to latest Simple AF repo before switching, this does **not** change your installation, this just pulls the latest code from the github repo but does not change your installation.
+Strongly recommended to update to latest Simple AF repo before switching, this does **not** change your installation, this just pulls the latest code from the github repo but does not change your installation.
 
 ```
 ~/pellcorp/installer.sh --branch main
