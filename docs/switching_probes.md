@@ -36,14 +36,14 @@ So you can switch from any probe to any probe, the format of this is identical:
 
 Where `TheNewProbe` is one of:
 
-- [cartographer](cartographer.md)
-- [cartotouch](cartotouch.md)
-- [beacon](beacon.md)
-- [bltouch](bltouch.md)
-- [microprobe](microprobe.md)
-- [klicky](klicky.md)
-- [btteddy](btteddy.md)
-- [eddyng](eddyng.md)
+- [cartographer](cartographer.md#mount-options)
+- [cartotouch](cartotouch.md#mount-options)
+- [beacon](beacon.md#mount-options)
+- [bltouch](bltouch.md#mount-options)
+- [microprobe](microprobe.md#mount-options)
+- [klicky](klicky.md#mount-options)
+- [btteddy](btteddy.md#mount-options)
+- [eddyng](eddyng.md#mount-options)
 
 The `TheMount` is a specific mount as defined on the specific probes mount options page
 
