@@ -55,26 +55,26 @@ The `TheMount` is a specific mount as defined in the specific probe mount-option
 
 Due to limitations in the installer, any calibrations for the old mount are not removed from the save config section (the bit with the `#*#` prefixes)!
 
-## Cleanup of btteddy
+### Cleanup of btteddy
 
 The sections you will need to remove when switching **from** btteddy to any other probe are:
 
 - `[probe_eddy_current btt_eddy]`
 - `[temperature_probe btt_eddy]`
 
-## Cleanup of cartotouch
+### Cleanup of cartotouch
 
 TODO
 
-## Cleanup of Bltouch
+### Cleanup of Bltouch
 
 TODO
 
-## Cleanup of Microprobe
+### Cleanup of Microprobe
 
 TODO
 
-## Cleanup of Beacon
+### Cleanup of Beacon
 
 TODO
 
