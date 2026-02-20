@@ -275,7 +275,7 @@ Step 2 - Add `CHAMBER_TEMP={chamber_temperature[0]}` to Machine Gcode Start Prin
 Step 3 - Define a `_SAF_START_PRINT_BEFORE_LINE_PURGE` [custom hook](custom_hooks.md), something like this would work:
 
 ```
-[gcode_macro SAF_START_PRINT_BEFORE_LINE_PURGE]
+[gcode_macro _SAF_START_PRINT_BEFORE_LINE_PURGE]
 gcode:
     {% set CHAMBER_TEMP=params.CHAMBER_TEMP|default(0)|float %}
     {% if CHAMBER_TEMP > 0 %}
