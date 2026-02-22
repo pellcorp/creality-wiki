@@ -1,12 +1,30 @@
 # M600 Manual Filament Change
 
-Simple AF has support for manual filament changes using M600
+Simple AF has support for manual filament changes using M600, instead of using PAUSE in Orca Slicer, specify M600
 
+So in Orca Slicer once you have sliced the model, switch the preview pane and choose the layer that you want to
+add the filament change to, it should be the layer **before** you want to switch colours, and right click and
+choose Add Custom Gcode:
+
+![image](assets/images/orcaslicer_custom_gcode.png)
+
+Add `M600` to this dialog and click OK:
+![image](assets/images/custom_gcode_m600.png)
+
+And then reslice the file and then you can send it to print!
 
 ## Custom Hooks
 
 If the default load, unload and purge more support is not suitable for you, you can implement custom hooks to create
-your own macros, for example to use the older macros that Simple AF used to have, you can do that with custom hooks:
+your own macros.
+
+The custom hooks are:
+
+- `_SAF_FC_LOAD_FILAMENT`
+- `_SAF_FC_UNLOAD_FILAMENT`
+- `__SAF_FC_PURGE_MORE`
+
+For example to use the older macros that Simple AF used to have, you can do that with custom hooks:
 
 ```
 [gcode_macro _SAF_FC_UNLOAD_FILAMENT]
