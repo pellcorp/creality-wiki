@@ -9,6 +9,7 @@ choose Add Custom Gcode:
 ![image](assets/images/orcaslicer_custom_gcode.png)
 
 Add `M600` to this dialog and click OK:
+
 ![image](assets/images/custom_gcode_m600.png)
 
 And then reslice the file and then you can send it to print!
