@@ -22,7 +22,7 @@ The custom hooks are:
 
 - `_SAF_FC_LOAD_FILAMENT`
 - `_SAF_FC_UNLOAD_FILAMENT`
-- `__SAF_FC_PURGE_MORE`
+- `_SAF_FC_PURGE_MORE`
 
 ## Legacy Support
 
