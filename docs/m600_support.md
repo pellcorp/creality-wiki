@@ -1,10 +1,10 @@
 # M600 Manual Filament Change
 
-Simple AF has support for manual filament changes using M600, instead of using PAUSE in Orca Slicer, specify M600
+Simple AF has support for manual filament changes.
 
-So in Orca Slicer once you have sliced the model, switch the preview pane and choose the layer that you want to
-add the filament change to, it should be the layer **before** you want to switch colours, and right click and
-choose Add Custom Gcode:
+In Orca Slicer once you have sliced the model, switch to the preview pane and choose the layer that you want to
+add the filament change to, it should be the layer **before** you want to switch colours, then right click and
+choose Add Custom G-code:
 
 ![image](assets/images/orcaslicer_custom_gcode.png)
 
