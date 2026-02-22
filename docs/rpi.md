@@ -5,8 +5,7 @@ Orange Pis, etc.
 
 !!! note
 
-    Simple AF for RPi is now **mostly supported on Debian 13**.
-    Currently Klippain and GrumpyScreen are not supported on Debian 13.
+    Currently GrumpyScreen is not supported on Debian 13.
 
 ## Installation
 
