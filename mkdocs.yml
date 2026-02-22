@@ -162,12 +162,12 @@ nav:
       - rpi_supported_os.md
       - rpi_firmware.md
       - rpi_printer_definitions.md
+      - rpi_faq.md
       - rpi_klippain.md
       - rpi_webcam.md
       - rpi_grumpyscreen.md
       - rpi_klipperscreen.md
       - rpi_boot_display.md
-      - rpi_faq.md
   - Updating:
       - updating.md
       - config_overrides.md

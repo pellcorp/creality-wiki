@@ -5,7 +5,7 @@
 Simple AF implemented support for the P argument into the python code in our klipper and klipper-rpi fork to mitigate performance issues.  
 
 Unfortunately until recently the installer for Simple AF for RPi was not ensuring that the p_selector_map was being set on the `[fan]` config
-in order to eanble this feature.   We have recently updated the installer to ensure the p_selector_map gets added to the fan definition.
+in order to enable this feature.   We have recently updated the installer to ensure the p_selector_map gets added to the fan definition.
 
 So if your M106 P1/M106 P2/M106 P3 commands are not working as expected, please ensure you have updated to latest Simple AF!
 
