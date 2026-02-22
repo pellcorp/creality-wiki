@@ -35,10 +35,29 @@ gcode:
     M109 S{printer['gcode_macro RESUME'].last_extruder_temp.temp|int}
     RESPOND TYPE=command MSG="Unloading filament..."
 
-    M104 S{printer['gcode_macro RESUME'].last_extruder_temp.temp|int - 30}     # Start cooling (don't wait)
-
-    SAVE_GCODE_STATE NAME=_client_movement
+    # Turn on cooling fan to help with temperature drop
+    #M106 S255
     M83
+
+    #### K1* Unicorn Nozzle/Heatbreak/Extruder Geometry:
+    ## pipe - heatbreak - pipe - nozzle
+    ## 23.6 - 10.5      - 3    - 28.3 - total 65.4mm
+    ### Positions:
+    ## E-28.3 = unloaded from nozzle/heater
+    ## E-36.55 = unloaded from nozzle/hb until middle of heatbreak
+    ## E-42.3 = unloaded from nozzle and hb = between heatbreak and extruder drive gears, hand pullable with lever opened
+    ## E-77.5 = unloaded from nozzle, hb and extruder = beyond extruder drive gears, hand pullable with lever closed
+
+    #### CHCB-OTC on K1* Nozzle/Heatbreak/Extruder Geometry:
+    ## pipe - heatbreak - pipe - nozzle
+    ## (23.5 - 10.5      - 3    - 28.5 - total 65.5mm
+    ### Positions:
+    ## E-28.5 = unloaded from nozzle/heater
+    ## E-36.75 = unloaded from nozzle/hb until middle of heatbreak
+    ## E-42.5 = unloaded from nozzle and hb = between heatbreak and extruder drive gears, hand pullable with lever opened
+    ## E-77.5 = unloaded from nozzle, hb and extruder = beyond extruder drive gears, hand pullable with lever closed
+
+    M104 S{printer['gcode_macro RESUME'].last_extruder_temp.temp|int - 30}     # Start cooling (don't wait)
     G4 P5000                       # Wait for initial cooldown
     G1 E30 F180                    # initially purge larger due to nozzle length
     G1 E-12 F600                   # Medium retract -12
@@ -49,9 +68,11 @@ gcode:
     G1 E2 F90                      # Tiny extrude -24
     G1 E-24 F2200                  # Very fast retract -48
     G1 E-50 F2800                  # Final snap retract -98
-    RESTORE_GCODE_STATE NAME=_client_movement
-
+      
     M400
+
+    #M106 P0 S0
+    #M106 P2 S0
 
     # turn off extruder to help it avoid overheating
     SET_STEPPER_ENABLE STEPPER=extruder ENABLE=0
@@ -63,11 +84,10 @@ gcode:
 gcode:
   M109 S{printer['gcode_macro RESUME'].last_extruder_temp.temp|int}
   RESPOND TYPE=command MSG="Loading filament..."
-
-  _CLIENT_LINEAR_MOVE E=100 F=180
+  M83
+  G1 E100 F180
   _CLIENT_RETRACT
   M400
-
   # turn off extruder to help it avoid overheating
   SET_STEPPER_ENABLE STEPPER=extruder ENABLE=0
   BEEP
@@ -76,11 +96,10 @@ gcode:
 gcode:
   M109 S{printer['gcode_macro RESUME'].last_extruder_temp.temp|int}
   RESPOND TYPE=command MSG="Purging filament..."
-
-  _CLIENT_LINEAR_MOVE E=10 F=180
+  M83
+  G1 E10 F180
   _CLIENT_RETRACT
   M400
-
   # turn off extruder to help it avoid overheating
   SET_STEPPER_ENABLE STEPPER=extruder ENABLE=0
   BEEP
