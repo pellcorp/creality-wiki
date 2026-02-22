@@ -3,10 +3,6 @@
 Simple AF for RPI can be installed on pretty much any **debian based** (rasbian, dietpi, opi debian server, etc) Rpi like SBC, which also includes CM like the CM4, CM5 and CB range from BTT as well as your standard Raspberry Pis,
 Orange Pis, etc.
 
-!!! note
-
-    Currently GrumpyScreen is not supported on Debian 13.
-
 ## Installation
 
 Refer to [Supported OS](rpi_supported_os.md)

@@ -9,6 +9,10 @@ From the printer via ssh, run:
 ~/pellcorp/rpi/install-grumpyscreen.sh 
 ```
 
+!!! note
+
+    GrumpyScreen is not supported on Debian 13.
+
 ## BTT DSI Screen
 
 Support for grumpyscreen will be provided for BTT DSI screens but you need to setup the screen to be correctly configured.
