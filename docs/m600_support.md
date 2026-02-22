@@ -24,7 +24,9 @@ The custom hooks are:
 - `_SAF_FC_UNLOAD_FILAMENT`
 - `__SAF_FC_PURGE_MORE`
 
-For example to use the older macros that Simple AF used to have, you can do that with custom hooks:
+## Legacy Support
+
+To use the macros that Simple AF used to have, you can do that with custom hooks:
 
 ```
 [gcode_macro _SAF_FC_UNLOAD_FILAMENT]
