@@ -16,8 +16,7 @@ And then reslice the file and then you can send it to print!
 
 ## Custom Hooks
 
-If the default load, unload and purge more support is not suitable for you, you can implement custom hooks to create
-your own macros.
+If the default load, unload and purge more support is not suitable for you, you can implement custom hooks to create your own macros.
 
 The custom hooks are:
 
