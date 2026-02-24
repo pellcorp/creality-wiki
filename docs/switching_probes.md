@@ -92,17 +92,35 @@ The save config sections you will need to remove when switching **from** beacon 
 
 ### Cleanup of eddyng
 
-The save config sections you will need to remove when switching **from** beacon to any other probe are:
+The save config sections you will need to remove when switching **from** eddyng to any other probe are:
 
-TODO
+- `TODO`
+- `[axis_twist_compensation]`
+- `[bed_mesh]`
 
 ### Cleanup of bltouch
 
-TODO
+The save config sections you will need to remove when switching **from** bltouch to any other probe are:
+
+- `[bltouch]`
+- `[axis_twist_compensation]`
+- `[bed_mesh]`
 
 ### Cleanup of microprobe
 
-TODO
+The save config sections you will need to remove when switching **from** bltouch to any other probe are:
+
+- `[probe]`
+- `[axis_twist_compensation]`
+- `[bed_mesh]`
+
+### Cleanup of klicky
+
+The save config sections you will need to remove when switching **from** bltouch to any other probe are:
+
+- `[probe]`
+- `[axis_twist_compensation]`
+- `[bed_mesh]`
 
 ## Modifying Save Config Section
 
