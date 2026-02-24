@@ -108,7 +108,7 @@ The save config sections you will need to remove when switching **from** bltouch
 
 ### Cleanup of microprobe
 
-The save config sections you will need to remove when switching **from** bltouch to any other probe are:
+The save config sections you will need to remove when switching **from** microprobe to any other probe are:
 
 - `[probe]`
 - `[axis_twist_compensation]`
@@ -116,7 +116,7 @@ The save config sections you will need to remove when switching **from** bltouch
 
 ### Cleanup of klicky
 
-The save config sections you will need to remove when switching **from** bltouch to any other probe are:
+The save config sections you will need to remove when switching **from** klicky to any other probe are:
 
 - `[probe]`
 - `[axis_twist_compensation]`
