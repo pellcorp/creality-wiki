@@ -94,7 +94,7 @@ The save config sections you will need to remove when switching **from** beacon 
 
 The save config sections you will need to remove when switching **from** eddyng to any other probe are:
 
-- `TODO`
+- `[probe_eddy_ng btt_eddy]`
 - `[axis_twist_compensation]`
 - `[bed_mesh]`
 
