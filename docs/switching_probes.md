@@ -1,6 +1,7 @@
 # Switching Probes
 
-Switching a probe is fairly straightforward, although there is likely to be some leftover save config stuff (sections prefixed with `#*#`) you will need to remove manually.
+Switching a probe is fairly straightforward, the installer will remove any leftover calibrations, bed meshes and 
+axis twist calibrations for the old probe!
 
 ## Update to Latest Repo
 

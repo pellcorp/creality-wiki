@@ -64,10 +64,6 @@ You can update these components via Fluidd or Mainsail, in fluidd make sure you 
 
 A reinstall is only needed if one or more github repos have got into an inconsistent state, so you can force a reinstall with the `--reinstall` argument in place of the `--install` argument.  The difference to a `--install`, is a `--install` will only finish up a partial install that failed due to a network failure or the like.
 
-!!! info
-
-    If you switch probes using --update you will have to manually clean up any save configuration for that probe before klipper will start.
-
 ## Clean Reinstall
 
 If you wish to reinstall Simple AF ignoring your pre-existing config overrides, the easiest approach is to first make sure Simple AF repo is up to date and on the right branch:
