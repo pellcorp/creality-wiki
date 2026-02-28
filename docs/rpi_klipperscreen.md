@@ -9,6 +9,10 @@ From the printer via ssh, run:
 ~/pellcorp/rpi/install-klipperscreen.sh 
 ```
 
+Please note that these errors from the installer are normal and can be ignored:
+
+![image](assets/images/klipperscreen-install.png)
+
 ## Troubleshooting
 
 ### RPI5 and Trixie
