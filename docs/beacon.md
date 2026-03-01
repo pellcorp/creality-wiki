@@ -95,14 +95,15 @@ you are making your lidar or direct mainboard connection as you might need it in
 
 ### Mount Options
 
-| Mount                 | Printer            | Beacon                     | URL                                                                                                                  | Notes                                                           |
-|-----------------------|--------------------|----------------------------|----------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| **Default**           | K1, K1C, K1M, K1SE | RevH&nbsp;Standard         | <https://www.printables.com/model/1071641-beacon-probe-mounts-for-creality-k1-series>                                |                                                                 |
-| **BootyGantry**       | K1, K1C, K1M, K1SE | RevH&nbsp;Standard         | <https://github.com/tlace17/K1-Linear-Rail-Gantry/blob/main/STLs/Probe%20Mounts/Rail%20Carriage%20Carto%20Mount.stl> |                                                                 |
-| **SkeletorMK7**       | K1, K1C, K1M, K1SE | RevH&nbsp;Low&nbsp;Profile | <https://www.printables.com/model/833769-the-skeletor-collection-a-creality-k1k1-maxk1c-coo>                         |                                                                 |
-| **SkeletorSideMount** | K1, K1C, K1M, K1SE | All RevH variants          | <https://www.printables.com/model/1362668-skeletor-mk7-side-mounted-cartographer-integration>                        |                                                                 |
-| **SimplyHexed**       | Ender 5 Max        | RevH&nbsp;Standard         | <https://www.printables.com/model/1209230-ender-5-max-simply-hexed>                                                  |                                                                 |
-| **Default**           | Ender 3 V3 KE      | RevH&nbsp;Standard         | <https://www.printables.com/model/732262-ender-3-v3-ke-beaconcartographer-mount>                                     | Might require shimming depending on the hotend / nozzle you use |
+| Mount                 | Printer            | Beacon                      | URL                                                                                                                  | Notes                                                           |
+|-----------------------|--------------------|-----------------------------|----------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
+| **Default**           | K1, K1C, K1M, K1SE | RevH&nbsp;Standard          | <https://www.printables.com/model/1071641-beacon-probe-mounts-for-creality-k1-series>                                |                                                                 |
+| **BootyGantry**       | K1, K1C, K1M, K1SE | RevH&nbsp;Standard          | <https://github.com/tlace17/K1-Linear-Rail-Gantry/blob/main/STLs/Probe%20Mounts/Rail%20Carriage%20Carto%20Mount.stl> |                                                                 |
+| **SkeletorMK7**       | K1, K1C, K1M, K1SE | RevH&nbsp;Low&nbsp;Profile  | <https://www.printables.com/model/833769-the-skeletor-collection-a-creality-k1k1-maxk1c-coo>                         |                                                                 |
+| **SkeletorSideMount** | K1, K1C, K1M, K1SE | All RevH variants           | <https://www.printables.com/model/1362668-skeletor-mk7-side-mounted-cartographer-integration>                        |                                                                 |
+| **SimplyHexed**       | Ender 5 Max        | RevH&nbsp;Standard          | <https://www.printables.com/model/1209230-ender-5-max-simply-hexed>                                                  |                                                                 |
+| **Pellcorp**          | Ender 3 V3 KE      | All RevH variants           | <https://www.printables.com/model/1621139-ender-3-v3-se-cartographer-and-beacon-mount>                               | Uses K1 Hotend and will not work with default shroud            |
+| **Default**           | Ender 3 V3 KE      | RevH&nbsp;Standard          | <https://www.printables.com/model/732262-ender-3-v3-ke-beaconcartographer-mount>                                     | Might require shimming depending on the hotend / nozzle you use |
 
 ### Nozzle Offset
 
