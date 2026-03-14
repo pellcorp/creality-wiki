@@ -103,6 +103,7 @@ you are making your lidar or direct mainboard connection as you might need it in
 | **SkeletorSideMount** | K1, K1C, K1M, K1SE | All RevH variants           | <https://www.printables.com/model/1362668-skeletor-mk7-side-mounted-cartographer-integration>                        |                                                                 |
 | **SimplyHexed**       | Ender 5 Max        | RevH&nbsp;Standard          | <https://www.printables.com/model/1209230-ender-5-max-simply-hexed>                                                  |                                                                 |
 | **Default**           | Ender 3 V3 KE      | RevH&nbsp;Standard          | <https://www.printables.com/model/732262-ender-3-v3-ke-beaconcartographer-mount>                                     | Might require shimming depending on the hotend / nozzle you use |
+| **Pellcorp**          | Ender 3 V3 SE      | RevH&nbsp;Standard          | <https://www.printables.com/model/1621139-ender-3-v3-se-cartographer-and-beacon-mounts>                              | Only works with K1 hotend, might require scaling in Z           |
 
 ### Nozzle Offset
 
