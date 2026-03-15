@@ -198,6 +198,14 @@ git config --global http.sslVerify false
 git clone https://github.com/pellcorp/creality.git /usr/data/pellcorp
 ```
 
+!!! note
+
+    If you are trying to do an update or a reinstall, you should update the repo first:
+    
+    ```
+    ~/pellcorp/installer.sh --branch main
+    ```
+
 ### Run the installer
 
 !!! note
