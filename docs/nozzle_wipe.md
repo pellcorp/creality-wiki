@@ -11,7 +11,7 @@ The `_SAF_NOZZLE_WIPE` will be passed the `EXTRUDER_TEMP` parameter from START_P
 
 !!! info
 
-    If you want to do a nozzle wipe for other probes (btteddy, bltouch, microprobe or klicky), you would need to use a different macro name, something like `_SAF_START_PRINT_BEFORE_BED_MESH`,
+    If you want to do a nozzle wipe for other probes (btteddy, bltouch, microprobe or klicky), you would need to use a different hook, perhaps `_SAF_START_PRINT_BEFORE_BED_MESH`,
     See [Custom Hooks](custom_hooks.md) for a complete list of custom hooks.
 
 So for instance you could use the `EXTRUDER_TEMP` in the `_SAF_NOZZLE_WIPE` macro like this:
