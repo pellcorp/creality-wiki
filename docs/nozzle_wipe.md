@@ -4,8 +4,15 @@
 
     It can be dangerous to use a rear mounted nozzle wiper with a rear mounted probe, there is a strong likelihood of destroying the probe or damaging the printer!
 
-Simple AF does not package any predefined nozzle wipers but we do provide a [_SAF_NOZZLE_WIPE](custom_hooks.md) custom hook for that, and
-the `_SAF_NOZZLE_WIPE` will be passed the `EXTRUDER_TEMP` parameter from START_PRINT to give you a bit more flexibility for implementing your nozzle wiper macros.
+Simple AF does not package any predefined nozzle wipers but we do provide a [_SAF_NOZZLE_WIPE](custom_hooks.md) custom hook for that, please be aware that it's only 
+supported for beacon, eddyng, cartotouch and cartographer probes, as these are the only probes that do touch levelling.
+
+The `_SAF_NOZZLE_WIPE` will be passed the `EXTRUDER_TEMP` parameter from START_PRINT to give you a bit more flexibility for implementing your nozzle wiper macros.
+
+!!! info
+
+    If you want to do a nozzle wipe for other probes (btteddy, bltouch, microprobe or klicky), you would need to use a different macro name, something like `_SAF_START_PRINT_BEFORE_BED_MESH`,
+    See [Custom Hooks](custom_hooks.md) for a complete list of custom hooks.
 
 So for instance you could use the `EXTRUDER_TEMP` in the `_SAF_NOZZLE_WIPE` macro like this:
 
