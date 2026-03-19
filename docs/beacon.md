@@ -6,6 +6,13 @@ Come on over to the pellcorp discord server, here is the invite, the `#simple-af
 
 <https://discord.gg/2uGDzyJ3WX>
 
+### Danger of bed damage due to nozzle collision
+
+If your bed is badly trammed, there is a very real risk of nozzle collision with the bed during scanning.   For beacon we scan the bed at a height of 5mm above the bed,
+if your bed has a variance in height of anything close to 5mm, you are going to collide with the bed!
+
+Please refer to [How can I make sure my bed is level / trammed?](faq.md#how-can-i-make-sure-my-bed-is-level--trammed)
+
 ## Thanks
 
 Thanks to <https://raven3dtech.com.au/> and <https://beacon3d.com> for donating Beacon probes to the Simple AF project to add support and continue to support the Beacon.

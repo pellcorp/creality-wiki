@@ -10,6 +10,13 @@ Come on over to the pellcorp discord server, the `#simple-af-btteddy` channel ha
 
 <https://discord.gg/2uGDzyJ3WX>
 
+### Danger of bed damage due to nozzle collision
+
+If your bed is badly trammed, there is a very real risk of nozzle collision with the bed during scanning.   For eddyng we scan the bed at a height of 2mm above the bed,
+if your bed has a variance in height of anything close to 2mm, you are going to collide with the bed!
+
+Please refer to [How can I make sure my bed is level / trammed?](faq.md#how-can-i-make-sure-my-bed-is-level--trammed)
+
 ## eddy-ng project support 
 
 <https://github.com/vvuk/eddy-ng/wiki#questions-discussion-help>
