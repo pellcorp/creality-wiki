@@ -67,7 +67,7 @@ The reason why you cannot choose Z=0 for this scenario is you are telling the pr
 
 If you were to set `SET_KINEMATIC_POSITION Z=100`, but your bed is already at the bottom of the printer there is no way to bring the bed up to meet the nozzle because it will exceed minimum position after moving 105mm.
 
-If you wish to restore access to force move set the `variable_disable_force_move: True` to False in `sensorless.cfg` and save and restart.
+If you wish to restore access to force move set the `variable_disable_force_move: True` to False in `homing.cfg` and save and restart.
 
 !!! note
 

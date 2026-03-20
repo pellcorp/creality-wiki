@@ -5,7 +5,7 @@ The `pellcorp-overrides` directory stores custom cfg and conf files as well as c
 The following core config files can have overrides saved for them: 
 
 - printer.cfg
-- sensorless.cfg
+- homing.cfg
 - cartotouch.cfg
 - cartographer.cfg
 - cartographer.conf
