@@ -217,6 +217,8 @@ Your printer MCU firmware was updated successfully.   If you still see the `MCU 
 
 ### Verify USB Key
 
+[Verify USB for Factory Reset](verify_usb.md)
+
 It is important to make sure you have a way to [emergency factory reset](misc.md#emergency-factory-reset) the printer, if the worst happens.   There is a macro in Simple AF called `CHECK_USB_KEY` that will wait for you to plug a USB thumb drive (aka USB key) in and tell you if it was able to be successfully mounted.
 
 You can find the CHECK_USB_KEY macro in Fluidd or Mainsail, because Fluidd and Mainsail are already installed, you can access Fluidd by opening your browser and connecting
