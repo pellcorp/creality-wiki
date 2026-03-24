@@ -73,6 +73,11 @@ plugins:
       lang: en
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - tags
+#  - enumerate-headings:
+#      toc_depth: 3
+#      increment_across_pages: false
+#      exclude:
+#        - index.md
   - redirects:
       redirect_maps:
         'invalid-cartographer-firmware.md': 'cartographer.md#cartographer-firmware'
@@ -80,6 +85,8 @@ plugins:
 
 extra:
   social:
+    - icon: simple/kofi
+      link: https://ko-fi.com/pellcorp49698
     - icon: simple/github
       link: https://github.com/pellcorp/creality
     - icon: simple/discord

@@ -2,28 +2,6 @@
 
 <https://docs.cartographer3d.com/cartographer-probe/troubleshooting>
 
-## Probe triggered prior to movement
-
-This seems to be reasonably common problem for K1 series users, and a few things have been suggested to try and counteract it, first
-is to downgrade the firmware on the cartographer to `5.0.0 K1`, and you might have noticed that this is the version we recommend for 
-V3 Cartographer users now!  Unfortunately for V4 Cartographer users there is no such option, and we are starting to see this probe 
-triggered prior to movement issue for them too.
-
-If you are still having the problem on 5.0.0 K1 series or have a V4 cartographer, you could try adding an additional configuration option to `cartographer.cfg` file, specifically `retract_distance: 10.0`:
-
-```
-[cartographer touch]
-max_samples: 20
-retract_distance: 10.0
-```
-
-If all else fails, there is always [Cartotouch](cartotouch.md)
-
-!!! warning
-
-    If you get an error saying that `retract_distance` is not a valid config option, make sure that you have updated the Cartographer
-    plugin to latest via Fluidd or Mainsail software section.
-
 ## You must flash the cartographer with K1 specific firmware!
 
 ![image](assets/images/cartographer_must_flash_k1_firmware.png)
@@ -36,13 +14,9 @@ Cartographer software to abort if the non K1 / Lite specific firmware is not fla
 
 ## mcu 'cartographer': Unknown command: debug_read
 
-If you get the following error, it means that the cartographer is not connected to the printer.   This is either because its physically not connected, the wiring is wrong, the usb subsystem has disconnected the carto during a restart or the serial id is wrong
+If you get the following error, it means that the cartographer is not connected to the printer.   This is either because it's physically not connected, the wiring is wrong, the usb subsystem has disconnected the carto during a restart or the serial id is wrong
 
 ![image](assets/images/cartographer_protocol_error.png)
-
-!!! danger
-
-     If you are on V4 Cartographer Probe `cartographer:PA3` is not the right pin, you must use `cartographer:PA0`!  PA3 on V4 is used for something else, and will cause a potential boot loop of the probe causing the 'Unknown command: debug_read' error
 
 So from ssh run a `lsusb` and make sure you can see:
 
