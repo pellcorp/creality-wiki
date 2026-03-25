@@ -108,9 +108,8 @@ you are making your lidar or direct mainboard connection as you might need it in
 
 !!! warning
 
-    Regardless of the mount, you should verify the btt eddy **coil** is at least 3mm away from the nozzle tip, its better to be further away than closer.
-    This is not the difference of the bottom of the case to the nozzle, the case is about 1.2mm thick, so this means you want the bottom of the case to be at least 2mm offset, 
-    its probably a good idea to look into mounts which do not use a case or a modified case with no bottom.
+    Regardless of the mount, you should verify the bottom of the eddy (**this assumes it is not inside the case**) is between 2.8 and 3mm away from the nozzle tip, so where the
+    nozzle is gently touching the bed, ensure that the bottom of the eddy is between 2.8mm and 3mm from the bed.
     
     You can try this tool <https://www.printables.com/model/1277844-btt-eddy-and-eddy-ng-setup-helpers>
 
