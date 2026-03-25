@@ -1,8 +1,10 @@
 # Moonraker Timelapse
 
-Moonraker timelapse is installed but not enabled by default.  To enable it there are a few steps, 
+Moonraker timelapse is installed but not enabled by default.
 
 ## Installation steps
+
+Follow all steps to enable moonraker timelapse!
 
 ### Step 1 - Add timelapse.cfg to printer.cfg
 
