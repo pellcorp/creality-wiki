@@ -1,12 +1,26 @@
 # Moonraker Timelapse
 
-Moonraker timelapse is installed but not enabled by default.  To enable it there are a few steps, you need to add the following include to printer.cfg:
+Moonraker timelapse is installed but not enabled by default.  To enable it there are a few steps, 
+
+## Installation steps
+
+### Step 1 - Add timelapse.cfg to printer.cfg
+
+Add the following include to printer.cfg:
 
 ```
 [include timelapse.cfg]
 ```
 
-And uncomment the `[include timelapse.conf]` in moonraker.conf, you will need to restart moonraker **and** klipper after this, you can do that via the fluidd or mainsail services section.
+### Step 2 - enable timelapse.conf in moonraker.conf
+
+Uncomment the `[include timelapse.conf]` in moonraker.conf
+
+### Step 3 - Restart moonraker **and** klipper
+
+You can do that via the fluidd or mainsail services section.
+
+## Troubleshooting
 
 If you see these messages:
 
