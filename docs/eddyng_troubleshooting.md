@@ -12,7 +12,7 @@ manually modify the configuration afterwards:
 PROBE_EDDY_NG_CALIBRATE DRIVE_CURRENT=17
 ```
 
-You can then modify the `#*# tap_drive_current = 16` to be `#*# tap_drive_current = 17` and save and restart again
+You can then modify the `#*# tap_drive_current = 16` to be `#*# tap_drive_current = 17` in the `printer.cfg` file and save and restart again!
 
 I am hopeful further work on this from the eddyng project might make this manual adjustment unnecessary!
 
