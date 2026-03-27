@@ -242,7 +242,7 @@ Your printer MCU firmware was updated successfully.   If you still see the `MCU 
 2. Make sure nozzle is centred on bed
 3. Run `_SET_KIN_MAX_Z` and then **use normal controls to move** the toolhead so that the bottom of the eddy is approximately 20mm from the bed, please try and be as accurate as possible with this distance, it's **better to be slightly closer** to the bed than further away.
 4. Run `BTTEDDY_CALIBRATE_DRIVE_CURRENT`
-5. Run SAVE_CONFIG
+   <br />Upon completion *`SAVE_CONFIG`*
 
 --!steps--
 
@@ -260,7 +260,7 @@ Your printer MCU firmware was updated successfully.   If you still see the `MCU 
 2. Make sure nozzle is centred on bed
 3. Run `BTTEDDY_CURRENT_CALIBRATE` Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
 4. After clicking **Accept**, the printer is going to move the bed up and down quite a few times as part of the calibration, do **not** interrupt it
-5. Upon completion *`SAVE_CONFIG`*
+   <br />Upon completion *`SAVE_CONFIG`*
 
 --!steps--
 
