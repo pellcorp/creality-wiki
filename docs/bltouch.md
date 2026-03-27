@@ -207,10 +207,14 @@ For the bltouch/3dtouch/crtouch it is **extremely** important to do the PROBE_CA
 
 ![image](assets/images/probe_calibrate.png)
 
+--steps--
+
 1. Home All (`G28`)
 2. Run `PROBE_CALIBRATE`
 3. Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
    <br />Upon completion *`SAVE_CONFIG`*
+
+--!steps--
 
 !!! note
 
@@ -252,9 +256,13 @@ You can use the `SHAPER_CALIBRATE` macro to run input shaping, just be sure to `
 Next it is highly recommended to perform axis twist compensation calibration before doing anything else, this will affect the quality of
 your bed mesh, so best to do it before.
 
+--steps--
+
 1. Home All (`G28`)
 2. Run `AXIS_TWIST_COMPENSATION_CALIBRATE`  The calibration wizard will prompt you to measure the probe Z offset at a few points along the bed
    <br />Upon completion *`SAVE_CONFIG`*
+
+--!steps--
 
 **Source:** <https://www.klipper3d.org/Axis_Twist_Compensation.html>
 

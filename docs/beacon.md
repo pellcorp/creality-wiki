@@ -236,12 +236,16 @@ Your printer MCU firmware was updated successfully.   If you still see the `MCU 
 
     The beacon team recommends heat soaking the printer a bit before doing calibration
 
+--steps--
+
 1. Run `_SET_KIN_MAX_Z` and move toolhead so that the **nozzle  of the beacon is only a few mm above the bed surface**
 2. Run `_CALIBRATE_HEAT_SOAK`, which will heat the bed to 60c, nozzle to 150c and **wait 8.5 minutes**!
 3. Run the `STOP_CAMERA` macro to stop the camera
 4. Run the `TURN_OFF_HEATERS` macro to stop heaters before starting calibration
 5. Run `BEACON_CALIBRATE` Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
-<br />Upon completion *`SAVE_CONFIG`*
+   <br />Upon completion *`SAVE_CONFIG`*
+
+--!steps--
 
 !!! warning
 
@@ -296,9 +300,13 @@ If you are using **a rear mount** it is highly recommended to perform axis twist
 
     There is no need to run axis twist compensation if you have mounted the eddy with a side mount that has a 0 y offset!
 
+--steps--
+
 1. Home All (`G28`)
 2. Run `AXIS_TWIST_COMPENSATION_CALIBRATE` The calibration wizard will prompt you to measure the probe Z offset at a few points along the bed
    <br />Upon completion *`SAVE_CONFIG`*
+
+--!steps--
 
 **Source:** <https://www.klipper3d.org/Axis_Twist_Compensation.html>
 

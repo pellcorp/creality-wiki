@@ -74,9 +74,13 @@ Make sure you limit it to just the new repository you created:
 
 You will need 3 pieces of information for this process to succeed:
 
+--steps--
+
 1. Your github username
 2. Your email address
 3. The github token you just created
+
+--!steps--
 
 Ssh into your k1 and run the following:
 

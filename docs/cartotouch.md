@@ -381,9 +381,13 @@ You can use the `SHAPER_CALIBRATE` macro to run input shaping, just be sure to `
 Next it is highly recommended to perform axis twist compensation calibration **if you are using a rear mount** before doing anything else, this will affect the quality of
 your bed mesh, so best to do it before.
 
+--steps--
+
 1. Home All (`G28`)
 2. Run `AXIS_TWIST_COMPENSATION_CALIBRATE` The calibration wizard will prompt you to measure the probe Z offset at a few points along the bed
    <br />Upon completion *`SAVE_CONFIG`*
+
+--!steps--
 
 !!! warning
 

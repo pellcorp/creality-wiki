@@ -288,12 +288,16 @@ Plus because axis twist and bed mesh were generated with a previous model you **
 
 ### Scan calibration
 
+--steps--
+
 1. Run the `STOP_CAMERA` macro to stop the camera
 2. Home X Y (`G28 X Y`)
 3. Heat Nozzle to 150c (`M109 S150`) so that any filament can be removed from nozzle
 4. Run `CARTOGRAPHER_SCAN_CALIBRATE`
    Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
    <br />Upon completion *`SAVE_CONFIG`*
+
+--!steps--
 
 !!! note
 
@@ -317,11 +321,15 @@ After the save config you have to do the touch calibration.
 
     For this next step, it is really important to be near your printer for this step, because if there is any issue with the printer configuration or your carto probe, its possible the nozzle will dig itself into the bed, so be hovering over that e-stop button!
 
+--steps--
+
 1. Home All (`G28`)
 2. Run the `STOP_CAMERA` macro to stop the camera
 3. Heat Nozzle to 150c (`M109 S150`) so that any filament can be removed from nozzle
 4. Run `CARTOGRAPHER_TOUCH_CALIBRATE`
    <br />Upon completion *`SAVE_CONFIG`*
+
+--!steps--
 
 !!! warning
 
@@ -370,10 +378,14 @@ You can use the `SHAPER_CALIBRATE` macro to run input shaping, just be sure to `
 Next it is highly recommended to perform axis twist compensation calibration **if you are using a rear mount** before doing anything else, this will affect the quality of
 your bed mesh, so best to do it before.
 
+--steps--
+
 1. Home All (`G28`)
 2. Heat Nozzle to 150c (`M109 S150`) so that any filament can be removed from nozzle
 3. Run `CARTOGRAPHER_AXIS_TWIST_COMPENSATION`
    <br />Upon completion *`SAVE_CONFIG`*
+
+--!steps--
 
 **Source:** <https://docs.cartographer3d.com/cartographer-probe/features/axis-twist-compensation>
 

@@ -225,10 +225,14 @@ Your printer MCU firmware was updated successfully.   If you still see the `MCU 
 
 ### Probe Eddy NG Setup
 
+--steps--
+
 1. Run `_SET_KIN_MAX_Z` and then **use normal controls to move** the toolhead so that the nozzle is only a few mm above the bed surface
 2. Run the `STOP_CAMERA` macro to stop the camera
 3. Run `PROBE_EDDY_NG_SETUP`, Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
 <br />Upon completion *`SAVE_CONFIG`*
+
+--!steps--
 
 !!! warning
 
@@ -287,9 +291,13 @@ If you are using **a rear mount** it is highly recommended to perform axis twist
 
     There is no need to run axis twist compensation if you have mounted the eddy with a side mount that has a 0 y offset!
 
+--steps--
+
 1. Home All (`G28`)
 2. Run `AXIS_TWIST_COMPENSATION_CALIBRATE` The calibration wizard will prompt you to measure the probe Z offset at a few points along the bed
    <br />Upon completion *`SAVE_CONFIG`*
+
+--!steps--
 
 **Source:** <https://www.klipper3d.org/Axis_Twist_Compensation.html>
 
