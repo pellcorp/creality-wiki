@@ -183,6 +183,7 @@ nav:
       - faq.md
       - switching_probes.md
       - m600_support.md
+      - filament_runout.md
       - switch_to_stock.md
       - support.md
       - emergency_factory_reset.md
