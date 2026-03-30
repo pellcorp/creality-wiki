@@ -33,15 +33,14 @@ You can very easily verify that the filament runout sensor is working correctly 
 where no filament is inserted it should report:
 
 ```
-// Filament Sensor filament_sensor: filament not detected
+// Filament Sensor filament_sensor: filament detected
 ```
 
 Where filament is not detected it should report:
 
 ```
-// Filament Sensor filament_sensor: filament detected
+// Filament Sensor filament_sensor: filament not detected
 ```
-
 
 ![image](assets/images/query_filament_sensor.png)
 
