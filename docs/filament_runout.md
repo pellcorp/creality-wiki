@@ -97,3 +97,23 @@ Save and Restart
 Then when you try to start a print without filament you will get a message like:
 
 ![image](assets/images/print_aborted_no_filament.png)
+
+## Troubleshooting
+
+### Why is my print not pausing on filament runout?
+
+If you have confirmed [Testing filamment runout works](#testing-filament-runout-works) outside of printing, then it's time
+to see if pause failed for other reasons.  Quite often its due to misconfiguration and you will usually get an error in
+the gcode console of either Fluidd or Mainsail.
+
+Common reasons might include:
+
+- An error in a `_SAF_ON_FILAMENT_RUNOUT` custom hook
+- An out of bounds error in the park coordinates (variable_park_at_cancel_x and variable_park_at_cancel_y)
+
+So the first place to look is always going to be the gcode console
+
+### Why is my print not aborting when filament is missing?
+
+This is a separate issue, by default prints will not be aborted if filament is missing, but you can enable this, please
+see [above](#how-can-i-prevent-a-print-starting-or-resuming-if-there-is-no-filament-present)
