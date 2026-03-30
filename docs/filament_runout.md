@@ -2,6 +2,12 @@
 
 Simple AF comes with filament runout detection out of the box for all printers which are fitted with a filament runout sensor
 
+!!! note
+
+    A filament runout event will **not** be generated during a print if you start off the print without filament, its the state
+    change from filament present, to filament not present that triggers the runout event, see [below](#how-can-i-prevent-a-print-starting-or-resuming-if-there-is-no-filament-present)
+    for a way to stop a print even starting if there is no filament present.
+
 ## Configuration
 
 It is vital you define a `filament_switch_sensor filament_sensor` with the following configuration:
