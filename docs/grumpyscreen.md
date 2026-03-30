@@ -61,3 +61,16 @@ We focus on polishing a subset of features and we added some additional ones:
 - Setting chamber temp targets
 
 The Belt Shaper calibration macros from GuppyScreen remain and can be executed from fluidd or mainsail
+
+## Troubleshooting
+
+### Waiting for Klipper to start
+
+If this message does not disappear, you should check for more information via Fluidd / Mainsail or check the klippy.log
+
+### Waiting for printer to initialise 
+
+This message appears for older versions of GrumpyScreen, since we have replaced with a more accurate `Waiting for Klipper to start ...`,
+but it means the same thing, GrumpyScreen is waiting for a signal that Klipper has started.
+
+If this message does not disappear, you should check for more information via Fluidd / Mainsail or check the klippy.log
