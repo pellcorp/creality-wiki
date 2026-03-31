@@ -6,11 +6,11 @@ Come on over to the pellcorp discord server, the `#simple-af-bltouch` channel ha
 
 <https://discord.gg/2uGDzyJ3WX>
 
-## What about CrTouch
+## What about CrTouch?
 
 Yep you can use a CrTouch as an alternative to a BlTouch, however I have not personally used either of these with a K1 and so I can't currently provide detailed guidance on what config is required.
 
-## What about 3d Touch
+## What about 3d Touch?
 
 Its possible a 3d touch will work too, but depending on the capabilities of the 3d touch clone, you might need to make some post installation changes.   I also think 3dTouch might require slightly different wiring.
 
