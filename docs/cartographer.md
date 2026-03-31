@@ -17,7 +17,7 @@ Please refer to [How can I make sure my bed is level / trammed?](faq.md#how-can-
 
 See [Cartotouch](cartotouch.md)
 
-## Upgrading from Cartotouch?
+### Upgrading from Cartotouch?
 
 Its really easy to update, you can simply do a probe switch like this:
 
