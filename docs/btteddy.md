@@ -1,17 +1,17 @@
 # BTT Eddy
 
+!!! danger
+
+    If your bed is badly trammed, there is a very real risk of nozzle collision with the bed during scanning.   For cartographer we scan the bed at a height of 3mm above the bed,
+    if your bed has a variance anything close to 3mm, you are going to collide with the bed!
+
+    <br />Please refer to [How can I make sure my bed is level / trammed?](faq.md#how-can-i-make-sure-my-bed-is-level-trammed)
+
 ## Where can I get help?
 
 Come on over to the pellcorp discord server, the `#simple-af-btteddy` channel has been setup for anyone wanting support for btt eddy.
 
 <https://discord.gg/2uGDzyJ3WX>
-
-## Danger of bed damage due to nozzle collision
-
-If your bed is badly trammed, there is a very real risk of nozzle collision with the bed during scanning.   For btteddy we scan the bed at a height of 2mm above the bed,
-if your bed has a variance anything close to 2mm, you are going to collide with the bed!
-
-Please refer to [How can I make sure my bed is level / trammed?](faq.md#how-can-i-make-sure-my-bed-is-level-trammed)
 
 ## What about CFS support?
 
