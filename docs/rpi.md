@@ -1,13 +1,15 @@
+---
+toc_depth: 3
+---
+
 # SimpleAF for RPi
 
 Simple AF for RPI can be installed on pretty much any **debian based** (rasbian, dietpi, opi debian server, etc) Rpi like SBC, which also includes CM like the CM4, CM5 and CB range from BTT as well as your standard Raspberry Pis,
 Orange Pis, etc.
 
-## Installation
-
 Refer to [Supported OS](rpi_supported_os.md)
 
-### Cloning repo
+## Cloning repo
 
 The following commands should be executed to get the repo locally:
 
@@ -25,7 +27,7 @@ git clone https://github.com/pellcorp/creality.git ~/pellcorp
     ~/pellcorp/installer.sh --branch main
     ```
 
-### Installing
+## Installing
 
 The installation command is very similar to K1 series:
 
@@ -37,7 +39,7 @@ The installation command is very similar to K1 series:
 - Where `--mount <TheMount>` is only required for some predefined printer definitions
 - Where `<TheProbe>` is one of [cartographer](cartographer.md), [cartotouch](cartotouch.md), [beacon](beacon.md), [bltouch](bltouch.md), [microprobe](microprobe.md), [klicky](klicky.md), [btteddy](btteddy.md), [eddyng](eddyng.md)
 
-#### Predefined Printer
+### Predefined Printer
 
 You need to figure out what kind of mainboard you have because that will dictate whether you can  use a predefined printer cfg file 
 or you need to provide your own.  The easiest way to find out what predefined printers are available is to run the command:
@@ -64,7 +66,7 @@ You can specify a http:// or https:// url for the --printer parameter or you can
     For the `--printer` argument specify the url of the file, so for example `--printer https://github.com/pellcorp/klipper-rpi/blob/master/config/printer-creality-ender3-s1plus-2022.cfg`
     or reference a local file if you did download it locally, so for example `--printer ~/printer-creality-ender3-s1plus-2022.cfg`
 
-#### Choose a Probe
+## Choose a Probe
 
 You need to choose a probe one of:
 
@@ -77,10 +79,9 @@ You need to choose a probe one of:
 - [btteddy](btteddy.md)
 - [eddyng](eddyng.md)
 
-#### Choose a mount
+## Choose a mount
 
 If you have chosen a predefined printer, it **might** require you to choose a mount, you can run the installer
 with the --mount option without an argument to get a list of possible mounts:
 
 ![image](assets/images/rpi_choose_mount.png)
-

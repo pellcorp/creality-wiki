@@ -1,3 +1,6 @@
+hooks:
+  - custom/overrides/hooks/toc_depth.py
+
 # Project information
 site_name: SimpleAF Docs
 site_url: https://pellcorp.github.io/creality-wiki
@@ -106,7 +109,7 @@ markdown_extensions:
   - toc:
       title: On this page
       permalink: true
-      toc_depth: 2
+      toc_depth: 3
   - tables
   - admonition
   - footnotes

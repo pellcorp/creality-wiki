@@ -96,7 +96,7 @@ This mount should work for K1/K1C/K1SE and K1M, but only K1 and K1M variants hav
 
 !!! warning
 
-    The installation section does not apply to Simple AF for RPi, See [Simple AF for RPi](rpi.md#installation)
+    The installation section does not apply to Simple AF for RPi, See [Simple AF for RPi](rpi.md)
 
 The installation can only be performed on a printer which has been rooted and ssh granted
 
