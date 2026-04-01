@@ -1,5 +1,8 @@
 # Nozzle Wipe Support
 
+The following nozzle wipe solutions are third party and there **is absolutely no support available** for them via the Simple AF discord,
+these are just the wipes I am aware of, myself and the support team don't know much about them.
+
 !!! danger
 
     It can be dangerous to use a rear mounted nozzle wiper with a rear mounted probe, there is a strong likelihood of destroying the probe or damaging the printer!
