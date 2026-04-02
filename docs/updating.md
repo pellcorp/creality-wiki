@@ -56,7 +56,7 @@ You can update these components via Fluidd or Mainsail, in fluidd make sure you 
 
 !!! note
 
-    It is normal for moonraker and klipper to warn about `Unofficial remote url`, this is because Simple AF has forked these repositories.
+    It is normal for klipper to warn about `Unofficial remote url`, this is because Simple AF has forked the klipper repo.
 
 ![image](assets/images/update_software.png)
 
