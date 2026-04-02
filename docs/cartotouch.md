@@ -1,11 +1,8 @@
 # Cartotouch
 
-!!! danger
+## Manual Bed Tramming
 
-    If your bed is badly trammed, there is a very real risk of nozzle collision with the bed during scanning.   For cartographer we scan the bed at a height of 3mm above the bed,
-    if your bed has a variance anything close to 5mm, you are going to collide with the bed!
-
-    <br />Please refer to [How can I make sure my bed is level / trammed?](faq.md#how-can-i-make-sure-my-bed-is-level-trammed)
+Before running your first bed mesh, please check [Manual Bed Tramming](manual_bed_tramming.md)
 
 ## Where can I get help?
 
