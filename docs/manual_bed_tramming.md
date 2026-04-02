@@ -4,7 +4,7 @@ Before running an **Automatic Bed Mesh**—especially when using high-speed eddy
 
 If the bed is severely tilted, the sensor or nozzle may collide with the build plate during the scanning process, potentially damaging your hardware.
 
-See [How can I make sure my bed is level / trammed?](faq.md#how-can-i-make-sure-my-bed-is-level-trammed)
+For more information, refer to [How can I make sure my bed is level / trammed?](faq.md#how-can-i-make-sure-my-bed-is-level-trammed)
 
 ## The Manual Tilt Test
 
