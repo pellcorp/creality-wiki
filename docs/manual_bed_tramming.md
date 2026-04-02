@@ -31,13 +31,9 @@ This test confirms that your bed is level enough to safely allow the printer to 
 
 Eddy current sensors are **fixed-mount**. Unlike a BL-Touch, they do not retract. If your bed is tilted by several millimeters:
 
---steps--
- 
-1. The "low" side of the bed might calibrate correctly.
-2. As the printer moves to the "high" side, the slope of the bed may rise faster than the printer expects.
-3. The sensor housing or the nozzle may **crash** into the bed at high speed.
-
---!steps--
+- The "low" side of the bed might calibrate correctly.
+- As the printer moves to the "high" side, the slope of the bed may rise faster than the printer expects.
+- The sensor housing or the nozzle may **crash** into the bed at high speed.
 
 !!! note 
 
