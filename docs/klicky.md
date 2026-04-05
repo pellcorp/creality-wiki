@@ -194,7 +194,7 @@ on the bottom of the klicky and make sure homing stops, if it does not stop you 
 
 ### Timer too close and microsteps
 
-For microprobe, etc you cannot use more than `microsteps: 64`.
+For klicky, etc you cannot use more than `microsteps: 64`.
 
 ## Calibration
 

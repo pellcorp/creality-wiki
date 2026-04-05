@@ -188,26 +188,13 @@ Your printer MCU firmware was updated successfully.   If you still see the `MCU 
 
 ### Verify USB Key
 
-It is important to make sure you have a way to [emergency factory reset](misc.md#emergency-factory-reset) the printer, if the worst happens.   There is a macro in Simple AF called `CHECK_USB_KEY` that will wait for you to plug a USB thumb drive (aka USB key) in and tell you if it was able to be successfully mounted.
+[Verify USB for Factory Reset](verify_usb.md)
 
-You can find the CHECK_USB_KEY macro in Fluidd or Mainsail, because Fluidd and Mainsail are already installed, you can access Fluidd by opening your browser and connecting
-using http://X.X.X.X, where X.X.X.X is your ip address that you used to login via ssh to your printer, you can also access Fluidd via http://X.X.X.X:4408 and Mainsail via http://X.X.X.X:4409!
+### Timer too close and microsteps
 
-![image](assets/images/check_usb_key_macro.png)
+For microprobe, etc you cannot use more than `microsteps: 64`.
 
-After running the macro you should see output like the following:
-
-![image](assets/images/check_usb_key.png)
-
-- If you get the message: `INFO - USB Key was recognised and mounted correctly (/tmp/udisk/sda1)`, your USB thumb drive (aka USB key) is perfect to use for a factory reset.
-- If you get no message at all before the script ends (after 60 seconds), your USB thumb drive (aka USB key) is defective.   You can check the `messages` file in the logs section of your UI to get more details about why the usb key could not be mounted!
-
-!!! tip
-
-    You should verify your USB thumb drive (aka USB key) often just to make sure you have something if you need to unbrick your printer, simply type `CHECK_USB_KEY` or hit the button in Fluidd / Mainsail
-    The USB key should be FAT32 formatted and be no larger than 32GB!
-
-### Calibration
+## Calibration
 
 !!! warning
 
@@ -216,7 +203,7 @@ After running the macro you should see output like the following:
     - [Probe Calibrate](#probe-calibrate)
     - [PID Tuning and Input Shaping](#pid-tuning-and-input-shaping)
 
-#### Probe Calibrate
+### Probe Calibrate
 
 For the microprobe it is **extremely** important to do the PROBE_CALIBRATE step to configure your z-offset, regardless of what model you have used to mount the probe!
 
@@ -235,7 +222,7 @@ For the microprobe it is **extremely** important to do the PROBE_CALIBRATE step 
 
     The default z-offset for Microprobe is 0, so your prints won't stick without doing this step.
 
-#### Pid Tuning and Input Shaping
+### Pid Tuning and Input Shaping
 
 At least PID tuning (bed and extruder) and input shaping is required for acceptable printing.  If you try and print after running the installer.sh and a power cycle but before any calibration you will most likely have horrendous quality, the worst you have ever seen on the k1.   After PID tuning and input shaping you should see the same kind of quality as you get with stock k1 + input shaper fix.
 
