@@ -32,7 +32,7 @@ Then run the helperscript grumpyscreen installer:
 
 !!! note
 
-    GrumpyScreen requires two macros _GUPPYSCREEN_EXTRUDE and _GUPPYSCREEN_EXTRUDE.  As part of the installation, a `grumpy-macros.cfg` with these macros
+    GrumpyScreen requires two macros _GUPPYSCREEN_EXTRUDE and _GUPPYSCREEN_RETRACT.  As part of the installation, a `grumpy-macros.cfg` with these macros
     is copied into `/usr/data/printer_data/config/GuppyScreen/`, so the macros should have been imported by the existing `[include GuppyScreen/*.cfg]` 
     include added by Helper Script.
 
