@@ -101,9 +101,9 @@ you are making your lidar or direct mainboard connection as you might need it in
 
 !!! warning
 
-    Regardless of the mount, you should verify the bottom of the eddy (**this assumes it is not inside the case**) is between 2.8 and 3mm away from the nozzle tip, so where the
-    nozzle is gently touching the bed, ensure that the bottom of the eddy is between 2.8mm and 3mm from the bed.
-    
+    The best success seems to be with the coil of a BTT Eddy mounted at about 2.95mm above the tip of the nozzle. This refers to the bottom of the coil PCB, not the bottom of the case.
+
+    For more specific information about this, see <https://github.com/vvuk/eddy-ng/wiki/BTT-Eddy#probe-installation>
     You can try this tool <https://www.printables.com/model/1277844-btt-eddy-and-eddy-ng-setup-helpers>
 
 ## BTT Eddy Firmware
