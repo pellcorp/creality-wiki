@@ -5,11 +5,14 @@
 You might need to adjust your `reg_drive_current`, for more details:
 <https://github.com/bigtreetech/Eddy?tab=readme-ov-file#sometimes-i-get-error-during-homing-probe-eddy-current-sensor-error>
 
-## MCU Protocol Error - mcu 'eddy' Unknown command: debug_read
+## Eddy is not connected, aborting homing Z
 
-If you get the following error, it means that the eddy is not connected to the printer.   This is either because its physically not connected, the wiring is wrong, the usb subsystem has disconnected the eddy during a restart or the serial id is wrong
+If you see this error when trying to home your printer, it is a clear indication that the eddy was either not connected
+when klipper started, or was disconnected sometime later.
 
-![image](assets/images/btt_eddy_protocol_error.png)
+You should look for a `mcu 'eddy' disconnected` error in your klippy.log or gcode console, if the eddy was momentarily
+disconnected (so if you run `lsusb` on the printer the eddy shows up), you can simply restart klipper from the services
+menu in Fluidd or Mainsail, if the eddy completely disappeared you will need to power cycle the printer!
 
 So from ssh run a `lsusb` and make sure you can see:
 
@@ -41,11 +44,3 @@ You can run the following command to fix your serial if you forgot to plug your 
         ```
         /usr/data/pellcorp/k1/installer.sh --fix-serial
         ```
-
-
-## Eddy is not connected, aborting homing Z
-
-If you see this error when trying to home your printer, it is a clear indication that the eddy was disconnected and
-you should look for a `mcu 'eddy' disconnected` error in your klippy.log or gcode console, if the eddy was momentarily
-disconnected (so if you run `lsusb` on the printer the eddy shows up), you can simply restart klipper from the services
-menu in Fluidd or Mainsail, if the eddy completely disappeared you will need to power cycle the printer!

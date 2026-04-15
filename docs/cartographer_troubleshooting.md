@@ -12,33 +12,14 @@ Cartographer software to abort if the non K1 / Lite specific firmware is not fla
 
 [cartographer firmware](cartographer.md#cartographer-firmware)
 
-## mcu 'cartographer': Unknown command: debug_read
+## Internal error during connect: Mcu not initialized
 
-If you get the following error, it means that the cartographer is not connected to the printer.   This is either because it's physically not connected, the wiring is wrong, the usb subsystem has disconnected the carto during a restart or the serial id is wrong
+If you get the following error, it means that the cartographer is not connected to the printer.
 
-![image](assets/images/cartographer_protocol_error.png)
+Note this error will hopefully disappear once cartographer-plugin 1.5.2 is released.
 
-So from ssh run a `lsusb` and make sure you can see:
+Refer to [Manual Cartographer Serial Device configuration](#manual-cartographer-serial-device-configuration) below.
 
-![image](assets/images/carto_lsusb.png)
-
-If you cannot see it in `lsusb`, then it very likely means either the carto is wired incorrectly, or if was working, it just means that an attempt to restart the carto failed because the K1 refused to recognise it, there is no recourse except to restart the host via Fluidd / Mainsail (or power cycle the printer)
-
-If you can see the carto in lsusb, then you should try to update the serial refer to [Manual Cartographer Serial Device configuration](#manual-cartographer-serial-device-configuration)
-
-## Error during probe mcu identification, check connection
-
-If you get the following error, it means that the cartographer is not connected to the printer.   This is either because its physically not connected, the wiring is wrong, the usb subsystem has disconnected the carto during a restart or the serial id is wrong
-
-![image](assets/images/carto_check_connection.png)
-
-So from ssh run a `lsusb` and make sure you can see:
-
-![image](assets/images/carto_lsusb.png)
-
-If you cannot see it in `lsusb`, then it very likely means either the carto is wired incorrectly, or if was working, it just means that an attempt to restart the carto failed because the K1 refused to recognise it, there is no recourse except to restart the host via Fluidd / Mainsail (or power cycle the printer)
-
-If you can see the carto in lsusb, then you should try to update the serial refer to [Manual Cartographer Serial Device configuration](#manual-cartographer-serial-device-configuration)
 
 ### Manual Cartographer Serial Device configuration
 
@@ -63,10 +44,3 @@ You can run the following command to fix your serial if you forgot to plug your 
         /usr/data/pellcorp/k1/installer.sh --fix-serial
         ```
 
-
-## Cartographer is not connected, aborting homing Z
-
-If you see this error when trying to home your printer, it is a clear indication that the cartographer was disconnected and
-you should look for a `mcu 'cartographer' disconnected` error in your klippy.log or gcode console, if the cartographer was momentarily
-disconnected (so if you run `lsusb` on the printer the cartographer shows up), you can simply restart klipper from the services
-menu in Fluidd or Mainsail, if the cartographer completely disappeared you will need to power cycle the printer!

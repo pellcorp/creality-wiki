@@ -18,11 +18,14 @@ You can then modify the `#*# tap_drive_current = 16` to be `#*# tap_drive_curren
 
 I am hopeful further work on this from the eddyng project might make this manual adjustment unnecessary!
 
-## MCU Protocol Error - mcu 'eddy' Unknown command: debug_read
+## Eddy is not connected, aborting homing Z
 
-If you get the following error, it means that the eddy is not connected to the printer.   This is either because its physically not connected, the wiring is wrong, the usb subsystem has disconnected the eddy during a restart or the serial id is wrong
+If you see this error when trying to home your printer, it is a clear indication that the eddy was either not connected
+when klipper started, or was disconnected sometime later.
 
-![image](assets/images/btt_eddy_protocol_error.png)
+You should look for a `mcu 'eddy' disconnected` error in your klippy.log or gcode console, if the eddy was momentarily
+disconnected (so if you run `lsusb` on the printer the eddy shows up), you can simply restart klipper from the services
+menu in Fluidd or Mainsail, if the eddy completely disappeared you will need to power cycle the printer!
 
 So from ssh run a `lsusb` and make sure you can see:
 
@@ -32,12 +35,12 @@ If you cannot see it in `lsusb`, then it very likely means either the eddy is wi
 
 If you can see the eddy in lsusb, then you should try to update the serial (see next)
 
-## Manual EddyNG Serial Device configuration
+## Manual BTT Eddy Serial Device configuration
 
 You can run the following command to fix your serial if you forgot to plug your btt eddy in during the installation or update:
 
 ```
-/usr/data/pellcorp/installer.sh --fix-serial
+~/pellcorp/k1/installer.sh --fix-serial
 ```
 
 !!! note
@@ -54,4 +57,3 @@ You can run the following command to fix your serial if you forgot to plug your 
         ```
         /usr/data/pellcorp/k1/installer.sh --fix-serial
         ```
-
