@@ -18,7 +18,9 @@ Cartographer software to abort if the non K1 / Lite specific firmware is not fla
 
 If you get the following error, it means that the cartographer is not connected to the printer.
 
-Note this error will hopefully disappear once cartographer-plugin 1.5.2 is released.
+!!! note
+
+    This error will hopefully disappear once cartographer-plugin 1.5.2 is released.
 
 Refer to [Manual Cartographer Serial Device configuration](#manual-cartographer-serial-device-configuration) below.
 
