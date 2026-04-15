@@ -14,6 +14,8 @@ Cartographer software to abort if the non K1 / Lite specific firmware is not fla
 
 ## Internal error during connect: Mcu not initialized
 
+![image](assets/images/cartographer_mcu_not_initialised.png)
+
 If you get the following error, it means that the cartographer is not connected to the printer.
 
 Note this error will hopefully disappear once cartographer-plugin 1.5.2 is released.
