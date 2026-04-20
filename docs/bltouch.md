@@ -112,9 +112,10 @@ You need root access, if you are not already root, then follow the excellent [He
 
 ### Factory Reset 
 
-You must do a factory reset **only** if you have installed Helper Script or Fluidd/Mainsail directly from Creality, otherwise
-you can safely proceed directly to an installation.    If you have setup your printer with stock firmware only it can be quite
-handy to skip a factory reset so that you can use [Switch to Stock](misc.md#switch-to-stock)
+A factory reset is **required** if you have installed Guilouz's Helper Script or if you have installed Fluidd or Mainsail
+through any other means, such as from Creality directly.  Otherwise, you can safely proceed directly to installation.
+If your printer is still running stock firmware, it can be quite handy to skip a factory reset so that you
+can use [Switch to Stock](misc.md#switch-to-stock).
 
 Please note that because the Ender 5 Max **and** Ender 3 V3 KE both use the same basic software as the K1 series, the following step
 applies to these printers as well.
