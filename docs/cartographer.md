@@ -143,11 +143,14 @@ you are making your lidar or direct mainboard connection as you might need it in
 
 !!! warning
 
-    It is vital that you verify the coil to nozzle tip distance is within the valid range of 2.6 to 3mm, you can use this simple tool to verify the range:
+    It is vital that you verify that the coil to nozzle tip distance is within the Cartographer's required range of 2.6 to 3mm.  You can use this simple tool to measure the range:
     <https://www.printables.com/model/1325363-cartographer-and-beacon-z-offset-goldilocks-tool>
 
-    Just be sure to use digital calipers to verify the print printed with the correct size before relying on it, if you have trouble with 
-    your z not being always entirely accurate consider printing the model on its side.
+    Be sure to use digital calipers to confirm its dimensions before relying on it.  If you have trouble with
+    your Z not being accurate, consider printing the model on its side.
+
+    Also, note that K1 series hotends and nozzles may vary in length.  If the probe's distance from the nozzle is <2.6mm, you may need to try a different mount, or adjust
+    the dimensions of an existing mount in CAD.
 
 ## Cartographer Firmware
 
