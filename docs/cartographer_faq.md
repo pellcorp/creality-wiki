@@ -4,7 +4,8 @@
 
 !!! note
 
-    These instructions do not apply to Simple AF for RPi, although it is certainly possible to use the Cartographer as ADXL on non creality printers.
+    For Simple AF for RPI series you might need to add a `[resonance_tester]` and `[adxl345]` section to
+    get this working, because many base printers dont have any input shaper defined!
 
 This just needs a few changes in `printer.cfg`
 
