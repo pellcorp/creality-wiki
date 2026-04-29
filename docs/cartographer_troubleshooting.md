@@ -16,7 +16,8 @@ Cartographer software to abort if the non K1 / Lite specific firmware is not fla
 
 ![image](assets/images/cartographer_not_connected.png)
 
-If you get the following error, it means that the cartographer is not connected to the printer
+If you get the following warning, it means what it says, that the cartographer is not connected to the printer, either a configuration
+issue with the `serial:`, or a cabling issue or something.
 
 Refer to [Manual Cartographer Serial Device configuration](#manual-cartographer-serial-device-configuration) below.
 
