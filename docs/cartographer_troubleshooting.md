@@ -12,19 +12,6 @@ Cartographer software to abort if the non K1 / Lite specific firmware is not fla
 
 [cartographer firmware](cartographer.md#cartographer-firmware)
 
-## Internal error during connect: Mcu not initialized
-
-![image](assets/images/cartographer_mcu_not_initialised.png)
-
-If you get the following error, it means that the cartographer is not connected to the printer.
-
-!!! note
-
-    This error will hopefully disappear once cartographer-plugin 1.5.2 is released.
-
-Refer to [Manual Cartographer Serial Device configuration](#manual-cartographer-serial-device-configuration) below.
-
-
 ### Manual Cartographer Serial Device configuration
 
 You can run the following command to fix your serial if you forgot to plug your cartographer in during the installation or update:
