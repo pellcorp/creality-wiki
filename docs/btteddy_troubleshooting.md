@@ -20,7 +20,7 @@ So from ssh run a `lsusb` and make sure you can see:
 
 If you cannot see it in `lsusb`, then it very likely means either the eddy is wired incorrectly, or if was working, it just means that an attempt to restart the eddy failed because the K1 refused to recognise it, there is no recourse except to restart the host via Fluidd / Mainsail (or power cycle the printer)
 
-If you can see the eddy in lsusb, then you should try to update the serial (see next)
+If you can see the eddy in lsusb and restarting klipper did not help, then you should try to update the serial (see next)
 
 ## Manual BTT Eddy Serial Device configuration
 
