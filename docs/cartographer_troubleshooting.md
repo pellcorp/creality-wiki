@@ -21,7 +21,6 @@ issue with the `serial:`, or a cabling issue or something.
 
 Refer to [Manual Cartographer Serial Device configuration](#manual-cartographer-serial-device-configuration) below.
 
-
 ### Manual Cartographer Serial Device configuration
 
 You can run the following command to fix your serial if you forgot to plug your cartographer in during the installation or update:

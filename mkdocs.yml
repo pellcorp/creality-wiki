@@ -182,7 +182,7 @@ nav:
       - updating.md
       - config_overrides.md
       - backups.md
-  - Extras:
+  - Other:
       - faq.md
       - switching_probes.md
       - m600_support.md
