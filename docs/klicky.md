@@ -26,7 +26,7 @@ This probe is currently not supported on Ender 5 Max
 
 This probe is currently not supported on Ender 3 V3 KE
 
-### Simple AF for RPi
+### RPi or SBC
 
 See [Simple AF for RPi](rpi.md)
 
