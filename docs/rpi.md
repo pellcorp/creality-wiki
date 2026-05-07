@@ -19,14 +19,6 @@ sudo apt-get install -y git
 git clone https://github.com/pellcorp/creality.git ~/pellcorp
 ```
 
-!!! note
-
-    If you are trying to do an update or a reinstall, you should update the repo first:
-    
-    ```
-    ~/pellcorp/installer.sh --branch main
-    ```
-
 ## Installing
 
 The installation command is very similar to K1 series:
