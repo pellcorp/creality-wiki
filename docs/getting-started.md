@@ -36,10 +36,15 @@ git clone https://github.com/pellcorp/creality.git /usr/data/pellcorp
 /usr/data/pellcorp/installer.sh --install <probe> --mount <Mount>
 ```
 
-## What your slicer settings must look like!
+## What is the slicer start and end gcode?
 
-OrcaSlicer is the only slicer we support, and you must make sure your start and end slicer gcode are correct before trying
+OrcaSlicer is the only slicer we support!  You must verify that your start and end slicer gcode are correct before trying
 to print, please refer to [Slicer Settings](slicer_settings.md)
+
+!!! note
+
+    We use `START_PRINT` and `END_PRINT`, **not** `PRINT_START` and `PRINT_END`, please verify you are using the correct
+    macros in your slicer!
 
 ## Getting help
 
