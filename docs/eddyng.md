@@ -1,18 +1,8 @@
 # Eddy NG
 
-## Manual Bed Tramming
+This page covers EddyNG (BTT Eddy with eddy-ng firmware) setup with SimpleAF. New here? See [Getting Started](getting-started.md).
 
-Before running your first bed mesh, please check [Manual Bed Tramming](manual_bed_tramming.md)
-
-## Where can I get help?
-
-Come on over to the pellcorp discord server, the `#simple-af-btteddy` channel has been setup for anyone wanting support for btt eddy.
-
-<https://discord.gg/2uGDzyJ3WX>
-
-## eddy-ng project support 
-
-<https://github.com/vvuk/eddy-ng/wiki#questions-discussion-help>
+RPi / SBC users: install SimpleAF via [SimpleAF for RPi](rpi.md). The rest of this page &mdash; probe firmware, mount options, and calibration &mdash; applies to your setup too.
 
 ## Firmware requirements
 
@@ -40,40 +30,17 @@ There is experimental untested support for a Default mount on the Ender 3 V3 KE.
 
 See [Simple AF for RPi](rpi.md)
 
-## Slicer Settings
+## BTT Eddy Firmware
 
-!!! danger
+!!! warning
 
-    Creality Print won't be able to see your printer after you have installed Simple AF, the only tested slicer we all use is OrcaSlicer, likely if you want to
-    use Creality Print you will need to print via usb.
+    It is assumed that you have flashed your eddy with the firmware from <https://github.com/pellcorp/klipper/blob/master/fw/K1/btteddy.uf2> **before** starting the installation!!!
+    
+    For K1 Series Simple AF [there is a guide](btteddy_flashing.md)
 
-    Cura Slicer won't work out of the box for configuring START_PRINT variables as below, you need to change the start print EXTRUDER_TEMP and BED_TEMP to pass
-    in the correct values, but since I don't use Cura Slicer I can't advise on that!
-
-There is an assumption that you are using a slicer like OrcaSlicer and Machine G-code like:
-
-![image](assets/images/slicer.png)
-
-**Machine start G-code**
-```
-M140 S0
-M104 S0
-START_PRINT EXTRUDER_TEMP=[nozzle_temperature_initial_layer] BED_TEMP=[bed_temperature_initial_layer_single]
-```
-
-**Machine end G-code**
-```
-END_PRINT
-```
-
-### Custom Bed Mesh Profile
-
-If you want to select a specific predefined bed mesh profile (which disables adaptive mesh generation), you can pass in an additional `START_PRINT` parameter:
-
-You can either hard code it to a particular model, like `BED_MESH_PROFILE=myprofile` or you can specify a profile based on orca slicer variables, such as `BED_MESH_PROFILE="[curr_bed_type] - [filament_type]"`, but you have to make sure you have all the possible profiles
-defined for each of the bed type and filament type combinations.
-
-![image](https://github.com/user-attachments/assets/6bc0f01e-6bd4-4e0b-9031-a2b41c1d6a02)
+    For Simple AF for RPi, you can follow this guide <https://github.com/bigtreetech/Eddy?tab=readme-ov-file#compiling-firmware>.   But make sure
+    you are not trying to use any fork of klipper than pellcorp/klipper-rpi!  You can also skip this compilation step and just copy 
+    the `~/klipper/fw/k1/btteddy.uf2` file to the Eddy after putting it into boot mode.
 
 ## Probe Installation
 
@@ -106,18 +73,6 @@ you are making your lidar or direct mainboard connection as you might need it in
     For more specific information about this, see <https://github.com/vvuk/eddy-ng/wiki/BTT-Eddy#probe-installation>
     You can try this tool <https://www.printables.com/model/1277844-btt-eddy-and-eddy-ng-setup-helpers>
 
-## BTT Eddy Firmware
-
-!!! warning
-
-    It is assumed that you have flashed your eddy with the firmware from <https://github.com/pellcorp/klipper/blob/master/fw/K1/btteddy.uf2> **before** starting the installation!!!
-    
-    For K1 Series Simple AF [there is a guide](btteddy_flashing.md)
-
-    For Simple AF for RPi, you can follow this guide <https://github.com/bigtreetech/Eddy?tab=readme-ov-file#compiling-firmware>.   But make sure
-    you are not trying to use any fork of klipper than pellcorp/klipper-rpi!  You can also skip this compilation step and just copy 
-    the `~/klipper/fw/k1/btteddy.uf2` file to the Eddy after putting it into boot mode.
-
 ## Installation
 
 !!! warning
@@ -128,30 +83,9 @@ The installation can only be performed on a printer which has been rooted and ss
 
 You need root access, if you are not already root, then follow the excellent [Helper Script Enable Root Access](https://guilouz.github.io/Creality-Helper-Script-Wiki/firmwares/install-and-update-rooted-firmware-k1/#enable-root-access) instructions.
 
-### Factory Reset 
+### Factory Reset
 
-A factory reset is **required** if you have installed Guilouz's Helper Script or if you have installed Fluidd or Mainsail
-through any other means, such as from Creality directly.  Otherwise, you can safely proceed directly to installation.
-If your printer is still running stock firmware, it can be quite handy to skip a factory reset so that you
-can use [Switch to Stock](misc.md#switch-to-stock).
-
-```
-wget --no-check-certificate https://raw.githubusercontent.com/pellcorp/creality/main/k1/services/S58factoryreset -O /tmp/S58factoryreset
-chmod +x /tmp/S58factoryreset
-/tmp/S58factoryreset reset
-```
-
-!!! danger
-
-    It is really important you do not close the ssh session until you get this message:
-
-    ![image](assets/images/factory_reset.png)
-
-    It can take up to 5 minutes for a factory restart to finish, it is **vital** you do not power cycle your printer before the stock screen appears. There may be a 3002 error on the screen, this is completely normal.   If you are planning to install Simple AF you can ignore it, if you are trying to go back to stock, power cycle the printer again to clear the error.  
-
-    Failing to follow this advice can lead to your printer getting bricked and requiring much more involved intervention to recover!
-    
-    ![image](assets/images/error3002.png)
+If you've installed Guilouz's Helper Script, or installed Fluidd or Mainsail through any other means (such as from Creality directly), you need to [factory reset](factory_reset.md) before continuing.
 
 ### Clone the Repo
 
@@ -209,6 +143,10 @@ Your printer MCU firmware was updated successfully.   If you still see the `MCU 
 [Verify USB for Factory Reset](verify_usb.md)
 
 ## Calibration
+
+!!! danger
+
+    Before running your first bed mesh, please check [Manual Bed Tramming](manual_bed_tramming.md).
 
 !!! warning
 
@@ -312,3 +250,44 @@ In fluidd the save button after you finish or cancel your print can be a bit har
 Refer to [Orcaslicer Calibration](https://github.com/SoftFever/OrcaSlicer/wiki/Calibration) for more calibrations
 
 Refer to the [Ellis Print Tuning Guide](https://ellis3dp.com/Print-Tuning-Guide/) for more great tuning ideas.
+
+## Slicer Settings
+
+!!! danger
+
+    Creality Print won't be able to see your printer after you have installed Simple AF, the only tested slicer we all use is OrcaSlicer, likely if you want to
+    use Creality Print you will need to print via usb.
+
+    Cura Slicer won't work out of the box for configuring START_PRINT variables as below, you need to change the start print EXTRUDER_TEMP and BED_TEMP to pass
+    in the correct values, but since I don't use Cura Slicer I can't advise on that!
+
+There is an assumption that you are using a slicer like OrcaSlicer and Machine G-code like:
+
+![image](assets/images/slicer.png)
+
+**Machine start G-code**
+```
+M140 S0
+M104 S0
+START_PRINT EXTRUDER_TEMP=[nozzle_temperature_initial_layer] BED_TEMP=[bed_temperature_initial_layer_single]
+```
+
+**Machine end G-code**
+```
+END_PRINT
+```
+
+### Custom Bed Mesh Profile
+
+If you want to select a specific predefined bed mesh profile (which disables adaptive mesh generation), you can pass in an additional `START_PRINT` parameter:
+
+You can either hard code it to a particular model, like `BED_MESH_PROFILE=myprofile` or you can specify a profile based on orca slicer variables, such as `BED_MESH_PROFILE="[curr_bed_type] - [filament_type]"`, but you have to make sure you have all the possible profiles
+defined for each of the bed type and filament type combinations.
+
+![image](https://github.com/user-attachments/assets/6bc0f01e-6bd4-4e0b-9031-a2b41c1d6a02)
+
+## Where can I get help?
+
+For support, join the [SimpleAF Discord](https://discord.gg/M5rmBQqRSG).
+
+For questions about the upstream eddy-ng project itself, see: <https://github.com/vvuk/eddy-ng/wiki#questions-discussion-help>

@@ -1,15 +1,8 @@
 # Klicky
 
-## Where can I get help?
+This page covers Klicky probe setup with SimpleAF. New here? See [Getting Started](getting-started.md).
 
-!!! danger
-
-    Getting the klicky setup correctly takes time and patience to ensure you do not damage your printer or the klicky, also when doing operations
-    like homing and bed meshes and the like you should never leave your printer unattended in case docking or attaching fails for some reason.
-
-Come on over to the pellcorp discord server, here is the invite, the `#simple-af-klicky` channel has been setup for anyone wanting support for klicky.
-
-<https://discord.gg/2uGDzyJ3WX>
+RPi / SBC users: install SimpleAF via [SimpleAF for RPi](rpi.md). The rest of this page &mdash; mount options and calibration &mdash; applies to your setup too.
 
 ## Firmware requirements
 
@@ -36,41 +29,6 @@ This probe is currently not supported on Ender 3 V3 KE
 ### Simple AF for RPi
 
 See [Simple AF for RPi](rpi.md)
-
-## Slicer Settings
-
-!!! danger
-
-    Creality Print won't be able to see your printer after you have installed Simple AF, the only tested slicer we all use is OrcaSlicer, likely if you want to
-    use Creality Print you will need to print via usb.
-
-    Cura Slicer won't work out of the box for configuring START_PRINT variables as below, you need to change the start print EXTRUDER_TEMP and BED_TEMP to pass
-    in the correct values, but since I don't use Cura Slicer I can't advise on that!
-
-There is an assumption that you are using a slicer like OrcaSlicer and Machine G-code like:
-
-![image](assets/images/slicer.png)
-
-**Machine start G-code**
-```
-M140 S0
-M104 S0
-START_PRINT EXTRUDER_TEMP=[nozzle_temperature_initial_layer] BED_TEMP=[bed_temperature_initial_layer_single]
-```
-
-**Machine end G-code**
-```
-END_PRINT
-```
-
-### Custom Bed Mesh Profile
-
-If you want to select a specific predefined bed mesh profile (which disables adaptive mesh generation), you can pass in an additional `START_PRINT` parameter:
-
-You can either hard code it to a particular model, like `BED_MESH_PROFILE=myprofile` or you can specify a profile based on orca slicer variables, such as `BED_MESH_PROFILE="[curr_bed_type] - [filament_type]"`, but you have to make sure you have all the possible profiles
-defined for each of the bed type and filament type combinations.
-
-![image](https://github.com/user-attachments/assets/6bc0f01e-6bd4-4e0b-9031-a2b41c1d6a02)
 
 ## Probe Installation
 
@@ -102,30 +60,9 @@ The installation can only be performed on a printer which has been rooted and ss
 
 You need root access, if you are not already root, then follow the excellent [Helper Script Enable Root Access](https://guilouz.github.io/Creality-Helper-Script-Wiki/firmwares/install-and-update-rooted-firmware-k1/#enable-root-access) instructions.
 
-### Factory Reset 
+### Factory Reset
 
-A factory reset is **required** if you have installed Guilouz's Helper Script or if you have installed Fluidd or Mainsail
-through any other means, such as from Creality directly.  Otherwise, you can safely proceed directly to installation.
-If your printer is still running stock firmware, it can be quite handy to skip a factory reset so that you
-can use [Switch to Stock](misc.md#switch-to-stock).
-
-```
-wget --no-check-certificate https://raw.githubusercontent.com/pellcorp/creality/main/k1/services/S58factoryreset -O /tmp/S58factoryreset
-chmod +x /tmp/S58factoryreset
-/tmp/S58factoryreset reset
-```
-
-!!! danger
-
-    It is really important you do not close the ssh session until you get this message:
-
-    ![image](assets/images/factory_reset.png)
-
-    It can take up to 5 minutes for a factory restart to finish, it is **vital** you do not power cycle your printer before the stock screen appears. There may be a 3002 error on the screen, this is completely normal.   If you are planning to install Simple AF you can ignore it, if you are trying to go back to stock, power cycle the printer again to clear the error.  
-
-    Failing to follow this advice can lead to your printer getting bricked and requiring much more involved intervention to recover!
-    
-    ![image](assets/images/error3002.png)
+If you've installed Guilouz's Helper Script, or installed Fluidd or Mainsail through any other means (such as from Creality directly), you need to [factory reset](factory_reset.md) before continuing.
 
 ### Clone the Repo
 
@@ -287,3 +224,47 @@ In fluidd the save button after you finish or cancel your print can be a bit har
 Refer to [Orcaslicer Calibration](https://github.com/SoftFever/OrcaSlicer/wiki/Calibration) for more calibrations
 
 Refer to the [Ellis Print Tuning Guide](https://ellis3dp.com/Print-Tuning-Guide/) for more great tuning ideas.
+
+## Slicer Settings
+
+!!! danger
+
+    Creality Print won't be able to see your printer after you have installed Simple AF, the only tested slicer we all use is OrcaSlicer, likely if you want to
+    use Creality Print you will need to print via usb.
+
+    Cura Slicer won't work out of the box for configuring START_PRINT variables as below, you need to change the start print EXTRUDER_TEMP and BED_TEMP to pass
+    in the correct values, but since I don't use Cura Slicer I can't advise on that!
+
+There is an assumption that you are using a slicer like OrcaSlicer and Machine G-code like:
+
+![image](assets/images/slicer.png)
+
+**Machine start G-code**
+```
+M140 S0
+M104 S0
+START_PRINT EXTRUDER_TEMP=[nozzle_temperature_initial_layer] BED_TEMP=[bed_temperature_initial_layer_single]
+```
+
+**Machine end G-code**
+```
+END_PRINT
+```
+
+### Custom Bed Mesh Profile
+
+If you want to select a specific predefined bed mesh profile (which disables adaptive mesh generation), you can pass in an additional `START_PRINT` parameter:
+
+You can either hard code it to a particular model, like `BED_MESH_PROFILE=myprofile` or you can specify a profile based on orca slicer variables, such as `BED_MESH_PROFILE="[curr_bed_type] - [filament_type]"`, but you have to make sure you have all the possible profiles
+defined for each of the bed type and filament type combinations.
+
+![image](https://github.com/user-attachments/assets/6bc0f01e-6bd4-4e0b-9031-a2b41c1d6a02)
+
+## Where can I get help?
+
+!!! danger
+
+    Getting the klicky setup correctly takes time and patience to ensure you do not damage your printer or the klicky, also when doing operations
+    like homing and bed meshes and the like you should never leave your printer unattended in case docking or attaching fails for some reason.
+
+For support, join the [SimpleAF Discord](https://discord.gg/M5rmBQqRSG).
