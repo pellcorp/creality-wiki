@@ -1,6 +1,6 @@
 # BTT Eddy
 
-This page covers BTT Eddy probe setup with SimpleAF. New here? See [Getting Started](getting-started.md).
+This page covers installing SimpleAF using a BTT Eddy probe. New here? See [Getting Started](getting-started.md).
 
 RPi / SBC users: install SimpleAF via [SimpleAF for RPi](rpi.md). The rest of this page &mdash; probe firmware, mount options, and calibration &mdash; applies to your setup too.
 

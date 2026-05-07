@@ -1,6 +1,6 @@
 # Klicky
 
-This page covers Klicky probe setup with SimpleAF. New here? See [Getting Started](getting-started.md).
+This page covers installing SimpleAF using Klicky probe. New here? See [Getting Started](getting-started.md).
 
 RPi / SBC users: install SimpleAF via [SimpleAF for RPi](rpi.md). The rest of this page &mdash; mount options and calibration &mdash; applies to your setup too.
 

@@ -4,7 +4,7 @@
 
     Cartotouch is legacy and is kept here for reference only. New installs should use [Cartographer](cartographer.md) instead.
 
-This page covers existing SimpleAF installs running a Cartographer in touch mode.
+This page covers installing SimpleAF using a Cartographer probe. New here? See [Getting Started](getting-started.md).
 
 RPi / SBC users: install SimpleAF via [SimpleAF for RPi](rpi.md). The rest of this page &mdash; probe firmware, mount options, and calibration &mdash; applies to your setup too.
 

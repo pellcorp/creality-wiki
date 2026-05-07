@@ -2,6 +2,8 @@
 
 This page covers EddyNG (BTT Eddy with eddy-ng firmware) setup with SimpleAF. New here? See [Getting Started](getting-started.md).
 
+This page covers installing SimpleAF using BTT Eddy probe with eddy-ng firmware. New here? See [Getting Started](getting-started.md).
+
 RPi / SBC users: install SimpleAF via [SimpleAF for RPi](rpi.md). The rest of this page &mdash; probe firmware, mount options, and calibration &mdash; applies to your setup too.
 
 ## Firmware requirements

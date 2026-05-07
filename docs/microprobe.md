@@ -1,6 +1,6 @@
 # Microprobe
 
-This page covers Microprobe setup with SimpleAF. New here? See [Getting Started](getting-started.md).
+This page covers installing SimpleAF using a BTT Microprobe. New here? See [Getting Started](getting-started.md).
 
 RPi / SBC users: install SimpleAF via [SimpleAF for RPi](rpi.md). The rest of this page &mdash; mount options and calibration &mdash; applies to your setup too.
 
