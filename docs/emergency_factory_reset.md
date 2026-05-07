@@ -20,15 +20,13 @@ Failing to follow this advice can lead to your printer getting bricked and requi
 
 ![image](assets/images/error3002.png)
 
-## Methods
-
-### Via Grumpyscreen
+## Via Grumpyscreen
 
 Click the `Factory Reset` button from the Tools menu of GrumpyScreen.
 
 ![image](assets/images/grumpyscreen_factory_reset.png)
 
-### Via USB
+## Via USB
 
 Create an empty file called `emergency_factory_reset` on a USB key and make sure the USB key is plugged in, then power cycle the printer, this should initiate a factory reset!
 
