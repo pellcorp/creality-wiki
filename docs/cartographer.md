@@ -1,35 +1,12 @@
 # Cartographer 
 
-## Manual Bed Tramming
+This page covers Cartographer probe setup with SimpleAF.
 
-Before running your first bed mesh, please check [Manual Bed Tramming](manual_bed_tramming.md)
+RPi / SBC users: install SimpleAF via [SimpleAF for RPi](rpi.md). The rest of this page &mdash; probe firmware, mount options, and calibration &mdash; applies to your setup too.
 
-## Where can I get help?
+!!! info
 
-Come on over to the pellcorp discord server, the `#simple-af-carto` channel has been setup for anyone wanting support for cartographer.
-
-<https://discord.gg/2uGDzyJ3WX>
-
-Please refer to [How can I make sure my bed is level / trammed?](faq.md#how-can-i-make-sure-my-bed-is-level-trammed)
-
-## Looking for Cartotouch?
-
-See [Cartotouch](cartotouch.md)
-
-### Upgrading from Cartotouch?
-
-Its really easy to update, you can simply do a probe switch like this:
-
-```
-~/pellcorp/installer.sh --branch main
-~/pellcorp/installer.sh --update cartographer --mount %CURRENT%
-```
-
-Then do [calibration](#calibration) as normal 
-
-## Thanks
-
-Thanks to Richard from <https://cartographer3d.com> and Zarboz from <https://wattskraken.xyz/> for donating Cartographers to the Simple AF project to add support and continue to support the cartographer.
+    Already running Cartotouch from a previous SimpleAF install? See [Cartotouch](cartotouch.md). Cartotouch is legacy &mdash; new installs should use Cartographer.
 
 ## Firmware requirements
 
@@ -66,44 +43,24 @@ An alternative model which honestly seems a bit cleaner: <https://www.printables
 
 See [Simple AF for RPi](rpi.md)
 
-## Slicer Settings
+## Cartographer Firmware
 
-!!! danger
+!!! warning
 
-    Creality Print won't be able to see your printer after you have installed Simple AF, the only tested slicer we all use is OrcaSlicer, likely if you want to
-    use Creality Print you will need to print via usb.
+    For K1 Series (which includes K1, K1C, K1SE, K1 Max, Ender 3 V3 KE and Ender 5 Max) Simple AF you **must** flash your **V3 Probe** with `CARTOGRAPHER K1 5.0.0`:
 
-    Cura Slicer won't work out of the box for configuring START_PRINT variables as below, you need to change the start print EXTRUDER_TEMP and BED_TEMP to pass
-    in the correct values, but since I don't use Cura Slicer I can't advise on that!
+    ![image](assets/images/cartographer_k1_500.png)
 
-    If you have used a cartographer with k1-klipper, please note that the `PRINT_START` macro specified in their docs **is not supported** by this project.   You **must** change your Slicer Start Print Machine G-Code (see next)
+    For a **V4 Probe** `CARTOGRAPHER V4 6.0.0 Lite`:
+   
+    ![image](assets/images/cartographer_v4_600.png)
 
-There is an assumption that you are using a slicer like OrcaSlicer and Machine G-code like:
+    For K1 Series (which includes K1, K1C, K1SE, K1 Max, Ender 3 V3 KE and Ender 5 Max) Simple AF there is a guide for [V3 Probes](cartographer_V3_flashing.md) and [V4 Probes](cartographer_V4_flashing.md).
+    
+    For Simple AF for RPi, you can use the standard cartographer guide <https://docs.cartographer3d.com/cartographer-probe/firmware/firmware-updating/via-katapult/usb-flash#usb-katapult-updating>
 
-![image](assets/images/slicer.png)
-
-**Machine start G-code**
-
-```
-M140 S0
-M104 S0
-START_PRINT EXTRUDER_TEMP=[nozzle_temperature_initial_layer] BED_TEMP=[bed_temperature_initial_layer_single]
-```
-
-**Machine end G-code**
-
-```
-END_PRINT
-```
-
-### Custom Bed Mesh Profile
-
-If you want to select a specific predefined bed mesh profile (which disables adaptive mesh generation), you can pass in an additional `START_PRINT` parameter:
-
-You can either hard code it to a particular model, like `BED_MESH_PROFILE=myprofile` or you can specify a profile based on orca slicer variables, such as `BED_MESH_PROFILE="[curr_bed_type] - [filament_type]"`, but you have to make sure you have all the possible profiles
-defined for each of the bed type and filament type combinations.
-
-![image](https://github.com/user-attachments/assets/6bc0f01e-6bd4-4e0b-9031-a2b41c1d6a02)
+    If you are using a Pi3 or less (so CB1, CB2, OPi 3, etc) to run klipper, I strongly recommend using the K1/Lite variants of the cartographer firmware, you can do that 
+    in the firmware script by enabling Advanced Mode and Enabling Creality K Series Firmware.
 
 ## Probe Installation
 
@@ -152,25 +109,6 @@ you are making your lidar or direct mainboard connection as you might need it in
     Also, note that K1 series hotends and nozzles may vary in length.  If the probe's distance from the nozzle is <2.6mm, you may need to try a different mount, or adjust
     the dimensions of an existing mount in CAD.
 
-## Cartographer Firmware
-
-!!! warning
-
-    For K1 Series (which includes K1, K1C, K1SE, K1 Max, Ender 3 V3 KE and Ender 5 Max) Simple AF you **must** flash your **V3 Probe** with `CARTOGRAPHER K1 5.0.0`:
-
-    ![image](assets/images/cartographer_k1_500.png)
-
-    For a **V4 Probe** `CARTOGRAPHER V4 6.0.0 Lite`:
-   
-    ![image](assets/images/cartographer_v4_600.png)
-
-    For K1 Series (which includes K1, K1C, K1SE, K1 Max, Ender 3 V3 KE and Ender 5 Max) Simple AF there is a guide for [V3 Probes](cartographer_V3_flashing.md) and [V4 Probes](cartographer_V4_flashing.md).
-    
-    For Simple AF for RPi, you can use the standard cartographer guide <https://docs.cartographer3d.com/cartographer-probe/firmware/firmware-updating/via-katapult/usb-flash#usb-katapult-updating>
-
-    If you are using a Pi3 or less (so CB1, CB2, OPi 3, etc) to run klipper, I strongly recommend using the K1/Lite variants of the cartographer firmware, you can do that 
-    in the firmware script by enabling Advanced Mode and Enabling Creality K Series Firmware.
-
 ## Installation
 
 !!! warning
@@ -186,30 +124,20 @@ You need root access, if you are not already root, then follow the excellent [He
     If you are switching from cartotouch, you can skip straight to [Run the Installer](#run-the-installer) and perform
     an `~/pellcorp/installer.sh --update cartographer --mount %CURRENT%` instead of a new installation.
 
-### Factory Reset 
+### Upgrading from Cartotouch?
 
-A factory reset is **required** if you have installed Guilouz's Helper Script or if you have installed Fluidd or Mainsail
-through any other means, such as from Creality directly.  Otherwise, you can safely proceed directly to installation.
-If your printer is still running stock firmware, it can be quite handy to skip a factory reset so that you
-can use [Switch to Stock](misc.md#switch-to-stock).
+Its really easy to update, you can simply do a probe switch like this:
 
 ```
-wget --no-check-certificate https://raw.githubusercontent.com/pellcorp/creality/main/k1/services/S58factoryreset -O /tmp/S58factoryreset
-chmod +x /tmp/S58factoryreset
-/tmp/S58factoryreset reset
+~/pellcorp/installer.sh --branch main
+~/pellcorp/installer.sh --update cartographer --mount %CURRENT%
 ```
 
-!!! danger
+Then do [calibration](#calibration) as normal 
 
-    It is really important you do not close the ssh session until you get this message:
+### Factory Reset
 
-    ![image](assets/images/factory_reset.png)
-
-    It can take up to 5 minutes for a factory restart to finish, it is **vital** you do not power cycle your printer before the stock screen appears. There may be a 3002 error on the screen, this is completely normal.   If you are planning to install Simple AF you can ignore it, if you are trying to go back to stock, power cycle the printer again to clear the error.  
-
-    Failing to follow this advice can lead to your printer getting bricked and requiring much more involved intervention to recover!
-    
-    ![image](assets/images/error3002.png)
+If you've installed Guilouz's Helper Script, or installed Fluidd or Mainsail through any other means (such as from Creality directly), you need to [factory reset](factory_reset.md) before continuing.
 
 ### Clone the Repo
 
@@ -267,6 +195,10 @@ Your printer MCU firmware was updated successfully.   If you still see the `MCU 
 [Verify USB for Factory Reset](verify_usb.md)
 
 ## Calibration
+
+!!! danger
+
+    Before running your first bed mesh, please check [Manual Bed Tramming](manual_bed_tramming.md).
 
 If you are switching from cartotouch remove these:
 
@@ -416,3 +348,52 @@ In fluidd the save button after you finish or cancel your print can be a bit har
 Refer to [Orcaslicer Calibration](https://github.com/SoftFever/OrcaSlicer/wiki/Calibration) for more calibrations
 
 Refer to the [Ellis Print Tuning Guide](https://ellis3dp.com/Print-Tuning-Guide/) for more great tuning ideas.
+
+## Slicer Settings
+
+!!! danger
+
+    Creality Print won't be able to see your printer after you have installed Simple AF, the only tested slicer we all use is OrcaSlicer, likely if you want to
+    use Creality Print you will need to print via usb.
+
+    Cura Slicer won't work out of the box for configuring START_PRINT variables as below, you need to change the start print EXTRUDER_TEMP and BED_TEMP to pass
+    in the correct values, but since I don't use Cura Slicer I can't advise on that!
+
+    If you have used a cartographer with k1-klipper, please note that the `PRINT_START` macro specified in their docs **is not supported** by this project.   You **must** change your Slicer Start Print Machine G-Code (see next)
+
+There is an assumption that you are using a slicer like OrcaSlicer and Machine G-code like:
+
+![image](assets/images/slicer.png)
+
+**Machine start G-code**
+
+```
+M140 S0
+M104 S0
+START_PRINT EXTRUDER_TEMP=[nozzle_temperature_initial_layer] BED_TEMP=[bed_temperature_initial_layer_single]
+```
+
+**Machine end G-code**
+
+```
+END_PRINT
+```
+
+### Custom Bed Mesh Profile
+
+If you want to select a specific predefined bed mesh profile (which disables adaptive mesh generation), you can pass in an additional `START_PRINT` parameter:
+
+You can either hard code it to a particular model, like `BED_MESH_PROFILE=myprofile` or you can specify a profile based on orca slicer variables, such as `BED_MESH_PROFILE="[curr_bed_type] - [filament_type]"`, but you have to make sure you have all the possible profiles
+defined for each of the bed type and filament type combinations.
+
+![image](https://github.com/user-attachments/assets/6bc0f01e-6bd4-4e0b-9031-a2b41c1d6a02)
+
+## Where can I get help?
+
+For support, join the [SimpleAF Discord](https://discord.gg/M5rmBQqRSG).
+
+Please refer to [How can I make sure my bed is level / trammed?](faq.md#how-can-i-make-sure-my-bed-is-level-trammed)
+
+## Thanks
+
+Thanks to Richard from <https://cartographer3d.com> and Zarboz from <https://wattskraken.xyz/> for donating Cartographers to the Simple AF project to add support and continue to support the cartographer.
