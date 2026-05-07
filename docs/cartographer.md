@@ -119,22 +119,6 @@ The installation can only be performed on a printer which has been rooted and ss
 
 You need root access, if you are not already root, then follow the excellent [Helper Script Enable Root Access](https://guilouz.github.io/Creality-Helper-Script-Wiki/firmwares/install-and-update-rooted-firmware-k1/#enable-root-access) instructions.
 
-!!! info
-
-    If you are switching from cartotouch, you can skip straight to [Run the Installer](#run-the-installer) and perform
-    an `~/pellcorp/installer.sh --update cartographer --mount %CURRENT%` instead of a new installation.
-
-### Upgrading from Cartotouch?
-
-Its really easy to update, you can simply do a probe switch like this:
-
-```
-~/pellcorp/installer.sh --branch main
-~/pellcorp/installer.sh --update cartographer --mount %CURRENT%
-```
-
-Then do [calibration](#calibration) as normal 
-
 ### Factory Reset
 
 If you've installed Guilouz's Helper Script, or installed Fluidd or Mainsail through any other means (such as from Creality directly), you need to [factory reset](factory_reset.md) before continuing.
