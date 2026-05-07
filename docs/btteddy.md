@@ -141,9 +141,9 @@ INFO: Your MCU Firmware is up to date!
 
 Your printer MCU firmware was updated successfully.   If you still see the `MCU Firmware updates are pending you need to power cycle your printer!` message after a power cycle, check the `/tmp/mcu_update.log`, you may be asked to provide this file on Discord if you need additional assistance, sometimes an additional power cycle can solve the problem, there is a very short window of time (15 seconds) in which the MCU firmware can be updated, so  there is a chance it will work after an additional power cycle.
 
-### Verify USB Key
+## Slicer Settings
 
-[Verify USB for Factory Reset](verify_usb.md)
+[Slicer Settings](slicer_settings.md)
 
 ## Calibration
 
@@ -289,15 +289,6 @@ If you are using **a rear mount** it is highly recommended to perform axis twist
 The save baby stepping button in fluidd / mainsail does nothing for btteddy, the z-offset is automatically saved to the variables.cfg,
 we copied the feature from Helper Script: <https://guilouz.github.io/Creality-Helper-Script-Wiki/helper-script/save-z-offset-macros/>
 
-### Bed Mesh
-
-Now you can now run your first bed mesh:
-`BED_MESH_CALIBRATE`
-
-**Source:** <https://ballaswag.github.io/blog/creality-k1-btt-eddy-guide/>
-
-**Source:** <https://github.com/bigtreetech/Eddy>
-
 ### Other Calibrations
 
 !!! info
@@ -307,41 +298,6 @@ Now you can now run your first bed mesh:
 Refer to [Orcaslicer Calibration](https://github.com/SoftFever/OrcaSlicer/wiki/Calibration) for more calibrations
 
 Refer to the [Ellis Print Tuning Guide](https://ellis3dp.com/Print-Tuning-Guide/) for more great tuning ideas.
-
-## Slicer Settings
-
-!!! danger
-
-    Creality Print won't be able to see your printer after you have installed Simple AF, the only tested slicer we all use is OrcaSlicer, likely if you want to
-    use Creality Print you will need to print via usb.
-
-    Cura Slicer won't work out of the box for configuring START_PRINT variables as below, you need to change the start print EXTRUDER_TEMP and BED_TEMP to pass
-    in the correct values, but since I don't use Cura Slicer I can't advise on that!
-
-There is an assumption that you are using a slicer like OrcaSlicer and Machine G-code like:
-
-![image](assets/images/slicer.png)
-
-**Machine start G-code**
-```
-M140 S0
-M104 S0
-START_PRINT EXTRUDER_TEMP=[nozzle_temperature_initial_layer] BED_TEMP=[bed_temperature_initial_layer_single]
-```
-
-**Machine end G-code**
-```
-END_PRINT
-```
-
-### Custom Bed Mesh Profile
-
-If you want to select a specific predefined bed mesh profile (which disables adaptive mesh generation), you can pass in an additional `START_PRINT` parameter:
-
-You can either hard code it to a particular model, like `BED_MESH_PROFILE=myprofile` or you can specify a profile based on orca slicer variables, such as `BED_MESH_PROFILE="[curr_bed_type] - [filament_type]"`, but you have to make sure you have all the possible profiles
-defined for each of the bed type and filament type combinations.
-
-![image](https://github.com/user-attachments/assets/6bc0f01e-6bd4-4e0b-9031-a2b41c1d6a02)
 
 ## Where can I get help?
 

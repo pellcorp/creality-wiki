@@ -36,6 +36,11 @@ git clone https://github.com/pellcorp/creality.git /usr/data/pellcorp
 /usr/data/pellcorp/installer.sh --install <probe> --mount <Mount>
 ```
 
+## What your slicer settings must look like!
+
+OrcaSlicer is the only slicer we support, and you must make sure your start and end slicer gcode are correct before trying
+to print, please refer to [Slicer Settings](slicer_settings.md)
+
 ## Getting help
 
 For support, join the [SimpleAF Discord](https://discord.gg/M5rmBQqRSG). The [FAQ](faq.md) covers common questions.

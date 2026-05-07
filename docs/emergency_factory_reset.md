@@ -3,6 +3,10 @@
 If the worst happens, and you somehow get locked out, perhaps for whatever reason the dropbear ssh session does not start or wifi config gets all screwy, it is still possible to trigger an emergency factory reset via
 USB or GrumpyScreen.
 
+!!! danger
+
+    You should verify you actually have a USB key that can be used perform a factory reset via use: [USB for Factory Reset](verify_usb.md)
+
 ## Configure Wifi
 
 If your only problem is that you cannot get wifi to work and for whatever reason GrumpyScreen is not behaving you can brute force a new set of WIFI credentials

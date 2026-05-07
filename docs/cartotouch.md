@@ -174,9 +174,9 @@ INFO: Your MCU Firmware is up to date!
 
 Your printer MCU firmware was updated successfully.   If you still see the `MCU Firmware updates are pending you need to power cycle your printer!` message after a power cycle, check the `/tmp/mcu_update.log`, you may be asked to provide this file on Discord if you need additional assistance, sometimes an additional power cycle can solve the problem, there is a very short window of time (15 seconds) in which the MCU firmware can be updated, so  there is a chance it will work after an additional power cycle.
 
-### Verify USB Key
+## Slicer Settings
 
-[Verify USB for Factory Reset](verify_usb.md)
+[Slicer Settings](slicer_settings.md)
 
 ## Calibration
 
@@ -341,88 +341,6 @@ In fluidd the save button after you finish or cancel your print can be a bit har
 Refer to [Orcaslicer Calibration](https://github.com/SoftFever/OrcaSlicer/wiki/Calibration) for more calibrations
 
 Refer to the [Ellis Print Tuning Guide](https://ellis3dp.com/Print-Tuning-Guide/) for more great tuning ideas.
-
-## Slicer Settings
-
-!!! danger
-
-    Creality Print won't be able to see your printer after you have installed Simple AF, the only tested slicer we all use is OrcaSlicer, likely if you want to
-    use Creality Print you will need to print via usb.
-
-    Cura Slicer won't work out of the box for configuring START_PRINT variables as below, you need to change the start print EXTRUDER_TEMP and BED_TEMP to pass
-    in the correct values, but since I don't use Cura Slicer I can't advise on that!
-
-    If you have used a cartographer with k1-klipper, please note that the `PRINT_START` macro specified in their docs **is not supported** by this project.   You **must** change your Slicer Start Print Machine G-Code (see next)
-
-There is an assumption that you are using a slicer like OrcaSlicer and Machine G-code like:
-
-![image](assets/images/slicer.png)
-
-**Machine start G-code**
-
-```
-M140 S0
-M104 S0
-START_PRINT EXTRUDER_TEMP=[nozzle_temperature_initial_layer] BED_TEMP=[bed_temperature_initial_layer_single]
-```
-
-**Machine end G-code**
-
-```
-END_PRINT
-```
-
-### Custom Bed Mesh Profile
-
-If you want to select a specific predefined bed mesh profile (which disables adaptive mesh generation), you can pass in an additional `START_PRINT` parameter:
-
-You can either hard code it to a particular model, like `BED_MESH_PROFILE=myprofile` or you can specify a profile based on orca slicer variables, such as `BED_MESH_PROFILE="[curr_bed_type] - [filament_type]"`, but you have to make sure you have all the possible profiles
-defined for each of the bed type and filament type combinations.
-
-![image](https://github.com/user-attachments/assets/6bc0f01e-6bd4-4e0b-9031-a2b41c1d6a02)
-
-## Scan Only Mode
-
-Some cartographer users choose to use scan only instead of touch and that is easy enough to do, you can setup for scan immediately
-after installation, no need to do the 3 step calibration as for touch!
-
-!!! danger
-
-    It is **vital** you are aware of the limitations of scan mode especially on the K1 series where temp calibration is not 
-    an option.    If you print different bed and/or nozzle temp materials you must save a separate model per material and even
-    with a single material the cartographer will return a different z-offset when hot than when cold, I strongly recommend
-    **against** using scan mode on Simple AF, its actually likely to lead to bed damage unless you know exactly what you are doing!
-
-You can run the following:
-
-1. Run `PROBE_SWITCH MODE=scan`
-   <br />Upon completion *`SAVE_CONFIG`*
-
-It is strongly recommended to disable the camera for this calibration step, just use the `STOP_CAMERA`
-macro to do this.
-
-1. Run the `STOP_CAMERA` macro to stop the camera
-2. Home X Y (`G28 X Y`)
-3. Heat Nozzle to 150c (`M109 S150`) so that any filament can be removed from nozzle
-4. Make sure nozzle is centred on bed
-5. Run `CARTOGRAPHER_CALIBRATE METHOD=manual`
-   Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
-   <br />Upon completion *`SAVE_CONFIG`*
-
-!!! warning
-
-    Do not use a metal feeler gauge for this step, it could damage your cartographer!!!
-
-You can then use the CARTOGRAPHER_MODEL parameter to start print from your slicer to select different filament profiles, this is required if you print with different filaments and/or use different bed aurfaces.
-
-### Cartographer Model
-
-If you want to select a particular [cartographer model](<https://docs.cartographer3d.com/original-plugin/fine-tuning/cartographer-models>) other than the default you can pass in an additional `START_PRINT` parameter:
-
-![image](assets/images/carto_model_slicer.png)
-
-You can either hard code it to a particular model, like `CARTOGRAPHER_MODEL=mymodel` or you can specify a model based on orca slicer variables, such as `CARTOGRAPHER_MODEL="[curr_bed_type] - [filament_type]"`, but you have to make sure you have all the possible models
-defined for each of the bed type and filament type combinations.
 
 ## Where can I get help?
 
