@@ -1,6 +1,6 @@
 # Supported OS
 
-Simple AF is best supported by RPi or OrangePi running a version of debian **11 or 12** (which includes Orange Pi Debian, Rasbian, Arbian, whatever BTT is doing, etc).
+Simple AF is best supported by RPi or OrangePi running a version of debian **11, 12 or 13** (which includes Orange Pi Debian, Rasbian, Arbian, whatever BTT is doing, etc).
 
 !!! danger
 
@@ -96,8 +96,8 @@ On Ubuntu 22.04 or 24.04 based distributions, it might work but no formal testin
 
 ## Armbian
 
-On Debian 11, Debian 12, Ubuntu 22.04 or 24.04 based distributions, might work but no formal testing has been performed as yet!
+On Debian 11, 12 or 13, Ubuntu 22.04 or 24.04 based distributions, might work but no formal testing has been performed as yet!
 
 ## BTT OS
 
-On Debian 11, Debian 12 based, might work but no formal testing has been performed as yet!
+On Debian 11, 12 or 13 based, might work but no formal testing has been performed as yet!
