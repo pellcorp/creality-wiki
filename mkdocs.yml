@@ -191,7 +191,7 @@ nav:
       - grumpyscreen.md
       - mobileraker_companion.md
       - octoeverywhere_companion.md
-      - obico_companion.md
+      - obico_agent.md
   - Maintenance:
       - updating.md
       - config_overrides.md
