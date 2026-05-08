@@ -37,6 +37,7 @@ The installation flow on a Creality printer is:
 The basic install command (replace `<probe>` and `<Mount>` with the specific values from your probe page):
 
 ```
+git config --global http.sslVerify false
 git clone https://github.com/pellcorp/creality.git /usr/data/pellcorp
 /usr/data/pellcorp/installer.sh --install <probe> --mount <Mount>
 ```
