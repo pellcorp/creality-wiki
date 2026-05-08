@@ -7,4 +7,7 @@ it will overwhelm the processor and cause serious stability issues.
 
     It's probably fine to setup Obico Agent on the same host as Simple AF if using Simple AF for RPi series.
 
-TODO - more to come
+It is definitely possible to setup the agent on a RPI on the same network as your K series printer, a guide will be made
+available here soon, but it basically requires you installing docker on a RPI on the same network and doing some config
+and running some commands.
+
