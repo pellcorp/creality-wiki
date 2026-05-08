@@ -200,4 +200,5 @@ nav:
   - FAQ & Support:
       - faq.md
       - support.md
+      - factory_reset.md
       - emergency_factory_reset.md
