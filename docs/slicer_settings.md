@@ -40,6 +40,32 @@ a multicolour print with a purge tower, so for example:
 START_PRINT EXTRUDER_TEMP=[nozzle_temperature_initial_layer] BED_TEMP=[bed_temperature_initial_layer_single] {if has_wipe_tower}BED_MESH_ADAPTIVE=0{endif}
 ```
 
+### Custom Start Print
+
+If you want to use a toggle for an adaptive bed mesh you can also do this by defining your own `MY_START_PRINT` macro (call it what you want except for `START_PRINT`)
+and a virtual pin:
+
+```
+[output_pin Bed_Mesh_Adaptive]
+pin: virtual_pin:BED_MESH_ADAPTIVE_pin
+value: 1
+
+[gcode_macro MY_START_PRINT]
+gcode:
+      {% set ADAPTIVE = printer['output_pin Bed_Mesh_Adaptive'].value | int %}
+      START_PRINT {rawparams} BED_MESH_ADAPTIVE={ADAPTIVE}
+```
+
+!!! warning
+
+    The `| int` is super important, because virtual pins are floats!
+
+Then be sure to change your slicer to specify:
+
+```
+MY_START_PRINT EXTRUDER_TEMP=[nozzle_temperature_initial_layer] BED_TEMP=[bed_temperature_initial_layer_single]
+```
+
 ## End Print
 
 **Machine end G-code**
