@@ -179,6 +179,7 @@ nav:
       - rpi_klipperscreen.md
       - rpi_boot_display.md
   - Print Features:
+      - slicer_settings.md
       - filament_runout.md
       - m600_support.md
       - nozzle_wipe.md
