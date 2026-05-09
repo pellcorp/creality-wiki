@@ -37,6 +37,7 @@ You can pass `BED_MESH_ADAPTIVE=0` in START_PRINT to force a full bed mesh, you 
 a multicolour print with a purge tower, so for example:
 
 ```
+
 START_PRINT EXTRUDER_TEMP=[nozzle_temperature_initial_layer] BED_TEMP=[bed_temperature_initial_layer_single] {if has_wipe_tower}BED_MESH_ADAPTIVE=0{endif}
 ```
 
