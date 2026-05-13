@@ -31,9 +31,14 @@ You will need some kind of linux environment, this can be a Raspberry Pi, deskto
 
 ### Creating a Live USB Key
 
-You should create a live USB with Ubuntu 24.04 (25.04 also works) Desktop, make sure the USB is at least 8GB in size!
+You should create a live USB with **Ubuntu 24.04 (25.04 also works)** Desktop, make sure the USB is at least 8GB in size!
 
 <https://ubuntu.com/tutorials/try-ubuntu-before-you-install#1-getting-started>
+
+!!! danger
+
+    Seems like 26.04 LTS with python 3.14 might cause issues for flashing, when I get a chance I will try and adjust the instructions to support
+    26.04 as well!
 
 ## Installation dependencies
 

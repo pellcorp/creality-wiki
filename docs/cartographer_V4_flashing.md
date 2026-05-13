@@ -35,6 +35,11 @@ You should create a live USB with Ubuntu 24.04 (25.04 also works) Desktop, make 
 
 <https://ubuntu.com/tutorials/try-ubuntu-before-you-install#1-getting-started>
 
+!!! danger
+
+    Seems like 26.04 LTS with python 3.14 might cause issues for flashing, when I get a chance I will try and adjust the instructions to support
+    26.04 as well!
+
 ## Installation dependencies
 
 On your raspberry pi, linux desktop, linux server or live Ubuntu USB environment you need to run the following commands to install essential packages.
