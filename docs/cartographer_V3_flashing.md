@@ -35,18 +35,31 @@ You should create a live USB with **Ubuntu 24.04 (25.04 also works)** Desktop, m
 
 <https://ubuntu.com/tutorials/try-ubuntu-before-you-install#1-getting-started>
 
-!!! danger
-
-    Seems like 26.04 LTS with python 3.14 might cause issues for flashing, when I get a chance I will try and adjust the instructions to support
-    26.04 as well!
-
 ## Installation dependencies
 
 On your raspberry pi, linux desktop, linux server or live Ubuntu USB environment you need to run the following commands to install essential packages.
 
 ```
 sudo apt-get update
-sudo apt-get install virtualenv python3-dev python3-pip python3-setuptools libffi-dev build-essential git dfu-util
+sudo apt-get install virtualenv python3-dev python3-pip python3-setuptools libffi-dev software-properties-common build-essential git dfu-util
+```
+
+### Ubuntu 26.04 Python 3.12
+
+Klipper will not work with python 3.14 so we have to get python 3.12 installed via an alternative method, lets first see if this 
+is even required, run `python3 --version`:
+
+```
+$ python3 --version
+Python 3.14.4
+```
+
+If it reports `Python 3.14.X` (where `X` is another number) you **must** follow these next steps:
+
+```
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt update
+sudo apt install python3.12 python3.12-dev
 ```
 
 ## Clone Klipper and Cartographer-Firmware
@@ -70,7 +83,7 @@ git clone "https://github.com/Cartographer3D/cartographer_firmware" $HOME/cartog
 ## Setup Klipper Virtual Env
 
 ```
-virtualenv --system-site-packages $HOME/klippy-env
+virtualenv -p python3.12 --system-site-packages $HOME/klippy-env
 $HOME/klippy-env/bin/pip3 install -r $HOME/klipper/scripts/klippy-requirements.txt
 ```
 
