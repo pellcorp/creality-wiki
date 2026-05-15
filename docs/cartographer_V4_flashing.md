@@ -58,7 +58,6 @@ If it reports `Python 3.14.X` (where `X` is another number) you **must** follow 
 
 ```
 sudo add-apt-repository ppa:deadsnakes/ppa
-sudo apt update
 sudo apt install python3.12 python3.12-dev
 ```
 
@@ -84,8 +83,14 @@ git clone "https://github.com/Cartographer3D/cartographer_firmware" $HOME/cartog
 
 ```
 virtualenv -p python3.12 --system-site-packages $HOME/klippy-env
+$HOME/klippy-env/bin/pip3 install -U pip wheel setuptools
 $HOME/klippy-env/bin/pip3 install -r $HOME/klipper/scripts/klippy-requirements.txt
 ```
+
+!!! note
+
+    If you get an error `RuntimeError: failed to find interpreter for Builtin discover of python_spec='python3.12'` it means you
+    are likely trying to do this on Ubuntu 26.04 and you need to install python 3.12 (see above)
 
 ## Flashing K1 Cartographer Firmware
 
@@ -106,6 +111,11 @@ CARTO_DEV=$(ls /dev/serial/by-id/usb-* | grep "IDM\|Cartographer" | head -1)
 cd $HOME/klipper/scripts
 sudo -E $HOME/klippy-env/bin/python -c "import flash_usb as u; u.enter_bootloader('$CARTO_DEV')"
 ```
+
+!!! note
+
+    If you get a warning `sudo: preserving the entire environment is not supported, '-E' is ignored` you can
+    safely ignore it, its likely you are on Ubuntu 26.04!
 
 !!! warning 
 
