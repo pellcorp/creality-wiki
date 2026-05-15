@@ -31,7 +31,7 @@ You will need some kind of linux environment, this can be a Raspberry Pi, deskto
 
 ### Creating a Live USB Key
 
-You should create a live USB with **Ubuntu 24.04 (25.04 also works)** Desktop, make sure the USB is at least 8GB in size!
+You should create a live USB with **Ubuntu 24.04** Desktop, make sure the USB is at least 8GB in size!
 
 <https://ubuntu.com/tutorials/try-ubuntu-before-you-install#1-getting-started>
 
@@ -91,7 +91,7 @@ $HOME/klippy-env/bin/pip3 install -r $HOME/klipper/scripts/klippy-requirements.t
 !!! note
 
     If you get an error `RuntimeError: failed to find interpreter for Builtin discover of python_spec='python3.12'` it means you
-    are likely trying to do this on Ubuntu 26.04 and you need to install python 3.12 (see above)
+    are likely trying to do this on Ubuntu 26.04 and you need to [install python 3.12](#ubuntu-2604-python-312)
 
 ## Flashing K1 Cartographer Firmware
 
