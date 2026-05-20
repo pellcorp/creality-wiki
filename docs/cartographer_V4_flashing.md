@@ -51,7 +51,6 @@ is even required, run `python3 --version`:
 
 ```
 python3 --version
-Python 3.14.4
 ```
 
 If it reports `Python 3.14.X` (where `X` is another number) you **must** follow these next steps:
