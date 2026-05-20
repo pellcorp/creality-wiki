@@ -50,7 +50,7 @@ Klipper will not work with python 3.14 so we have to get python 3.12 installed v
 is even required, run `python3 --version`:
 
 ```
-$ python3 --version
+python3 --version
 Python 3.14.4
 ```
 
