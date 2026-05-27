@@ -24,7 +24,12 @@ This probe is currently not supported on Ender 5 Max
 
 ### Ender 3 V3 KE
 
-There is experimental untested support for a Default mount on the Ender 3 V3 KE.
+This guide assumes you have a stock Ender 3 V3 KE with Nebula Pad with Root enabled, when you get to installation below, you should specify the `--mount Default` to install
+Simple AF on the KE for Eddy-NG.
+
+Please note that you will need to change the screen orientation to horizontal, here is a model for that <https://www.printables.com/model/727362-ender-3-v3-ke-screen-holder-landscape-for-guppyscr>,
+but please do **not** follow the installation instructions on that page, just print the model and remount your screen only!
+An alternative model which honestly seems a bit cleaner: <https://www.printables.com/model/706657-creality-ender-3-v3-e3v3-se-ke-and-cr-10-se-portra>
 
 ### RPi or SBC
 
@@ -56,13 +61,13 @@ you are making your lidar or direct mainboard connection as you might need it in
 
 ### Mount Options
 
-| Mount        | Printer             | URL                                                                                                                                                                     | Notes                                                         |
-|--------------|---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| **Default**  | K1, K1C, K1M, K1SE  | <https://www.printables.com/model/1012524-btteddy-creality-k1-k1c-k1-max-mount><br/><https://www.printables.com/model/1212731-btt-eddy_ng-mount-for-creality-k1-series> ||
-| **Pellcorp** | K1, K1C, K1M, K1SE  | <https://www.printables.com/model/965667-wip-k1-btt-eddy-rear-mount-v4>                                                                                                 ||
-| **Slam**     | K1, K1C, K1M, K1SE  | <https://www.printables.com/model/1195575-btt-eddy-mount-for-k1c>                                                                                                       ||
-| **Default**  | Ender 3 V3 SE       | <https://www.printables.com/model/1202031-ender-3-v3-se-k1-hotend-btt-eddy-mount>                                                                                       ||
-| **Default**   | Ender 3 KE         | <https://www.printables.com/model/1002777-cr-touch-to-btt-eddy-adapter-bracket>                                                                                         |**This probe and mount has not been tested on a KE running Simple AF, experimental**|
+| Mount        | Printer             | URL                                                                                                                                                                     | Notes |
+|--------------|---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|
+| **Default**  | K1, K1C, K1M, K1SE  | <https://www.printables.com/model/1012524-btteddy-creality-k1-k1c-k1-max-mount><br/><https://www.printables.com/model/1212731-btt-eddy_ng-mount-for-creality-k1-series> |       |
+| **Pellcorp** | K1, K1C, K1M, K1SE  | <https://www.printables.com/model/965667-wip-k1-btt-eddy-rear-mount-v4>                                                                                                 |       |
+| **Slam**     | K1, K1C, K1M, K1SE  | <https://www.printables.com/model/1195575-btt-eddy-mount-for-k1c>                                                                                                       |       |
+| **Default**  | Ender 3 V3 SE       | <https://www.printables.com/model/1202031-ender-3-v3-se-k1-hotend-btt-eddy-mount>                                                                                       |       |
+| **Default**   | Ender 3 KE         | <https://www.printables.com/model/1002777-cr-touch-to-btt-eddy-adapter-bracket>                                                                                         |       |
 
 ### Nozzle Offset
 
