@@ -7,7 +7,7 @@
 The very first thing you should check is the height of the eddy, see [Nozzle Offset](eddyng.md#nozzle-offset)
 
 Sometimes the drive current for homing will work but for tap it breaks, you can calibrate another drive current and manually configure it for tap,
-I recommend incrementing one from homing value, so for instance of tap and homing setup have 16 as drive current, calibrate 17 as well and you can
+I recommend incrementing one from homing value, so for instance if tap and homing setup have 16 as drive current, calibrate 17 as well and you can
 manually modify the configuration afterwards:
 
 ```
