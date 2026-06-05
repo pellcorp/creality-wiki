@@ -1,6 +1,6 @@
 # Beacon
 
-!!! danger
+!!! danger "Build Plate Damage Alert"
 
     Your build plate must be spring steel with a magnetic sheet attached to your underlying printer bed.  Do not try and use this probe with embedded magnets or 
     some crappy magnetic flex plate that is not spring steel, your nozzle will dig a big hole in it.
