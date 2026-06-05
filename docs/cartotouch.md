@@ -1,12 +1,17 @@
 # Cartotouch
 
-!!! warning
+!!! danger
 
-    Cartotouch is legacy and is kept here for reference only. New installs should use [Cartographer](cartographer.md) instead.
+    Your build plate must be spring steel with a magnetic sheet attached to your underlying printer bed.  Do not try and use this probe with embedded magnets or 
+    some crappy magnetic flex plate that is not spring steel, your nozzle will dig a big hole in it.
 
 This page covers installing SimpleAF using a Cartographer probe. New here? See [Getting Started](getting-started.md).
 
 RPi / SBC users: install SimpleAF via [SimpleAF for RPi](rpi.md). The rest of this page &mdash; probe firmware, mount options, and calibration &mdash; applies to your setup too.
+
+!!! warning
+
+    Cartotouch is legacy and is kept here for reference only. New installs should use [Cartographer](cartographer.md) instead.
 
 ## Firmware requirements
 
