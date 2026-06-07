@@ -46,6 +46,10 @@ sudo apt-get install virtualenv python3-dev python3-pip python3-setuptools libff
 
 ### Ubuntu 26.04 Python 3.12
 
+!!! note
+
+    This step is **only** required if you use a version of Ubuntu newer than 24.04, an easier approach is to find a desktop iso for 24.04
+
 Klipper will not work with python 3.14 so we have to get python 3.12 installed via an alternative method, lets first see if this 
 is even required, run `python3 --version`:
 
@@ -60,6 +64,11 @@ sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt update
 sudo apt install python3.12 python3.12-dev
 ```
+
+!!! note
+
+    Even after installing python11, running `python3 --version` will **still** report python 3.14, thats expected, it does **not** indicate the
+    process failed.
 
 ## Clone Klipper and Cartographer-Firmware
 
