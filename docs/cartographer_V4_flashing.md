@@ -66,7 +66,7 @@ sudo apt install python3.12 python3.12-dev
 
 !!! note
 
-    Even after installing python11, running `python3 --version` will **still** report python 3.14, thats expected, it does **not** indicate the
+    Even after installing python3.12, running `python3 --version` will **still** report python 3.14, thats expected, it does **not** indicate the
     process failed.
 
 ## Clone Klipper and Cartographer-Firmware
