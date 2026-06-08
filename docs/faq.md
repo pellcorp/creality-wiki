@@ -268,7 +268,7 @@ print we can with a bit of work in both Orca Slicer and Simple AF via Custom hoo
 
     ![image](assets/images/developer_mode.png)
 
-    And then you have to enable the settings in the basic printer settings:
+    And then you have to enable the settings in the Printer Settings (Basic information) settings:
 
     ![image](assets/images/orca_enable_chamber_temp.png)
 
