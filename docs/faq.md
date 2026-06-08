@@ -262,6 +262,17 @@ Note this is not about bed mesh, this video is just about getting your bed level
 Orca Slicer has the ability to define a chamber target temp per filament and if you want Simple AF to wait on that chamber temp before actually trying to
 print we can with a bit of work in both Orca Slicer and Simple AF via Custom hooks.
 
+!!! note "OrcaSlicer 2.3.2 Changes"
+
+    Starting from OrcaSlicer 2.3.2 for some strange reason, you have to enable developer mode to access these settings:
+
+    ![image](assets/images/developer_mode.png)
+
+    And then you have to enable the settings in the basic printer settings:
+
+    ![image](assets/images/orca_enable_chamber_temp.png)
+
+
 Step 1 - Define per filament any requirement for a chamber temp, look **Print chamber temperature** for:
 
 ![image](assets/images/orca_chamber_temp.png)
