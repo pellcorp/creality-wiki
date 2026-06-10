@@ -38,7 +38,7 @@ There is now an automated script which does:
 curl -s -L https://raw.githubusercontent.com/pellcorp/creality-wiki/refs/heads/main/scripts/cartographer_flash.sh -O ~/cartographer_flash.sh
 ```
 
-### Katapult mode
+### Flashing
 
 ```bash
 bash ~/cartographer_flash.sh
@@ -46,9 +46,13 @@ bash ~/cartographer_flash.sh
 
 The script auto-detects V4 when the serial id exposes `stm32g431`. Otherwise it defaults to V3. You can still force the model with `--model`.
 
-### DFU mode
+### Flashing via DFU Mode
 
-In DFU mode you must bridge the boot pins before connecting the probe over USB.
+You need to bridge the boot pins before you plug your carto in via USB to your Linux session, make sure `lsusb` reports it being in DFU mode, it should show
+
+![image](assets/images/carto_lsusb_dfu.png)
+
+**Source:** <https://docs.cartographer3d.com/cartographer-probe/firmware/updating-firmware#cartographer-v3-1>
 
 ```bash
 ./scripts/cartographer_flash.sh --dfu --model v3
