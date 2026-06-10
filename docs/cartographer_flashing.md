@@ -55,7 +55,7 @@ You need to bridge the boot pins before you plug your carto in via USB to your L
 **Source:** <https://docs.cartographer3d.com/cartographer-probe/firmware/updating-firmware#cartographer-v3-1>
 
 ```bash
-./scripts/cartographer_flash.sh --dfu --model v3
+bash ~/cartographer_flash.sh --dfu --model v3
 ```
 
 !!! note
