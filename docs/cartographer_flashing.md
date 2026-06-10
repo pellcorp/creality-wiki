@@ -10,7 +10,7 @@
 
 This page covers the scripted Ubuntu flashing flow for Cartographer USB probes on K1, K1C, K1SE, K1 Max, Ender 3 V3 KE and Ender 5 Max.
 
-If you want the fully manual process instead, see the unlisted manual guides for [V3](cartographer_V3_flashing.md) and [V4](cartographer_V4_flashing.md).
+If you want the fully manual process instead, see the manual guides for [V3](cartographer_V3_flashing.md) and [V4](cartographer_V4_flashing.md).
 
 ## Firmware targets
 
