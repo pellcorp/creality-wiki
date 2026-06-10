@@ -10,7 +10,7 @@ CARTOGRAPHER_FIRMWARE_REPO="${CARTOGRAPHER_FIRMWARE_REPO:-https://github.com/Car
 REPORT_BASE_URL="${REPORT_BASE_URL:-https://api.cartographer3d.com/report}"
 SERIAL_GLOB="${SERIAL_GLOB:-/dev/serial/by-id/usb-*}"
 BOOTLOADER_GLOB="${BOOTLOADER_GLOB:-/dev/serial/by-id/usb-katapult*}"
-WAIT_TIMEOUT="${WAIT_TIMEOUT:-45}"
+WAIT_TIMEOUT="${WAIT_TIMEOUT:-60}"
 POLL_INTERVAL="${POLL_INTERVAL:-1}"
 MODEL="${MODEL:-}"
 FLASH_METHOD="${FLASH_METHOD:-katapult}"
@@ -547,9 +547,6 @@ run_dfu_flash() {
     require_path "$firmware_path" "DFU firmware image"
     require_command dfu-util
 
-    log "Waiting for DFU device"
-    wait_for_dfu_device "$WAIT_TIMEOUT"
-
     log "Flashing $firmware_path via dfu-util"
     set +e
     output=$(run_sudo dfu-util -R -a 0 -s 0x08000000:leave -D "$firmware_path" 2>&1)
@@ -608,8 +605,6 @@ main() {
     local reconnected_carto
 
     parse_args "$@"
-    bootstrap_environment
-
     case "$FLASH_METHOD" in
         katapult|dfu) ;;
         *) die "Unsupported flash method: $FLASH_METHOD" ;;
@@ -619,10 +614,16 @@ main() {
         [[ -n "$MODEL" ]] || die "DFU mode requires --model v3 or --model v4 because the probe is already in DFU mode"
     fi
 
-    if [[ "$FLASH_METHOD" == "katapult" ]]; then
-        carto_dev=$(find_cartographer_device)
-        [[ -n "$carto_dev" ]] || die "No Cartographer serial device found under $SERIAL_GLOB"
+    bootstrap_environment
 
+    if [[ "$FLASH_METHOD" == "dfu" ]]; then
+        log "Waiting for initial DFU device"
+        wait_for_dfu_device "$WAIT_TIMEOUT"
+    fi
+
+    if [[ "$FLASH_METHOD" == "katapult" ]]; then
+        log "Waiting for initial Cartographer serial node"
+        carto_dev=$(wait_for_cartographer_device "$WAIT_TIMEOUT")
         log "Detected Cartographer serial device: $carto_dev"
 
         if [[ -z "$MODEL" ]]; then
