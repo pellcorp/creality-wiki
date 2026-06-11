@@ -24,7 +24,7 @@ If you want the fully manual process instead, see the manual guides for [V3](car
 
 !!! warn 
 
-    These cartographer versions versions have been extensively tested with Simple AF K1 Series, newer versions may not work as reliably.
+    These cartographer firmware versions have been extensively tested with Simple AF K1 Series, newer versions may not work as reliably.
 
 ## Scripted Ubuntu flow
 
