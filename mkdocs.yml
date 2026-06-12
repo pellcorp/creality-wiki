@@ -1,5 +1,6 @@
 hooks:
   - custom/overrides/hooks/toc_depth.py
+  - custom/overrides/hooks/publish_scripts.py
 
 # Project information
 site_name: SimpleAF Docs
