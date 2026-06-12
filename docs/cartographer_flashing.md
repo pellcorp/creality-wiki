@@ -8,7 +8,7 @@ If you want the fully manual process instead, see the manual guides for [V3](car
 
 !!! warn
 
-    This scripted approach is tested only on Ubuntu 24.04 and 26.04, other debian based distributions might work, but they are untested!
+    The cartographer_flash.sh script has been tested on Ubuntu 24.04 and 26.04.  Other debian based distributions might work, but they are untested!
 
 ## Creating a Live USB Key
 
