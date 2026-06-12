@@ -60,7 +60,7 @@ See [Simple AF for RPi](rpi.md)
    
     ![image](assets/images/cartographer_v4_600.png)
 
-    For K1 Series (which includes K1, K1C, K1SE, K1 Max, Ender 3 V3 KE and Ender 5 Max) Simple AF there is [cartographer flashing guide](cartographer_flashing.md).
+    For K1 Series (which includes K1, K1C, K1SE, K1 Max, Ender 3 V3 KE and Ender 5 Max) Simple AF there is the [cartographer flashing guide](cartographer_flashing.md).
     
     For Simple AF for RPi, you can use the standard cartographer guide <https://docs.cartographer3d.com/cartographer-probe/firmware/firmware-updating/via-katapult/usb-flash#usb-katapult-updating>
 
