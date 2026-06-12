@@ -8,7 +8,7 @@ If you want the fully manual process instead, see the manual guides for [V3](car
 
     This scripted approach is tested only on Ubuntu 24.04 and 26.04, other debian based distributions might work, but they are untested!
 
-### Creating a Live USB Key
+## Creating a Live USB Key
 
 !!! warning
 
@@ -17,7 +17,6 @@ If you want the fully manual process instead, see the manual guides for [V3](car
 You should create a live USB with **Ubuntu 26.04** Desktop, make sure the USB is at least 8GB in size!
 
 <https://ubuntu.com/tutorials/try-ubuntu-before-you-install#1-getting-started>
-
 
 ## Firmware targets
 
@@ -28,24 +27,13 @@ You should create a live USB with **Ubuntu 26.04** Desktop, make sure the USB is
 
     These cartographer firmware versions have been extensively tested with Simple AF K1 Series, newer versions may not work as reliably.
 
-## Scripted Ubuntu flow
-
-There is now an automated script which does:
-
-1. Installing Ubuntu dependencies.
-2. Installing Python 3.12 if the default `python3` is newer.
-3. Cloning or updating `~/klipper` and `~/cartographer_firmware`.
-4. Creating or rebuilding `~/klippy-env`.
-5. Flashing via Katapult or DFU.
-6. Waiting for the probe to reconnect and optionally sending an anonymous usage report on opt-in.
-
-### Downloading
+## Downloading
 
 ```bash
 wget https://pellcorp.github.io/creality-wiki/scripts/cartographer_flash.sh -O ~/cartographer_flash.sh
 ```
 
-### Flashing
+## Flashing
 
 !!! note
 
@@ -57,7 +45,7 @@ bash ~/cartographer_flash.sh
 
 The script auto-detects V4 when the serial id exposes `stm32g431`. Otherwise it defaults to V3. You can still force the model with `--model`.
 
-### Flashing via DFU Mode
+## Flashing via DFU Mode
 
 You need to bridge the boot pins before you plug your carto in via USB to your Linux session, make sure `lsusb` reports it being in DFU mode, it should show
 
