@@ -44,7 +44,7 @@ There is now an automated script which does:
 ### Downloading
 
 ```bash
-wget https://raw.githubusercontent.com/pellcorp/creality-wiki/refs/heads/main/scripts/cartographer_flash.sh -O ~/cartographer_flash.sh
+wget https://pellcorp.github.io/creality-wiki/scripts/cartographer_flash.sh -O ~/cartographer_flash.sh
 ```
 
 ### Flashing
