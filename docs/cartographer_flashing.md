@@ -1,14 +1,12 @@
 # Cartographer Flashing
 
-!!! danger
-
-    THIS IS A RISKY OPERATION YOU CAN BRICK YOUR CARTO
-
 This page covers the scripted Ubuntu flashing flow for Cartographer USB probes on K1, K1C, K1SE, K1 Max, Ender 3 V3 KE and Ender 5 Max.
 
 If you want the fully manual process instead, see the manual guides for [V3](cartographer_V3_flashing.md) and [V4](cartographer_V4_flashing.md).
 
-This scripted approach is tested only on Ubuntu 24.04 and 26.04, other debian based distributions might work, but they are untested!
+!!! warn
+
+    This scripted approach is tested only on Ubuntu 24.04 and 26.04, other debian based distributions might work, but they are untested!
 
 ### Creating a Live USB Key
 
