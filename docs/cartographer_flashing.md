@@ -1,9 +1,5 @@
 # Cartographer Flashing
 
-!!! klipper-error "This is alpha software, use with caution"
-
-    This automated script is brand new and not thoroughly tested, this is why its not linked from other pages.
-
 !!! danger
 
     THIS IS A RISKY OPERATION YOU CAN BRICK YOUR CARTO
