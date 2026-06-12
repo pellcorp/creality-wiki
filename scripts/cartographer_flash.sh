@@ -36,7 +36,7 @@ Options:
   --model v3|v4    Force the model if auto-detect is ambiguous.
   --dfu            Flash using dfu-util and the combined DFU firmware.
   --katapult       Flash using the default Katapult/flash_can flow.
-  --timeout N      Wait timeout in seconds for reconnect steps. Default: 45
+  --timeout N      Wait timeout in seconds for reconnect steps. Default: 60
   --help           Show this help text.
 
 Environment overrides:
@@ -52,7 +52,7 @@ Environment overrides:
   APT_LOCK_MAX_RETRIES         Default: 18
   SERIAL_GLOB                  Default: /dev/serial/by-id/usb-*
   BOOTLOADER_GLOB              Default: /dev/serial/by-id/usb-katapult*
-  WAIT_TIMEOUT                 Default: 45
+  WAIT_TIMEOUT                 Default: 60
 EOF
 }
 
