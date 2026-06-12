@@ -47,6 +47,10 @@ wget https://pellcorp.github.io/creality-wiki/scripts/cartographer_flash.sh -O ~
 
 ### Flashing
 
+!!! note
+
+    Maybe it should be obvious, but make sure your cartographer is plugged in to your computer before running this step!
+
 ```bash
 bash ~/cartographer_flash.sh
 ```
