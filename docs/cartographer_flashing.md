@@ -8,7 +8,7 @@ For Simple AF for RPi, you should use the standard cartographer guide <https://d
 
 !!! warn
 
-    The cartographer_flash.sh script has been tested on Ubuntu 24.04 and 26.04.  Other debian based distributions might work, but they are untested!
+    This process has been tested on Ubuntu 24.04 and 26.04.  Other debian based distributions might work, but they are untested!
 
 ## Creating a Live USB Key
 
