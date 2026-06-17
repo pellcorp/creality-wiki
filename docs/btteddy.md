@@ -74,7 +74,6 @@ you are making your lidar or direct mainboard connection as you might need it in
 |---------------|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
 | **Default**   | K1, K1C, K1M, K1SE | <https://www.printables.com/model/1012524-btteddy-creality-k1-k1c-k1-max-mount><br/><https://www.printables.com/model/1097856-btt-eddy-duo-mount> |                                                         |
 | **Pellcorp**  | K1, K1C, K1M, K1SE | <https://www.printables.com/model/965667-wip-k1-btt-eddy-rear-mount-v4>                                                                           |                                                         |
-| **Ballaswag** | K1, K1C, K1M, K1SE | <https://makerworld.com/en/models/494931>                                                                                                         | Config copied from k1_mod sources, otherwise not tested |
 | **Slam**      | K1, K1C, K1M, K1SE | <https://www.printables.com/model/1195575-btt-eddy-mount-for-k1c>                                                                                 |                                                         |
 | **Default**   | Ender 3 KE         | <https://www.printables.com/model/1002777-cr-touch-to-btt-eddy-adapter-bracket>                                                                   |                                                         |
 
