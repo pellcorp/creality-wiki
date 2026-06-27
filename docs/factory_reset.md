@@ -38,5 +38,5 @@ After performing a factory reset you might expect to be greeted with first time 
 
 You can force this manually by going to **Settings**, then **Self-Check** and selecting both Input Shaping and Auto Leveling.
 
-It is recommended to do this step **before** installing Simple AF if the printer you are about to install Simple AF to is the only printer you have access to that can print probe mounts, you want to be able to quickly [Switch to Stock](misc.md#switch-to-stock) to print
+It is recommended to do this step **before** installing Simple AF if the printer you are about to install Simple AF to is the only printer you have access to that can print probe mounts, you want to be able to quickly [Switch to Stock](switch_to_stock.md) to print
 a mount if you get into trouble!
