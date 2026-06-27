@@ -21,8 +21,14 @@ chmod +x /tmp/S58factoryreset
 
     ![image](assets/images/factory_reset.png)
 
-    It can take up to 5 minutes for a factory restart to finish, it is **vital** you do not power cycle your printer before the stock screen appears. There may be a 3002 error on the screen, this is completely normal.   If you are planning to install Simple AF you can ignore it, if you are trying to go back to stock, power cycle the printer again to clear the error.  
+    It can take up to 5 minutes for a factory restart to finish, it is **vital** you do not power cycle your printer before the stock screen appears. 
 
     Failing to follow this advice can lead to your printer getting bricked and requiring much more involved intervention to recover!
-    
+
+!!! note
+
+    If you are factory resetting after installing Simple AF, there may be a 3002 error on the screen, this is completely normal.   
+    If you are planning to install Simple AF again you can ignore it, if you are trying to go back to stock, power cycle the printer 
+    again to clear the error.  
+
     ![image](assets/images/error3002.png)
