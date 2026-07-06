@@ -183,7 +183,9 @@ Your printer MCU firmware was updated successfully.   If you still see the `MCU 
 
 !!! danger
 
-    Before running your first bed mesh, please check [Manual Bed Tramming](manual_bed_tramming.md).
+    To avoid the risk of bed damage due to a badly trammed bed, please perform [Manual Bed Tramming](manual_bed_tramming.md)
+    before going any further, if you choose to ignore this advice, you risk damage to your bed if the bed is significantly higher
+    on one side compared to the centre of the bed where the printer is homed.
 
 If you are switching from cartotouch remove these:
 
