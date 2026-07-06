@@ -181,12 +181,6 @@ Your printer MCU firmware was updated successfully.   If you still see the `MCU 
 
 ## Calibration
 
-!!! danger
-
-    To avoid the risk of bed damage due to a badly trammed bed, please perform [Manual Bed Tramming](manual_bed_tramming.md)
-    before going any further, if you choose to ignore this advice, you risk damage to your bed if the bed is significantly higher
-    on one side compared to the centre of the bed where the printer is homed.
-
 If you are switching from cartotouch remove these:
 
 - `[scanner model default]`
@@ -266,6 +260,14 @@ After the save config you have to do the touch calibration.
     If it never touches the bed, refer to <https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/software-configuration/touch-calibration#nozzle-never-touches-the-bed   >
 
 **Source:** <https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/software-configuration/touch-calibration>
+
+### Manual Bed Tramming
+
+To avoid the risk of bed damage due to a badly trammed bed, please perform [Manual Bed Tramming](manual_bed_tramming.md) before going any further.
+
+!!! danger
+
+    If you choose to ignore this advice, you risk damage to your bed if the bed is significantly higher on one side compared to the centre of the bed where the printer is homed.
 
 ### Pid Tuning and Input Shaping
 

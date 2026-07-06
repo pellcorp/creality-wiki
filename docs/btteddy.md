@@ -160,12 +160,6 @@ Your printer MCU firmware was updated successfully.   If you still see the `MCU 
 
 ## Calibration
 
-!!! danger
-
-    To avoid the risk of bed damage due to a badly trammed bed, please perform [Manual Bed Tramming](manual_bed_tramming.md)
-    before going any further, if you choose to ignore this advice, you risk damage to your bed if the bed is significantly higher
-    on one side compared to the centre of the bed where the printer is homed.
-
 !!! warning
 
     The following calibration steps are required to setup a new printer:
@@ -245,6 +239,14 @@ Your printer MCU firmware was updated successfully.   If you still see the `MCU 
 !!! tip
 
     If you are struggling to get over about 80c, you can end the calibration early with the `TEMPERATURE_PROBE_COMPLETE` macro, just know that if you end the calibration early and then you try to print really hot and the eddy gets hotter than the hottest temp you calibrated the eddy is going to read the bed wrong and cause issues for homing but especially bed meshes.
+
+### Manual Bed Tramming
+
+To avoid the risk of bed damage due to a badly trammed bed, please perform [Manual Bed Tramming](manual_bed_tramming.md) before going any further.
+
+!!! danger
+
+    If you choose to ignore this advice, you risk damage to your bed if the bed is significantly higher on one side compared to the centre of the bed where the printer is homed.
 
 ### Pid Tuning and Input Shaping
 

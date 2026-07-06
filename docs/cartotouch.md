@@ -189,12 +189,6 @@ Your printer MCU firmware was updated successfully.   If you still see the `MCU 
 
 ## Calibration
 
-!!! danger
-
-    To avoid the risk of bed damage due to a badly trammed bed, please perform [Manual Bed Tramming](manual_bed_tramming.md)
-    before going any further, if you choose to ignore this advice, you risk damage to your bed if the bed is significantly higher
-    on one side compared to the centre of the bed where the printer is homed.
-
 !!! warning
 
     The following calibration steps are required to setup a new printer:
@@ -214,7 +208,6 @@ Your printer MCU firmware was updated successfully.   If you still see the `MCU 
     - `[scanner]`
     - `[axis_twist_compensation]`
     - `[bed_mesh]`
-
 
 ### Enable Touch Mode
 
@@ -284,6 +277,14 @@ After the save config you have to do the touch calibration.
     If this fails after 3 tries, you should check to make sure there is not filament stuck to the bottom of your nozzle!
 
 **Source:** <https://docs.cartographer3d.com/original-plugin/installation/calibration#setting-up-touch>
+
+### Manual Bed Tramming
+
+To avoid the risk of bed damage due to a badly trammed bed, please perform [Manual Bed Tramming](manual_bed_tramming.md) before going any further.
+
+!!! danger
+
+    If you choose to ignore this advice, you risk damage to your bed if the bed is significantly higher on one side compared to the centre of the bed where the printer is homed.
 
 ### Pid Tuning and Input Shaping
 
