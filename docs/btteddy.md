@@ -246,7 +246,7 @@ To avoid the risk of bed damage due to a badly trammed bed, please perform [Manu
 
 !!! danger
 
-    If you choose to ignore this advice, you risk damage to your bed if the bed is significantly higher on one side compared to the centre of the bed where the printer is homed.
+    You risk damage to your bed surface if the bed is significantly higher on one side compared to the centre of the bed where the printer is homed.
 
 ### Pid Tuning and Input Shaping
 
