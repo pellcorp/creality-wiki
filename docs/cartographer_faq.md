@@ -52,3 +52,22 @@ I do not know if this is a good idea, I just know it's possible!
 
 **Source:** <https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/software-configuration/klipper-setup#configure-klipper>
 
+## How do I downgrade the cartographer3d-plugin?
+
+If you have upgraded to latest via fluidd / mainsail and are concerned the latest plugin has introduced an issue and you would like
+to downgrade you can, but you will need to do this via ssh and the command differs depending on whether you are on K1 or RPI series
+
+Login to the printer via ssh, and for example to downgrade to 1.6.0:
+
+=== "K1 Series"
+
+    ```
+    /usr/share/klippy-env/bin/pip install 'cartographer3d-plugin==1.6.0'
+    ```
+
+=== "RPI Series"
+
+    ```
+    ~/klippy-env/bin/pip install 'cartographer3d-plugin==1.6.0'
+    ```
+
