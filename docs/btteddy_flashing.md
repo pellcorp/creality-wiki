@@ -11,6 +11,10 @@
     It is possible this method will not work for the BTT Duo, especially if it is currently flashed for Can from the factory, 
     and you may need to resort to the legacy approach documented [here](legacy_btteddy_flashing.md)
 
+!!! note
+
+    The btteddy.uf2 supports btteddy and eddyng
+
 ## On Printer
 
 You can also flash the eddy on your printer (K1, K1C, K1SE, K1M, Ender 3 V3 KE, etc) but you need to be able to disconnect and reconnect it for this to work, there is currently no way to get the eddy into boot mode any other way!
