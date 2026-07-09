@@ -1,8 +1,8 @@
 # BTT Eddy Flashing
 
-!!! danger
+!!! note
 
-    THIS IS A RISKY OPERATION YOU CAN BRICK YOUR EDDY
+    The btteddy.uf2 supports btteddy and eddyng
 
 !!! tip "Flashing Btt DUO"
 
@@ -10,10 +10,6 @@
 
     It is possible this method will not work for the BTT Duo, especially if it is currently flashed for Can from the factory, 
     and you may need to resort to the legacy approach documented [here](legacy_btteddy_flashing.md)
-
-!!! note
-
-    The btteddy.uf2 supports btteddy and eddyng
 
 ## On Printer
 
