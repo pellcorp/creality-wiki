@@ -149,8 +149,8 @@ nav:
       - beacon_faq.md
   - EddyNG:
       - eddyng.md
-      - btteddy_wiring.md
-      - btteddy_flashing.md
+      - eddyng_wiring.md
+      - eddyng_flashing.md
       - eddyng_troubleshooting.md
   - BttEddy:
       - btteddy.md

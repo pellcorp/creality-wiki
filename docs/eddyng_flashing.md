@@ -1,4 +1,8 @@
-# BTT Eddy Flashing
+# EddyNG Flashing
+
+!!! note
+
+    The btteddy.uf2 supports btteddy and eddyng
 
 !!! tip "Flashing Btt DUO"
 
