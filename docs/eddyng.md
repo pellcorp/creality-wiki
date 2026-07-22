@@ -161,12 +161,12 @@ Your printer MCU firmware was updated successfully.   If you still see the `MCU 
 
 !!! note
 
-    The EddyNG guide recommends heat soaking the printer a bit before doing calibration
+    The EddyNG guide recommends heating the bed before doing calibration
 
 --steps--
 
 1. Run `_SET_KIN_MAX_Z` and then **use normal controls to move** the toolhead so that the nozzle is only a few mm above the bed surface
-2. Run `_CALIBRATE_HEAT_SOAK`, which will heat the bed to 60c, nozzle to 150c and **wait 8.5 minutes**!
+2. Run `_CALIBRATE_PRE_HEAT`, which will heat the bed to 60c, nozzle to 150c!
 3. Run the `STOP_CAMERA` macro to stop the camera
 4. Run `PROBE_EDDY_NG_SETUP`, Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
 <br />Upon completion *`SAVE_CONFIG`*
