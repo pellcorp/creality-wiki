@@ -218,6 +218,14 @@ thead th, .highlight span.filename{
     border-radius: var(--md-border-radius);
 }
 
+/* Prevent long unbreakable content (URLs, etc.) from forcing the table
+   wider than the content column with no visible scrollbar */
+.md-typeset table:not([class]) td,
+.md-typeset table:not([class]) th {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
 /* || ------ LISTS ------ */
 .md-typeset ol li::marker {
     color: var(--md-accent-fg-color);
