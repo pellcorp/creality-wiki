@@ -187,6 +187,7 @@ nav:
   - Network & Cameras:
       - configure_wifi.md
       - additional_camera.md
+      - nebula_camera.md
       - moonraker_timelapse.md
       - spoolman.md
       - grumpyscreen.md
