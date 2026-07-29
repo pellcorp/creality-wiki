@@ -215,11 +215,19 @@ Then run the installer:
 
 ```
 cd /usr/data/Happy-Hare
-./install.sh -k /usr/data/klipper -c /usr/data/printer_data/config -z -m /usr/data/moonraker
+./install.sh -k /usr/data/klipper -c /usr/data/printer_data/config -z -m /usr/data/moonraker -e
 systemctl restart moonraker
 systemctl restart klipper
 ```
 
+## How do I install Klipper TMC Autotune
+
+You must ensure that you are on latest Simple AF, we enhanced the systemctl shim and added an ln shim so that the upstream
+installer works like this:
+
+```
+wget --no-check-certificate -O - https://raw.githubusercontent.com/andrewmcgr/klipper_tmc_autotune/refs/heads/main/install.sh | EUID=1 KLIPPY_PATH=/usr/share/klipper AUTOTUNETMC_PATH=/usr/data/klipper_tmc_autotune sh
+```
 
 ## How do I enable moonraker timelapses?
 
