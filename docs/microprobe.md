@@ -66,7 +66,7 @@ pin: ^!nozzle_mcu: PA9  # MicroProbe V2 users should use this line to trigger on
 
 The installation can only be performed on a printer which has been rooted and ssh granted
 
-You need root access, if you are not already root, then follow the excellent [Helper Script Enable Root Access](https://guilouz.github.io/Creality-Helper-Script-Wiki/firmwares/install-and-update-rooted-firmware-k1/#enable-root-access) instructions.
+You need root access, if you are not already root, then follow the [Enable Root Access](enable-root-access.md) instructions.
 
 ### Factory Reset
 
