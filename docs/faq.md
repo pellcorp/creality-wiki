@@ -229,6 +229,10 @@ installer works like this:
 wget --no-check-certificate -O - https://raw.githubusercontent.com/andrewmcgr/klipper_tmc_autotune/refs/heads/main/install.sh | EUID=1 KLIPPY_PATH=/usr/share/klipper AUTOTUNETMC_PATH=/usr/data/klipper_tmc_autotune sh
 ```
 
+!!! note
+
+    This only applies to K1 Series, for RPI and PiK1 you should just follow the normal installation procedure
+
 ## How do I enable moonraker timelapses?
 
 [Enable Moonraker Timelapse](misc.md#moonraker-timelapse)
