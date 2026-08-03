@@ -21,9 +21,10 @@ Usb based activation of factory reset if the worst happens, for more details see
 
 ## Where do I get the firmware?
 
-Currently there are only 2 pre-rooted firmware available more can be created on demand
+Currently, there are only 2 pre-rooted K1 series firmware available but more can be created on demand, the K1 series
+should work for K1, K1C, K1SE and K1 Max!
 
-Go to <https://github.com/pellcorp/downloads/tree/main/creality/k1/firmware>
+Go to <https://github.com/pellcorp/downloads/tree/main/creality/prerooted/k1>
 
 ## What is the root Password?
 
