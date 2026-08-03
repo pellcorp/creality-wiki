@@ -6,13 +6,9 @@
 
 There is another project <https://github.com/pellcorp/creality-firmware> 
 
-## The Features
-
-What is special about this pre-rooted firmware:
-
 ## Pre-rooted
 
-Pre-rooted of course - the caveat being for some printers like the Ender 3 V3 KE, pre-root is not enabled until
+The one caveat being for some printers like the Ender 3 V3 KE, pre-root is not enabled until
 the initial setup steps are completed.
 
 ## Configure WIFI via USB
