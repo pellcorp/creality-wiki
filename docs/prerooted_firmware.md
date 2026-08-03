@@ -21,10 +21,10 @@ Usb based activation of factory reset if the worst happens, for more details see
 
 ## Where do I get the firmware?
 
-Currently, there are only 2 pre-rooted K1 series firmware available but more can be created on demand, the K1 series
-should work for K1, K1C, K1SE and K1 Max!
+There is firmware for the K1 Series (K1, K1C, K1SE and K1 Max) and the Ender 3 V3 KE at the moment.  If you are looking for 
+pre-rooted firmware for another Creality OS printer let me know.
 
-Go to <https://github.com/pellcorp/downloads/tree/main/creality/prerooted/k1>
+Go to <https://github.com/pellcorp/downloads/tree/main/creality/prerooted>
 
 ## What is the root Password?
 
