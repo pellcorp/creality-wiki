@@ -9,6 +9,11 @@ This page covers installing SimpleAF using a Beacon probe. New here? See [Gettin
 
 RPi / SBC users: install SimpleAF via [SimpleAF for RPi](rpi.md). The rest of this page &mdash; probe firmware, mount options, and calibration &mdash; applies to your setup too.
 
+## Known Issues
+
+I am not sure for how long, but it seems like SCREW_TILT_ADJUST is not working at all for Beacon on Simple AF K1 Series, homing timeout occurs and crashes klipper,
+a user reported it, and I reproduced on my K1 Max with a Beacon.   I will be investigating this further but for now its a known issue, apologies.
+
 ## Firmware requirements
 
 ### Limits on X and Y microsteps
