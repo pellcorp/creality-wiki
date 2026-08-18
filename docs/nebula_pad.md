@@ -15,7 +15,14 @@ The Nebula Pad **must** be mounted onto the printer in landscape mode
 - Ender 3 V2 with 4.2.2 mainboard
 - Ender 3 V3 SE C13 mainboard
 
-Additional printers that can be connected via the IDC display port will be added over time
+Additional printers that can be connected via the IDC display port will be added as needed
+
+The following additional printers are planned for the near future:
+
+- Ender 3 V1 and V1 Pro with 4.2.2 mainboard - TODO
+- Ender 3 V1 and V1 Pro with 4.2.7 mainboard - TODO
+- Ender 3 V2 with 4.2.7 mainboard - TODO
+- Ender 3 V3 SE C14 mainboard - TODO
 
 ## SimpleAF Base Firmware
 
