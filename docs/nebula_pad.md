@@ -54,7 +54,7 @@ You will need to flash your printer with klipper firmware in the way that each p
 this will entail copying the bin file to a SD or Micro SD card and placing into the printer and restarting the printer, you should not
 have the printer connected to the Nebula Pad at this stage.
 
-| Mainboards               | URL                                                                                     | Notes                                                         |
-|--------------------------|-----------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| Creality 4.2.2 and 4.2.7 | <https://github.com/pellcorp/klipper/raw/refs/heads/jun2025/fw/NEBULA/creality-42x.bin> | This firmware works for STM32 and GD32 variants of the boards |
-| Ender 3 V3 C13          | TODO                                                                                    | C13 board only                                                | 
+| Mainboards                | URL                                                                                     | Notes                                                         |
+|---------------------------|-----------------------------------------------------------------------------------------|---------------------------------------------------------------|
+| Creality 4.2.2 and 4.2.7  | <https://github.com/pellcorp/klipper/raw/refs/heads/jun2025/fw/NEBULA/creality-42x.bin> | This firmware works for STM32 and GD32 variants of the boards |
+| Ender 3 V3 C13            | TODO                                                                                    | C13 board only                                                | 
