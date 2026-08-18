@@ -64,6 +64,7 @@ See [Simple AF for RPi](rpi.md)
 | **CrTouch** | K1, K1C, K1M, K1SE | <https://www.printables.com/model/1073375-cr-touch-mount-k1-k1maxk1c-zero-y-offset> | Untested on K1M        |
 | **Default** | Ender 3 V3 SE      | N/A                                                                                 | Default CR Touch Mount |
 | **Default** | Ender 3 V3 KE      | N/A                                                                                 | Default CR Touch Mount |
+| **Default** | Ender 3 V2         | N/A                                                                                 | Default CR Touch Mount |
 
 ## Installation
 
