@@ -90,4 +90,4 @@ have the printer connected to the Nebula Pad at this stage.
 | Mainboards                | URL                                                                                     | Notes                                                         |
 |---------------------------|-----------------------------------------------------------------------------------------|---------------------------------------------------------------|
 | Creality 4.2.2 and 4.2.7  | <https://github.com/pellcorp/klipper/raw/refs/heads/jun2025/fw/NEBULA/creality-42x.bin> | This firmware works for STM32 and GD32 variants of the boards |
-| Ender 3 V3 C13            | <https://github.com/pellcorp/klipper/raw/refs/heads/jun2025/fw/NEBULA/creality-42x.bin> | C13 board only, this is the same firmware as for 4.2.2/4.2.7  | 
+| Ender 3 V3 C13            | TODO                                                                                    | C13 board only                                                | 
