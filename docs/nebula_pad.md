@@ -42,9 +42,25 @@ You will need root access to the printer, and then run this command:
 
 Coming soon
 
-## How do I login?
+## First start
 
-You need to setup wifi either via usb or the bootstrap ui and once you have an IP Address, you can ssh into the printer with:
+### Touch Calibration
+
+When you start the Nebula Pad after installing the SimpleAF Base Firmware you will be a asked to complete touch calibration, follow the
+steps to get that done
+
+![image](assets/images/nebula_bootstrap_calibration.jpg)
+
+### Setup WIFI
+
+If you already had wifi setup before flashing the new firmware, your wifi details might have been retained, if not you will need to
+set them up again via the wifi panel or [Configure WIFI via USB](configure_wifi.md)
+
+![image](assets/images/nebula_bootstrap_wifi.jpg)
+
+### Logging in
+
+Once WIFI is connected you can login as root via ssh:
 
 ```
 ssh root@THE_IP_ADDRESS
