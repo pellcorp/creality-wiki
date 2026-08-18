@@ -15,8 +15,6 @@ The Nebula Pad **must** be mounted onto the printer in landscape mode
 - Ender 3 V2 with 4.2.2 mainboard
 - Ender 3 V3 SE with C13 mainboard
 
-Additional printers that can be connected via the IDC display port will be added as needed
-
 The following additional printers are planned for the near future:
 
 - Ender 3 V1 and V1 Pro with 4.2.2 mainboard - TODO
@@ -24,16 +22,20 @@ The following additional printers are planned for the near future:
 - Ender 3 V2 with 4.2.7 mainboard - TODO
 - Ender 3 V3 SE with C14 mainboard - TODO
 
+Additional printers that can be connected via the IDC display port will be added as needed
+
 ## SimpleAF Base Firmware
 
-You must factory reset your Nebula Pad and install the Simple AF base nebula firmware, you must download this firmware
-and flash it via the stock UI or from the command line (you will need root access)
+You must install the Simple AF base nebula firmware.
 
 Download the [SimpleAF_NEBULA_ota_img_V8.1.1.0.29.img](https://github.com/pellcorp/downloads/raw/refs/heads/main/creality/prerooted/SimpleAF_NEBULA_ota_img_V8.1.1.0.29.img) and save it to a Fat32 formatted USB Key and insert it into your Nebula Pad.
 
+After you finish flashing the SimpleAF base firmware, you must [factory reset your Nebula Pad](factory_reset.md) before proceeding to install
+Simple AF, the installer will abort if it detects you have not factory reset!
+
 !!! note
 
-    The base firmware was prepared via the [creality prerooted firmware SimpleAF project](prerooted_firmware.md) with the `--simpleaf` option to `./create`!
+    WIFI settings should be retained if you use the Simple AF factory reset method
 
 You have a few options for flashing the firmware to your Nebula Pad
 
