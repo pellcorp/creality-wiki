@@ -42,6 +42,11 @@ but please do **not** follow the installation instructions on that page, just pr
 
 This probe is currently not supported on Ender 5 Max
 
+### Nebula Pad
+
+Support is coming soon to install Simple AF on a Nebula pad and use with a limited range of Ender 3 printers, refer to [Nebula Pad](nebula_pad.md) for details
+of getting the required base firmware onto the nebula pad, as well as getting the right printer firmware flashed to your Ender 3.
+
 ### RPi or SBC
 
 See [Simple AF for RPi](rpi.md)
