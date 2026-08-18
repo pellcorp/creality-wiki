@@ -28,7 +28,7 @@ Additional printers that can be connected via the IDC display port will be added
 
 You must install the Simple AF base nebula firmware.
 
-Download the [SimpleAF_NEBULA_ota_img_V8.1.1.0.29.img](https://github.com/pellcorp/downloads/raw/refs/heads/main/creality/prerooted/SimpleAF_NEBULA_ota_img_V8.1.1.0.29.img) and save it to a Fat32 formatted USB Key and insert it into your Nebula Pad.
+Download the [NEBULA_ota_img_V8.1.1.0.29.img](https://github.com/pellcorp/downloads/raw/refs/heads/main/creality/simpleaf/NEBULA_ota_img_V8.1.1.0.29.img) and save it to a Fat32 formatted USB Key and insert it into your Nebula Pad.
 
 After you finish flashing the SimpleAF base firmware, you must [factory reset your Nebula Pad](factory_reset.md) before proceeding to install
 Simple AF, the installer will abort if it detects you have not factory reset!
@@ -48,7 +48,7 @@ The stock UI should prompt you to install the updated firmware when the USB is i
 You will need root access to the printer, and then run this command:
 
 ```
-/etc/ota_bin/local_ota_update.sh /tmp/udisk/sda1/SimpleAF_NEBULA_ota_img_V8.1.1.0.29.img
+/etc/ota_bin/local_ota_update.sh /tmp/udisk/sda1/NEBULA_ota_img_V8.1.1.0.29.img
 ```
 
 ### Ingenic Cloner
