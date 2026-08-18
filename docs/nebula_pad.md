@@ -43,6 +43,8 @@ You have a few options for flashing the firmware to your Nebula Pad
 
 The stock UI should prompt you to install the updated firmware when the USB is inserted!
 
+![image](assets/images/nebula_upgrade_firmware.jpg)
+
 ### Via the command line on the printer
 
 You will need root access to the printer, and then run this command:
