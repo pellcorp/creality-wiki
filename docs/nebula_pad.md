@@ -6,6 +6,10 @@
 
 We are introducing support for running Simple AF with a retail Nebula Pad for some older Ender printers.
 
+## Nebula Pad mount
+
+The Nebula Pad **must** be mounted onto the printer in landscape mode
+
 ## Supported Printers
 
 - Ender 3 V2 with 4.2.2 mainboard
