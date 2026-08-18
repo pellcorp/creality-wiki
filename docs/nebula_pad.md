@@ -11,22 +11,23 @@ We are introducing support for running Simple AF with a retail Nebula Pad for so
 - Ender 3 V2 with 4.2.2 mainboard
 - Ender 3 V3 SE C13 mainboard
 
-Additional printers will be added over time
+Additional printers that can be connected via the IDC display port will be added over time
 
 ## SimpleAF Base Firmware
 
 You must factory reset your Nebula Pad and install the Simple AF base nebula firmware, you must download this firmware
 and flash it via the stock UI or from the command line (you will need root access)
 
-Download the SimpleAF_NEBULA_ota_img_V1.1.0.29.img, save it to a Fat32 formatted USB Key and insert it into your Nebula Pad
+Download the [SimpleAF_NEBULA_ota_img_V8.1.1.0.29.img](https://github.com/pellcorp/downloads/raw/refs/heads/main/creality/prerooted/SimpleAF_NEBULA_ota_img_V8.1.1.0.29.img?download=) and save it to a Fat32 formatted USB Key and insert it into your Nebula Pad.
 
-<https://github.com/pellcorp/downloads/blob/main/creality/prerooted/SimpleAF_NEBULA_ota_img_V1.1.0.29.img>
+You have two options for flashing the firmware to your Nebula Pad:
 
-You can flash the firmware from the stock UI or via the command line on the printer with the command:
+1) Flash the firmware from the stock UI
+2) or via the command line on the printer with the command:
 
-```
-/etc/ota_bin/local_ota_update.sh /tmp/udisk/sda1/SimpleAF_NEBULA_ota_img_V1.1.0.29.img
-```
+    ```
+    /etc/ota_bin/local_ota_update.sh /tmp/udisk/sda1/SimpleAF_NEBULA_ota_img_V8.1.1.0.29.img
+    ```
 
 ## Printer Firmware
 
