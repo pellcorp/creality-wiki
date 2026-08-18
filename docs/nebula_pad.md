@@ -12,14 +12,12 @@ The Nebula Pad **must** be mounted onto the printer in landscape mode
 
 ## Supported Printers
 
-- Ender 3 V2 with 4.2.2 mainboard
+- Ender 3 V1, V1 Pro and V2 with 4.2.2 mainboard
+- Ender 3 V1, V1 Pro and V2 with 4.2.7 mainboard - TODO
 - Ender 3 V3 SE with C13 mainboard
 
 The following additional printers are planned for the near future:
 
-- Ender 3 V1 and V1 Pro with 4.2.2 mainboard - TODO
-- Ender 3 V1 and V1 Pro with 4.2.7 mainboard - TODO
-- Ender 3 V2 with 4.2.7 mainboard - TODO
 - Ender 3 V3 SE with C14 mainboard - TODO
 
 Additional printers that can be connected via the IDC display port will be added as needed
@@ -92,4 +90,4 @@ have the printer connected to the Nebula Pad at this stage.
 | Mainboards                | URL                                                                                     | Notes                                                         |
 |---------------------------|-----------------------------------------------------------------------------------------|---------------------------------------------------------------|
 | Creality 4.2.2 and 4.2.7  | <https://github.com/pellcorp/klipper/raw/refs/heads/jun2025/fw/NEBULA/creality-42x.bin> | This firmware works for STM32 and GD32 variants of the boards |
-| Ender 3 V3 C13            | TODO                                                                                    | C13 board only                                                | 
+| Ender 3 V3 C13            | <https://github.com/pellcorp/klipper/raw/refs/heads/jun2025/fw/NEBULA/creality-42x.bin> | C13 board only, this is the same firmware as for 4.2.2/4.2.7  | 
