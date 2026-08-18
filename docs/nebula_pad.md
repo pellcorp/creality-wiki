@@ -20,6 +20,10 @@ and flash it via the stock UI or from the command line (you will need root acces
 
 Download the [SimpleAF_NEBULA_ota_img_V8.1.1.0.29.img](https://github.com/pellcorp/downloads/raw/refs/heads/main/creality/prerooted/SimpleAF_NEBULA_ota_img_V8.1.1.0.29.img) and save it to a Fat32 formatted USB Key and insert it into your Nebula Pad.
 
+!!! note
+
+    The base firmware was prepared via the [creality prerooted firmware SimpleAF project](prerooted_firmware.md] with the `--simpleaf` option to `./create`!
+
 You have a few options for flashing the firmware to your Nebula Pad
 
 ### Flash the firmware from the stock UI
