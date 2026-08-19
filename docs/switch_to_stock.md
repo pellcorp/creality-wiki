@@ -9,9 +9,13 @@ Existing users of Simple AF will have to factory reset at least once to get the 
 backed up, but for new users the feature will be available straight away.   If you have a `/usr/data/backups/creality-backup.tar.gz` file,
 you can use the feature.
 
-Its really important before you install Simple AF for the first time that you properly calibrate the printer in stock so that
+It is really important before you install Simple AF for the first time that you properly calibrate the printer in stock so that
 switching back allows you to immediately use the printer, the switch to stock process does not restore the printer to a completely
 stock configuration, as only klipper and the stock display are restored!
+
+!!! warn
+
+    Switch to Stock is not available if you are using a retail Nebula Pad or Simple AF for RPI!
 
 ## Via GrumpyScreen
 
