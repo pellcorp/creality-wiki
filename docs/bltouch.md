@@ -106,7 +106,7 @@ To run the script, you must specify the probe you want to use.
 
 !!! note
 
-   For a Nebula Pad installation you must also specify the correct `--printer` argument!   See [Nebula Pad](nebula_pad.md#installing-simpleaf) for more information.
+    For a Nebula Pad installation you must also specify the correct `--printer` argument!   See [Nebula Pad](nebula_pad.md#installing-simpleaf) for more information.
 
 !!! warning
 
