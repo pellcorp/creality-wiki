@@ -96,6 +96,8 @@ have the printer connected to the Nebula Pad at this stage.
 
 ## Installing SimpleAF
 
+![image](assets/images/nebula_install_printer.png)
+
 The instructions for installing SimpleAF for a bltouch just need to have a --printer argument added, so for example to install for a Ender 3 V1 with a 4.2.2 mainboard, 
 you would clone the repo and then run the installer:
 
@@ -109,4 +111,3 @@ git clone https://github.com/pellcorp/creality.git /usr/data/pellcorp
 
     The `--mount Default` will configure bltouch for the Creality supplied bltouch mount with the stock hotend, you could also specify `--mount SpritePro` to
     setup a printer with the Sprite Pro and the provided bltouch mount.
-
