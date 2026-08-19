@@ -12,15 +12,17 @@ The Nebula Pad **must** be mounted onto the printer in landscape mode
 
 ## Supported Printers
 
-- Ender 3 V1, V1 Pro and V2 with 4.2.2 mainboard
-- Ender 3 V1, V1 Pro and V2 with 4.2.7 mainboard - TODO
-- Ender 3 V3 SE with C13 mainboard
+- Ender 3 V1, V1 Pro and V2 with 4.2.2 mainboard (`--printer creality-ender3-v12-422`)
+- Ender 3 V1, V1 Pro and V2 with 4.2.7 mainboard (`--printer creality-ender3-v12-427`)
+- Ender 3 V3 SE with C13 mainboard (`--printer creality-ender3-v3-se`)
 
 The following additional printers are planned for the near future:
 
 - Ender 3 V3 SE with C14 mainboard - TODO
 
-Additional printers that can be connected via the IDC display port will be added as needed
+!!! note
+
+    Additional printers that can be connected via the IDC display port will be added if requested
 
 ## SimpleAF Base Firmware
 
@@ -91,3 +93,20 @@ have the printer connected to the Nebula Pad at this stage.
 |---------------------------|-----------------------------------------------------------------------------------------|---------------------------------------------------------------|
 | Creality 4.2.2 and 4.2.7  | <https://github.com/pellcorp/klipper/raw/refs/heads/jun2025/fw/NEBULA/creality-42x.bin> | This firmware works for STM32 and GD32 variants of the boards |
 | Ender 3 V3 C13            | <https://github.com/pellcorp/klipper/raw/refs/heads/jun2025/fw/NEBULA/e3v3se.bin>       | C13 board only                                                | 
+
+## Installing SimpleAF
+
+The instructions for installing SimpleAF for a bltouch just need to have a --printer argument added, so for example to install for a Ender 3 V1 with a 4.2.2 mainboard, 
+you would clone the repo and then run the installer:
+
+```
+git config --global http.sslVerify false
+git clone https://github.com/pellcorp/creality.git /usr/data/pellcorp
+/usr/data/pellcorp/installer.sh --install bltouch --mount Default --printer creality-ender3-v12-422
+```
+
+!!! note
+
+    The `--mount Default` will configure bltouch for the Creality supplied bltouch mount with the stock hotend, you could also specify `--mount SpritePro` to
+    setup a printer with the Sprite Pro and the provided bltouch mount.
+
