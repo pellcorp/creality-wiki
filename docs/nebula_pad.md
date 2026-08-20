@@ -12,8 +12,8 @@ The Nebula Pad **must** be mounted onto the printer in landscape mode
 
 ## Supported Printers
 
-- Ender 3 V1 and V1 Pro with 4.2.2 mainboard (`--printer creality-ender3-v1-422`)
-- Ender 3 V1 and V1 Pro with 4.2.7 mainboard (`--printer creality-ender3-v1-427`)
+- Ender 3 V1 and V1 Pro with 4.2.2 mainboard (`--printer creality-ender3-422`)
+- Ender 3 V1 and V1 Pro with 4.2.7 mainboard (`--printer creality-ender3-427`)
 - Ender 3 Neo with 4.2.7 mainboard (`--printer creality-ender3-neo-427`)
 - Ender 3 V2 with 4.2.2 mainboard (`--printer creality-ender3-v2-422`)
 - Ender 3 V2 with 4.2.7 mainboard (`--printer creality-ender3-v2-427`)
@@ -111,7 +111,7 @@ you would clone the repo and then run the installer:
 ```
 git config --global http.sslVerify false
 git clone https://github.com/pellcorp/creality.git /usr/data/pellcorp
-/usr/data/pellcorp/installer.sh --install bltouch --mount Default --printer creality-ender3-v1-422
+/usr/data/pellcorp/installer.sh --install bltouch --mount Default --printer creality-ender3-422
 ```
 
 !!! note
