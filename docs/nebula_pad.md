@@ -30,6 +30,18 @@ The following additional printers are planned for the near future:
 
     Additional printers that can be connected via the IDC display port will be added if requested
 
+## Printer Firmware
+
+You will need to flash your printer with klipper firmware in the way that each printer needs to be flashed, usually
+this will entail copying the bin file to a SD or Micro SD card and placing into the printer and restarting the printer, you should not
+have the printer connected to the Nebula Pad at this stage.
+
+| Mainboards               | URL                                                                                     | Notes                                                                                                                                  |
+|--------------------------|-----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
+| Creality 4.2.2 and 4.2.7 | <https://github.com/pellcorp/klipper/raw/refs/heads/jun2025/fw/NEBULA/creality-42x.bin> | This firmware works for STM32 and GD32 variants of the boards                                                                          |
+| Ender 3 V3 C13           | <https://github.com/pellcorp/klipper/raw/refs/heads/jun2025/fw/NEBULA/e3v3se.bin>       | C13 board only                                                                                                                         | 
+| Ender 3 V3 C14           | <https://github.com/pellcorp/klipper/raw/refs/heads/jun2025/fw/NEBULA/e3v3se_c14.bin>   | **UNTESTED** C14 board only - Create a folder `STM32F4_UPDATE` copy `e3v3se_c14.bin`<br /> to this folder and rename to `firmware.bin` |
+
 ## SimpleAF Base Firmware
 
 You must install the Simple AF base nebula firmware.
@@ -88,18 +100,6 @@ ssh root@THE_IP_ADDRESS
 ```
 
 The password is `Creality2023`
-
-## Printer Firmware
-
-You will need to flash your printer with klipper firmware in the way that each printer needs to be flashed, usually
-this will entail copying the bin file to a SD or Micro SD card and placing into the printer and restarting the printer, you should not
-have the printer connected to the Nebula Pad at this stage.
-
-| Mainboards               | URL                                                                                     | Notes                                                                                                                                  |
-|--------------------------|-----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| Creality 4.2.2 and 4.2.7 | <https://github.com/pellcorp/klipper/raw/refs/heads/jun2025/fw/NEBULA/creality-42x.bin> | This firmware works for STM32 and GD32 variants of the boards                                                                          |
-| Ender 3 V3 C13           | <https://github.com/pellcorp/klipper/raw/refs/heads/jun2025/fw/NEBULA/e3v3se.bin>       | C13 board only                                                                                                                         | 
-| Ender 3 V3 C14           | <https://github.com/pellcorp/klipper/raw/refs/heads/jun2025/fw/NEBULA/e3v3se_c14.bin>   | **UNTESTED** C14 board only - Create a folder `STM32F4_UPDATE` copy `e3v3se_c14.bin`<br /> to this folder and rename to `firmware.bin` |
 
 ## Installing SimpleAF
 
