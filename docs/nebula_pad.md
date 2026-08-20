@@ -19,11 +19,10 @@ The Nebula Pad **must** be mounted onto the printer in landscape mode
 - Ender 3 V2 with 4.2.7 mainboard (`--printer creality-ender3-v2-427`)
 - Ender 3 V2 Neo with 4.2.7 mainboard (`--printer creality-ender3-v2-neo-427`)
 - Ender 3 Max Neo with 4.2.2 mainboard (`--printer creality-ender3-max-neo-422`)
-- Ender 3 V3 SE with C13 mainboard (`--printer creality-ender3-v3-se`)
+- Ender 3 V3 SE (`--printer creality-ender3-v3-se`)
 
 The following additional printers are planned for the near future:
 
-- Ender 3 V3 SE with C14 mainboard
 - Ender 3 S1
 - Ender 3 S1 Pro
 
@@ -96,10 +95,11 @@ You will need to flash your printer with klipper firmware in the way that each p
 this will entail copying the bin file to a SD or Micro SD card and placing into the printer and restarting the printer, you should not
 have the printer connected to the Nebula Pad at this stage.
 
-| Mainboards                | URL                                                                                     | Notes                                                         |
-|---------------------------|-----------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| Creality 4.2.2 and 4.2.7  | <https://github.com/pellcorp/klipper/raw/refs/heads/jun2025/fw/NEBULA/creality-42x.bin> | This firmware works for STM32 and GD32 variants of the boards |
-| Ender 3 V3 C13            | <https://github.com/pellcorp/klipper/raw/refs/heads/jun2025/fw/NEBULA/e3v3se.bin>       | C13 board only                                                | 
+| Mainboards               | URL                                                                                     | Notes                                                         |
+|--------------------------|-----------------------------------------------------------------------------------------|---------------------------------------------------------------|
+| Creality 4.2.2 and 4.2.7 | <https://github.com/pellcorp/klipper/raw/refs/heads/jun2025/fw/NEBULA/creality-42x.bin> | This firmware works for STM32 and GD32 variants of the boards |
+| Ender 3 V3 C13           | <https://github.com/pellcorp/klipper/raw/refs/heads/jun2025/fw/NEBULA/e3v3se.bin>       | C13 board only                                                | 
+| Ender 3 V3 C14           | <https://github.com/pellcorp/klipper/raw/refs/heads/jun2025/fw/NEBULA/e3v3se_c14.bin>   | C14 board only - UNTESTED                                     |
 
 ## Installing SimpleAF
 
