@@ -73,7 +73,8 @@ You will need root access to the printer, and then run this command:
 
 ### Ingenic Cloner
 
-Coming soon
+You can download the ingenic image from:
+<https://github.com/pellcorp/downloads/blob/main/creality/simpleaf/NEBULA_8.1.1.0.29.ingenic>
 
 ## First start
 
