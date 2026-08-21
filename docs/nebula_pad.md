@@ -18,13 +18,13 @@ The Nebula Pad **must** be mounted onto the printer in landscape mode
 - Ender 3 V2 with 4.2.2 mainboard (`--printer creality-ender3-v2-422`)
 - Ender 3 V2 with 4.2.7 mainboard (`--printer creality-ender3-v2-427`)
 - Ender 3 V2 Neo with 4.2.7 mainboard (`--printer creality-ender3-v2-neo-427`)
-- Ender 3 Max Neo with 4.2.2 mainboard (`--printer creality-ender3-max-neo-422`)
 - Ender 3 V3 SE (`--printer creality-ender3-v3-se`)
 
 The following additional printers are planned for the near future:
 
 - Ender 3 S1
 - Ender 3 S1 Pro
+- Ender 3 Max Neo
 
 !!! note
 
