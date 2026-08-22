@@ -4,7 +4,7 @@
 
 # Simple AF on a Nebula Pad
 
-We are introducing support for running Simple AF with a retail Nebula Pad for some older Ender printers.
+We are introducing support for running Simple AF with a retail Nebula Pad for some older Ender 3 printers.
 
 ## Nebula Pad mount
 
