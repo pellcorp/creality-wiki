@@ -1,7 +1,8 @@
-# Factory Reset
+# Nebula Factory Reset
 
-It is strongly recommended to perform a factory reset via the following method rather than an official Creality method because our 
-method retains SSH access and wifi settings/
+A factory reset is **required** before you install Simple AF onto a retail Nebula Pad to run with an older Ender 3!
+
+The following method retains SSH access and Wi-Fi settings as long as you perform it **after** flashing the Simple AF base firmware!
 
 ```
 wget --no-check-certificate https://raw.githubusercontent.com/pellcorp/creality/main/k1/services/S58factoryreset -O /tmp/S58factoryreset
