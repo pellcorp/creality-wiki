@@ -119,3 +119,18 @@ git clone https://github.com/pellcorp/creality.git /usr/data/pellcorp
 
     The `--mount Default` will configure bltouch for the Creality supplied bltouch mount with the stock hotend, you could also specify `--mount SpritePro` to
     setup a printer with the Sprite Pro and the provided bltouch mount.
+
+## Restoring original firmware
+
+If you decide you don't like Simple AF on your Nebula Pad, you should [factory reset](emergency_factory_reset.md) which will return you to the Wi-Fi bootstrap screen, where you will be prompted to calibrate touch again, if you are going
+back to stock firmware, don't worry about doing the touch calibration, just go ahead and SSH into the machine (Wi-Fi settings should have been retained)
+
+You can either grab the original firmware from creality or [my prerooted firmware](prerooted_firmware.md), put that onto a USB key, plug the usb key into the machine
+
+Run this command if you downloaded my pre-rooted but otherwise stock firmware:
+
+```
+/etc/ota_bin/local_ota_update.sh /tmp/udisk/sda1/NEBULA_ota_img_V7.1.1.0.29.img
+```
+
+Restart the Nebula Pad and it should prompt you to setup your printer again.

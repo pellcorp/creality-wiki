@@ -14,6 +14,10 @@ Before an emergency happens, you should verify you have a USB key that can be us
 
 ## Wait for Stock Screen
 
+!!! note
+
+    For Nebula Pad a factory reset will return you to the Wi-Fi bootstrap screen, where you will be prompted to calibrate touch again.
+
 Initiating a factory reset via USB or GrumpyScreen it is **vital** you do not power cycle your printer before the stock screen appears. There may be a 3002 error on the screen, this is completely normal.   If you are planning to install Simple AF you can ignore it, if you are trying to go back to stock, power cycle the printer again to clear the error.  
 
 Failing to follow this advice can lead to your printer getting bricked and requiring much more involved intervention to recover!
