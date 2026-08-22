@@ -33,6 +33,10 @@ chmod +x /tmp/S58factoryreset
 
 ## First Start Setup
 
+!!! note
+
+    This does not apply to retail Nebula Pad users
+
 After performing a factory reset you might expect to be greeted with first time setup, but the Simple AF S58factoryreset suppresses this by modifying the
 `/usr/data/creality/userdata/config/system_config.json` to skip self_test step!
 
