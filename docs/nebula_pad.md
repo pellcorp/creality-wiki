@@ -12,12 +12,12 @@ The Nebula Pad **must** be mounted onto the printer in landscape mode
 
 ## Supported Printers
 
-- Ender 3 V1 and V1 Pro with 4.2.2 mainboard (`--printer creality-ender3-v12-422`)
-- Ender 3 V1 and V1 Pro with 4.2.7 mainboard (`--printer creality-ender3-v12-427`)
-- Ender 3 Neo with 4.2.7 mainboard (`--printer creality-ender3-v12-427`)
+- Ender 3 V1 and V1 Pro with 4.2.2 mainboard (`--printer creality-ender3-v12-422`) **UNTESTED**
+- Ender 3 V1 and V1 Pro with 4.2.7 mainboard (`--printer creality-ender3-v12-427`) **UNTESTED**
+- Ender 3 Neo with 4.2.7 mainboard (`--printer creality-ender3-v12-427`) **UNTESTED**
 - Ender 3 V2 with 4.2.2 mainboard (`--printer creality-ender3-v12-422`)
-- Ender 3 V2 with 4.2.7 mainboard (`--printer creality-ender3-v12-427`)
-- Ender 3 V2 Neo with 4.2.7 mainboard (`--printer creality-ender3-v12-427`)
+- Ender 3 V2 with 4.2.7 mainboard (`--printer creality-ender3-v12-427`) **UNTESTED**
+- Ender 3 V2 Neo with 4.2.7 mainboard (`--printer creality-ender3-v12-427`) **UNTESTED**
 - Ender 3 V3 SE (`--printer creality-ender3-v3-se`)
 
 The following additional printers are planned for the near future:
