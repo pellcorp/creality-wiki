@@ -30,6 +30,10 @@ Simple AF on the KE for Cartographer.
 Please note that you will need to change the screen orientation to horizontal, here is a model for that <https://www.printables.com/model/727362-ender-3-v3-ke-screen-holder-landscape-for-guppyscr>,
 but please do **not** follow the installation instructions on that page, just print the model and remount your screen only!
 
+### Nebula Pad
+
+This probe is currently not supported on Nebula Pad
+
 ### Simple AF for RPi
 
 See [Simple AF for RPi](rpi.md)

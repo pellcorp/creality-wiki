@@ -44,6 +44,10 @@ Please note that you will need to change the screen orientation to horizontal, h
 but please do **not** follow the installation instructions on that page, just print the model and remount your screen only!
 An alternative model which honestly seems a bit cleaner: <https://www.printables.com/model/706657-creality-ender-3-v3-e3v3-se-ke-and-cr-10-se-portra>
 
+### Nebula Pad
+
+This probe currently is supported for Ender 3 V3 SE, but additional Ender 3 models can be supported if there is interest.
+
 ### RPi or SBC
 
 See [Simple AF for RPi](rpi.md)
