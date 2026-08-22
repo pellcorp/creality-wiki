@@ -1,10 +1,10 @@
-!!! klipper-error "Experimental"
+!!! klipper-error "Beta"
 
-    Installing Simple AF on a Nebula Pad is considered experimental
+    Installing Simple AF on a Nebula Pad is beta
 
 # Simple AF on a Nebula Pad
 
-We are introducing support for running Simple AF with a retail Nebula Pad for some older Ender 3 printers.
+Support for running Simple AF with a retail Nebula Pad for some older Ender 3 printers.
 
 ## Nebula Pad mount
 
