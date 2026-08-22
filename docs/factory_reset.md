@@ -13,6 +13,14 @@ chmod +x /tmp/S58factoryreset
 /tmp/S58factoryreset reset
 ```
 
+!!! note
+
+    If you are using [my prerooted firmware](prerooted_firmware.md), then the factory reset is already available so you can run it like:
+
+    ```
+    /etc/init.d/S58factoryreset reset
+    ```
+
 !!! danger
 
     It is really important you do not close the ssh session until you get this message:
