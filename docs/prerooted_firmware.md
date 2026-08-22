@@ -30,5 +30,8 @@ Go to <https://github.com/pellcorp/downloads/tree/main/creality/prerooted>
 
 For all firmware its `Creality2023`
 
+## Gotchas
 
-
+For the Ender 3 V3 KE and Nebula Pad, the ssh service is not started until after the first start screens, if you have
+a dodgy Ender 3 V3 KE, sometimes you got to keep dismissing errors and clicking next until finally SSH starts, its super
+annoying to be honest.   
