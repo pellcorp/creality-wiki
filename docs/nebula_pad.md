@@ -48,7 +48,7 @@ You must install the Simple AF base nebula firmware.
 
 Download the [NEBULA_ota_img_V8.1.1.0.29.img](https://github.com/pellcorp/downloads/raw/refs/heads/main/creality/simpleaf/NEBULA_ota_img_V8.1.1.0.29.img) and save it to a Fat32 formatted USB Key and insert it into your Nebula Pad.
 
-After you finish flashing the SimpleAF base firmware, you must [factory reset your Nebula Pad](factory_reset.md) before proceeding to install
+After you finish flashing the SimpleAF base firmware, you must [factory reset your Nebula Pad](nebula_factory_reset.md) before proceeding to install
 Simple AF, the installer will abort if it detects you have not factory reset!
 
 !!! note
