@@ -5,9 +5,7 @@ A factory reset is **required** before you install Simple AF onto a retail Nebul
 The following method retains SSH access and Wi-Fi settings as long as you perform it **after** flashing the Simple AF base firmware!
 
 ```
-wget --no-check-certificate https://raw.githubusercontent.com/pellcorp/creality/main/k1/services/S58factoryreset -O /tmp/S58factoryreset
-chmod +x /tmp/S58factoryreset
-/tmp/S58factoryreset reset
+/etc/init.d/S58factoryreset reset
 ```
 
 !!! danger
