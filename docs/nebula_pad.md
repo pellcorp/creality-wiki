@@ -1,6 +1,6 @@
-!!! klipper-error "Coming Soon"
+!!! klipper-error "Experimental"
 
-    Installing Simple AF on a Nebula Pad is not available yet
+    Installing Simple AF on a Nebula Pad is considered experimental
 
 # Simple AF on a Nebula Pad
 
