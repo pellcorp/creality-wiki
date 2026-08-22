@@ -15,7 +15,7 @@ chmod +x /tmp/S58factoryreset
 
     ![image](assets/images/factory_reset.png)
 
-    It can take up to 5 minutes for a factory restart to finish, it is **vital** you do not power cycle your printer before the stock screen appears. 
+    It can take up to 5 minutes for a factory restart to finish, it is **vital** you do not power cycle your nebula pad before the stock screen appears. 
 
-    Failing to follow this advice can lead to your printer getting bricked and requiring much more involved intervention to recover!
+    Failing to follow this advice can lead to your nebula pad getting bricked and requiring you flashing the ingenic image to recover, which is a bit more annoying!
 

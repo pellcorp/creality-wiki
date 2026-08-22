@@ -106,7 +106,7 @@ The password is `Creality2023`
 
 ![image](assets/images/nebula_install_printer.png)
 
-The instructions for installing SimpleAF for a bltouch just need to have a --printer argument added, so for example to install for a Ender 3 V1 with a 4.2.2 mainboard, 
+The instructions for installing SimpleAF for a bltouch just need to have a --printer argument added, so for example to install for an Ender 3 V1 with a 4.2.2 mainboard, 
 you would clone the repo and then run the installer:
 
 ```
