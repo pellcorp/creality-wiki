@@ -112,7 +112,7 @@ you would clone the repo and then run the installer:
 ```
 git config --global http.sslVerify false
 git clone https://github.com/pellcorp/creality.git /usr/data/pellcorp
-/usr/data/pellcorp/installer.sh --install bltouch --mount Default --printer creality-ender3-422
+/usr/data/pellcorp/installer.sh --install bltouch --mount Default --printer creality-ender3-v12-422
 ```
 
 !!! note
