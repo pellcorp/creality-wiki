@@ -21,9 +21,9 @@ When possible we use upstream projects without modifications, including:
 
 When needed we maintain forks of upstream projects with additional features that are difficult to upstream, and we have done that for:
 
-- Klipper
-- Kalico
-- uStreamer
+- Klipper - some quality-of-life features and precompiled c_helper.so
+- Kalico - some quality-of-life features and precompiled c_helper.so
+- uStreamer - optimised fps and support pause / resume of camera feed for cartographer, beacon and eddy without actually stopping the webcam service (K1 Series only)
 
 !!! note
 
