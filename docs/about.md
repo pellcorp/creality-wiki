@@ -35,7 +35,7 @@ When needed we maintain forks of upstream projects with additional features that
     manually copy over is the virtual pins and gcode shell command extras that we bundle.
 
 We forked GuppyScreen to provide a screen UI because the GuppyScreen project was abandoned and we wanted to continue to polish and
-improve the core functionality of GuppyScreen without all the niche features that make it hard to maintain, I called it GrumpyScreen
+improve the core functionality of GuppyScreen without all the niche features that make it hard to maintain.  I called it GrumpyScreen
 as a nod to one of my heros Linus Torvalds who named Git after himself :-)   This is to say, that I am a grumpy bastard and so GrumpyScreen got its name.
 
 ## History
