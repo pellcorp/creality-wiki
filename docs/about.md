@@ -115,3 +115,6 @@ are identified, we always try our best to get that rectified, no one likes disco
 
 Because Simple AF is essentially the same across all printers we support, there are 1000s of people using Simple AF on various printers with various
 probes but their experience can benefit new users even if they are not on the exact same platform or probe.
+
+We have an excellent relationship with the Cartographer3D team and we offer first line support for Cartographer on SimpleAF but some of the support
+people on the SimpleAF discord serve that function on cartographer discord too.
