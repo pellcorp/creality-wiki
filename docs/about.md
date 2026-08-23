@@ -102,9 +102,10 @@ Running the installer sets up:
 - Nginx
 - Fluidd and Mainsail (with a easy way to switch which is the default but both are available on different ports)
 - A webcam stack
-- A backup tool including integration with github to backup your customisations
+- A backup tool including integration with [GitHub to backup your customisations](config_overrides.md#git-backups-for-configuration-overrides)
 - A full set of macros so you can calibrate and start printing immediately no having to hunt for anything
-- The ability to switch probes without a reinstallation
+- The ability to [switch probes](switching_probes.md) without a reinstallation
+- The ability to easily [switch to stock](switch_to_stock.md) if you need to reprint a mount (K1 Series only not supported for retail Nebula Screen)
 
 ## What about support?
 
