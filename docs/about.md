@@ -31,6 +31,9 @@ When needed we maintain forks of upstream projects with additional features that
     behaviour of either variant of Klipper, in many cases the stuff we have on top of Klipper is cherry-picked from Kalico or are small quality of
     life fixes to make working with Klipper easier, we are strongly apposed to the absolute cluster f*** that is Creality Klipper (fondly referred to as Crapper)
 
+    You are not locked into our forks of klipper, some people even use our macros with completely vanilla klipper / kalico and the only thing they need to
+    manually copy over is the virtual pins and gcode shell command extras that we bundle.
+
 We forked GuppyScreen to provide a screen UI because the GuppyScreen project was abandoned and we wanted to continue to polish and
 improve the core functionality of GuppyScreen without all the niche features that make it hard to maintain, I called it GrumpyScreen
 as a nod to one of my heros Linus Torvalds who named Git after himself :-)   This is to say, that I am a grumpy bastard and so GrumpyScreen got its name.
