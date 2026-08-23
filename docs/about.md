@@ -7,18 +7,19 @@ I wanted a single command to set everything up for a printer, so that I could be
 
 I am a huge proponent of Open Source, but not just open sourcing the code, but making sure it's possible to build and use the thing that the
 source is designed to provide.  Creality has half-heartedly open sourced some of their stuff, mostly related to klipper, but without proper
-build files and correct and up-to-date documentation releasing the source is not helpful.   So a primary mission of Simple AF is everything is
-open, everything is configurable, everything is buildable, everything is documented.   The macros we ship have lots of places you can modify their
-behaviour or extend their behaviour with [Custom Hooks](custom_hooks.md), niche features are not always integrated, but custom hooks are to allow
-niche features to be used without having to replace lots of our gcode just to do that one thing.   When possible we use upstream projects without
-modifications, including:
+build files and correct and up-to-date documentation releasing the source is not helpful.  A primary mission of Simple AF is everything is
+open, everything is configurable, everything is buildable, everything is documented.  The macros we ship have lots of places you can modify their
+behaviour or extend their behaviour with [custom hooks](custom_hooks.md).  Niche features are not always integrated, but custom hooks allow
+niche features to be used without having to replace lots of our gcode just to do that one thing.  
+
+When possible we use upstream projects without modifications, including:
 
 - Moonraker
 - NGinx
 - Fluidd
 - Mainsail
 
-When needed we maintain forks of upstream projects with additional features that are difficult to upstream and we have done that for:
+When needed we maintain forks of upstream projects with additional features that are difficult to upstream, and we have done that for:
 
 - Klipper
 - Kalico
@@ -36,7 +37,7 @@ situation has recently changed of course but there are still many components of 
 
 ## What is Creality OS?
 
-Creality OS is based on buildroot and is used by K1, K1C, K1SE, K1M, Ender 3 V3, Ender 3 V3 KE, Ender 5 Max and the retail Nebula Pad
+Creality OS is based on buildroot and is used by K1, K1C, K1SE, K1M, Ender 3 V3, Ender 3 V3 KE, Ender 5 Max and the retail Nebula Pad.
 
 Creality has never released the source for many components of their build root based Creality OS, and the web server, display server and
 camera stack are very visible components which are impossible for us to modify.
@@ -91,7 +92,7 @@ It supports automatically configuring one of the following probes for one of the
 - EddyNG on a BTT BIQU USB Eddy or DUO in USB mode 
 - Klicky Probe
 
-We support a variety of mount options across many of those printers and lots of documentation for how to set them up 
+We support a variety of mount options across many of those printers and lots of documentation for how to set them up.
 
 ## What gets installed?
 
@@ -105,11 +106,12 @@ Running the installer sets up:
 - A backup tool including integration with [GitHub to backup your customisations](config_overrides.md#git-backups-for-configuration-overrides)
 - A full set of macros so you can calibrate and start printing immediately no having to hunt for anything
 - The ability to [switch probes](switching_probes.md) without a reinstallation
-- The ability to easily [switch to stock](switch_to_stock.md) if you need to reprint a mount (K1 Series only not supported for retail Nebula Screen)
+- The ability to easily [switch to stock](switch_to_stock.md) if you need to reprint a mount (K1 Series only not supported for retail Nebula Pad)
 
 ## What about support?
 
-We have a discord and a wiki with lots of information, including a FAQ
+We have a discord and a wiki with lots of information, including a FAQ and specific pages for many features, where definiciencies in docs
+are identified, we always try our best to get that rectified, no one likes discord search!
 
 Because Simple AF is essentially the same across all printers we support, there are 1000s of people using Simple AF on various printers with various
 probes but their experience can benefit new users even if they are not on the exact same platform or probe.
