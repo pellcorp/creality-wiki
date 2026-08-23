@@ -48,8 +48,11 @@ printer cfg, either one we maintain or you can provide your own, but then the in
 !!! note
 
     I am well aware of kiauh and people are probably asking why not just use kiuah, my personal preference is I actually don't like kiuah at
-    at all because I want to run a single command and get everything setup, I don't want to have to go searching through menus for each feature
+    all because I want to run a single command and get everything setup, I don't want to have to go searching through menus for each feature
     I want to install, and I want the entire installation to be tightly integrated and tested together.
+
+    But the main reason Simple AF for RPI exists is because existing users on stock hardware asked for it and I ended up migrating my RPI
+    based printers too because I find the experience much more streamlined and simple to use as a result.
 
 ## What Probes are supported?
 
