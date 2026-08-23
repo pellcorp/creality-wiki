@@ -39,11 +39,11 @@ We also have a variant of Simple AF for users who have upgraded their Creality P
 this mostly at the behest of existing users who wanted the same basic ootb experience they had on their Creality stock hardware printers, so the
 RPI variant uses the same macros and installs the same basic software with a few obvious differences including: 
 
-For RPI series the process to calibrate a printer is basically the same, the main difference is as part of the installer you choose a base
-printer cfg, either one we maintain or you can provide your own, but then the installation process is the same.
-
 - Crowsnest instead of UStreamer
 - Our Klipper and Kalico forks don't precompile c_helper.so or the Klipper mcu binaries 
+
+For RPI series the process to calibrate a printer is basically the same, the main difference is as part of the installer you choose a base
+printer cfg, either one we maintain or you can provide your own, but then the installation process is the same.
 
 !!! note
 
