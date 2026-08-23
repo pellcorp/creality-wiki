@@ -55,7 +55,7 @@ printer cfg, either one we maintain or you can provide your own, but then the in
 
 It supports automatically configuring one of the following probes for one of the above printers:
 
-- BL/Touch, CR/Touch
+- BLTouch, CRTouch (3dTouch can be supported but there is so much variability)
 - BTT BIQU Microprobe
 - Cartographer V3 and V4
 - Beacon
