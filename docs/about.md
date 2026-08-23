@@ -3,6 +3,31 @@
 I started Simple AF after growing tired of having to pick and choose bits and pieces from the helper script or kiuah.  
 I wanted a single command to set everything up for a printer, so that I could be calibrating my K1 from a factory reset in less than 20 minutes.
 
+## Philosophy
+
+I am a huge proponent of Open Source, but not just open sourcing the code, but making sure it's possible to build and use the thing that the
+source is designed to provide.  Creality has half-heartedly open sourced some of their stuff, mostly related to klipper, but without proper
+build files and correct and up-to-date documentation releasing the source is not helpful.   So a primary mission of Simple AF is everything is
+open, everything is configurable, everything is buildable, everything is documented.   The macros we ship have lots of places you can modify their
+behaviour or extend their behaviour with [Custom Hooks](custom_hooks.md), niche features are not always integrated, but custom hooks are to allow
+niche features to be used without having to replace lots of our gcode just to do that one thing.   When possible we use upstream projects without
+modifications, including:
+
+- Moonraker
+- NGinx
+- Fluidd
+- Mainsail
+
+When needed we maintain forks of upstream projects with additional features that are difficult to upstream and we have done that for:
+
+- Klipper
+- Kalico
+- uStreamer
+
+We forked GuppyScreen to provide a screen UI because the GuppyScreen project was abandoned and we wanted to continue to polish and
+improve the core functionality of GuppyScreen without all the niche features that make it hard to maintain, I called it GrumpyScreen
+as a nod to one of my heros Linus Torvalds who named Git after himself :-)   This is to say, that I am a grumpy bastard and so GrumpyScreen got its name.
+
 ## History
 
 This project originally started back in early 2024 to provide a more open klipper experience for K1 users, and the only way to do that
