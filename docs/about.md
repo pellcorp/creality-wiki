@@ -25,6 +25,12 @@ When needed we maintain forks of upstream projects with additional features that
 - Kalico
 - uStreamer
 
+!!! note
+
+    Even though we forked Kalico and Klipper the features we provide on top of vanilla Klipper and Kalico do not in any way change the core
+    behaviour of either variant of Klipper, in many cases the stuff we have on top of Klipper is cherry-picked from Kalico or are small quality of
+    life fixes to make working with Klipper easier, we are strongly apposed to the absolute cluster f*** that is Creality Klipper (fondly referred to as Crapper)
+
 We forked GuppyScreen to provide a screen UI because the GuppyScreen project was abandoned and we wanted to continue to polish and
 improve the core functionality of GuppyScreen without all the niche features that make it hard to maintain, I called it GrumpyScreen
 as a nod to one of my heros Linus Torvalds who named Git after himself :-)   This is to say, that I am a grumpy bastard and so GrumpyScreen got its name.
