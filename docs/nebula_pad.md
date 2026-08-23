@@ -87,8 +87,8 @@ steps to get that done
 
 ### Setup WIFI
 
-If you already had wifi setup before flashing the new firmware, your wifi details might have been retained, if not you will need to
-set them up again via the wifi panel or [Configure WIFI via USB](configure_wifi.md)
+If you already had Wi-Fi setup before flashing the new firmware, your details might have been retained, if not you will need to
+set them up again via the Wi-Fi panel or [Configure WIFI via USB](configure_wifi.md)
 
 ![image](assets/images/nebula_bootstrap_wifi.jpg)
 
