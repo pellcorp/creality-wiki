@@ -18,8 +18,8 @@ When possible we use upstream projects without modifications, including:
 - Nginx
 - Fluidd
 - Mainsail
-- Bash - Creality OS does not come with bash
-- Dropbear sftp plugin - The Creality OS Dropbear ssh server does not support scp and sftp ootb
+- [Bash](https://github.com/pellcorp/k1-bash) - Creality OS does not come with bash
+- [Dropbear sftp plugin](https://github.com/pellcorp/k1-sftp-server) - The Creality OS Dropbear ssh server does not support scp and sftp ootb
 
 !!! note
 
@@ -27,9 +27,13 @@ When possible we use upstream projects without modifications, including:
 
 When needed we maintain forks of upstream projects with additional features that are difficult to upstream, and we have done that for:
 
-- Klipper - some quality-of-life features and precompiled c_helper.so
-- Kalico - some quality-of-life features and precompiled c_helper.so
-- uStreamer - optimised fps and support pause / resume of camera feed for cartographer, beacon and eddy without actually stopping the webcam service (K1 Series only)
+- [Klipper - K1 Series](https://github.com/pellcorp/klipper) - some quality-of-life features and precompiled c_helper.so
+- [Kalico - K1 Series](https://github.com/pellcorp/kalico) - some quality-of-life features and precompiled c_helper.so
+- [Klipper Firmware - K1 Series](https://github.com/pellcorp/k1-klipper-firmware)
+- [Kalico Firmware - K1 Series](https://github.com/pellcorp/k1-kalico-firmware)
+- [uStreamer](https://github.com/pellcorp/k1-ustreamer) - optimised fps and support pause / resume of camera feed for cartographer, beacon and eddy without actually stopping the webcam service (K1 Series only)
+- [Klipper - RPI Series](https://github.com/pellcorp/klipper-rpi) - some quality-of-life features
+- [Kalico - RPI Series](https://github.com/pellcorp/kalico-rpi) - some quality-of-life features
 
 !!! note
 
@@ -40,7 +44,7 @@ When needed we maintain forks of upstream projects with additional features that
     You are not locked into our forks of klipper, some people even use our macros with completely vanilla klipper / kalico and the only thing they need to
     manually copy over is the virtual pins and gcode shell command extras that we bundle.
 
-We forked GuppyScreen to provide a screen UI because the GuppyScreen project was abandoned and we wanted to continue to polish and
+We forked GuppyScreen to provide the [GrumpyScreen UI](https://github.com/pellcorp/grumpyscreen) because the GuppyScreen project was abandoned, and we wanted to continue to polish and
 improve the core functionality of GuppyScreen without all the niche features that make it hard to maintain.  I called it GrumpyScreen
 as a nod to one of my heros Linus Torvalds who named Git after himself :-)   This is to say, that I am a grumpy bastard and so GrumpyScreen got its name.
 
