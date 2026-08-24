@@ -3,6 +3,21 @@
 I started Simple AF after growing tired of having to pick and choose bits and pieces from the helper script or kiuah.  
 I wanted a single command to set everything up for a printer, so that I could be calibrating my K1 from a factory reset in less than 20 minutes.
 
+## What is Klipper?
+
+It seems that many people conflate Klipper with the entire ecosystem around klipper including a Screen UI (GrumpyScreen or KlipperScreen for instance), 
+Moonraker, Fluidd / Mainsail and Klipper itself, which has Klippy the runtime component, but also the firmware that gets installed onto the MCUs themselves!
+
+Here is an image I asked ChatGPT to generate which gives a basic overview of the architecture of a typical Klipper setup
+
+![image](assets/images/klipper_ecosystem.png)
+
+!!! note
+
+    I specifically excluded the WebCam from this diagram, but if it were added it would be a webcam connected via USB to the host,
+    exposed via uStreamer or Crowsnest, and Nginx would serve the camera feeds.  We add webcam configuration to moonraker and then
+    Fluidd or Mainsail will show the camera feed in the UI
+
 ## Philosophy
 
 I am a huge proponent of Open Source, but not just open sourcing the code, but making sure it's possible to build and use the thing that the
@@ -53,11 +68,6 @@ as a nod to one of my heros Linus Torvalds who named Git after himself :-)   Thi
 This project originally started back in early 2024 to provide a more open klipper ecosystem experience for K1 users, and the only way to do that
 was by using an alternative probe like a bltouch or microprobe because the prtouch load cells implementation was completely locked down and closed source, that
 situation has recently changed of course but there are still many components of Creality OS that are closed source. 
-
-!!! note 
-
-    It seems that many people conflate Klipper with the entire ecosystem around klipper including a Screen UI (GrumpyScreen or KlipperScreen for instance), 
-    Moonraker, Fluidd / Mainsail and Klipper itself, which has Klippy the runtime component, but also the firmware that gets installed onto the MCUs themselves!
 
 ## What is Creality OS?
 
