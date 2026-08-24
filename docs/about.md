@@ -50,9 +50,13 @@ as a nod to one of my heros Linus Torvalds who named Git after himself :-)   Thi
 
 ## History
 
-This project originally started back in early 2024 to provide a more open klipper experience for K1 users, and the only way to do that
+This project originally started back in early 2024 to provide a more open klipper ecosystem experience for K1 users, and the only way to do that
 was by using an alternative probe like a bltouch or microprobe because the prtouch load cells implementation was completely locked down and closed source, that
 situation has recently changed of course but there are still many components of Creality OS that are closed source. 
+
+!!! note 
+
+    It seems that many people conflate Klipper with the entire ecosystem around klipper including Moonraker, Fluidd / Mainsail and Klipper itself.
 
 ## What is Creality OS?
 
