@@ -84,7 +84,7 @@ Creality has never released the source for many components of their build root b
 camera stack are very visible components which are impossible for us to modify.
 
 Even to this day there are parts of some klipper forks used by Creality OS which are not open source, or where there are no build files
-to build new firmware, we have spent a lot of time reverse engineering firmware blobs for all the printers we support.
+to build new firmware, we have spent a lot of time reverse engineering firmware blobs and bits of released source to produce new open source firmware and build config for all the printers we support.
 
 ## What Printers are supported?
 
