@@ -12,6 +12,12 @@ Here is an image I asked ChatGPT to generate which gives a basic overview of the
 
 ![image](assets/images/klipper_ecosystem.png)
 
+Things to note about the Host Machine and MCU:
+
+- The Host Machine on a K1 is the mainboard, which also has the primary MCU
+- For a Nebula Pad the host machine is the Nebula Pad, but the primary MCU is separate
+- For a RPI, the Host Machine is the RPI, the primary MCU is separate
+
 !!! note
 
     I specifically excluded the WebCam from this diagram, but if it were added it would be a webcam connected via USB to the host,
