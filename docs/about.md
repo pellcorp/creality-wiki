@@ -15,7 +15,7 @@ niche features to be used without having to replace lots of our gcode just to do
 When possible we use upstream projects without modifications, including:
 
 - Moonraker
-- NGinx
+- Nginx
 - Fluidd
 - Mainsail
 
