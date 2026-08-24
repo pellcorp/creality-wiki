@@ -125,7 +125,7 @@ Running the installer sets up:
 - Klipper or Kalico 
 - Moonraker
 - Nginx
-- Fluidd and Mainsail (with an easy way to switch which is the default but both are available on different ports)
+- Fluidd and Mainsail (with an [easy way to switch](faq.md#how-do-i-switch-default-ui-from-fluidd-to-mainsail-and-back) which is the default but both are available on different ports)
 - A webcam stack
 - A backup tool including integration with [GitHub to backup your customisations](config_overrides.md#git-backups-for-configuration-overrides)
 - A full set of macros so you can calibrate and start printing immediately no having to hunt for anything
