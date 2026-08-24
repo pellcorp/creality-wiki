@@ -15,7 +15,7 @@ niche features to be used without having to replace lots of our gcode just to do
 When possible we use upstream projects without modifications, including:
 
 - Moonraker
-- Nginx
+- [Nginx](https://github.com/pellcorp/k1-nginx)
 - Fluidd
 - Mainsail
 - [Bash](https://github.com/pellcorp/k1-bash) - Creality OS does not come with bash
