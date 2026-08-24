@@ -19,11 +19,11 @@ When possible we use upstream projects without modifications, including:
 - Fluidd
 - Mainsail
 - Bash - Creality OS does not come with bash
-- SFTP Server - The Creality OS Dropbear ssh server does not have a sftp component
+- Dropbear sftp plugin - The Creality OS Dropbear ssh server does not have a sftp component
 
 !!! note
 
-    We prebuild nginx, bash and the sftp but Fluidd, Mainsail and Moonraker are installed directly from upstream
+    We prebuild nginx, bash and drop bear sftp plugin but Fluidd, Mainsail and Moonraker are installed directly from upstream
 
 When needed we maintain forks of upstream projects with additional features that are difficult to upstream, and we have done that for:
 
