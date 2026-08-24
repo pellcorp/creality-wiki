@@ -19,7 +19,7 @@ When possible we use upstream projects without modifications, including:
 - Fluidd
 - Mainsail
 - Bash - Creality OS does not come with bash
-- Dropbear sftp plugin - The Creality OS Dropbear ssh server does not have a sftp support
+- Dropbear sftp plugin - The Creality OS Dropbear ssh server does not support scp and sftp ootb
 
 !!! note
 
