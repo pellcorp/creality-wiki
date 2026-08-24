@@ -56,7 +56,8 @@ situation has recently changed of course but there are still many components of 
 
 !!! note 
 
-    It seems that many people conflate Klipper with the entire ecosystem around klipper including Moonraker, Fluidd / Mainsail and Klipper itself.
+    It seems that many people conflate Klipper with the entire ecosystem around klipper including a Screen UI (GrumpyScreen or KlipperScreen for instance), 
+    Moonraker, Fluidd / Mainsail and Klipper itself.
 
 ## What is Creality OS?
 
