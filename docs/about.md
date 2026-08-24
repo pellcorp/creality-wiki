@@ -57,7 +57,7 @@ situation has recently changed of course but there are still many components of 
 !!! note 
 
     It seems that many people conflate Klipper with the entire ecosystem around klipper including a Screen UI (GrumpyScreen or KlipperScreen for instance), 
-    Moonraker, Fluidd / Mainsail and Klipper itself.
+    Moonraker, Fluidd / Mainsail and Klipper itself, which has Klippy the runtime component, but also the firmware that gets installed onto the MCUs themselves!
 
 ## What is Creality OS?
 
