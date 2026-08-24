@@ -27,8 +27,8 @@ When possible we use upstream projects without modifications, including:
 
 When needed we maintain forks of upstream projects with additional features that are difficult to upstream, and we have done that for:
 
-- [Klipper - K1 Series](https://github.com/pellcorp/klipper) - some quality-of-life features and precompiled c_helper.so
-- [Kalico - K1 Series](https://github.com/pellcorp/kalico) - some quality-of-life features and precompiled c_helper.so
+- [Klipper - K1 Series](https://github.com/pellcorp/klipper) - some quality-of-life features and precompiled c_helper.so / klipper_mcu
+- [Kalico - K1 Series](https://github.com/pellcorp/kalico) - some quality-of-life features and precompiled c_helper.so / klipper_mcu
 - [Klipper Firmware - K1 Series](https://github.com/pellcorp/k1-klipper-firmware)
 - [Kalico Firmware - K1 Series](https://github.com/pellcorp/k1-kalico-firmware)
 - [uStreamer](https://github.com/pellcorp/k1-ustreamer) - optimised fps and support pause / resume of camera feed for cartographer, beacon and eddy without actually stopping the webcam service (K1 Series only)
