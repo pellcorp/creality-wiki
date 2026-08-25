@@ -35,6 +35,9 @@ This guide assumes you have a K1, K1C, K1SE or K1 Max and you are running stock 
 This guide assumes you have a stock Ender 3 V3 KE with Nebula Pad with Root enabled, when you get to installation below, you should specify the `--mount Default` to install
 Simple AF on the KE for Cr-Touch.
 
+Please note that you will need to change the screen orientation to horizontal, here is a model for that:
+   <https://www.printables.com/model/706657-creality-ender-3-v3-e3v3-se-ke-and-cr-10-se-portra>
+
 ### Ender 5 Max
 
 This probe is currently not supported on Ender 5 Max
@@ -43,6 +46,9 @@ This probe is currently not supported on Ender 5 Max
 
 You can install Simple AF on a Nebula pad and use with a limited range of Ender 3 printers, refer to [Nebula Pad](nebula_pad.md) for details
 of getting the required base firmware onto the nebula pad, as well as getting the right printer firmware flashed to your Ender 3.
+
+Please note that you will need to change the screen orientation to horizontal, here is a model for the Ender 3 V3 SE:
+   <https://www.printables.com/model/706657-creality-ender-3-v3-e3v3-se-ke-and-cr-10-se-portra>
 
 ### RPi or SBC
 
