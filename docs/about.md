@@ -63,6 +63,8 @@ When needed we maintain forks of upstream projects with additional features that
     behaviour of either variant of Klipper, in many cases the stuff we have on top of Klipper is cherry-picked from Kalico or are small quality of
     life fixes to make working with Klipper easier, we are strongly apposed to the absolute cluster f*** that is Creality Klipper (fondly referred to as Crapper)
 
+    ![image](assets/images/makes_me_wish.png)
+
     You are not locked into our forks of klipper, some people even use our macros with completely vanilla klipper / kalico and the only thing they need to
     manually copy over is the virtual pins and gcode shell command extras that we bundle.
 
