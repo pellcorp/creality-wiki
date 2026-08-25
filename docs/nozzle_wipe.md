@@ -95,3 +95,8 @@ For Calin solution it's all on the website:
 <https://makerworld.com/en/models/1547901-creality-k1-max-silicone-nozzle-wiper>
 
 Calin has updated the docs for their macro to correctly use M106 macro so no changes should be required beyond what is documented on that makerworld site.
+
+### Cart's K1/C Nozzle Wiper
+For Cart's Solution, its all on their GitHub: <https://github.com/Cartrigger/cart-k1-wipe>
+
+It should work out of the box with any K1 or K1C if they have a compatible bed.
