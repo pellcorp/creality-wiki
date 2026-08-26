@@ -38,6 +38,14 @@ Simple AF on the KE for Cr-Touch.
 Please note that you will need to change the screen orientation to horizontal, here is a model for that:
    <https://www.printables.com/model/706657-creality-ender-3-v3-e3v3-se-ke-and-cr-10-se-portra>
 
+### CR10SE
+
+This guide assumes you have a stock CR10SE with Nebula Pad with Root enabled, when you get to installation below, you should specify the `--mount Default` to install
+Simple AF on the CR10SE for Cr-Touch.
+
+Please note that you will need to change the screen orientation to horizontal, here is a model for that:
+<https://www.printables.com/model/706657-creality-ender-3-v3-e3v3-se-ke-and-cr-10-se-portra>
+
 ### Ender 5 Max
 
 This probe is currently not supported on Ender 5 Max
@@ -70,6 +78,7 @@ See [Simple AF for RPi](rpi.md)
 | **CrTouch**   | K1, K1C, K1M, K1SE        | <https://www.printables.com/model/1073375-cr-touch-mount-k1-k1maxk1c-zero-y-offset> | Untested on K1M              |
 | **Default**   | Ender 3 V3 SE             | N/A                                                                                 | Default CR Touch Mount       |
 | **Default**   | Ender 3 V3 KE             | N/A                                                                                 | Default CR Touch Mount       |
+| **Default**   | CR10SE                    | N/A                                                                                 | Default CR Touch Mount       |
 | **Default**   | Ender 3 V1, V1 Pro and V2 | N/A                                                                                 | Default CR/BL Touch Mount    |
 | **SpritePro** | Ender 3 V1, V1 Pro and V2 | N/A                                                                                 | Sprite Pro CR/BL Touch Mount |
 
