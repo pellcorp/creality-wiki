@@ -48,6 +48,10 @@ An alternative model which honestly seems a bit cleaner: <https://www.printables
 
 This probe is currently not supported on Nebula Pad.
 
+### CR10SE
+
+This probe is currently not supported on CR10SE.
+
 ### RPi or SBC
 
 See [Simple AF for RPi](rpi.md)

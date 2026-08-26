@@ -47,6 +47,10 @@ Please note that you will need to change the screen orientation to horizontal, h
 
 This probe currently is supported for Ender 3 V3 SE, but additional Ender 3 models can be supported if there is interest.
 
+### CR10SE
+
+This probe is currently not supported on CR10SE, but support can be added if there is interest.
+
 ### RPi or SBC
 
 See [Simple AF for RPi](rpi.md)

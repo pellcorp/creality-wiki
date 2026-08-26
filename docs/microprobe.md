@@ -34,6 +34,10 @@ but please do **not** follow the installation instructions on that page, just pr
 
 This probe is currently not supported on Nebula Pad
 
+### CR10SE
+
+This probe is currently not supported on CR10SE
+
 ### Simple AF for RPi
 
 See [Simple AF for RPi](rpi.md)
