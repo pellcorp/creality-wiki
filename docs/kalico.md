@@ -27,7 +27,7 @@ We have three different Kalico forks:
 - <https://github.com/pellcorp/kalico-rpi> - RPI Series Kalico which runs on SBC (like a RPI)
 - <https://github.com/pellcorp/k1-kalico-firmware> - This fork is for building Creality firmware which gets copied to the pellcorp/kalico fw/ directory
 
-We have some extensions which are not upstreamed and likely might never be upstramed, we can probably use kalico plugins for much of this,
+We have some extensions which are not upstreamed and likely might never be upstreamed, we can probably use kalico plugins for much of this,
 but for simplicity reasons it should be possible to switch between kalico and klipper without any loss of functionality, once a migration is
 complete to Kalico this would be less of an issue and we may retire at least our kalico-rpi fork.
 
