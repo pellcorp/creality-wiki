@@ -23,7 +23,7 @@ The steps to flash the MCU on most Creality printers that have one looks like:
 
 !!! tip "SimpleAF for RPI or PIK1"
 
-    If you flash Simple AF firmware onto your MCUs via the /etc/init.d/S13mcu_update before you 
+    If you flash Simple AF firmware onto your MCUs via the 1/etc/init.d/S13mcu_update` before you 
     switch over to RPI or PIK1, you can then use the mcu_util.py to flash them in future from your pi.
 
 ![image](assets/images/flash_creality_firmware.png)
