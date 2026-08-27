@@ -27,8 +27,8 @@ The steps to flash the MCU on most Creality printers that have one looks like:
 
 You will need to check your printer.cfg for the specific /dev/ttyS? of your target MCU, for a K1 series printer they are:
 
-- mcu -> /dev/ttyS7
 - nozzle_mcu -> /dev/ttyS1
+- mcu -> /dev/ttyS7
 - leveling_mcu -> /dev/ttyS9
 
 For an Ender 3 V3 KE the mcu is:
