@@ -31,7 +31,12 @@ You will need to check your printer.cfg for the specific /dev/ttyS? of your targ
 - nozzle_mcu -> /dev/ttyS1
 - leveling_mcu -> /dev/ttyS9
 
-For an Ender 3 V3 KE though the mcu is:
+For an Ender 3 V3 KE the mcu is:
 
 - mcu -> /dev/ttyS1
+
+For an CR10SE:
+
+- mcu -> /dev/ttyS1
+- nozzle_mcu -> /dev/ttyS7
 
