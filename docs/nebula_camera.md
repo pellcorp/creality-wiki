@@ -10,11 +10,9 @@ I got the firmware from <https://www.patreon.com/3DRUNDOWN/posts/creality-nebula
 
 I used the official Creality guide <https://wiki.creality.com/en/3d-printer-accessories/nebula-camera-installation-firmware-upgrade>
 
-It might also be possible to flash the camera on the printer, as the `/usr/bin/cam_util` does seem to have a firmware flashing capability, but I have not explored that.
-
 ### Gnome Boxes
 
-It is possible to flash the camera via a Windows 10 VM in Gnome Boxes, but when you first click the upgrade button, its going to disconnect the camera, and you have to go and reconnect it and click the upgrade button again
+It is possible to flash the camera via a Windows 10 VM in Gnome Boxes, but when you first click the upgrade button, it's going to disconnect the camera, and you have to go and reconnect it and click the upgrade button again!
 
 ## Image is flipped vertically
 
