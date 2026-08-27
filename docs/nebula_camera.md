@@ -6,7 +6,7 @@ the V18 firmware which is not available directly from Creality.
 
 ## Firmware Upgrade
 
-I got the firmware from <https://www.patreon.com/3DRUNDOWN/posts/creality-nebula-97259067>, but in case it disappears I am also hosting it myself at <https://github.com/pellcorp/downloads/blob/main/creality/firmware/Nebula/V018%20Nebula%20Firmware.zip>
+I got the firmware from <https://www.patreon.com/3DRUNDOWN/posts/creality-nebula-97259067>, but in case it disappears I am also hosting it myself at <https://github.com/pellcorp/downloads/blob/main/creality/Nebula/V018%20Nebula%20Firmware.zip>
 
 I used the official Creality guide <https://wiki.creality.com/en/3d-printer-accessories/nebula-camera-installation-firmware-upgrade>
 
