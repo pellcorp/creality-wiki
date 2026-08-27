@@ -141,6 +141,10 @@ To run the script, you must use the following command:
 /usr/data/pellcorp/installer.sh --install beacon --mount Mount
 ```
 
+!!! tip "Install Kalico"
+
+    If you want to use [Kalico](kalico.md) instead of Klipper, add the `--kalico` installation argument! 
+
 !!! warning
 
     Replace `Mount` with the specific mount option for the mount you have used, if you do not do this the printer will be incorrectly configured for your mount, and bed meshes, x and y limits and related config will be wrong.   Please refer to [Mount Options](#mount-options) for supported mounts.   

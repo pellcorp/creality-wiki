@@ -119,7 +119,11 @@ To run the script, you must specify the probe you want to use.
 /usr/data/pellcorp/installer.sh --install bltouch --mount Mount
 ```
 
-!!! note
+!!! tip "Install Kalico"
+
+    If you want to use [Kalico](kalico.md) instead of Klipper, add the `--kalico` installation argument! 
+
+!!! note "Nebula Pad"
 
     For a Nebula Pad installation you must also specify the correct `--printer` argument!   See [Supported Printers](nebula_pad.md#supported-printers) for more information.
 

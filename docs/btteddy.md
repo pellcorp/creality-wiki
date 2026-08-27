@@ -138,6 +138,10 @@ To run the script, you must specify the probe you want to use.
 /usr/data/pellcorp/installer.sh --install btteddy --mount Mount
 ```
 
+!!! tip "Install Kalico"
+
+    If you want to use Kalico instead of Klipper, add the `--kalico` installation argument! 
+
 !!! warning
 
     Replace `Mount` with the specific mount option for the mount you have used, if you do not do this the printer will be incorrectly configured for your mount, and bed meshes, x and y limits and related config will be wrong.   Please refer to [Mount Options](#mount-options) for supported mounts.   

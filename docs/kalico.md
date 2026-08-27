@@ -45,6 +45,10 @@ complete to Kalico this would be less of an issue and we may retire at least our
 - Support a no_reconnect flag for non critical mcus, although this might be retired due to recent stability changes in Kalico
 - Expand environment variables in gcode shell commands
 
+## How do I install?
+
+For a new installation you can pass the `--kalico` argument on the `--install` command, otherwise you can switch afterwards.
+
 ## How do I switch?
 
 On both K1 and RPI Series you can switch between kalico and klipper very easily, first of all make sure your pellcorp/creality repo is 
