@@ -21,6 +21,15 @@ The steps to flash the MCU on most Creality printers that have one looks like:
 /etc/init.d/S55klipper_service start
 ```
 
+!!! danger
+
+    Please remember if you flash new firmware via this method on a Creality OS printer, the existing
+    `/etc/init.d/S13mcu_update` mechanism will flash your mcu back to its older firmware next time
+    the printer is restarted.    This happens automatically the only way to defeat it is to either 
+    remove the `/etc/init.d/S13mcu_update` or the specific /usr/data/klipper/fw bin file you are updating.
+    Removing S13mcu_update is strongly discouraged because you will end up having significant issues next time
+    we ship new firmware or a new version of klipper.
+
 !!! tip "SimpleAF for RPI or PIK1"
 
     If you flash Simple AF firmware onto your MCUs via the 1/etc/init.d/S13mcu_update` before you 
