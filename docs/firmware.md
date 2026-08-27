@@ -1,5 +1,10 @@
 # Flashing Creality firmware via mcu_util.py
 
+!!! note
+
+    This feature does not apply if you are using a Ender 3 V3 SE or an older Ender 3 on a retail Nebula Pad, because
+    the printer is flashed with standard klipper firmware via the Marlin bootloader.
+
 Once Simple AF has been installed and the machine restarted at least once, the firmware now has a bootloader
 which allows you to flash new firmware without a restart.
 
