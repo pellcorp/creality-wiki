@@ -2,7 +2,7 @@
 
 !!! klipper-error "Bricking Risk"
 
-    This is always a risk of bricking an MCU using this method, I do not accept any responsibility for a bricked MCU
+    This is always a risk of bricking an MCU using this method, we do not accept any responsibility for a bricked MCU
     if you decide to try this, all care and no responsibility!
 
 !!! note
