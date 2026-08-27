@@ -1,5 +1,10 @@
 # Flashing Creality firmware via mcu_util.py
 
+!!! klipper-error "Bricking Risk"
+
+    This is always a risk of bricking an MCU using this method, I do not accept any responsibility for a bricked MCU
+    if you decide to try this, all care and no responsibility!
+
 !!! note
 
     This feature does not apply if you are using a Ender 3 V3 SE or an older Ender 3 on a retail Nebula Pad, because
