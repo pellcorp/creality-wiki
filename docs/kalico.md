@@ -9,6 +9,12 @@ from Kalico to Klipper makes updating to later version of Klipper very difficult
 
 We have decided that it would just be easier to use Kalico directly and we don't have to worry about merge conflicts for Kalico features.
 
+## Gotchas
+
+For K1 Series, the Ender 5 Max and Ender 3 V3 are not currently supported, if you want to use Kalico on either of these
+platforms, please raise a support issue at <https://github.com/pellcorp/creality> and I can look into generating firmware
+for these printers.
+
 ## Forking Kalico?
 
 We have three different Kalico forks:
@@ -49,12 +55,6 @@ Then to switch to Kalico, you can run:
 ```
 ~/pellcorp/installer.sh --kalico
 ```
-
-!!! danger
-
-    For K1 Series, the Ender 5 Max and Ender 3 V3 are not currently supported, if you want to use Kalico on either of these
-    platforms, please raise a support issue at <https://github.com/pellcorp/creality> and I can look into generating firmware
-    for these printers.
 
 To switch back to Klipper, you can run:
 
