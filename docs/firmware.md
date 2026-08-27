@@ -18,7 +18,7 @@ The steps to flash the MCU on most Creality printers that have one looks like:
 /usr/data/pellcorp/k1/mcu_util.py -b -i /dev/ttyS1 -br 230400 -g
 /usr/data/pellcorp/k1/mcu_util.py -c -i /dev/ttyS1 -u -f mcu0_001_G32-mcu0_111_000.bin
 /usr/data/pellcorp/k1/mcu_util.py -c -i /dev/ttyS1 -s
-/usr/data/pellcorp/k1/mcu_util.py -c -i /dev/ttyS1 -s
+/etc/init.d/S55klipper_service start
 ```
 
 ![image](assets/images/flash_creality_firmware.png)
