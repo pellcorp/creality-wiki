@@ -2,22 +2,16 @@
 
 There is a medium term plan to migrate all users (K1 Series and RPI Series) over to a Simple AF Kalico fork
 
+!!! note
+
+    For new installations of Simple AF for RPI, Kalico is already the default!
+
 ## Why?
 
 Because Klipper keeps refactoring stuff and making it really hard to rebase, especially our non critical mcu feature we cherry picked
 from Kalico to Klipper makes updating to later version of Klipper very difficult.
 
 We have decided that it would just be easier to use Kalico directly and we don't have to worry about merge conflicts for Kalico features.
-
-## Limitations
-
-For K1 Series, the Ender 5 Max and Ender 3 V3 are not currently supported, if you want to use Kalico on either of these
-platforms, please raise a support issue at <https://github.com/pellcorp/creality> and I can look into generating firmware
-for these printers.
-
-!!! note
-
-    We will have to fix this before fully committing to Kalico anyway so the issue will eventually go away.
 
 ## Forking Kalico?
 
