@@ -237,14 +237,13 @@ wget --no-check-certificate -O - https://raw.githubusercontent.com/andrewmcgr/kl
 
 [Enable Moonraker Timelapse](misc.md#moonraker-timelapse)
 
-
 ## Where can I find stock configuration files?
 
-So Guilouz who created Helper Script hosts the latest version of the K1 / K1M / K1C firmware on his website, you can find the stock config files in his repo:
-<https://github.com/Guilouz/Creality-K1-Extracted-Firmwares/tree/main/Firmware/usr/share/klipper/config>
+You can find the stock config files for all printers we support here:
 
-I am also starting to collect some squashfs (decrypted) for various firmware as well at <https://github.com/pellcorp/downloads/tree/main/creality/rootfs>
+<https://github.com/pellcorp/creality-firmware/tree/main/configs/usr/share/klipper/config>
 
+We are am also starting to collect some rootfs.squashfs (decrypted) for various firmware as well at <https://github.com/pellcorp/downloads/tree/main/creality/rootfs>
 
 ## How do I setup remote access and AI failure detection?
 
