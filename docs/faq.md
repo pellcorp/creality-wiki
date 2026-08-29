@@ -91,7 +91,7 @@ For more information [Custom Hooks](custom_hooks.md)
 
 ## How can I change MCU fan from always on?
 
-By default Simple AF configures the main MCU fan to always be on to avoid overheating the MCU, you can instead restore it to only come on when the steppers or heaters are activated by a few tweaks to fan_control.cfg.
+By default Simple AF configures the main MCU fan to always be on to avoid overheating the MCU, you can instead restore it to only come on when the steppers or heaters are activated by a few tweaks to printer.cfg.
 
 So disable this:
 
@@ -145,7 +145,7 @@ target_temp: 38
 
 You may need to add `ADC_TEMPERATURE` to the `[duplicate_pin_override]` section if using this last option.
 
-Note config overrides should retain these config changes as long as you do them in the fan_control.cfg file (special handling for that file allows adding and removing whole sections)
+Note config overrides should retain these config changes as long as you do them in the printer.cfg file.
 
 
 ## How do I get the printer to lower the bed at the end of a print?
