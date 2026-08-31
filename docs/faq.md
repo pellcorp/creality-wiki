@@ -197,6 +197,26 @@ echo "myhostname" > /etc/hostname
 Next time you power cycle your printer, the hostname should be updated
 
 
+## How to install AFC on Simple AF?
+
+!!! note
+
+    This does not apply to Simple AF for RPi
+
+First of all clone the repo, you must clone it to /usr/data, do NOT clone it to /root:
+
+```
+git clone https://github.com/AFCProject/AFC-Klipper-Add-On.git  /usr/data/AFC-Klipper-Add-On
+ln -s /usr/data/AFC-Klipper-Add-On /root
+cd /root/AFC-Klipper-Add-On
+./install-afc.sh -k /usr/data/klipper -m /usr/data/printer_data/config/moonraker.conf -y /usr/share/klippy-env/bin -p /usr/data/printer_data/config
+```
+
+!!! warning
+
+    This is just the basic installation, I don't actually know if AFC even works on a K1
+
+
 ## How to install Happy Hare on Simple AF?
 
 !!! note    
