@@ -42,6 +42,16 @@ have the printer connected to the Nebula Pad at this stage.
 | Ender 3 V3 C13           | <https://github.com/pellcorp/klipper/raw/refs/heads/jun2025/fw/NEBULA/e3v3se.bin>       | C13 board only                                                                                                                         | 
 | Ender 3 V3 C14           | <https://github.com/pellcorp/klipper/raw/refs/heads/jun2025/fw/NEBULA/e3v3se_c14.bin>   | **UNTESTED** C14 board only - Create a folder `STM32F4_UPDATE` copy `e3v3se_c14.bin`<br /> to this folder and rename to `firmware.bin` |
 
+
+### Ender 3 V3 SE
+
+It is super important to double check what chip is on your board, the C14 chips have a STM32 chip, the C13 boards have GD32.   I have just become aware creality has also released boards which say C14, but have GD32!
+
+Someone from Simple AF discord pointed me to this site which might help if you are having issues flashing the Ender 3 V3 SE:
+
+<https://github.com/navaismo/Marlin_bugfix_2.1_E3V3SE/wiki/Flashing-your-Printer#troubleshooting>
+
+
 ## SimpleAF Base Firmware
 
 You must install the Simple AF base nebula firmware.
