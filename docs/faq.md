@@ -206,6 +206,7 @@ Next time you power cycle your printer, the hostname should be updated
 First of all clone the repo, you must clone it to /usr/data, do NOT clone it to /root:
 
 ```
+pip install crudini
 git clone https://github.com/AFCProject/AFC-Klipper-Add-On.git  /usr/data/AFC-Klipper-Add-On
 ln -s /usr/data/AFC-Klipper-Add-On /root
 cd /root/AFC-Klipper-Add-On
@@ -214,7 +215,8 @@ cd /root/AFC-Klipper-Add-On
 
 !!! warning
 
-    This is just the basic installation, I don't actually know if AFC even works on a K1
+    The above approach will hopefully be greatly simplified soon as a few fixes have been made to the Creality OS support
+    on the AFC repository but not released.
 
 
 ## How to install Happy Hare on Simple AF?
