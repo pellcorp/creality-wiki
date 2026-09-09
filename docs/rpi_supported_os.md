@@ -96,7 +96,11 @@ On Ubuntu 22.04 or 24.04 based distributions, it might work but no formal testin
 
 ## Armbian
 
-On Debian 11, 12 or 13, Ubuntu 22.04 or 24.04 based distributions, might work but no formal testing has been performed as yet!
+On Debian 11, 12 or 13, Ubuntu 22.04 or 24.04 based distributions
+
+!!! note
+
+    I have user reports of successful testing of Simple AF for RPI with Debian Bookworm and Ubuntu 22.04 :-)
 
 ## BTT OS
 
