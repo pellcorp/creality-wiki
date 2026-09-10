@@ -11,7 +11,8 @@ From the printer via ssh, run:
 
 !!! note
 
-    GrumpyScreen is not supported on Debian 13.
+    GrumpyScreen had had limited testing on Debian 13, so far BTT DSI screen should work if you enable the BTT overlay
+    according to the instructions below!
 
 ## BTT DSI Screen
 
