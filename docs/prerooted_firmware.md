@@ -36,4 +36,6 @@ and have a simple UI for wifi.
 
 ## How were these built?
 
-All the .img and .ingenic were build with <https://github.com/pellcorp/creality-firmware>
+All the .img were build with <https://github.com/pellcorp/creality-firmware>, the .ingenic images are manually
+constructed by taking the prerooted and decrypted rootfs from creating the img to construct the equivalent .ingenic 
+images.
