@@ -31,7 +31,8 @@ In addition to being pre-rooted we also added a few goodies to help:
 ## What if I can't get past the setup for Ender 3 V3 KE, Nebula Pad and CR10SE?
 
 If there is interest I can create bootstrap images which can be used to install Simple AF bypassing the 
-display service, they are pre-rooted but directly start dropbear and have a simple UI for wifi.
+display service and disable klipper.  They are still pre-rooted like the normal images but directly start dropbear 
+and have a simple UI for wifi.
 
 ## How were these built?
 
