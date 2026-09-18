@@ -28,7 +28,7 @@ In addition to being pre-rooted we also added a few goodies to help:
 - [Emergency Factory Reset via USB](emergency_factory_reset.md)
 
 
-## What if I can't get past the setup for Ender 3 V3 KE, Nebula Pad and CR10SE?
+## What if I can't get past the setup for Ender 3 V3 KE, Ender 5 Max, Nebula Pad and CR10SE?
 
 If there is interest I can create bootstrap images which can be used to install Simple AF bypassing the 
 display service and disable klipper.  They are still pre-rooted like the normal images but directly start dropbear 
