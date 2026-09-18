@@ -7,7 +7,7 @@
 
 ## Where do I get the firmware?
 
-There is firmware for the K1 Series (K1, K1C, K1SE and K1 Max), Ender 3 V3 KE, Nebula Pad and CR10SE at the moment.
+There is firmware for the K1 Series (K1, K1C, K1SE and K1 Max), Ender 3 V3 KE, Ender 5 Max, Nebula Pad and CR10SE at the moment.
 
 Go to <https://github.com/pellcorp/downloads/tree/main/creality/prerooted>
 
@@ -17,7 +17,7 @@ Go to <https://github.com/pellcorp/downloads/tree/main/creality/prerooted>
 
 ## What is included?
 
-So all images are pre-rooted with `Creality2023` as the password.  For the Ender 3 V3 KE, Nebula Pad and CR10SE images unfortunately
+So all images are pre-rooted with `Creality2023` as the password.  For the Ender 3 V3 KE, Ender 5 Max, Nebula Pad and CR10SE images unfortunately
 SSH does not get enabled until the initial setup steps are completed.  Firmware for K1 series printers seems
 like ssh gets enabled much earlier soon as the display service starts.  The reason for this is that the display server is
 responsible for starting dropbear, because the actual drop bear service is disabled.
