@@ -110,7 +110,7 @@ You need an object of known weight, weigh it on a kitchen scale.
 
 !!! tip
 
-    On the Ender 3 V3 a known weight of ~3 kg (around `3000` grams) was needed during testing, a lighter weight did not give a good calibration.
+    On the Ender 3 V3 a known weight of ~3 kg (around `3000` grams) was needed during testing, a lighter weight fails with the `Tare and Calibration readings are less than 1% different!` error, see [Calibration Errors](#calibration-errors).
 
     New spools of filament work well, a brand new spool is typically 1000 g of filament plus the spool itself, which is about 250 g for a bamboo plastic spool or about 175 g for a cardboard spool.  Weigh whatever you use on a kitchen scale and enter the real weight.
 
@@ -129,6 +129,16 @@ You need an object of known weight, weigh it on a kitchen scale.
 You can use `ABORT` to cancel at any time.  Afterwards run `LOAD_CELL_DIAGNOSTIC` again and it will report in grams, and `LOAD_CELL_READ` will show the force on the bed.
 
 **Source:** <https://github.com/KalicoCrew/kalico/blob/main/docs/Load_Cell.md#calibration>
+
+### Calibration Errors
+
+| Error | Cause | Fix |
+| --- | --- | --- |
+| `Tare and Calibration readings are less than 1% different!` | The weight is too light, the reading has to change by at least 1% of the sensor range | Use more weight, on the Ender 3 V3 about 3 kg (`3000` grams) is needed and 2598 grams was not enough.  The message suggests a higher gain, but `gain` is already at its highest setting (`A-128`), so more weight is the only fix |
+| `Sensor is saturated with too much load!` | The weight is too heavy | Use less weight |
+| `Tare and Calibration readings are the same!` | The reading did not change | Check the weight is actually on the bed and run `LOAD_CELL_DIAGNOSTIC` to check the sensor |
+
+The calibration is still active after one of these errors, so you can change the weight and run `CALIBRATE GRAMS=<weight in grams>` again.
 
 ### Test the Probe
 
@@ -226,7 +236,7 @@ If the errors are `TAP_BREAK_CONTACT_TOO_EARLY` it is too long.
 
 ### Trigger Force
 
-`trigger_force` is the force in grams that triggers the probe, the default is `75`.  Probing always overshoots this, so raise it in small steps only if you need to.
+`trigger_force` is the force in grams that triggers the probe, it is set by the mount, `75` for the Ender 3 V3 and `150` for the K1 and K1 Max.  Probing always overshoots this, so raise it in small steps only if you need to.
 
 ### Safety Limits
 
