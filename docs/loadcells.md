@@ -28,6 +28,15 @@ The Ender 3 V3 keeps using its physical endstop for homing Z, the load cells are
 
     The load cell probe reads all four bed load cells together as a single probe, this needs new MCU firmware which the installer takes care of.
 
+## Overview
+
+1. [Install](#installation) with the `loadcells` probe and `--kalico`
+2. Power cycle the printer so the new [MCU firmware](#post-installation) is applied
+3. [Calibrate the load cells](#calibration) with a known weight
+4. [Test the probe](#test-the-probe) and check its [accuracy](#probe-accuracy)
+5. Run a [bed mesh](#bed-mesh)
+6. Do [PID tuning and input shaping](#pid-tuning-and-input-shaping)
+
 ## Installation
 
 !!! warning
@@ -35,6 +44,17 @@ The Ender 3 V3 keeps using its physical endstop for homing Z, the load cells are
     The installation can only be performed on a printer which has been rooted and ssh granted, and you need root access, if you are not already root, then follow the [Enable Root Access](enable-root-access.md) instructions.
 
 If you've installed Guilouz's Helper Script, or installed Fluidd or Mainsail through any other means (such as from Creality directly), you need to [factory reset](factory_reset.md) before continuing.
+
+### Clone the Repo
+
+```
+git config --global http.sslVerify false
+git clone https://github.com/pellcorp/creality.git /usr/data/pellcorp
+```
+
+!!! note
+
+    If you had already cloned the pellcorp creality repository before being asked to factory reset, the git repo is still there and you can skip the cloning step!
 
 ### Run the installer
 
@@ -72,7 +92,7 @@ Your printer MCU firmware was updated successfully.   If you still see the `MCU 
 
 !!! warning
 
-    The load cells **must** be calibrated before you can home or probe with them, until you do the printer will stop with `Load Cell Probe Error: Load Cell not calibrated`. Never guess the calibration value, the safety limits are all in grams and an inaccurate calibration lets the nozzle push far harder than you intend.
+    The load cells **must** be calibrated before you can probe with them, until you do the printer will stop with `Load Cell Probe Error: Load Cell not calibrated`. Never guess the calibration value, the safety limits are all in grams and an inaccurate calibration lets the nozzle push far harder than you intend.
 
 ### Check the Load Cells
 
@@ -90,7 +110,9 @@ You need an object of known weight, weigh it on a kitchen scale.
 
 !!! tip
 
-    On the Ender 3 V3 a known weight of 3 kg (`3000` grams) was needed during testing, a lighter weight did not give a good calibration.
+    On the Ender 3 V3 a known weight of ~3 kg (around `3000` grams) was needed during testing, a lighter weight did not give a good calibration.
+
+    New spools of filament work well, a brand new spool is typically 1000 g of filament plus the spool itself, which is about 250 g for a bamboo plastic spool or about 175 g for a cardboard spool.  Weigh whatever you use on a kitchen scale and enter the real weight.
 
 --steps--
 
@@ -123,13 +145,21 @@ Make sure the nozzle is clean and there is no filament oozing from it, and if yo
 --steps--
 
 1. Home All (`G28`)
-2. Run `PROBE_ACCURACY`
+2. Make sure the nozzle is centred on the bed
+3. Run `PROBE_ACCURACY`
 
 --!steps--
 
 ### Z Offset
 
-The `z_offset` for a load cell probe is `0`, the nozzle itself is the probe, so there is nothing to calibrate.  You should optimise your first layer using baby stepping.
+The nozzle itself touches the bed, so there is no probe offset to measure and `z_offset` starts at `0`, the installer sets this for you.
+
+If your first layer is too high or too low you can:
+
+- Try running `PROBE_CALIBRATE`, upon completion *`SAVE_CONFIG`*
+- Change `z_offset` by a small amount, for example `0.01`
+
+Baby stepping while printing is more reliable, so it is the best way to fine tune your first layer.
 
 ### Bed Mesh
 
@@ -181,7 +211,7 @@ You can use the `SHAPER_CALIBRATE` macro to run input shaping, just be sure to `
 
 ## Tuning
 
-The load cell probe settings are in the `[load_cell_probe]` section of `loadcells.cfg`.
+The load cell probe settings are in the `[load_cell_probe]` section of `loadcells.cfg`, which you can edit from the config editor in Fluidd or Mainsail.
 
 ### Tap Failures
 
@@ -209,11 +239,15 @@ If the errors are `TAP_BREAK_CONTACT_TOO_EARLY` it is too long.
 
 ## Switching Back
 
-To go back to a different probe see [Switching Probes](switching_probes.md), and to go back to Klipper run:
+To go back to a different probe see [Switching Probes](switching_probes.md).
 
-```
-~/pellcorp/installer.sh --klipper
-```
+!!! warning
+
+    Do not switch to Klipper while `loadcells` is still your probe, Klipper does not support the load cell probe and will not start correctly.  Switch to a different probe first, and then if you want to go back to Klipper run:
+
+    ```
+    ~/pellcorp/installer.sh --klipper
+    ```
 
 ## Where can I get help?
 
