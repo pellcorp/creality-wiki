@@ -262,5 +262,3 @@ To go back to a different probe see [Switching Probes](switching_probes.md).
 ## Where can I get help?
 
 For support, join the [SimpleAF Discord](https://discord.gg/M5rmBQqRSG).
-
-For critical issues please open a support ticket and tag @d3xt3r5241.
