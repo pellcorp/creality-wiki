@@ -6,11 +6,13 @@ This page covers installing SimpleAF using the strain gauges (load cells) alread
 
     Load cell probing is **EXTREMELY EXPERIMENTAL**. The nozzle is pushed onto the bed with a force measured by the load cells, if the load cells are not calibrated properly or something else goes wrong you can damage your printer. Be ready to hit the e-stop button in your UI or Grumpyscreen, or the power button, and never leave your printer unattended while homing, probing or bed meshing.
 
+!!! warning "Kalico only"
+
+    Load cell probing **REQUIRES [Kalico](kalico.md)**. It does **NOT** work with Klipper. The installer will refuse to install loadcells unless you pass the `--kalico` argument.
+
 New here? See [Getting Started](getting-started.md).
 
 ## Supported Printers
-
-Load cell probing requires [Kalico](kalico.md), it does not work with Klipper.
 
 | Printer | Status |
 | --- | --- |
@@ -25,22 +27,6 @@ The Ender 3 V3 keeps using its physical endstop for homing Z, the load cells are
 !!! note
 
     The load cell probe reads all four bed load cells together as a single probe, this needs new MCU firmware which the installer takes care of.
-
-## Switching Branches
-
-The load cell support is not in the default branches yet, so you need to switch both the pellcorp/creality repo and the pellcorp/kalico repo to the load cell branches.
-
-First get the installer onto the load cell branch:
-
-```
-~/pellcorp/installer.sh --branch <installer-branch>
-```
-
-Then after the installation below switch Kalico to the load cell branch:
-
-```
-~/pellcorp/installer.sh --klipper-branch <kalico-branch>
-```
 
 ## Installation
 
@@ -100,7 +86,11 @@ Make sure the bed is empty and run `LOAD_CELL_DIAGNOSTIC`, it collects samples f
 
 ### Calibrate the Load Cells
 
-You need an object of known weight, ideally 1 kg or more, weigh it on a kitchen scale.
+You need an object of known weight, weigh it on a kitchen scale.
+
+!!! tip
+
+    On the Ender 3 V3 a known weight of 3 kg (`3000` grams) was needed during testing, a lighter weight did not give a good calibration.
 
 --steps--
 
@@ -108,7 +98,7 @@ You need an object of known weight, ideally 1 kg or more, weigh it on a kitchen 
 2. Run `LOAD_CELL_CALIBRATE`
 3. Run `TARE`
 4. Place your object of known weight in the centre of the bed
-5. Run `CALIBRATE GRAMS=<weight in grams>` for example `CALIBRATE GRAMS=1000`
+5. Run `CALIBRATE GRAMS=<weight in grams>` for example `CALIBRATE GRAMS=3000`
 6. Run `ACCEPT`
    <br />Upon completion *`SAVE_CONFIG`*
 
@@ -160,11 +150,38 @@ These are not available on the Ender 3 V3.  On the K1 and K1 Max the configurati
 
 ### Pid Tuning and Input Shaping
 
-These are still required, see the Calibration section of any of the other probe pages, for example [Klicky](klicky.md#calibration).
+At least PID tuning (bed and extruder) and input shaping is required for acceptable printing.  If you try and print before any calibration you will most likely have poor quality.
+
+!!! note
+
+    You can use the QUICK_START Macro to complete Bed and Nozzle PID Tuning and Input Shaping Automatically.
+
+#### Pid Tuning
+
+**Source:** [Calibrate Pid Settings](https://www.klipper3d.org/Config_checks.html?h=pid#calibrate-pid-settings)
+
+For example you might run these:
+
+```
+PID_CALIBRATE_BED BED_TEMP=65
+PID_CALIBRATE_HOTEND HOTEND_TEMP=230
+```
+
+!!! note
+
+    The `PID_CALIBRATE_BED` and `PID_CALIBRATE_HOTEND` macros are located in the `useful_macros.cfg` file and they have defaults values for BED_TEMP and HOTEND_TEMP so you can just run them by clicking on them if you want that same temperature.
+
+#### Input Shaping
+
+There is no default configuration for input shaping so it is essentially disabled out of the box.
+
+You can use the `SHAPER_CALIBRATE` macro to run input shaping, just be sure to `SAVE CONFIG` at the end, to choose the automatically selected shaper config, be aware though that the shaper chosen might be sub-optimal due to a slight difference in vibrations between two options.  So you should probably review the output and potentially choose an alternative if it gives you higher recommended max acceleration for minimal increase in vibration.
+
+[Input Shaper Auto Calibration](https://www.klipper3d.org/Measuring_Resonances.html#input-shaper-auto-calibration)
 
 ## Tuning
 
-The load cell probe settings are in `loadcells.cfg`, the full list of options is in the [Kalico Load Cell documentation](https://github.com/KalicoCrew/kalico/blob/main/docs/Load_Cell.md).
+The load cell probe settings are in the `[load_cell_probe]` section of `loadcells.cfg`.
 
 ### Tap Failures
 
@@ -181,10 +198,14 @@ If the errors are `TAP_BREAK_CONTACT_TOO_EARLY` it is too long.
 
 `trigger_force` is the force in grams that triggers the probe, the default is `75`.  Probing always overshoots this, so raise it in small steps only if you need to.
 
+### Safety Limits
+
+- `force_safety_limit` (default `2000` grams) is the most force allowed on the bed before a probe move starts.  If it is exceeded you get `force of 3000g exceeds force_safety_limit (2000g) before probing!`, this can be caused by the nozzle already resting on the bed or something pushing on the bed.
+- `drift_safety_limit` (default `1000` grams) is the most force allowed while probing before it triggers.  If it is exceeded you get `force exceeded drift_safety_limit before triggering!`.
+
 ## Known Issues
 
 - Only the Ender 3 V3 has been tested, the K1 and K1 Max configuration is based on the stock printer configuration and has not been run on a real printer.
-- The leveling MCU has been seen to shut down with `Timer too close` while printing on an Ender 3 V3.  This is still being investigated.
 
 ## Switching Back
 
@@ -197,3 +218,5 @@ To go back to a different probe see [Switching Probes](switching_probes.md), and
 ## Where can I get help?
 
 For support, join the [SimpleAF Discord](https://discord.gg/M5rmBQqRSG).
+
+For critical issues please open a support ticket and tag @d3xt3r5241.
