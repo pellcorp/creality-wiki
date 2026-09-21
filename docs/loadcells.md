@@ -17,10 +17,12 @@ New here? See [Getting Started](getting-started.md).
 | Printer | Status |
 | --- | --- |
 | Ender 3 V3 | Tested |
-| K1 | Configured, **not tested** |
+| K1 | Configured | Tested |
+| K1C | Configured, **not tested** |
+| K1 SE | Configured, **not tested** |
 | K1 Max | Configured, **not tested** |
 
-Any other printer is not supported, this includes the Ender 3 V3 KE, Ender 5 Max, CR10SE, Nebula Pad and the K1C and K1 SE.
+Any other printer is not supported, this includes the Ender 3 V3 KE, Ender 5 Max, CR10SE, Nebula Pad.
 
 The Ender 3 V3 keeps using its physical endstop for homing Z, the load cells are used for probing and bed meshing.
 
