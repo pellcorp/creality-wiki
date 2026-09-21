@@ -17,7 +17,7 @@ New here? See [Getting Started](getting-started.md).
 | Printer | Status |
 | --- | --- |
 | Ender 3 V3 | Tested |
-| K1 | Configured | Tested |
+| K1 | Tested |
 | K1C | Configured, **not tested** |
 | K1 SE | Configured, **not tested** |
 | K1 Max | Configured, **not tested** |
@@ -112,9 +112,13 @@ You need an object of known weight, weigh it on a kitchen scale.
 
 !!! tip
 
-    On the Ender 3 V3 a known weight of ~3 kg (around `3000` grams) was needed during testing, a lighter weight fails with the `Tare and Calibration readings are less than 1% different!` error, see [Calibration Errors](#calibration-errors).
+    On the Ender 3 V3 a known weight of ~3 kg (around `3000` grams) was needed during testing, 
 
-    New spools of filament work well, a brand new spool is typically 1000 g of filament plus the spool itself, which is about 250 g for a bamboo plastic spool or about 175 g for a cardboard spool.  Weigh whatever you use on a kitchen scale and enter the real weight.
+    On the K1 a known weight of ~6 kg (around `6000` grams) was needed during testing,
+
+    a lighter weight fails with the `Tare and Calibration readings are less than 1% different!` error, see [Calibration Errors](#calibration-errors).
+
+    New spools of filament work well, a brand new spool is typically 1000 g of filament plus the spool itself, which is about 250 g for a bamboo plastic spool or about 175 g for a cardboard spool.  Weight whatever you use on a kitchen scale and enter the real weight.
 
 --steps--
 
@@ -244,10 +248,6 @@ If the errors are `TAP_BREAK_CONTACT_TOO_EARLY` it is too long.
 
 - `force_safety_limit` (default `2000` grams) is the most force allowed on the bed before a probe move starts.  If it is exceeded you get `force of 3000g exceeds force_safety_limit (2000g) before probing!`, this can be caused by the nozzle already resting on the bed or something pushing on the bed.
 - `drift_safety_limit` (default `1000` grams) is the most force allowed while probing before it triggers.  If it is exceeded you get `force exceeded drift_safety_limit before triggering!`.
-
-## Known Issues
-
-- Only the Ender 3 V3 has been tested, the K1 and K1 Max configuration is based on the stock printer configuration and has not been run on a real printer.
 
 ## Switching Back
 
