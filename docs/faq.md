@@ -2,20 +2,11 @@
 
 ## Can I use Simple AF with my default probe / Load Cells?
 
-There are no plans to support load cells in simple af.  The author (garethky) of the load cells code getting merged into Klipper has stated very clearly
-that the hardware on the K1 (specifically the bed mcu) is not sufficient to properly support the load cells (Creality cut corners with the load cells chip).  In
-addition because there is no scipy in the klippy python virtual environment the experience even if we somehow got it working would be suboptimal.   
+We are currently in the early stages (as of Sept 20th 2026) of testing proper load cells support for Simple AF.  This is made possible because of code provided by the OpenCentauri 
+project in combination with the load cells support already merged to Kalico, we hope to have something to offer K1 and Ender 3 V3 CoreXY who do not wish to modify their hardware, but wish to have more control over their printers.
 
-As a result of this I have abandoned any plans to support load cells as part of Simple AF for K1 series.   There is a fork of Simple AF which supports load 
-cells.  We have no affiliation with this project and thus **cannot** offer any support for using it.   In addition the fork is now 800+ commits diverged from this project
-and thus more recent features, fixes, etc would not be available.
-
-If you are interested check out <https://github.com/Sekilsgs2/creality_pellcorp>
-
-!!! note
-
-    This does not mean you should remove your load cells, in fact if you get into trouble with Simple AF (for instance a probe mount gets damaged), you might 
-    want to switch to stock and you will need the load cells hardware to do that!
+As part of this support, Kalico will become our preferred Klipper option and upstream klipper support is being phased out in favour of our own fork of Kalico
+which has no proprietary additions.  The load cells support will have **zero** creality code.
 
 ## How do I integrate a Nozzle Wipe?
 
