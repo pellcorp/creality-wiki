@@ -15,7 +15,7 @@ probe of choice for bed mesh and proximity homing, but use the load cell for z-o
 Kalico will become our preferred Klipper option and upstream klipper support is being phased out in favour of our own fork of Kalico which has a few things upstream is missing that we need
 but nothing that changes the basic behaviour of kalico.
 
-The loadcell support will have **zero** creality code and will be fully configurable via config and gcode.  There will not be any python macros (complicated or otherwise) you will need to navigate to customise your printer to use the load cells. We will be porting the existing macro wipe macros from Creality, but you be free to use your own or an existing third party solution.
+The loadcell support will have **zero** creality code and will be fully configurable via config and gcode.  There will not be any python macros (complicated or otherwise) you will need to navigate to customise your printer to use the load cells. We will be porting the existing nozzle wipe macros from Creality, but you be free to use your own or an existing third party solution.
 
 ## How do I integrate a Nozzle Wipe?
 
