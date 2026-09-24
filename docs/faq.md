@@ -5,12 +5,12 @@
 We are currently in the early stages (as of Sept 20th 2026) of testing proper load cells support for Simple AF.  This is made possible because of code provided by the OpenCentauri 
 project in combination with the load cells support already merged to Kalico.   
 
-By mid october we hope to have something to offer K1, K1C, K1SE, K1 Max and Ender 3 V3 CoreXZ who would like to use their stock hardware with Simple AF, so far testing is looking 
+By early november we hope to have something to offer K1, K1C, K1SE, K1 Max and Ender 3 V3 CoreXZ who would like to use their stock hardware with Simple AF, so far testing is looking 
 quite positive.
 
 At the same time, we hope to offer K1, K1C, K1SE, K1 Max, Ender 3 V3 CoreXZ, Ender 3 V3 KE and Ender 3 V3 SE users the ability to use a load cell to do auto z-offset with any of
-the probes we support, for K1, K1C, K1SE, K1 Max this would also work as an alternative to using Cartographer Touch, Beacon Contact or EddyNG Tap you can continue to use your eddy
-probe of choice with the load cell for z-offset only.
+the probes we support.  For K1, K1C, K1SE, K1 Max this would also work as an alternative to using Cartographer Touch, Beacon Contact or EddyNG Tap you can continue to use your eddy
+probe of choice for bed mesh and proximity homing, but use the load cell for z-offset during prints.
 
 Kalico will become our preferred Klipper option and upstream klipper support is being phased out in favour of our own fork of Kalico which has a few things upstream is missing that we need
 but nothing that changes the basic behaviour of kalico.
