@@ -202,8 +202,8 @@ nav:
       - switching_probes.md
       - switch_to_stock.md
   - FAQ & Support:
-      - about.md
       - faq.md
+      - about.md
       - support.md
       - factory_reset.md
       - emergency_factory_reset.md
