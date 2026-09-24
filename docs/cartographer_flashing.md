@@ -2,8 +2,8 @@
 
 !!! klipper-error "Ubuntu 25.04 and 25.10 are not supported"
 
-    The unsupported interim 25.04 and 25.10 releases are known not to be supported because the deadsnakes PPA does not support these
-    unsupported interim releases.   Please make sure to use a LTS release, being 26.04 or 24.04!
+    The interim 25.04 and 25.10 releases are known not to be supported because the deadsnakes PPA does not provide python packages for these
+    now unsupported interim releases.   Please make sure to use an LTS release, being 26.04 or 24.04!
 
 This page covers flashing firmware for Cartographer USB probes for Simple AF for K1 Series printers (K1, K1C, K1SE, K1 Max, Ender 3 V3 KE and Ender 5 Max)
 
