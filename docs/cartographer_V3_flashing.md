@@ -1,5 +1,10 @@
 # Cartographer V3 Flashing
 
+!!! klipper-error "Ubuntu 25.04 and 25.10 are not supported"
+
+    The interim 25.04 and 25.10 releases are known not to be supported because the deadsnakes PPA does not provide python packages for these
+    now unsupported interim releases.   Please make sure to use an LTS release, being 26.04 or 24.04!
+
 !!! danger
 
     THIS IS A RISKY OPERATION YOU CAN BRICK YOUR CARTO

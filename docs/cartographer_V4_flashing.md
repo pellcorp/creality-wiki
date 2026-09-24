@@ -1,5 +1,10 @@
 # Cartographer V4 Flashing
 
+!!! klipper-error "Ubuntu 25.04 and 25.10 are not supported"
+
+    The interim 25.04 and 25.10 releases are known not to be supported because the deadsnakes PPA does not provide python packages for these
+    now unsupported interim releases.   Please make sure to use an LTS release, being 26.04 or 24.04!
+
 !!! danger
 
     THIS IS A RISKY OPERATION YOU CAN BRICK YOUR CARTO
@@ -31,7 +36,7 @@ You will need some kind of linux environment, this can be a Raspberry Pi, deskto
 
 ### Creating a Live USB Key
 
-You should create a live USB with **Ubuntu 24.04 (25.04 also works)** Desktop, make sure the USB is at least 8GB in size!
+You should create a live USB with **Ubuntu 24.04** Desktop, make sure the USB is at least 8GB in size!
 
 <https://ubuntu.com/tutorials/try-ubuntu-before-you-install#1-getting-started>
 
