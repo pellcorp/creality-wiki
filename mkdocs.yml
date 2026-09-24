@@ -201,6 +201,7 @@ nav:
       - backups.md
       - switching_probes.md
       - switch_to_stock.md
+      - rtos.md
   - FAQ & Support:
       - faq.md
       - about.md
