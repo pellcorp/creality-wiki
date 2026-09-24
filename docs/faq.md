@@ -235,6 +235,11 @@ systemctl restart klipper
 
 ## How do I install Klipper TMC Autotune
 
+
+!!! note
+
+    This only applies to K1 Series, for RPI and PiK1 you should just follow the normal installation procedure
+
 You must ensure that you are on latest Simple AF, we enhanced the systemctl shim and added an ln shim so that the upstream
 installer works like this:
 
@@ -242,9 +247,11 @@ installer works like this:
 wget --no-check-certificate -O - https://raw.githubusercontent.com/andrewmcgr/klipper_tmc_autotune/refs/heads/main/install.sh | EUID=1 KLIPPY_PATH=/usr/share/klipper AUTOTUNETMC_PATH=/usr/data/klipper_tmc_autotune sh
 ```
 
-!!! note
+!!! tip
 
-    This only applies to K1 Series, for RPI and PiK1 you should just follow the normal installation procedure
+    If you get an error like: `[ERROR] Klipper service not found, please install Klipper first!`, it is likely your version of Simple AF is too old
+    we had to enhance our systemctl shim and a soft link and hack the busybox ln command to allow the installer to run as though it were on a proper os
+    like rasbian.
 
 ## How do I enable moonraker timelapses?
 
