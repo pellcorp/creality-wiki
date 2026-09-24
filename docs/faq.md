@@ -150,7 +150,7 @@ Note config overrides should retain these config changes as long as you do them 
 
 ## How do I get the printer to lower the bed at the end of a print?
 
-This is just a configuration change to the `start_end.cfg` `_CLIENT_VARIABLE` `variable_custom_park_dz` value, you change the value from 25.0 to 50.0 or whatever you want.   If you print a really tall print the bed will be lowered as much room as there is left without exceeding the stepper_z max_position.
+This is just a configuration change to the `start_end.cfg` `_CLIENT_VARIABLE` `variable_custom_park_dz` value, you change the value from 25.0 to 50.0 or whatever you want.   If you print a really tall print the bed will be lowered as much room as there is left without exceeding the `[stepper_z]` `position max`!
 
 
 ## How do I switch default UI from fluidd to mainsail and back?
