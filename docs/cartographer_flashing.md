@@ -1,5 +1,11 @@
 # Cartographer Flashing
 
+
+!!! klipper-error "Ubuntu 26.04 might be broken"
+
+    Please note it looks like the automated installer is currently broken on 26.04 due to a issue with the deadsnakes ppa, if you run into trouble
+    please try this on Ubuntu 24.04 LTS release, we hope to get this fixed in the next week or so.
+
 This page covers flashing firmware for Cartographer USB probes for Simple AF for K1 Series printers (K1, K1C, K1SE, K1 Max, Ender 3 V3 KE and Ender 5 Max)
 
 If you want the fully manual process instead, see the manual guides for [V3](cartographer_V3_flashing.md) and [V4](cartographer_V4_flashing.md).
