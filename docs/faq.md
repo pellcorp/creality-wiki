@@ -3,10 +3,19 @@
 ## Can I use Simple AF with my default probe / Load Cells?
 
 We are currently in the early stages (as of Sept 20th 2026) of testing proper load cells support for Simple AF.  This is made possible because of code provided by the OpenCentauri 
-project in combination with the load cells support already merged to Kalico, we hope to have something to offer K1 and Ender 3 V3 CoreXY who do not wish to modify their hardware, but wish to have more control over their printers.
+project in combination with the load cells support already merged to Kalico.   
 
-As part of this support, Kalico will become our preferred Klipper option and upstream klipper support is being phased out in favour of our own fork of Kalico
-which has no proprietary additions.  The load cells support will have **zero** creality code.
+By mid october we hope to have something to offer K1, K1C, K1SE, K1 Max and Ender 3 V3 CoreXZ who would like to use their stock hardware with Simple AF, so far testing is looking 
+quite positive.
+
+At the same time, we hope to offer K1, K1C, K1SE, K1 Max, Ender 3 V3 CoreXZ, Ender 3 V3 KE and Ender 3 V3 SE users the ability to use a load cell to do auto z-offset with any of
+the probes we support, for K1, K1C, K1SE, K1 Max this would also work as an alternative to using Cartographer Touch, Beacon Contact or EddyNG Tap you can continue to use your eddy
+probe of choice with the load cell for z-offset only.
+
+Kalico will become our preferred Klipper option and upstream klipper support is being phased out in favour of our own fork of Kalico which has no proprietary additions. 
+
+The loadcell support will have **zero** creality code and will be fully configurable via config and gcode.  There will not be any complicated python macros you need to navigate to customise your printer to use the load cells.   
+We will be porting the existing macro wipe macros from Creality, but you be free to use your own or an existing third party solution.
 
 ## How do I integrate a Nozzle Wipe?
 
