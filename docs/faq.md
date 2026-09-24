@@ -12,7 +12,8 @@ At the same time, we hope to offer K1, K1C, K1SE, K1 Max, Ender 3 V3 CoreXZ, End
 the probes we support, for K1, K1C, K1SE, K1 Max this would also work as an alternative to using Cartographer Touch, Beacon Contact or EddyNG Tap you can continue to use your eddy
 probe of choice with the load cell for z-offset only.
 
-Kalico will become our preferred Klipper option and upstream klipper support is being phased out in favour of our own fork of Kalico which has no proprietary additions. 
+Kalico will become our preferred Klipper option and upstream klipper support is being phased out in favour of our own fork of Kalico which has a few things upstream is missing that we need
+but nothing that changes the basic behaviour of kalico.
 
 The loadcell support will have **zero** creality code and will be fully configurable via config and gcode.  There will not be any complicated python macros you need to navigate to customise your printer to use the load cells.   
 We will be porting the existing macro wipe macros from Creality, but you be free to use your own or an existing third party solution.
