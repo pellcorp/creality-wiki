@@ -272,7 +272,7 @@ You can find the stock config files for all printers we support here:
 
 <https://github.com/pellcorp/creality-firmware/tree/main/configs/usr/share/klipper/config>
 
-We are am also starting to collect some rootfs.squashfs (decrypted) for various firmware as well at <https://github.com/pellcorp/downloads/tree/main/creality/rootfs>
+We are also starting to collect some rootfs.squashfs (decrypted) for various firmware as well at <https://github.com/pellcorp/downloads/tree/main/creality/rootfs>
 
 ## How do I setup remote access and AI failure detection?
 
