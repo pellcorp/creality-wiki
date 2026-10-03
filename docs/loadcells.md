@@ -190,10 +190,6 @@ Baby stepping while printing is more reliable, so it is the best way to fine tun
 
 Watch the first bed mesh, the nozzle taps the bed at each point.
 
-### Screws Tilt and Axis Twist
-
-These are not available on the Ender 3 V3.  On the K1 and K1 Max the configuration is included but the positions have not been confirmed, check them before you use `SCREWS_TILT_CALCULATE` or `AXIS_TWIST_COMPENSATION_CALIBRATE`.
-
 ### Pid Tuning and Input Shaping
 
 At least PID tuning (bed and extruder) and input shaping is required for acceptable printing.  If you try and print before any calibration you will most likely have poor quality.
