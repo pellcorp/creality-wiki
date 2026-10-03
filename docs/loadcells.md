@@ -8,7 +8,7 @@ This page covers installing SimpleAF using the strain gauges (load cells) alread
 
 !!! warning "Kalico only"
 
-    Load cell probing **REQUIRES [Kalico](kalico.md)**. It does **NOT** work with Klipper. The installer will refuse to install loadcells unless you pass the `--kalico` argument.
+    Load cell probing **REQUIRES [Kalico](kalico.md)**.  The installer will automatically setup kalico for a install or reinstall, but to switch to loadcells from an existing installation, you will have to pass the `--kalico` argument if you are not already on kalico.
 
 New here? See [Getting Started](getting-started.md).
 
@@ -32,7 +32,7 @@ The Ender 3 V3 keeps using its physical endstop for homing Z, the load cells are
 
 ## Overview
 
-1. [Install](#installation) with the `loadcells` probe and `--kalico`
+1. [Install](#installation) with the `loadcells` probe
 2. Power cycle the printer so the new [MCU firmware](#post-installation) is applied
 3. [Calibrate the load cells](#calibration) with a known weight
 4. [Test the probe](#test-the-probe) and check its [accuracy](#probe-accuracy)
@@ -60,10 +60,8 @@ git clone https://github.com/pellcorp/creality.git /usr/data/pellcorp
 
 ### Run the installer
 
-The `--kalico` argument is required, the installer will refuse to install loadcells without it.
-
 ```
-/usr/data/pellcorp/installer.sh --install loadcells --kalico
+/usr/data/pellcorp/installer.sh --install loadcells
 ```
 
 ## Post Installation
