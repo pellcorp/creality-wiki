@@ -2,7 +2,7 @@
 
 ## Can I use Simple AF with my default probe / Load Cells?
 
-There is no highly [experimental support for using existing load cells](loadcells.md) for K1, K1C, K1SE, K1 Max and Ender 3 V3 CoreXZ.
+There is now highly [experimental support for using existing load cells](loadcells.md) for K1, K1C, K1SE, K1 Max and Ender 3 V3 CoreXZ.
 
 In the future we hope to offer K1, K1C, K1SE, K1 Max, Ender 3 V3 CoreXZ, Ender 3 V3 KE and Ender 3 V3 SE users the ability to use a load cell to do auto z-offset with any of
 the probes we support.  For K1, K1C, K1SE, K1 Max this would also work as an alternative to using Cartographer Touch, Beacon Contact or EddyNG Tap you can continue to use your eddy
