@@ -14,13 +14,13 @@ New here? See [Getting Started](getting-started.md).
 
 ## Supported Printers
 
-| Printer | Status |
-| --- | --- |
-| Ender 3 V3 | Tested |
-| K1 | Tested |
-| K1C | Configured, **not tested** |
-| K1 SE | Configured, **not tested** |
-| K1 Max | Configured, **not tested** |
+| Printer    | Status                     |
+|------------|----------------------------|
+| Ender 3 V3 | Tested                     |
+| K1         | Tested                     |
+| K1C        | Configured, **not tested** |
+| K1 SE      | Configured, **not tested** |
+| K1 Max     | Tested                     |
 
 Any other printer is not supported, this includes the Ender 3 V3 KE, Ender 5 Max, CR10SE, Nebula Pad.
 
@@ -38,7 +38,7 @@ The Ender 3 V3 keeps using its physical endstop for homing Z, the load cells are
 4. [Test the probe](#test-the-probe) and check its [accuracy](#probe-accuracy)
 5. Run a [bed mesh](#bed-mesh)
 6. Do [PID tuning and input shaping](#pid-tuning-and-input-shaping)
-
+7. Configure [Nozzle Wipe](nozzle_wipe.md) - currently this must be done manually, we are exploring integrating a default nozzle wipe for load cells soon.
 ## Installation
 
 !!! warning
