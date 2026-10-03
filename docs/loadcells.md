@@ -63,14 +63,8 @@ git clone https://github.com/pellcorp/creality.git /usr/data/pellcorp
 The `--kalico` argument is required, the installer will refuse to install loadcells without it.
 
 ```
-/usr/data/pellcorp/installer.sh --install loadcells --mount Default --kalico
+/usr/data/pellcorp/installer.sh --install loadcells --kalico
 ```
-
-### Mount Options
-
-#### Default
-
-There is nothing to mount, this is the only option and it is used for all supported printers.
 
 ## Post Installation
 
