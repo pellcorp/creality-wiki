@@ -138,7 +138,7 @@ You need an object of known weight, weigh it on a kitchen scale.
 
 --!steps--
 
-You can use `ABORT` to cancel at any time.  Afterwards run `LOAD_CELL_DIAGNOSTIC` again and it will report in grams, and `LOAD_CELL_READ` will show the force on the bed.
+You can use `ABORT` to cancel at any time.  Afterwards run `LOAD_CELL_DIAGNOSTIC` again, and `LOAD_CELL_READ` will it will report the force on the bed in grams.
 
 **Source:** <https://github.com/KalicoCrew/kalico/blob/main/docs/Load_Cell.md#calibration>
 
