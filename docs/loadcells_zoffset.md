@@ -63,6 +63,14 @@ The value should be the approximate centre of your build plate, it does not have
 
     For an Ender 3 V3 SE or Ender 3 V3 KE the `zero_reference_position` **must** be `20,25`!
 
+!!! info "What is Zero Reference Position?"
+
+    You may be asking yourself what is this `zero_reference_position`, this is an optional parameter to the bed_mesh config, quoting
+    the kalico docs its An optional X,Y coordinate that specifies the location on the bed where Z = 0.  When this option is specified 
+    the mesh will be offset so that zero Z adjustment occurs at this location.
+
+    And we then probe the load cell at this same exact point too so that the bed mesh is based on true z=0
+
 4. Save and Restart
 
 5. You need to [Calibrate the load cells](#calibration) before trying to do a print
