@@ -46,6 +46,8 @@ To enable loadcells for z-offset its a few simple steps for an existing Simple A
 
 1. Add `[include loadcells-zoffset.cfg]` to `printer.cfg`
 
+    Please note, if you want to use load cells with btteddy, you must remove the `[include btteddy_zoffset.cfg]` from the `printer.cfg`.
+
 2. Add the following block to `printer.cfg`:
    ```
    [load_cell_probe]
