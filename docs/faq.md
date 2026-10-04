@@ -1,17 +1,18 @@
 # Frequently Asked Questions
 
-## Can I use Simple AF with my default probe / Load Cells?
+## Can I use Simple AF with Load Cells?
 
 There is now highly [experimental support for using existing load cells](loadcells.md) for K1, K1C, K1SE, K1 Max and Ender 3 V3 CoreXZ.
 
-In the future we hope to offer K1, K1C, K1SE, K1 Max, Ender 3 V3 CoreXZ, Ender 3 V3 KE and Ender 3 V3 SE users the ability to use a load cell to do auto z-offset with any of
+### Load Cells for auto z-offset
+
+We have just introduced [experimental support for using existing load cells for auto z-offset](loadcells_zoffset.md) for K1, K1C, K1SE, K1 Max, Ender 3 V3 CoreXZ, Ender 3 V3 KE and Ender 3 V3 SE users.  This is the ability to use a load cell to do auto z-offset with any of
 the probes we support.  For K1, K1C, K1SE, K1 Max this would also work as an alternative to using Cartographer Touch, Beacon Contact or EddyNG Tap you can continue to use your eddy
 probe of choice for bed mesh and proximity homing, but use the load cell for z-offset during prints.
 
-Kalico will become our preferred Klipper option and upstream klipper support is being phased out in favour of our own fork of Kalico which has a few things upstream is missing that we need
-but nothing that changes the basic behaviour of kalico.
+The loadcell support has **zero** creality code and is fully configurable via config and gcode.  There are no python macros (complicated or otherwise) you need to navigate to customise your printer to use the load cells.  
 
-The loadcell support will have **zero** creality code and will be fully configurable via config and gcode.  There will not be any python macros (complicated or otherwise) you will need to navigate to customise your printer to use the load cells. We will be porting the existing nozzle wipe macros from Creality, but you be free to use your own or an existing third party solution.
+In the near future, we will port the existing nozzle wipe macros from Creality, but [you are free to use your own or an existing third party solution](nozzle_wipe.md)
 
 ## How do I integrate a Nozzle Wipe?
 
