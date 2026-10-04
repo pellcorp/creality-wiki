@@ -55,7 +55,7 @@ To enable loadcells for z-offset its a few simple steps for an existing Simple A
    ```
 
 3. The `[bed_mesh]` `zero_reference_position` must be added to your probe cfg file where it's not already defined, which currently means:
-   `bltouch.cfg`, `microprobe.cfg`, `btteddy.cfg`, `beacon.cfg` and `klicky.cfg`
+   `bltouch.cfg`, `microprobe.cfg`, `btteddy.cfg`, `eddyng.cfg` and `klicky.cfg`
 
 The value should be the approximate centre of your build plate, it does not have to be perfect, close enough is fine.
 
