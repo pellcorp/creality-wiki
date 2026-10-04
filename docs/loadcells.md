@@ -158,17 +158,6 @@ Make sure the nozzle is clean and there is no filament oozing from it, and if yo
 
 --!steps--
 
-### Z Offset
-
-The nozzle itself touches the bed, so there is no probe offset to measure and `z_offset` starts at `0`, the installer sets this for you.
-
-If your first layer is too high or too low you can:
-
-- Try running `PROBE_CALIBRATE`, upon completion *`SAVE_CONFIG`*
-- Change `z_offset` by a small amount, for example `0.01`
-
-Baby stepping while printing is more reliable, so it is the best way to fine tune your first layer.
-
 ### Bed Mesh
 
 --steps--
@@ -248,6 +237,24 @@ To go back to a different probe see [Switching Probes](switching_probes.md).
     ```
     ~/pellcorp/installer.sh --klipper
     ```
+
+### First Print
+
+You might need to optimise your load cell z offset using baby stepping.
+
+In fluidd the save button after you finish or cancel your print can be a bit hard to find, look for
+
+![image](assets/images/fluidd_save_zoffset.png)
+
+### Other Calibrations
+
+!!! info
+
+    The default value for pressure advance is set to `0.04`
+
+Refer to [Orcaslicer Calibration](https://github.com/SoftFever/OrcaSlicer/wiki/Calibration) for more calibrations
+
+Refer to the [Ellis Print Tuning Guide](https://ellis3dp.com/Print-Tuning-Guide/) for more great tuning ideas.
 
 ## Where can I get help?
 
