@@ -57,7 +57,7 @@ To enable loadcells for z-offset its a few simple steps for an existing Simple A
 3. The `[bed_mesh]` `zero_reference_position` must be added to your probe cfg file where it's not already defined, which currently means:
    `bltouch.cfg`, `microprobe.cfg`, `btteddy.cfg`, `eddyng.cfg` and `klicky.cfg`
 
-The value should be the approximate centre of your build plate, it does not have to be perfect, close enough is fine.
+The value should be the approximate centre of your build plate **(except for Ender 3 V3 SE/KE - see below)**, it does not have to be perfect, close enough is fine.
 
 !!! note "Ender 3 V3 SE/KE"
 
@@ -66,7 +66,7 @@ The value should be the approximate centre of your build plate, it does not have
 !!! info "What is Zero Reference Position?"
 
     You may be asking yourself what is this `zero_reference_position`, this is an optional parameter to the bed_mesh config, quoting
-    the kalico docs its An optional X,Y coordinate that specifies the location on the bed where Z = 0.  When this option is specified 
+    the kalico docs its an X,Y coordinate that specifies the location on the bed where Z = 0.  When this option is specified 
     the mesh will be offset so that zero Z adjustment occurs at this location.
 
     And we then probe the load cell at this same exact point too so that the bed mesh is based on true z=0
