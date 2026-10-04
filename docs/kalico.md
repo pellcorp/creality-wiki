@@ -62,3 +62,7 @@ To switch back to Klipper, you can run:
 ```
 ~/pellcorp/installer.sh --klipper
 ```
+
+!!! danger
+
+     Do not switch back to klipper if you are using load cells with Simple AF!
