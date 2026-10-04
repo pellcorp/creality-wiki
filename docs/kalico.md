@@ -9,7 +9,7 @@ There is a medium term plan to migrate all users (K1 Series and RPI Series) over
 ## Why?
 
 Because Klipper keeps refactoring stuff and making it really hard to rebase, especially our non critical mcu feature we cherry picked
-from Kalico to Klipper makes updating to later version of Klipper very difficult.
+from Kalico to Klipper makes updating to later version of Klipper very difficult.   Also Kalico allows us to support stock load cells.
 
 We have decided that it would just be easier to use Kalico directly and we don't have to worry about merge conflicts for Kalico features.
 
@@ -37,7 +37,6 @@ complete to Kalico this would be less of an issue and we may retire at least our
 - Include virtual pins into our fork
 - Extended fan extension for M106 to support targeting different fans with the P argument
 - Support a no_reconnect flag for non critical mcus, although this might be retired due to recent stability changes in Kalico
-- Expand environment variables in gcode shell commands
 
 ## How do I install?
 
