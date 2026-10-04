@@ -2,6 +2,8 @@
 
 This page covers installing SimpleAF using the strain gauges (load cells) already built into the bed of your printer as the probe. There is no extra probe hardware to buy or mount, the nozzle taps the bed and the bed load cells detect the contact.
 
+Looking for Load Cells for Z-Offset? See [Load Cells for Z-Offset](loadcells_zoffset.md).
+
 !!! klipper-error "Experimental High risk of bed or toolhead damage"
 
     Load cell probing is **EXTREMELY EXPERIMENTAL**. The nozzle is pushed onto the bed with a force measured by the load cells, if the load cells are not calibrated properly or something else goes wrong you can damage your printer. Be ready to hit the e-stop button in your UI or Grumpyscreen, or the power button, and never leave your printer unattended while homing, probing or bed meshing.
