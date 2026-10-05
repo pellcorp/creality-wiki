@@ -12,3 +12,5 @@ Instead install the Obico Agent on another device on the same network as the pri
 It is definitely possible to setup the agent on a separate device on the same network as your K series printer, a guide will be made
 available here soon, but it basically requires you installing docker on a RPI on the same network and doing some config
 and running some commands.
+
+<https://github.com/pellcorp/creality-wiki/issues/28>
