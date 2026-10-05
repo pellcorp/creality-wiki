@@ -517,3 +517,17 @@ and takes about the same amount of time.
 The `/etc/init.d/S58factoryreset` has recently been updated not to delete the `/etc/localtime`, so you can configure it once and it should survive any number of factory resets, following the excellent guide here:
 
 <https://guilouz.github.io/Creality-Helper-Script-Wiki/firmwares/change-date-and-time/>
+
+## How can I get a SimpleAF style theme for Fluidd and Mainsail
+
+We have recently added this capability, make sure you update to latest Simple AF and then you can apply theme themee like so:
+
+```
+~/pellcorp/tools/change-theme simpleaf
+```
+
+To revert to stock run:
+
+```
+~/pellcorp/tools/change-theme stock
+```
