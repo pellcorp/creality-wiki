@@ -520,7 +520,7 @@ The `/etc/init.d/S58factoryreset` has recently been updated not to delete the `/
 
 ## How can I get a SimpleAF style theme for Fluidd and Mainsail
 
-We have recently added this capability, make sure you update to latest Simple AF and then you can apply theme themee like so:
+We have recently added this capability, make sure you update to latest Simple AF and then you can enable the theme for fluidd and mainsail like so:
 
 ```
 ~/pellcorp/tools/change-theme simpleaf
