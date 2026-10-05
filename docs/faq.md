@@ -525,12 +525,17 @@ The `/etc/init.d/S58factoryreset` has recently been updated not to delete the `/
      This will wipe out any custom theme you have, to avoid this backup any ~/printer_data/config/.theme or ~/printer_data/config/.fluidd-theme before
      running the change-theme.sh command!
 
-We have recently added this capability, make sure you update to latest Simple AF and then you can enable the theme for fluidd and mainsail like so:
+We have recently added this capability and you can enable the theme for fluidd and mainsail like so:
 
 ```
 ~/pellcorp/installer.sh --branch main
 ~/pellcorp/tools/change-theme simpleaf
 ```
+
+!!! tip
+
+    You do not need to run `~/pellcorp/installer.sh --branch main`, thats just to make sure your local pellcorp/creality git repo
+    copy is up to date.
 
 To revert to stock run:
 
