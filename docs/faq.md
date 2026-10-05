@@ -520,6 +520,11 @@ The `/etc/init.d/S58factoryreset` has recently been updated not to delete the `/
 
 ## How can I get a SimpleAF style theme for Fluidd and Mainsail
 
+!!! danger
+
+     This will wipe out any custom theme you have, to avoid this backup any ~/printer_data/config/.theme or ~/printer_data/config/.fluidd-theme before
+     running the change-theme.sh command!
+
 We have recently added this capability, make sure you update to latest Simple AF and then you can enable the theme for fluidd and mainsail like so:
 
 ```
