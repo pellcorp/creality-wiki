@@ -528,6 +528,7 @@ The `/etc/init.d/S58factoryreset` has recently been updated not to delete the `/
 We have recently added this capability, make sure you update to latest Simple AF and then you can enable the theme for fluidd and mainsail like so:
 
 ```
+~/pellcorp/installer.sh --branch main
 ~/pellcorp/tools/change-theme simpleaf
 ```
 
@@ -536,3 +537,8 @@ To revert to stock run:
 ```
 ~/pellcorp/tools/change-theme stock
 ```
+
+!!! note
+
+     You do **not** need to run a `~/installer.sh --update` after the `--branch main`, we just need the repo updated.
+
