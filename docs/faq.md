@@ -534,7 +534,7 @@ We have recently added this capability and you can enable the theme for fluidd a
 
 !!! tip
 
-    You do not need to run `~/pellcorp/installer.sh --branch main`, thats just to make sure your local pellcorp/creality git repo
+    You do not need to run `~/pellcorp/installer.sh --branch main` every time, that is just to make sure your local pellcorp/creality git repo
     copy is up to date.
 
 To revert to stock run:
