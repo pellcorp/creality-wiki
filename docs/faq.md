@@ -529,7 +529,7 @@ We have recently added this capability and you can enable the theme for fluidd a
 
 ```
 ~/pellcorp/installer.sh --branch main
-~/pellcorp/tools/change-theme simpleaf
+~/pellcorp/tools/change-theme.sh simpleaf
 ```
 
 !!! tip
@@ -540,7 +540,7 @@ We have recently added this capability and you can enable the theme for fluidd a
 To revert to stock run:
 
 ```
-~/pellcorp/tools/change-theme stock
+~/pellcorp/tools/change-theme.sh stock
 ```
 
 !!! note
