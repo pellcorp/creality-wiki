@@ -135,10 +135,22 @@ markdown_extensions:
 # Page tree
 nav:
   - Home: index.md
+  - Getting Started:
+      - getting-started.md
+      - about.md
+      - enable-root-access.md
+      - prerooted_firmware.md
+      - factory_reset.md
+      - emergency_factory_reset.md
+      - nebula_pad.md
+      - nebula_factory_reset.md
   - Cartographer:
       - cartographer.md
+      - cartotouch.md
       - cartographer_wiring.md
       - cartographer_flashing.md
+      - cartographer_V3_flashing.md
+      - cartographer_V4_flashing.md
       - cartographer_troubleshooting.md
       - cartographer_faq.md
   - Beacon:
@@ -156,6 +168,7 @@ nav:
       - btteddy.md
       - btteddy_wiring.md
       - btteddy_flashing.md
+      - legacy_btteddy_flashing.md
       - btteddy_troubleshooting.md
       - btteddy_faq.md
   - BlTouch:
@@ -167,6 +180,9 @@ nav:
   - Klicky:
       - klicky.md
       - klicky_wiring.md
+  - Load Cells:
+      - loadcells.md
+      - loadcells_zoffset.md
   - Rpi:
       - rpi.md
       - rpi_supported_os.md
@@ -184,6 +200,7 @@ nav:
       - m600_support.md
       - nozzle_wipe.md
       - custom_hooks.md
+      - manual_bed_tramming.md
   - Network & Cameras:
       - configure_wifi.md
       - additional_camera.md
@@ -201,11 +218,11 @@ nav:
       - config_overrides.md
       - backups.md
       - switching_probes.md
+      - kalico.md
+      - firmware.md
+      - verify_usb.md
       - switch_to_stock.md
       - rtos.md
   - FAQ & Support:
       - faq.md
-      - about.md
       - support.md
-      - factory_reset.md
-      - emergency_factory_reset.md
