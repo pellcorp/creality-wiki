@@ -201,6 +201,7 @@ nav:
       - nozzle_wipe.md
       - custom_hooks.md
       - manual_bed_tramming.md
+      - chamber_temp.md
   - Network & Cameras:
       - configure_wifi.md
       - additional_camera.md
@@ -210,6 +211,7 @@ nav:
       - spoolman.md
       - grumpyscreen.md
       - helixscreen.md
+      - ui_theme.md
       - mobileraker_companion.md
       - octoeverywhere_companion.md
       - obico_agent.md
@@ -220,9 +222,12 @@ nav:
       - switching_probes.md
       - kalico.md
       - firmware.md
+      - mcu_fan.md
+      - cfs_downgrade.md
       - verify_usb.md
       - switch_to_stock.md
       - rtos.md
   - FAQ & Support:
       - faq.md
       - support.md
+      - credits.md
