@@ -30,15 +30,7 @@ You must make sure that the cable you are using is pinned correctly.
     The reason this cannot be done on the printer, seems to be some incompatibility with pyserial and MIPS, and issue for this has been opened 
     <https://github.com/Arksine/katapult/issues/137> 
 
-## Flashing the Cartographer
-
-You will need some kind of linux environment, this can be a Raspberry Pi, desktop Linux or even a Linux Server if you can plug something in via USB.   If you do not have anything like that, you will need to create a Live USB key running Ubuntu 24.04 Desktop edition.
-
-### Creating a Live USB Key
-
-You should create a live USB with **Ubuntu 24.04** Desktop, make sure the USB is at least 8GB in size!
-
-<https://ubuntu.com/tutorials/try-ubuntu-before-you-install#1-getting-started>
+--8<-- "snippets/cartographer/flashing_the_cartographer.md"
 
 ## Installation dependencies
 
@@ -74,77 +66,17 @@ sudo apt install python3.12 python3.12-dev
     Even after installing python3.12, running `python3 --version` will **still** report python 3.14, thats expected, it does **not** indicate the
     process failed.
 
-## Clone Klipper and Cartographer-Firmware
+--8<-- "snippets/cartographer/clone_klipper_and_cartographer_firmware.md"
 
-```
-git clone "https://github.com/pellcorp/klipper" $HOME/klipper
-git clone "https://github.com/Cartographer3D/cartographer_firmware" $HOME/cartographer_firmware
-```
-
-!!! note 
-
-    If you already have `cartographer_firmware` cloned locally, make sure you are on latest `main` like so:
-    
-    ```
-    cd $HOME/cartographer_firmware
-    git fetch
-    git switch main
-    git reset --hard origin/main
-    ```
-
-## Setup Klipper Virtual Env
-
-```
-virtualenv -p python3.12 --system-site-packages $HOME/klippy-env
-$HOME/klippy-env/bin/pip3 install -U pip wheel setuptools
-$HOME/klippy-env/bin/pip3 install -r $HOME/klipper/scripts/klippy-requirements.txt
-```
-
-!!! note
-
-    If you get an error `RuntimeError: failed to find interpreter for Builtin discover of python_spec='python3.12'` it means you
-    are likely trying to do this on Ubuntu 26.04 and you need to [install python 3.12](#ubuntu-2604-python-312)
+--8<-- "snippets/cartographer/setup_klipper_virtual_env.md"
 
 ## Flashing K1 Cartographer Firmware
 
 This firmware is provided by Richard from Cartographer3d.com specifically for the potato printers like the K1, K1C, K1SE, K1 Max, Ender 3 V3 KE and Ender 5 Max.   It is critical that you flash your cartographer with this version of the Survey firmware over the official Survey Firmware on K1, K1SE, K1C, K1M, Ender 3 V3 KE and Ender 5 Max to avoid stuttering and instability, especially during bed meshes!
 
-### Connect Cartographer via USB
+--8<-- "snippets/cartographer/connect_cartographer_via_usb.md"
 
-Plug the cartographer into your computer and make sure it shows up if you type `lsusb` you should find an entry something like this:
-
-```
-Bus 001 Device 067: ID 1d50:614e OpenMoko, Inc.
-```
-
-### Enable Bootloader
-
-```
-CARTO_DEV=$(ls /dev/serial/by-id/usb-* | grep "IDM\|Cartographer" | head -1)
-cd $HOME/klipper/scripts
-sudo -E $HOME/klippy-env/bin/python -c "import flash_usb as u; u.enter_bootloader('$CARTO_DEV')"
-```
-
-!!! note
-
-    If you get a warning `sudo: preserving the entire environment is not supported, '-E' is ignored` you can
-    safely ignore it, its likely you are on Ubuntu 26.04!
-
-!!! warning 
-
-    If you get a message like `ls: cannot access '/dev/serial/by-id/usb-*': No such file or directory`, it means you forgot the `*` in the command above, your carto cable is incorrectly pinned or
-    you are using a VM or WSL (against advice) and have not passed through the Cartographer USB Device!
-
-You should see a message like:
-
-```
-Entering bootloader on /dev/serial/by-id/usb-Cartographer_614e_16000C000F43304253373820-if00
-```
-
-!!! note
-
-    If the carto does not enter bootloader mode, it is possible you forgot to use sudo!
-    If your carto does show up in /dev/serial but won't enter bootloader mode, you will need to fix this with [DFU mode](#flashing-k1-firmware-via-dfu-mode)
+--8<-- "snippets/cartographer/enable_bootloader.md"
 
 ### Flashing
 

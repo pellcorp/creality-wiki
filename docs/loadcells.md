@@ -49,16 +49,7 @@ The Ender 3 V3 keeps using its physical endstop for homing Z, the load cells are
 
 If you've installed Guilouz's Helper Script, or installed Fluidd or Mainsail through any other means (such as from Creality directly), you need to [factory reset](factory_reset.md) before continuing.
 
-### Clone the Repo
-
-```
-git config --global http.sslVerify false
-git clone https://github.com/pellcorp/creality.git /usr/data/pellcorp
-```
-
-!!! note
-
-    If you had already cloned the pellcorp creality repository before being asked to factory reset, the git repo is still there and you can skip the cloning step!
+--8<-- "snippets/probe/clone_the_repo.md"
 
 ### Run the installer
 
@@ -68,21 +59,7 @@ git clone https://github.com/pellcorp/creality.git /usr/data/pellcorp
 
 ## Post Installation
 
-### MCU Firmware updates are pending
-
-At the end of the installer process if you get this message:
-
-```
-WARNING: MCU Firmware updates are pending you need to power cycle your printer!
-```
-
-It means that new MCU firmware updates need to be applied and this can only be done by power cycling the printer.  After your printer is power cycled you can verify firmware was updated with the `CHECK_FIRMWARE` macro from Fluidd or Mainsail, if you see this message:
-
-```
-INFO: Your MCU Firmware is up to date!
-```
-
-Your printer MCU firmware was updated successfully.   If you still see the `MCU Firmware updates are pending you need to power cycle your printer!` message after a power cycle, check the `/tmp/mcu_update.log`, you may be asked to provide this file on Discord if you need additional assistance, sometimes an additional power cycle can solve the problem, there is a very short window of time (15 seconds) in which the MCU firmware can be updated, so  there is a chance it will work after an additional power cycle.
+--8<-- "snippets/probe/mcu_firmware_updates_are_pending.md"
 
 ## Calibration
 
@@ -90,15 +67,7 @@ Your printer MCU firmware was updated successfully.   If you still see the `MCU 
 
     The load cells **must** be calibrated before you can probe with them, until you do the printer will stop with `Load Cell Probe Error: Load Cell not calibrated`. Never guess the calibration value, the safety limits are all in grams and an inaccurate calibration lets the nozzle push far harder than you intend.
 
-### Check the Load Cells
-
-Make sure the bed is empty and run `LOAD_CELL_DIAGNOSTIC`, it collects samples for 10 seconds, press on the bed while it runs.
-
-- `Saturated samples` should be 0
-- `Unique values` should be a large part of the samples collected, if it is 1 there is a wiring or configuration problem
-- `Sample range` should increase when you press on the bed
-
-**Source:** <https://github.com/KalicoCrew/kalico/blob/main/docs/Load_Cell.md#diagnostics>
+--8<-- "snippets/loadcells/check_the_load_cells.md"
 
 ### Calibrate the Load Cells
 
@@ -130,23 +99,9 @@ You can use `ABORT` to cancel at any time.  Afterwards run `LOAD_CELL_DIAGNOSTIC
 
 **Source:** <https://github.com/KalicoCrew/kalico/blob/main/docs/Load_Cell.md#calibration>
 
-### Calibration Errors
+--8<-- "snippets/loadcells/calibration_errors.md"
 
-| Error | Cause | Fix |
-| --- | --- | --- |
-| `Tare and Calibration readings are less than 1% different!` | The weight is too light, the reading has to change by at least 1% of the sensor range | Use more weight, on the Ender 3 V3 about 3 kg (`3000` grams) is needed and 2598 grams was not enough.  The message suggests a higher gain, but `gain` is already at its highest setting (`A-128`), so more weight is the only fix |
-| `Sensor is saturated with too much load!` | The weight is too heavy | Use less weight |
-| `Tare and Calibration readings are the same!` | The reading did not change | Check the weight is actually on the bed and run `LOAD_CELL_DIAGNOSTIC` to check the sensor |
-
-The calibration is still active after one of these errors, so you can change the weight and run `CALIBRATE GRAMS=<weight in grams>` again.
-
-### Test the Probe
-
-Run `LOAD_CELL_TEST_TAP`, then gently tap the nozzle or press on the bed 3 times, it will report each tap as it is detected.  If no tap is detected within 30 seconds it fails.
-
-!!! note
-
-    Load cell probes always report not triggered for `QUERY_ENDSTOPS` and `QUERY_PROBE`, use `LOAD_CELL_TEST_TAP` instead.
+--8<-- "snippets/loadcells/test_the_probe.md"
 
 ### Probe Accuracy
 
@@ -181,52 +136,19 @@ At least PID tuning (bed and extruder) and input shaping is required for accepta
 
     You can use the QUICK_START Macro to complete Bed and Nozzle PID Tuning and Input Shaping Automatically.
 
-#### Pid Tuning
+--8<-- "snippets/probe/pid_tuning.md"
 
-**Source:** [Calibrate Pid Settings](https://www.klipper3d.org/Config_checks.html?h=pid#calibrate-pid-settings)
-
-For example you might run these:
-
-```
-PID_CALIBRATE_BED BED_TEMP=65
-PID_CALIBRATE_HOTEND HOTEND_TEMP=230
-```
-
-!!! note
-
-    The `PID_CALIBRATE_BED` and `PID_CALIBRATE_HOTEND` macros are located in the `useful_macros.cfg` file and they have defaults values for BED_TEMP and HOTEND_TEMP so you can just run them by clicking on them if you want that same temperature.
-
-#### Input Shaping
-
-There is no default configuration for input shaping so it is essentially disabled out of the box.
-
-You can use the `SHAPER_CALIBRATE` macro to run input shaping, just be sure to `SAVE CONFIG` at the end, to choose the automatically selected shaper config, be aware though that the shaper chosen might be sub-optimal due to a slight difference in vibrations between two options.  So you should probably review the output and potentially choose an alternative if it gives you higher recommended max acceleration for minimal increase in vibration.
-
-[Input Shaper Auto Calibration](https://www.klipper3d.org/Measuring_Resonances.html#input-shaper-auto-calibration)
+--8<-- "snippets/probe/input_shaping.md"
 
 ## Tuning
 
 The load cell probe settings are in the `[load_cell_probe]` section of `loadcells.cfg`, which you can edit from the config editor in Fluidd or Mainsail.
 
-### Tap Failures
+--8<-- "snippets/loadcells/tap_failures.md"
 
-If you see tap validation errors in the console like `TAP_PULLBACK_TOO_SHORT` or `TAP_BREAK_CONTACT_TOO_LATE` the pullback move is too short, increase `pullback_distance` in the `[load_cell_probe]` section.  The default is `0.2`, on the Ender 3 V3 setting it to `0.5` fixed frequent `TAP_PULLBACK_TOO_SHORT` failures.
+--8<-- "snippets/loadcells/trigger_force.md"
 
-```
-[load_cell_probe]
-pullback_distance: 0.5
-```
-
-If the errors are `TAP_BREAK_CONTACT_TOO_EARLY` it is too long.
-
-### Trigger Force
-
-`trigger_force` is the force in grams that triggers the probe, it is set by the mount, `75` for the Ender 3 V3 and `160` for the K1 and K1 Max.  Probing always overshoots this, so raise it in small steps only if you need to.
-
-### Safety Limits
-
-- `force_safety_limit` (default `2000` grams) is the most force allowed on the bed before a probe move starts.  If it is exceeded you get `force of 3000g exceeds force_safety_limit (2000g) before probing!`, this can be caused by the nozzle already resting on the bed or something pushing on the bed.
-- `drift_safety_limit` (default `1000` grams) is the most force allowed while probing before it triggers.  If it is exceeded you get `force exceeded drift_safety_limit before triggering!`.
+--8<-- "snippets/loadcells/safety_limits.md"
 
 ## Switching Back
 
@@ -240,24 +162,8 @@ To go back to a different probe see [Switching Probes](switching_probes.md).
     ~/pellcorp/installer.sh --klipper
     ```
 
-### First Print
+--8<-- "snippets/loadcells/first_print.md"
 
-You might need to optimise your load cell z offset using baby stepping.
+--8<-- "snippets/probe/other_calibrations.md"
 
-In fluidd the save button after you finish or cancel your print can be a bit hard to find, look for
-
-![image](assets/images/fluidd_save_zoffset.png)
-
-### Other Calibrations
-
-!!! info
-
-    The default value for pressure advance is set to `0.04`
-
-Refer to [Orcaslicer Calibration](https://github.com/SoftFever/OrcaSlicer/wiki/Calibration) for more calibrations
-
-Refer to the [Ellis Print Tuning Guide](https://ellis3dp.com/Print-Tuning-Guide/) for more great tuning ideas.
-
-## Where can I get help?
-
-For support, join the [SimpleAF Discord](https://discord.gg/M5rmBQqRSG).
+--8<-- "snippets/probe/where_can_i_get_help.md"

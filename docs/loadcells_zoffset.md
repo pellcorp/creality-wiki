@@ -83,15 +83,7 @@ The value should be the approximate centre of your build plate **(except for End
 
     The load cell(s) **must** be calibrated before you can use them for z-offset, until you do the printer will stop with `Load Cell Probe Error: Load Cell not calibrated`. Never guess the calibration value, the safety limits are all in grams and an inaccurate calibration lets the nozzle push far harder than you intend.
 
-### Check the Load Cells
-
-Make sure the bed is empty and run `LOAD_CELL_DIAGNOSTIC`, it collects samples for 10 seconds, press on the bed while it runs.
-
-- `Saturated samples` should be 0
-- `Unique values` should be a large part of the samples collected, if it is 1 there is a wiring or configuration problem
-- `Sample range` should increase when you press on the bed
-
-**Source:** <https://github.com/KalicoCrew/kalico/blob/main/docs/Load_Cell.md#diagnostics>
+--8<-- "snippets/loadcells/check_the_load_cells.md"
 
 ### Calibrate the Load Cells
 
@@ -123,23 +115,9 @@ You can use `ABORT` to cancel at any time.  Afterwards run `LOAD_CELL_DIAGNOSTIC
 
 **Source:** <https://github.com/KalicoCrew/kalico/blob/main/docs/Load_Cell.md#calibration>
 
-### Calibration Errors
+--8<-- "snippets/loadcells/calibration_errors.md"
 
-| Error | Cause | Fix |
-| --- | --- | --- |
-| `Tare and Calibration readings are less than 1% different!` | The weight is too light, the reading has to change by at least 1% of the sensor range | Use more weight, on the Ender 3 V3 about 3 kg (`3000` grams) is needed and 2598 grams was not enough.  The message suggests a higher gain, but `gain` is already at its highest setting (`A-128`), so more weight is the only fix |
-| `Sensor is saturated with too much load!` | The weight is too heavy | Use less weight |
-| `Tare and Calibration readings are the same!` | The reading did not change | Check the weight is actually on the bed and run `LOAD_CELL_DIAGNOSTIC` to check the sensor |
-
-The calibration is still active after one of these errors, so you can change the weight and run `CALIBRATE GRAMS=<weight in grams>` again.
-
-### Test the Probe
-
-Run `LOAD_CELL_TEST_TAP`, then gently tap the nozzle or press on the bed 3 times, it will report each tap as it is detected.  If no tap is detected within 30 seconds it fails.
-
-!!! note
-
-    Load cell probes always report not triggered for `QUERY_ENDSTOPS` and `QUERY_PROBE`, use `LOAD_CELL_TEST_TAP` instead.
+--8<-- "snippets/loadcells/test_the_probe.md"
 
 ### Probe Accuracy
 
@@ -156,31 +134,11 @@ Make sure the nozzle is clean and there is no filament oozing from it, and if yo
 
 The load cell probe settings are in the `[load_cell_probe]` section of `loadcells_zoffset.cfg`, which you can edit from the config editor in Fluidd or Mainsail.
 
-### Tap Failures
+--8<-- "snippets/loadcells/tap_failures.md"
 
-If you see tap validation errors in the console like `TAP_PULLBACK_TOO_SHORT` or `TAP_BREAK_CONTACT_TOO_LATE` the pullback move is too short, increase `pullback_distance` in the `[load_cell_probe]` section.  The default is `0.2`, on the Ender 3 V3 setting it to `0.5` fixed frequent `TAP_PULLBACK_TOO_SHORT` failures.
+--8<-- "snippets/loadcells/trigger_force.md"
 
-```
-[load_cell_probe]
-pullback_distance: 0.5
-```
-
-If the errors are `TAP_BREAK_CONTACT_TOO_EARLY` it is too long.
-
-### Trigger Force
-
-`trigger_force` is the force in grams that triggers the probe, it is set by the mount, `75` for the Ender 3 V3 and `160` for the K1 and K1 Max.  Probing always overshoots this, so raise it in small steps only if you need to.
-
-### Safety Limits
-
-- `force_safety_limit` (default `2000` grams) is the most force allowed on the bed before a probe move starts.  If it is exceeded you get `force of 3000g exceeds force_safety_limit (2000g) before probing!`, this can be caused by the nozzle already resting on the bed or something pushing on the bed.
-- `drift_safety_limit` (default `1000` grams) is the most force allowed while probing before it triggers.  If it is exceeded you get `force exceeded drift_safety_limit before triggering!`.
+--8<-- "snippets/loadcells/safety_limits.md"
 
 
-### First Print
-
-You might need to optimise your load cell z offset using baby stepping.
-
-In fluidd the save button after you finish or cancel your print can be a bit hard to find, look for
-
-![image](assets/images/fluidd_save_zoffset.png)
+--8<-- "snippets/loadcells/first_print.md"
