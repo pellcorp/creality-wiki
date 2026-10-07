@@ -187,16 +187,19 @@ nav:
       - loadcells.md
       - loadcells_zoffset.md
   - Rpi:
-      - rpi.md
-      - rpi_supported_os.md
-      - rpi_firmware.md
-      - rpi_printer_definitions.md
-      - rpi_faq.md
-      - rpi_klippain.md
-      - rpi_webcam.md
-      - rpi_grumpyscreen.md
-      - rpi_klipperscreen.md
-      - rpi_boot_display.md
+      - Setup:
+          - rpi.md
+          - rpi_supported_os.md
+          - rpi_firmware.md
+          - rpi_printer_definitions.md
+      - Features:
+          - rpi_klippain.md
+          - rpi_webcam.md
+          - rpi_grumpyscreen.md
+          - rpi_klipperscreen.md
+          - rpi_boot_display.md
+      - Help:
+          - rpi_faq.md
   - Print Features:
       - slicer_settings.md
       - filament_runout.md
