@@ -517,33 +517,3 @@ and takes about the same amount of time.
 The `/etc/init.d/S58factoryreset` has recently been updated not to delete the `/etc/localtime`, so you can configure it once and it should survive any number of factory resets, following the excellent guide here:
 
 <https://guilouz.github.io/Creality-Helper-Script-Wiki/firmwares/change-date-and-time/>
-
-## How can I get a SimpleAF style theme for Fluidd and Mainsail
-
-!!! danger
-
-     This will wipe out any custom theme you have, to avoid this backup any ~/printer_data/config/.theme or ~/printer_data/config/.fluidd-theme before
-     running the change-theme.sh command!
-
-We have recently added this capability and you can enable the theme for fluidd and mainsail like so:
-
-```
-~/pellcorp/installer.sh --branch main
-~/pellcorp/tools/change-theme.sh simpleaf
-```
-
-!!! tip
-
-    You do not need to run `~/pellcorp/installer.sh --branch main` every time, that is just to make sure your local pellcorp/creality git repo
-    copy is up to date.
-
-To revert to stock run:
-
-```
-~/pellcorp/tools/change-theme.sh stock
-```
-
-!!! note
-
-     You do **not** need to run a `~/installer.sh --update` after the `--branch main`, we just need the repo updated.
-
