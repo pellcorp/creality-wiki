@@ -18,7 +18,7 @@ This page covers using load cells for auto z-offset alongside another supported 
 | Ender 3 V3 KE | Tested                     |
 | Ender 3 V3 SE | Tested                     |
 | K1            | Tested                     |
-| K1C           | Configured, **not tested** |
+| K1C           | Tested                     |
 | K1 SE         | Configured, **not tested** |
 | K1 Max        | Configured, **not tested** |
 
