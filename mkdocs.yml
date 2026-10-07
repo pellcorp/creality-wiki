@@ -1,6 +1,7 @@
 hooks:
   - custom/overrides/hooks/toc_depth.py
   - custom/overrides/hooks/publish_scripts.py
+  - custom/overrides/hooks/themes_gallery.py
 
 # Project information
 site_name: SimpleAF Docs
@@ -136,14 +137,18 @@ markdown_extensions:
 nav:
   - Home: index.md
   - Getting Started:
-      - getting-started.md
-      - about.md
-      - enable-root-access.md
-      - prerooted_firmware.md
-      - factory_reset.md
-      - emergency_factory_reset.md
-      - nebula_pad.md
-      - nebula_factory_reset.md
+      - Start Here:
+          - getting-started.md
+          - about.md
+      - Root & Firmware:
+          - enable-root-access.md
+          - prerooted_firmware.md
+      - Reset:
+          - factory_reset.md
+          - emergency_factory_reset.md
+      - Nebula Pad:
+          - nebula_pad.md
+          - nebula_factory_reset.md
   - Cartographer:
       - cartographer.md
       - cartographer_wiring.md
@@ -200,31 +205,38 @@ nav:
       - custom_hooks.md
       - manual_bed_tramming.md
       - chamber_temp.md
-  - Network & Cameras:
-      - configure_wifi.md
-      - additional_camera.md
-      - camera_controls.md
-      - nebula_camera.md
-      - moonraker_timelapse.md
-      - spoolman.md
-      - grumpyscreen.md
-      - helixscreen.md
-      - ui_theme.md
-      - mobileraker_companion.md
-      - octoeverywhere_companion.md
-      - obico_agent.md
+  - Cameras & Add-ons:
+      - Network:
+          - configure_wifi.md
+      - Cameras:
+          - additional_camera.md
+          - camera_controls.md
+          - nebula_camera.md
+          - moonraker_timelapse.md
+      - Screens:
+          - grumpyscreen.md
+          - helixscreen.md
+          - ui_theme.md
+      - Add-ons:
+          - spoolman.md
+          - mobileraker_companion.md
+          - octoeverywhere_companion.md
+          - obico_agent.md
   - Maintenance:
-      - updating.md
-      - config_overrides.md
-      - backups.md
-      - switching_probes.md
-      - kalico.md
-      - firmware.md
-      - mcu_fan.md
-      - cfs_downgrade.md
-      - verify_usb.md
-      - switch_to_stock.md
-      - rtos.md
+      - Updating & Backups:
+          - updating.md
+          - config_overrides.md
+          - backups.md
+      - Probes & Firmware:
+          - switching_probes.md
+          - kalico.md
+          - firmware.md
+          - mcu_fan.md
+          - cfs_downgrade.md
+          - verify_usb.md
+      - Other:
+          - switch_to_stock.md
+          - rtos.md
   - FAQ & Support:
       - faq.md
       - support.md

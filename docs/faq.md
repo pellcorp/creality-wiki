@@ -1,8 +1,12 @@
+---
+toc_depth: 3
+---
+
 # Frequently Asked Questions
 
 ## Probes and Calibration
 
-### Can I use Simple AF with Load Cells?
+### Can I use Simple AF with Load Cells? { data-toc-label="Load Cells" }
 
 
 There is now highly [experimental support for using existing load cells](loadcells.md) for K1, K1C, K1SE, K1 Max and Ender 3 V3 CoreXZ.
@@ -17,29 +21,29 @@ The loadcell support has **zero** creality code and is fully configurable via co
 
 In the near future, we will port the existing nozzle wipe macros from Creality, but [you are free to use your own or an existing third party solution](nozzle_wipe.md)
 
-### How do I switch from btteddy to eddyng?
+### How do I switch from btteddy to eddyng? { data-toc-label="BTT Eddy to EddyNG" }
 
 
 [Switching Probes](switching_probes.md)
 
-### How do I switch from btteddy to cartographer?
+### How do I switch from btteddy to cartographer? { data-toc-label="BTT Eddy to Cartographer" }
 
 
 [Switching Probes](switching_probes.md)
 
-### How do I use my cartographer for input shaping?
+### How do I use my cartographer for input shaping? { data-toc-label="Cartographer Input Shaping" }
 
 
 [Cartographer Input Shaper](cartographer_faq.md#how-do-i-use-my-cartographer-for-input-shaping)
 
-### What is Axis Twist?
+### What is Axis Twist? { data-toc-label="Axis Twist" }
 
 
 So ZeroDotCmd has done some great videos on this topic <https://www.youtube.com/watch?v=O_U8t5Ap0Ik> and <https://www.youtube.com/watch?v=1KVTRDim1lk>
 
 More details here: <https://www.klipper3d.org/Axis_Twist_Compensation.html>
 
-### How can I make sure my bed is level / trammed?
+### How can I make sure my bed is level / trammed? { data-toc-label="Bed Level / Tramming" }
 
 
 ZeroDotCmd created a great video on the subject of teeth skipping with a few options for how to do it
@@ -47,7 +51,7 @@ ZeroDotCmd created a great video on the subject of teeth skipping with a few opt
 
 Note this is not about bed mesh, this video is just about getting your bed level enough for bed mesh to be effective.
 
-### How to read belt shaper graphs?
+### How to read belt shaper graphs? { data-toc-label="Belt Shaper Graphs" }
 
 
 Take a look at this video recommended by @EAZY
@@ -55,7 +59,7 @@ Take a look at this video recommended by @EAZY
 
 ## Printing
 
-### How do I replace Line_Purge with a custom line purge?
+### How do I replace Line_Purge with a custom line purge? { data-toc-label="Custom Line Purge" }
 
 
 Create a new macros file, call it something like `CustomMacros.cfg` (it matters not what its called, just as long as it is not the name of an existing file), and create your own `_SAF_LINE_PURGE` macro.
@@ -66,7 +70,7 @@ The reason this is recommended over just commenting out `LINE_PURGE` in `start_e
 
 For more information [Custom Hooks](custom_hooks.md)
 
-### What is bed warp stabilisation and why is it good?
+### What is bed warp stabilisation and why is it good? { data-toc-label="Bed Warp Stabilisation" }
 
 
 An excellent video from need it make if for why heat soaking is absolutely vital for optimal bed mesh
@@ -104,7 +108,7 @@ For some probes like the eddy (so for `btteddy` or `eddyng`) sitting just above 
 to be excessively heated, there is a `start_end.cfg` property `variable_start_print_bed_heating_move_bed_distance` which can be set to something like `100`
 to position the toolhead much further away from the bed while the bed heats, the default value of 20mm might not be sufficient for your use case.
 
-### How do I get the bed to cooldown after a print finishes?
+### How do I get the bed to cooldown after a print finishes? { data-toc-label="Bed Cooldown After Print" }
 
 
 So by default with Bed Warp stabilisation enabled, the bed will stay warm after a print for up to 1 hour (this can be changed too btw), if you do not want
@@ -115,37 +119,37 @@ the bed to stay warm after a print you can either toggle the [bed warp stabilila
 variable_end_print_cool_down: False
 ```
 
-### How do I get the printer to lower the bed at the end of a print?
+### How do I get the printer to lower the bed at the end of a print? { data-toc-label="Lower Bed After Print" }
 
 
 This is just a configuration change to the `start_end.cfg` `_CLIENT_VARIABLE` `variable_custom_park_dz` value, you change the value from 25.0 to 50.0 or whatever you want.   If you print a really tall print the bed will be lowered as much room as there is left without exceeding the `[stepper_z]` `position max`!
 
-### How can I wait for chamber temp?
+### How can I wait for chamber temp? { data-toc-label="Wait for Chamber Temp" }
 
 See [Wait for Chamber Temp](chamber_temp.md#wait-for-chamber-temp).
 
-### How can I set a chamber fan target temp from my slicer?
+### How can I set a chamber fan target temp from my slicer? { data-toc-label="Chamber Fan Target Temp" }
 
 See [Chamber Fan Target Temp](chamber_temp.md#chamber-fan-target-temp).
 
-### How can I prevent a print starting or resuming if there is no filament present?
+### How can I prevent a print starting or resuming if there is no filament present? { data-toc-label="No Filament Check" }
 
 
 See [How can I prevent a print starting or resuming if there is no filament present?](filament_runout.md#how-can-i-prevent-a-print-starting-or-resuming-if-there-is-no-filament-present)
 
-### How can I switch to a toolhead filament runout sensor?
+### How can I switch to a toolhead filament runout sensor? { data-toc-label="Toolhead Runout Sensor" }
 
 
 See [How can I switch to a toolhead filament runout sensor?](filament_runout.md#how-can-i-switch-to-a-toolhead-filament-runout-sensor)
 
-### How do I integrate a Nozzle Wipe?
+### How do I integrate a Nozzle Wipe? { data-toc-label="Nozzle Wipe" }
 
 
 Information has been moved to [Nozzle Wipe Custom Hook](nozzle_wipe.md)
 
 ## Customising
 
-### How do I add my own macros to Simple AF?
+### How do I add my own macros to Simple AF? { data-toc-label="Your Own Macros" }
 
 
 So you cannot modify or add new macros to Simple AF cfg files, they will be erased the next time you update, what you should do instead is add your own .cfg files with your macros.
@@ -160,11 +164,11 @@ Then just add `[include example.cfg]` to `printer.cfg`, just put it at the end o
 
     Its worth noting cfg in sub-directories will not be automatically backed up so best to keep them all in the main config directory.
 
-### How can I get a SimpleAF style theme for Fluidd and Mainsail
+### How can I get a SimpleAF style theme for Fluidd and Mainsail { data-toc-label="Fluidd and Mainsail Themes" }
 
-See [Simple AF Theme](ui_theme.md).
+See [Simple AF Fluidd and Mainsail Themes](ui_theme.md).
 
-### How do I switch default UI from fluidd to mainsail and back?
+### How do I switch default UI from fluidd to mainsail and back? { data-toc-label="Switch Default UI" }
 
     
 To switch to mainsail:
@@ -197,7 +201,7 @@ This change will survive updating Simple AF, but will not be retained for a rein
         ~/pellcorp/tools/switch-default-ui.sh mainsail
         ```
 
-### Get Fluidd to restart Klipper for Save and Restart
+### Get Fluidd to restart Klipper for Save and Restart { data-toc-label="Fluidd Save and Restart" }
 
 
 Fluidd actually has a feature to switch from asking Klipper to restart itself to getting Moonraker to restart the Klipper service itself, this can
@@ -206,14 +210,14 @@ and takes about the same amount of time.
 
 ![image](assets/images/fluidd-save-restart-service-restart.png)
 
-### How do I integrate Knomi?
+### How do I integrate Knomi? { data-toc-label="Knomi" }
 
 
 [Knomi Support](custom_hooks.md#knomi-support)
 
 ## Add-ons
 
-### How to install AFC on Simple AF?
+### How to install AFC on Simple AF? { data-toc-label="AFC" }
 
 
 !!! note
@@ -235,7 +239,7 @@ cd /root/AFC-Klipper-Add-On
     The above approach will hopefully be greatly simplified soon as a few fixes have been made to the Creality OS support
     on the AFC repository but not released.
 
-### How to install Happy Hare on Simple AF?
+### How to install Happy Hare on Simple AF? { data-toc-label="Happy Hare" }
 
 
 !!! note    
@@ -259,7 +263,7 @@ systemctl restart moonraker
 systemctl restart klipper
 ```
 
-### How do I install Klipper TMC Autotune
+### How do I install Klipper TMC Autotune { data-toc-label="TMC Autotune" }
 
 
 
@@ -280,17 +284,17 @@ wget --no-check-certificate -O - https://raw.githubusercontent.com/andrewmcgr/kl
     we had to enhance our systemctl shim and a soft link and hack the busybox ln command to allow the installer to run as though it were on a proper os
     like rasbian.
 
-### How do I enable moonraker timelapses?
+### How do I enable moonraker timelapses? { data-toc-label="Timelapses" }
 
 
 [Enable Moonraker Timelapse](moonraker_timelapse.md)
 
-### How do I setup remote access and AI failure detection?
+### How do I setup remote access and AI failure detection? { data-toc-label="Remote Access" }
 
 
 [Octoeverywhere Companion](octoeverywhere_companion.md)
 
-### Can I have more than one camera on Simple AF 
+### Can I have more than one camera on Simple AF { data-toc-label="More Than One Camera" }
 
 
 For Simple AF for RPi yes thats fine and you can do that via crowsnest, but for K1 Series (which includes K1, K1M, K1SE, K1C, Ender 5 Max and Ender 3 V3 KE), that
@@ -298,7 +302,7 @@ is not possible, for more information see [Additional Camera](additional_camera.
 
 ## System
 
-### How do I change the hostname?
+### How do I change the hostname? { data-toc-label="Hostname" }
 
 
 You can update the /etc/hostname with the new hostname from ssh like this:
@@ -309,19 +313,19 @@ echo "myhostname" > /etc/hostname
 
 Next time you power cycle your printer, the hostname should be updated
 
-### How can I configure the timezone
+### How can I configure the timezone { data-toc-label="Timezone" }
 
 
 The `/etc/init.d/S58factoryreset` has recently been updated not to delete the `/etc/localtime`, so you can configure it once and it should survive any number of factory resets, following the excellent guide here:
 
 <https://guilouz.github.io/Creality-Helper-Script-Wiki/firmwares/change-date-and-time/>
 
-### How to enable Github backups for my configuration?
+### How to enable Github backups for my configuration? { data-toc-label="GitHub Backups" }
 
 
 [Backup Config Overrides](config_overrides.md#git-backups-for-configuration-overrides)
 
-### How do I cleanup all those backup printer config files?
+### How do I cleanup all those backup printer config files? { data-toc-label="Cleanup Backup Files" }
 
 
 !!! note
@@ -336,7 +340,7 @@ Simple AF runs a cleanup every time the printer starts it does the following:
 
 You can also run this script manually via the hidden macro _CLEANUP_FILES
 
-### Why can't I use force move?
+### Why can't I use force move? { data-toc-label="Force Move" }
 
     
 We disable FORCE_MOVE by default because it works on the stepper level so for multi-z users it would create havoc, and also force move does not work so well for moving x and y either, so its really not that useful.
@@ -367,11 +371,11 @@ If you wish to restore access to force move set the `variable_disable_force_move
     You can use the hidden `_SET_KIN_MAX_Z` macro to set kinematic distance to allow the full range of z height, this macro is normally used for calibration to allow
     users to move their Cartographer, Beacon or Eddy close to the bed before calibration, but its useful for many situations.
 
-### How can I change MCU fan from always on?
+### How can I change MCU fan from always on? { data-toc-label="MCU Fan" }
 
 See [MCU Fan](mcu_fan.md) for how to change the MCU fan from always on.
 
-### Where can I find stock configuration files?
+### Where can I find stock configuration files? { data-toc-label="Stock Config Files" }
 
 
 You can find the stock config files for all printers we support here:
@@ -380,6 +384,6 @@ You can find the stock config files for all printers we support here:
 
 We are also starting to collect some rootfs.squashfs (decrypted) for various firmware as well at <https://github.com/pellcorp/downloads/tree/main/creality/rootfs>
 
-### How can I downgrade from CFS Firmware?
+### How can I downgrade from CFS Firmware? { data-toc-label="Downgrade CFS Firmware" }
 
 See [Downgrade from CFS Firmware](cfs_downgrade.md).

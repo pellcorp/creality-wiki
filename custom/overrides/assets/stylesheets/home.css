@@ -564,3 +564,22 @@ h1, h2, h3, h4, h5 {
     box-shadow: var(--md-shadow-z2);
 }
 
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 1em 3em;
+    font-size: 1.4em;
+    font-weight: 700;
+    background: #3B82F6;
+    border-color: #3B82F6;
+    color: white;
+    border-radius: 6px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+    letter-spacing: 0.02em;
+}
