@@ -9,11 +9,24 @@ Simple AF would not exist without the generosity of the community and the open s
 
 ## Contributors
 
-Thanks to everyone who has contributed code and documentation, see [Contributors](contributors.md) for what each person has done:
+Thanks to everyone who has contributed code and documentation:
 
-- [Simple AF](https://github.com/pellcorp/creality/graphs/contributors) - sbtoonz, omahena, ZeroDotCMD, rtins123, RodentVienna, Chef-Armstrong, straccio, biga888, A3Bagged, sterling5241
-- [Simple AF Docs](https://github.com/pellcorp/creality-wiki/graphs/contributors) - A3Bagged, QuinnDamerell, Chef-Armstrong, zevaryx, michaeljoelphillips, hypermoist, Cartrigger, sterling5241
-- [GrumpyScreen](https://github.com/pellcorp/grumpyscreen/graphs/contributors) - ballaswag, tlace17, ajs123, consp, kevdliu, krakpot, hypermoist, JuggyMcNutty, shawn-makes-stuff, kyleinoregon, itzexor, Cartrigger
+- [Simple AF](https://github.com/pellcorp/creality/graphs/contributors)
+- [Simple AF Docs](https://github.com/pellcorp/creality-wiki/graphs/contributors)
+- [Simple AF Themes](https://github.com/pellcorp/simple-af-themes/graphs/contributors)
+- [GrumpyScreen](https://github.com/pellcorp/grumpyscreen/graphs/contributors)
+- [Virtual Klipper Printer](https://github.com/pellcorp/virtual-klipper-printer/graphs/contributors)
+- [Klipper - K1 Series](https://github.com/pellcorp/klipper/graphs/contributors)
+- [Klipper - RPi Series](https://github.com/pellcorp/klipper-rpi/graphs/contributors)
+- [Klipper Firmware - K1 Series](https://github.com/pellcorp/k1-klipper-firmware/graphs/contributors)
+- [Kalico - K1 Series](https://github.com/pellcorp/kalico/graphs/contributors)
+- [Kalico - RPi Series](https://github.com/pellcorp/kalico-rpi/graphs/contributors)
+- [Kalico Firmware - K1 Series](https://github.com/pellcorp/k1-kalico-firmware/graphs/contributors)
+- [uStreamer - K1 Series](https://github.com/pellcorp/k1-ustreamer/graphs/contributors)
+- [Nginx - K1 Series](https://github.com/pellcorp/k1-nginx/graphs/contributors)
+- [Bash - K1 Series](https://github.com/pellcorp/k1-bash/graphs/contributors)
+- [Dropbear sftp plugin - K1 Series](https://github.com/pellcorp/k1-sftp-server/graphs/contributors)
+- [Creality Firmware](https://github.com/pellcorp/creality-firmware/graphs/contributors)
 
 And for specific macros, config and guides:
 

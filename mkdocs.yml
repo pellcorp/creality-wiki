@@ -146,7 +146,6 @@ nav:
       - nebula_factory_reset.md
   - Cartographer:
       - cartographer.md
-      - cartotouch.md
       - cartographer_wiring.md
       - cartographer_flashing.md
       - cartographer_V3_flashing.md
@@ -168,7 +167,6 @@ nav:
       - btteddy.md
       - btteddy_wiring.md
       - btteddy_flashing.md
-      - legacy_btteddy_flashing.md
       - btteddy_troubleshooting.md
       - btteddy_faq.md
   - BlTouch:
