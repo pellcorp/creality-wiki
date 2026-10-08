@@ -4,8 +4,8 @@ Simple AF would not exist without the generosity of the community and the open s
 
 ## Hardware Donations
 
-- Richard from <https://cartographer3d.com> and Zarboz from <https://wattskraken.xyz/> for donating Cartographers, see [Cartographer](cartographer.md#thanks)
-- <https://raven3dtech.com.au/> and <https://beacon3d.com> for donating Beacon probes, see [Beacon](beacon.md#thanks)
+- Richard from <https://cartographer3d.com> and Zarboz from <https://wattskraken.xyz/> for donating Cartographers
+- <https://raven3dtech.com.au/> and <https://beacon3d.com> for donating Beacon probes
 
 ## Donors
 

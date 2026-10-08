@@ -207,7 +207,3 @@ In fluidd the save button after you finish or cancel your print can be a bit har
 --8<-- "snippets/probe/other_calibrations.md"
 
 --8<-- "snippets/probe/where_can_i_get_help.md"
-
-## Thanks
-
-Thanks to <https://raven3dtech.com.au/> and <https://beacon3d.com> for donating Beacon probes to the Simple AF project to add support and continue to support the Beacon.

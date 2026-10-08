@@ -287,5 +287,3 @@ In fluidd the save button after you finish or cancel your print can be a bit har
 For support, join the [SimpleAF Discord](https://discord.gg/M5rmBQqRSG).
 
 Please refer to [How can I make sure my bed is level / trammed?](faq.md#how-can-i-make-sure-my-bed-is-level-trammed)
-
---8<-- "snippets/cartographer/thanks.md"
