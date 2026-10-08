@@ -40,42 +40,20 @@ This page covers using load cells for auto z-offset alongside another supported 
 
     There is an assumption you have already setup a supported probe with kalico
 
-To enable loadcells for z-offset its a few simple steps for an existing Simple AF installation
+To enable loadcells for z-offset it is a single command for an existing probe:
 
---steps--
+```
+~/pellcorp/installer.sh --loadcells-zoffset
+```
 
-1. Add `[include loadcells_zoffset.cfg]` to `printer.cfg`
+To enable loadcells zoffset support will installing or reinstalling you would do, something like this, for this example we are setting up a cartographer, 
+but this should work for any probe (except for `--probe loadcells` which is not allowed hopefully for obvious reasons)
 
-    Please note, if you want to use load cells with btteddy, you must remove the `[include btteddy_zoffset.cfg]` from the `printer.cfg`.
+```
+~/pellcorp/installer.sh --install --probe cartographer --loadcells-zoffset --mount Default
+```
 
-2. Add the following block to `printer.cfg` but **not** into the save config section:
-   ```
-   [load_cell_probe]
-   z_offset: 0.0
-   ```
-
-3. The `[bed_mesh]` `zero_reference_position` must be added to your probe cfg file where it's not already defined, which currently means:
-   `bltouch.cfg`, `microprobe.cfg`, `btteddy.cfg`, `eddyng.cfg` and `klicky.cfg`
-
-The value should be the approximate centre of your build plate **(except for Ender 3 V3 SE/KE - see below)**, it does not have to be perfect, close enough is fine.
-
-!!! note "Ender 3 V3 SE/KE"
-
-    For an Ender 3 V3 SE or Ender 3 V3 KE the `zero_reference_position` **must** be `20,25`!
-
-!!! info "What is Zero Reference Position?"
-
-    You may be asking yourself what is this `zero_reference_position`, this is an optional parameter to the bed_mesh config, quoting
-    the kalico docs its an X,Y coordinate that specifies the location on the bed where Z = 0.  When this option is specified 
-    the mesh will be offset so that zero Z adjustment occurs at this location.
-
-    And we then probe the load cell at this same exact point too so that the bed mesh is based on true z=0
-
-4. Save and Restart
-
-5. You need to [Calibrate the load cells](#calibration) before trying to do a print
-
---!steps--
+You need to [Calibrate the load cells](#calibration) before trying to do a print
 
 ## Calibration
 
