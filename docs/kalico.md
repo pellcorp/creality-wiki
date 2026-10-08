@@ -1,10 +1,12 @@
 # Kalico
 
-There is a medium term plan to migrate all users (K1 Series and RPI Series) over to a Simple AF Kalico fork
+We are migrating all users over to Kalico for both K1 Series and RPI Series, all new installs or reinstalls and switching
+brobes will now switch you over.
 
 !!! note
 
-    For new installations of Simple AF for RPI, Kalico is already the default!
+    For new installations of Simple AF for RPI and K1 series, Kalico is now the default for all but EddyNG which is not
+    currently supported on Kalico for SimpleAF, but hopefully will be soon.
 
 ## Why?
 
