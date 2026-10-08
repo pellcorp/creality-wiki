@@ -7,6 +7,11 @@ Simple AF would not exist without the generosity of the community and the open s
 - Richard from <https://cartographer3d.com> and Zarboz from <https://wattskraken.xyz/> for donating Cartographers, see [Cartographer](cartographer.md#thanks)
 - <https://raven3dtech.com.au/> and <https://beacon3d.com> for donating Beacon probes, see [Beacon](beacon.md#thanks)
 
+## Donors
+
+Thanks so much to everyone who has donated to kofi or gofundme for pellcorp, your contributions have been used to either
+purchase hardware or in some cases to donate to other open source projects as deemed necessary and appropriate.
+
 ## Contributors
 
 Thanks to everyone who has contributed code and documentation:
