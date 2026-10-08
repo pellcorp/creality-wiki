@@ -1,6 +1,7 @@
 hooks:
   - custom/overrides/hooks/toc_depth.py
   - custom/overrides/hooks/publish_scripts.py
+  - custom/overrides/hooks/themes_gallery.py
 
 # Project information
 site_name: SimpleAF Docs
@@ -135,10 +136,25 @@ markdown_extensions:
 # Page tree
 nav:
   - Home: index.md
+  - Getting Started:
+      - Start Here:
+          - getting-started.md
+          - about.md
+      - Root & Firmware:
+          - enable-root-access.md
+          - prerooted_firmware.md
+      - Reset:
+          - factory_reset.md
+          - emergency_factory_reset.md
+      - Nebula Pad:
+          - nebula_pad.md
+          - nebula_factory_reset.md
   - Cartographer:
       - cartographer.md
       - cartographer_wiring.md
       - cartographer_flashing.md
+      - cartographer_V3_flashing.md
+      - cartographer_V4_flashing.md
       - cartographer_troubleshooting.md
       - cartographer_faq.md
   - Beacon:
@@ -167,45 +183,64 @@ nav:
   - Klicky:
       - klicky.md
       - klicky_wiring.md
+  - Load Cells:
+      - loadcells.md
+      - loadcells_zoffset.md
   - Rpi:
-      - rpi.md
-      - rpi_supported_os.md
-      - rpi_firmware.md
-      - rpi_printer_definitions.md
-      - rpi_faq.md
-      - rpi_klippain.md
-      - rpi_webcam.md
-      - rpi_grumpyscreen.md
-      - rpi_klipperscreen.md
-      - rpi_boot_display.md
+      - Setup:
+          - rpi.md
+          - rpi_supported_os.md
+          - rpi_firmware.md
+          - rpi_printer_definitions.md
+      - Features:
+          - rpi_klippain.md
+          - rpi_webcam.md
+          - rpi_grumpyscreen.md
+          - rpi_klipperscreen.md
+          - rpi_boot_display.md
+      - Help:
+          - rpi_faq.md
   - Print Features:
       - slicer_settings.md
       - filament_runout.md
       - m600_support.md
       - nozzle_wipe.md
       - custom_hooks.md
-  - Network & Cameras:
-      - configure_wifi.md
-      - additional_camera.md
-      - camera_controls.md
-      - nebula_camera.md
-      - moonraker_timelapse.md
-      - spoolman.md
-      - grumpyscreen.md
-      - helixscreen.md
-      - mobileraker_companion.md
-      - octoeverywhere_companion.md
-      - obico_agent.md
+      - manual_bed_tramming.md
+      - chamber_temp.md
+  - Cameras & Add-ons:
+      - Network:
+          - configure_wifi.md
+      - Cameras:
+          - additional_camera.md
+          - camera_controls.md
+          - nebula_camera.md
+          - moonraker_timelapse.md
+      - Screens:
+          - grumpyscreen.md
+          - helixscreen.md
+          - ui_theme.md
+      - Add-ons:
+          - spoolman.md
+          - mobileraker_companion.md
+          - octoeverywhere_companion.md
+          - obico_agent.md
   - Maintenance:
-      - updating.md
-      - config_overrides.md
-      - backups.md
-      - switching_probes.md
-      - switch_to_stock.md
-      - rtos.md
+      - Updating & Backups:
+          - updating.md
+          - config_overrides.md
+          - backups.md
+      - Probes & Firmware:
+          - switching_probes.md
+          - kalico.md
+          - firmware.md
+          - mcu_fan.md
+          - cfs_downgrade.md
+          - verify_usb.md
+      - Other:
+          - switch_to_stock.md
+          - rtos.md
   - FAQ & Support:
       - faq.md
-      - about.md
       - support.md
-      - factory_reset.md
-      - emergency_factory_reset.md
+      - credits.md

@@ -96,6 +96,7 @@ So Simple AF is supported on the following printers:
 - Ender 5 Max
 - Ender 3 V3
 - Ender 3 V3 KE
+- CR10SE
 
 And now on a retail Nebula Pad with a limited set of older marlin creality printers including:
 
@@ -134,6 +135,7 @@ It supports automatically configuring one of the following probes for one of the
 - BTT BIQO USB Eddy or DUO in USB mode
 - EddyNG on a BTT BIQU USB Eddy or DUO in USB mode 
 - Klicky Probe
+- Load Cells built into the bed (experimental)
 
 We support a variety of mount options across many of those printers and lots of documentation for how to set them up.
 

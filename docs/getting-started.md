@@ -1,6 +1,6 @@
 # Getting Started
 
-SimpleAF is an open-source Klipper-based firmware for Creality K1, K1C, K1SE, K1 Max, Ender 3 V3 KE, and Ender 5 Max — and as a separate variant for Raspberry Pi / SBC users. Which install guide you follow depends on which probe you have (or plan to install).
+SimpleAF is an open-source Klipper-based firmware for Creality K1, K1C, K1SE, K1 Max, Ender 3 V3, Ender 3 V3 KE, Ender 5 Max, CR10SE and some older Ender 3 printers with a [Nebula Pad](nebula_pad.md) — and as a separate variant for Raspberry Pi / SBC users. Which install guide you follow depends on which probe you have (or plan to install).
 
 ## Pick your probe
 
@@ -11,6 +11,7 @@ SimpleAF is an open-source Klipper-based firmware for Creality K1, K1C, K1SE, K1
 - **[BLTouch](bltouch.md)** — also covers CR-Touch and 3D Touch
 - **[Microprobe](microprobe.md)**
 - **[Klicky](klicky.md)**
+- **[Load Cells](loadcells.md)** — uses the load cells built into the bed, no extra probe (experimental)
 
 Each guide walks through firmware requirements, hardware install, software install, and calibration.
 

@@ -15,13 +15,7 @@ RPi / SBC users: install SimpleAF via [SimpleAF for RPi](rpi.md). The rest of th
 
 ## Firmware requirements
 
-### Limits on X and Y microsteps
-
-You cannot use more than `microsteps: 32` for `[stepper_x]` and `[stepper_y]`, the MCU cannot handle high microsteps, it puts too much pressure on the mainboard and it will cause stuttering and other reliability issues including random crashes.
-
-!!! note
-
-    This limit generally does not apply to RPi Series Simple AF
+--8<-- "snippets/probe/limits_on_x_and_y_microsteps_32.md"
 
 ### K1 Series
 
@@ -130,20 +124,9 @@ The installation can only be performed on a printer which has been rooted and ss
 
 You need root access, if you are not already root, then follow the [Enable Root Access](enable-root-access.md) instructions.
 
-### Factory Reset
+--8<-- "snippets/probe/factory_reset.md"
 
-If you've installed Guilouz's Helper Script, or installed Fluidd or Mainsail through any other means (such as from Creality directly), you need to [factory reset](factory_reset.md) before continuing.
-
-### Clone the Repo
-
-```
-git config --global http.sslVerify false
-git clone https://github.com/pellcorp/creality.git /usr/data/pellcorp
-```
-
-!!! note
-
-    If you had already cloned the pellcorp creality repository before being asked to factory reset, the git repo is still there and you can skip the cloning step!
+--8<-- "snippets/probe/clone_the_repo.md"
 
 ### Run the installer
 
@@ -169,25 +152,9 @@ To run the script, you must use the following command:
 
 ## Post Installation
 
-### MCU Firmware updates are pending
+--8<-- "snippets/probe/mcu_firmware_updates_are_pending.md"
 
-At the end of the installer process if you get this message:
-
-```
-WARNING: MCU Firmware updates are pending you need to power cycle your printer!
-```
-
-It means that new MCU firmware updates need to be applied and this can only be done by power cycling the printer.  After your printer is power cycled you can verify firmware was updated with the `CHECK_FIRMWARE` macro from Fluidd or Mainsail, if you see this message:
-
-```
-INFO: Your MCU Firmware is up to date!
-```
-
-Your printer MCU firmware was updated successfully.   If you still see the `MCU Firmware updates are pending you need to power cycle your printer!` message after a power cycle, check the `/tmp/mcu_update.log`, you may be asked to provide this file on Discord if you need additional assistance, sometimes an additional power cycle can solve the problem, there is a very short window of time (15 seconds) in which the MCU firmware can be updated, so  there is a chance it will work after an additional power cycle.
-
-## Slicer Settings
-
-[Slicer Settings](slicer_settings.md)
+--8<-- "snippets/probe/slicer_settings.md"
 
 ## Calibration
 
@@ -271,13 +238,7 @@ After the save config you have to do the touch calibration.
 
 **Source:** <https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/software-configuration/touch-calibration>
 
-### Manual Bed Tramming
-
-To avoid the risk of bed damage due to a badly trammed bed, please perform [Manual Bed Tramming](manual_bed_tramming.md) before going any further.
-
-!!! danger
-
-    You risk damage to your bed surface if the bed is significantly higher on one side compared to the centre of the bed where the printer is homed.
+--8<-- "snippets/probe/manual_bed_tramming.md"
 
 ### Pid Tuning and Input Shaping
 
@@ -287,28 +248,9 @@ At least PID tuning (bed and extruder) and input shaping is required for accepta
 
     You can use the QUICK_START Macro to complete Bed and Nozzle PID Tuning and Input Shaping Automatically.
 
-#### Pid Tuning
+--8<-- "snippets/probe/pid_tuning.md"
 
-**Source:** [Calibrate Pid Settings](https://www.klipper3d.org/Config_checks.html?h=pid#calibrate-pid-settings)
-
-For example you might run these:
-
-```
-PID_CALIBRATE_BED BED_TEMP=65
-PID_CALIBRATE_HOTEND HOTEND_TEMP=230
-```
-
-!!! note
-
-    The `PID_CALIBRATE_BED` and `PID_CALIBRATE_HOTEND` macros are located in the `useful_macros.cfg` file and they have defaults values for BED_TEMP and HOTEND_TEMP so you can just run them by clicking on them if you want that same temperature.
-
-#### Input Shaping
-
-There is no default configuration for input shaping so it is essentially disabled out of the box.
-
-You can use the `SHAPER_CALIBRATE` macro to run input shaping, just be sure to `SAVE CONFIG` at the end, to choose the automatically selected shaper config, be aware though that the shaper chosen might be sub-optimal due to a slight difference in vibrations between two options.  So you should probably review the output and potentially choose an alternative if it gives you higher recommended max acceleration for minimal increase in vibration.
-
-[Input Shaper Auto Calibration](https://www.klipper3d.org/Measuring_Resonances.html#input-shaper-auto-calibration)
+--8<-- "snippets/probe/input_shaping.md"
 
 ### Axis Twist Compensation
 
@@ -338,15 +280,7 @@ In fluidd the save button after you finish or cancel your print can be a bit har
 
 ![image](assets/images/fluidd_save_zoffset.png)
 
-### Other Calibrations
-
-!!! info
-
-    The default value for pressure advance is set to `0.04`
-
-Refer to [Orcaslicer Calibration](https://github.com/SoftFever/OrcaSlicer/wiki/Calibration) for more calibrations
-
-Refer to the [Ellis Print Tuning Guide](https://ellis3dp.com/Print-Tuning-Guide/) for more great tuning ideas.
+--8<-- "snippets/probe/other_calibrations.md"
 
 ## Where can I get help?
 
@@ -354,6 +288,4 @@ For support, join the [SimpleAF Discord](https://discord.gg/M5rmBQqRSG).
 
 Please refer to [How can I make sure my bed is level / trammed?](faq.md#how-can-i-make-sure-my-bed-is-level-trammed)
 
-## Thanks
-
-Thanks to Richard from <https://cartographer3d.com> and Zarboz from <https://wattskraken.xyz/> for donating Cartographers to the Simple AF project to add support and continue to support the cartographer.
+--8<-- "snippets/cartographer/thanks.md"
