@@ -9,8 +9,8 @@ Simple AF would not exist without the generosity of the community and the open s
 
 ## Donors
 
-Thanks so much to everyone who has donated to kofi or gofundme for pellcorp, your contributions have been used to either
-purchase hardware or in some cases to donate to other open source projects as deemed necessary and appropriate.
+Thanks so much to everyone who has donated to kofi or gofundme for pellcorp, your contributions have been used to purchase hardware 
+or donate to other open source projects as deemed necessary and appropriate.
 
 ## Contributors
 
