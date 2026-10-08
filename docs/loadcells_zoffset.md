@@ -8,7 +8,7 @@ This page covers using load cells for auto z-offset alongside another supported 
 
 !!! warning "Kalico only"
 
-    Load cells for z-offset **REQUIRES [Kalico](kalico.md)**
+    Load cells for z-offset **REQUIRES [Kalico](kalico.md)**.  The installer will automatically setup kalico for a install or reinstall or if you enable loadcells for z-offset, either for an existing or new installation.
 
 ## Supported Printers
 
