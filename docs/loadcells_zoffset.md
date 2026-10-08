@@ -46,8 +46,7 @@ To enable loadcells for z-offset it is a single command for an existing probe:
 ~/pellcorp/installer.sh --loadcells-zoffset
 ```
 
-To enable loadcells zoffset support will installing or reinstalling you would do, something like this, for this example we are setting up a cartographer, 
-but this should work for any probe (except for `--probe loadcells` which is not allowed hopefully for obvious reasons)
+To enable loadcells for zoffset while installing or reinstalling, for this example we are setting up a cartographer:
 
 ```
 ~/pellcorp/installer.sh --install --probe cartographer --loadcells-zoffset --mount Default
