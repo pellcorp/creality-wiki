@@ -13,7 +13,7 @@ SimpleAF is an open-source Klipper-based firmware for Creality K1, K1C, K1SE, K1
 - **[Klicky](klicky.md)**
 - **[Load Cells](loadcells.md)** — uses the load cells built into the bed, no extra probe (experimental)
 
-Each guide walks through firmware requirements, hardware install, software install, and calibration.
+Each guide walks through firmware requirements, hardware install (where required), software install, and calibration.
 
 ## Running on a Raspberry Pi or SBC?
 
