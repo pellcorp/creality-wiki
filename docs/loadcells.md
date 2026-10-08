@@ -10,7 +10,7 @@ Looking for Load Cells for Z-Offset? See [Load Cells for Z-Offset](loadcells_zof
 
 !!! warning "Kalico only"
 
-    Load cell probing **REQUIRES [Kalico](kalico.md)**.  The installer will automatically setup kalico for a install or reinstall, but to switch to loadcells from an existing installation, you will have to pass the `--kalico` argument if you are not already on kalico.
+    Load cell probing **REQUIRES [Kalico](kalico.md)**.  The installer will automatically setup kalico for a install or reinstall or if you switch to loadcells from an existing installation.
 
 New here? See [Getting Started](getting-started.md).
 
