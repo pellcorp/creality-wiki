@@ -22,15 +22,6 @@ Thanks to everyone who has contributed code and documentation:
 - [Kalico - RPi Series](https://github.com/pellcorp/kalico-rpi/graphs/contributors)
 - [Kalico Firmware - K1 Series](https://github.com/pellcorp/k1-kalico-firmware/graphs/contributors)
 
-And for specific macros, config and guides:
-
-- Chef Armstrong for the original cartographer threshold scan macro in [cartographer_macro.cfg](https://github.com/pellcorp/creality/blob/main/config/cartographer_macro.cfg)
-- Zero for the bed warp stabilisation macro in [start_end.cfg](https://github.com/pellcorp/creality/blob/main/config/start_end.cfg)
-- Ales Omahen for the probing speed section of the [BLTouch](bltouch.md#probing-speed) and [Microprobe](microprobe.md#probing-speed) guides
-- Habitural from discord for the temperature based [MCU Fan](mcu_fan.md) config
-- @Nestaa51 for the moonraker startup timeout changes in [installer.sh](https://github.com/pellcorp/creality/blob/main/k1/installer.sh)
-- ClutchKick512 for the aux fan throttling fix in [fan_control.cfg](https://github.com/pellcorp/creality/blob/main/k1/patches/fan_control.cfg)
-
 ## Projects We Build On
 
 - [Klipper](https://github.com/Klipper3d/klipper) by Kevin O'Connor and contributors, and [Kalico](https://github.com/KalicoCrew/kalico)
