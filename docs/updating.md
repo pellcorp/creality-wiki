@@ -37,26 +37,22 @@ Simple AF cfg and conf files cannot be updated via Fluidd or Mainsail, it must b
     any local customisations you have, so **only** provide the --mount argument if you want to change mounts or you want to override your local customisations
     with those in the mount override config, for example if a fix was pushed for that specific mount override.
 
-This backs up your customisations, updates the creality repo, applies all changes to your `~/printer_data/config` directory and then reapplies your customisations over the top.
+This backs up your customisations, updates the SimpleAF repo, applies all changes to your `~/printer_data/config` directory and then reapplies your customisations over the top.
 
 ## Fluidd and Mainsail Updates
 
 The following components can be updated via Fluidd / Mainsail Software Updates:
 
+- grumpyscreen
 - beacon
 - cartographer
 - fluidd
-- fluidd-config (aka client-macros)
 - moonraker
 - klipper
 - mainsail
 - timelapse (aka Moonraker Timelapse)
 
 You can update these components via Fluidd or Mainsail, in fluidd make sure you click the CHECK FOR UPDATES button, and in Mainsail click the Refresh button
-
-!!! note
-
-    It is normal for klipper to warn about `Unofficial remote url`, this is because Simple AF has forked the klipper repo.
 
 ![image](assets/images/update_software.png)
 
