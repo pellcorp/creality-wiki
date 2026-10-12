@@ -21,7 +21,7 @@ Verify that the btt eddy has been mounted as a disk drive on the K1 by running `
 Once this has happened you will be able to copy the btteddy.uf2 file to the eddy via this command:
 
 ```
-wget --no-check-certificate https://raw.githubusercontent.com/pellcorp/klipper/master/fw/K1/btteddy.uf2 -O /tmp/btteddy.uf2
+wget --no-check-certificate https://raw.githubusercontent.com/pellcorp/kalico/master/fw/K1/btteddy.uf2 -O /tmp/btteddy.uf2
 cp /tmp/btteddy.uf2 /tmp/udisk/sda1/
 ```
 
