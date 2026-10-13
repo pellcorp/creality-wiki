@@ -218,6 +218,7 @@ nav:
           - moonraker_timelapse.md
       - Screens:
           - grumpyscreen.md
+          - grumpyscreen_macros.md
           - helixscreen.md
           - ui_theme.md
       - Add-ons:
