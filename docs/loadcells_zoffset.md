@@ -12,7 +12,21 @@ This page covers using load cells for auto z-offset alongside another supported 
 
 ## Nozzle Wipe
 
-Please note that we are working on bunding a default [Nozzle Wipe Macro](nozzle_wipe.md) when using loadcells for z-offset, but its not been released as yet.
+By default when installing or updating to use loadcells for z-offset, we enable a default [Nozzle Wipe Macro](nozzle_wipe.md) that will wipe on the back of
+the printer bed for printers with 4 load cells and a front or side mounted primary probe, or on the side for single load cell printers or where your
+primary probe is mounted on the back.   If you want to use your own nozzle wipe solution, you just need to remove the `[include loadcells_wipe.cfg]` and add your own `_SAF_NOZZLE_WIPE` implementation.
+
+!!! danger "Rear and Side Mounted Primary Probe"
+
+    The built in _SAF_NOZZLE_WIPE shipped with Simple AF for loadcells for z-offset will wipe on the back of the printer for a side mounted
+    probe, please be mindful of this and ensure that a side mounted probe can still clear the left stepper motor and rear lead screw.
+
+    A rear mounted probe will cause the wiper to wipe on the front left of the build plate.
+
+!!! note
+
+    If you already are using your own nozzle wipe solution note that it will be used when you switch to loadcells for z-offset because your existing include
+    will be restored, please be aware of this as it might come as a surprise!
 
 ## Supported Printers
 
