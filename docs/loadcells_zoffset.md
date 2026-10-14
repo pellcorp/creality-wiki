@@ -10,6 +10,10 @@ This page covers using load cells for auto z-offset alongside another supported 
 
     Load cells for z-offset **REQUIRES [Kalico](kalico.md)**.  The installer will automatically setup kalico for a install or reinstall or if you enable loadcells for z-offset, either for an existing or new installation.
 
+## Nozzle Wipe
+
+Please note that we are working on bunding a default [Nozzle Wipe Macro](nozzle_wipe.md) when using loadcells for z-offset, but its not been released as yet.
+
 ## Supported Printers
 
 | Printer       | Status                     |
