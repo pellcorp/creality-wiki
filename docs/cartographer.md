@@ -211,7 +211,7 @@ After the save config you have to do the touch calibration.
 
 !!! tip
 
-    If you are going to be using a [loadcells for z-offset](loadcells_zoffset.md) you can skip this step!
+    If you are going to be using [loadcells for z-offset](loadcells_zoffset.md) you can skip this step!
 
 !!! danger
 
