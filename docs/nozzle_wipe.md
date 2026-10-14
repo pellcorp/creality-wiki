@@ -1,5 +1,46 @@
 # Nozzle Wipe Support
 
+## Load Cell Wipe
+
+For the [loadcells](loadcells.md) probe and [loadcells for z-offset](loadcells_zoffset.md) Simple AF installs its own nozzle wipe, `loadcells_wipe.cfg`,
+based on Creality's stock nozzle wipe.  Before the bed mesh, START_PRINT taps the bed to find its height, then scrapes the nozzle along a short
+line on the bed so plastic on the tip doesn't throw off the load cell taps.
+
+!!! warning
+
+    The load cell wipe needs an up to date [Kalico](kalico.md), with an older Kalico the wipe is skipped with a message telling you to update.
+
+### Where it wipes
+
+| Setup                                                                         | Wipe                                                       |
+|-------------------------------------------------------------------------------|------------------------------------------------------------|
+| loadcells probe                                                               | back of the bed, middle third of X, 3 to 5mm in from Y max |
+| loadcells for z-offset, front or side mounted probe                           | back of the bed                                            |
+| loadcells for z-offset, single load cell (Ender 3 V3 SE and Ender 3 V3 KE)    | left side of the bed, one tap 20mm in from the front       |
+| loadcells for z-offset, rear mounted probe                                    | left side of the bed                                       |
+
+!!! klipper-error "Rear mounted probes always wipe on the side"
+
+    With loadcells for z-offset and a **rear mounted probe** the wipe is always done on the left side of the bed, a rear wipe could drive the probe
+    into the frame, **there is no option to wipe at the back**.
+
+A single load cell sits under the front left of the bed and can't feel a tap much further than 30mm away, so it only taps the start of the line,
+20mm in from the front, and uses that height for the whole wipe.
+
+If your probe is mounted to the left of the nozzle the side wipe is moved right, so the probe never goes further left than the nozzle can (X min).
+
+### Running it by hand
+
+The temps default to PLA:
+
+```
+_SAF_NOZZLE_WIPE EXTRUDER_TEMP=210 BED_TEMP=60
+```
+
+To use your own `_SAF_NOZZLE_WIPE` instead, remove the `[include loadcells_wipe.cfg]` from `printer.cfg`.
+
+## Third Party Nozzle Wipes
+
 The following nozzle wipe solutions are third party and there **is absolutely no support available** for them via the Simple AF discord,
 these are just the wipes I am aware of, myself and the support team don't know much about them.
 
@@ -7,14 +48,13 @@ these are just the wipes I am aware of, myself and the support team don't know m
 
     It can be dangerous to use a rear mounted nozzle wiper with a rear mounted probe, there is a strong likelihood of destroying the probe or damaging the printer!
 
-Simple AF does not package any predefined nozzle wipers but we do provide a [_SAF_NOZZLE_WIPE](custom_hooks.md) custom hook for that, **please be aware that it's only 
-supported for beacon, eddyng, cartotouch and cartographer probes**, as these are the only probes that do touch levelling.
+Apart from the [Load Cell Wipe](#load-cell-wipe) Simple AF does not package any predefined nozzle wipers, but we do provide a [_SAF_NOZZLE_WIPE](custom_hooks.md) custom hook for you.
 
 The `_SAF_NOZZLE_WIPE` will be passed the `EXTRUDER_TEMP` parameter from START_PRINT to give you a bit more flexibility for implementing your nozzle wiper macros.
 
 !!! info
 
-    If you want to do a nozzle wipe for other probes (btteddy, bltouch, microprobe or klicky), you would need to use a different hook, perhaps `_SAF_START_PRINT_BEFORE_BED_MESH`,
+    If you want to do a nozzle wipe for other probes (btteddy, bltouch, microprobe or klicky without loadcells for z-offset), you would need to use a different hook, perhaps `_SAF_START_PRINT_BEFORE_BED_MESH`,
     See [Custom Hooks](custom_hooks.md) for a complete list of custom hooks.
 
 So for instance you could use the `EXTRUDER_TEMP` in the `_SAF_NOZZLE_WIPE` macro like this:
