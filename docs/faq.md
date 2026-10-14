@@ -144,7 +144,6 @@ See [How can I switch to a toolhead filament runout sensor?](filament_runout.md#
 
 ### How do I integrate a Nozzle Wipe? { data-toc-label="Nozzle Wipe" }
 
-
 Information has been moved to [Nozzle Wipe Custom Hook](nozzle_wipe.md)
 
 ## Customising

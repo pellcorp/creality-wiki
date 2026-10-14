@@ -8,6 +8,17 @@ Looking for Load Cells for Z-Offset? See [Load Cells for Z-Offset](loadcells_zof
 
     Load cell probing is **EXTREMELY EXPERIMENTAL**. The nozzle is pushed onto the bed with a force measured by the load cells, if the load cells are not calibrated properly or something else goes wrong you can damage your printer. Be ready to hit the e-stop button in your UI or Grumpyscreen, or the power button, and never leave your printer unattended while homing, probing or bed meshing.
 
+## Nozzle Wipe
+
+By default when installing or updating to use loadcells, we enable a default [Nozzle Wipe Macro](nozzle_wipe.md) that will wipe on the back of
+the printer bed.   If you want to use your own nozzle wipe solution, you just need to remove the `[include loadcells_wipe.cfg]` and add your own 
+`SAF_NOZZLE_WIPE` implementation.
+
+!!! note
+
+    If you already are using your own nozzle wipe solution note that it will be used when you switch to loadcells because your existing include
+    will be restored, please be aware of this as it might come as a surprise!
+
 !!! warning "Kalico only"
 
     Load cell probing **REQUIRES [Kalico](kalico.md)**.  The installer will automatically setup kalico for a install or reinstall or if you switch to loadcells from an existing installation.
@@ -16,13 +27,14 @@ New here? See [Getting Started](getting-started.md).
 
 ## Supported Printers
 
-| Printer    | Status                     |
-|------------|----------------------------|
-| Ender 3 V3 | Tested                     |
-| K1         | Tested                     |
-| K1C        | Configured, **not tested** |
-| K1 SE      | Configured, **not tested** |
-| K1 Max     | Tested                     |
+| Printer     | Status                     |
+|-------------|----------------------------|
+| Ender 3 V3  | Tested                     |
+| K1          | Tested                     |
+| K1C         | Configured, **not tested** |
+| K1 SE       | Configured, **not tested** |
+| K1 Max      | Tested                     |
+| Ender 5 Max | Configured, **not tested** |
 
 Any other printer is not supported, this includes the Ender 3 V3 KE, Ender 5 Max, CR10SE, Nebula Pad.
 

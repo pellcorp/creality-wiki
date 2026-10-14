@@ -21,7 +21,7 @@ This page covers using load cells for auto z-offset alongside another supported 
 | K1C           | Tested                     |
 | K1 SE         | Configured, **not tested** |
 | K1 Max        | Configured, **not tested** |
-
+| Ender 5 Max   | Configured, **not tested** |
 
 !!! note
 
