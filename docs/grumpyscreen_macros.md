@@ -47,7 +47,6 @@ Use the value in the first column as `icon: <value>`. If an unknown value is sup
 | `fan` | ![Fan](assets/images/grumpyscreen-icons/fan.svg) | Fan control |
 | `fan_off` | ![Fan off](assets/images/grumpyscreen-icons/fan_off_img.svg) | Turn a fan off |
 | `fan_on` | ![Fan on](assets/images/grumpyscreen-icons/fan_on.svg) | Turn a fan on |
-| `filament` | ![Filament](assets/images/grumpyscreen-icons/filament_img.svg) | Filament handling |
 | `fine_tune` | ![Fine tune](assets/images/grumpyscreen-icons/fine_tune_img.svg) | Fine tuning |
 | `firmware` | ![Firmware](assets/images/grumpyscreen-icons/firmware_img.svg) | Firmware action |
 | `flow` | ![Flow](assets/images/grumpyscreen-icons/extrude.svg) | Flow adjustment |
