@@ -209,6 +209,10 @@ After the save config you have to do the touch calibration.
 
 ### Touch Calibration
 
+!!! tip
+
+    If you are going to be using a [loadcells for z-offset](loadcells_zoffset.md) you can skip this step!
+
 !!! danger
 
     For this next step, it is really important to be near your printer for this step, because if there is any issue with the printer configuration or your carto probe, its possible the nozzle will dig itself into the bed, so be hovering over that e-stop button!
