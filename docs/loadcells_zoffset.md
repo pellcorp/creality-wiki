@@ -6,10 +6,6 @@ This page covers using load cells for auto z-offset alongside another supported 
 
     Load cells for z-offset is **EXTREMELY EXPERIMENTAL**. The nozzle is pushed onto the bed with a force measured by the load cells, if the load cells are not calibrated properly or something else goes wrong you can damage your printer. Be ready to hit the e-stop button in your UI or Grumpyscreen, or the power button, and never leave your printer unattended while starting a print.
 
-!!! warning "Kalico only"
-
-    Load cells for z-offset **REQUIRES [Kalico](kalico.md)**.  The installer will automatically setup kalico for a install or reinstall or if you enable loadcells for z-offset, either for an existing or new installation.
-
 ## Nozzle Wipe
 
 By default when installing or updating to use loadcells for z-offset, we enable a default [Nozzle Wipe Macro](nozzle_wipe.md) that will wipe on the back of

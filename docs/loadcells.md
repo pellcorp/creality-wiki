@@ -8,10 +8,6 @@ Looking for Load Cells for Z-Offset? See [Load Cells for Z-Offset](loadcells_zof
 
     Load cell probing is **EXTREMELY EXPERIMENTAL**. The nozzle is pushed onto the bed with a force measured by the load cells, if the load cells are not calibrated properly or something else goes wrong you can damage your printer. Be ready to hit the e-stop button in your UI or Grumpyscreen, or the power button, and never leave your printer unattended while homing, probing or bed meshing.
 
-!!! warning "Kalico only"
-
-    Load cell probing **REQUIRES [Kalico](kalico.md)**.  The installer will automatically setup kalico for a install or reinstall or if you switch to loadcells from an existing installation.
-
 New here? See [Getting Started](getting-started.md).
 
 ## Nozzle Wipe
