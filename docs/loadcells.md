@@ -4,9 +4,9 @@ This page covers installing SimpleAF using the strain gauges (load cells) alread
 
 Looking for Load Cells for Z-Offset? See [Load Cells for Z-Offset](loadcells_zoffset.md).
 
-!!! klipper-error "Experimental High risk of bed or toolhead damage"
+!!! klipper-error "High risk of bed damage"
 
-    Load cell probing is **EXPERIMENTAL**. The nozzle is pushed onto the bed with a force measured by the load cells, if the load cells are not calibrated properly or something else goes wrong you can damage your printer. Be ready to hit the e-stop button in your UI or Grumpyscreen, or the power button, and never leave your printer unattended while homing, probing or bed meshing.
+    The nozzle is pushed onto the bed with a force measured by the load cells, if the load cells are not calibrated properly or something else goes wrong you can damage your printer. Be ready to hit the e-stop button in your UI or Grumpyscreen, or the power button, and never leave your printer unattended while homing, probing or bed meshing.
 
 New here? See [Getting Started](getting-started.md).
 
