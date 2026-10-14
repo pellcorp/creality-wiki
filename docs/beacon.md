@@ -121,12 +121,8 @@ You need root access, if you are not already root, then follow [Enable Root Acce
 To run the script, you must use the following command:
 
 ```
-/usr/data/pellcorp/installer.sh --install beacon --mount Mount
+/usr/data/pellcorp/installer.sh --install beacon --mount Mount [--loadcells-zoffset]
 ```
-
-!!! tip "Install Kalico"
-
-    If you want to use [Kalico](kalico.md) instead of Klipper, add the `--kalico` installation argument! 
 
 !!! warning
 

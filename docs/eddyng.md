@@ -108,18 +108,16 @@ You need root access, if you are not already root, then follow the [Enable Root 
 To run the script, you must specify the probe you want to use.
 
 ```
-/usr/data/pellcorp/installer.sh --install eddyng --mount Mount
+/usr/data/pellcorp/installer.sh --install eddyng --mount Mount [--loadcells-zoffset]
 ```
-
-!!! danger "Install Kalico"
-
-    Kalico is not currently supported for EddyNG 
 
 !!! warning
 
     Replace `Mount` with the specific mount option for the mount you have used, if you do not do this the printer will be incorrectly configured for your mount, and bed meshes, x and y limits and related config will be wrong.   Please refer to [Mount Options](#mount-options) for supported mounts.   
 
     If you are using a non-supported mount you should specify a mount option as close to your mount as possible and properly adjust your configuration after installation before trying to perform a bed mesh or Screws Tilt Calculate!
+
+--8<-- "snippets/loadcells/zoffset.md"
 
 ## Post Installation
 
