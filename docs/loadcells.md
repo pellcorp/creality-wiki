@@ -30,7 +30,7 @@ the printer bed.   If you want to use your own nozzle wipe solution, you just ne
 | K1C         | Configured, **not tested** |
 | K1 SE       | Configured, **not tested** |
 | K1 Max      | Tested                     |
-| Ender 5 Max | Configured, **not tested** |
+| Ender 5 Max | Tested                     |
 
 Any other printer is not supported, this includes the Ender 3 V3 KE, Ender 5 Max, CR10SE, Nebula Pad.
 

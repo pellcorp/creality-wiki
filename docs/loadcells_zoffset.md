@@ -34,7 +34,7 @@ primary probe is mounted on the back.   If you want to use your own nozzle wipe 
 | K1            | Tested                     |
 | K1C           | Tested                     |
 | K1 SE         | Configured, **not tested** |
-| K1 Max        | Configured, **not tested** |
+| K1 Max        | Tested                     |
 | Ender 5 Max   | Configured, **not tested** |
 
 !!! note
