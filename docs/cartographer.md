@@ -137,7 +137,7 @@ You need root access, if you are not already root, then follow the [Enable Root 
 To run the script, you must use the following command:
 
 ```
-/usr/data/pellcorp/installer.sh --install cartographer --mount Mount [--loadcells-zoffset]
+/usr/data/pellcorp/installer.sh --install cartographer --mount Mount
 ```
 
 !!! warning

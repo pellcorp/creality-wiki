@@ -108,7 +108,7 @@ You need root access, if you are not already root, then follow the [Enable Root 
 To run the script, you must specify the probe you want to use.
 
 ```
-/usr/data/pellcorp/installer.sh --install eddyng --mount Mount [--loadcells-zoffset]
+/usr/data/pellcorp/installer.sh --install eddyng --mount Mount
 ```
 
 !!! warning

@@ -121,7 +121,7 @@ You need root access, if you are not already root, then follow [Enable Root Acce
 To run the script, you must use the following command:
 
 ```
-/usr/data/pellcorp/installer.sh --install beacon --mount Mount [--loadcells-zoffset]
+/usr/data/pellcorp/installer.sh --install beacon --mount Mount
 ```
 
 !!! warning
@@ -129,6 +129,8 @@ To run the script, you must use the following command:
     Replace `Mount` with the specific mount option for the mount you have used, if you do not do this the printer will be incorrectly configured for your mount, and bed meshes, x and y limits and related config will be wrong.   Please refer to [Mount Options](#mount-options) for supported mounts.   
 
     If you are using a non-supported mount you should specify a mount option as close to your mount as possible and properly adjust your configuration after installation before trying to perform a bed mesh or Screws Tilt Calculate!
+
+--8<-- "snippets/loadcells/zoffset.md"
 
 ## Post Installation
 
