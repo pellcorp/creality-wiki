@@ -1,7 +1,3 @@
-!!! klipper-error "Beta"
-
-    Installing Simple AF on a Nebula Pad is beta
-
 # Simple AF on a Nebula Pad
 
 Support for running Simple AF with a retail Nebula Pad for some older Ender 3 printers.
