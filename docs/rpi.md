@@ -55,7 +55,7 @@ You can specify a http:// or https:// url for the --printer parameter or you can
 
 !!! note
 
-    For the `--printer` argument specify the url of the file, so for example `--printer https://github.com/pellcorp/klipper-rpi/blob/master/config/printer-creality-ender3-s1plus-2022.cfg`
+    For the `--printer` argument specify the url of the file, so for example `--printer https://github.com/pellcorp/kalico-rpi/blob/aug2026/config/printer-creality-ender3-s1plus-2022.cfg`
     or reference a local file if you did download it locally, so for example `--printer ~/printer-creality-ender3-s1plus-2022.cfg`
 
 ## Choose a Probe

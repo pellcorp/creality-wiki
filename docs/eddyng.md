@@ -46,7 +46,7 @@ See [Simple AF for RPi](rpi.md)
 
 !!! warning
 
-    It is assumed that you have flashed your eddy with the firmware from <https://github.com/pellcorp/kalico/blob/master/fw/K1/btteddy.uf2> **before** starting the installation!!!
+    It is assumed that you have flashed your eddy with the firmware from <https://github.com/pellcorp/kalico/blob/aug2026/fw/K1/btteddy.uf2> **before** starting the installation!!!
     
     For K1 Series Simple AF [there is a guide](btteddy_flashing.md)
 
