@@ -18,8 +18,9 @@ the printer bed.   If you want to use your own nozzle wipe solution, you just ne
 
 !!! danger "Brush collision risk"
 
-     There is currently a high risk of collision with a brush for the default load cell nozzle wipe macro, we are working on fixes for this
-     with a high priority!
+     If you have a silicon brush for wiping on your print bed you should remove the Simple AF default wiper by removing the
+     `[include loadcells_wipe.cfg]` and either manually clean your nozzle or use a [third party nozzle wiper](nozzle_wipe.md#third-party-nozzle-wipes) until
+     such time as we can fix our built in wiper to deal with silicon brushes.
 
 !!! note
 

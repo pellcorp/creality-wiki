@@ -6,8 +6,9 @@ The nozzle wipe custom hook is called before any bed mesh or z-offset nozzle tou
 
 !!! danger "Brush collision risk"
 
-     There is currently a high risk of collision with a brush for the default load cell nozzle wipe macro, we are working on fixes for this
-     with a high priority!
+     If you have a silicon brush for wiping on your print bed you should remove the Simple AF default wiper by removing the
+     `[include loadcells_wipe.cfg]` and either manually clean your nozzle or use a [third party nozzle wiper](#third-party-nozzle-wipes) until
+     such time as we can fix our built in wiper to deal with silicon brushes.
 
 For the [loadcells](loadcells.md) probe and [loadcells for z-offset](loadcells_zoffset.md) Simple AF installs its own nozzle wipe, `loadcells_wipe.cfg`,
 based on Creality's stock nozzle wipe.  Before the bed mesh, START_PRINT taps the bed to find its height, then scrapes the nozzle along a short
