@@ -19,7 +19,7 @@ probe of choice for bed mesh and proximity homing, but use the load cell for z-o
 
 The loadcell support has **zero** creality code and is fully configurable via config and gcode.  There are no python macros (complicated or otherwise) you need to navigate to customise your printer to use the load cells.  
 
-In the near future, we will port the existing nozzle wipe macros from Creality, but [you are free to use your own or an existing third party solution](nozzle_wipe.md)
+Simple AF now includes a [load cell nozzle wipe](nozzle_wipe.md#load-cell-wipe) based on Creality's stock nozzle wipe, but [you are still free to use your own or an existing third party solution](nozzle_wipe.md#third-party-nozzle-wipes)
 
 ### How do I switch from btteddy to eddyng? { data-toc-label="BTT Eddy to EddyNG" }
 

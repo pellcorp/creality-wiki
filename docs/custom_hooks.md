@@ -8,7 +8,7 @@ Within Simple AF if you want to call a custom gcode macro you can with hooks, th
 - **_SAF_START_PRINT_AFTER_G28** - After G28 is called in START_PRINT
 - **_SAF_START_PRINT_BEFORE_BED_MESH** - Before bed mesh calibrate is called in START_PRINT
 - **_SAF_START_PRINT_AFTER_BED_MESH** - After bed mesh calibrate is called in START_PRINT
-- **_SAF_NOZZLE_WIPE** - A nozzle wipe macro that can be defined for **eddyny, beacon, cartographer and cartotouch only**, will be called before bed mesh for eddny and beacon, and after bed mesh for cartographer and cartotouch.
+- **_SAF_NOZZLE_WIPE** - A nozzle wipe macro that can be defined for **eddyny, beacon, cartographer, cartotouch, the loadcells probe or any probe with loadcells for z-offset only**, will be called before bed mesh for eddny and beacon, and after bed mesh for cartographer and cartotouch. For load cells Simple AF already defines one, see [Load Cell Wipe](nozzle_wipe.md#load-cell-wipe).
 - **_SAF_LINE_PURGE** - A custom line purge macro which will be used instead of built in LINE_PURGE
 - **_SAF_SMART_PARK** - A custom smart park macro which will be used instead of built in SMART_PARK
 - **_SAF_BED_MESH_START** - Start of bed mesh calibrate

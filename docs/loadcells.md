@@ -48,7 +48,8 @@ The Ender 3 V3 keeps using its physical endstop for homing Z, the load cells are
 4. [Test the probe](#test-the-probe) and check its [accuracy](#probe-accuracy)
 5. Run a [bed mesh](#bed-mesh)
 6. Do [PID tuning and input shaping](#pid-tuning-and-input-shaping)
-7. Configure [Nozzle Wipe](nozzle_wipe.md) - currently this must be done manually, we are exploring integrating a default nozzle wipe for load cells soon.
+7. The [Nozzle Wipe](#nozzle-wipe) is set up for you
+
 ## Installation
 
 !!! warning

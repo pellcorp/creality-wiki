@@ -8,3 +8,8 @@
     an `--update` command to switch probes!
     
     See [Load Cells for Z-Offset](loadcells_zoffset.md).
+
+    !!! klipper-error "Rear mounted probes always wipe on the side"
+
+        With loadcells for z-offset and a **rear mounted probe** the wipe is always done on the front left of the build plate, a rear wipe could drive
+        the probe into the frame, **there is no option to wipe at the back**.
