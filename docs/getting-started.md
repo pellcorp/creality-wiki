@@ -24,6 +24,10 @@ For Raspberry Pi, Orange Pi, Rock Pi, and similar single-board computers, see [S
 OrcaSlicer is the only slicer we support!  You must verify that your start and end slicer gcode are correct before trying
 to print, please refer to [Slicer Settings](slicer_settings.md)
 
+## Recommended Mods
+
+See [Recommended Mods](recommended_mods.md) for third party mods for your printer.
+
 ## What an install looks like
 
 The installation flow on a Creality printer is:

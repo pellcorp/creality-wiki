@@ -226,6 +226,8 @@ nav:
           - mobileraker_companion.md
           - octoeverywhere_companion.md
           - obico_agent.md
+      - Mods:
+          - recommended_mods.md
   - Maintenance:
       - Updating & Backups:
           - updating.md
