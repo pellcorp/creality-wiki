@@ -7,7 +7,7 @@ The nozzle wipe custom hook is called before any bed mesh or z-offset nozzle tou
 !!! danger "Brush collision risk"
 
      If you have a silicon brush for wiping on your print bed you should remove the Simple AF default wiper by removing the
-     `[include loadcells_wipe.cfg]` and either manually clean your nozzle or use a [third party nozzle wiper](#third-party-nozzle-wipes) until
+     `[include loadcells_wipe.cfg]` from your `printer.cfg, and manually clean your nozzle or use a [third party nozzle wiper](#third-party-nozzle-wipes) until
      such time as we can fix our built in wiper to deal with silicon brushes.
 
 For the [loadcells](loadcells.md) probe and [loadcells for z-offset](loadcells_zoffset.md) Simple AF installs its own nozzle wipe, `loadcells_wipe.cfg`,
