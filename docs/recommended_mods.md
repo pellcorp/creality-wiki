@@ -26,7 +26,7 @@
 
     ---
 
-    Print the rear rail mount in a single piece.
+    A single piece Y Rail Mount.
 
     [:octicons-arrow-right-24: Printables](https://www.printables.com/model/721192-rear-rail-mount-for-ender-3-v3-seke-y-rail-mod)
 
@@ -42,7 +42,7 @@
 
     ---
 
-    Y rails for the bed, for MGN9H or MGN12H rails, the SE needs the alternate rail adapter.
+    Y rails for the bed, for MGN9H or MGN12H rails.
 
     [:octicons-arrow-right-24: GitHub](https://github.com/pellcorp/Creality-Ender-3-V3-SE-KE/tree/main/SE%2BKE%20Y%20Rails%20Conversion)
 
