@@ -1,5 +1,8 @@
 # Nozzle Wipe Support
 
+The nozzle wipe custom hook is called before any bed mesh or z-offset nozzle touch is performed in START_PRINT, but its after the
+bed warp stabilisation phase.
+
 ## Load Cell Wipe
 
 !!! danger "Brush collision risk"
@@ -56,11 +59,6 @@ these are just the wipes I am aware of, myself and the support team don't know m
 Apart from the [Load Cell Wipe](#load-cell-wipe) Simple AF does not package any predefined nozzle wipers, but we do provide a [_SAF_NOZZLE_WIPE](custom_hooks.md) custom hook for you.
 
 The `_SAF_NOZZLE_WIPE` will be passed the `EXTRUDER_TEMP` parameter from START_PRINT to give you a bit more flexibility for implementing your nozzle wiper macros.
-
-!!! info
-
-    If you want to do a nozzle wipe for other probes (btteddy, bltouch, microprobe or klicky without loadcells for z-offset), you would need to use a different hook, perhaps `_SAF_START_PRINT_BEFORE_BED_MESH`,
-    See [Custom Hooks](custom_hooks.md) for a complete list of custom hooks.
 
 So for instance you could use the `EXTRUDER_TEMP` in the `_SAF_NOZZLE_WIPE` macro like this:
 
