@@ -148,6 +148,12 @@ To run the script, you must specify the probe you want to use.
 4. Run `PROBE_EDDY_NG_SETUP`, Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
 <br />Upon completion *`SAVE_CONFIG`*
 
+!!! note
+
+     The `SET_KIN_MAX_Z` and `PROBE_EDDY_NG_SETUP` will not be visible in Fluidd or Mainsail, this is nornal these macros are
+     hidden so you just need to copy and paste into the fluidd / mainsail console.
+
+
 --!steps--
 
 !!! warning
