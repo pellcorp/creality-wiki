@@ -19,6 +19,11 @@ primary probe is mounted on the back.   If you want to use your own nozzle wipe 
 
     A rear mounted probe will cause the wiper to wipe on the front left of the build plate.
 
+!!! danger "Brush collision risk"
+
+     There is currently a high risk of collision with a brush for the default load cell nozzle wipe macro, we are working on fixes for this
+     with a high priority!
+
 !!! note
 
     If you already are using your own nozzle wipe solution note that it will be used when you switch to loadcells for z-offset because your existing include

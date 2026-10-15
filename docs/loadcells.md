@@ -16,6 +16,11 @@ By default when installing or updating to use loadcells, we enable a default [No
 the printer bed.   If you want to use your own nozzle wipe solution, you just need to remove the `[include loadcells_wipe.cfg]` and add your own
 `_SAF_NOZZLE_WIPE` implementation.
 
+!!! danger "Brush collision risk"
+
+     There is currently a high risk of collision with a brush for the default load cell nozzle wipe macro, we are working on fixes for this
+     with a high priority!
+
 !!! note
 
     If you already are using your own nozzle wipe solution note that it will be used when you switch to loadcells because your existing include
