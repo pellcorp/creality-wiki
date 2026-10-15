@@ -1,7 +1,6 @@
 # Nozzle Wipe Support
 
-The nozzle wipe custom hook is called before any bed mesh or z-offset nozzle touch is performed in START_PRINT, but its after the
-bed warp stabilisation phase.
+The nozzle wipe custom hook is called before any bed mesh or z-offset nozzle touch is performed in START_PRINT.
 
 ## Load Cell Wipe
 
