@@ -153,7 +153,6 @@ To run the script, you must specify the probe you want to use.
      The `SET_KIN_MAX_Z` and `PROBE_EDDY_NG_SETUP` will not be visible in Fluidd or Mainsail, this is nornal these macros are
      hidden so you just need to copy and paste into the fluidd / mainsail console.
 
-
 --!steps--
 
 !!! warning
