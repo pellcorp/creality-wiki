@@ -1,12 +1,12 @@
 # Kalico
 
 We are migrating all users over to Kalico for both K1 Series and RPI Series, all new installs or reinstalls and switching
-brobes will now switch you over.
+probes will now switch you over.
 
-!!! note
+!!! info
 
-    For new installations of Simple AF for RPI and K1 series, Kalico is now the default for all but EddyNG which is not
-    currently supported on Kalico for SimpleAF, but hopefully will be soon.
+     Switching a mount on an existing probe will not switch your installation over to kalico from klipper, also if you switch
+     to `btteddy` you will stay on klipper, because btteddy does not support kalico as yet, that is coming in november 2026.
 
 ## Why?
 
