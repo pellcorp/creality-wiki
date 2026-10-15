@@ -55,6 +55,10 @@ The Ender 3 V3 keeps using its physical endstop for homing Z, the load cells are
 6. Do [PID tuning and input shaping](#pid-tuning-and-input-shaping)
 7. The [Nozzle Wipe](#nozzle-wipe) is set up for you
 
+!!! warning
+
+    The load cells **must** be calibrated before you can probe with them, until you do the printer will stop with `Load Cells are not calibrated, aborting homing Z!`. Never guess the calibration value, the safety limits are all in grams and an inaccurate calibration lets the nozzle push far harder than you intend.
+
 ## Installation
 
 !!! warning
@@ -76,10 +80,6 @@ If you've installed Guilouz's Helper Script, or installed Fluidd or Mainsail thr
 --8<-- "snippets/probe/mcu_firmware_updates_are_pending.md"
 
 ## Calibration
-
-!!! warning
-
-    The load cells **must** be calibrated before you can probe with them, until you do the printer will stop with `Load Cells are not calibrated, aborting homing Z!`. Never guess the calibration value, the safety limits are all in grams and an inaccurate calibration lets the nozzle push far harder than you intend.
 
 --8<-- "snippets/loadcells/check_the_load_cells.md"
 

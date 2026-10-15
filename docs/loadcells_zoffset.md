@@ -71,13 +71,13 @@ To enable loadcells for zoffset while installing or reinstalling, for this examp
 ~/pellcorp/installer.sh --install --probe cartographer --mount Default --loadcells-zoffset
 ```
 
-You need to [Calibrate the load cells](#calibration) before trying to do a print
-
-## Calibration
-
 !!! warning
 
-    The load cell(s) **must** be calibrated before you can use them for z-offset, until you do the printer will stop with `Load Cells are not calibrated, aborting homing Z!`. Never guess the calibration value, the safety limits are all in grams and an inaccurate calibration lets the nozzle push far harder than you intend.
+    The load cells **must** be calibrated before you can probe with them, until you do the printer will stop with `Load Cells are not calibrated, aborting homing Z!`. Never guess the calibration value, the safety limits are all in grams and an inaccurate calibration lets the nozzle push far harder than you intend.
+
+You must [Calibrate the load cells](#calibration) before trying to home your printer!
+
+## Calibration
 
 --8<-- "snippets/loadcells/check_the_load_cells.md"
 
