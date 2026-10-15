@@ -79,7 +79,7 @@ If you've installed Guilouz's Helper Script, or installed Fluidd or Mainsail thr
 
 !!! warning
 
-    The load cells **must** be calibrated before you can probe with them, until you do the printer will stop with `Load Cell Probe Error: Load Cell not calibrated`. Never guess the calibration value, the safety limits are all in grams and an inaccurate calibration lets the nozzle push far harder than you intend.
+    The load cells **must** be calibrated before you can probe with them, until you do the printer will stop with `Load Cells are not calibrated, aborting homing Z!`. Never guess the calibration value, the safety limits are all in grams and an inaccurate calibration lets the nozzle push far harder than you intend.
 
 --8<-- "snippets/loadcells/check_the_load_cells.md"
 

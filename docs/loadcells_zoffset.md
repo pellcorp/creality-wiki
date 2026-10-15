@@ -77,7 +77,7 @@ You need to [Calibrate the load cells](#calibration) before trying to do a print
 
 !!! warning
 
-    The load cell(s) **must** be calibrated before you can use them for z-offset, until you do the printer will stop with `Load Cell Probe Error: Load Cell not calibrated`. Never guess the calibration value, the safety limits are all in grams and an inaccurate calibration lets the nozzle push far harder than you intend.
+    The load cell(s) **must** be calibrated before you can use them for z-offset, until you do the printer will stop with `Load Cells are not calibrated, aborting homing Z!`. Never guess the calibration value, the safety limits are all in grams and an inaccurate calibration lets the nozzle push far harder than you intend.
 
 --8<-- "snippets/loadcells/check_the_load_cells.md"
 
