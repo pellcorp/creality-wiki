@@ -2,6 +2,11 @@
 
 ## Load Cell Wipe
 
+!!! danger "Brush collision risk"
+
+     There is currently a high risk of collision with a brush for the default load cell nozzle wipe macro, we are working on fixes for this
+     with a high priority!
+
 For the [loadcells](loadcells.md) probe and [loadcells for z-offset](loadcells_zoffset.md) Simple AF installs its own nozzle wipe, `loadcells_wipe.cfg`,
 based on Creality's stock nozzle wipe.  Before the bed mesh, START_PRINT taps the bed to find its height, then scrapes the nozzle along a short
 line on the bed so plastic on the tip doesn't throw off the load cell taps.
