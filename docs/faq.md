@@ -8,12 +8,12 @@ toc_depth: 3
 
 ### Can I use Simple AF with Load Cells? { data-toc-label="Load Cells" }
 
-
-There is now [experimental support for using existing load cells](loadcells.md) for K1, K1C, K1SE, K1 Max and Ender 3 V3 CoreXZ.
+There is now [support for using existing load cells](loadcells.md) for K1, K1C, K1SE, K1 Max and Ender 3 V3 CoreXZ for homing, bed mesh and z-offset 
+without the need for hardware mods or a new probe!
 
 #### Load Cells for auto z-offset
 
-We have just introduced [experimental support for using existing load cells for auto z-offset](loadcells_zoffset.md) for K1, K1C, K1SE, K1 Max, Ender 3 V3 CoreXZ, Ender 3 V3 KE and Ender 3 V3 SE users.  This is the ability to use a load cell to do auto z-offset with any of
+We are also [supporting using existing load cells for auto z-offset](loadcells_zoffset.md) for K1, K1C, K1SE, K1 Max, Ender 3 V3 CoreXZ, Ender 3 V3 KE and Ender 3 V3 SE users.  This is the ability to use a load cell to do auto z-offset with any of
 the probes we support.  For K1, K1C, K1SE, K1 Max this would also work as an alternative to using Cartographer Touch, Beacon Contact or EddyNG Tap you can continue to use your eddy
 probe of choice for bed mesh and proximity homing, but use the load cell for z-offset during prints.
 
