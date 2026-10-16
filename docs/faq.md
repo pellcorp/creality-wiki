@@ -9,7 +9,7 @@ toc_depth: 3
 ### Can I use Simple AF with Load Cells? { data-toc-label="Load Cells" }
 
 
-There is now highly [experimental support for using existing load cells](loadcells.md) for K1, K1C, K1SE, K1 Max and Ender 3 V3 CoreXZ.
+There is now [experimental support for using existing load cells](loadcells.md) for K1, K1C, K1SE, K1 Max and Ender 3 V3 CoreXZ.
 
 #### Load Cells for auto z-offset
 
