@@ -12,15 +12,22 @@ New here? See [Getting Started](getting-started.md).
 
 ## Nozzle Wipe
 
-By default when installing or updating to use loadcells, we enable a default [Nozzle Wipe Macro](nozzle_wipe.md) that will wipe on the back of
-the printer bed.   If you want to use your own nozzle wipe solution, you just need to remove the `[include loadcells_wipe.cfg]` and add your own
-`_SAF_NOZZLE_WIPE` implementation.
+For the [loadcells](loadcells.md) probe and [loadcells for z-offset](loadcells_zoffset.md) Simple AF installs its own nozzle wipe, `loadcells_wipe.cfg`,
+based on Creality's stock nozzle wipe.  Before the bed mesh, START_PRINT taps the bed to find its height, then scrapes the nozzle along a short
+line on the bed so plastic on the tip doesn't throw off the load cell taps.
+
+!!! note "K1C / K1SE Brush"
+
+    On K1C and K1SE printers, Simple AF will configure the default nozzle wipe to assume a brush is mounted to the back of the build plate. If you are using an
+    aftermarket build plate on a K1C or K1SE that does not have this brush, you should disable the brush by setting `variable_k1c_brush` to `False` in
+    the `[gcode_macro _LOAD_CELL_WIPE_VARIABLES]` in the loadcells_wipe.cfg and Save and Restart.  By the same token if you are not on a K1C or K1SE,
+    but are using a K1C / K1SE build plate with a brush, you should set the `variable_k1c_brush` to `True`.
 
 !!! danger "Brush collision risk"
 
-     If you have a silicon brush for wiping on your print bed you should remove the Simple AF default wiper by removing the
-     `[include loadcells_wipe.cfg]` from your `printer.cfg`, and manually clean your nozzle or use a [third party nozzle wiper](nozzle_wipe.md#third-party-nozzle-wipes) until
-     such time as we can fix our built in wiper to deal with silicon brushes.
+     If you have a non K1C / K1SE build plate with a silicon brush for wiping on your print bed you should remove the Simple AF default wiper by removing the
+     `[include loadcells_wipe.cfg]` from your `printer.cfg`, and manually clean your nozzle or use a [third party nozzle wiper](#third-party-nozzle-wipes) until
+     such time as we can fix our built in wiper to deal with silicon brushes. 
 
 !!! note
 
