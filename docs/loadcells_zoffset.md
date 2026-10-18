@@ -19,11 +19,17 @@ primary probe is mounted on the back.   If you want to use your own nozzle wipe 
 
     A rear mounted probe will cause the wiper to wipe on the front left of the build plate.
 
+!!! note "K1C / K1SE Brush"
+
+    On K1C and K1SE printers, Simple AF will configure the default nozzle wipe to assume a brush is mounted to the back of the build plate. If you are using an
+    aftermarket build plate on a K1C or K1SE that does not have this brush, you should disable the brush by setting `variable_k1c_brush` to `False` in
+    the `[gcode_macro _LOAD_CELL_WIPE_VARIABLES]` in the `loadcells_wipe.cfg` and Save and Restart.  By the same token if you are not on a K1C or K1SE,
+    but are using a K1C / K1SE build plate with a brush, you should set the `variable_k1c_brush` to `True`.
+
 !!! danger "Brush collision risk"
 
-     If you have a silicon brush for wiping on your print bed you should remove the Simple AF default wiper by removing the
-     `[include loadcells_wipe.cfg]` from your `printer.cfg`, and manually clean your nozzle or use a [third party nozzle wiper](nozzle_wipe.md#third-party-nozzle-wipes) until
-     such time as we can fix our built in wiper to deal with silicon brushes.
+     If you have a non K1C / K1SE build plate with a silicon brush for wiping on your print bed you should remove the Simple AF default wiper by removing the
+     `[include loadcells_wipe.cfg]` from your `printer.cfg`, and manually clean your nozzle or use a [third party nozzle wiper](#third-party-nozzle-wipes). 
 
 !!! note
 
