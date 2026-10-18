@@ -20,7 +20,7 @@ line on the bed so plastic on the tip doesn't throw off the load cell taps.
 
     On K1C and K1SE printers, Simple AF will configure the default nozzle wipe to assume a brush is mounted to the back of the build plate. If you are using an
     aftermarket build plate on a K1C or K1SE that does not have this brush, you should disable the brush by setting `variable_k1c_brush` to `False` in
-    the `[gcode_macro _LOAD_CELL_WIPE_VARIABLES]` in the loadcells_wipe.cfg and Save and Restart.  By the same token if you are not on a K1C or K1SE,
+    the `[gcode_macro _LOAD_CELL_WIPE_VARIABLES]` in the `loadcells_wipe.cfg` and Save and Restart.  By the same token if you are not on a K1C or K1SE,
     but are using a K1C / K1SE build plate with a brush, you should set the `variable_k1c_brush` to `True`.
 
 !!! danger "Brush collision risk"
