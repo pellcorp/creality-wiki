@@ -91,7 +91,7 @@ plugins:
 extra:
   social:
     - icon: simple/kofi
-      link: https://ko-fi.com/pellcorp49698
+      link: https://ko-fi.com/pellcorp49698?
     - icon: simple/github
       link: https://github.com/pellcorp/creality
     - icon: simple/discord
