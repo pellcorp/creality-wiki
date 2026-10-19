@@ -5,6 +5,11 @@
     Your build plate must be spring steel with a magnetic sheet attached to your underlying printer bed.  Do not try and use this probe with embedded magnets or 
     some crappy magnetic flex plate that is not spring steel, your nozzle will dig a big hole in it.
 
+!!! warn "Loadcells for z-offset required"
+
+    Please note that to use btteddy as the probe in Simple AF you are going to have to enable [Load Cells for Z-Offset](loadcells_zoffset.md) to use this
+    probe, if you do not have functional loadcells, you will have to [use EddyNG instead](eddyng.md)
+
 This page covers installing SimpleAF using a BTT Eddy probe. New here? See [Getting Started](getting-started.md).
 
 RPi / SBC users: install SimpleAF via [SimpleAF for RPi](rpi.md). The rest of this page &mdash; probe firmware, mount options, and calibration &mdash; applies to your setup too.
@@ -138,10 +143,10 @@ To run the script, you must specify the probe you want to use.
 !!! warning
 
     The following calibration steps are required to setup a new printer:
-
+    
     - [Drive Current Calibration](#drive-current-calibration)
     - [Mapping Eddy Readings To Nozzle Heights](#mapping-eddy-readings-to-nozzle-heights)
-    - [Temperature Compensation Calibration](#temperature-compensation-calibration)
+    - [LoadCells Calibration](loadcells_zoffset.md#calibration)
     - [PID Tuning and Input Shaping](#pid-tuning-and-input-shaping)
 
 !!! danger
@@ -194,26 +199,11 @@ To run the script, you must specify the probe you want to use.
     
     ![image](assets/images/probe_manual.png)
 
-### Temperature Compensation Calibration
+### Load Cells Calibration
 
---steps--
+Because the btteddy probe must be used with loadcells for z-offset (use EddyNG otherwise), you must calibrate loadcells before doing a print.
 
-1. Home All (`G28`)
-2. Make sure nozzle is centred on bed
-3. Run `BTTEDDY_TEMPERATURE_PROBE_CALIBRATE`
-<br />Upon completion *`SAVE_CONFIG`*
-
---!steps--
-
-**Source:** <https://github.com/bigtreetech/Eddy?tab=readme-ov-file#5-temperature-compensation-calibration-eddy-usb-only>
-
-!!! warning
-
-    Do not use a metal feeler gauge for this step, it could damage your eddy!!!
-
-!!! tip
-
-    If you are struggling to get over about 80c, you can end the calibration early with the `TEMPERATURE_PROBE_COMPLETE` macro, just know that if you end the calibration early and then you try to print really hot and the eddy gets hotter than the hottest temp you calibrated the eddy is going to read the bed wrong and cause issues for homing but especially bed meshes.
+Refer to [LoadCells Calibration](loadcells_zoffset.md#calibration)
 
 --8<-- "snippets/probe/manual_bed_tramming.md"
 
