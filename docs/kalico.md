@@ -16,8 +16,7 @@ of Kalico specific features going forward, and we will no longer be supporting s
 
 ## Why?
 
-Because Klipper keeps refactoring stuff and making it really hard to rebase, especially our non critical mcu feature we cherry picked
-from Kalico to Klipper makes updating to later version of Klipper very difficult.   Also Kalico allows us to support stock load cells.
+Kalico gives us non-critical mcu and load cells, plus a bunch of other QOL features like logging configuration.
 
 We have decided that it would just be easier to use Kalico directly and we don't have to worry about merge conflicts for Kalico features.
 
