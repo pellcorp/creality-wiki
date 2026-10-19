@@ -143,7 +143,7 @@ We support a variety of mount options across many of those printers and lots of 
 
 Running the installer sets up:
 
-- Klipper or Kalico 
+- Kalico (Klipper for btteddy for the moment, that will change soon)
 - Moonraker
 - Nginx
 - Fluidd and Mainsail (with an [easy way to switch](faq.md#how-do-i-switch-default-ui-from-fluidd-to-mainsail-and-back) which is the default but both are available on different ports)

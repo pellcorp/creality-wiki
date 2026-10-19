@@ -24,7 +24,7 @@ sudo apt-get install virtualenv python3-dev python3-pip libffi-dev build-essenti
 ## Clone Klipper and Beacon-Klipper
 
 ```
-git clone "https://github.com/Klipper3d/klipper" $HOME/klipper
+git clone "https://github.com/pellcorp/klipper" $HOME/klipper
 git clone https://github.com/beacon3d/beacon_klipper.git $HOME/beacon-klipper
 ```
 
