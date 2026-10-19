@@ -66,10 +66,9 @@ For an CR10SE:
 
 ## How do I build new firmware?
 
-We have a forks of klipper and kalico for building firmware for Creality mainboads such as the K1 series, Ender 3 V3 KE, CR10SE, Ender 3 V3 and
+We have a fork of kalico for building firmware for Creality mainboads such as the K1 series, Ender 3 V3 KE, CR10SE, Ender 3 V3 and
 Ender 5 Max.
 
 - [K1 Kalico Firmware](https://github.com/pellcorp/k1-kalico-firmware)
-- [K1 Klipper Firmware](https://github.com/pellcorp/k1-klipper-firmware)
 
 Check the readme for basic instructions on what to build.

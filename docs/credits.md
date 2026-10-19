@@ -26,7 +26,7 @@ Thanks to everyone who has contributed code and documentation:
 
 ## Projects We Build On
 
-- [Klipper](https://github.com/Klipper3d/klipper) by Kevin O'Connor and contributors, and [Kalico](https://github.com/KalicoCrew/kalico)
+- [Kalico](https://github.com/KalicoCrew/kalico)
 - [Moonraker](https://github.com/Arksine/moonraker) by Arksine and [Moonraker Timelapse](https://github.com/mainsail-crew/moonraker-timelapse)
 - [Fluidd](https://github.com/fluidd-core/fluidd), [Fluidd Config](https://github.com/fluidd-core/fluidd-config) and [Mainsail](https://github.com/mainsail-crew/mainsail)
 - [Crowsnest](https://github.com/mainsail-crew/crowsnest), [uStreamer](https://github.com/pikvm/ustreamer) and [KlipperScreen](https://github.com/KlipperScreen/KlipperScreen)

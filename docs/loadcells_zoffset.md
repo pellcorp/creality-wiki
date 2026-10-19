@@ -62,10 +62,6 @@ primary probe is mounted on the back.   If you want to use your own nozzle wipe 
 
 ## Setup
 
-!!! warning
-
-    There is an assumption you have already setup a supported probe with kalico
-
 To enable loadcells for z-offset it is a single command for an existing probe:
 
 ```
