@@ -325,10 +325,6 @@ h1, h2, h3, h4, h5 {
     box-shadow: none;
 }
 
-.md-search__form, .md-search__scrollwrap, .md-search-result__meta {
-    background: hsla(0, 0%, 0%, 0.25) !important;
-}
-
 /* ======= HERO ====== */
 
 .hero_text {
