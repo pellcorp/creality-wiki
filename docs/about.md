@@ -1,6 +1,6 @@
 # What is Simple AF?
 
-I built Simple AF because I was tired of stitching together random pieces from helper scripts and Kiuah every time I set up a printer. I wanted one command that handled everything end‑to‑end, so I could take a K1 from a factory reset to fully calibrated in under 20 minutes.
+I originally started Simple AF because I was tired of stitching together random pieces from helper scripts and Kiuah every time I set up a printer. I wanted one command that handled everything end‑to‑end, so I could take a K1 from a factory reset to fully calibrated in under 20 minutes.
 
 Simple AF is basically the “everything just works” Klipper setup I always wished Creality shipped. It installs a clean, readable config, sets up a custom Klipper stack, and brings full modern probe support (Cartographer, Beacon, Eddy, EddyNG, BLTouch, Microprobe, Klicky) under one simple installer. It also runs leaner than the stock environment, freeing up system resources so your printer feels snappier and more responsive.
 
