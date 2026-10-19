@@ -7,3 +7,4 @@ To allow existing users to update to the latest code before the switch was made,
 which will allow you to get updates up until the very latest before the switch was made.
 
 ![image](assets/images/klipper_not_supported.png)
+
