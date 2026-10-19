@@ -6,7 +6,7 @@ probes will now switch you over.
 !!! info
 
      Switching a mount on an existing probe will not switch your installation over to kalico from klipper, also if you switch
-     to `btteddy` you will stay on klipper, because btteddy does not support kalico as yet, that is coming soon.
+     to `btteddy` you will stay on klipper, because btteddy does not properly support kalico as yet, that is coming soon.
 
 ## Klipper End-Of-Life in Simple AF
 
