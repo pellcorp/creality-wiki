@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+
 {% block styles %}
   {{ super() }}
   <link rel="stylesheet" href="{{ 'assets/stylesheets/customs.css' | url }}">
@@ -7,6 +8,13 @@
   <link rel="stylesheet" href="{{ 'assets/stylesheets/partials/layout.css' | url }}">
   <link rel="stylesheet" href="{{ 'assets/stylesheets/partials/reference.css' | url }}">
   <link rel="stylesheet" href="{{ 'assets/stylesheets/partials/typeset.css' | url }}">
+{% endblock %}
+{% block announce %}
+<!-- once we get btteddy rapid scan working we are switching this on -->
+<!--<div class="announce_text">
+  In the next few weeks we will be removing support for updating an existing installation of Simple AF which is running Klipper, you should
+  <a href="{{ 'kalico/' | url }}#how-do-i-switch">switch to Kalico</a> without delay.
+</div>-->
 {% endblock %}
 {% block scripts %}
   {{ super() }}

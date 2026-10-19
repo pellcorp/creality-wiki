@@ -7,7 +7,7 @@
 .md-banner {
     height: 40px;
     overflow: hidden;
-    background: linear-gradient(to right, var(--primary-blue-200), var(--primary-blue-600));
+    background: linear-gradient(to right, #991b1b, #dc2626);
 }
 
 .md-banner__inner {

@@ -41,3 +41,18 @@ We have three different Kalico forks:
 - Include virtual pins into our fork
 - Extended fan extension for M106 to support targeting different fans with the P argument
 - Support a no_reconnect flag for non critical mcus, although this might be retired due to recent stability changes in Kalico
+
+## How do I switch?
+
+On both K1 and RPI Series you can switch to kalico very easily, first of all make sure your pellcorp/creality repo is
+fully up to date, run:
+
+```
+~/pellcorp/installer.sh --branch main
+```
+
+Then to switch to Kalico, you can run:
+
+```
+~/pellcorp/installer.sh --kalico
+```
