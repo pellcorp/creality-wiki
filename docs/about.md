@@ -57,7 +57,7 @@ When needed we maintain forks of upstream projects with additional features that
 
 !!! note
 
-    Even though we forked Kalico, the features we provide on top of vanilla Kalico do not in any way change the core behaviour of either variant of Kalico, in many cases the stuff we have are small quality of life fixes to make working with Kalico easier, we are strongly apposed to the absolute cluster f*** that is Creality Klipper (fondly referred to as Crapper)
+    Even though we forked Kalico, the features we provide on top of vanilla Kalico do not in any way change the core behaviour of Kalico, in many cases the stuff we have are small quality of life fixes to make working with Kalico easier, we are strongly apposed to the absolute cluster f*** that is Creality Klipper (fondly referred to as Crapper)
 
     ![image](assets/images/makes_me_wish.png)
 
