@@ -8,6 +8,12 @@ probes will now switch you over.
      Switching a mount on an existing probe will not switch your installation over to kalico from klipper, also if you switch
      to `btteddy` you will stay on klipper, because btteddy does not support kalico as yet, that is coming in november 2026.
 
+## Klipper End-Of-Life in Simple AF
+
+By the end of October / early November 2026 the installer will refuse to update an existing installation which has klipper.  You will
+be forced to switch to kalico via `--kalico` update option to get fresh updates for Simple AF.  We are going to start making use
+of Kalico specific features going forward, and we will no longer be supporting switching back to klipper for any probe.
+
 ## Why?
 
 Because Klipper keeps refactoring stuff and making it really hard to rebase, especially our non critical mcu feature we cherry picked
