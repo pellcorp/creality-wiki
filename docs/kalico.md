@@ -16,7 +16,8 @@ of Kalico specific features going forward, and we will no longer be supporting s
 
 ## Why?
 
-Kalico gives us non-critical mcu and load cells, plus a bunch of other QOL features like logging configuration.
+Kalico gives us non-critical mcu and load cells, plus a bunch of other QOL features like logging configuration and sensorless homing 
+without homing override (which we will migrate to after we switch over)
 
 We have decided that it would just be easier to use Kalico directly and we don't have to worry about merge conflicts for Kalico features.
 
