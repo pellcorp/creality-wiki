@@ -30,8 +30,7 @@ line on the bed so plastic on the tip doesn't throw off the load cell taps.
 
 !!! note
 
-    If you already are using your own nozzle wipe solution note that it will be used when you switch to loadcells because your existing include
-    will be restored, please be aware of this as it might come as a surprise!
+    If you already are using your own nozzle wipe solution, the installer will not add the default nozzle wipe so you can continue to use your own!
 
 ## Supported Printers
 
