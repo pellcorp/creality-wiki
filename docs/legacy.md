@@ -8,3 +8,6 @@ which will allow you to get updates up until the very latest before the switch w
 
 ![image](assets/images/klipper_not_supported.png)
 
+## Why?
+
+See [Kalico](kalico.md)
