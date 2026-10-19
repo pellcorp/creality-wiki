@@ -5,11 +5,6 @@
     Your build plate must be spring steel with a magnetic sheet attached to your underlying printer bed.  Do not try and use this probe with embedded magnets or 
     some crappy magnetic flex plate that is not spring steel, your nozzle will dig a big hole in it.
 
-!!! warn "Loadcells for z-offset required"
-
-    Please note that to use btteddy as the probe in Simple AF you are going to have to enable [Load Cells for Z-Offset](loadcells_zoffset.md) to use this
-    probe, if you do not have functional loadcells, you will have to [use EddyNG instead](eddyng.md)
-
 This page covers installing SimpleAF using a BTT Eddy probe. New here? See [Getting Started](getting-started.md).
 
 RPi / SBC users: install SimpleAF via [SimpleAF for RPi](rpi.md). The rest of this page &mdash; probe firmware, mount options, and calibration &mdash; applies to your setup too.
@@ -17,6 +12,11 @@ RPi / SBC users: install SimpleAF via [SimpleAF for RPi](rpi.md). The rest of th
 !!! info "What about CFS support?"
 
     The Creality CFS uses proprietary code blobs and likely will **never** be supported by Simple AF, there is a project underway to support Eddy with CFS that is **not affiliated** with Simple AF, but does use some stuff from Simple AF and some of our config and docs: <https://github.com/mikeinredding/K1Max-Klipper-Eddy>
+
+## Loadcells for z-offset required
+
+Please note that to use btteddy as the probe in Simple AF you are going to have to enable [Load Cells for Z-Offset](loadcells_zoffset.md) to use this
+probe, if you do not have functional loadcells, you will have to [use EddyNG instead](eddyng.md)
 
 ## Firmware requirements
 
