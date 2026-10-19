@@ -61,7 +61,7 @@ When needed we maintain forks of upstream projects with additional features that
 
     ![image](assets/images/makes_me_wish.png)
 
-    You are not locked into our forks of Kalico, some people even use our macros with completely vanilla klipper / kalico and the only thing they need to
+    You are not locked into our fork of Kalico, some people even use our macros with completely vanilla klipper / kalico and the only thing they need to
     manually copy over is the virtual pins extra that we bundle.
 
 We forked GuppyScreen to provide the [GrumpyScreen UI](https://github.com/pellcorp/grumpyscreen) because the GuppyScreen project was abandoned, and we wanted to continue to polish and
