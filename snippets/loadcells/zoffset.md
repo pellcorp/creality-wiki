@@ -14,7 +14,8 @@ Just add `--loadcells-zoffset` to the installation or update command to enable t
 
 !!! tip
 
-    You can also pass `--loadcells-zoffset` by itself to enable loadcells for z-offset for an existing installation or as part of an `--update` command to switch probes!
+    You can also run `~/pellcorp/installer.sh --loadcells-zoffset` to enable loadcells for z-offset for an existing probe, without running a full update
+    of anything else, assuming you have updated the Simple AF repo first.
 
 See [Load Cells for Z-Offset](loadcells_zoffset.md).
 
