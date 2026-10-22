@@ -13,7 +13,7 @@
 
 !!! warning
 
-    You might corrupt the katapult boot loader trying to use a Linux VM or WSL to flash the carto, I strongly recommend a live USB over a VM or WSL!
+    You might corrupt the katapult boot loader trying to use a Linux VM or WSL to flash the carto, we strongly recommend a live USB over a VM or WSL!
 
 ## Verify your Cable
 
@@ -118,7 +118,7 @@ CAN Flash Success
     you are using a VM or WSL (against advice) and have not passed through the `katapult stm32f042x6` USB Device!
 
     If the Cartographer is no longer flashing blue its also possible the katapult bootloader has become corrupted which is actually frighteningly easy to do
-    which is why I generally discourage the use of WSL or VMs!
+    which is why we generally discourage the use of WSL or VMs!
 
 When you reconnect your carto to your printer it should show a version `CARTOGRAPHER K1 5.0.0`:
 

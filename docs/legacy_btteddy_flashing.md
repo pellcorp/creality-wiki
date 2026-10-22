@@ -60,4 +60,4 @@ sudo python3 ./scripts/flash_usb.py -t rp2040 -d 2e8a:0003 fw/K1/btteddy.uf2
 
 !!! note
 
-    We are not compiling new firmware, just flashing the firmware I have already prepared.
+    We are not compiling new firmware, just flashing the firmware we have already prepared.

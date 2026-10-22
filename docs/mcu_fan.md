@@ -20,7 +20,7 @@ stepper: stepper_x, stepper_y, stepper_z
 idle_timeout: 90
 ```
 
-You also have the option of making the MCU fan purely temp based, however there is a risk if the temp sensor on the MCU is a bit dodgy the fan might not startup early enough to avoid damage or weird behaviour from the MCU and other components, I strongly recommend leaving the MCU fan to always be on
+You also have the option of making the MCU fan purely temp based, however there is a risk if the temp sensor on the MCU is a bit dodgy the fan might not startup early enough to avoid damage or weird behaviour from the MCU and other components, we strongly recommend leaving the MCU fan to always be on
 
 But if you want to, something like this might work:
 

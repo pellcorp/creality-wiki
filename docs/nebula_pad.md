@@ -41,7 +41,7 @@ have the printer connected to the Nebula Pad at this stage.
 
 ### Ender 3 V3 SE
 
-It is super important to double check what chip is on your board, the C14 chips have a STM32 chip, the C13 boards have GD32.   I have just become aware creality has also released boards which say C14, but have GD32!
+It is super important to double check what chip is on your board, the C14 chips have a STM32 chip, the C13 boards have GD32.   We have just become aware creality has also released boards which say C14, but have GD32!
 
 Someone from Simple AF discord pointed me to this site which might help if you are having issues flashing the Ender 3 V3 SE:
 

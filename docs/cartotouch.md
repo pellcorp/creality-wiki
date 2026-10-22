@@ -66,7 +66,7 @@ See [Simple AF for RPi](rpi.md)
     
     For Simple AF for RPi, you can use the standard cartographer guide <https://docs.cartographer3d.com/cartographer-probe/firmware/firmware-updating/via-katapult/usb-flash#usb-katapult-updating>
 
-    If you are using a Pi3 or less (so CB1, CB2, OPi 3, etc) to run klipper, I strongly recommend using the K1/Lite variants of the cartographer firmware, you can do that 
+    If you are using a Pi3 or less (so CB1, CB2, OPi 3, etc) to run klipper, we strongly recommend using the K1/Lite variants of the cartographer firmware, you can do that 
     in the firmware script by enabling Advanced Mode and Enabling Creality K Series Firmware.
 
 ## Probe Installation

@@ -4,7 +4,7 @@ Its likely if you are migrating from Marlin (for instance for a Ender 3 V3 SE), 
 firmware to the mainboard (this is not the same as the RPI), and for the moment at least this guide is lacking
 a lot of details for that.
 
-I think the easiest approach here is to install Simple AF and acccept that the MCU likely won't connect and then
+We think the easiest approach here is to install Simple AF and acccept that the MCU likely won't connect and then
 login to your RPI and use make menuconfig and make to create the firmware so you can get that flashed in whatever
 method is required for your mainboard.
 

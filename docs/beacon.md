@@ -12,9 +12,9 @@ RPi / SBC users: install SimpleAF via [SimpleAF for RPi](rpi.md). The rest of th
 ## Known Issues
 
 The SCREW_TILT_ADJUST tool is not working at all for Beacon on Simple AF K1 Series, homing timeout occurs and crashes klipper,
-a user reported it, and I reproduced on my K1 Max with a Beacon.   Further digging indicates this is a overload issue and honestly
-I am not sure if it ever worked.   If I get a chance I might try and see if I can get this working in another way, but for now unfortunately
-its not possible, if we had a Lite version of Beacon firmware we could make it work, but the firmware is closed source so its just not possible.
+a user reported it, and it's been reproduced on a K1 Max with a Beacon.   Further digging indicates this is an overload issue, and we are not 
+sure if it ever worked.   If we get a chance to try and see if we can get this working in another way, but for now unfortunately
+its not possible, if we had a Lite version of Beacon firmware we could make it work, but the firmware is closed source so, it is just not possible.
 
 ## Firmware requirements
 

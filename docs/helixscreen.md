@@ -3,7 +3,7 @@
 HelixScreen will never be officially supported by Simple AF, however recently we made some changes for K Series to detect
 HelixScreen and skip GrumpyScreen installation or updates, also Switch to Stock will correctly disable and enable HelixScreen.
 
-HelixScreen is rather heavy on CPU and Ram on a printer with 220MB of ram, so I don't actually recommend you install it,
+HelixScreen is rather heavy on CPU and Ram on a printer with 220MB of ram, so we don't actually recommend you install it,
 especially if using a Cartographer, Beacon or BTT Eddy.  
 
 If you choose to disregard that advice, please do NOT ask for support on the Simple AF discord!

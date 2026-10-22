@@ -48,7 +48,7 @@ So your [adxl345] should look like:
  #spi_software_miso_pin: nozzle_mcu:PA6
  ```
 
-I do not know if this is a good idea, I just know it's possible!
+We do not know if this is a good idea, we just know it's possible!
 
 **Source:** <https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/software-configuration/klipper-setup#configure-klipper>
 

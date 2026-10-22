@@ -1,7 +1,7 @@
 # Downgrade from CFS Firmware
 
 Creality added logic to prevent downgrading to older version of firmware, but its super easy to work around this, we just need to
-download an older `local_ota_update.sh file`, I have saved the 1.3.3.46 version of the script to my downloads repo to make it
+download an older `local_ota_update.sh file`, We have saved the 1.3.3.46 version of the script to the downloads repo to make it
 easier to get.
 
 So first of all go and grab the version of the older K1 firmware you want from <https://www.creality.com/pages/download-k1-flagship>,
@@ -59,7 +59,7 @@ Then you can logout of your ssh session and power cycle your printer.   It is a 
 
     ![image](assets/images/mount_usb_grep_sda.png)
 
-    So I would need to specify instead: 
+    So you would need to specify instead: 
 
     ```
     /usr/data/local_ota_update.sh /tmp/udisk/sda/CR4CU220812S11_ota_img_V1.3.3.46.img

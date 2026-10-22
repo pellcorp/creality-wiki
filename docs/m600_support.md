@@ -17,8 +17,7 @@ And then reslice the file, then you can send it to print!
 !!! note
 
     This functionality is very likely to conflict with the filament sensor `insert_gcode` to auto load filament if you have a CFS or DXC extruder, in that
-    case you probably should use PAUSE instead of M600!   I would welcome PRs to Simple AF that allow auto load to work with the
-    built in M600 support, one day I might even add it myself as I have a CFS extruder!
+    case you probably should use PAUSE instead of M600!   We welcome PRs to Simple AF that allow auto load to work with the built in M600 support!
 
 ## Custom Hooks
 

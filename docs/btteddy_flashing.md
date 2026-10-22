@@ -56,6 +56,6 @@ Once this is done go ahead and reconnect your eddy to your K1.
 
 ## How do I know it flashed correctly?
 
-Unfortunately I know of no way to test this except by plugging it back into the K1, restarting klipper and verifying via the System tab, a correctly flashed eddy will have
+Unfortunately we know of no way to test this except by plugging it back into the K1, restarting klipper and verifying via the System tab, a correctly flashed eddy will have
 
 ![image](assets/images/btteddy_mcu_version.png)

@@ -56,7 +56,7 @@ To use your own `_SAF_NOZZLE_WIPE` instead, remove the `[include loadcells_wipe.
 ## Third Party Nozzle Wipes
 
 The following nozzle wipe solutions are third party and there **is absolutely no support available** for them via the Simple AF discord,
-these are just the wipes I am aware of, myself and the support team don't know much about them.
+these are just the wipes we am aware of, myself and the support team don't know much about them.
 
 !!! danger
 
@@ -96,7 +96,7 @@ gcode:
 
 ## Nozzle Wipe Options
 
-The following are the nozzle wipe macros I am aware of, I provide absolutely no guarantees about them!
+The following are the nozzle wipe macros we am aware of, we provide absolutely no guarantees about them!
 
 Config overrides should save and restore these additional .cfg for you automatically, just make sure its saved directly to the config/ directory
 **and not a sub-directory** and you should be good to go!

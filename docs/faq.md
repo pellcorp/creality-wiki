@@ -66,7 +66,7 @@ Create a new macros file, call it something like `CustomMacros.cfg` (it matters 
 
 Third step is to add a new include to `printer.cfg` for your new custom config file, and your `_SAF_LINE_PURGE` macro will be called now instead of the KAMP one.
 
-The reason this is recommended over just commenting out `LINE_PURGE` in `start_end.cfg` and adding your own macro call, is everything I have described above will survive an Update and even a factory reset.
+The reason this is recommended over just commenting out `LINE_PURGE` in `start_end.cfg` and adding your own macro call, is everything described above will survive an Update and even a factory reset.
 
 For more information [Custom Hooks](custom_hooks.md)
 

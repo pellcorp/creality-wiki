@@ -67,10 +67,10 @@ You must login as the **orangepi** (Default password is `orangepi`) user to perf
 
 Basic testing has been done with DietPi (Bookworm) running on an Orange Pi 3 Zero W
 
-I had some trouble getting DietPi setup in my home network which uses a PiHole connected to cleanbrowsing.org DNS family filter
+Some trouble was encountered getting DietPi setup in a home network which uses a PiHole connected to cleanbrowsing.org DNS family filter
 which prevented the default DNS settings from working.
 
-I updated the dietpi.txt as follows:
+The dietpi.txt was updated as follows:
 
 ```
 AUTO_SETUP_AUTOMATED=1
@@ -83,16 +83,15 @@ CONFIG_CHECK_APT_UPDATES=0
 CONFIG_SERIAL_CONSOLE_ENABLE=0
 ```
 
-You do not want the OS doing updates while prints are going so updating should be controlled by Moonraker only.   I reconfigured the
-DNS check configuration to use google as the quad9 DNS was not resolved by cleanbrowsing.org, of course your situation may be completely
+You do not want the OS doing updates while prints are going so updating should be controlled by Moonraker only.   The DNS check configuration was reconfigured to use google as the quad9 DNS was not resolved by cleanbrowsing.org, of course your situation may be completely
 different and the above options might be overkill.
 
-I discovered that there is a few hoops to jump through before getting the OrangePi setup, no idea if this is due to some weird
-combination of settings above, but I discovered you have to physically power off the device after the first run finishes and the
+A few hops are needed to be jumped through before getting the OrangePi setup, no idea if this is due to some weird
+combination of settings above.  You have to physically power off the device after the first run finishes and the
 pi hole is supposedly rebooted, otherwise ethernet does not come back.
 
-What I did was login as root after powering up the device for the first time and it will tell me that first run setup is going on in a
-different screen and will eventually let me know a restart will be required, I wait until I am kicked from the SSH session and then I give it
+Login as root after powering up the device for the first time, and it will tell you that first run setup is going on in a
+different screen and will eventually let you know a restart will be required, wait until you are kicked from the SSH session and then give it
 a minute and power cycle the pi.
 
 Then login as the **dietpi** (Default password is `dietpi`) user to start the installation, after logging in, you may be told that first run setup is still going,
@@ -108,7 +107,7 @@ On Debian 11, 12 or 13, Ubuntu 22.04 or 24.04 based distributions
 
 !!! note
 
-    I have user reports of successful testing of Simple AF for RPI with Debian Bookworm and Ubuntu 22.04 :-)
+    We have user reports of successful testing of Simple AF for RPI with Debian Bookworm and Ubuntu 22.04 :-)
 
 ## BTT OS
 

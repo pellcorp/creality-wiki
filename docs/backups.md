@@ -58,7 +58,7 @@ backup-2025-08-22_04-56-40.tar.gz
 backup-2025-08-22_04-51-21.tar.gz
 ```
 
-I can restore to:
+It can be restored like so:
 
 ```
 ~/pellcorp/tools/backups.sh --restore backup-2025-08-22_04-51-21.tar.gz

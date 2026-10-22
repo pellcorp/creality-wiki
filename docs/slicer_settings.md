@@ -15,7 +15,7 @@ Creality Print won't be able to see your printer after you have installed Simple
 ## Cura Slicer
 
 Cura Slicer won't work out of the box for configuring START_PRINT variables as below, you need to change the start print EXTRUDER_TEMP and BED_TEMP to pass
-in the correct values, but since I don't use Cura Slicer I can't advise on that!
+in the correct values, but since we don't use Cura Slicer we can't advise on that!
 
 There is an assumption that you are using a slicer like OrcaSlicer and Machine G-code like:
 

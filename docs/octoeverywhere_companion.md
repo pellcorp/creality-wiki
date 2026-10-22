@@ -43,7 +43,7 @@ To make it start on boot:
 sudo systemctl enable octoeverywhere-companion.service
 ```
 
-The configuration for each instance of the service is in a separate directory in your home directory, so in my case I have two of them:
+The configuration for each instance of the service is in a separate directory in your home directory, in the case of having two of them:
 
 ```
 ~/.octoeverywhere-companion/

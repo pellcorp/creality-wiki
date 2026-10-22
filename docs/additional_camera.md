@@ -12,7 +12,7 @@ Get yourself a raspberry pi or an orange pi zero and get some kind of debian dis
 
 ## Install Crowsnest
 
-We use crowsnest on Simple AF for RPi, I am sure there are different options you can try but I know crowsnest so I will document that, lets get it
+We use crowsnest on Simple AF for RPi, there are different options you can try, but we know crowsnest so that is what we will document, lets get it
 installed first.
 
 ```

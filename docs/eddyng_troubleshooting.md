@@ -7,7 +7,7 @@
 The very first thing you should check is the height of the eddy, see [Nozzle Offset](eddyng.md#nozzle-offset)
 
 Sometimes the drive current for homing will work but for tap it breaks, you can calibrate another drive current and manually configure it for tap,
-I recommend incrementing one from homing value, so for instance if tap and homing setup have 16 as drive current, calibrate 17 as well and you can
+We recommend incrementing one from homing value, so for instance if tap and homing setup have 16 as drive current, calibrate 17 as well and you can
 manually modify the configuration afterwards:
 
 ```
@@ -16,7 +16,7 @@ PROBE_EDDY_NG_CALIBRATE DRIVE_CURRENT=17
 
 You can then modify the `#*# tap_drive_current = 16` to be `#*# tap_drive_current = 17` in the `printer.cfg` file and save and restart again!
 
-I am hopeful further work on this from the eddyng project might make this manual adjustment unnecessary!
+We are hopeful further work on this from the eddyng project might make this manual adjustment unnecessary!
 
 ## Eddy is not connected, aborting homing Z
 
