@@ -10,13 +10,8 @@ Simple AF is best supported by RPi or OrangePi running a version of debian **11,
 
 A few projects ship a flashable image with Simple AF already on the card. Flash the image for **your** SBC, then follow that project's first-boot notes. Depending on the image, after login you may still need to run `~/pellcorp/installer.sh` (or their wrapper) to pick printer / probe / mount. See [Simple AF for RPi](rpi.md).
 
-!!! danger
-
-    Do **not** flash stock [MainsailOS](https://github.com/mainsail-crew/MainsailOS) and then try to install Simple AF on top. [SimpleAFOS](https://github.com/pellcorp/SimpleAFOS) is a different image. Same for KIAUH-based cards.
-
 | Project | Boards | Base OS |
 |---------|--------|---------|
-| [SimpleAFOS](https://github.com/pellcorp/SimpleAFOS) | Raspberry Pi (32-bit Pi 1 / 2; 64-bit Pi 3 / 4 / 5); Orange Pi 4 LTS; Orange Pi 3 LTS; Orange Pi Zero 2; Orange Pi Zero 3; BigTreeTech CB1 | Raspberry Pi OS Lite or Armbian (Debian 13 / Trixie) |
 | [Fly-Bian Project](https://github.com/0dysseusRex/fly-bian) | Mellow Fly Lite 2.1; Mellow Fly Pi V3 | Armbian (Debian 13 / Trixie) |
 
 ## Raspberry Pi OS
