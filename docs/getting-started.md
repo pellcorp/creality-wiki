@@ -11,7 +11,7 @@ SimpleAF is an open-source Klipper-based firmware for Creality K1, K1C, K1SE, K1
 - **[BLTouch](bltouch.md)** — also covers CR-Touch and 3D Touch
 - **[Microprobe](microprobe.md)**
 - **[Klicky](klicky.md)**
-- **[Load Cells](loadcells.md)** — uses the load cells built into the bed, no extra probe (experimental)
+- **[Load Cells](loadcells.md)** — uses the load cells built into the bed, no extra probe
 
 Each guide walks through firmware requirements, hardware install (where required), software install, and calibration.
 

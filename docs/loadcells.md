@@ -4,7 +4,7 @@ This page covers installing SimpleAF using the strain gauges (load cells) alread
 
 Looking for Load Cells for Z-Offset? See [Load Cells for Z-Offset](loadcells_zoffset.md).
 
-!!! klipper-error "High risk of bed damage"
+!!! klipper-error "Risk of bed damage"
 
     The nozzle is pushed onto the bed with a force measured by the load cells, if the load cells are not calibrated properly or something else goes wrong you can damage your printer. Be ready to hit the e-stop button in your UI or Grumpyscreen, or the power button, and never leave your printer unattended while homing, probing or bed meshing.
 
@@ -34,14 +34,12 @@ line on the bed so plastic on the tip doesn't throw off the load cell taps.
 
 ## Supported Printers
 
-| Printer     | Status                     |
-|-------------|----------------------------|
-| Ender 3 V3  | Tested                     |
-| K1          | Tested                     |
-| K1C         | Configured, **not tested** |
-| K1 SE       | Configured, **not tested** |
-| K1 Max      | Tested                     |
-| Ender 5 Max | Tested                     |
+- Ender 3 V3
+- K1
+- K1C
+- K1 SE
+- K1 Max
+- Ender 5 Max
 
 Any other printer is not supported, this includes the Ender 3 V3 KE, Ender 5 Max, CR10SE, Nebula Pad.
 

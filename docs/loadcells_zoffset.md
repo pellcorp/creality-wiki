@@ -2,13 +2,13 @@
 
 This page covers using load cells for auto z-offset alongside another supported probe
 
-!!! klipper-error "High risk of bed damage"
+!!! klipper-error "Risk of bed damage"
 
     The nozzle is pushed onto the bed with a force measured by the load cells, if the load cells are not calibrated properly or something else goes wrong you can damage your printer. Be ready to hit the e-stop button in your UI or Grumpyscreen, or the power button, and never leave your printer unattended while starting a print.
 
 ## Nozzle Wipe
 
-By default when installing or updating to use loadcells for z-offset, we enable a default [Nozzle Wipe Macro](nozzle_wipe.md) that will wipe on the back of
+By default, when installing or updating to use loadcells for z-offset, we enable a default [Nozzle Wipe Macro](nozzle_wipe.md) that will wipe on the back of
 the printer bed for printers with 4 load cells and a front or side mounted primary probe, or on the side for single load cell printers or where your
 primary probe is mounted on the back.   If you want to use your own nozzle wipe solution, you just need to remove the `[include loadcells_wipe.cfg]` and add your own `_SAF_NOZZLE_WIPE` implementation.
 
@@ -37,16 +37,14 @@ primary probe is mounted on the back.   If you want to use your own nozzle wipe 
 
 ## Supported Printers
 
-| Printer       | Status                     |
-|---------------|----------------------------|
-| Ender 3 V3    | Tested                     |
-| Ender 3 V3 KE | Tested                     |
-| Ender 3 V3 SE | Tested                     |
-| K1            | Tested                     |
-| K1C           | Tested                     |
-| K1 SE         | Configured, **not tested** |
-| K1 Max        | Tested                     |
-| Ender 5 Max   | Configured, **not tested** |
+- Ender 3 V3
+- Ender 3 V3 KE
+- Ender 3 V3 SE
+- K1
+- K1C
+- K1 SE
+- K1 Max
+- Ender 5 Max
 
 !!! note
 
