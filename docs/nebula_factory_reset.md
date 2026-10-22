@@ -1,6 +1,6 @@
 # Nebula Factory Reset
 
-A factory reset is **required** before you install Simple AF onto a retail Nebula Pad to run with an older Ender 3!
+A factory reset is **required** before you install Simple AF onto a retail Nebula Pad.
 
 The following method retains SSH access and Wi-Fi settings as long as you perform it **after** flashing the Simple AF base firmware!
 
@@ -17,4 +17,3 @@ The following method retains SSH access and Wi-Fi settings as long as you perfor
     It can take up to 5 minutes for a factory restart to finish, it is **vital** you do not power cycle your nebula pad before the stock screen appears. 
 
     Failing to follow this advice can lead to your nebula pad getting bricked and requiring you flashing the ingenic image to recover, which is a bit more annoying!
-
