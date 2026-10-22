@@ -39,7 +39,7 @@ primary probe is mounted on the back.   If you want to use your own nozzle wipe 
 
 - Ender 3 V3
 - Ender 3 V3 KE
-- Ender 3 V3 SE
+- Ender 3 V3 SE (with [Nebula Pad](nebula_pad.md) on K1 Series, RPI Series is coming)
 - K1
 - K1C
 - K1 SE
