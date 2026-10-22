@@ -6,6 +6,14 @@ Simple AF is best supported by RPi or OrangePi running a version of debian **11,
 
     Do not try and install Simple AF for RPi on Mainsail OS or onto an existing klipper environment which has been setup using kiuah
 
+## Pre-built Simple AF images
+
+A few projects ship a flashable image with Simple AF already on the card. Flash the image for **your** SBC, then follow that project's first-boot notes. Depending on the image, after login you may still need to run `~/pellcorp/installer.sh` (or their wrapper) to pick printer / probe / mount. See [Simple AF for RPi](rpi.md).
+
+| Project | Boards | Base OS |
+|---------|--------|---------|
+| [Fly-Bian Project](https://github.com/0dysseusRex/fly-bian) | Mellow Fly Lite 2.1; Mellow Fly Pi V3 | Armbian (Debian 13 / Trixie) |
+
 ## Raspberry Pi OS
 
 So far been tested to work on a pi 3, 4 and 5, it does not matter whether you use 32 or 64 bit OS.
