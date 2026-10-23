@@ -1,15 +1,15 @@
 # What is Simple AF?
 
-I originally started Simple AF because I was tired of stitching together random pieces from helper scripts and Kiuah every time I set up a printer. I wanted one command that handled everything end‑to‑end, so I could take a K1 from a factory reset to fully calibrated in under 20 minutes.
+Simple AF began as a way to avoid stitching together random pieces from helper scripts and Kiuah every time we set up a printer. We wanted one command that handled everything end‑to‑end, taking a K1 from a factory reset to fully calibrated in under 20 minutes.
 
-Simple AF is basically the “everything just works” Klipper setup I always wished Creality shipped. It installs a clean, readable config, sets up a custom Klipper stack, and brings full modern probe support (Cartographer, Beacon, Eddy, EddyNG, BLTouch, Microprobe, Klicky) under one simple installer. It also runs leaner than the stock environment, freeing up system resources so your printer feels snappier and more responsive.
+Simple AF aims to be the “everything just works” Klipper setup we wish Creality shipped. It installs a clean, readable config, sets up a custom Klipper stack, and brings full modern probe support (Cartographer, Beacon, Eddy, EddyNG, BLTouch, Microprobe, Klicky) under one simple installer. It also runs leaner than the stock environment, freeing up system resources so your printer feels snappier and more responsive.
 
 ## What is Klipper?
 
 It seems that many people conflate Klipper with the entire ecosystem around klipper including a Screen UI (GrumpyScreen or KlipperScreen for instance), 
 Moonraker, Fluidd / Mainsail and Klipper itself, which has Klippy the runtime component, but also the firmware that gets installed onto the MCUs themselves!
 
-Here is an image I asked ChatGPT to generate which gives a basic overview of the architecture of a typical Klipper setup
+Here is an image generated with ChatGPT that gives a basic overview of the architecture of a typical Klipper setup.
 
 ![image](assets/images/klipper_ecosystem.png)
 
@@ -21,13 +21,13 @@ Things to note about the Host Machine and MCU:
 
 !!! note
 
-    I specifically excluded the WebCam from this diagram, but if it were added it would be a webcam connected via USB to the host,
+    The WebCam is intentionally excluded from this diagram, but if added it would be a webcam connected via USB to the host,
     exposed via uStreamer or Crowsnest, and Nginx would serve the camera feeds.  We add webcam configuration to moonraker and then
     Fluidd or Mainsail will show the camera feed in the UI
 
 ## Philosophy
 
-I am a huge proponent of Open Source, but not just open sourcing the code, but making sure it's possible to build and use the thing that the
+We strongly support open source, including making sure it's possible to build and use the thing that the
 source is designed to provide.  Creality has half-heartedly open sourced some of their stuff, mostly related to klipper, but without proper
 build files and correct and up-to-date documentation releasing the source is not helpful.  A primary mission of Simple AF is everything is
 open, everything is configurable, everything is buildable, everything is documented.  The macros we ship have lots of places you can modify their
@@ -65,8 +65,7 @@ When needed we maintain forks of upstream projects with additional features that
     manually copy over is the virtual pins extra that we bundle.
 
 We forked GuppyScreen to provide the [GrumpyScreen UI](https://github.com/pellcorp/grumpyscreen) because the GuppyScreen project was abandoned, and we wanted to continue to polish and
-improve the core functionality of GuppyScreen without all the niche features that make it hard to maintain.  I called it GrumpyScreen
-as a nod to one of my heros Linus Torvalds who named Git after himself :-)   This is to say, that I am a grumpy bastard and so GrumpyScreen got its name.
+improve the core functionality of GuppyScreen without all the niche features that make it hard to maintain. The name GrumpyScreen is a nod to Linus Torvalds, who named Git after himself, and reflects the project's grumpy sense of humour.
 
 ## History
 
@@ -101,8 +100,8 @@ And now on a retail Nebula Pad with a limited set of older marlin creality print
 
 ### What about Simple AF for RPI?
 
-We also have a variant of Simple AF for users who have upgraded their Creality Printers to use a new mainboard with a SBC like a Rpi, I created
-this mostly at the behest of existing users who wanted the same basic ootb experience they had on their Creality stock hardware printers, so the
+We also have a variant of Simple AF for users who have upgraded their Creality Printers to use a new mainboard with a SBC like a Rpi. We created
+this at the request of existing users who wanted the same basic ootb experience they had on their Creality stock hardware printers, so the
 RPI variant uses the same macros and installs the same basic software with a few obvious differences including: 
 
 - Crowsnest instead of UStreamer
@@ -113,12 +112,10 @@ printer cfg, either one we maintain or you can provide your own, but then the in
 
 !!! note
 
-    I am well aware of kiauh and people are probably asking why not just use kiuah, my personal preference is I actually don't like kiuah at
-    all because I want to run a single command and get everything setup, I don't want to have to go searching through menus for each feature
-    I want to install, and I want the entire installation to be tightly integrated and tested together.
+    Kiuah is another option, but Simple AF is designed to set everything up with a single command. This avoids searching through menus for each feature
+    and keeps the installation tightly integrated and tested together.
 
-    But the main reason Simple AF for RPI exists is because existing users on stock hardware asked for it and I ended up migrating my RPI
-    based printers too because I find the experience much more streamlined and simple to use as a result.
+    Simple AF for RPI exists because users on stock hardware asked for it. The team also moved RPI-based printers to this setup and found the experience more streamlined and simple to use.
 
 ## What Probes are supported?
 

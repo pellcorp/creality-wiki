@@ -2,7 +2,7 @@
 
 !!! klipper-error "Brick Alert"
 
-    I WILL NOT BE HELD RESPONSIBLE IF YOU BRICK YOUR PRINTER - CREATING AND INSTALLING CUSTOM FIRMWARE IS RISKY
+    WE ARE NOT RESPONSIBLE IF YOU BRICK YOUR PRINTER - CREATING AND INSTALLING CUSTOM FIRMWARE IS RISKY
 
 
 ## Where do I get the firmware?
@@ -30,7 +30,7 @@ In addition to being pre-rooted we also added a few goodies to help:
 
 ## What if I can't get past the setup for Ender 3 V3 KE, Ender 5 Max, Nebula Pad and CR10SE?
 
-If there is interest I can create bootstrap images which can be used to install Simple AF bypassing the 
+If there is interest, we can create bootstrap images which can be used to install Simple AF bypassing the
 display service and disable klipper.  They are still pre-rooted like the normal images but directly start dropbear 
 and have a simple UI for wifi.
 

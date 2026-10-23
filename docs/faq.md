@@ -155,7 +155,7 @@ So you cannot modify or add new macros to Simple AF cfg files, they will be eras
 
 So create a new file in the config directory, if you create the file in the config directory, Simple AF will back it up for you to the pellcorp-overrides directory where it can be automatically added to your github and will survive a factory reset.
 
-So first step is create a new file in the config directory via fluidd or mainsail, I am going to call my file `example.cfg`
+So first step is create a new file in the config directory via Fluidd or Mainsail; in this example, we will call the file `example.cfg`.
 
 Then just add `[include example.cfg]` to `printer.cfg`, just put it at the end of all the existing includes, save and restart and your macro should appear in the list of macro buttons.
 
@@ -204,7 +204,7 @@ This change will survive updating Simple AF, but will not be retained for a rein
 
 
 Fluidd actually has a feature to switch from asking Klipper to restart itself to getting Moonraker to restart the Klipper service itself, this can
-be a useful change to make because in my experience restarting klipper results in less disconnections of eddy probes like Cartographer, Beacon or Eddy
+be a useful change to make because restarting Klipper appears to result in fewer disconnections of Eddy probes like Cartographer, Beacon or Eddy
 and takes about the same amount of time.
 
 ![image](assets/images/fluidd-save-restart-service-restart.png)

@@ -20,5 +20,4 @@ To find out what devices are available you can use the crowsnest tool like so:
 
 ## Rpi Camera
 
-I've not found a way to get the V1 cam working with rasbian 12, only with 11 and enable classic legacy cam support
-and then it just works.
+We have not found a way to get the V1 camera working with Raspbian 12. With Raspbian 11, enable classic legacy camera support and it works.

@@ -55,7 +55,7 @@ Then you can logout of your ssh session and power cycle your printer.   It is a 
     mount | grep 'sda'
     ```
 
-    For example for my USB key its not mounted to `/tmp/udisk/sda1`, instead its mounted to `/tmp/udisk/sda`:
+    For example, a USB key may not be mounted at `/tmp/udisk/sda1`; it may instead be mounted at `/tmp/udisk/sda`:
 
     ![image](assets/images/mount_usb_grep_sda.png)
 

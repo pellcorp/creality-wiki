@@ -6,11 +6,11 @@ RPi / SBC users: install SimpleAF via [SimpleAF for RPi](rpi.md). The rest of th
 
 !!! info "What about CrTouch?"
 
-    Yep you can use a CrTouch as an alternative to a BlTouch, however we have not personally used either of these with a K1 and so I can't currently provide detailed guidance on what config is required.
+    Yep, you can use a CrTouch as an alternative to a BlTouch. However, we have not tested either on a K1, so we can't currently provide detailed guidance on the required configuration.
 
 !!! info "What about 3d Touch?"
 
-    Its possible a 3d touch will work too, but depending on the capabilities of the 3d touch clone, you might need to make some post installation changes.   I also think 3dTouch might require slightly different wiring.
+    It's possible a 3d touch will work too, but depending on the capabilities of the clone, you might need to make some post-installation changes. 3dTouch may also require slightly different wiring.
 
     Please refer to more details, specifically note the fact that the `QUERY_PROBE` may not be supported, and the `probe_with_touch_mode` feature is not supported!
 
@@ -22,7 +22,7 @@ RPi / SBC users: install SimpleAF via [SimpleAF for RPi](rpi.md). The rest of th
 
 ### K1 Series
 
-This guide assumes you have a K1, K1C, K1SE or K1 Max and you are running stock creality firmware 1.3.3.5 or **higher** (The firmware 1.3.3.5 is much older than 1.3.3.46 for example), **or alternately** you can use [my prerooted firmware](prerooted_firmware.md).
+This guide assumes you have a K1, K1C, K1SE or K1 Max and you are running stock creality firmware 1.3.3.5 or **higher** (The firmware 1.3.3.5 is much older than 1.3.3.46 for example), **or alternately** you can use [our pre-rooted firmware](prerooted_firmware.md).
 
 ### Ender 3 V3 KE
 

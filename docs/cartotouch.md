@@ -19,7 +19,7 @@ RPi / SBC users: install SimpleAF via [SimpleAF for RPi](rpi.md). The rest of th
 
 ### K1 Series
 
-This guide assumes you have a K1, K1C, K1SE or K1 Max and you are running stock creality firmware 1.3.3.5 or **higher** (The firmware 1.3.3.5 is much older than 1.3.3.46 for example), **or alternately** you can use [my prerooted firmware](prerooted_firmware.md).
+This guide assumes you have a K1, K1C, K1SE or K1 Max and you are running stock creality firmware 1.3.3.5 or **higher** (The firmware 1.3.3.5 is much older than 1.3.3.46 for example), **or alternately** you can use [our pre-rooted firmware](prerooted_firmware.md).
 
 #### Ender 5 Max
 
@@ -121,7 +121,7 @@ You need root access, if you are not already root, then follow the [Enable Root 
     ZeroDotCmd (aka Zero on discord) has provided an excellent Cartographer installation video, you can find it <https://www.youtube.com/watch?v=GuxMITM9o4I>
 
     Please note however that the macros referenced in the video guide have been removed and you should instead follow the Calibration section of this wiki,
-    I do not have the time to maintain the old guided macros, but you can still use the QUICK_START macro to do the pid and input shaper tuning.
+    We no longer maintain the old guided macros, but you can still use the QUICK_START macro to do the PID and input shaper tuning.
 
 ### Downgrading from Cartographer?
 

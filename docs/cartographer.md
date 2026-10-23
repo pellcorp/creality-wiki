@@ -19,7 +19,7 @@ RPi / SBC users: install SimpleAF via [SimpleAF for RPi](rpi.md). The rest of th
 
 ### K1 Series
 
-This guide assumes you have a K1, K1C, K1SE or K1 Max and you are running stock creality firmware 1.3.3.5 or **higher** (The firmware 1.3.3.5 is much older than 1.3.3.46 for example), **or alternately** you can use [my prerooted firmware](prerooted_firmware.md).
+This guide assumes you have a K1, K1C, K1SE or K1 Max and you are running stock creality firmware 1.3.3.5 or **higher** (The firmware 1.3.3.5 is much older than 1.3.3.46 for example), **or alternately** you can use [our pre-rooted firmware](prerooted_firmware.md).
 
 #### Ender 5 Max
 
@@ -69,7 +69,7 @@ See [Simple AF for RPi](rpi.md)
     
     For Simple AF for RPi, you can use the standard cartographer guide <https://docs.cartographer3d.com/cartographer-probe/firmware/firmware-updating/via-katapult/usb-flash#usb-katapult-updating>
 
-    If you are using a Pi3 or less (so CB1, CB2, OPi 3, etc) to run klipper, I strongly recommend using the K1/Lite variants of the cartographer firmware, you can do that 
+    If you are using a Pi3 or less (so CB1, CB2, OPi 3, etc) to run klipper, we strongly recommend using the K1/Lite variants of the cartographer firmware. You can do that
     in the firmware script by enabling Advanced Mode and Enabling Creality K Series Firmware.
 
 ## Probe Installation

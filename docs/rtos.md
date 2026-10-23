@@ -24,7 +24,7 @@ Then you can run the tool to update the boot logo:
 
 It will prompt you to confirm by pasting in WRITE-RTOS when asked
 
-Here is what it looks like on my K1M dev box:
+Here is what it looks like on a K1M development box:
 
 ```
 root@K1Max-C04D /root [#] /usr/data/pellcorp/k1/zero/write-rtos.sh

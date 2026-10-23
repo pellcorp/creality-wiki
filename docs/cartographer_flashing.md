@@ -19,7 +19,7 @@ For Simple AF for RPi, you should use the standard cartographer guide <https://d
 
 !!! warning
 
-    You might corrupt the katapult boot loader trying to use a Linux VM or WSL to flash the carto, I strongly recommend a live USB over a VM or WSL.
+    You might corrupt the katapult boot loader trying to use a Linux VM or WSL to flash the carto, so we strongly recommend a live USB.
 
 You should create a live USB with **Ubuntu 26.04** Desktop, make sure the USB is at least 8GB in size!
 

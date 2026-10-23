@@ -43,7 +43,7 @@ have the printer connected to the Nebula Pad at this stage.
 
 It is super important to double check what chip is on your board, the C14 chips have a STM32 chip, the C13 boards have GD32.   We have just become aware creality has also released boards which say C14, but have GD32!
 
-Someone from Simple AF discord pointed me to this site which might help if you are having issues flashing the Ender 3 V3 SE:
+A contributor on the Simple AF Discord pointed us to this site, which might help if you are having issues flashing the Ender 3 V3 SE:
 
 <https://github.com/navaismo/Marlin_bugfix_2.1_E3V3SE/wiki/Flashing-your-Printer#troubleshooting>
 
@@ -131,9 +131,9 @@ git clone https://github.com/pellcorp/creality.git /usr/data/pellcorp
 If you decide you don't like Simple AF on your Nebula Pad, you should [factory reset](emergency_factory_reset.md) which will return you to the Wi-Fi bootstrap screen, where you will be prompted to calibrate touch again, if you are going
 back to stock firmware, don't worry about doing the touch calibration, just go ahead and SSH into the machine (Wi-Fi settings should have been retained)
 
-You can either grab the original firmware from creality or [my prerooted firmware](prerooted_firmware.md), put that onto a USB key, plug the usb key into the machine
+You can either grab the original firmware from Creality or [our pre-rooted firmware](prerooted_firmware.md), put that onto a USB key, and plug the USB key into the machine.
 
-Run this command if you downloaded my pre-rooted but otherwise stock firmware:
+Run this command if you downloaded the pre-rooted but otherwise stock firmware:
 
 ```
 /etc/ota_bin/local_ota_update.sh /tmp/udisk/sda1/NEBULA_ota_img_V7.1.1.0.29.img

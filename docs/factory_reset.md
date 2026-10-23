@@ -15,7 +15,7 @@ chmod +x /tmp/S58factoryreset
 
 !!! note
 
-    If you are using [my prerooted firmware](prerooted_firmware.md), then the factory reset is already available so you can run it like:
+    If you are using [our pre-rooted firmware](prerooted_firmware.md), then the factory reset is already available so you can run it like:
 
     ```
     /etc/init.d/S58factoryreset reset
