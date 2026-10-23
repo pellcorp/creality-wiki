@@ -55,7 +55,7 @@ that into Fluidd or Mainsail and execute it.
 
 It is **extremely important** you wait for the screen to show this message:
 
-![image](assets/images/restart.png)
+![image](assets/images/restart.jpg)
 
 !!! danger "Wait for Power Cycle your Printer screen"
 
