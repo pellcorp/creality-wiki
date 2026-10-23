@@ -128,7 +128,7 @@ It supports automatically configuring one of the following probes for one of the
 - BTT BIQO USB Eddy or DUO in USB mode
 - EddyNG on a BTT BIQU USB Eddy or DUO in USB mode 
 - Klicky Probe
-- Load Cells built into the bed (experimental)
+- Load Cells for Homing and leveling or Load Cells for Z-Offset with another supported probe
 
 We support a variety of mount options across many of those printers and lots of documentation for how to set them up.
 
@@ -136,7 +136,7 @@ We support a variety of mount options across many of those printers and lots of 
 
 Running the installer sets up:
 
-- Kalico (Klipper for btteddy for the moment, that will change soon)
+- Kalico
 - Moonraker
 - Nginx
 - Fluidd and Mainsail (with an [easy way to switch](faq.md#how-do-i-switch-default-ui-from-fluidd-to-mainsail-and-back) which is the default but both are available on different ports)
