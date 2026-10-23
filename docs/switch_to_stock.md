@@ -46,6 +46,23 @@ run the first run calibration **every** time you switch to stock!
 
 ## Switching back to Simple AF
 
+### Via Fluidd or Mainsail
+
+We recently introduced a change to make it possible to revert back to Simple AF via a hidden macro `_RETURN_TO_SIMPLEAF`, copy and paste
+that into Fluidd or Mainsail and execute it.
+
+![image](assets/images/revert_switch_to_stock.png)
+
+It is **extremely important** you wait for the screen to show this message:
+
+![image](assets/images/restart.png)
+
+!!! danger "Wait for Power Cycle your Printer screen"
+
+    If you power cycle before that screen appears you will likely have to factory reset and start again
+
+### Via SSH
+
 You can easily switch back with:
 
 ```
