@@ -105,7 +105,7 @@ this at the request of existing users who wanted the same basic ootb experience 
 RPI variant uses the same macros and installs the same basic software with a few obvious differences including: 
 
 - Crowsnest instead of UStreamer
-- Our Klipper and Kalico forks don't precompile c_helper.so or the Klipper mcu binaries 
+- Our Kalico fork for RPI Series does not precompile c_helper.so or the `klipper_mcu` binary 
 
 For RPI series the process to calibrate a printer is basically the same, the main difference is as part of the installer you choose a base
 printer cfg, either one we maintain or you can provide your own, but then the installation process is the same.
