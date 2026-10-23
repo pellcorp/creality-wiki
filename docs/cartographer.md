@@ -236,7 +236,6 @@ After the save config you have to do the touch calibration.
     Some people have reported more reliable touch calibration with the nozzle heater off, so you could try running `TURN_OFF_HEATERS` after 
     step 3, or else skip step 3 entirely, just make sure your nozzle is clean af! 
 
-
 !!! warning
 
     Observe your nozzle to make sure it touches on the bed.
