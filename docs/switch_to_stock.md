@@ -53,13 +53,19 @@ that into Fluidd or Mainsail and execute it.
 
 ![image](assets/images/revert_switch_to_stock.png)
 
+!!! tip
+
+    Returning to Simple AF will stop klipper, so it might look like the script has stopped, its not, its still running in the background,
+    wait until the screen appears.    If you are interested in why maybe its taking a long time look for a switch-to-stock log file in the
+    logs section of Fluidd or Mainsail!
+
 It is **extremely important** you wait for the screen to show this message:
 
 ![image](assets/images/restart.jpg)
 
 !!! danger "Wait for Power Cycle your Printer screen"
 
-    If you power cycle before that screen appears you will likely have to factory reset and start again
+    If you power cycle before that screen appears you will likely have to factory reset and start again!
 
 ### Via SSH
 
