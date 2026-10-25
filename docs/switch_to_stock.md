@@ -1,5 +1,15 @@
 # Switch to Stock
 
+!!! danger
+
+    Do not leave a probe mounted on the printer when you switch back to stock, this is especially important if you have 
+    a rear mounted probe as it is very likely to be damaged when the printer does its nozzle wipe at the back of the printer
+    
+    Switching to stock does **not** allow using the printer with Helper Script, this is an emergency temporary mode!
+
+    Switching to stock will leave moonraker, fluidd and mainsail accessible.   The stock screen is restored, but you must **not**
+    try to perform a firmware upgrade in stock mode as this will most likely remove SimpleAF!
+
 This feature allows you to quickly switch back to Stock Creality Klipper (aka Crapper) after installing Simple AF, and being able to
 quickly restore Simple AF without having to do a factory reset.  All that will be required after each switch is to power cycle
 at least once to get the MCUs updated with the correct firmware.   The use case for this feature is mostly about supporting
@@ -76,13 +86,3 @@ You can easily switch back with:
 ```
 
 And power cycling the printer once again
-
-!!! danger
-
-    Do not leave a probe mounted on the printer when you switch back to stock, this is especially important if you have 
-    a rear mounted probe as it is very likely to be damaged when the printer does its nozzle wipe at the back of the printer
-    
-    Switching to stock does **not** allow using the printer with Helper Script, this is an emergency temporary mode!
-
-    Switching to stock will leave moonraker, fluidd and mainsail accessible.   The stock screen is restored, but you must **not**
-    try to perform a firmware upgrade in stock mode as this will most likely remove SimpleAF!
