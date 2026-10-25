@@ -41,7 +41,7 @@ line on the bed so plastic on the tip doesn't throw off the load cell taps.
 - K1 Max
 - Ender 5 Max
 
-Any other printer is not supported, this includes the Ender 3 V3 KE, Ender 5 Max, CR10SE, Nebula Pad.
+Any other printer is not supported, this includes the Ender 3 V3 KE, CR10SE and Nebula Pad.
 
 The Ender 3 V3 keeps using its physical endstop for homing Z, the load cells are used for probing and bed meshing.
 

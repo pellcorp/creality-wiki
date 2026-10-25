@@ -211,13 +211,11 @@ and takes about the same amount of time.
 
 ### How do I integrate Knomi? { data-toc-label="Knomi" }
 
-
 [Knomi Support](custom_hooks.md#knomi-support)
 
 ## Add-ons
 
 ### How to install AFC on Simple AF? { data-toc-label="AFC" }
-
 
 !!! note
 
@@ -239,7 +237,6 @@ cd /root/AFC-Klipper-Add-On
     on the AFC repository but not released.
 
 ### How to install Happy Hare on Simple AF? { data-toc-label="Happy Hare" }
-
 
 !!! note    
 
@@ -264,8 +261,6 @@ systemctl restart klipper
 
 ### How do I install Klipper TMC Autotune { data-toc-label="TMC Autotune" }
 
-
-
 !!! note
 
     This only applies to K1 Series, for RPI and PiK1 you should just follow the normal installation procedure
@@ -285,16 +280,13 @@ wget --no-check-certificate -O - https://raw.githubusercontent.com/andrewmcgr/kl
 
 ### How do I enable moonraker timelapses? { data-toc-label="Timelapses" }
 
-
 [Enable Moonraker Timelapse](moonraker_timelapse.md)
 
 ### How do I setup remote access and AI failure detection? { data-toc-label="Remote Access" }
 
-
 [Octoeverywhere Companion](octoeverywhere_companion.md)
 
 ### Can I have more than one camera on Simple AF { data-toc-label="More Than One Camera" }
-
 
 For Simple AF for RPi yes thats fine and you can do that via crowsnest, but for K1 Series (which includes K1, K1M, K1SE, K1C, Ender 5 Max and Ender 3 V3 KE), that
 is not possible, for more information see [Additional Camera](additional_camera.md)
@@ -302,7 +294,6 @@ is not possible, for more information see [Additional Camera](additional_camera.
 ## System
 
 ### How do I change the hostname? { data-toc-label="Hostname" }
-
 
 You can update the /etc/hostname with the new hostname from ssh like this:
 
@@ -314,18 +305,15 @@ Next time you power cycle your printer, the hostname should be updated
 
 ### How can I configure the timezone { data-toc-label="Timezone" }
 
-
 The `/etc/init.d/S58factoryreset` has recently been updated not to delete the `/etc/localtime`, so you can configure it once and it should survive any number of factory resets, following the excellent guide here:
 
 <https://guilouz.github.io/Creality-Helper-Script-Wiki/firmwares/change-date-and-time/>
 
 ### How to enable Github backups for my configuration? { data-toc-label="GitHub Backups" }
 
-
 [Backup Config Overrides](config_overrides.md#git-backups-for-configuration-overrides)
 
 ### How do I cleanup all those backup printer config files? { data-toc-label="Cleanup Backup Files" }
-
 
 !!! note
 
@@ -340,7 +328,6 @@ Simple AF runs a cleanup every time the printer starts it does the following:
 You can also run this script manually via the hidden macro _CLEANUP_FILES
 
 ### Why can't I use force move? { data-toc-label="Force Move" }
-
     
 We disable FORCE_MOVE by default because it works on the stepper level so for multi-z users it would create havoc, and also force move does not work so well for moving x and y either, so its really not that useful.
 SET_KINEMATIC_POSITION is a much better choice as once you activate this you can use the normal movement buttons in fluidd and mainsail.
@@ -375,7 +362,6 @@ If you wish to restore access to force move set the `variable_disable_force_move
 See [MCU Fan](mcu_fan.md) for how to change the MCU fan from always on.
 
 ### Where can I find stock configuration files? { data-toc-label="Stock Config Files" }
-
 
 You can find the stock config files for all printers we support here:
 
