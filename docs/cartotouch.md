@@ -11,7 +11,7 @@ RPi / SBC users: install SimpleAF via [SimpleAF for RPi](rpi.md). The rest of th
 
 !!! warning
 
-    Cartotouch is legacy and is kept here for reference only. New installs should use [Cartographer](cartographer.md) instead.
+    Cartotouch is deprecated and is kept here for reference only. New installs should use [Cartographer](cartographer.md) instead.
 
 ## Firmware requirements
 
