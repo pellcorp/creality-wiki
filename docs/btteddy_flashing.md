@@ -30,7 +30,7 @@ Verify that the btt eddy has been mounted as a disk drive on the K1 by running `
 Once this has happened you will be able to copy the btteddy.uf2 file to the eddy via this command:
 
 ```
-wget --no-check-certificate https://raw.githubusercontent.com/pellcorp/klipper/master/fw/K1/btteddy.uf2 -O /tmp/btteddy.uf2
+wget --no-check-certificate https://raw.githubusercontent.com/pellcorp/kalico/aug2026/fw/K1/btteddy.uf2 -O /tmp/btteddy.uf2
 cp /tmp/btteddy.uf2 /tmp/udisk/sda1/
 ```
 
@@ -50,7 +50,7 @@ On windows or a Linux Desktop if you successfully connected the eddy in bootsel 
 
 ### Flashing btteddy.uf2 file
 
-Copy the [btteddy.uf2](https://raw.githubusercontent.com/pellcorp/klipper/master/fw/K1/btteddy.uf2) file across to the btt eddy drive, it should automatically flash the eddy and disconnect for you.
+Copy the [btteddy.uf2](https://raw.githubusercontent.com/pellcorp/kalico/aug2026/fw/K1/btteddy.uf2) file across to the btt eddy drive, it should automatically flash the eddy and disconnect for you.
 
 Once this is done go ahead and reconnect your eddy to your K1.
 
