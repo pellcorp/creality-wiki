@@ -9,9 +9,10 @@ This page covers installing SimpleAF using a BTT Eddy probe. New here? See [Gett
 
 RPi / SBC users: install SimpleAF via [SimpleAF for RPi](rpi.md). The rest of this page &mdash; probe firmware, mount options, and calibration &mdash; applies to your setup too.
 
-!!! info "What about CFS support?"
+!!! warning
 
-    The Creality CFS uses proprietary code blobs and likely will **never** be supported by Simple AF, there is a project underway to support Eddy with CFS that is **not affiliated** with Simple AF, but does use some stuff from Simple AF and some of our config and docs: <https://github.com/mikeinredding/K1Max-Klipper-Eddy>
+    BTTEddy software is legacy and is kept here for reference only. New installs should use [EddyNG](eddyng.md) instead, you can use EddyNG with loadcells
+    to avoid the sometimes finicky EddyNG Tap workflow, which makes it functionally identical to this now deprecated probe.
 
 ## Loadcells for z-offset required
 
