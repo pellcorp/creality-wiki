@@ -1,5 +1,10 @@
 # BTT Eddy
 
+!!! info
+
+    BTTEddy software is legacy and is kept here for reference only. New installs should use [EddyNG](eddyng.md) instead, you can use EddyNG with loadcells
+    to avoid the sometimes finicky EddyNG Tap workflow, which makes it functionally identical to this now deprecated probe.
+
 !!! klipper-error "Build Plate Damage Alert"
 
     Your build plate must be spring steel with a magnetic sheet attached to your underlying printer bed.  Do not try and use this probe with embedded magnets or 
@@ -8,11 +13,6 @@
 This page covers installing SimpleAF using a BTT Eddy probe. New here? See [Getting Started](getting-started.md).
 
 RPi / SBC users: install SimpleAF via [SimpleAF for RPi](rpi.md). The rest of this page &mdash; probe firmware, mount options, and calibration &mdash; applies to your setup too.
-
-!!! warning
-
-    BTTEddy software is legacy and is kept here for reference only. New installs should use [EddyNG](eddyng.md) instead, you can use EddyNG with loadcells
-    to avoid the sometimes finicky EddyNG Tap workflow, which makes it functionally identical to this now deprecated probe.
 
 ## Loadcells for z-offset required
 

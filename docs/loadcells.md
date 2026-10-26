@@ -26,7 +26,7 @@ line on the bed so plastic on the tip doesn't throw off the load cell taps.
 !!! danger "Brush collision risk"
 
      If you have a non K1C / K1SE build plate with a silicon brush for wiping on your print bed you should remove the Simple AF default wiper by removing the
-     `[include loadcells_wipe.cfg]` from your `printer.cfg`, and manually clean your nozzle or use a [third party nozzle wiper](#third-party-nozzle-wipes). 
+     `[include loadcells_wipe.cfg]` from your `printer.cfg`, and manually clean your nozzle or use a [third party nozzle wiper](nozzle_wipe.md#third-party-nozzle-wipes). 
 
 !!! note
 

@@ -163,6 +163,7 @@ nav:
       - beacon_flashing.md
       - beacon_troubleshooting.md
       - beacon_faq.md
+  - BttEddy: btteddy-redirect.md
   - EddyNG:
       - eddyng.md
       - eddyng_wiring.md
