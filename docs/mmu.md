@@ -3,6 +3,11 @@
 Simple AF is adding full MMU support for either AFC or HH, initially this support is documenting how
 to install AFC and HH and enabling MMU panels in grumpyscreen.
 
+!!! note
+
+    A community member is working on porting CFS to work with AFC, so far the results are looking promising, we will update the wiki
+    if we get to a point where we are comfortable release the code!
+
 ## Install AFC
 
 !!! note
