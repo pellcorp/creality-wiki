@@ -10,6 +10,8 @@ to install AFC and HH and enabling MMU panels in grumpyscreen.
 
 ## Install AFC
 
+For more information head to <https://github.com/AFCProject/AFC-Klipper-Add-On>
+
 !!! note
 
     For Simple AF for RPI follow the AFC official guide instead.
@@ -30,6 +32,8 @@ cd /root/AFC-Klipper-Add-On
     on the AFC repository but not released.
 
 ## Install Happy Hare
+
+For more information head to <https://github.com/moggieuk/Happy-Hare>
 
 !!! note
 
