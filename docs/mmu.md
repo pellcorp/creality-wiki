@@ -59,7 +59,7 @@ Restart Grumpyscreen after making this change
 
     You can restart Grumpyscreen via the Services menu in Fluidd or Mainsail, you can also Restart GUI from Grumpyscreen
 
-Then when you start Grumpyscreen there will be a MMU icon on the left panel, it will be grayed out until klipper starts
+When you restart Grumpyscreen there will be a MMU icon on the left panel, it will be grayed out until klipper starts
 and Grumpyscreen sees the required MMU configuration registered.
 
 ![image](assets/images/grumpyscreen_mmu.png)
