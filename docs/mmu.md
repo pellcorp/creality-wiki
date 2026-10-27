@@ -1,7 +1,8 @@
 # Multimaterial Support
 
-Simple AF is adding full MMU support for either AFC or HH, initially this support is documenting how
-to install AFC and HH and enabling MMU panels in grumpyscreen.
+Simple AF is adding full MMU support for either [AFC](https://github.com/moggieuk/Happy-Hare) or [Happy Hare](https://github.com/moggieuk/Happy-Hare), initially this support is documenting how
+to install AFC and Happy Hare and enable MMU panels in grumpyscreen, in the future we will be adding custom hooks for filament cutters and the like to make integrating
+a MMU much easier.
 
 !!! note
 
