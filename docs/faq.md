@@ -221,7 +221,7 @@ and takes about the same amount of time.
 
 ### How to install Happy Hare on Simple AF? { data-toc-label="Happy Hare" }
 
-[Install AFC](mmu.md#install-happy-hare)
+[Install Happy Hare](mmu.md#install-happy-hare)
 
 ### How do I install Klipper TMC Autotune { data-toc-label="TMC Autotune" }
 
