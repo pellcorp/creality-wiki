@@ -1,9 +1,9 @@
 # Multimaterial Support
 
-You can install Happy Hare or AFC to support.  Grumpyscreen has MMU panels which support Happy Hare and AFC.
+Simple AF is adding full MMU support for either AFC or HH, initially this support is documenting how
+to install AFC and HH and enabling MMU panels in grumpyscreen.
 
-
-## Install AFC { data-toc-label="AFC" }
+## Install AFC
 
 !!! note
 
@@ -24,7 +24,7 @@ cd /root/AFC-Klipper-Add-On
     The above approach will hopefully be greatly simplified soon as a few fixes have been made to the Creality OS support
     on the AFC repository but not released.
 
-### Install Happy Hare { data-toc-label="Happy Hare" }
+## Install Happy Hare
 
 !!! note
 
@@ -46,3 +46,21 @@ cd /usr/data/Happy-Hare
 systemctl restart moonraker
 systemctl restart klipper
 ```
+
+## Enable MMU in Grumpyscreen
+
+To access the MMU panel in grumpyscreen you must modify the grumpyscreen.ini to enable your chosen backend:
+
+![image](assets/images/grumpyscreen_ini_mmu.png)
+
+Restart Grumpyscreen after making this change
+
+!!! tip
+
+    You can restart Grumpyscreen via the Services menu in Fluidd or Mainsail, you can also Restart GUI from Grumpyscreen
+
+Then when you start Grumpyscreen there will be a MMU icon on the left panel, it will be grayed out until klipper starts
+and Grumpyscreen sees the required MMU configuration registered.
+
+![image](assets/images/grumpyscreen_mmu.png)
+
