@@ -48,11 +48,20 @@ Please note that you will need to change the screen orientation to horizontal, h
 
 ### CR10SE
 
+!!! tip
+
+    You can specify `--mount Default` for the installer command if the cr-touch is mounted in the same location as stock.
+
 This guide assumes you have a stock CR10SE with Nebula Pad with Root enabled, when you get to installation below, you should specify the `--mount Default` to install
 Simple AF on the CR10SE for Cr-Touch.
 
 Please note that you will need to change the screen orientation to horizontal, here is a model for that:
 <https://www.printables.com/model/706657-creality-ender-3-v3-e3v3-se-ke-and-cr-10-se-portra>
+
+!!! danger
+
+    The OrcaSlicer slicer settings for the CR-10 SE are wrong, you must change them before using Simple AF, failing to do so can lead to bed or nozzle damage. 
+    Refer to [Slicer Settings](slicer_settings.md)
 
 ### Ender 5 Max
 
