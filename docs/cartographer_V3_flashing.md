@@ -1,5 +1,7 @@
 # Cartographer V3 Flashing
 
+Want to flash your [cartographer directly on the printer](cartographer_flashing.md)?
+
 !!! klipper-error "Ubuntu 25.04 and 25.10 are not supported"
 
     The interim 25.04 and 25.10 releases are known not to be supported because the deadsnakes PPA does not provide python packages for these
