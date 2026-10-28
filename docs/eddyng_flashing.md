@@ -23,7 +23,7 @@ Bus 001 Device 101: ID 2e8a:0003  USB2.0 Hub
 
 !!! note
 
-    I've noticed at least one of my Eddy probes does not show up as USB2.0 Hub but just as:
+    We have noticed at least one Eddy probe tested does not show up as USB2.0 Hub but just as:
 
         Bus 001 Device 006: ID 2e8a:0003
 
@@ -86,7 +86,7 @@ Bus 001 Device 101: ID 2e8a:0003  USB2.0 Hub
 
 !!! note
 
-    I've noticed at least one of my Eddy probes does not show up as USB2.0 Hub but just as:
+    We have noticed at least one Eddy probe tested does not show up as USB2.0 Hub but just as:
 
         Bus 001 Device 006: ID 2e8a:0003
 
