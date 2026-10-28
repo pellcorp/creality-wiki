@@ -5,11 +5,6 @@ toc_section_depths:
 
 # Load Cells
 
-!!! danger "Ender 5 Max Slicer Settings"
-
-    The OrcaSlicer slicer settings for the Ender 5 Max are wrong, you must change them before using Simple AF, failing to do so can lead to bed or nozzle damage. 
-    Refer to [Slicer Settings](slicer_settings.md)
-
 This page covers installing SimpleAF using the strain gauges (load cells) already built into the bed of your printer as the probe. There is no extra probe hardware to buy or mount, the nozzle taps the bed and the bed load cells detect the contact.
 
 Looking for Load Cells for Z-Offset? See [Load Cells for Z-Offset](loadcells_zoffset.md).
