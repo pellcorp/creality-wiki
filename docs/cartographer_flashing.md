@@ -90,6 +90,11 @@ Enter `y` at the `Run Klipper flash_can.py now with the selected firmware? [Y/n]
 
 Enter `y` at the `Did you read the above information? [Y/n]` prompt and press Enter again!
 
+!!! warning
+
+    The flashing tool says DFU mode can be performed on this host, for the moment that is not the case and you will 
+    need a live usb method for [DFU mode](legacy_cartographer_flashing.md#flashing-via-dfu-mode)!
+
 At this point its going to flash your cartographer
 
 ![image](assets/images/cartographer/flashing.png)
