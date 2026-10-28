@@ -31,6 +31,10 @@ This guide assumes you have a K1, K1C, K1SE or K1 Max and you are running stock 
 
 ### Ender 3 V3 KE
 
+!!! tip
+
+    You can specify `--mount Default` for the installer command if the cr-touch is mounted in the same location as stock.
+
 This guide assumes you have a stock Ender 3 V3 KE with Nebula Pad with Root enabled, when you get to installation below, you should specify the `--mount Default` to install
 Simple AF on the KE for Cr-Touch.
 
