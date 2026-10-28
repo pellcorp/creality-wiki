@@ -43,7 +43,7 @@ Please note that you will need to change the screen orientation to horizontal, h
     The OrcaSlicer slicer settings for the Ender 3 V3 KE are wrong, you must change them before using Simple AF, failing to do so can lead to bed or nozzle damage. 
     Refer to [Slicer Settings](slicer_settings.md)
 
-### Nebula Pad
+### Ender 3 V3 SE (with Nebula Pad)
 
 This probe is currently not supported on Nebula Pad, but support can be added if there is interest.
 

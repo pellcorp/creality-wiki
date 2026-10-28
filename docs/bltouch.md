@@ -58,7 +58,11 @@ Please note that you will need to change the screen orientation to horizontal, h
 
 This probe is currently not supported on Ender 5 Max
 
-### Nebula Pad
+### Ender 3 V3 SE (with Nebula Pad)
+
+!!! tip
+
+    You can specify `--mount Default` for the installer command if the cr-touch is mounted in the same location as stock.
 
 You can install Simple AF on a Nebula pad and use with a limited range of Ender 3 printers, refer to [Nebula Pad](nebula_pad.md) for details
 of getting the required base firmware onto the nebula pad, as well as getting the right printer firmware flashed to your Ender 3.
