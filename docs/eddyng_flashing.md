@@ -11,6 +11,63 @@
     It is possible this method will not work for the BTT Duo, especially if it is currently flashed for Can from the factory, 
     and you may need to resort to the legacy approach documented [here](legacy_eddyng_flashing.md)
 
+## On Printer after installation
+
+So it is possible to install Simple AF and flash your eddy afterwards, and this is what I do, so the instructions are really simple.
+
+You need to hold down the boot button and re-connect your btt eddy to your printer, you will know this worked if you type `lsusb` and see:
+
+```
+Bus 001 Device 101: ID 2e8a:0003  USB2.0 Hub
+```
+
+!!! note
+
+    I've noticed at least one of my Eddy probes does not show up as USB2.0 Hub but just as:
+
+        Bus 001 Device 006: ID 2e8a:0003
+
+    So just check to see if the `/tmp/udisk/sda1` mount exists instead is probably more reliable
+
+Verify that the btt eddy has been mounted as a disk drive on the K1 by running `ls /tmp/udisk/sda1`, you should see:
+
+![image](assets/images/eddyng/mount.png)
+
+Once this has happened you will be able to copy the btteddy.uf2 file to the eddy via this command:
+
+```
+cp /usr/data/klipper/fw/K1/btteddy.uf2 /tmp/udisk/sda1/
+```
+
+If you check `lsusb` again, it should have switched back to:
+
+```
+Bus 001 Device 102: ID 1d50:614e OpenMoko, Inc. USB2.0 Hub
+```
+
+You might need to fix up the serial at this stage which you can do easily:
+
+You will then exit back out to the command prompt, at which time you should run the following:
+
+```
+/usr/data/pellcorp/installer.sh --fix-serial
+```
+
+![image](assets/images/eddyng/fix_serial.png)
+
+If you see `INFO: Restarting Kalico` you can go back to Fluidd or Mainsail and wait for Kalico to restart,
+if however it says: `Serial value is unchanged` you will need to force Kalico to restart yourself with:
+
+```
+/etc/init.d/S55klipper_service restart
+```
+
+!!! note
+
+    Running the restart command will produce no output, but if you check Fluidd / Mainsail it should show
+    Kalico is restarting.   Also please note even though it says `S55klipper_service` it is restarting Kalico!
+
+
 ## On Printer
 
 You can flash the eddy on your printer (K1, K1C, K1SE, K1M, Ender 3 V3 KE, etc) but you need to be able to disconnect and reconnect it for this to work, there is currently no way to get the eddy into boot mode any other way!
@@ -27,9 +84,17 @@ This means it is not in boot mode and you cannot flash any firmware to it.  You 
 Bus 001 Device 101: ID 2e8a:0003  USB2.0 Hub
 ```
 
-Verify that the btt eddy has been mounted as a disk drive on the K1 by running `mount`, you should see a `/tmp/udisk/sda1` entry:
+!!! note
 
-![image](assets/images/btteddy_mount.png)
+    I've noticed at least one of my Eddy probes does not show up as USB2.0 Hub but just as:
+
+        Bus 001 Device 006: ID 2e8a:0003
+
+    So just check to see if the `/tmp/udisk/sda1` mount exists instead is probably more reliable
+
+Verify that the btt eddy has been mounted as a disk drive on the K1 by running `ls /tmp/udisk/sda1`, you should see:
+
+![image](assets/images/eddyng/mount.png)
 
 Once this has happened you will be able to copy the btteddy.uf2 file to the eddy via this command:
 

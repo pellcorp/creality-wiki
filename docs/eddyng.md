@@ -57,15 +57,7 @@ See [Simple AF for RPi](rpi.md)
 
 ## BTT Eddy Firmware
 
-!!! warning
-
-    It is assumed that you have flashed your eddy with the firmware from <https://github.com/pellcorp/kalico/blob/aug2026/fw/K1/btteddy.uf2> **before** starting the installation!!!
-    
-    For K1 Series Simple AF [there is a guide](btteddy_flashing.md)
-
-    For Simple AF for RPi, you can follow this guide <https://github.com/bigtreetech/Eddy?tab=readme-ov-file#compiling-firmware>.   But make sure
-    you are not trying to use any fork of Kalico other than pellcorp/kalico-rpi!  You can also skip this compilation step and just copy 
-    the `~/klipper/fw/k1/btteddy.uf2` file to the Eddy after putting it into boot mode.
+To use Simple AF with EddyNG, you will need to flash your eddy with new firmware, please check the [eddny flashing guide](eddyng_flashing.md)
 
 ## Probe Installation
 
