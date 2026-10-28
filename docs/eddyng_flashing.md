@@ -47,8 +47,6 @@ Bus 001 Device 102: ID 1d50:614e OpenMoko, Inc. USB2.0 Hub
 
 You might need to fix up the serial at this stage which you can do easily:
 
-You will then exit back out to the command prompt, at which time you should run the following:
-
 ```
 /usr/data/pellcorp/installer.sh --fix-serial
 ```
