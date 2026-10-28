@@ -2,13 +2,17 @@
 
 We have introduced support for flashing the Cartographer V3 and V4 via the official cartographer3d.com tool.
 
+!!! danger
+
+    There is always the risk of soft bricking your cartographer with the following method, but never fear you can use [DFU mode](legacy_cartographer_flashing.md#flashing-via-dfu-mode) 
+
 !!! note
 
     The [upstream doc](https://docs.cartographer3d.com/cartographer-probe/firmware/updating-firmware) mentions the need for a PI and to have cloned cartographer_firmware and katapult, this is **not** required
     for Simple AF as the installer clones those repos for you and we will be flashing directly on the printer.
 
-Flashing the cartographer to have the K1 / Lite firmware requires that you have setup and installed Simple AF first, you cannot
-flash the cartographer on the printer before Simple AF is installed.
+Flashing the cartographer to have the K1 / Lite firmware **requires that you have installed Simple AF first**, you **must not**
+flash the cartographer on the printer before Simple AF is installed!!!
 
 !!! danger
 
