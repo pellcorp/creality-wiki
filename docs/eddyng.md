@@ -33,11 +33,6 @@ This probe is currently not supported on Ender 5 Max
 ### Ender 3 V3 KE
 
 This guide assumes you have a stock Ender 3 V3 KE with Nebula Pad with Root enabled, when you get to installation below, you should specify the `--mount Default` to install
-Simple AF on the KE for Eddy-NG.
-
-### Ender 3 V3 KE
-
-This guide assumes you have a stock Ender 3 V3 KE with Nebula Pad with Root enabled, when you get to installation below, you should specify the `--mount Default` to install
 Simple AF on the KE for Cr-Touch.
 
 Please note that you will need to change the screen orientation to horizontal, here is a model for that:
