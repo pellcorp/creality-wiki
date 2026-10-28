@@ -1,3 +1,8 @@
+---
+toc_section_depths:
+  firmware-requirements: 3
+---
+
 # Load Cells
 
 !!! danger "Ender 5 Max Slicer Settings"

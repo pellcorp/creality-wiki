@@ -1,3 +1,8 @@
+---
+toc_section_depths:
+  firmware-requirements: 3
+---
+
 # Eddy NG
 
 This page covers installing SimpleAF using a BTT Eddy probe with eddy-ng firmware. New here? See [Getting Started](getting-started.md).

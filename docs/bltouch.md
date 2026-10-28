@@ -1,3 +1,8 @@
+---
+toc_section_depths:
+  firmware-requirements: 3
+---
+
 # BL Touch, CR-Touch and 3D Touch
 
 This page covers installing SimpleAF using a BLTouch / CR-Touch / 3D Touch probe. New here? See [Getting Started](getting-started.md).

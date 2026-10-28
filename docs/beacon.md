@@ -1,3 +1,8 @@
+---
+toc_section_depths:
+  firmware-requirements: 3
+---
+
 # Beacon
 
 This page covers installing SimpleAF using a Beacon probe. New here? See [Getting Started](getting-started.md).

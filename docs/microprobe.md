@@ -1,3 +1,8 @@
+---
+toc_section_depths:
+  firmware-requirements: 3
+---
+
 # Microprobe
 
 This page covers installing SimpleAF using a BTT Microprobe. New here? See [Getting Started](getting-started.md).

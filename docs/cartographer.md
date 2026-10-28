@@ -1,3 +1,8 @@
+---
+toc_section_depths:
+  firmware-requirements: 3
+---
+
 # Cartographer 
 
 This page covers installing SimpleAF using a Cartographer probe. New here? See [Getting Started](getting-started.md).
@@ -21,7 +26,7 @@ RPi / SBC users: install SimpleAF via [SimpleAF for RPi](rpi.md). The rest of th
 
 This guide assumes you have a K1, K1C, K1SE or K1 Max and you are running stock creality firmware 1.3.3.5 or **higher** (The firmware 1.3.3.5 is much older than 1.3.3.46 for example), **or alternately** you can use [our pre-rooted firmware](prerooted_firmware.md).
 
-#### Ender 5 Max
+### Ender 5 Max
 
 This guide assumes you are running stock Creality firmware 1.2.0.10 or **higher** on your Ender 5 Max.
 
@@ -34,7 +39,7 @@ Please note that you will need to change the screen orientation to horizontal, h
     The OrcaSlicer slicer settings for the Ender 5 Max are wrong, you must change them before using Simple AF, failing to do so can lead to bed or nozzle damage. 
     Refer to [Slicer Settings](slicer_settings.md)
 
-#### Ender 3 V3 KE
+### Ender 3 V3 KE
 
 This guide assumes you have a stock Ender 3 V3 KE with Nebula Pad with Root enabled, when you get to installation below, you should specify the `--mount Default` to install
 Simple AF on the KE for Cartographer.
