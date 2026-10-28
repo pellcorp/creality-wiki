@@ -70,22 +70,8 @@ See [Simple AF for RPi](rpi.md)
 
 ## Cartographer Firmware
 
-!!! warning
-
-    For K1 Series (which includes K1, K1C, K1SE, K1 Max, Ender 3 V3 KE and Ender 5 Max) Simple AF you **must** flash your **V3 Probe** with `CARTOGRAPHER K1 5.0.0`:
-
-    ![image](assets/images/cartographer_k1_500.png)
-
-    For a **V4 Probe** `CARTOGRAPHER V4 6.0.0 Lite`:
-   
-    ![image](assets/images/cartographer_v4_600.png)
-
-    For K1 Series (which includes K1, K1C, K1SE, K1 Max, Ender 3 V3 KE and Ender 5 Max) Simple AF there is the [cartographer flashing guide](cartographer_flashing.md).
-    
-    For Simple AF for RPi, you can use the standard cartographer guide <https://docs.cartographer3d.com/cartographer-probe/firmware/firmware-updating/via-katapult/usb-flash#usb-katapult-updating>
-
-    If you are using a Pi3 or less (so CB1, CB2, OPi 3, etc) to run klipper, we strongly recommend using the K1/Lite variants of the cartographer firmware. You can do that
-    in the firmware script by enabling Advanced Mode and Enabling Creality K Series Firmware.
+After installing Simple AF on a K1/K1C/K1SE/K1Max, Ender 3 V3 or Ender 5 Max with stock hardware (so not RPI series), you will need to ensure you are running
+the lite variant of the firmware, which you can do on the printer via the [cartographer flashing guide](cartographer_flashing.md)
 
 ## Probe Installation
 
