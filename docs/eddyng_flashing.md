@@ -29,7 +29,7 @@ Bus 001 Device 101: ID 2e8a:0003  USB2.0 Hub
 
     So just check to see if the `/tmp/udisk/sda1` mount exists instead is probably more reliable
 
-Verify that the btt eddy has been mounted as a disk drive on the K1 by running `ls /tmp/udisk/sda1`, you should see:
+Verify that the btt eddy has been mounted as a disk drive on the printer by running `ls /tmp/udisk/sda1`, you should see:
 
 ![image](assets/images/eddyng/mount.png)
 
@@ -70,7 +70,7 @@ if however it says: `Serial value is unchanged` you will need to force Kalico to
 
 You can flash the eddy on your printer (K1, K1C, K1SE, K1M, Ender 3 V3 KE, etc) but you need to be able to disconnect and reconnect it for this to work, there is currently no way to get the eddy into boot mode any other way!
 
-So by default when connecting the btt eddy to the K1, `lsusb` will report:
+So by default when connecting the btt eddy to the printer, `lsusb` will report:
 
 ```
 Bus 001 Device 099: ID 1d50:614e OpenMoko, Inc. USB2.0 Hub
@@ -90,7 +90,7 @@ Bus 001 Device 101: ID 2e8a:0003  USB2.0 Hub
 
     So just check to see if the `/tmp/udisk/sda1` mount exists instead is probably more reliable
 
-Verify that the btt eddy has been mounted as a disk drive on the K1 by running `ls /tmp/udisk/sda1`, you should see:
+Verify that the btt eddy has been mounted as a disk drive on the printer by running `ls /tmp/udisk/sda1`, you should see:
 
 ![image](assets/images/eddyng/mount.png)
 
@@ -119,10 +119,10 @@ On windows or a Linux Desktop if you successfully connected the eddy in bootsel 
 
 Copy the [btteddy.uf2](https://raw.githubusercontent.com/pellcorp/kalico/aug2026/fw/K1/btteddy.uf2) file across to the btt eddy drive, it should automatically flash the eddy and disconnect for you.
 
-Once this is done go ahead and reconnect your eddy to your K1.
+Once this is done go ahead and reconnect your eddy to your printer.
 
 ## How do I know it flashed correctly?
 
-Unfortunately we know of no way to test this except by plugging it back into the K1, restarting klipper and verifying via the System tab, a correctly flashed eddy will have
+Unfortunately we know of no way to test this except by plugging it back into the printer, restarting klipper and verifying via the System tab, a correctly flashed eddy will have
 
 ![image](assets/images/eddyng_mcu_version.png)
