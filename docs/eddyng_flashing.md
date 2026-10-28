@@ -13,7 +13,7 @@
 
 ## On Printer after installation
 
-So it is possible to install Simple AF and flash your eddy afterwards, and this is what I do, so the instructions are really simple.
+So it is possible to install Simple AF and flash your eddy afterward.
 
 You need to hold down the boot button and re-connect your btt eddy to your printer, you will know this worked if you type `lsusb` and see:
 
