@@ -1,6 +1,8 @@
 # Legacy Cartographer Flashing
 
-Want to flash your [cartographer directly on the printer](cartographer_flashing.md)?
+!!! note "Legacy"
+
+    This method of flashing your cartographer is now deprecated you should be flashing your [cartographer directly on the printer](cartographer_flashing.md)?
 
 !!! klipper-error "Ubuntu 25.04 and 25.10 are not supported"
 
