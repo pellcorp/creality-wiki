@@ -1,13 +1,13 @@
 # Cartographer 
 
+This page covers installing SimpleAF using a Cartographer probe. New here? See [Getting Started](getting-started.md).
+
+RPi / SBC users: install SimpleAF via [SimpleAF for RPi](rpi.md). The rest of this page &mdash; probe firmware, mount options, and calibration &mdash; applies to your setup too.
+
 !!! klipper-error "Build Plate Damage Alert"
 
     Your build plate must be spring steel with a magnetic sheet attached to your underlying printer bed.  Do not try and use this probe with embedded magnets or 
     some crappy magnetic flex plate that is not spring steel, your nozzle will dig a big hole in it.
-
-This page covers installing SimpleAF using a Cartographer probe. New here? See [Getting Started](getting-started.md).
-
-RPi / SBC users: install SimpleAF via [SimpleAF for RPi](rpi.md). The rest of this page &mdash; probe firmware, mount options, and calibration &mdash; applies to your setup too.
 
 !!! info
 
@@ -28,6 +28,11 @@ This guide assumes you are running stock Creality firmware 1.2.0.10 or **higher*
 The stock firmware comes pre-rooted, with the default root password being `Creality@2024_Wh_464`
 
 Please note that you will need to change the screen orientation to horizontal, here is a model for that <https://www.printables.com/model/1246910-ender-5-max-screen-bracket>
+
+!!! danger
+
+    The OrcaSlicer slicer settings for the Ender 5 Max are wrong, you must change them before using Simple AF, failing to do so can lead to bed or nozzle damage. 
+    Refer to [Slicer Settings](slicer_settings.md)
 
 #### Ender 3 V3 KE
 

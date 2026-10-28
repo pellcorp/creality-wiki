@@ -1,5 +1,9 @@
 # Eddy NG
 
+This page covers installing SimpleAF using a BTT Eddy probe with eddy-ng firmware. New here? See [Getting Started](getting-started.md).
+
+RPi / SBC users: install SimpleAF via [SimpleAF for RPi](rpi.md). The rest of this page &mdash; probe firmware, mount options, and calibration &mdash; applies to your setup too.
+
 !!! info
 
     Already running BTT Eddy from a previous SimpleAF install? See [BTT Eddy](btteddy.md). BTT Eddy is deprecated &mdash; new installs should use EddyNG.
@@ -8,10 +12,6 @@
 
     Your build plate must be spring steel with a magnetic sheet attached to your underlying printer bed.  Do not try and use this probe with embedded magnets or 
     some crappy magnetic flex plate that is not spring steel, your nozzle will dig a big hole in it.
-
-This page covers installing SimpleAF using a BTT Eddy probe with eddy-ng firmware. New here? See [Getting Started](getting-started.md).
-
-RPi / SBC users: install SimpleAF via [SimpleAF for RPi](rpi.md). The rest of this page &mdash; probe firmware, mount options, and calibration &mdash; applies to your setup too.
 
 ## Firmware requirements
 

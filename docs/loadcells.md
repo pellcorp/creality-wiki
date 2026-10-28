@@ -1,14 +1,19 @@
 # Load Cells
 
+!!! danger "Ender 5 Max Slicer Settings"
+
+    The OrcaSlicer slicer settings for the Ender 5 Max are wrong, you must change them before using Simple AF, failing to do so can lead to bed or nozzle damage. 
+    Refer to [Slicer Settings](slicer_settings.md)
+
 This page covers installing SimpleAF using the strain gauges (load cells) already built into the bed of your printer as the probe. There is no extra probe hardware to buy or mount, the nozzle taps the bed and the bed load cells detect the contact.
 
 Looking for Load Cells for Z-Offset? See [Load Cells for Z-Offset](loadcells_zoffset.md).
 
+New here? See [Getting Started](getting-started.md).
+
 !!! klipper-error "Risk of bed damage"
 
     The nozzle is pushed onto the bed with a force measured by the load cells, if the load cells are not calibrated properly or something else goes wrong you can damage your printer. Be ready to hit the e-stop button in your UI or Grumpyscreen, or the power button, and never leave your printer unattended while homing, probing or bed meshing.
-
-New here? See [Getting Started](getting-started.md).
 
 ## Nozzle Wipe
 
@@ -35,18 +40,40 @@ line on the bed so plastic on the tip doesn't throw off the load cell taps.
 
     If you already are using your own nozzle wipe solution, the installer will not add the default nozzle wipe so you can continue to use your own!
 
-## Supported Printers
+## Firmware requirements
 
-- Ender 3 V3
-- K1
-- K1C
-- K1 SE
-- K1 Max
-- Ender 5 Max
+--8<-- "snippets/probe/limits_on_x_and_y_microsteps_32.md"
 
-Any other printer is not supported, this includes the Ender 3 V3 KE, CR10SE and Nebula Pad.
+### K1 Series
+
+This guide assumes you have a K1, K1C, K1SE or K1 Max and you are running stock creality firmware 1.3.3.5 or **higher** (The firmware 1.3.3.5 is much older than 1.3.3.46 for example), **or alternately** you can use [our pre-rooted firmware](prerooted_firmware.md).
+
+### Ender 3 V3
+
+This guide assumes you have ab Ender 3 V3 that is running stock firmware that can be rooted.
 
 The Ender 3 V3 keeps using its physical endstop for homing Z, the load cells are used for probing and bed meshing.
+
+!!! note
+
+    Ender 3 V3 Plus is currently not supported, if you have a Plus and want to use Simple AF, reach out we can likely add support very quickly
+
+### Ender 5 Max
+
+This guide assumes you are running stock Creality firmware 1.2.0.10 or **higher** on your Ender 5 Max.
+
+The stock firmware comes pre-rooted, with the default root password being `Creality@2024_Wh_464`
+
+Please note that you will need to change the screen orientation to horizontal, here is a model for that <https://www.printables.com/model/1246910-ender-5-max-screen-bracket>
+
+!!! danger
+
+    The OrcaSlicer slicer settings for the Ender 5 Max are wrong, you must change them before using Simple AF, failing to do so can lead to bed or nozzle damage. 
+    Refer to [Slicer Settings](slicer_settings.md)
+
+### Ender 3 V3 KE / SE
+
+Using load cells for homing and leveling is not supported on Ender 3 V3 KE or SE
 
 !!! note
 
