@@ -39,11 +39,15 @@ This probe is currently not supported on Ender 5 Max
 ### Ender 3 V3 KE
 
 This guide assumes you have a stock Ender 3 V3 KE with Nebula Pad with Root enabled, when you get to installation below, you should specify the `--mount Default` to install
-Simple AF on the KE for BTT Eddy.
+Simple AF on the KE for Cr-Touch.
 
-Please note that you will need to change the screen orientation to horizontal, here is a model for that <https://www.printables.com/model/727362-ender-3-v3-ke-screen-holder-landscape-for-guppyscr>,
-but please do **not** follow the installation instructions on that page, just print the model and remount your screen only!
-An alternative model which honestly seems a bit cleaner: <https://www.printables.com/model/706657-creality-ender-3-v3-e3v3-se-ke-and-cr-10-se-portra>
+Please note that you will need to change the screen orientation to horizontal, here is a model for that:
+<https://www.printables.com/model/706657-creality-ender-3-v3-e3v3-se-ke-and-cr-10-se-portra>
+
+!!! danger
+
+    The OrcaSlicer slicer settings for the Ender 3 V3 KE are wrong, you must change them before using Simple AF, failing to do so can lead to bed or nozzle damage. 
+    Refer to [Slicer Settings](slicer_settings.md)
 
 ### CR10SE
 

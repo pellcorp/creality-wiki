@@ -44,13 +44,7 @@ Please note that you will need to change the screen orientation to horizontal, h
 
 ### Ender 3 V3 KE
 
-This guide assumes you have a stock Ender 3 V3 KE with Nebula Pad with Root enabled, when you get to installation below, you should specify the `--mount Default` to install
-Simple AF on the KE for Beacon.
-
-Please note that you will need to change the screen orientation to horizontal, here is a model for that <https://www.printables.com/model/727362-ender-3-v3-ke-screen-holder-landscape-for-guppyscr>,
-but please do **not** follow the installation instructions on that page, just print the model and remount your screen only!
-
-An alternative model which honestly seems a bit cleaner: <https://www.printables.com/model/706657-creality-ender-3-v3-e3v3-se-ke-and-cr-10-se-portra>
+This probe is currently not supported on Ender 3 V3 KE
 
 ### CR10SE
 
@@ -95,8 +89,6 @@ you are making your lidar or direct mainboard connection as you might need it in
 | **SkeletorMK7**       | K1, K1C, K1M, K1SE | RevH&nbsp;Low&nbsp;Profile  | <https://www.printables.com/model/833769-the-skeletor-collection-a-creality-k1k1-maxk1c-coo>                                                               |                                                                 |
 | **SkeletorSideMount** | K1, K1C, K1M, K1SE | All RevH variants           | <https://www.printables.com/model/1362668-skeletor-mk7-side-mounted-cartographer-integration>                                                              |                                                                 |
 | **SimplyHexed**       | Ender 5 Max        | RevH&nbsp;Standard          | <https://www.printables.com/model/1209230-ender-5-max-simply-hexed>                                                                                        | Requires custom shroud, also a risk it will hit the frame       |
-| **Default**           | Ender 3 V3 KE      | RevH&nbsp;Standard          | <https://github.com/pellcorp/Creality-Ender-3-V3-SE-KE/blob/main/KE%20Beacon-Cartographer%20Mount/STL%20Files/Ender3V3KE%20BeaconCartographer%20mount.stl> | Might require shimming depending on the hotend / nozzle you used<br />Original author removed from printables.com! |
-| **Pellcorp**          | Ender 3 V3 SE      | RevH&nbsp;Standard          | <https://www.printables.com/model/1621139-ender-3-v3-se-cartographer-and-beacon-mounts>                                                                    | Only works with K1 hotend, might require scaling in Z           |
 
 ### Nozzle Offset
 
