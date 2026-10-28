@@ -4,7 +4,7 @@ We have introduced support for flashing the Cartographer V3 and V4 via the offic
 
 !!! danger
 
-    There is always the risk of soft bricking your cartographer with the following method, but never fear you can use [DFU mode](legacy_cartographer_flashing.md#flashing-via-dfu-mode) 
+    There is always the risk of soft bricking your cartographer with the following method, it can be recovered with [DFU mode](legacy_cartographer_flashing.md#flashing-via-dfu-mode) via live usb!
 
 !!! note
 
