@@ -50,7 +50,7 @@ This guide assumes you have a K1, K1C, K1SE or K1 Max and you are running stock 
 
 ### Ender 3 V3
 
-This guide assumes you have ab Ender 3 V3 that is running stock firmware that can be rooted.
+This guide assumes you have an Ender 3 V3 that is running stock firmware that is rooted.
 
 The Ender 3 V3 keeps using its physical endstop for homing Z, the load cells are used for probing and bed meshing.
 
