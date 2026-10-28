@@ -1,77 +1,113 @@
 # Cartographer Flashing
 
-!!! klipper-error "Ubuntu 25.04 and 25.10 are not supported"
+We have introduced support for flashing the Cartographer V3 and V4 via the official cartographer3d.com tool, for the moment
+we are using a fork which has a few changes required to use the script on Creality OS, we are hoping they will be accepted by
+the cartographer team soon.
 
-    The interim 25.04 and 25.10 releases are known not to be supported because the deadsnakes PPA does not provide python packages for these
-    now unsupported interim releases.   Please make sure to use an LTS release, being 26.04 or 24.04!
+Flashing the cartographer to have the K1 / Lite firmware requires that you have setup and installed Simple AF first, you cannot
+flash the cartographer on the printer before Simple AF is installed.
 
-This page covers flashing firmware for Cartographer USB probes for Simple AF for K1 Series printers (K1, K1C, K1SE, K1 Max, Ender 3 V3 KE and Ender 5 Max)
+!!! danger
 
-If you want the fully manual process instead, see the manual guides for [V3](cartographer_V3_flashing.md) and [V4](cartographer_V4_flashing.md).
+    Any attempt to circumvent this and clone cartographer_firmware yourself onto the printer before installing Simple AF is very
+    likely to soft brick your cartographer [requiring DFU mode](legacy_cartographer_flashing.md#flashing-via-dfu-mode)
 
-For Simple AF for RPi, you should use the standard cartographer guide <https://docs.cartographer3d.com/cartographer-probe/firmware/firmware-updating/via-katapult/usb-flash#usb-katapult-updating>
+Mount your cartographer onto the printer and connect it to USB and then get Simple AF installed first then come back to update the cartographer to have Lite firmware
+before trying to use it.
 
-!!! warn
+## Updating the Firmware
 
-    This process has been tested on Ubuntu 24.04 and 26.04 only!   
+If you already have Simple AF installed, and you want to update the firmware you should first of all make sure you are running the latest
+version of Simple AF by running an update:
 
-## Creating a Live USB Key
-
-!!! warning
-
-    You might corrupt the katapult boot loader trying to use a Linux VM or WSL to flash the carto, so we strongly recommend a live USB.
-
-You should create a live USB with **Ubuntu 26.04** Desktop, make sure the USB is at least 8GB in size!
-
-<https://ubuntu.com/tutorials/try-ubuntu-before-you-install#1-getting-started>
-
-## Firmware targets
-
-- V3 probes will be flashed with `CARTOGRAPHER K1 5.0.0`
-- V4 probes will be flashed with `CARTOGRAPHER V4 6.0.0 Lite`
-
-!!! warn 
-
-    These cartographer firmware versions have been extensively tested with Simple AF K1 Series, newer versions may not work as reliably.
-
-## Downloading
-
-```bash
-wget https://pellcorp.github.io/creality-wiki/scripts/cartographer_flash.sh -O ~/cartographer_flash.sh
+```
+/usr/data/pellcorp/installer.sh --branch main
+/usr/data/pellcorp/installer.sh --update
 ```
 
-## Flashing
+![image](assets/images/simpleaf_fully_updated.png)
+
+You want to see: `ERROR: Installation is already up to date - NO CHANGES WERE MADE!`, do NOT proceed with trying to update Cartographer
+if you do not see that, failing to heed this warning will likely soft brick your cartographer [requiring DFU mode](legacy_cartographer_flashing.md#flashing-via-dfu-mode)
+
+## Running the Cartographer FW Update script
+
+After you have updated Simple AF you can run the firmware update script:
+
+```
+/usr/data/cartographer_firmware/fw_update.sh
+```
+
+The process will go through a few screens.
+
+The first is the welcome screen:
+
+![image](assets/images/cartographer/fw_update.png)
+
+Press Enter here!
+
+Which should bring you to detecting your probe:
+
+![image](assets/images/cartographer/detecting_your_probe.png)
+
+If all looks correct, press Enter again!
+
+You should be greeted with a Firmware recommendation screen:
+
+![image](assets/images/cartographer/firmware_recommendation.png)
 
 !!! note
 
-    Maybe it should be obvious, but make sure your cartographer is plugged in to your computer before running this step!
+    We recommend the following firmware versions, as ones we have tested extensively:
 
-```bash
-bash ~/cartographer_flash.sh
+    - For V3 probes choose `5.0.0`
+    - For V4 probes choose `6.0.0`
+
+    Its quite likely newer firmware will work fine but we have never tested it!
+
+Press Enter again!
+
+You should be greeted with a confirmation screen like this:
+
+![image](assets/images/cartographer/firmware_recommendation_confirmed.png)
+
+If all looks correct, press Enter again!
+
+You should be greeted with a your selection screen like this:
+
+![image](assets/images/cartographer/your_selection.png)
+
+If all looks correct ...
+
+Enter `y` at the `Run Klipper flash_can.py now with the selected firmware? [Y/n]` prompt and press Enter again!
+
+Enter `y` at the `Did you read the above information? [Y/n]` prompt and press Enter again!
+
+At this point its going to flash your cartographer
+
+![image](assets/images/cartographer/flashing.png)
+
+You will then be greeted with a request to send an anonymous report, please choose `1` and press Enter, it helps
+the cartographer team to know how many people are using cartographers with K1 / Lite firmware.
+
+![image](assets/images/cartographer/send_report.png)
+
+You will then exit back out to the command prompt, at which time you should run the following:
+
+```
+/usr/data/pellcorp/installer.sh --fix-serial
 ```
 
-The script auto-detects V4 when the serial id exposes `stm32g431`. Otherwise it defaults to V3. You can still force the model with `--model`.
+![image](assets/images/cartographer/fix_serial.png)
 
-## Flashing via DFU Mode
+If you see `INFO: Restarting Kalico` you can go back to Fluidd or Mainsail and wait for Kalico to restart,
+if however it says: `Serial value is unchanged` you will need to force Kalico to restart yourself with:
 
-You need to bridge the boot pins before you plug your carto in via USB to your Linux session, make sure `lsusb` reports it being in DFU mode, it should show
-
-![image](assets/images/carto_lsusb_dfu.png)
-
-**Source:** <https://docs.cartographer3d.com/cartographer-probe/firmware/updating-firmware#cartographer-v3-1>
-
-```bash
-bash ~/cartographer_flash.sh --dfu --model v3
+```
+/etc/init.d/S55klipper_service restart
 ```
 
 !!! note
 
-    The `--model` is required in DFU mode because the normal Cartographer serial id is not available, specify `--model v3` if you 
-    have an older probe, `--model v4` if you have a new probe.
-
-## Notes
-
-- The script uses `sudo` for `apt`, `add-apt-repository`, bootloader entry, `dfu-util` and flashing.
-- If `python3.12` is already installed, the script reuses it and skips adding the deadsnakes PPA.
-- If `apt` is blocked by `unattended-upgrades`, the script retries automatically.
-- If `~/klipper` or `~/cartographer_firmware` already exists with the wrong `origin` remote or local uncommitted changes, the script aborts instead of updating it.
+    Running the restart command will produce no output, but if you check Fluidd / Mainsail it should show
+    Kalico is restarting.   Also please note even though it says `S55klipper_service` it is restarting Kalico!
