@@ -25,11 +25,6 @@ You must make sure that the cable you are using is pinned correctly.  For both f
     
     The right angle and flat pack pin out is different to using a low profile carto, so the image above **does not apply** to low profile cartographers!
 
-    You **must** not use the firmware.cartographer3d.com, it will not flash the proper version of `CARTOGRAPHER K1 5.0.0` firmware for the K1, K1C, K1SE, K1 Max, Ender 3 V3 KE and Ender 5 Max!
-
-    The reason this cannot be done on the printer, seems to be some incompatibility with pyserial and MIPS, and issue for this has been opened 
-    <https://github.com/Arksine/katapult/issues/137> 
-
 --8<-- "snippets/cartographer/flashing_the_cartographer.md"
 
 ## Installation dependencies

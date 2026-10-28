@@ -25,11 +25,6 @@ You must make sure that the cable you are using is pinned correctly.
     
     The standard pin out maybe different to using a low profile carto, verify the pin out before plugging in your probe!
 
-    You **must** not use the firmware.cartographer3d.com, it will not flash the proper version of `CARTOGRAPHER V4 6.0.0 Lite` firmware for the K1, K1C, K1SE, K1 Max, Ender 3 V3 KE and Ender 5 Max!
-
-    The reason this cannot be done on the printer, seems to be some incompatibility with pyserial and MIPS, and issue for this has been opened 
-    <https://github.com/Arksine/katapult/issues/137> 
-
 --8<-- "snippets/cartographer/flashing_the_cartographer.md"
 
 ## Installation dependencies
