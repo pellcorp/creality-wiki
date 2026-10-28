@@ -66,7 +66,7 @@ if however it says: `Serial value is unchanged` you will need to force Kalico to
     Kalico is restarting.   Also please note even though it says `S55klipper_service` it is restarting Kalico!
 
 
-## On Printer
+## On Printer before Install
 
 You can flash the eddy on your printer (K1, K1C, K1SE, K1M, Ender 3 V3 KE, etc) but you need to be able to disconnect and reconnect it for this to work, there is currently no way to get the eddy into boot mode any other way!
 
