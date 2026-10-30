@@ -15,21 +15,7 @@
 
 So it is possible to install Simple AF and flash your eddy afterward.
 
-You need to hold down the boot button and re-connect your btt eddy to your printer, you will know this worked if you type `lsusb` and see:
-
-```
-Bus 001 Device 101: ID 2e8a:0003  USB2.0 Hub
-```
-
-!!! note
-
-    We have noticed at least one Eddy probe tested does not show up as USB2.0 Hub but just as:
-
-        Bus 001 Device 006: ID 2e8a:0003
-
-    So just check to see if the `/tmp/udisk/sda1` mount exists instead is probably more reliable
-
-Verify that the btt eddy has been mounted as a disk drive on the printer by running `ls /tmp/udisk/sda1`, you should see:
+You need to hold down the boot button and re-connect your btt eddy to your printer verify that the btt eddy has been mounted as a disk drive on the printer by running `ls /tmp/udisk/sda1`, you should see:
 
 ![image](assets/images/eddyng/mount.png)
 
@@ -39,11 +25,7 @@ Once this has happened you will be able to copy the btteddy.uf2 file to the eddy
 cp /usr/data/klipper/fw/K1/btteddy.uf2 /tmp/udisk/sda1/
 ```
 
-If you check `lsusb` again, it should have switched back to:
-
-```
-Bus 001 Device 102: ID 1d50:614e OpenMoko, Inc. USB2.0 Hub
-```
+If you check `ls /tmp/udisk/sda1` again, it should have disappeared
 
 You might need to fix up the serial at this stage which you can do easily:
 
@@ -70,27 +52,7 @@ if however it says: `Serial value is unchanged` you will need to force Kalico to
 
 You can flash the eddy on your printer (K1, K1C, K1SE, K1M, Ender 3 V3 KE, etc) but you need to be able to disconnect and reconnect it for this to work, there is currently no way to get the eddy into boot mode any other way!
 
-So by default when connecting the btt eddy to the printer, `lsusb` will report:
-
-```
-Bus 001 Device 099: ID 1d50:614e OpenMoko, Inc. USB2.0 Hub
-```
-
-This means it is not in boot mode and you cannot flash any firmware to it.  You need to hold down the boot button and re-connect your btt eddy to your K1, you will know this worked if you type `lsusb` and see:
-
-```
-Bus 001 Device 101: ID 2e8a:0003  USB2.0 Hub
-```
-
-!!! note
-
-    We have noticed at least one Eddy probe tested does not show up as USB2.0 Hub but just as:
-
-        Bus 001 Device 006: ID 2e8a:0003
-
-    So just check to see if the `/tmp/udisk/sda1` mount exists instead is probably more reliable
-
-Verify that the btt eddy has been mounted as a disk drive on the printer by running `ls /tmp/udisk/sda1`, you should see:
+You need to hold down the boot button and re-connect your btt eddy to your printer verify that the btt eddy has been mounted as a disk drive on the printer by running `ls /tmp/udisk/sda1`, you should see:
 
 ![image](assets/images/eddyng/mount.png)
 
@@ -101,11 +63,7 @@ wget --no-check-certificate https://raw.githubusercontent.com/pellcorp/kalico/au
 cp /tmp/btteddy.uf2 /tmp/udisk/sda1/
 ```
 
-If you check `lsusb` again, it should have switched back to:
-
-```
-Bus 001 Device 102: ID 1d50:614e OpenMoko, Inc. USB2.0 Hub
-```
+If you check `ls /tmp/udisk/sda1` again, it should have disappeared
 
 ## Flashing on Windows or Linux Desktop
 
