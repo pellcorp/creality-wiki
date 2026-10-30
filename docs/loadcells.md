@@ -9,6 +9,10 @@ This page covers installing SimpleAF using the strain gauges (load cells) alread
 
 Looking for Load Cells for Z-Offset? See [Load Cells for Z-Offset](loadcells_zoffset.md).
 
+!!! note
+
+    If you are going to use load cells without another probe you do not need to worry about loadcells for z-offset, thats only relevant if using another probe like a cartographer
+
 New here? See [Getting Started](getting-started.md).
 
 !!! klipper-error "Risk of bed damage"
