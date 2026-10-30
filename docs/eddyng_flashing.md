@@ -11,11 +11,38 @@
     It is possible this method will not work for the BTT Duo, especially if it is currently flashed for Can from the factory, 
     and you may need to resort to the legacy approach documented [here](legacy_eddyng_flashing.md)
 
+## On Printer without Access to the Boot Pin
+
+!!! note
+
+    This should work for RPI series too
+
+This only works if the BTT Eddy has an existing version of klipper installed, but you can get the eddy into boot mode like this:
+
+```
+sudo systemctl stop klipper
+EDDY_DEV=$(ls /dev/serial/by-id/usb-* | grep "Klipper_rp2040" | head -1)
+cd /usr/data/klipper/scripts
+/usr/share/klippy-env/bin/python3 -c "import flash_usb as u; u.enter_bootloader('$EDDY_DEV')"
+```
+
+!!! danger
+
+    The `EDDY_DEV=$(ls /dev/serial/by-id/usb-* | grep "Klipper_rp2040" | head -1)` might match more than one MCU if you have a MMU or on RPI series something like a SKR Pico basically anything
+    with a rp2040 processor, so you might need to manually determine your EDDY_DEV some other way.
+
+You need to wait for `ls /tmp/udisk/sda1/INFO_UF2.TXT` to work before carrying out the next step:
+
+```
+cp /usr/data/klipper/fw/K1/btteddy.uf2 /tmp/udisk/sda1/
+sudo systemctl start klipper
+```
+
 ## On Printer after installation
 
 So it is possible to install Simple AF and flash your eddy afterward.
 
-You need to hold down the boot button and re-connect your btt eddy to your printer verify that the btt eddy has been mounted as a disk drive on the printer by running `ls /tmp/udisk/sda1`, you should see:
+You need to hold down the boot button and re-connect your btt eddy to your printer verify that the btt eddy has been mounted as a disk drive on the printer by running `ls /tmp/udisk/sda1/`, you should see:
 
 ![image](assets/images/eddyng/mount.png)
 
