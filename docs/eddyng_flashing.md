@@ -1,9 +1,5 @@
 # EddyNG Flashing
 
-!!! note
-
-    The btteddy.uf2 supports btteddy and EddyNG
-
 !!! tip "Flashing Btt DUO"
 
     Make sure to switch it to USB Mode first of all!!!
