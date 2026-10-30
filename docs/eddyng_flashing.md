@@ -11,6 +11,8 @@
     It is possible this method will not work for the BTT Duo, especially if it is currently flashed for Can from the factory, 
     and you may need to resort to the legacy approach documented [here](legacy_eddyng_flashing.md)
 
+## Flashing via bootloader
+
 This only works if the BTT Eddy has an existing version of klipper installed, but you can get the eddy into boot mode like this:
 
 ```
@@ -53,3 +55,10 @@ if however it says: `Serial value is unchanged` you will need to force Kalico to
 
     Running the restart command will produce no output, but if you check Fluidd / Mainsail it should show
     Kalico is restarting.   Also please note even though it says `S55klipper_service` it is restarting Kalico!
+
+
+## How do I know it flashed correctly?
+
+Unfortunately we know of no way to test this except by plugging it back into the printer, restarting klipper and verifying via the System tab, a correctly flashed eddy will have
+
+![image](assets/images/eddyng_mcu_version.png)
