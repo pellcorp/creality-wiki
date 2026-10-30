@@ -9,7 +9,7 @@
 
 ## Flashing via bootloader
 
-This only works if the BTT Eddy has an existing version of klipper installed, but you can get the eddy into boot mode like this:
+This only works if the BTT Eddy has an existing version of klipper installed (which Eddy's often are from the factory), but you can get the eddy into boot mode like this:
 
 ```
 EDDY_DEV=$(ls /dev/serial/by-id/usb-* | grep "Klipper_rp2040" | head -1)
