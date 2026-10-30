@@ -166,6 +166,7 @@ nav:
       - eddyng.md
       - eddyng_wiring.md
       - eddyng_flashing.md
+      - eddyng_flashing_alternatives.md
       - eddyng_troubleshooting.md
   - BlTouch:
       - bltouch.md

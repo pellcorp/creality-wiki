@@ -1,17 +1,8 @@
-# Btt Eddy Flashing
-
-!!! tip "Flashing Btt DUO"
-
-    Make sure to switch it to USB Mode first of all!!!
-
-    It is possible this method will not work for the BTT Duo, especially if it is currently flashed for Can from the factory, 
-    and you may need to resort to the legacy approach documented [here](legacy_eddyng_flashing.md)
+# Alternative EddyNG Flashing
 
 ## On Printer after installation
 
-So it is possible to install Simple AF and flash your eddy afterward.
-
-You need to hold down the boot button and re-connect your btt eddy to your printer verify that the btt eddy has been mounted as a disk drive on the printer by running `ls /tmp/udisk/sda1`, you should see:
+You need to hold down the boot button and re-connect your btt eddy to your printer verify that the btt eddy has been mounted as a disk drive on the printer by running `ls /tmp/udisk/sda1/`, you should see:
 
 ![image](assets/images/eddyng/mount.png)
 
