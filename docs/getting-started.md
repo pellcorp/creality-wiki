@@ -35,7 +35,7 @@ The installation flow on a Creality printer is:
 
 1. Verify base firmware requirements for your printer
 2. Mount **and connect** the probe
-3. [Factory reset](factory_reset.md) — required **only if you've used Guilouz's Helper Script or installed Fluidd / Mainsail** from Creality directly
+3. [SimpleAF Factory reset](factory_reset.md) — required **only if you've used Guilouz's Helper Script or installed Fluidd / Mainsail** from Creality directly
 4. Clone the SimpleAF repo and run the installer
 5. Flash any required probe firmware
 6. Calibrate
