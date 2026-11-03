@@ -1,3 +1,7 @@
+---
+toc_section_depths:
+  running-the-cartographer-fw-update-script: 3
+---
 # Cartographer Flashing
 
 We have introduced support for flashing the Cartographer V3 and V4 via the official cartographer3d.com tool.
@@ -47,29 +51,33 @@ After you have updated Simple AF you can run the firmware update script:
 
 The process will go through a few screens.
 
-The first is the welcome screen:
+### Welcome Screen
 
 ![image](assets/images/cartographer/fw_update.png)
 
 Press Enter here!
 
-Which should bring you to detecting your probe:
+### Detecting your probe
 
 ![image](assets/images/cartographer/detecting_your_probe.png)
 
-If all looks correct, press Enter again, if instead you get a message saying `Could not determine probe type automatically.` like this:
+If all looks correct, press Enter again.
 
-![image](assets/images/cartographer/cartographer_not_found.png)
+!!! warning "Could not determine probe type automatically"
 
-It means you did not have your cartographer connected while installing or updating Simple AF, please use `CTRL-C` to exit the fw_update script and instead run:
+    If you instead get an error saying `Could not determine probe type automatically`,
 
-```
-~/pellcorp/installer.sh --fix-serial
-```
+    ![image](assets/images/cartographer/cartographer_not_found.png)
 
-Then you can start again and run the `/usr/data/cartographer_firmware/fw_update.sh` again
+    It means you did not have your cartographer connected while installing or updating Simple AF, please use `CTRL-C` to exit the fw_update script and instead run:
+    
+    ```
+    ~/pellcorp/installer.sh --fix-serial
+    ```
+    
+    Then you can start the fw update script
 
-You should be greeted with a Firmware recommendation screen:
+### Firmware recommendation screen
 
 ![image](assets/images/cartographer/firmware_recommendation.png)
 
@@ -84,13 +92,13 @@ You should be greeted with a Firmware recommendation screen:
 
 Press Enter again!
 
-You should be greeted with a confirmation screen like this:
+### Confirmation screen
 
 ![image](assets/images/cartographer/firmware_recommendation_confirmed.png)
 
 If all looks correct, press Enter again!
 
-You should be greeted with a your selection screen like this:
+### Your selection screen
 
 ![image](assets/images/cartographer/your_selection.png)
 
@@ -105,22 +113,25 @@ Enter `y` at the `Did you read the above information? [Y/n]` prompt and press En
     The flashing tool says DFU mode can be performed on this host, for the moment that is not the case and you will 
     need a live usb method for [DFU mode](legacy_cartographer_flashing.md#flashing-via-dfu-mode)!
 
-At this point its going to flash your cartographer
+### Flash your cartographer
 
 ![image](assets/images/cartographer/flashing.png)
 
-You will then be greeted with a request to send an anonymous report, please choose `1` and press Enter, it helps
-the cartographer team to know how many people are using cartographers with K1 / Lite firmware.
+### Send Report 
+
+Please choose `1` and press Enter, it helps the cartographer team to know how many people are using cartographers with K1 / Lite firmware.
 
 ![image](assets/images/cartographer/send_report.png)
 
-You will then exit back out to the command prompt, at which time you should run the following:
+### Fix Serial
 
 ```
 /usr/data/pellcorp/installer.sh --fix-serial
 ```
 
 ![image](assets/images/cartographer/fix_serial.png)
+
+### Restarting Kalico
 
 If you see `INFO: Restarting Kalico` you can go back to Fluidd or Mainsail and wait for Kalico to restart,
 if however it says: `Serial value is unchanged` you will need to force Kalico to restart yourself with:

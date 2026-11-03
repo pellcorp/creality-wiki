@@ -9,8 +9,7 @@ toc_depth: 3
 Most problems have already been solved by someone else, so check these first:
 
 - The [FAQ](faq.md)
-- The troubleshooting page for your probe: [Cartographer](cartographer_troubleshooting.md), [Beacon](beacon_troubleshooting.md),
-  [BTT Eddy](btteddy_troubleshooting.md) or [Eddy NG](eddyng_troubleshooting.md)
+- The troubleshooting page for your probe: [Cartographer](cartographer_troubleshooting.md), [Beacon](beacon_troubleshooting.md) or [Eddy NG](eddyng_troubleshooting.md)
 - That you are on the latest Simple AF, see [Updating](updating.md)
 - If the printer will not boot or you cannot get in, see [Factory Reset](factory_reset.md) and [Emergency Factory Reset](emergency_factory_reset.md)
 
