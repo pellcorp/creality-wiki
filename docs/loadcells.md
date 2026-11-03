@@ -152,9 +152,12 @@ You can use `ABORT` to cancel at any time.  Afterwards run `LOAD_CELL_DIAGNOSTIC
 
 **Source:** <https://github.com/KalicoCrew/kalico/blob/main/docs/Load_Cell.md#calibration>
 
+--8<-- "snippets/loadcells/bottom_out_bed.md"
+
 --8<-- "snippets/loadcells/calibration_errors.md"
 
 --8<-- "snippets/loadcells/test_the_probe.md"
+
 
 ### Probe Accuracy
 
