@@ -55,10 +55,14 @@ primary probe is mounted on the back.   If you want to use your own nozzle wipe 
 
 ## Overview
 
+--steps--
+
 1. Enable loadcells zoffset support
 2. [Calibrate the load cells](#calibration) with a known weight
 3. [Test the probe](#test-the-probe) and check its [accuracy](#probe-accuracy)
 4. The [Nozzle Wipe](#nozzle-wipe) is set up for you
+
+--!steps--
 
 ## Setup
 

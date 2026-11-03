@@ -85,6 +85,8 @@ Using load cells for homing and leveling is not supported on Ender 3 V3 KE or SE
 
 ## Overview
 
+--steps--
+
 1. [Install](#installation) with the `loadcells` probe
 2. Power cycle the printer so the new [MCU firmware](#post-installation) is applied
 3. [Calibrate the load cells](#calibration) with a known weight
@@ -92,6 +94,8 @@ Using load cells for homing and leveling is not supported on Ender 3 V3 KE or SE
 5. Run a [bed mesh](#bed-mesh)
 6. Do [PID tuning and input shaping](#pid-tuning-and-input-shaping)
 7. The [Nozzle Wipe](#nozzle-wipe) is set up for you
+
+--!steps--
 
 !!! warning
 
