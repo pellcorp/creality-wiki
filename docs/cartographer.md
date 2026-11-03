@@ -68,11 +68,6 @@ This probe is currently not supported on CR10SE, but support can be added if the
 
 See [Simple AF for RPi](rpi.md)
 
-## Cartographer Firmware
-
-After installing Simple AF on a K1/K1C/K1SE/K1Max, Ender 3 V3 or Ender 5 Max with stock hardware (so not RPI series), you will need to ensure you are running
-the lite variant of the firmware, which you can do on the printer via the [cartographer flashing guide](cartographer_flashing.md)
-
 ## Probe Installation
 
 It is **strongly** recommended to connect your probe to the front USB port initially and use it for a while that way to make sure its stable, before
@@ -152,6 +147,11 @@ To run the script, you must use the following command:
     If you are using a non-supported mount you should specify a mount option as close to your mount as possible and properly adjust your configuration after installation before trying to perform a bed mesh or Screws Tilt Calculate!
 
 --8<-- "snippets/loadcells/zoffset.md"
+
+## Cartographer Firmware
+
+After installing Simple AF on a K1/K1C/K1SE/K1Max, Ender 3 V3 or Ender 5 Max with stock hardware (so not RPI series), you will need to ensure you are running
+the lite variant of the firmware, which you can do on the printer via the [cartographer flashing guide](cartographer_flashing.md)
 
 ## Post Installation
 

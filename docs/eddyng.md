@@ -55,10 +55,6 @@ This probe is currently not supported on CR10SE, but support can be added if the
 
 See [Simple AF for RPi](rpi.md)
 
-## BTT Eddy Firmware
-
-To use Simple AF with EddyNG, you will need to flash your eddy with new firmware, please check the [eddny flashing guide](eddyng_flashing.md)
-
 ## Probe Installation
 
 It is **strongly** recommended to connect your probe to the front USB port initially and use it for a while that way to make sure its stable, before
@@ -123,6 +119,10 @@ To run the script, you must specify the probe you want to use.
     If you are using a non-supported mount you should specify a mount option as close to your mount as possible and properly adjust your configuration after installation before trying to perform a bed mesh or Screws Tilt Calculate!
 
 --8<-- "snippets/loadcells/zoffset.md"
+
+## BTT Eddy Firmware
+
+To use Simple AF with EddyNG, you will need to flash your eddy with new firmware, please check the [eddny flashing guide](eddyng_flashing.md)
 
 ## Post Installation
 
