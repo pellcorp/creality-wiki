@@ -57,7 +57,17 @@ Which should bring you to detecting your probe:
 
 ![image](assets/images/cartographer/detecting_your_probe.png)
 
-If all looks correct, press Enter again!
+If all looks correct, press Enter again, if instead you get a message saying `Could not determine probe type automatically.` like this:
+
+![image](assets/images/cartographer/cartographer_not_found.png)
+
+It means you did not have your cartographer connected while installing or updating Simple AF, please use `CTRL-C` to exit the fw_update script and instead run:
+
+```
+~/pellcorp/installer.sh --fix-serial
+```
+
+Then you can start again and run the `/usr/data/cartographer_firmware/fw_update.sh` again
 
 You should be greeted with a Firmware recommendation screen:
 
