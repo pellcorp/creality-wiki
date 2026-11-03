@@ -5,13 +5,12 @@ SimpleAF is an open-source Klipper-based firmware for Creality K1, K1C, K1SE, K1
 ## Pick your probe
 
 - **[Cartographer](cartographer.md)** — Cartographer V3 / V4
-- **[Beacon](beacon.md)**
-- **[BTT Eddy](btteddy.md)**
 - **[EddyNG](eddyng.md)** — BTT Eddy running eddy-ng firmware
+- **[Load Cells](loadcells.md)** — uses the load cells built into the bed, no extra probe
+- **[Beacon](beacon.md)**
 - **[BLTouch](bltouch.md)** — also covers CR-Touch and 3D Touch
 - **[Microprobe](microprobe.md)**
 - **[Klicky](klicky.md)**
-- **[Load Cells](loadcells.md)** — uses the load cells built into the bed, no extra probe
 
 Each guide walks through firmware requirements, hardware install (where required), software install, and calibration.
 
