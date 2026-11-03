@@ -58,3 +58,7 @@ It is recommended to do this step **before** installing Simple AF if the printer
 access to that can print probe mounts.
 
 You can quickly [Switch to Stock](switch_to_stock.md) to print a mount if you damage your existing mount to the point you won't be able to home the printer or perform a bed mesh.
+
+!!! tip
+
+    This is less of a concern if you are using Simple AF with the original load cells cos there is no mount to reprint!
