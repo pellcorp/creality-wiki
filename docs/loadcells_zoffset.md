@@ -120,6 +120,8 @@ You can use `ABORT` to cancel at any time.  Afterwards run `LOAD_CELL_DIAGNOSTIC
 
 --8<-- "snippets/loadcells/bottom_out_bed.md"
 
+--8<-- "snippets/loadcells/warning_25kg.md"
+
 --8<-- "snippets/loadcells/calibration_errors.md"
 
 --8<-- "snippets/loadcells/test_the_probe.md"
