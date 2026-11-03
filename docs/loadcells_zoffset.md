@@ -88,11 +88,11 @@ You must [Calibrate the load cells](#calibration) before trying to home your pri
 
 You need an object of known weight, weigh it on a kitchen scale.
 
-!!! tip
+!!! warning
 
-    On the Ender 3 V3 a known weight of ~3 kg (around `3000` grams) was needed during testing, 
+    On the Ender 3 V3 or Ender 3 V3 SE/KE a known weight of ~3 kg (around `3000` grams) strongly recommended for accurate functioning.
 
-    On the K1 a known weight of ~6 kg (around `6000` grams) was needed during testing,
+    On the K1 a known weight of ~6 kg (around `6000` grams) is strongly recommended for accurate functioning.
 
     a lighter weight fails with the `Tare and Calibration readings are less than 1% different!` error, see [Calibration Errors](#calibration-errors).
 
