@@ -123,7 +123,9 @@ Please choose `1` and press Enter, it helps the cartographer team to know how ma
 
 ![image](assets/images/cartographer/send_report.png)
 
-### Fix Serial
+### Fix Serial Cartographer
+
+Sometimes flashing new firmware can change the serial, so it's always a good idea to run --fix-serial after the flashing is finished. 
 
 ```
 /usr/data/pellcorp/installer.sh --fix-serial
@@ -131,7 +133,11 @@ Please choose `1` and press Enter, it helps the cartographer team to know how ma
 
 ![image](assets/images/cartographer/fix_serial.png)
 
-### Restarting Kalico
+#### Restarting Kalico
+
+!!! note
+
+    Kalico will not see the updated firmware on the Cartographer unless its been restarted after flashing, the cartographer3d script does not do this for you, if `~/pellcorp/installer.sh --fix-serial` did not change anything it will restart kalico, so you have to do it yourself.
 
 If you see `INFO: Restarting Kalico` you can go back to Fluidd or Mainsail and wait for Kalico to restart,
 if however it says: `Serial value is unchanged` you will need to force Kalico to restart yourself with:
