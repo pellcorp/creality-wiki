@@ -37,9 +37,6 @@ line on the bed so plastic on the tip doesn't throw off the load cell taps.
      If you have a non K1C / K1SE build plate with a silicon brush for wiping on your print bed you should remove the Simple AF default wiper by removing the
      `[include loadcells_wipe.cfg]` from your `printer.cfg`, and manually clean your nozzle or use a [third party nozzle wiper](nozzle_wipe.md#third-party-nozzle-wipes).
 
-     We are aware that some side mounted cartographer and beacon probes might actually be colliding with a K1C nozzle brush, you can change the `loadcells_wipe.cfg` `variable_force_side_wipe` to `True` to force
-     wiping at the front left side.   If you want to wipe on the right front side you can change the `variable_force_side_wipe_right` to `True`!
-
 !!! note
 
     If you already are using your own nozzle wipe solution, the installer will not add the default nozzle wipe so you can continue to use your own!
