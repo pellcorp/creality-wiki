@@ -27,6 +27,13 @@ cd /root/AFC-Klipper-Add-On
 ./install-afc.sh -k /usr/data/klipper -m /usr/data/printer_data/config/moonraker.conf -y /usr/share/klippy-env/bin -p /usr/data/printer_data/config
 ```
 
+### Filament runout
+
+AFC handles filament runout, we must remove the Simple AF filament runout detection otherwise your print will pause every time there is a filament swap
+
+- You must remove the `[filament_switch_sensor filament_sensor]` from printer.cfg
+- You must set `start_end.cfg` `[gcode_macro _CLIENT_VARIABLE]` `variable_runout_sensor` to ""
+
 !!! warning
 
     The above approach will hopefully be greatly simplified soon as a few fixes have been made to the Creality OS support
