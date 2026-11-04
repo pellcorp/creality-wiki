@@ -13,6 +13,10 @@ For more information head to <https://github.com/moggieuk/Happy-Hare>
 
 The default installer needs to be executed with some different arguments
 
+!!! danger
+
+    You must clone to /usr/data/Happy-Hare, do NOT clone it to /root (or run git clone without the second argument), this can very easily brick your printer if /root fills up!
+
 So first of all clone the repo:
 
 ```

@@ -7,15 +7,17 @@ For more information head to <https://github.com/AFCProject/AFC-Klipper-Add-On>
 
 !!! note
 
-    A community member is working on porting CFS to work with AFC, so far the results are looking promising, check out the issue <https://github.com/pellcorp/creality/issues/1709> to follow our progress.
-
-!!! note
-
     For Simple AF for RPI follow the AFC official installation guide instead.
 
-First of all clone the repo, you must clone it to /usr/data, do NOT clone it to /root:
+## CFS Support
+
+    A community member is working on porting CFS to work with AFC, so far the results are looking promising, check out the issue <https://github.com/pellcorp/creality/issues/1709> to follow our progress.
 
 ## Install
+
+!!! danger 
+    
+    You must clone to /usr/data/AFC-Klipper-Add-On, do NOT clone it to /root (or run git clone without the second argument), this can very easily brick your printer if /root fills up!
 
 ```
 pip install crudini
@@ -24,6 +26,11 @@ ln -s /usr/data/AFC-Klipper-Add-On /root
 cd /root/AFC-Klipper-Add-On
 ./install-afc.sh -k /usr/data/klipper -m /usr/data/printer_data/config/moonraker.conf -y /usr/share/klippy-env/bin -p /usr/data/printer_data/config
 ```
+
+!!! note
+
+    The above approach will hopefully be greatly simplified soon as a few fixes have been made to the Creality OS support
+    on the AFC repository but not released.
 
 ## Filament runout
 
@@ -36,11 +43,6 @@ AFC handles filament runout, we must remove the Simple AF filament runout detect
 
 The `AFC_CUT` macro has a fatal flaw that can lead to collisions with the purge bracket on a K1 or K1 Max, there is a PR open to hopefully rectify that, but for now
 use the AFC_CUT macro with extreme caution.
-
-!!! warning
-
-    The above approach will hopefully be greatly simplified soon as a few fixes have been made to the Creality OS support
-    on the AFC repository but not released.
 
 ## Enable MMU in Grumpyscreen
 
