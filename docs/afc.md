@@ -11,7 +11,7 @@ For more information head to <https://github.com/AFCProject/AFC-Klipper-Add-On>
 
 ## CFS Support
 
-    A community member is working on porting CFS to work with AFC, so far the results are looking promising, check out the issue <https://github.com/pellcorp/creality/issues/1709> to follow our progress.
+A community member is working on porting CFS to work with AFC, so far the results are looking promising, check out the issue <https://github.com/pellcorp/creality/issues/1709> to follow our progress.
 
 ## Install
 
