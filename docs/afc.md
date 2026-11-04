@@ -34,7 +34,7 @@ cd /root/AFC-Klipper-Add-On
 
 ## Filament runout
 
-AFC handles filament runout, we must remove the Simple AF filament runout detection otherwise your print will pause every time there is a filament swap
+AFC handles filament runout, you must remove the Simple AF filament runout detection otherwise your print will pause every time there is a filament swap
 
 - You must remove the `[filament_switch_sensor filament_sensor]` from printer.cfg
 - You must set `start_end.cfg` `[gcode_macro _CLIENT_VARIABLE]` `variable_runout_sensor` to ""

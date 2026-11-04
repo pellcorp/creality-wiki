@@ -32,6 +32,10 @@ systemctl restart moonraker
 systemctl restart klipper
 ```
 
+## Filament runout
+
+TODO
+
 ## Enable MMU in Grumpyscreen
 
 To access the MMU panel in grumpyscreen you must modify the grumpyscreen.ini to enable your chosen backend:
