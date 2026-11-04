@@ -26,6 +26,11 @@ primary probe is mounted on the back.   If you want to use your own nozzle wipe 
     the `[gcode_macro _LOAD_CELL_WIPE_VARIABLES]` in the `loadcells_wipe.cfg` and Save and Restart.  By the same token if you are not on a K1C or K1SE,
     but are using a K1C / K1SE build plate with a brush, you should set the `variable_k1c_brush` to `True`.
 
+!!! danger "Extruder Collision risk"
+
+    Also please note we are aware of at least one user with a K1C with a brush where their extruder motor was colliding at the back of the printer, you should
+    check your printer has clearance to y=225, x=87 to 133 (this is the K1C / K1SE brush coordinates) before trying to do a print.
+
 !!! danger "Brush collision risk"
 
      If you have a non K1C / K1SE build plate with a silicon brush for wiping on your print bed you should remove the Simple AF default wiper by removing the
