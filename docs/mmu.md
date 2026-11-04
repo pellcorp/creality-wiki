@@ -34,6 +34,11 @@ AFC handles filament runout, we must remove the Simple AF filament runout detect
 - You must remove the `[filament_switch_sensor filament_sensor]` from printer.cfg
 - You must set `start_end.cfg` `[gcode_macro _CLIENT_VARIABLE]` `variable_runout_sensor` to ""
 
+### Cut Macro
+
+The `AFC_CUT` macro has a fatal flaw that can lead to collisions with the purge bracket on a K1 or K1 Max, there is a PR open to hopefully rectify that, but for now
+use the AFC_CUT macro with extreme caution.
+
 !!! warning
 
     The above approach will hopefully be greatly simplified soon as a few fixes have been made to the Creality OS support
