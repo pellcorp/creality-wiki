@@ -1,0 +1,31 @@
+# Happy Hare
+
+Simple AF is adding full MMU support for Happy Hare, initially this support is documenting how to install Happy Hare and enable MMU panels in grumpyscreen, but we are working on docs and hooks and things to make
+this support more streamlined and polished.
+
+For more information head to <https://github.com/moggieuk/Happy-Hare>
+
+!!! note
+
+    For Simple AF for RPI follow the Happy Hare official installation guide instead.
+
+## Install
+
+The default installer needs to be executed with some different arguments
+
+So first of all clone the repo:
+
+```
+git clone https://github.com/moggieuk/Happy-Hare.git /usr/data/Happy-Hare
+```
+
+Then run the installer:
+
+```
+cd /usr/data/Happy-Hare
+./install.sh -k /usr/data/klipper -c /usr/data/printer_data/config -z -m /usr/data/moonraker -e
+systemctl restart moonraker
+systemctl restart klipper
+```
+
+--8<-- "snippets/mmu/grumpyscreen.md"

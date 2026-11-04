@@ -197,12 +197,14 @@ nav:
   - Print Features:
       - slicer_settings.md
       - filament_runout.md
-      - mmu.md
-      - m600_support.md
       - nozzle_wipe.md
       - custom_hooks.md
       - manual_bed_tramming.md
       - chamber_temp.md
+  - Multimaterial:
+      - afc.md
+      - happy_hare.md
+      - m600_support.md
   - Cameras & Add-ons:
       - Network:
           - configure_wifi.md
