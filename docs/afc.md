@@ -48,7 +48,7 @@ use the AFC_CUT macro with extreme caution.
 
 To access the MMU panel in grumpyscreen you must modify the grumpyscreen.ini  to specify `backend: afc`:
 
-![image](assets/images/grumpyscreen_ini_mmu.png)
+![image](assets/images/grumpyscreen_afc_mmu.png)
 
 Restart Grumpyscreen after making this change
 
@@ -59,5 +59,4 @@ Restart Grumpyscreen after making this change
 When you restart Grumpyscreen there will be a MMU icon on the left panel, it will be grayed out until klipper starts
 and Grumpyscreen sees the required MMU configuration registered.
 
-![image](assets/images/grumpyscreen_afc_mmu.png)
-
+![image](assets/images/grumpyscreen_mmu.png)
