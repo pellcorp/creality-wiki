@@ -34,7 +34,7 @@ line on the bed so plastic on the tip doesn't throw off the load cell taps.
 
 !!! danger "Extruder Collision risk"
 
-    Also please note we are aware of at least one user with a K1C with a brush where their extruder motor was colliding at the back of the printer, you should
+    We are aware of at least one user with a K1C with a brush where their extruder motor was colliding at the back of the printer, you should
     check your printer has clearance to y=225, x=87 to 133 (this is the K1C / K1SE brush coordinates) before trying to do a print.
 
 !!! danger "Brush collision risk"
