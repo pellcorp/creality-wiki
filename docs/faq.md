@@ -1,4 +1,5 @@
 ---
+seo_title: "Simple AF FAQ - Creality K1 Klipper Questions"
 toc_depth: 3
 ---
 

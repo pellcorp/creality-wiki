@@ -1,3 +1,7 @@
+---
+seo_title: "Simple AF on Raspberry Pi FAQ - Klipper Questions"
+---
+
 # Frequently Asked Questions
 
 ## Why is the P argument ignored in the M106 command?
