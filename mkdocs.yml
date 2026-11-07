@@ -2,9 +2,11 @@ hooks:
   - custom/overrides/hooks/toc_depth.py
   - custom/overrides/hooks/publish_scripts.py
   - custom/overrides/hooks/themes_gallery.py
+  - custom/overrides/hooks/seo.py
 
 # Project information
 site_name: SimpleAF Docs
+site_description: Simple AF documentation. Install and configure Klipper on Creality K1 printers, Nebula Pad and Raspberry Pi with Cartographer, Beacon, BTT Eddy, BLTouch, Microprobe, Klicky and load cell probing.
 site_url: https://pellcorp.github.io/creality-wiki
 site_author: Pellcorp
 
