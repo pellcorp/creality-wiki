@@ -1,3 +1,7 @@
+---
+seo_title: "GrumpyScreen on Raspberry Pi - BTT DSI/HDMI Screen Install"
+---
+
 # GrumpyScreen
 
 To install GrumpyScreen on Simple AF for RPi, there is currently an assumption that you are using a BTT DSI or BTT HDMI screen,
