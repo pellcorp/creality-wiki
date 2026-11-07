@@ -1,3 +1,7 @@
+---
+seo_title: "Beacon FAQ - Creality K1"
+---
+
 # Frequently Asked Questions
 
 ## How do I use my beacon for input shaping?

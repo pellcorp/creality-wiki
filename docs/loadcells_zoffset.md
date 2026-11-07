@@ -1,3 +1,7 @@
+---
+seo_title: "Load Cell Z-Offset on Creality K1 - Guide"
+---
+
 # Load Cells for Z-Offset
 
 This page covers using load cells for auto z-offset alongside another supported probe

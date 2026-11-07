@@ -1,3 +1,7 @@
+---
+seo_title: "Cartographer Troubleshooting - Creality K1"
+---
+
 # Troubleshooting
 
 <https://docs.cartographer3d.com/cartographer-probe/troubleshooting>

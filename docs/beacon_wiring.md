@@ -1,3 +1,7 @@
+---
+seo_title: "Beacon Wiring on Creality K1 - Guide"
+---
+
 # Beacon Wiring
 
 !!! note

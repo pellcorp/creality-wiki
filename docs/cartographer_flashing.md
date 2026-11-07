@@ -1,4 +1,5 @@
 ---
+seo_title: "Cartographer Flashing on Creality K1 - Guide"
 toc_section_depths:
   running-the-cartographer-fw-update-script: 3
 ---

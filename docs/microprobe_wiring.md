@@ -1,3 +1,7 @@
+---
+seo_title: "Microprobe Wiring on Creality K1 - Guide"
+---
+
 # Microprobe Wiring
 
 !!! note

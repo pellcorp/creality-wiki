@@ -1,3 +1,7 @@
+---
+seo_title: "Cartographer Wiring on Creality K1 - Guide"
+---
+
 # Cartographer Wiring
 
 !!! note
