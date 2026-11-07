@@ -9,6 +9,33 @@
   <link rel="stylesheet" href="{{ 'assets/stylesheets/partials/reference.css' | url }}">
   <link rel="stylesheet" href="{{ 'assets/stylesheets/partials/typeset.css' | url }}">
 {% endblock %}
+{% block extrahead %}
+  {{ super() }}
+  {% set seo_desc = page.meta.description if page and page.meta and page.meta.description else config.site_description %}
+  {% set seo_title = page.title if page and page.title else config.site_name %}
+  {% set seo_full = seo_title if seo_title == config.site_name else seo_title ~ " - " ~ config.site_name %}
+  {% set seo_url = page.canonical_url if page and page.canonical_url else config.site_url %}
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="{{ config.site_name }}">
+  <meta property="og:title" content="{{ seo_full }}">
+  <meta property="og:description" content="{{ seo_desc }}">
+  <meta property="og:url" content="{{ seo_url }}">
+  <meta property="og:image" content="{{ config.site_url }}assets/logo.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ seo_full }}">
+  <meta name="twitter:description" content="{{ seo_desc }}">
+  <meta name="twitter:image" content="{{ config.site_url }}assets/logo.png">
+  <script type="application/ld+json">{{ {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": seo_title,
+    "description": seo_desc,
+    "url": seo_url,
+    "inLanguage": "en",
+    "author": {"@type": "Organization", "name": config.site_author},
+    "publisher": {"@type": "Organization", "name": config.site_name}
+  } | tojson }}</script>
+{% endblock %}
 {% block scripts %}
   {{ super() }}
 {% endblock %}
