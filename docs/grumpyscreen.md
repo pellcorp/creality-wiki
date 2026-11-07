@@ -1,3 +1,7 @@
+---
+seo_title: "GrumpyScreen Touchscreen UI for Creality K1 - Simple AF"
+---
+
 # GrumpyScreen
 
 GrumpyScreen is our fork of the wonderful GuppyScreen from ballaswag that we have continually refined and enhanced
