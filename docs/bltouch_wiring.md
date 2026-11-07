@@ -1,3 +1,7 @@
+---
+seo_title: "BLTouch Wiring on Creality K1 - Guide"
+---
+
 # BlTouch Wiring
 
 !!! note

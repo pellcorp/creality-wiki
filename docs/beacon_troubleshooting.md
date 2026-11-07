@@ -1,3 +1,7 @@
+---
+seo_title: "Beacon Troubleshooting - Creality K1"
+---
+
 # Troubleshooting
 
 ## Manual Beacon Serial Device configuration

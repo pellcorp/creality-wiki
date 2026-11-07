@@ -1,3 +1,7 @@
+---
+seo_title: "Klicky Wiring on Creality K1 - Guide"
+---
+
 # Klicky Wiring
 
 !!! note

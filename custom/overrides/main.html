@@ -9,11 +9,19 @@
   <link rel="stylesheet" href="{{ 'assets/stylesheets/partials/reference.css' | url }}">
   <link rel="stylesheet" href="{{ 'assets/stylesheets/partials/typeset.css' | url }}">
 {% endblock %}
+{% block htmltitle %}
+  {% if page and page.meta and page.meta.seo_title %}
+    <title>{{ page.meta.seo_title | striptags }}</title>
+  {% else %}
+    {{ super() }}
+  {% endif %}
+{% endblock %}
 {% block extrahead %}
   {{ super() }}
   {% set seo_desc = page.meta.description if page and page.meta and page.meta.description else config.site_description %}
-  {% set seo_title = page.title if page and page.title else config.site_name %}
-  {% set seo_full = seo_title if seo_title == config.site_name else seo_title ~ " - " ~ config.site_name %}
+  {% set seo_custom = page.meta.seo_title if page and page.meta and page.meta.seo_title else "" %}
+  {% set seo_title = seo_custom if seo_custom else (page.title if page and page.title else config.site_name) %}
+  {% set seo_full = seo_title if (seo_custom or seo_title == config.site_name) else seo_title ~ " - " ~ config.site_name %}
   {% set seo_url = page.canonical_url if page and page.canonical_url else config.site_url %}
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="{{ config.site_name }}">

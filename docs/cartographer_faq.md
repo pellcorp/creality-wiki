@@ -1,3 +1,7 @@
+---
+seo_title: "Cartographer FAQ - Creality K1"
+---
+
 # Frequently Asked Questions
 
 ## How do I use my cartographer for input shaping?

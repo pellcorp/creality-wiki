@@ -1,3 +1,7 @@
+---
+seo_title: "BTT Eddy Wiring on Creality K1 - Guide"
+---
+
 # BTT Eddy Wiring
 
 !!! note

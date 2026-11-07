@@ -1,3 +1,7 @@
+---
+seo_title: "EddyNG Troubleshooting - Creality K1"
+---
+
 # Troubleshooting
 
 ### Tap failed with Z: Error during homing probe

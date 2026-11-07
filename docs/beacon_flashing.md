@@ -1,3 +1,7 @@
+---
+seo_title: "Beacon Flashing on Creality K1 - Guide"
+---
+
 # Beacon Flashing
 
 !!! danger

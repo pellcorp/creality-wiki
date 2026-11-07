@@ -1,3 +1,7 @@
+---
+seo_title: "EddyNG Flashing on Creality K1 - Guide"
+---
+
 # EddyNG Flashing
 
 !!! tip "Flashing Btt DUO"

@@ -1,3 +1,7 @@
+---
+seo_title: "EddyNG Wiring on Creality K1 - Guide"
+---
+
 # EddyNG Wiring
 
 !!! note

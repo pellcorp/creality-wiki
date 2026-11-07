@@ -1,3 +1,7 @@
+---
+seo_title: "Cartographer V4 Manual Flashing - Creality K1"
+---
+
 # Manual Cartographer V4 Flashing
 
 !!! note "Legacy"

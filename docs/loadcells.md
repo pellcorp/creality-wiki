@@ -1,4 +1,5 @@
 ---
+seo_title: "Load Cells on Creality K1 - Setup Guide"
 toc_section_depths:
   firmware-requirements: 3
 ---
