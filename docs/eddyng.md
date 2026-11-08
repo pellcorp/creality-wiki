@@ -159,6 +159,10 @@ To use Simple AF with EddyNG, you will need to flash your eddy with new firmware
      The `_SET_KIN_MAX_Z` and `PROBE_EDDY_NG_SETUP` will not be visible in Fluidd or Mainsail, this is nornal these macros are
      hidden so you just need to copy and paste into the fluidd / mainsail console.
 
+!!! tip
+
+    If you chose to use loadcells for z-offset you can ignore the reference to PROBE_EDDY_NG_TAP and `G28 Z`. 
+
 --!steps--
 
 !!! warning

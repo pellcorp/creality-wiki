@@ -1,6 +1,6 @@
 ### Check the Load Cells
 
-Make sure the bed is empty and run `LOAD_CELL_DIAGNOSTIC`, it collects samples for 10 seconds, press on the bed while it runs.
+Make sure the bed is empty and run `LOAD_CELL_DIAGNOSTIC`, it collects samples for 10 seconds, press (just a light touch with your finger) on the bed while it runs.
 
 - `Saturated samples` should be 0
 - `Unique values` should be a large part of the samples collected, if it is 1 there is a wiring or configuration problem
