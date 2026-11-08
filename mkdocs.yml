@@ -157,6 +157,9 @@ nav:
       - cartographer_flashing.md
       - cartographer_troubleshooting.md
       - cartographer_faq.md
+  - Load Cells:
+      - loadcells.md
+      - loadcells_zoffset.md
   - Beacon:
       - beacon.md
       - beacon_wiring.md
@@ -179,9 +182,6 @@ nav:
   - Klicky:
       - klicky.md
       - klicky_wiring.md
-  - Load Cells:
-      - loadcells.md
-      - loadcells_zoffset.md
   - Rpi:
       - Setup:
           - rpi.md
