@@ -157,6 +157,12 @@ nav:
       - cartographer_flashing.md
       - cartographer_troubleshooting.md
       - cartographer_faq.md
+  - EddyNG:
+      - eddyng.md
+      - eddyng_wiring.md
+      - eddyng_flashing.md
+      - eddyng_flashing_alternatives.md
+      - eddyng_troubleshooting.md
   - Load Cells:
       - loadcells.md
       - loadcells_zoffset.md
@@ -167,12 +173,6 @@ nav:
       - beacon_troubleshooting.md
       - beacon_faq.md
   - BttEddy: btteddy-redirect.md
-  - EddyNG:
-      - eddyng.md
-      - eddyng_wiring.md
-      - eddyng_flashing.md
-      - eddyng_flashing_alternatives.md
-      - eddyng_troubleshooting.md
   - BlTouch:
       - bltouch.md
       - bltouch_wiring.md
