@@ -123,6 +123,10 @@ You need an object of known weight, weigh it on a kitchen scale.
 
 --!steps--
 
+!!! tip
+
+    The `TARE`, `ABORT` and `CALIBRATE GRAMS` commands are **only** available after you start calibration via `LOAD_CELL_CALIBRATE`
+
 You can use `ABORT` to cancel at any time.  Afterwards run `LOAD_CELL_DIAGNOSTIC` again, and `LOAD_CELL_READ` will report the force on the bed in grams.
 
 **Source:** <https://github.com/KalicoCrew/kalico/blob/main/docs/Load_Cell.md#calibration>
