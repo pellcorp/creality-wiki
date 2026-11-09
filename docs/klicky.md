@@ -126,7 +126,7 @@ on the bottom of the klicky and make sure homing stops, if it does not stop you 
 2. Make sure nozzle is centred on bed
 3. Run `PROBE_CALIBRATE`
 4. **Manually remove klicky probe** and put it into the dock
-5. Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
+5. Follow the [Paper Test Method](https://docs.kalico.gg/Bed_Level.html#the-paper-test)
    <br />Upon completion *`SAVE_CONFIG`*
 
 --!steps--
@@ -159,7 +159,7 @@ It is highly recommended to perform axis twist compensation, this will affect th
 
 --!steps--
 
-**Source:** <https://www.klipper3d.org/Axis_Twist_Compensation.html>
+**Source:** <https://docs.kalico.gg/Axis_Twist_Compensation.html>
 
 ### First Print
 

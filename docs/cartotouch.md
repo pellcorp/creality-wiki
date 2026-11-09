@@ -208,7 +208,7 @@ Source: <https://docs.cartographer3d.com/original-plugin/installation/calibratio
 2. Home X Y (`G28 X Y`)
 3. Heat Nozzle to 150c (`M109 S150`) so that any filament can be removed from nozzle
 4. Run `CARTOGRAPHER_CALIBRATE METHOD=manual`
-Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
+Follow the [Paper Test Method](https://docs.kalico.gg/Bed_Level.html#the-paper-test)
 <br />Upon completion *`SAVE_CONFIG`*
 
 !!! note
@@ -292,7 +292,7 @@ your bed mesh, so best to do it before.
 
     Do not use a metal feeler gauge for this step, it could damage your cartographer!!!
 
-**Source:** <https://www.klipper3d.org/Axis_Twist_Compensation.html>
+**Source:** <https://docs.kalico.gg/Axis_Twist_Compensation.html>
 
 ### First Print
 

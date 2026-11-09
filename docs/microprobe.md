@@ -129,7 +129,7 @@ For the microprobe it is **extremely** important to do the PROBE_CALIBRATE step 
 
 1. Home All (`G28`)
 2. Run `PROBE_CALIBRATE`
-3. Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
+3. Follow the [Paper Test Method](https://docs.kalico.gg/Bed_Level.html#the-paper-test)
    <br />Upon completion *`SAVE_CONFIG`*
 
 --!steps--

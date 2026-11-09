@@ -151,7 +151,7 @@ To use Simple AF with EddyNG, you will need to flash your eddy with new firmware
 1. Run `_SET_KIN_MAX_Z` and then **use normal controls to move** the toolhead so that the nozzle is only a few mm above the bed surface
 2. Run `M190 S60` to heat the bed to 60c!
 3. Run the `STOP_CAMERA` macro to stop the camera
-4. Run `PROBE_EDDY_NG_SETUP`, Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
+4. Run `PROBE_EDDY_NG_SETUP`, Follow the [Paper Test Method](https://docs.kalico.gg/Bed_Level.html#the-paper-test)
 <br />Upon completion *`SAVE_CONFIG`*
 
 !!! note

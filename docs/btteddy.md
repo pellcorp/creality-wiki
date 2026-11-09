@@ -182,7 +182,7 @@ To run the script, you must specify the probe you want to use.
 
 1. Home X and Y (`G28 X Y`)
 2. Make sure nozzle is centred on bed
-3. Run `BTTEDDY_CURRENT_CALIBRATE` Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
+3. Run `BTTEDDY_CURRENT_CALIBRATE` Follow the [Paper Test Method](https://docs.kalico.gg/Bed_Level.html#the-paper-test)
 4. After clicking **Accept**, the printer is going to move the bed up and down quite a few times as part of the calibration, do **not** interrupt it
    <br />Upon completion *`SAVE_CONFIG`*
 
@@ -240,7 +240,7 @@ If you are using **a rear mount** it is highly recommended to perform axis twist
 
 --!steps--
 
-**Source:** <https://www.klipper3d.org/Axis_Twist_Compensation.html>
+**Source:** <https://docs.kalico.gg/Axis_Twist_Compensation.html>
 
 !!! warning
 

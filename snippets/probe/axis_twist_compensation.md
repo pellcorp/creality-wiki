@@ -14,4 +14,4 @@ If you are using **a rear mount** it is highly recommended to perform axis twist
 
 --!steps--
 
-**Source:** <https://www.klipper3d.org/Axis_Twist_Compensation.html>
+**Source:** <https://docs.kalico.gg/Axis_Twist_Compensation.html>

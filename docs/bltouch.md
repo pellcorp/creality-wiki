@@ -20,7 +20,7 @@ RPi / SBC users: install SimpleAF via [SimpleAF for RPi](rpi.md). The rest of th
 
     Please refer to more details, specifically note the fact that the `QUERY_PROBE` may not be supported, and the `probe_with_touch_mode` feature is not supported!
 
-    <https://www.klipper3d.org/BLTouch.html#bl-touch-clones>
+    <https://docs.kalico.gg/BLTouch.html#bl-touch-clones>
 
 ## Firmware requirements
 
@@ -167,7 +167,7 @@ For the bltouch/3dtouch/crtouch it is **extremely** important to do the PROBE_CA
 
 1. Home All (`G28`)
 2. Run `PROBE_CALIBRATE`
-3. Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
+3. Follow the [Paper Test Method](https://docs.kalico.gg/Bed_Level.html#the-paper-test)
    <br />Upon completion *`SAVE_CONFIG`*
 
 --!steps--
@@ -201,7 +201,7 @@ your bed mesh, so best to do it before.
 
 --!steps--
 
-**Source:** <https://www.klipper3d.org/Axis_Twist_Compensation.html>
+**Source:** <https://docs.kalico.gg/Axis_Twist_Compensation.html>
 
 --8<-- "snippets/probe/first_print.md"
 

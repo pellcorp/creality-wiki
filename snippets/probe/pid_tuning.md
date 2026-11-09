@@ -1,6 +1,6 @@
 #### Pid Tuning
 
-**Source:** [Calibrate Pid Settings](https://www.klipper3d.org/Config_checks.html?h=pid#calibrate-pid-settings)
+**Source:** [Calibrate Pid Settings](https://docs.kalico.gg/Config_checks.html?h=pid#calibrate-pid-settings)
 
 For example you might run these:
 

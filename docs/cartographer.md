@@ -192,7 +192,7 @@ Plus because axis twist and bed mesh were generated with a previous model you **
 2. Home X Y (`G28 X Y`)
 3. Heat Nozzle to 148c (`M109 S148`) so that any filament can be removed from nozzle
 4. Run `CARTOGRAPHER_SCAN_CALIBRATE`
-   Follow the [Paper Test Method](https://www.klipper3d.org/Bed_Level.html#the-paper-test)
+   Follow the [Paper Test Method](https://docs.kalico.gg/Bed_Level.html#the-paper-test)
    <br />Upon completion *`SAVE_CONFIG`*
 
 --!steps--
