@@ -5,6 +5,10 @@ this support more streamlined and polished.
 
 For more information head to <https://github.com/moggieuk/Happy-Hare>
 
+!!! tip
+
+    Happy Hare v4.1+ supports the version of Kalico we are currently running.
+
 !!! note
 
     For Simple AF for RPI follow the Happy Hare official installation guide instead.

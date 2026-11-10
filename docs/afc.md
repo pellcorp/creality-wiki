@@ -41,12 +41,12 @@ AFC handles filament runout, you must remove the Simple AF filament runout detec
 
 ## Cut Macro
 
-The `AFC_CUT` macro has a fatal flaw that can lead to collisions with the purge bracket on a K1 or K1 Max, there is a PR open to hopefully rectify that, but for now
-use the AFC_CUT macro with extreme caution.
+The `AFC_CUT` macro in the main branch has a flaw that can lead to collisions with the purge bracket on a K1 or K1 Max, a fix has been merged to the DEV branch to rectify that, but for now
+use the AFC_CUT macro with extreme caution!
 
 ## Enable MMU in Grumpyscreen
 
-To access the MMU panel in grumpyscreen you must modify the grumpyscreen.ini  to specify `backend: afc`:
+To access the MMU panel in grumpyscreen you must modify the grumpyscreen.ini to specify `backend: afc`:
 
 ![image](assets/images/grumpyscreen_afc_mmu.png)
 
