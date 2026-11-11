@@ -18,7 +18,7 @@ New here? See [Getting Started](getting-started.md).
 
 !!! klipper-error "Risk of bed damage"
 
-    The nozzle is pushed onto the bed with a force measured by the load cells, if the load cells are not calibrated properly or something else goes wrong you can damage your printer. Be ready to hit the e-stop button in your UI or Grumpyscreen, or the power button, and never leave your printer unattended while homing, probing or bed meshing.
+    The nozzle is pushed onto the bed with a force measured by the load cells, if the load cells are not calibrated properly or something else goes wrong you can damage your printer. Be ready to hit the e-stop button in your UI or GrumpyScreen, or the power button, and never leave your printer unattended while homing, probing or bed meshing.
 
 ## Nozzle Wipe
 

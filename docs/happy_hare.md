@@ -40,19 +40,19 @@ systemctl restart klipper
 
 TODO
 
-## Enable MMU in Grumpyscreen
+## Enable MMU in GrumpyScreen
 
-To access the MMU panel in grumpyscreen you must modify the grumpyscreen.ini to specify `backend: hh`:
+To access the MMU panel in grumpyScreen you must modify the grumpyscreen.ini to specify `backend: hh`:
 
 ![image](assets/images/grumpyscreen_hh_mmu.png)
 
-Restart Grumpyscreen after making this change
+Restart GrumpyScreen after making this change
 
 !!! tip
 
-    You can restart Grumpyscreen via the Services menu in Fluidd or Mainsail, you can also Restart GUI from Grumpyscreen
+    You can restart GrumpyScreen via the Services menu in Fluidd or Mainsail, you can also Restart GUI from GrumpyScreen
 
-When you restart Grumpyscreen there will be a MMU icon on the left panel, it will be grayed out until klipper starts
-and Grumpyscreen sees the required MMU configuration registered.
+When you restart GrumpyScreen there will be a MMU icon on the left panel, it will be grayed out until klipper starts
+and GrumpyScreen sees the required MMU configuration registered.
 
 ![image](assets/images/grumpyscreen_mmu.png)

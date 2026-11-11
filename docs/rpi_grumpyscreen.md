@@ -46,7 +46,7 @@ And please make sure you disable this line:
 
 !!! note
 
-    The gpu_mem=160 is really important otherwise Grumpyscreen won't display correctly.
+    The gpu_mem=160 is really important otherwise GrumpyScreen won't display correctly.
 
 ## BTT HDMI 5 Screen
 
@@ -71,7 +71,7 @@ And please make sure you disable this line:
 
 !!! note
 
-    The gpu_mem=160 is really important otherwise Grumpyscreen won't display correctly.
+    The gpu_mem=160 is really important otherwise GrumpyScreen won't display correctly.
 
 You might need to modify the `/etc/systemd/system/grumpyscreen.service` to configure the correct `LVGL_EVDEV_DEV`
 which by default is set for DSI 4.3 TFT screen, be aware that the `/dev/input/event0` will likely be wrong if a webcam is plugged in.

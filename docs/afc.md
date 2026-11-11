@@ -44,19 +44,19 @@ AFC handles filament runout, you must remove the Simple AF filament runout detec
 The `AFC_CUT` macro in the main branch has a flaw that can lead to collisions with the purge bracket on a K1 or K1 Max, a fix has been merged to the DEV branch to rectify that, but for now
 use the AFC_CUT macro with extreme caution!
 
-## Enable MMU in Grumpyscreen
+## Enable MMU in GrumpyScreen
 
-To access the MMU panel in grumpyscreen you must modify the grumpyscreen.ini to specify `backend: afc`:
+To access the MMU panel in GrumpyScreen you must modify the grumpyscreen.ini to specify `backend: afc`:
 
 ![image](assets/images/grumpyscreen_afc_mmu.png)
 
-Restart Grumpyscreen after making this change
+Restart GrumpyScreen after making this change
 
 !!! tip
 
-    You can restart Grumpyscreen via the Services menu in Fluidd or Mainsail, you can also Restart GUI from Grumpyscreen
+    You can restart GrumpyScreen via the Services menu in Fluidd or Mainsail, you can also Restart GUI from GrumpyScreen
 
-When you restart Grumpyscreen there will be a MMU icon on the left panel, it will be grayed out until klipper starts
-and Grumpyscreen sees the required MMU configuration registered.
+When you restart GrumpyScreen there will be a MMU icon on the left panel, it will be grayed out until klipper starts
+and GrumpyScreen sees the required MMU configuration registered.
 
 ![image](assets/images/grumpyscreen_mmu.png)

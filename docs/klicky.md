@@ -103,7 +103,7 @@ flip the `variable_auto_docking` to `True`, save and restart and klicky will aut
 ### Verifying Probe
 
 It's really important to verify that the klicky actually will work as an endstop for homing, so initiate homing and then use your finger to activate the microswitch
-on the bottom of the klicky and make sure homing stops, if it does not stop you need to immediately use the e-stop button in your UI or Grumpyscreen or hit that power button 
+on the bottom of the klicky and make sure homing stops, if it does not stop you need to immediately use the e-stop button in your UI or GrumpyScreen or hit that power button 
 
 --8<-- "snippets/probe/slicer_settings.md"
 

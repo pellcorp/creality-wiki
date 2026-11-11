@@ -18,7 +18,7 @@ The source for GrumpyScreen can be found at <https://github.com/pellcorp/grumpys
 
 The file `grumpyscreen.ini` is located in the config directory, you can edit it from fluidd or mainsail
 
-## Grumpyscreen Factory Reset
+## GrumpyScreen Factory Reset
 
 See [Factory Reset](emergency_factory_reset.md#via-grumpyscreen)
 

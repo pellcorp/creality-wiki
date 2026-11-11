@@ -53,7 +53,7 @@ When needed we maintain forks of upstream projects with additional features that
 - [Kalico Firmware - K1 Series](https://github.com/pellcorp/k1-kalico-firmware) - builds for firmware for Creality MCUs
 - [Kalico - RPI Series](https://github.com/pellcorp/kalico-rpi) - some quality-of-life features
 - [uStreamer](https://github.com/pellcorp/k1-ustreamer) - optimised fps and support pause / resume of camera feed for cartographer, beacon and eddy without actually stopping the webcam service (K1 Series only)
-- [Grumpyscreen](https://github.com/pellcorp/grumpyscreen) - A fork of guppyscreen, original project is abandoned.
+- [GrumpyScreen](https://github.com/pellcorp/grumpyscreen) - A fork of guppyscreen, original project is abandoned.
 
 !!! note
 

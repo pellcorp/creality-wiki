@@ -8,7 +8,7 @@ This page covers using load cells for auto z-offset alongside another supported 
 
 !!! klipper-error "Risk of bed damage"
 
-    The nozzle is pushed onto the bed with a force measured by the load cells, if the load cells are not calibrated properly or something else goes wrong you can damage your printer. Be ready to hit the e-stop button in your UI or Grumpyscreen, or the power button, and never leave your printer unattended while starting a print.
+    The nozzle is pushed onto the bed with a force measured by the load cells, if the load cells are not calibrated properly or something else goes wrong you can damage your printer. Be ready to hit the e-stop button in your UI or GrumpyScreen, or the power button, and never leave your printer unattended while starting a print.
 
 ## Nozzle Wipe
 

@@ -24,7 +24,7 @@ Failing to follow this advice can lead to your printer getting bricked and requi
 
 ![image](assets/images/error3002.png)
 
-## Via Grumpyscreen
+## Via GrumpyScreen
 
 Click the `Factory Reset` button from the Tools menu of GrumpyScreen.
 
