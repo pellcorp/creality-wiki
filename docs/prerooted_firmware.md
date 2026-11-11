@@ -17,22 +17,21 @@ Go to <https://github.com/pellcorp/downloads/tree/main/creality/prerooted>
 
 ## What is included?
 
-So all images are pre-rooted with `Creality2023` as the password.  For the Ender 3 V3 KE, Ender 5 Max, Nebula Pad and CR10SE images unfortunately
-SSH does not get enabled until the initial setup steps are completed.  Firmware for K1 series printers seems
-like ssh gets enabled much earlier soon as the display service starts.  The reason for this is that the display server is
-responsible for starting dropbear, because the actual drop bear service is disabled.
+So all images are pre-rooted with `Creality2023` as the password.  All images now start dropbear immediately there is no reliance
+on the display to start dropbear and when the display tries to start drop bear later it will harmlessly crash leaving the version
+the pre-rooted firmware started, this is different to previous iterations of this firmware which relied on setting the prerooted flag
+and waiting for the display, which honestly was not required this is better.
+
+!!! note
+
+    The firmware that enables SSH without waiting for the screen was uploaded on november 11th 2026 (AEDT)
 
 In addition to being pre-rooted we also added a few goodies to help:
 
 - [Configure WIFI via USB](configure_wifi.md)
 - [Emergency Factory Reset via USB](emergency_factory_reset.md)
-
-
-## What if I can't get past the setup for Ender 3 V3 KE, Ender 5 Max, Nebula Pad and CR10SE?
-
-If there is interest, we can create bootstrap images which can be used to install Simple AF bypassing the
-display service and disable klipper.  They are still pre-rooted like the normal images but directly start dropbear 
-and have a simple UI for wifi.
+- SFTP is enabled ootb
+- The /usr/bin/curl binary is fixed for SSL / TLS
 
 ## How were these built?
 
