@@ -36,6 +36,19 @@ systemctl restart moonraker
 systemctl restart klipper
 ```
 
+### Installer Issues
+
+The installer will report:
+
+```
+Restarting Moonraker...
+Service '/etc/init.d/moonraker_service' not found! Restart manually or check your config
+Restarting Klipper...
+Service '/etc/init.d/klipper_service' not found! Restart manually or check your config
+```
+
+We are not sure why it's looking for these, as it did `Detected Creality K1 series printer`, we will chase this up with the HH project 
+
 ## Filament runout
 
 TODO
