@@ -31,7 +31,7 @@ Then run the installer:
 
 ```
 cd /usr/data/Happy-Hare
-./install.sh -k /usr/data/klipper -c /usr/data/printer_data/config -z -m /usr/data/moonraker -e
+./install.sh -k /usr/data/klipper -c /usr/data/printer_data/config -z -m /usr/data/moonraker -i
 systemctl restart moonraker
 systemctl restart klipper
 ```
