@@ -31,7 +31,7 @@ Then run the installer:
 
 ```
 cd /usr/data/Happy-Hare
-CONFIG_SERVICE_MOONRAKER=S56moonraker_service CONFIG_SERVICE_KLIPPER=S55klipper_service ./install.sh -i -s
+CONFIG_SERVICE_MOONRAKER=S56moonraker_service CONFIG_SERVICE_KLIPPER=S55klipper_service ./install.sh -i
 ```
 
 ## Filament runout
