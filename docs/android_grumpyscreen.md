@@ -40,3 +40,7 @@ very few exceptions it will behave exactly the same as on a screen connected to 
 
 It is early days, and we are continuing to refine the experience, bugs or feature requests can be reported to <https://github.com/pellcorp/grumpyscreen/issues>
 
+## Known Issues
+
+If you start a calibration in GrumpyScreen for Android and switch to another app and then come back, trying to dismiss the dialog will leave it
+orphaned in GrumpyScreen for Android, you will need to reconnect to the printer to dismiss it.
