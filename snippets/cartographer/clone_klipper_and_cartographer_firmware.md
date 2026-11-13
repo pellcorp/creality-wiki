@@ -1,7 +1,7 @@
 ## Clone Klipper and Cartographer-Firmware
 
 ```
-git clone "https://github.com/pellcorp/klipper" $HOME/klipper
+git clone "https://github.com/pellcorp/kalico" $HOME/klipper
 git clone "https://github.com/Cartographer3D/cartographer_firmware" $HOME/cartographer_firmware
 ```
 
