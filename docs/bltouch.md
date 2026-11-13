@@ -71,7 +71,7 @@ Please note that you will need to change the screen orientation to horizontal, h
 
 This probe is currently not supported on Ender 5 Max
 
-### Ender 3 V3 SE (with Nebula Pad)
+### Ender 3 V3 SE (Nebula Pad)
 
 !!! danger
 

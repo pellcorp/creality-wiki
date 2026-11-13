@@ -63,7 +63,7 @@ Please note that you will need to change the screen orientation to horizontal, h
 
 This probe is currently not supported on CR10SE, but support can be added if there is interest.
 
-### Ender 3 V3 SE (with Nebula Pad)
+### Ender 3 V3 SE (Nebula Pad)
 
 You can install Simple AF on a Nebula pad and use with a limited range of Ender 3 printers, refer to [Nebula Pad](nebula_pad.md) for details
 of getting the required base firmware onto the nebula pad, as well as getting the right printer firmware flashed to your Ender 3.
