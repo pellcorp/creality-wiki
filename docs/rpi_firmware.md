@@ -1,8 +1,7 @@
 # MCU Firmware
 
-Its likely if you are migrating from Marlin (for instance for a Ender 3 V3 SE), you will need to flash new klipper
-firmware to the mainboard (this is not the same as the RPI), and for the moment at least this guide is lacking
-a lot of details for that.
+You will need to flash new kalico firmware to the mainboard (this is not the same as the RPI), and for the moment at 
+least this guide is lacking a lot of details for that.
 
 We think the easiest approach here is to install Simple AF and acccept that the MCU likely won't connect and then
 login to your RPI and use make menuconfig and make to create the firmware so you can get that flashed in whatever
@@ -13,7 +12,7 @@ from the cli on the printer (ymmv).   Please consult manufacturer instructions w
 
 ## Ender 3 V3 SE
 
-The Ender 3 V3 SE is a bit painful to flash, and it depends on which version of the board you have (C13 vs C14)
+We have prebuilt Ender 3 V3 SE firmware for both variants to make things easier.
 
 | Mainboards                | URL                                                                         |
 |---------------------------|-----------------------------------------------------------------------------|
