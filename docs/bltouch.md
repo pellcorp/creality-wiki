@@ -89,11 +89,6 @@ This probe is currently not supported on Ender 5 Max
 Please note that you will need to change the screen orientation to horizontal, here is a model for the Ender 3 V3 SE:
    <https://www.printables.com/model/706657-creality-ender-3-v3-e3v3-se-ke-and-cr-10-se-portra>
 
-### Ender 3 V2 & V2 (Nebula Pad)
-
-You can install Simple AF on a Nebula pad and use with a limited range of Ender 3 printers, refer to [Nebula Pad](nebula_pad.md) for details
-of getting the required base firmware onto the nebula pad, as well as getting the right printer firmware flashed to your Ender 3.
-
 ### Ender 3 V3 SE (RPI Series)
 
 !!! danger
@@ -113,7 +108,14 @@ To setup Simple AF on an Ender 3 V3 SE with SBC like a raspberry pi, you are goi
 
 For more information see [Simple AF for RPi](rpi.md)
 
+### Ender 3 V1 & V2 (Nebula Pad)
+
+You can install Simple AF on a Nebula pad and use with a limited range of Ender 3 printers, refer to [Nebula Pad](nebula_pad.md) for details
+of getting the required base firmware onto the nebula pad, as well as getting the right printer firmware flashed to your Ender 3.
+
 ### RPi or SBC
+
+You can setup the bltouch on a range of printers with a sbc like the raspberry pi
 
 See [Simple AF for RPi](rpi.md)
 
