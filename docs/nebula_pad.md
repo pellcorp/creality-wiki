@@ -32,21 +32,36 @@ You will need to flash your printer with klipper firmware in the way that each p
 this will entail copying the bin file to a SD or Micro SD card and placing into the printer and restarting the printer, you should not
 have the printer connected to the Nebula Pad at this stage.
 
-| Mainboards               | URL                                                                                    | Notes                                                                                                      |
-|--------------------------|----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| Creality 4.2.2 and 4.2.7 | <https://github.com/pellcorp/kalico/raw/refs/heads/aug2026/fw/NEBULA/creality-42x.bin> | This firmware works for STM32 and GD32 variants of the boards                                              |
-| Ender 3 V3 C13           | <https://github.com/pellcorp/kalico/raw/refs/heads/aug2026/fw/NEBULA/e3v3se.bin>       | C13 board only                                                                                             | 
-| Ender 3 V3 C14           | COMING SOON                                                                            | Create a folder `STM32F4_UPDATE` copy `e3v3se_c14.bin`<br /> to this folder and rename to `firmware.bin`   |
-
+| Mainboards               | URL                                                                                    | Notes                                                                                                                                                             |
+|--------------------------|----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Creality 4.2.2 and 4.2.7 | <https://github.com/pellcorp/kalico/raw/refs/heads/aug2026/fw/NEBULA/creality-42x.bin> | This firmware works for STM32 and GD32 variants of the boards                                                                                                     |
+| Ender 3 V3 C13           | <https://github.com/pellcorp/kalico/raw/refs/heads/aug2026/fw/NEBULA/e3v3se.bin>       | Copy to root of SD-Card and rename to a unique filename in 8.3 format (something you have not flashed before)                                                     | 
+| Ender 3 V3 C14           | COMING SOON                                                                            | Create a folder `STM32F4_UPDATE` copy `e3v3se_c14.bin`<br /> to this folder and rename to a unique filename in 8.3 format (something you have not flashed before) |
 
 ### Ender 3 V3 SE
 
-It is super important to double check what chip is on your board, the C14 chips have a STM32 chip, the C13 boards have GD32.   We have just become aware creality has also released boards which say C14, but have GD32!
+The Ender 3 V3 SE is a bit painful to flash, and it depends on which version of the board you have (C13 vs C14)
 
-A contributor on the Simple AF Discord pointed us to this site, which might help if you are having issues flashing the Ender 3 V3 SE:
+| Mainboards                | URL                                                                        | 
+|---------------------------|----------------------------------------------------------------------------|
+| Ender 3 V3 SE (C13 Board) | <https://github.com/pellcorp/kalico/blob/aug2026/fw/NEBULA/e3v3se.bin>     | 
+| Ender 3 V3 SE (C14 Board) | <https://github.com/pellcorp/kalico/blob/aug2026/fw/NEBULA/e3v3se-c14.bin> |
 
-<https://github.com/navaismo/Marlin_bugfix_2.1_E3V3SE/wiki/Flashing-your-Printer#troubleshooting>
+#### C13 Board
 
+!!! danger
+
+    Flashing the C14 firmware to a C13 board is very likely to brick it because the C13 has a 28KB bootloader offset amongst other differences.
+
+Copy the firmware bin file to the root of your SD-Card and rename to a unique filename in 8.3 format, something you have not flashed before, such as fw-1113.bin.
+
+#### C14 Board
+
+!!! danger
+
+    Flashing the C13 firmware to a C14 board is very likely to brick it because the C14 has a 64KB bootloader offset amongst other differences.
+
+Copy the firmware bin file to a folder `STM32F4_UPDATE` on your SD-Card and rename to a unique filename in 8.3 format something you have not flashed before, such as fq-1115.bin.
 
 ## SimpleAF Base Firmware
 

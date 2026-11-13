@@ -15,7 +15,26 @@ from the cli on the printer (ymmv).   Please consult manufacturer instructions w
 
 The Ender 3 V3 SE is a bit painful to flash, and it depends on which version of the board you have (C13 vs C14)
 
-Coming soon are pre-built firmware for C13 and C14 variants for both NebulaPad and RPI Series
+| Mainboards                | URL                                                                         |
+|---------------------------|-----------------------------------------------------------------------------|
+| Ender 3 V3 SE (C14 Board) | <https://github.com/pellcorp/kalico-rpi/blob/aug2026/fw/rpi/e3v3se.bin>     | 
+| Ender 3 V3 SE (C14 Board) | <https://github.com/pellcorp/kalico-rpi/blob/aug2026/fw/rpi/e3v3se-c14.bin> |
+
+### C13 Board
+
+!!! danger
+
+    Flashing the C14 firmware to a C13 board is very likely to brick it because the C13 has a 28KB bootloader offset amongst other differences.
+
+Copy the firmware bin file to the root of your SD-Card and rename to a unique filename in 8.3 format, something you have not flashed before, such as fw-1113.bin.
+
+### C14 Board
+
+!!! danger
+
+    Flashing the C13 firmware to a C14 board is very likely to brick it because the C14 has a 64KB bootloader offset amongst other differences.
+
+Copy the firmware bin file to a folder `STM32F4_UPDATE` on your SD-Card and rename to a unique filename in 8.3 format something you have not flashed before, such as fq-1115.bin.
 
 ## SKR Mini E3 V2
 
