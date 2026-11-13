@@ -98,7 +98,7 @@ Please note that you will need to change the screen orientation to horizontal, h
 
 To setup Simple AF on an Ender 3 V3 SE with SBC like a raspberry pi, you are going to be installing [Simple AF for RPi](rpi.md)
 
-- The `--printer` argument will be `creality-ender3-v3-se`
+- The `--printer` is `creality-ender3-v3-se`
 - The `--probe` is `bltouch`
 - The `--mount` will be `Default`
 
