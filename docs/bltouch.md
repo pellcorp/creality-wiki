@@ -87,6 +87,11 @@ of getting the required base firmware onto the nebula pad, as well as getting th
 Please note that you will need to change the screen orientation to horizontal, here is a model for the Ender 3 V3 SE:
    <https://www.printables.com/model/706657-creality-ender-3-v3-e3v3-se-ke-and-cr-10-se-portra>
 
+!!! danger
+
+    The OrcaSlicer slicer settings for the Ender 3 V3 SE are wrong, you must change them before using Simple AF, failing to do so can lead to bed or nozzle damage. 
+    Refer to [Slicer Settings](slicer_settings.md)
+
 ### Ender 3 V3 SE (RPI Series)
 
 To setup Simple AF on an Ender 3 V3 SE with SBC like a raspberry pi, you are going to be installing [Simple AF for RPi](rpi.md)
@@ -100,6 +105,11 @@ To setup Simple AF on an Ender 3 V3 SE with SBC like a raspberry pi, you are goi
     If you want to use the load cells to automatically determine the z-offset you need to add `--loadcells-zoffset` to the installation command
 
 For more information see [Simple AF for RPi](rpi.md)
+
+!!! danger
+
+    The OrcaSlicer slicer settings for the Ender 3 V3 SE are wrong, you must change them before using Simple AF, failing to do so can lead to bed or nozzle damage. 
+    Refer to [Slicer Settings](slicer_settings.md)
 
 ### RPi or SBC
 
