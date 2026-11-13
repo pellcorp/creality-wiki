@@ -33,9 +33,11 @@ This guide assumes you have a K1, K1C, K1SE or K1 Max and you are running stock 
 
 ### Ender 3 V3 KE
 
-!!! tip
+You can specify `--mount Default` for the installer command if the cr-touch is mounted in the same location as stock.
 
-    You can specify `--mount Default` for the installer command if the cr-touch is mounted in the same location as stock.
+!!! tip "LoadCells for Z-Offset"
+
+    If you want to use the load cells to automatically determine the z-offset you need to add `--loadcells-zoffset` to the installation command
 
 This guide assumes you have a stock Ender 3 V3 KE with Nebula Pad with Root enabled, when you get to installation below, you should specify the `--mount Default` to install
 Simple AF on the KE for Cr-Touch.
@@ -78,8 +80,26 @@ This probe is currently not supported on Ender 5 Max
 You can install Simple AF on a Nebula pad and use with a limited range of Ender 3 printers, refer to [Nebula Pad](nebula_pad.md) for details
 of getting the required base firmware onto the nebula pad, as well as getting the right printer firmware flashed to your Ender 3.
 
+!!! tip "LoadCells for Z-Offset"
+
+    If you want to use the load cells to automatically determine the z-offset you need to add `--loadcells-zoffset` to the installation command
+
 Please note that you will need to change the screen orientation to horizontal, here is a model for the Ender 3 V3 SE:
    <https://www.printables.com/model/706657-creality-ender-3-v3-e3v3-se-ke-and-cr-10-se-portra>
+
+### Ender 3 V3 SE (RPI Series)
+
+To setup Simple AF on an Ender 3 V3 SE with SBC like a raspberry pi, you are going to be installing [Simple AF for RPi](rpi.md)
+
+The `--printer` argument will be `creality-ender3-v3-se`
+The `--probe` is `bltouch`
+The `--mount` will be `Default`
+
+!!! tip "LoadCells for Z-Offset"
+
+    If you want to use the load cells to automatically determine the z-offset you need to add `--loadcells-zoffset` to the installation command
+
+For more information see [Simple AF for RPi](rpi.md)
 
 ### RPi or SBC
 
