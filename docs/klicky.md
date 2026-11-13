@@ -2,6 +2,7 @@
 seo_title: "Klicky on Creality K1 - Install Guide"
 toc_section_depths:
   firmware-requirements: 3
+  installation: 3
 ---
 
 # Klicky

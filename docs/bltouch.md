@@ -2,6 +2,7 @@
 seo_title: "BLTouch on Creality K1 - Install Guide"
 toc_section_depths:
   firmware-requirements: 3
+  installation: 3
 ---
 
 # BL Touch, CR-Touch and 3D Touch
