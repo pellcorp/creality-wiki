@@ -32,11 +32,13 @@ You will need to flash your printer with klipper firmware in the way that each p
 this will entail copying the bin file to a SD or Micro SD card and placing into the printer and restarting the printer, you should not
 have the printer connected to the Nebula Pad at this stage.
 
-| Mainboards               | URL                                                                                    | Notes                                                                                                                                                             |
-|--------------------------|----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Creality 4.2.2 and 4.2.7 | <https://github.com/pellcorp/kalico/raw/refs/heads/aug2026/fw/NEBULA/creality-42x.bin> | This firmware works for STM32 and GD32 variants of the boards                                                                                                     |
-| Ender 3 V3 C13           | <https://github.com/pellcorp/kalico/raw/refs/heads/aug2026/fw/NEBULA/e3v3se.bin>       | Copy to root of SD-Card and rename to a unique filename in 8.3 format (something you have not flashed before)                                                     | 
-| Ender 3 V3 C14           | COMING SOON                                                                            | Create a folder `STM32F4_UPDATE` copy `e3v3se_c14.bin`<br /> to this folder and rename to a unique filename in 8.3 format (something you have not flashed before) |
+### Creality 4.2.2 and 4.2.7
+
+This firmware works for STM32 and GD32 variants of the boards
+
+The firmware <https://github.com/pellcorp/kalico/raw/refs/heads/aug2026/fw/NEBULA/creality-42x.bin>
+
+Copy the firmware bin file to the root of your SD-Card and rename to a unique filename in 8.3 format, something you have not flashed before, such as fw-1113.bin.
 
 ### Ender 3 V3 SE
 
