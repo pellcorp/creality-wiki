@@ -30,18 +30,23 @@ This guide assumes you have a K1, K1C, K1SE or K1 Max and you are running stock 
 
 ### Ender 5 Max
 
+!!! danger
+
+    The OrcaSlicer slicer settings for the Ender 5 Max are wrong, you must change them before using Simple AF, failing to do so can lead to bed or nozzle damage. 
+    Refer to [Slicer Settings](slicer_settings.md)
+
 This guide assumes you are running stock Creality firmware 1.2.0.10 or **higher** on your Ender 5 Max.
 
 The stock firmware comes pre-rooted, with the default root password being `Creality@2024_Wh_464`
 
 Please note that you will need to change the screen orientation to horizontal, here is a model for that <https://www.printables.com/model/1246910-ender-5-max-screen-bracket>
 
+### Ender 3 V3 KE
+
 !!! danger
 
-    The OrcaSlicer slicer settings for the Ender 5 Max are wrong, you must change them before using Simple AF, failing to do so can lead to bed or nozzle damage. 
+    The OrcaSlicer slicer settings for the Ender 3 V3 KE are wrong, you must change them before using Simple AF, failing to do so can lead to bed or nozzle damage. 
     Refer to [Slicer Settings](slicer_settings.md)
-
-### Ender 3 V3 KE
 
 This guide assumes you have a stock Ender 3 V3 KE with Nebula Pad with Root enabled, when you get to installation below, you should specify the `--mount Default` to install
 Simple AF on the KE for Cr-Touch.
@@ -49,10 +54,10 @@ Simple AF on the KE for Cr-Touch.
 Please note that you will need to change the screen orientation to horizontal, here is a model for that:
 <https://www.printables.com/model/706657-creality-ender-3-v3-e3v3-se-ke-and-cr-10-se-portra>
 
-!!! danger
+!!! tip "LoadCells for Z-Offset"
 
-    The OrcaSlicer slicer settings for the Ender 3 V3 KE are wrong, you must change them before using Simple AF, failing to do so can lead to bed or nozzle damage. 
-    Refer to [Slicer Settings](slicer_settings.md)
+    If you want to use the load cells to automatically determine the z-offset instead of cartographer touch 
+    you need to add `--loadcells-zoffset` to the installation command.
 
 ### CR10SE
 
@@ -78,6 +83,11 @@ Please note that you will need to change the screen orientation to horizontal, h
 
 ### Ender 3 V3 SE (RPI Series)
 
+!!! danger
+
+    The OrcaSlicer slicer settings for the Ender 3 V3 SE are wrong, you must change them before using Simple AF, failing to do so can lead to bed or nozzle damage. 
+    Refer to [Slicer Settings](slicer_settings.md)
+
 To setup Simple AF on an Ender 3 V3 SE with SBC like a raspberry pi, you are going to be installing [Simple AF for RPi](rpi.md)
 
 - The `--printer` argument will be `creality-ender3-v3-se`
@@ -95,11 +105,6 @@ To setup Simple AF on an Ender 3 V3 SE with SBC like a raspberry pi, you are goi
     you need to add `--loadcells-zoffset` to the installation command.
 
 For more information see [Simple AF for RPi](rpi.md)
-
-!!! danger
-
-    The OrcaSlicer slicer settings for the Ender 3 V3 SE are wrong, you must change them before using Simple AF, failing to do so can lead to bed or nozzle damage. 
-    Refer to [Slicer Settings](slicer_settings.md)
 
 ### RPi or SBC
 
