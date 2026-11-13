@@ -13,7 +13,7 @@ RPi / SBC users: install SimpleAF via [SimpleAF for RPi](rpi.md). The rest of th
 
 !!! info "What about CrTouch?"
 
-    Yep, you can use a CrTouch as an alternative to a BlTouch. However, we have not tested either on a K1, so we can't currently provide detailed guidance on the required configuration.
+    Yep, you can use a CrTouch as an alternative to a BlTouch, you will just need to find a compatible mount, and perhaps tweak the bltouch.cfg settings.
 
 !!! info "What about 3d Touch?"
 
