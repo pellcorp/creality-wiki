@@ -191,6 +191,7 @@ nav:
       - Features:
           - rpi_klippain.md
           - rpi_webcam.md
+          - android_grumpyscreen.md
           - rpi_grumpyscreen.md
           - rpi_klipperscreen.md
           - rpi_boot_display.md
