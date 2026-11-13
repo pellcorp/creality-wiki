@@ -13,15 +13,12 @@ from the cli on the printer (ymmv).   Please consult manufacturer instructions w
 
 ## Ender 3 V3 SE
 
-The Ender 3 V3 SE is a bit painful to flash, and it depends on which version of the board you have (C13 vs C14), but 
-there are a few guides this one looks to be the most detailed:
+The Ender 3 V3 SE is a bit painful to flash, and it depends on which version of the board you have (C13 vs C14)
 
-For building the firmware: <https://athemis.me/projects/klipper_guide/#create-printer-firmware-bin-file>
-For getting it onto your printer: <https://athemis.me/projects/klipper_guide/#flash-3d-printer>
+Coming soon are pre-built firmware for C13 and C14 variants for both NebulaPad and RPI Series
 
 ## SKR Mini E3 V2
 
-Its important to ensure the !PA14 GPIO setting is configured, but even more important for RP3 is to ensure that the config.txt
+It is important to ensure the !PA14 GPIO setting is configured, but even more important for RP3 is to ensure that the config.txt
 setting `dtoverlay=dwc2` is enabled in the `[all]` section, otherwise klipper is going to crash the entire pi every time
 it tries to start up and you will racing to stop it after ssh into the pi to deal with this after the installation.
-
