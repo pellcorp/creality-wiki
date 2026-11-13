@@ -51,7 +51,7 @@ primary probe is mounted on the back.   If you want to use your own nozzle wipe 
 
 - Ender 3 V3
 - Ender 3 V3 KE
-- Ender 3 V3 SE (with [Nebula Pad](nebula_pad.md) on K1 Series and RPI Series)
+- Ender 3 V3 SE (K1 Series with Nebula Pad and also RPI Series)
 - K1
 - K1C
 - K1 SE
@@ -110,6 +110,10 @@ You need an object of known weight, weigh it on a kitchen scale.
     a lighter weight fails with the `Tare and Calibration readings are less than 1% different!` error, see [Calibration Errors](#calibration-errors).
 
     New spools of filament work well, a brand new spool is typically 1000 g of filament plus the spool itself, which is about 250 g for a bamboo plastic spool or about 175 g for a cardboard spool.  Weight whatever you use on a kitchen scale and enter the real weight.
+
+!!! tip
+
+    Calibrating the load cells on a Ender 3 V3 KE or SE you should be centering the weight over the front left corner of the bed for best results.
 
 --steps--
 
