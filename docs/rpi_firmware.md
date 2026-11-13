@@ -16,7 +16,7 @@ We have prebuilt Ender 3 V3 SE firmware for both variants to make things easier.
 
 | Mainboards                | URL                                                                         |
 |---------------------------|-----------------------------------------------------------------------------|
-| Ender 3 V3 SE (C14 Board) | <https://github.com/pellcorp/kalico-rpi/blob/aug2026/fw/rpi/e3v3se.bin>     | 
+| Ender 3 V3 SE (C13 Board) | <https://github.com/pellcorp/kalico-rpi/blob/aug2026/fw/rpi/e3v3se.bin>     | 
 | Ender 3 V3 SE (C14 Board) | <https://github.com/pellcorp/kalico-rpi/blob/aug2026/fw/rpi/e3v3se-c14.bin> |
 
 ### C13 Board
