@@ -33,16 +33,16 @@ This guide assumes you have a K1, K1C, K1SE or K1 Max and you are running stock 
 
 ### Ender 5 Max
 
+!!! danger
+
+    The OrcaSlicer slicer settings for the Ender 5 Max are wrong, you must change them before using Simple AF, failing to do so can lead to bed or nozzle damage. 
+    Refer to [Slicer Settings](slicer_settings.md)
+
 This guide assumes you are running stock Creality firmware 1.2.0.10 or **higher** on your Ender 5 Max.
 
 The stock firmware comes pre-rooted, with the default root password being `Creality@2024_Wh_464`
 
 Please note that you will need to change the screen orientation to horizontal, here is a model for that <https://www.printables.com/model/1246910-ender-5-max-screen-bracket>
-
-!!! danger
-
-    The OrcaSlicer slicer settings for the Ender 5 Max are wrong, you must change them before using Simple AF, failing to do so can lead to bed or nozzle damage. 
-    Refer to [Slicer Settings](slicer_settings.md)
 
 ### Ender 3 V3 KE
 
