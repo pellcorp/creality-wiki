@@ -54,17 +54,52 @@ Please note that you will need to change the screen orientation to horizontal, h
     The OrcaSlicer slicer settings for the Ender 3 V3 KE are wrong, you must change them before using Simple AF, failing to do so can lead to bed or nozzle damage. 
     Refer to [Slicer Settings](slicer_settings.md)
 
+### CR10SE
+
+This probe is currently not supported on CR10SE, but support can be added if there is interest.
+
 ### Ender 3 V3 SE (with Nebula Pad)
 
 You can install Simple AF on a Nebula pad and use with a limited range of Ender 3 printers, refer to [Nebula Pad](nebula_pad.md) for details
 of getting the required base firmware onto the nebula pad, as well as getting the right printer firmware flashed to your Ender 3.
 
+!!! tip "Pellcorp Mount"
+
+    The best mount for the Ender 3 V3 SE is the `Pellcorp` mount, for historical reasons the `Default` mount is taken and is 
+    not optimal because it has a non-zero y offset, the Pellcorp mount is designed so that you can have a 0 y offset.
+
 Please note that you will need to change the screen orientation to horizontal, here is a model for the Ender 3 V3 SE:
 <https://www.printables.com/model/706657-creality-ender-3-v3-e3v3-se-ke-and-cr-10-se-portra>
 
-### CR10SE
+!!! tip "LoadCells for Z-Offset"
 
-This probe is currently not supported on CR10SE, but support can be added if there is interest.
+    If you want to use the load cells to automatically determine the z-offset instead of cartographer touch 
+    you need to add `--loadcells-zoffset` to the installation command.
+
+### Ender 3 V3 SE (RPI Series)
+
+To setup Simple AF on an Ender 3 V3 SE with SBC like a raspberry pi, you are going to be installing [Simple AF for RPi](rpi.md)
+
+- The `--printer` argument will be `creality-ender3-v3-se`
+- The `--probe` is `cartographer`
+- The `--mount` will be `Pellcorp`
+
+!!! tip "Pellcorp Mount"
+
+    The best mount for the Ender 3 V3 SE is the `Pellcorp` mount, for historical reasons the `Default` mount is taken and is 
+    not optimal because it has a non-zero y offset, the Pellcorp mount is designed so that you can have a 0 y offset.
+
+!!! tip "LoadCells for Z-Offset"
+
+    If you want to use the load cells to automatically determine the z-offset instead of cartographer touch 
+    you need to add `--loadcells-zoffset` to the installation command.
+
+For more information see [Simple AF for RPi](rpi.md)
+
+!!! danger
+
+    The OrcaSlicer slicer settings for the Ender 3 V3 SE are wrong, you must change them before using Simple AF, failing to do so can lead to bed or nozzle damage. 
+    Refer to [Slicer Settings](slicer_settings.md)
 
 ### RPi or SBC
 
