@@ -22,7 +22,7 @@ When the app starts it will go searching for printers on your local network.
 
 ![image](assets/images/android/printers-online.jpg)
 
-### Manually adding a printer
+## Manually adding a printer
 
 It is possible to manually add a printer, but at the moment its not actually that obvious how to do it, we will be working on making
 that a bit more obvious, scroll down to see the `Or enter the Moonraker host or IP address` section
