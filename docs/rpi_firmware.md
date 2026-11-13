@@ -14,16 +14,13 @@ from the cli on the printer (ymmv).   Please consult manufacturer instructions w
 
 We have prebuilt Ender 3 V3 SE firmware for both variants to make things easier.
 
-| Mainboards                | URL                                                                         |
-|---------------------------|-----------------------------------------------------------------------------|
-| Ender 3 V3 SE (C13 Board) | <https://github.com/pellcorp/kalico-rpi/blob/aug2026/fw/rpi/e3v3se.bin>     | 
-| Ender 3 V3 SE (C14 Board) | <https://github.com/pellcorp/kalico-rpi/blob/aug2026/fw/rpi/e3v3se-c14.bin> |
-
 ### C13 Board
 
 !!! danger
 
     Flashing the C14 firmware to a C13 board is very likely to brick it because the C13 has a 28KB bootloader offset amongst other differences.
+
+The firmware <https://github.com/pellcorp/kalico-rpi/blob/aug2026/fw/rpi/e3v3se.bin>
 
 Copy the firmware bin file to the root of your SD-Card and rename to a unique filename in 8.3 format, something you have not flashed before, such as fw-1113.bin.
 
@@ -32,6 +29,8 @@ Copy the firmware bin file to the root of your SD-Card and rename to a unique fi
 !!! danger
 
     Flashing the C13 firmware to a C14 board is very likely to brick it because the C14 has a 64KB bootloader offset amongst other differences.
+
+The firmware <https://github.com/pellcorp/kalico-rpi/blob/aug2026/fw/rpi/e3v3se-c14.bin>
 
 Copy the firmware bin file to a folder `STM32F4_UPDATE` on your SD-Card and rename to a unique filename in 8.3 format something you have not flashed before, such as fw-1115.bin.
 
