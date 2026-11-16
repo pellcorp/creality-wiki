@@ -8,35 +8,6 @@ probes will now switch you over.
      Switching a mount on an existing probe will not switch your installation over to kalico from klipper, also if you switch
      to `btteddy` you will stay on klipper, because btteddy does not properly support kalico as yet, that is coming soon.
 
-## Kalico nov2026 changes
-
-### Load cells (K1, K1C, K1 SE, K1 Max, Ender 3 V3, Ender 3 V3 Plus, Ender 5 Max)
-
-Your load cells need calibrating again.
-
-1. Open `printer.cfg` and go to the bottom.
-2. Delete the `reference_tare_counts` and `counts_per_gram` lines.
-3. Save and restart.
-4. Run `LOAD_CELL_CALIBRATE`.
-
-### Load cells for z-offset
-
-Some command names changed. Only matters if you use them in your own macros.
-
-| Old | New |
-|---|---|
-| `LOAD_CELL_PROBE` | `PROBE PROBE=load_cell_probe` |
-| `LOAD_CELL_Z_OFFSET_APPLY_PROBE` | `Z_OFFSET_APPLY_PROBE PROBE=load_cell_probe` |
-| `LOAD_CELL_QUERY_PROBE` | `QUERY_PROBE PROBE=load_cell_probe` |
-
-### Better load cell taps
-
-Clean the nozzle, run `LOAD_CELL_PROBE_CALIBRATE CALIBRATION=TAP_PERFORMANCE`, then `SAVE_CONFIG`.
-
-### Input shaper
-
-Run `SHAPER_CALIBRATE` again.
-
 ## Klipper End-Of-Life in Simple AF
 
 By the end of October / early November 2026 the installer will refuse to update an existing installation which has klipper.  You will
