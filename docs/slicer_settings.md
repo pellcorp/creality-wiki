@@ -31,7 +31,15 @@ M104 S0
 START_PRINT EXTRUDER_TEMP=[nozzle_temperature_initial_layer] BED_TEMP=[bed_temperature_initial_layer_single]
 ```
 
-### Disable Adaptive Mesh
+## End Print
+
+**Machine end G-code**
+
+```
+END_PRINT
+```
+
+## Disable Adaptive Mesh
 
 You can pass `BED_MESH_ADAPTIVE=0` in START_PRINT to force a full bed mesh, you can also do this if for instance you are doing
 a multicolour print with a purge tower, so for example:
@@ -41,7 +49,7 @@ a multicolour print with a purge tower, so for example:
 START_PRINT EXTRUDER_TEMP=[nozzle_temperature_initial_layer] BED_TEMP=[bed_temperature_initial_layer_single] {if has_wipe_tower}BED_MESH_ADAPTIVE=0{endif}
 ```
 
-### Custom Start Print
+## Custom Start Print
 
 If you want to use a toggle for an adaptive bed mesh you can also do this by defining your own `MY_START_PRINT` macro (call it what you want except for `START_PRINT`)
 and a virtual pin:
@@ -65,14 +73,6 @@ Then be sure to change your slicer to specify:
 
 ```
 MY_START_PRINT EXTRUDER_TEMP=[nozzle_temperature_initial_layer] BED_TEMP=[bed_temperature_initial_layer_single]
-```
-
-## End Print
-
-**Machine end G-code**
-
-```
-END_PRINT
 ```
 
 ## Custom Bed Mesh Profile
