@@ -231,8 +231,9 @@ Plus because axis twist and bed mesh were generated with a previous model you **
 
 1. Run the `STOP_CAMERA` macro to stop the camera
 2. Home X Y (`G28 X Y`)
-3. Heat Nozzle to 148c (`M109 S148`) so that any filament can be removed from nozzle
-4. Run `CARTOGRAPHER_SCAN_CALIBRATE`
+3. Ensure the toolhead is in the middle of the bed
+4. Heat Nozzle to 148c (`M109 S148`) so that any filament can be removed from nozzle
+5. Run `CARTOGRAPHER_SCAN_CALIBRATE`
    Follow the [Paper Test Method](https://docs.kalico.gg/Bed_Level.html#the-paper-test)
    <br />Upon completion *`SAVE_CONFIG`*
 

@@ -212,8 +212,9 @@ Source: <https://docs.cartographer3d.com/original-plugin/installation/calibratio
 
 1. Run the `STOP_CAMERA` macro to stop the camera
 2. Home X Y (`G28 X Y`)
-3. Heat Nozzle to 150c (`M109 S150`) so that any filament can be removed from nozzle
-4. Run `CARTOGRAPHER_CALIBRATE METHOD=manual`
+3. Ensure the toolhead is in the middle of the bed
+4. Heat Nozzle to 150c (`M109 S150`) so that any filament can be removed from nozzle
+5. Run `CARTOGRAPHER_CALIBRATE METHOD=manual`
 Follow the [Paper Test Method](https://docs.kalico.gg/Bed_Level.html#the-paper-test)
 <br />Upon completion *`SAVE_CONFIG`*
 
