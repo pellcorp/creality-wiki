@@ -16,7 +16,7 @@ Cartographer software to abort if the non K1 / Lite specific firmware is not fla
 
 [cartographer firmware](cartographer.md#cartographer-firmware)
 
-## ## Cartographer MCU is disconnected
+## Cartographer MCU is disconnected
 
 If you see this error when trying to home your printer, it is a clear indication that the cartographer was disconnected and
 you should look for a `mcu 'cartographer' disconnected` error in your klippy.log or gcode console, if the cartographer was momentarily

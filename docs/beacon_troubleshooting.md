@@ -4,6 +4,13 @@ seo_title: "Beacon Troubleshooting - Creality K1"
 
 # Troubleshooting
 
+## Beacon MCU is disconnected
+
+If you see this error when trying to home your printer, it is a clear indication that the beacon was disconnected and
+you should look for a `mcu 'beacon' disconnected` error in your klippy.log or gcode console, if the beacon was momentarily
+disconnected (so if you run `lsusb` on the printer the beacon shows up), you can simply restart klipper from the services
+menu in Fluidd or Mainsail, if the beacon completely disappeared you will need to power cycle the printer!
+
 ## Manual Beacon Serial Device configuration
 
 You can run the following command to fix your serial if you forgot to plug your beacon in during the installation or update:
