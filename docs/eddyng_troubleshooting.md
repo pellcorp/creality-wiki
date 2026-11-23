@@ -22,7 +22,7 @@ You can then modify the `#*# tap_drive_current = 16` to be `#*# tap_drive_curren
 
 We are hopeful further work on this from the eddyng project might make this manual adjustment unnecessary!
 
-## Eddy is not connected, aborting homing Z
+## Eddy MCU is disconnected
 
 If you see this error when trying to home your printer, it is a clear indication that the eddy was either not connected
 when klipper started, or was disconnected sometime later.

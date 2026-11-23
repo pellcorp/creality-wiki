@@ -6,7 +6,6 @@ seo_title: "Beacon Troubleshooting - Creality K1"
 
 ## Manual Beacon Serial Device configuration
 
-
 You can run the following command to fix your serial if you forgot to plug your beacon in during the installation or update:
 
 ```
