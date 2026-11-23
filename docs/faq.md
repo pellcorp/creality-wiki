@@ -292,36 +292,6 @@ Simple AF runs a cleanup every time the printer starts it does the following:
 
 You can also run this script manually via the hidden macro _CLEANUP_FILES
 
-### Why can't I use force move? { data-toc-label="Force Move" }
-    
-We disable FORCE_MOVE by default because it works on the stepper level so for multi-z users it would create havoc, and also force move does not work so well for moving x and y either, so its really not that useful.
-SET_KINEMATIC_POSITION is a much better choice as once you activate this you can use the normal movement buttons in fluidd and mainsail.
-
-So if you need to move your nozzle up from being on the bed you should run:
-
-```
-SET_KINEMATIC_POSITION Z=0
-```
-
-This tells the printer to pretend that the nozzle is at zero, so this allows you to move the bed down the the max height of z
-
-If you want move to your bed up to the nozzle you should instead do something like:
-
-```    
-SET_KINEMATIC_POSITION Z=200
-```
-
-The reason why you cannot choose Z=0 for this scenario is you are telling the printer its at 0 z and the min position for z is -5, so this would only allow you to move the bed down 5mm, so you need to fake the printer into setting the bed to sufficient height to allow you to move it down sufficiently.
-
-If you were to set `SET_KINEMATIC_POSITION Z=100`, but your bed is already at the bottom of the printer there is no way to bring the bed up to meet the nozzle because it will exceed minimum position after moving 105mm.
-
-If you wish to restore access to force move set the `variable_disable_force_move: True` to False in `homing.cfg` and save and restart.
-
-!!! note
-
-    You can use the hidden `_SET_KIN_MAX_Z` macro to set kinematic distance to allow the full range of z height, this macro is normally used for calibration to allow
-    users to move their Cartographer, Beacon or Eddy close to the bed before calibration, but its useful for many situations.
-
 ### How can I change MCU fan from always on? { data-toc-label="MCU Fan" }
 
 See [MCU Fan](mcu_fan.md) for how to change the MCU fan from always on.
