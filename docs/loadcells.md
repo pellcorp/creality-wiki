@@ -151,6 +151,7 @@ You need an object of known weight, weigh it on a kitchen scale.
 5. Run `CALIBRATE GRAMS=<weight in grams>` for example `CALIBRATE GRAMS=3000`
 6. Run `ACCEPT`
    <br />Upon completion *`SAVE_CONFIG`*
+7. Remove the weights from the bed before going any further!
 
 --!steps--
 
