@@ -203,11 +203,6 @@ the lite variant of the firmware, which you can do on the printer via the [carto
 
 ## Calibration
 
-If you are switching from cartotouch remove these:
-
-- `[scanner model default]`
-- `[scanner]`
-
 Make sure you remove these:
 
 - `[cartographer scan_model default]`
