@@ -73,6 +73,9 @@ This probe is currently not supported on Ender 5 Max
 
 ### Ender 3 V3 SE (Nebula Pad)
 
+You can install Simple AF on a Ender 3 V3 SE with a Nebula pad, refer to [Nebula Pad](nebula_pad.md) for details
+of getting the required base firmware onto the nebula pad, as well as getting the right printer firmware flashed to your Ender 3 V3 SE.
+
 !!! danger
 
     The OrcaSlicer slicer settings for the Ender 3 V3 SE are wrong, you must change them before using Simple AF, failing to do so can lead to bed or nozzle damage. 
