@@ -131,7 +131,7 @@ You need an object of known weight, weigh it on a kitchen scale.
 
     A lighter weight fails with the `Tare and Calibration readings are less than 1% different!` error, see [Calibration Errors](#calibration-errors).
 
-    Weight whatever you use on a kitchen scale and enter the real weight, an example can be two house bricks, weigh one at a time on the kitchen scales to get to about 6kg
+    Weigh whatever you use on a kitchen scale and enter the real weight, an example can be two house bricks, weigh one at a time on the kitchen scales to get to about 6kg
 
 --steps--
 
