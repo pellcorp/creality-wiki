@@ -211,9 +211,10 @@ For the bltouch/3dtouch/crtouch it is **extremely** important to do the PROBE_CA
 
 --!steps--
 
-!!! note
+!!! tip
 
-    The default z-offset for BLTouch, 3dTouch and CrTouch is 0, so your prints won't stick without doing this step.
+    If you are using [loadcells for z-offset](#loadcells-for-z-offset) you can skip this step!
+    If not using loadcells,tThe default z-offset for BLTouch, 3dTouch and CrTouch is 0, so your prints won't stick without doing this step.
 
 ### Pid Tuning and Input Shaping
 
