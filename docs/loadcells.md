@@ -228,14 +228,6 @@ and `horizontal_z_clearance`, doing so at your own risk.
 
 To go back to a different probe see [Switching Probes](switching_probes.md).
 
-!!! warning
-
-    Do not switch to Klipper while `loadcells` is still your probe, Klipper does not support the load cell probe and will not start correctly.  Switch to a different probe first, and then if you want to go back to Klipper run:
-
-    ```
-    ~/pellcorp/installer.sh --klipper
-    ```
-
 --8<-- "snippets/loadcells/first_print.md"
 
 --8<-- "snippets/probe/other_calibrations.md"
