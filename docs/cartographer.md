@@ -203,7 +203,7 @@ the lite variant of the firmware, which you can do on the printer via the [carto
 
 ## Calibration
 
-Make sure you remove these:
+Make sure you remove these from the save config section of `printer.cfg`:
 
 - `[cartographer scan_model default]`
 - `[cartographer touch_model default]`
@@ -232,6 +232,11 @@ Plus because axis twist and bed mesh were generated with a previous model you **
    <br />Upon completion *`SAVE_CONFIG`*
 
 --!steps--
+
+!!! tip "What is good enough for the paper test?"
+
+   The paper test just get to a point where copy paper has slight dragging on the nozzle but you can still move it, using feeler gauges is a waste of time,
+   it does not need to be that perfect, this is just the scan model it's not remotely relevant to the z-offset.
 
 !!! note
 
