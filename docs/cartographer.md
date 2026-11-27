@@ -3,6 +3,7 @@ seo_title: "Cartographer on Creality K1 - Install Guide"
 toc_section_depths:
   firmware-requirements: 3
   installation: 3
+  calibration: 3
 ---
 
 # Cartographer 
@@ -203,22 +204,25 @@ the lite variant of the firmware, which you can do on the printer via the [carto
 
 ## Calibration
 
-Make sure you remove these from the save config section of `printer.cfg`:
+ The following calibration steps are required to setup a new printer:
 
-- `[cartographer scan_model default]`
-- `[cartographer touch_model default]`
+- [Manual Bed Tramming](#manual-bed-tramming)
+ - [Scan calibration](#scan-calibration)
+ - [Touch Calibration](#touch-calibration)
 
-Plus because axis twist and bed mesh were generated with a previous model you **must** remove these as well:
+!!! warning "Recalibration cleanup"
 
-- `[axis_twist_compensation]`
-- `[bed_mesh]`
+    Make sure you remove these from the save config section of `printer.cfg`:
 
-!!! warning
+    - `[cartographer scan_model default]`
+    - `[cartographer touch_model default]`
 
-    The following calibration steps are required to setup a new printer:
+    Plus because axis twist and bed mesh were generated with a previous model you **must** remove these as well:
 
-    - [Scan calibration](#scan-calibration)
-    - [Touch Calibration](#touch-calibration)
+    - `[axis_twist_compensation]`
+    - `[bed_mesh]`
+
+--8<-- "snippets/probe/manual_bed_tramming.md"
 
 ### Scan calibration
 
@@ -235,8 +239,8 @@ Plus because axis twist and bed mesh were generated with a previous model you **
 
 !!! tip "What is good enough for the paper test?"
 
-   The paper test just get to a point where copy paper has slight dragging on the nozzle but you can still move it, using feeler gauges is a waste of time,
-   it does not need to be that perfect, this is just the scan model it's not remotely relevant to the z-offset.
+    The paper test just get to a point where copy paper has slight dragging on the nozzle but you can still move it, using feeler gauges is a waste of time,
+    it does not need to be that perfect, this is just the scan model it's not remotely relevant to the z-offset.
 
 !!! note
 
@@ -285,8 +289,6 @@ After the save config you have to do the touch calibration.
     If it never touches the bed, refer to <https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/software-configuration/touch-calibration#nozzle-never-touches-the-bed   >
 
 **Source:** <https://docs.cartographer3d.com/cartographer-probe/installation-and-setup/software-configuration/touch-calibration>
-
---8<-- "snippets/probe/manual_bed_tramming.md"
 
 ### Pid Tuning and Input Shaping
 

@@ -2,6 +2,7 @@
 toc_section_depths:
   firmware-requirements: 3
   installation: 3
+  calibration: 3
 ---
 
 # Cartotouch

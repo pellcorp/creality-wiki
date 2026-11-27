@@ -3,6 +3,7 @@ seo_title: "EddyNG on Creality K1 - Install Guide"
 toc_section_depths:
   firmware-requirements: 3
   installation: 3
+  calibration: 3
 ---
 
 # Eddy NG
@@ -134,12 +135,11 @@ To use Simple AF with EddyNG, you will need to flash your eddy with new firmware
 
 ## Calibration
 
-!!! warning
+The following calibration steps are required to setup a new printer:
 
-    The following calibration steps are required to setup a new printer:
-
-    - [Probe Eddy NG Setup](#probe-eddy-ng-setup)
-    - [PID Tuning and Input Shaping](#pid-tuning-and-input-shaping)
+- [Manual Bed Tramming](#manual-bed-tramming)
+- [Probe Eddy NG Setup](#probe-eddy-ng-setup)
+- [PID Tuning and Input Shaping](#pid-tuning-and-input-shaping)
 
 ### Probe Eddy NG Setup
 

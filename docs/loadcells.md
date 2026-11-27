@@ -2,6 +2,7 @@
 seo_title: "Load Cells on Creality K1 - Setup Guide"
 toc_section_depths:
   firmware-requirements: 3
+  calibration: 3
 ---
 
 # Load Cells
@@ -82,28 +83,6 @@ Please note that you will need to change the screen orientation to horizontal, h
 
 Using load cells for homing and leveling is not supported on Ender 3 V3 KE or SE
 
-!!! note
-
-    The load cell probe reads all four bed load cells together as a single probe, this needs new MCU firmware which the installer takes care of.
-
-## Overview
-
---steps--
-
-1. [Install](#installation) with the `loadcells` probe
-2. Power cycle the printer so the new [MCU firmware](#post-installation) is applied
-3. [Calibrate the load cells](#calibration) with a known weight
-4. [Test the probe](#test-the-probe) and check its [accuracy](#probe-accuracy)
-5. Run a [bed mesh](#bed-mesh)
-6. Do [PID tuning and input shaping](#pid-tuning-and-input-shaping)
-7. The [Nozzle Wipe](#nozzle-wipe) is set up for you
-
---!steps--
-
-!!! warning
-
-    The load cells **must** be calibrated before you can probe with them, until you do the printer will stop with `Load Cells are not calibrated, aborting homing Z!`. Never guess the calibration value, the safety limits are all in grams and an inaccurate calibration lets the nozzle push far harder than you intend.
-
 ## Installation
 
 !!! warning
@@ -125,6 +104,18 @@ If you've installed Guilouz's Helper Script, or installed Fluidd or Mainsail thr
 --8<-- "snippets/probe/mcu_firmware_updates_are_pending.md"
 
 ## Calibration
+
+The following calibration steps are required to setup a new printer:
+
+- [Manual Bed Tramming](#manual-bed-tramming)
+- [Check the Load Cells](#check-the-load-cells)
+- [Calibrate the Load Cells](#calibrate-the-load-cells)
+- [Probe Accuracy](#probe-accuracy)
+- [Test the Probe](#test-the-probe)
+- [Bed Mesh](#bed-mesh)
+- [PID Tuning and Input Shaping](#pid-tuning-and-input-shaping)
+
+--8<-- "snippets/probe/manual_bed_tramming.md"
 
 --8<-- "snippets/loadcells/check_the_load_cells.md"
 
@@ -170,7 +161,6 @@ You can use `ABORT` to cancel at any time.  Afterwards run `LOAD_CELL_DIAGNOSTIC
 --8<-- "snippets/loadcells/calibration_errors.md"
 
 --8<-- "snippets/loadcells/test_the_probe.md"
-
 
 ### Probe Accuracy
 
@@ -218,6 +208,21 @@ The load cell probe settings are in the `[load_cell_probe]` section of `loadcell
 --8<-- "snippets/loadcells/trigger_force.md"
 
 --8<-- "snippets/loadcells/safety_limits.md"
+
+### Bed Mesh faster?
+
+There are some things that you can do to increase the speed of a bed mesh with load cells, but there is no denying it is much slower than with
+an eddy probe like a cartographer, beacon or btt eddy.
+
+The most obvious improvement would be to switch to a eddy probe:
+
+- [Cartographer with LoadCells](cartographer.md#loadcells-for-z-offset)
+- [Beacon with LoadCells](beacon.md#loadcells-for-z-offset)
+- [BTT Eddy with LoadCells](eddyng.md#loadcells-for-z-offset)
+
+Otherwise you can tweak the `loadcells.cfg` `[bed_mesh]` there are a couple of settings to look at, but do **not** make these changes before you ensure your bed
+is correctly trammed, and do at least one mesh without any speed adjustments.  The best bang for your buck changes are to play with the `horizontal_move_z` 
+and `horizontal_z_clearance`, doing so at your own risk.
 
 ## Switching Back
 

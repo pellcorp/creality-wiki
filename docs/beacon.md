@@ -3,6 +3,7 @@ seo_title: "Beacon on Creality K1 - Install Guide"
 toc_section_depths:
   firmware-requirements: 3
   installation: 3
+  calibration: 3
 ---
 
 # Beacon
@@ -144,12 +145,13 @@ To run the script, you must use the following command:
 
 ## Calibration
 
-!!! warning
+ The following calibration steps are required to setup a new printer:
 
-    The following calibration steps are required to setup a new printer:
+- [Manual Bed Tramming](#manual-bed-tramming)
+- [Beacon Calibrate](#beacon-calibrate)
+- [PID Tuning and Input Shaping](#pid-tuning-and-input-shaping)
 
-    - [Beacon Calibrate](#beacon-calibrate)
-    - [PID Tuning and Input Shaping](#pid-tuning-and-input-shaping)
+--8<-- "snippets/probe/manual_bed_tramming.md"
 
 ### Beacon Calibrate
 
@@ -181,8 +183,6 @@ To run the script, you must use the following command:
     up to meet the nozzle during the paper test without running into out of range issues.  You however won't be able to move the bed further away from the nozzle more than a few mm.
     
     ![image](assets/images/probe_manual.png)
-
---8<-- "snippets/probe/manual_bed_tramming.md"
 
 ### Pid Tuning and Input Shaping
 
