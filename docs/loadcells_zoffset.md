@@ -105,11 +105,11 @@ You need an object of known weight, weigh it on a kitchen scale.
 
     On the Ender 3 V3 or Ender 3 V3 SE/KE a known weight of ~3 kg (around `3000` grams) strongly recommended for accurate functioning.
 
-    On the K1 a known weight of ~6 kg (around `6000` grams) is strongly recommended for accurate functioning.
+    On the K1 a known weight of ~6 kg (around `6000` grams) is strongly recommended for accurate functioning, at a pinch 4.5kg might be ok.
 
     a lighter weight fails with the `Tare and Calibration readings are less than 1% different!` error, see [Calibration Errors](#calibration-errors).
 
-    New spools of filament work well, a brand new spool is typically 1000 g of filament plus the spool itself, which is about 250 g for a bamboo plastic spool or about 175 g for a cardboard spool.  Weight whatever you use on a kitchen scale and enter the real weight.
+    Weight whatever you use on a kitchen scale and enter the real weight, an example can be two house bricks, weigh one at a time on the kitchen scales to get to about 6kg
 
 !!! tip
 
